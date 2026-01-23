@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4512f58c-f9d0-4d31-bd38-dfab2822de30}</ProjectGuid>
+    <RootNamespace>InfightAction</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Sources\Framework;$(SolutionDir)Sources\GameApp;$(SolutionDir)Sources\GameFramework;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.7\include;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(SolutionDir)Sources\Framework\Common\Common_ConstantInclude.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Sources\Framework;$(SolutionDir)Sources\GameApp;$(SolutionDir)Sources\GameFramework;C:\Program Files\Autodesk\FBX\FBX SDK\2020.3.7\include;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(SolutionDir)Sources\Framework\Common\Common_ConstantInclude.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Sources\Framework;$(SolutionDir)Sources\GameApp;$(SolutionDir)Sources\GameFramework;C:\Program Files\Autodesk\FBX\FBX SDK\2018.0\include;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(SolutionDir)Sources\Framework\Common\Common_ConstantInclude.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files\Autodesk\FBX\FBX SDK\2018.0\lib\vs2015\x64\debug;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\debug\lib\x64;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\release\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libfbxsdk-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Sources\Framework;$(SolutionDir)Sources\GameApp;$(SolutionDir)Sources\GameFramework;C:\Program Files\Autodesk\FBX\FBX SDK\2018.0\include;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(SolutionDir)Sources\Framework\Common\Common_ConstantInclude.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files\Autodesk\FBX\FBX SDK\2018.0\lib\vs2015\x64\release;$(SolutionDir)packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\release\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libfbxsdk-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Framework\Asset\Asset_FactoryManager.cpp" />
+    <ClCompile Include="Sources\Framework\Asset\Factory\Asset_JsonFactory.cpp" />
+    <ClCompile Include="Sources\Framework\Asset\Factory\Asset_ModelFactory.cpp" />
+    <ClCompile Include="Sources\Framework\Asset\Factory\Asset_ShaderFactory.cpp" />
+    <ClCompile Include="Sources\Framework\Asset\Factory\Asset_TextureFactory.cpp" />
+    <ClCompile Include="Sources\Framework\Collision\Collision_Common.cpp" />
+    <ClCompile Include="Sources\Framework\Collision\Collision_Mesh.cpp" />
+    <ClCompile Include="Sources\Framework\Collision\Collision_OBBox.cpp" />
+    <ClCompile Include="Sources\Framework\Collision\Collision_Util.cpp" />
+    <ClCompile Include="Sources\Framework\Common\Common_BaseOperator.cpp" />
+    <ClCompile Include="Sources\Framework\Debug\Debug_Assert.cpp" />
+    <ClCompile Include="Sources\Framework\Debug\Debug_Debugger.cpp" />
+    <ClCompile Include="Sources\Framework\Debug\Debug_Def.cpp" />
+    <ClCompile Include="Sources\Framework\Debug\Debug_Message.cpp" />
+    <ClCompile Include="Sources\Framework\Debug\Debug_Util.cpp" />
+    <ClCompile Include="Sources\Framework\DirectX\DirectX_DebugFont.cpp" />
+    <ClCompile Include="Sources\Framework\DirectX\DirectX_Input.cpp" />
+    <ClCompile Include="Sources\Framework\DirectX\DirectX_Manager.cpp" />
+    <ClCompile Include="Sources\Framework\DirectX\DirectX_Util.cpp" />
+    <ClCompile Include="Sources\Framework\Game\Game_Main.cpp" />
+    <ClCompile Include="Sources\Framework\Graphic\Graphic_Util.cpp" />
+    <ClCompile Include="Sources\Framework\Input\Input_Common.cpp" />
+    <ClCompile Include="Sources\Framework\Input\Input_Game.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Data\Math_Data.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Int\Math_Int2.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Int\Math_Int3.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Int\Math_Int4.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Math_Common.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Math_Util.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Matrix\Math_Matrix44.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Quaternion\Math_Quaternion.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Vector\Math_Vector2.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Vector\Math_Vector3.cpp" />
+    <ClCompile Include="Sources\Framework\Math\Vector\Math_Vector4.cpp" />
+    <ClCompile Include="Sources\Framework\Mesh\Mesh_Base.cpp" />
+    <ClCompile Include="Sources\Framework\Mesh\Mesh_Line.cpp" />
+    <ClCompile Include="Sources\Framework\Model\Fbx\Model_FbxDef.cpp" />
+    <ClCompile Include="Sources\Framework\Model\Fbx\Model_FbxLoader.cpp" />
+    <ClCompile Include="Sources\Framework\Model\Model_Manager.cpp" />
+    <ClCompile Include="Sources\Framework\Model\Model_Object.cpp" />
+    <ClCompile Include="Sources\Framework\Model\XFile\Model_Hierarchy.cpp" />
+    <ClCompile Include="Sources\Framework\Model\XFile\Model_SkinnedMesh.cpp" />
+    <ClCompile Include="Sources\Framework\Model\XFile\Model_XFile.cpp" />
+    <ClCompile Include="Sources\Framework\Model\XFile\OBB\OBB.cpp" />
+    <ClCompile Include="Sources\Framework\Object\Object_GameObject.cpp" />
+    <ClCompile Include="Sources\Framework\Object\Object_Transform.cpp" />
+    <ClCompile Include="Sources\Framework\Polygon\Polygon_Base.cpp" />
+    <ClCompile Include="Sources\Framework\Polygon\Polygon_Data.cpp" />
+    <ClCompile Include="Sources\Framework\Polygon\Polygon_Object2D.cpp" />
+    <ClCompile Include="Sources\Framework\Polygon\Polygon_Object3D.cpp" />
+    <ClCompile Include="Sources\Framework\Scene\Scene_Base.cpp" />
+    <ClCompile Include="Sources\Framework\Scene\Scene_Def.cpp" />
+    <ClCompile Include="Sources\Framework\Scene\Scene_Manager.cpp" />
+    <ClCompile Include="Sources\Framework\Scene\Scene_Root.cpp" />
+    <ClCompile Include="Sources\Framework\Shader\Shader_Manager.cpp" />
+    <ClCompile Include="Sources\Framework\Shader\Shader_Util.cpp" />
+    <ClCompile Include="Sources\Framework\Sound\Sound_AssetInfo.cpp" />
+    <ClCompile Include="Sources\Framework\Sound\Sound_Common.cpp" />
+    <ClCompile Include="Sources\Framework\System\System_Common.cpp" />
+    <ClCompile Include="Sources\Framework\System\System_Error.cpp" />
+    <ClCompile Include="Sources\Framework\System\System_Exception.cpp" />
+    <ClCompile Include="Sources\Framework\Texture\Texture_Manager.cpp" />
+    <ClCompile Include="Sources\Framework\Util\Util_Common.cpp" />
+    <ClCompile Include="Sources\Framework\Windows\Windows_Main.cpp" />
+    <ClCompile Include="Sources\Framework\_External\json11\json11.cpp" />
+    <ClCompile Include="Sources\GameApp\Camera\Operator\Camera_OperatorBase.cpp" />
+    <ClCompile Include="Sources\GameApp\Camera\Operator\Camera_OperatorDebug.cpp" />
+    <ClCompile Include="Sources\GameApp\Camera\Operator\Camera_OperatorPlayer.cpp" />
+    <ClCompile Include="Sources\GameApp\Collision\Def\Collision_ReceiveAttackInfo.cpp" />
+    <ClCompile Include="Sources\GameApp\Collision\Def\Collision_SendAttackInfo.cpp" />
+    <ClCompile Include="Sources\GameApp\Game\Def\Game_ActorMove.cpp" />
+    <ClCompile Include="Sources\GameApp\Game\Def\Game_ActorParam.cpp" />
+    <ClCompile Include="Sources\GameApp\Game\Game_EnemyCreator.cpp" />
+    <ClCompile Include="Sources\GameApp\Game\Manager\Game_EnemyManager.cpp" />
+    <ClCompile Include="Sources\GameApp\Game\Manager\Game_GlobalAccessManager.cpp" />
+    <ClCompile Include="Sources\GameApp\Game\Manager\Game_GlobalDataManager.cpp" />
+    <ClCompile Include="Sources\GameApp\Game\Manager\Game_MainManager.cpp" />
+    <ClCompile Include="Sources\GameApp\Game\Manager\Game_StageManager.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\Actor\Enemy\Object_Baby.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\Actor\Enemy\Object_Enemy.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\Actor\Enemy\Object_SandBag.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\Actor\Object_Actor.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\Actor\Player\Object_Player.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\Actor\Player\Object_PlayerAttackState.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\Actor\Player\Object_PlayerDamageState.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\Actor\Player\Object_PlayerNormalState.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\SkyDome\Object_SkyDome.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\Stage\Object_Stage.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\UI\Object_PlayerLifeUI.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\UI\Object_ScreenFade.cpp" />
+    <ClCompile Include="Sources\GameApp\Object\_Template\Object_Template.cpp" />
+    <ClCompile Include="Sources\GameApp\Scene\Scene_Game.cpp" />
+    <ClCompile Include="Sources\GameApp\Scene\Scene_Result.cpp" />
+    <ClCompile Include="Sources\GameApp\Scene\Scene_TestAssetOptimize.cpp" />
+    <ClCompile Include="Sources\GameApp\Scene\Scene_Title.cpp" />
+    <ClCompile Include="Sources\GameApp\Scene\_Template\Scene_Template.cpp" />
+    <ClCompile Include="Sources\GameApp\Util\Util_GameCommon.cpp" />
+    <ClCompile Include="Sources\GameFramework\Camera\Camera_Common.cpp" />
+    <ClCompile Include="Sources\GameFramework\Camera\Camera_GlobalManager.cpp" />
+    <ClCompile Include="Sources\GameFramework\Camera\Camera_OperatorManager.cpp" />
+    <ClCompile Include="Sources\GameFramework\Collision\CollisionProc\Collision_HitTest.cpp" />
+    <ClCompile Include="Sources\GameFramework\Collision\CollisionProc\Collision_Proc.cpp" />
+    <ClCompile Include="Sources\GameFramework\Collision\Holder\Collision_Game.cpp" />
+    <ClCompile Include="Sources\GameFramework\Collision\Holder\Collision_Group.cpp" />
+    <ClCompile Include="Sources\GameFramework\Collision\Holder\Collision_Holder.cpp" />
+    <ClCompile Include="Sources\GameFramework\Collision\Holder\Collision_Sequence.cpp" />
+    <ClCompile Include="Sources\GameFramework\Collision\Holder\TypeData\Collision_TypeDataAttack.cpp" />
+    <ClCompile Include="Sources\GameFramework\Collision\Holder\TypeData\Collision_TypeDataDamage.cpp" />
+    <ClCompile Include="Sources\GameFramework\Collision\Manager\Collision_Manager.cpp" />
+    <ClCompile Include="Sources\GameFramework\Input\Input_GameBuffer.cpp" />
+    <ClCompile Include="Sources\GameFramework\Object\Object_Effect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources\Framework\Asset\Asset_FactoryManager.h" />
+    <ClInclude Include="Sources\Framework\Asset\Factory\Asset_Factory.h" />
+    <ClInclude Include="Sources\Framework\Asset\Factory\Asset_JsonFactory.h" />
+    <ClInclude Include="Sources\Framework\Asset\Factory\Asset_ModelFactory.h" />
+    <ClInclude Include="Sources\Framework\Asset\Factory\Asset_ShaderFactory.h" />
+    <ClInclude Include="Sources\Framework\Asset\Factory\Asset_TextureFactory.h" />
+    <ClInclude Include="Sources\Framework\Collision\Collision_Common.h" />
+    <ClInclude Include="Sources\Framework\Collision\Collision_Def.h" />
+    <ClInclude Include="Sources\Framework\Collision\Collision_Mesh.h" />
+    <ClInclude Include="Sources\Framework\Collision\Collision_OBBox.h" />
+    <ClInclude Include="Sources\Framework\Collision\Collision_Util.h" />
+    <ClInclude Include="Sources\Framework\Common\Common_BaseOperator.h" />
+    <ClInclude Include="Sources\Framework\Common\Common_BaseType.h" />
+    <ClInclude Include="Sources\Framework\Common\Common_ConstantInclude.h" />
+    <ClInclude Include="Sources\Framework\Common\Common_Def.h" />
+    <ClInclude Include="Sources\Framework\Debug\Debug_Assert.h" />
+    <ClInclude Include="Sources\Framework\Debug\Debug_Debugger.h" />
+    <ClInclude Include="Sources\Framework\Debug\Debug_Def.h" />
+    <ClInclude Include="Sources\Framework\Debug\Debug_Message.h" />
+    <ClInclude Include="Sources\Framework\Debug\Debug_Util.h" />
+    <ClInclude Include="Sources\Framework\DirectX\DirectX_DebugFont.h" />
+    <ClInclude Include="Sources\Framework\DirectX\DirectX_Def.h" />
+    <ClInclude Include="Sources\Framework\DirectX\DirectX_Input.h" />
+    <ClInclude Include="Sources\Framework\DirectX\DirectX_Manager.h" />
+    <ClInclude Include="Sources\Framework\DirectX\DirectX_Util.h" />
+    <ClInclude Include="Sources\Framework\Game\Game_Main.h" />
+    <ClInclude Include="Sources\Framework\Graphic\Graphic_Def.h" />
+    <ClInclude Include="Sources\Framework\Graphic\Graphic_Util.h" />
+    <ClInclude Include="Sources\Framework\Input\Input_Common.h" />
+    <ClInclude Include="Sources\Framework\Input\Input_Def.h" />
+    <ClInclude Include="Sources\Framework\Input\Input_Game.h" />
+    <ClInclude Include="Sources\Framework\Math\Data\Math_Data.h" />
+    <ClInclude Include="Sources\Framework\Math\Int\Math_Int2.h" />
+    <ClInclude Include="Sources\Framework\Math\Int\Math_Int3.h" />
+    <ClInclude Include="Sources\Framework\Math\Int\Math_Int4.h" />
+    <ClInclude Include="Sources\Framework\Math\Math_Common.h" />
+    <ClInclude Include="Sources\Framework\Math\Math_Def.h" />
+    <ClInclude Include="Sources\Framework\Math\Math_Type.h" />
+    <ClInclude Include="Sources\Framework\Math\Math_Util.h" />
+    <ClInclude Include="Sources\Framework\Math\Matrix\Math_Matrix44.h" />
+    <ClInclude Include="Sources\Framework\Math\Quaternion\Math_Quaternion.h" />
+    <ClInclude Include="Sources\Framework\Math\Vector\Math_Vector2.h" />
+    <ClInclude Include="Sources\Framework\Math\Vector\Math_Vector3.h" />
+    <ClInclude Include="Sources\Framework\Math\Vector\Math_Vector4.h" />
+    <ClInclude Include="Sources\Framework\Mesh\Mesh_Base.h" />
+    <ClInclude Include="Sources\Framework\Mesh\Mesh_Line.h" />
+    <ClInclude Include="Sources\Framework\Model\Fbx\Model_FbxDef.h" />
+    <ClInclude Include="Sources\Framework\Model\Fbx\Model_FbxLoader.h" />
+    <ClInclude Include="Sources\Framework\Model\Fbx\Model_FbxUtil.h" />
+    <ClInclude Include="Sources\Framework\Model\Model_Def.h" />
+    <ClInclude Include="Sources\Framework\Model\Model_Manager.h" />
+    <ClInclude Include="Sources\Framework\Model\Model_Object.h" />
+    <ClInclude Include="Sources\Framework\Model\XFile\Model_Hierarchy.h" />
+    <ClInclude Include="Sources\Framework\Model\XFile\Model_SkinnedMesh.h" />
+    <ClInclude Include="Sources\Framework\Model\XFile\Model_XFile.h" />
+    <ClInclude Include="Sources\Framework\Model\XFile\OBB\OBB.h" />
+    <ClInclude Include="Sources\Framework\Object\Object_GameObject.h" />
+    <ClInclude Include="Sources\Framework\Object\Object_Transform.h" />
+    <ClInclude Include="Sources\Framework\Physics\Physics_Common.h" />
+    <ClInclude Include="Sources\Framework\Physics\Physics_Def.h" />
+    <ClInclude Include="Sources\Framework\Polygon\Polygon_Base.h" />
+    <ClInclude Include="Sources\Framework\Polygon\Polygon_Data.h" />
+    <ClInclude Include="Sources\Framework\Polygon\Polygon_Def.h" />
+    <ClInclude Include="Sources\Framework\Polygon\Polygon_Object2D.h" />
+    <ClInclude Include="Sources\Framework\Polygon\Polygon_Object3D.h" />
+    <ClInclude Include="Sources\Framework\Scene\Scene_Base.h" />
+    <ClInclude Include="Sources\Framework\Scene\Scene_Def.h" />
+    <ClInclude Include="Sources\Framework\Scene\Scene_Manager.h" />
+    <ClInclude Include="Sources\Framework\Scene\Scene_Root.h" />
+    <ClInclude Include="Sources\Framework\Shader\Shader_Def.h" />
+    <ClInclude Include="Sources\Framework\Shader\Shader_Manager.h" />
+    <ClInclude Include="Sources\Framework\Shader\Shader_Util.h" />
+    <ClInclude Include="Sources\Framework\Sound\Sound_AssetInfo.h" />
+    <ClInclude Include="Sources\Framework\Sound\Sound_Common.h" />
+    <ClInclude Include="Sources\Framework\System\System_Common.h" />
+    <ClInclude Include="Sources\Framework\System\System_Def.h" />
+    <ClInclude Include="Sources\Framework\System\System_Error.h" />
+    <ClInclude Include="Sources\Framework\System\System_Exception.h" />
+    <ClInclude Include="Sources\Framework\Texture\Texture_Manager.h" />
+    <ClInclude Include="Sources\Framework\Util\Util_Common.h" />
+    <ClInclude Include="Sources\Framework\Util\Util_SingletonTemplate.h" />
+    <ClInclude Include="Sources\Framework\Util\Util_StateManager.h" />
+    <ClInclude Include="Sources\Framework\Windows\Windows_Global.h" />
+    <ClInclude Include="Sources\Framework\Windows\Windows_Include.h" />
+    <ClInclude Include="Sources\Framework\_External\json11\json11.hpp" />
+    <ClInclude Include="Sources\GameApp\Camera\Operator\Camera_OperatorBase.h" />
+    <ClInclude Include="Sources\GameApp\Camera\Operator\Camera_OperatorDebug.h" />
+    <ClInclude Include="Sources\GameApp\Camera\Operator\Camera_OperatorPlayer.h" />
+    <ClInclude Include="Sources\GameApp\Collision\Def\Collision_ReceiveAttackInfo.h" />
+    <ClInclude Include="Sources\GameApp\Collision\Def\Collision_SendAttackInfo.h" />
+    <ClInclude Include="Sources\GameApp\Game\Def\Game_ActorMove.h" />
+    <ClInclude Include="Sources\GameApp\Game\Def\Game_ActorParam.h" />
+    <ClInclude Include="Sources\GameApp\Game\Game_EnemyCreator.h" />
+    <ClInclude Include="Sources\GameApp\Game\Manager\Game_EnemyManager.h" />
+    <ClInclude Include="Sources\GameApp\Game\Manager\Game_GlobalAccessManager.h" />
+    <ClInclude Include="Sources\GameApp\Game\Manager\Game_GlobalDataManager.h" />
+    <ClInclude Include="Sources\GameApp\Game\Manager\Game_MainManager.h" />
+    <ClInclude Include="Sources\GameApp\Game\Manager\Game_StageManager.h" />
+    <ClInclude Include="Sources\GameApp\Object\Actor\Enemy\Object_Baby.h" />
+    <ClInclude Include="Sources\GameApp\Object\Actor\Enemy\Object_Enemy.h" />
+    <ClInclude Include="Sources\GameApp\Object\Actor\Enemy\Object_SandBag.h" />
+    <ClInclude Include="Sources\GameApp\Object\Actor\Object_Actor.h" />
+    <ClInclude Include="Sources\GameApp\Object\Actor\Player\Object_Player.h" />
+    <ClInclude Include="Sources\GameApp\Object\SkyDome\Object_SkyDome.h" />
+    <ClInclude Include="Sources\GameApp\Object\Stage\Object_Stage.h" />
+    <ClInclude Include="Sources\GameApp\Object\UI\Object_PlayerLifeUI.h" />
+    <ClInclude Include="Sources\GameApp\Object\UI\Object_ScreenFade.h" />
+    <ClInclude Include="Sources\GameApp\Object\_Template\Object_Template.h" />
+    <ClInclude Include="Sources\GameApp\Scene\Scene_Game.h" />
+    <ClInclude Include="Sources\GameApp\Scene\Scene_Result.h" />
+    <ClInclude Include="Sources\GameApp\Scene\Scene_TestAssetOptimize.h" />
+    <ClInclude Include="Sources\GameApp\Scene\Scene_Title.h" />
+    <ClInclude Include="Sources\GameApp\Scene\_Template\Scene_Template.h" />
+    <ClInclude Include="Sources\GameApp\Util\Util_GameCommon.h" />
+    <ClInclude Include="Sources\GameFramework\Camera\Camera_Common.h" />
+    <ClInclude Include="Sources\GameFramework\Camera\Camera_Def.h" />
+    <ClInclude Include="Sources\GameFramework\Camera\Camera_GlobalManager.h" />
+    <ClInclude Include="Sources\GameFramework\Camera\Camera_OperatorManager.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\CollisionProc\Collision_HitTest.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\CollisionProc\Collision_Proc.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\Holder\Collision_Game.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\Holder\Collision_Group.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\Holder\Collision_Holder.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\Holder\Collision_Sequence.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\Holder\TypeData\Collision_TypeDataAttack.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\Holder\TypeData\Collision_TypeDataDamage.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\Holder\TypeData\Collision_TypeDataInclude.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\Holder\TypeData\Collision_TypeDataNone.h" />
+    <ClInclude Include="Sources\GameFramework\Collision\Manager\Collision_Manager.h" />
+    <ClInclude Include="Sources\GameFramework\Input\Input_GameBuffer.h" />
+    <ClInclude Include="Sources\GameFramework\Object\Object_Effect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Sources\Framework\Util\Util_StateManager.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets" Condition="Exists('packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.DXSDK.D3DX.9.29.952.8\build\native\Microsoft.DXSDK.D3DX.targets'))" />
+  </Target>
+</Project>

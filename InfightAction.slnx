@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="InfightAction.vcxproj" Id="4512f58c-f9d0-4d31-bd38-dfab2822de30" />
+</Solution>
