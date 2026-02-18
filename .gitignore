@@ -2,10 +2,10 @@
 *.vcxproj.filters
 *.vcxproj.user
 
-packages/
-Asset/
-Debug/
-Release/
-x64/
-x86/
-InfightAction/
+/packages/
+/Asset/
+/Debug/
+/Release/
+/x64/
+/x86/
+/InfightAction/
