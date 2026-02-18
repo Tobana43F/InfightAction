@@ -1,6 +1,7 @@
 .vs
 *.vcxproj.filters
 *.vcxproj.user
+.Doxyfile
 
 /packages/
 /Asset/
