@@ -1,0 +1,1346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: json11::Json クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classjson11_1_1_json.html','','classjson11_1_1_json-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">json11::Json クラス<span class="mlabels"><span class="mlabel final">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="json11_8hpp_source.html">json11.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a51a2f5c0508c32c3336bcf42ae0233e5" id="r_a51a2f5c0508c32c3336bcf42ae0233e5"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5">Type</a> { <br />
+&#160;&#160;<a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5ab6068e23b66fa17f6193d29ba0b916ab">NUL</a>
+, <a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5ab22ed8049d284a2697e63e3cac0d7e56">NUMBER</a>
+, <a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5a0076e22c0ca17dfaf781d9940dd6b1ee">BOOL</a>
+, <a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5a100f9b247d623f28af5fa1ac8bc1f923">STRING</a>
+, <br />
+&#160;&#160;<a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5a7156dc3fda91e6a5cf211ff31e332106">ARRAY</a>
+, <a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5adf45d7553ce4a25b1e225017f9f7fb70">OBJECT</a>
+<br />
+ }</td></tr>
+<tr class="memitem:a49b4ee0f14b89b219955f50d272ebe5b" id="r_a49b4ee0f14b89b219955f50d272ebe5b"><td class="memItemLeft">typedef std::vector&lt; <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a49b4ee0f14b89b219955f50d272ebe5b">array</a></td></tr>
+<tr class="memitem:ac0ca9db68797b45adcd175359425590d" id="r_ac0ca9db68797b45adcd175359425590d"><td class="memItemLeft">typedef std::map&lt; std::string, <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac0ca9db68797b45adcd175359425590d">object</a></td></tr>
+<tr class="memitem:ae90d6d518b325943ab2ed472efd00e83" id="r_ae90d6d518b325943ab2ed472efd00e83"><td class="memItemLeft">typedef std::initializer_list&lt; std::pair&lt; std::string, <a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5">Type</a> &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae90d6d518b325943ab2ed472efd00e83">shape</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a5fbf95bb641ad8bac78a929fd1164ceb" id="r_a5fbf95bb641ad8bac78a929fd1164ceb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> () noexcept</td></tr>
+<tr class="memitem:a5c9ebb114542d45840876ec1b9785adb" id="r_a5c9ebb114542d45840876ec1b9785adb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5c9ebb114542d45840876ec1b9785adb">Json</a> (std::nullptr_t) noexcept</td></tr>
+<tr class="memitem:aa3ada8b1d684b2491025ce177cd78a74" id="r_aa3ada8b1d684b2491025ce177cd78a74"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa3ada8b1d684b2491025ce177cd78a74">Json</a> (double value)</td></tr>
+<tr class="memitem:a57f7fa34ef7bd11e9e02078eb62f371d" id="r_a57f7fa34ef7bd11e9e02078eb62f371d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a57f7fa34ef7bd11e9e02078eb62f371d">Json</a> (int value)</td></tr>
+<tr class="memitem:a3983a96e0690d20c3599c0680be64711" id="r_a3983a96e0690d20c3599c0680be64711"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3983a96e0690d20c3599c0680be64711">Json</a> (bool value)</td></tr>
+<tr class="memitem:a369e51068a0619ef40bb591b08a158c3" id="r_a369e51068a0619ef40bb591b08a158c3"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a369e51068a0619ef40bb591b08a158c3">Json</a> (const std::string &amp;value)</td></tr>
+<tr class="memitem:a9e296e1e948d122644ca589f5a2ee8e7" id="r_a9e296e1e948d122644ca589f5a2ee8e7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9e296e1e948d122644ca589f5a2ee8e7">Json</a> (std::string &amp;&amp;value)</td></tr>
+<tr class="memitem:a3929d4218558acec8a0ff7db45a79129" id="r_a3929d4218558acec8a0ff7db45a79129"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3929d4218558acec8a0ff7db45a79129">Json</a> (const char *value)</td></tr>
+<tr class="memitem:a0a29e383d62ebc0f2073dc0b1c25c7f5" id="r_a0a29e383d62ebc0f2073dc0b1c25c7f5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0a29e383d62ebc0f2073dc0b1c25c7f5">Json</a> (const <a class="el" href="#a49b4ee0f14b89b219955f50d272ebe5b">array</a> &amp;values)</td></tr>
+<tr class="memitem:af8d64a61eb4df43bd0cd5d495a78c9dc" id="r_af8d64a61eb4df43bd0cd5d495a78c9dc"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af8d64a61eb4df43bd0cd5d495a78c9dc">Json</a> (<a class="el" href="#a49b4ee0f14b89b219955f50d272ebe5b">array</a> &amp;&amp;values)</td></tr>
+<tr class="memitem:a2c178480d5854bcd615b99e87814bf4e" id="r_a2c178480d5854bcd615b99e87814bf4e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2c178480d5854bcd615b99e87814bf4e">Json</a> (const <a class="el" href="#ac0ca9db68797b45adcd175359425590d">object</a> &amp;values)</td></tr>
+<tr class="memitem:a2e09039acf3d560149b588709da6b74d" id="r_a2e09039acf3d560149b588709da6b74d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2e09039acf3d560149b588709da6b74d">Json</a> (<a class="el" href="#ac0ca9db68797b45adcd175359425590d">object</a> &amp;&amp;values)</td></tr>
+<tr class="memitem:a68428d2973dd0f8329e76cf8671ac2ee" id="r_a68428d2973dd0f8329e76cf8671ac2ee"><td class="memTemplParams" colspan="2">template&lt;class T, class = decltype(&amp;T::to_json)&gt; </td></tr>
+<tr class="memitem:a68428d2973dd0f8329e76cf8671ac2ee template"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a68428d2973dd0f8329e76cf8671ac2ee">Json</a> (const T &amp;t)</td></tr>
+<tr class="memitem:a20d8f60a90ab242542fd220d610a0d46" id="r_a20d8f60a90ab242542fd220d610a0d46"><td class="memTemplParams" colspan="2">template&lt;class M, typename std::enable_if&lt; std::is_constructible&lt; std::string, decltype(std::declval&lt; M &gt;().begin() -&gt;first)&gt;::value &amp;&amp;std::is_constructible&lt; Json, decltype(std::declval&lt; M &gt;().begin() -&gt;second)&gt;::value, int, <a class="el" href="#aa9c2e69e711a000bdbd424e6b2f06139">::type</a> = 0&gt; </td></tr>
+<tr class="memitem:a20d8f60a90ab242542fd220d610a0d46 template"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a20d8f60a90ab242542fd220d610a0d46">Json</a> (const M &amp;m)</td></tr>
+<tr class="memitem:a5560f92305d64e7d6ed34f72a6a92146" id="r_a5560f92305d64e7d6ed34f72a6a92146"><td class="memTemplParams" colspan="2">template&lt;class V, typename std::enable_if&lt; std::is_constructible&lt; Json, decltype(*std::declval&lt; V &gt;().begin())&gt;::value, int, <a class="el" href="#aa9c2e69e711a000bdbd424e6b2f06139">::type</a> = 0&gt; </td></tr>
+<tr class="memitem:a5560f92305d64e7d6ed34f72a6a92146 template"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5560f92305d64e7d6ed34f72a6a92146">Json</a> (const V &amp;v)</td></tr>
+<tr class="memitem:ae567780835b2ac8514786277cc27bd1c" id="r_ae567780835b2ac8514786277cc27bd1c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae567780835b2ac8514786277cc27bd1c">Json</a> (void *)=delete</td></tr>
+<tr class="memitem:aa9c2e69e711a000bdbd424e6b2f06139" id="r_aa9c2e69e711a000bdbd424e6b2f06139"><td class="memItemLeft"><a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5">Type</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa9c2e69e711a000bdbd424e6b2f06139">type</a> () const</td></tr>
+<tr class="memitem:a4ae030733f6ebd910882afb9e2364b1a" id="r_a4ae030733f6ebd910882afb9e2364b1a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4ae030733f6ebd910882afb9e2364b1a">is_null</a> () const</td></tr>
+<tr class="memitem:ad93187192190f5aa497bea86afc1717f" id="r_ad93187192190f5aa497bea86afc1717f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad93187192190f5aa497bea86afc1717f">is_number</a> () const</td></tr>
+<tr class="memitem:a58226c2f5b5a69c5492de0add2ebb569" id="r_a58226c2f5b5a69c5492de0add2ebb569"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a58226c2f5b5a69c5492de0add2ebb569">is_bool</a> () const</td></tr>
+<tr class="memitem:a38aaf68782261bb98ec34524c09c2752" id="r_a38aaf68782261bb98ec34524c09c2752"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a38aaf68782261bb98ec34524c09c2752">is_string</a> () const</td></tr>
+<tr class="memitem:a19bae712f89c9bd771fead54b447611a" id="r_a19bae712f89c9bd771fead54b447611a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a19bae712f89c9bd771fead54b447611a">is_array</a> () const</td></tr>
+<tr class="memitem:a8bc1877dd93ffa5457c214308e0cf472" id="r_a8bc1877dd93ffa5457c214308e0cf472"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8bc1877dd93ffa5457c214308e0cf472">is_object</a> () const</td></tr>
+<tr class="memitem:a735c0d270710c51ba06627c328a58138" id="r_a735c0d270710c51ba06627c328a58138"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a735c0d270710c51ba06627c328a58138">number_value</a> () const</td></tr>
+<tr class="memitem:af7093e5034daa0e138be9013440292c9" id="r_af7093e5034daa0e138be9013440292c9"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af7093e5034daa0e138be9013440292c9">int_value</a> () const</td></tr>
+<tr class="memitem:a23ccdd948ff1738a61d416d89d3a80b0" id="r_a23ccdd948ff1738a61d416d89d3a80b0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a23ccdd948ff1738a61d416d89d3a80b0">bool_value</a> () const</td></tr>
+<tr class="memitem:a7054ba4a8432d19386e0d16cd69219f0" id="r_a7054ba4a8432d19386e0d16cd69219f0"><td class="memItemLeft">const std::string &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a7054ba4a8432d19386e0d16cd69219f0">string_value</a> () const</td></tr>
+<tr class="memitem:aee966f000b422ae22f33d70dab73f524" id="r_aee966f000b422ae22f33d70dab73f524"><td class="memItemLeft">const <a class="el" href="#a49b4ee0f14b89b219955f50d272ebe5b">array</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#aee966f000b422ae22f33d70dab73f524">array_items</a> () const</td></tr>
+<tr class="memitem:a6658c06954b8bc9b59cf615dfb87b52c" id="r_a6658c06954b8bc9b59cf615dfb87b52c"><td class="memItemLeft">const <a class="el" href="#ac0ca9db68797b45adcd175359425590d">object</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a6658c06954b8bc9b59cf615dfb87b52c">object_items</a> () const</td></tr>
+<tr class="memitem:a27be11485819f6556791ef5b37c63fe6" id="r_a27be11485819f6556791ef5b37c63fe6"><td class="memItemLeft">const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a27be11485819f6556791ef5b37c63fe6">operator[]</a> (size_t i) const</td></tr>
+<tr class="memitem:a6e133c5bf6f709baadcac34b3e5e35c2" id="r_a6e133c5bf6f709baadcac34b3e5e35c2"><td class="memItemLeft">const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a6e133c5bf6f709baadcac34b3e5e35c2">operator[]</a> (const std::string &amp;key) const</td></tr>
+<tr class="memitem:a6b92b393846c9e01f77be6401978eb03" id="r_a6b92b393846c9e01f77be6401978eb03"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6b92b393846c9e01f77be6401978eb03">dump</a> (std::string &amp;out) const</td></tr>
+<tr class="memitem:a65aad4271963eeb2688ebdbd152ea307" id="r_a65aad4271963eeb2688ebdbd152ea307"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a65aad4271963eeb2688ebdbd152ea307">dump</a> () const</td></tr>
+<tr class="memitem:aad1799d488dab7f0851f7bce9c86799f" id="r_aad1799d488dab7f0851f7bce9c86799f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aad1799d488dab7f0851f7bce9c86799f">operator==</a> (const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;rhs) const</td></tr>
+<tr class="memitem:a24c4567a90be32f09b4d50b1eb03f718" id="r_a24c4567a90be32f09b4d50b1eb03f718"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a24c4567a90be32f09b4d50b1eb03f718">operator&lt;</a> (const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;rhs) const</td></tr>
+<tr class="memitem:ae616cea26e94189e92a8497cc0a0b344" id="r_ae616cea26e94189e92a8497cc0a0b344"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae616cea26e94189e92a8497cc0a0b344">operator!=</a> (const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;rhs) const</td></tr>
+<tr class="memitem:a919b9365d6a28290d7c1414224138350" id="r_a919b9365d6a28290d7c1414224138350"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a919b9365d6a28290d7c1414224138350">operator&lt;=</a> (const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;rhs) const</td></tr>
+<tr class="memitem:a85add86873a842bce861badecfeff652" id="r_a85add86873a842bce861badecfeff652"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a85add86873a842bce861badecfeff652">operator&gt;</a> (const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;rhs) const</td></tr>
+<tr class="memitem:aa39a4415c003f166ed03753cd2ba0731" id="r_aa39a4415c003f166ed03753cd2ba0731"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa39a4415c003f166ed03753cd2ba0731">operator&gt;=</a> (const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;rhs) const</td></tr>
+<tr class="memitem:ac556cd94b6c2e30fcb35714cc42ac47e" id="r_ac556cd94b6c2e30fcb35714cc42ac47e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac556cd94b6c2e30fcb35714cc42ac47e">has_shape</a> (const <a class="el" href="#ae90d6d518b325943ab2ed472efd00e83">shape</a> &amp;types, std::string &amp;err) const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a328337347162b928d9575bc57b3d20da" id="r_a328337347162b928d9575bc57b3d20da"><td class="memItemLeft">static <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a>&#160;</td><td class="memItemRight"><a class="el" href="#a328337347162b928d9575bc57b3d20da">parse</a> (const std::string &amp;in, std::string &amp;err, <a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817b">JsonParse</a> strategy=<a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817baeb4339f9804764661370f6c43fdbf746">JsonParse::STANDARD</a>)</td></tr>
+<tr class="memitem:a9bed3f84db6e24947ea4d17cb67292fc" id="r_a9bed3f84db6e24947ea4d17cb67292fc"><td class="memItemLeft">static <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9bed3f84db6e24947ea4d17cb67292fc">parse</a> (const char *in, std::string &amp;err, <a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817b">JsonParse</a> strategy=<a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817baeb4339f9804764661370f6c43fdbf746">JsonParse::STANDARD</a>)</td></tr>
+<tr class="memitem:ada11e79d24bd8a21869f8c3e36ad9c54" id="r_ada11e79d24bd8a21869f8c3e36ad9c54"><td class="memItemLeft">static std::vector&lt; <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ada11e79d24bd8a21869f8c3e36ad9c54">parse_multi</a> (const std::string &amp;in, std::string::size_type &amp;parser_stop_pos, std::string &amp;err, <a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817b">JsonParse</a> strategy=<a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817baeb4339f9804764661370f6c43fdbf746">JsonParse::STANDARD</a>)</td></tr>
+<tr class="memitem:a7bbedb3125d6b451a2b0e364da2477fe" id="r_a7bbedb3125d6b451a2b0e364da2477fe"><td class="memItemLeft">static std::vector&lt; <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7bbedb3125d6b451a2b0e364da2477fe">parse_multi</a> (const std::string &amp;in, std::string &amp;err, <a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817b">JsonParse</a> strategy=<a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817baeb4339f9804764661370f6c43fdbf746">JsonParse::STANDARD</a>)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a868af6aa3377a27a7cd1717d78ffda65" id="r_a868af6aa3377a27a7cd1717d78ffda65"><td class="memItemLeft">std::shared_ptr&lt; <a class="el" href="classjson11_1_1_json_value.html">JsonValue</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a></td></tr>
+</table>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a49b4ee0f14b89b219955f50d272ebe5b" name="a49b4ee0f14b89b219955f50d272ebe5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49b4ee0f14b89b219955f50d272ebe5b">&#9670;&#160;</a></span>array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a>&gt; <a class="el" href="#a49b4ee0f14b89b219955f50d272ebe5b">json11::Json::array</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0ca9db68797b45adcd175359425590d" name="ac0ca9db68797b45adcd175359425590d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ca9db68797b45adcd175359425590d">&#9670;&#160;</a></span>object</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a>&gt; <a class="el" href="#ac0ca9db68797b45adcd175359425590d">json11::Json::object</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae90d6d518b325943ab2ed472efd00e83" name="ae90d6d518b325943ab2ed472efd00e83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90d6d518b325943ab2ed472efd00e83">&#9670;&#160;</a></span>shape</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::initializer_list&lt;std::pair&lt;std::string, <a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5">Type</a>&gt; &gt; <a class="el" href="#ae90d6d518b325943ab2ed472efd00e83">json11::Json::shape</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型メンバ詳解</h2>
+<a id="a51a2f5c0508c32c3336bcf42ae0233e5" name="a51a2f5c0508c32c3336bcf42ae0233e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a2f5c0508c32c3336bcf42ae0233e5">&#9670;&#160;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5">json11::Json::Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a51a2f5c0508c32c3336bcf42ae0233e5ab6068e23b66fa17f6193d29ba0b916ab" name="a51a2f5c0508c32c3336bcf42ae0233e5ab6068e23b66fa17f6193d29ba0b916ab"></a>NUL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a51a2f5c0508c32c3336bcf42ae0233e5ab22ed8049d284a2697e63e3cac0d7e56" name="a51a2f5c0508c32c3336bcf42ae0233e5ab22ed8049d284a2697e63e3cac0d7e56"></a>NUMBER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a51a2f5c0508c32c3336bcf42ae0233e5a0076e22c0ca17dfaf781d9940dd6b1ee" name="a51a2f5c0508c32c3336bcf42ae0233e5a0076e22c0ca17dfaf781d9940dd6b1ee"></a>BOOL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a51a2f5c0508c32c3336bcf42ae0233e5a100f9b247d623f28af5fa1ac8bc1f923" name="a51a2f5c0508c32c3336bcf42ae0233e5a100f9b247d623f28af5fa1ac8bc1f923"></a>STRING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a51a2f5c0508c32c3336bcf42ae0233e5a7156dc3fda91e6a5cf211ff31e332106" name="a51a2f5c0508c32c3336bcf42ae0233e5a7156dc3fda91e6a5cf211ff31e332106"></a>ARRAY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a51a2f5c0508c32c3336bcf42ae0233e5adf45d7553ce4a25b1e225017f9f7fb70" name="a51a2f5c0508c32c3336bcf42ae0233e5adf45d7553ce4a25b1e225017f9f7fb70"></a>OBJECT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><span class="lineno">   82</span>              {</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5ab6068e23b66fa17f6193d29ba0b916ab">NUL</a>, <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5ab22ed8049d284a2697e63e3cac0d7e56">NUMBER</a>, <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5a0076e22c0ca17dfaf781d9940dd6b1ee">BOOL</a>, <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5a100f9b247d623f28af5fa1ac8bc1f923">STRING</a>, <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5a7156dc3fda91e6a5cf211ff31e332106">ARRAY</a>, <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5adf45d7553ce4a25b1e225017f9f7fb70">OBJECT</a></div>
+<div class="line"><span class="lineno">   84</span>    };</div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a51a2f5c0508c32c3336bcf42ae0233e5a0076e22c0ca17dfaf781d9940dd6b1ee"><div class="ttname"><a href="#a51a2f5c0508c32c3336bcf42ae0233e5a0076e22c0ca17dfaf781d9940dd6b1ee">json11::Json::BOOL</a></div><div class="ttdeci">@ BOOL</div><div class="ttdef"><b>Definition</b> json11.hpp:83</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a51a2f5c0508c32c3336bcf42ae0233e5a100f9b247d623f28af5fa1ac8bc1f923"><div class="ttname"><a href="#a51a2f5c0508c32c3336bcf42ae0233e5a100f9b247d623f28af5fa1ac8bc1f923">json11::Json::STRING</a></div><div class="ttdeci">@ STRING</div><div class="ttdef"><b>Definition</b> json11.hpp:83</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a51a2f5c0508c32c3336bcf42ae0233e5a7156dc3fda91e6a5cf211ff31e332106"><div class="ttname"><a href="#a51a2f5c0508c32c3336bcf42ae0233e5a7156dc3fda91e6a5cf211ff31e332106">json11::Json::ARRAY</a></div><div class="ttdeci">@ ARRAY</div><div class="ttdef"><b>Definition</b> json11.hpp:83</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a51a2f5c0508c32c3336bcf42ae0233e5ab22ed8049d284a2697e63e3cac0d7e56"><div class="ttname"><a href="#a51a2f5c0508c32c3336bcf42ae0233e5ab22ed8049d284a2697e63e3cac0d7e56">json11::Json::NUMBER</a></div><div class="ttdeci">@ NUMBER</div><div class="ttdef"><b>Definition</b> json11.hpp:83</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a51a2f5c0508c32c3336bcf42ae0233e5ab6068e23b66fa17f6193d29ba0b916ab"><div class="ttname"><a href="#a51a2f5c0508c32c3336bcf42ae0233e5ab6068e23b66fa17f6193d29ba0b916ab">json11::Json::NUL</a></div><div class="ttdeci">@ NUL</div><div class="ttdef"><b>Definition</b> json11.hpp:83</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a51a2f5c0508c32c3336bcf42ae0233e5adf45d7553ce4a25b1e225017f9f7fb70"><div class="ttname"><a href="#a51a2f5c0508c32c3336bcf42ae0233e5adf45d7553ce4a25b1e225017f9f7fb70">json11::Json::OBJECT</a></div><div class="ttdeci">@ OBJECT</div><div class="ttdef"><b>Definition</b> json11.hpp:83</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a5fbf95bb641ad8bac78a929fd1164ceb" name="a5fbf95bb641ad8bac78a929fd1164ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fbf95bb641ad8bac78a929fd1164ceb">&#9670;&#160;</a></span>Json() <span class="overload">[1/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  253</span>: <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>(statics().null) {}</div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a868af6aa3377a27a7cd1717d78ffda65"><div class="ttname"><a href="#a868af6aa3377a27a7cd1717d78ffda65">json11::Json::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; JsonValue &gt; m_ptr</div><div class="ttdef"><b>Definition</b> json11.hpp:208</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5c9ebb114542d45840876ec1b9785adb" name="a5c9ebb114542d45840876ec1b9785adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c9ebb114542d45840876ec1b9785adb">&#9670;&#160;</a></span>Json() <span class="overload">[2/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">std::nullptr_t</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  254</span>: <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>(statics().null) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa3ada8b1d684b2491025ce177cd78a74" name="aa3ada8b1d684b2491025ce177cd78a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3ada8b1d684b2491025ce177cd78a74">&#9670;&#160;</a></span>Json() <span class="overload">[3/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  255</span>: <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>(make_shared&lt;JsonDouble&gt;(value)) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a57f7fa34ef7bd11e9e02078eb62f371d" name="a57f7fa34ef7bd11e9e02078eb62f371d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57f7fa34ef7bd11e9e02078eb62f371d">&#9670;&#160;</a></span>Json() <span class="overload">[4/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  256</span>: <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>(make_shared&lt;JsonInt&gt;(value)) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3983a96e0690d20c3599c0680be64711" name="a3983a96e0690d20c3599c0680be64711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3983a96e0690d20c3599c0680be64711">&#9670;&#160;</a></span>Json() <span class="overload">[5/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  257</span>: <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>(value ? statics().t : statics().f) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a369e51068a0619ef40bb591b08a158c3" name="a369e51068a0619ef40bb591b08a158c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369e51068a0619ef40bb591b08a158c3">&#9670;&#160;</a></span>Json() <span class="overload">[6/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e296e1e948d122644ca589f5a2ee8e7" name="a9e296e1e948d122644ca589f5a2ee8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e296e1e948d122644ca589f5a2ee8e7">&#9670;&#160;</a></span>Json() <span class="overload">[7/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3929d4218558acec8a0ff7db45a79129" name="a3929d4218558acec8a0ff7db45a79129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3929d4218558acec8a0ff7db45a79129">&#9670;&#160;</a></span>Json() <span class="overload">[8/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  260</span>: <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>(make_shared&lt;JsonString&gt;(value)) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0a29e383d62ebc0f2073dc0b1c25c7f5" name="a0a29e383d62ebc0f2073dc0b1c25c7f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a29e383d62ebc0f2073dc0b1c25c7f5">&#9670;&#160;</a></span>Json() <span class="overload">[9/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a49b4ee0f14b89b219955f50d272ebe5b">array</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  261</span>: <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>(make_shared&lt;JsonArray&gt;(values)) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af8d64a61eb4df43bd0cd5d495a78c9dc" name="af8d64a61eb4df43bd0cd5d495a78c9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d64a61eb4df43bd0cd5d495a78c9dc">&#9670;&#160;</a></span>Json() <span class="overload">[10/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a49b4ee0f14b89b219955f50d272ebe5b">Json::array</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  262</span>: <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>(make_shared&lt;JsonArray&gt;(move(values))) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2c178480d5854bcd615b99e87814bf4e" name="a2c178480d5854bcd615b99e87814bf4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c178480d5854bcd615b99e87814bf4e">&#9670;&#160;</a></span>Json() <span class="overload">[11/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ac0ca9db68797b45adcd175359425590d">object</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  263</span>: <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>(make_shared&lt;JsonObject&gt;(values)) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2e09039acf3d560149b588709da6b74d" name="a2e09039acf3d560149b588709da6b74d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e09039acf3d560149b588709da6b74d">&#9670;&#160;</a></span>Json() <span class="overload">[12/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ac0ca9db68797b45adcd175359425590d">Json::object</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  264</span>: <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>(make_shared&lt;JsonObject&gt;(move(values))) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a68428d2973dd0f8329e76cf8671ac2ee" name="a68428d2973dd0f8329e76cf8671ac2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68428d2973dd0f8329e76cf8671ac2ee">&#9670;&#160;</a></span>Json() <span class="overload">[13/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T, class = decltype(&amp;T::to_json)&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;</td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  106</span>: <a class="code hl_function" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a>(t.to_json()) {}</div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a5fbf95bb641ad8bac78a929fd1164ceb"><div class="ttname"><a href="#a5fbf95bb641ad8bac78a929fd1164ceb">json11::Json::Json</a></div><div class="ttdeci">Json() noexcept</div><div class="ttdef"><b>Definition</b> json11.cpp:253</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a20d8f60a90ab242542fd220d610a0d46" name="a20d8f60a90ab242542fd220d610a0d46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d8f60a90ab242542fd220d610a0d46">&#9670;&#160;</a></span>Json() <span class="overload">[14/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class M, typename std::enable_if&lt; std::is_constructible&lt; std::string, decltype(std::declval&lt; M &gt;().begin() -&gt;first)&gt;::value &amp;&amp;std::is_constructible&lt; Json, decltype(std::declval&lt; M &gt;().begin() -&gt;second)&gt;::value, int, <a class="el" href="#aa9c2e69e711a000bdbd424e6b2f06139">::type</a> = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">const M &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  113</span>: <a class="code hl_function" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a>(<span class="keywordtype">object</span>(m.begin(), m.end())) {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5560f92305d64e7d6ed34f72a6a92146" name="a5560f92305d64e7d6ed34f72a6a92146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5560f92305d64e7d6ed34f72a6a92146">&#9670;&#160;</a></span>Json() <span class="overload">[15/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class V, typename std::enable_if&lt; std::is_constructible&lt; Json, decltype(*std::declval&lt; V &gt;().begin())&gt;::value, int, <a class="el" href="#aa9c2e69e711a000bdbd424e6b2f06139">::type</a> = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">const V &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  119</span>: <a class="code hl_function" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a>(<a class="code hl_typedef" href="#a49b4ee0f14b89b219955f50d272ebe5b">array</a>(v.begin(), v.end())) {}</div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a49b4ee0f14b89b219955f50d272ebe5b"><div class="ttname"><a href="#a49b4ee0f14b89b219955f50d272ebe5b">json11::Json::array</a></div><div class="ttdeci">std::vector&lt; Json &gt; array</div><div class="ttdef"><b>Definition</b> json11.hpp:87</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae567780835b2ac8514786277cc27bd1c" name="ae567780835b2ac8514786277cc27bd1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae567780835b2ac8514786277cc27bd1c">&#9670;&#160;</a></span>Json() <span class="overload">[16/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">json11::Json::Json </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="aee966f000b422ae22f33d70dab73f524" name="aee966f000b422ae22f33d70dab73f524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee966f000b422ae22f33d70dab73f524">&#9670;&#160;</a></span>array_items()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const vector&lt; <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &gt; &amp; json11::Json::array_items </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  275</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;array_items();  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a23ccdd948ff1738a61d416d89d3a80b0" name="a23ccdd948ff1738a61d416d89d3a80b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ccdd948ff1738a61d416d89d3a80b0">&#9670;&#160;</a></span>bool_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::bool_value </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  273</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;bool_value();   }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a65aad4271963eeb2688ebdbd152ea307" name="a65aad4271963eeb2688ebdbd152ea307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65aad4271963eeb2688ebdbd152ea307">&#9670;&#160;</a></span>dump() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string json11::Json::dump </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  157</span>                           {</div>
+<div class="line"><span class="lineno">  158</span>        std::string out;</div>
+<div class="line"><span class="lineno">  159</span>        <a class="code hl_function" href="#a65aad4271963eeb2688ebdbd152ea307">dump</a>(out);</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">  161</span>    }</div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a65aad4271963eeb2688ebdbd152ea307"><div class="ttname"><a href="#a65aad4271963eeb2688ebdbd152ea307">json11::Json::dump</a></div><div class="ttdeci">std::string dump() const</div><div class="ttdef"><b>Definition</b> json11.hpp:157</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6b92b393846c9e01f77be6401978eb03" name="a6b92b393846c9e01f77be6401978eb03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b92b393846c9e01f77be6401978eb03">&#9670;&#160;</a></span>dump() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void json11::Json::dump </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac556cd94b6c2e30fcb35714cc42ac47e" name="ac556cd94b6c2e30fcb35714cc42ac47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac556cd94b6c2e30fcb35714cc42ac47e">&#9670;&#160;</a></span>has_shape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::has_shape </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ae90d6d518b325943ab2ed472efd00e83">shape</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>types</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>err</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  772</span>                                                            {</div>
+<div class="line"><span class="lineno">  773</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="#a8bc1877dd93ffa5457c214308e0cf472">is_object</a>()) {</div>
+<div class="line"><span class="lineno">  774</span>        err = <span class="stringliteral">&quot;expected JSON object, got &quot;</span> + <a class="code hl_function" href="#a65aad4271963eeb2688ebdbd152ea307">dump</a>();</div>
+<div class="line"><span class="lineno">  775</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  776</span>    }</div>
+<div class="line"><span class="lineno">  777</span> </div>
+<div class="line"><span class="lineno">  778</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; item : types) {</div>
+<div class="line"><span class="lineno">  779</span>        <span class="keywordflow">if</span> ((*<span class="keyword">this</span>)[item.first].type() != item.second) {</div>
+<div class="line"><span class="lineno">  780</span>            err = <span class="stringliteral">&quot;bad type for &quot;</span> + item.first + <span class="stringliteral">&quot; in &quot;</span> + <a class="code hl_function" href="#a65aad4271963eeb2688ebdbd152ea307">dump</a>();</div>
+<div class="line"><span class="lineno">  781</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  782</span>        }</div>
+<div class="line"><span class="lineno">  783</span>    }</div>
+<div class="line"><span class="lineno">  784</span> </div>
+<div class="line"><span class="lineno">  785</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  786</span>}</div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a8bc1877dd93ffa5457c214308e0cf472"><div class="ttname"><a href="#a8bc1877dd93ffa5457c214308e0cf472">json11::Json::is_object</a></div><div class="ttdeci">bool is_object() const</div><div class="ttdef"><b>Definition</b> json11.hpp:133</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af7093e5034daa0e138be9013440292c9" name="af7093e5034daa0e138be9013440292c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7093e5034daa0e138be9013440292c9">&#9670;&#160;</a></span>int_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int json11::Json::int_value </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  272</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;int_value();    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a19bae712f89c9bd771fead54b447611a" name="a19bae712f89c9bd771fead54b447611a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19bae712f89c9bd771fead54b447611a">&#9670;&#160;</a></span>is_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::is_array </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#aa9c2e69e711a000bdbd424e6b2f06139">type</a>() == <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5a7156dc3fda91e6a5cf211ff31e332106">ARRAY</a>; }</div>
+<div class="ttc" id="aclassjson11_1_1_json_html_aa9c2e69e711a000bdbd424e6b2f06139"><div class="ttname"><a href="#aa9c2e69e711a000bdbd424e6b2f06139">json11::Json::type</a></div><div class="ttdeci">Type type() const</div><div class="ttdef"><b>Definition</b> json11.cpp:270</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a58226c2f5b5a69c5492de0add2ebb569" name="a58226c2f5b5a69c5492de0add2ebb569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58226c2f5b5a69c5492de0add2ebb569">&#9670;&#160;</a></span>is_bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::is_bool </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  130</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#aa9c2e69e711a000bdbd424e6b2f06139">type</a>() == <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5a0076e22c0ca17dfaf781d9940dd6b1ee">BOOL</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4ae030733f6ebd910882afb9e2364b1a" name="a4ae030733f6ebd910882afb9e2364b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae030733f6ebd910882afb9e2364b1a">&#9670;&#160;</a></span>is_null()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::is_null </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  128</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#aa9c2e69e711a000bdbd424e6b2f06139">type</a>() == <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5ab6068e23b66fa17f6193d29ba0b916ab">NUL</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad93187192190f5aa497bea86afc1717f" name="ad93187192190f5aa497bea86afc1717f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad93187192190f5aa497bea86afc1717f">&#9670;&#160;</a></span>is_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::is_number </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  129</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#aa9c2e69e711a000bdbd424e6b2f06139">type</a>() == <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5ab22ed8049d284a2697e63e3cac0d7e56">NUMBER</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8bc1877dd93ffa5457c214308e0cf472" name="a8bc1877dd93ffa5457c214308e0cf472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bc1877dd93ffa5457c214308e0cf472">&#9670;&#160;</a></span>is_object()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::is_object </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  133</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#aa9c2e69e711a000bdbd424e6b2f06139">type</a>() == <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5adf45d7553ce4a25b1e225017f9f7fb70">OBJECT</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a38aaf68782261bb98ec34524c09c2752" name="a38aaf68782261bb98ec34524c09c2752"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38aaf68782261bb98ec34524c09c2752">&#9670;&#160;</a></span>is_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::is_string </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  131</span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="#aa9c2e69e711a000bdbd424e6b2f06139">type</a>() == <a class="code hl_enumvalue" href="#a51a2f5c0508c32c3336bcf42ae0233e5a100f9b247d623f28af5fa1ac8bc1f923">STRING</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a735c0d270710c51ba06627c328a58138" name="a735c0d270710c51ba06627c328a58138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a735c0d270710c51ba06627c328a58138">&#9670;&#160;</a></span>number_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double json11::Json::number_value </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  271</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;number_value(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6658c06954b8bc9b59cf615dfb87b52c" name="a6658c06954b8bc9b59cf615dfb87b52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6658c06954b8bc9b59cf615dfb87b52c">&#9670;&#160;</a></span>object_items()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const map&lt; string, <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &gt; &amp; json11::Json::object_items </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  276</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;object_items(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae616cea26e94189e92a8497cc0a0b344" name="ae616cea26e94189e92a8497cc0a0b344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae616cea26e94189e92a8497cc0a0b344">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  194</span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == rhs); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a24c4567a90be32f09b4d50b1eb03f718" name="a24c4567a90be32f09b4d50b1eb03f718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c4567a90be32f09b4d50b1eb03f718">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  311</span>                                             {</div>
+<div class="line"><span class="lineno">  312</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a> == other.m_ptr)</div>
+<div class="line"><span class="lineno">  313</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  314</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;type() != other.m_ptr-&gt;type())</div>
+<div class="line"><span class="lineno">  315</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;type() &lt; other.m_ptr-&gt;type();</div>
+<div class="line"><span class="lineno">  316</span> </div>
+<div class="line"><span class="lineno">  317</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;less(other.m_ptr.get());</div>
+<div class="line"><span class="lineno">  318</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a919b9365d6a28290d7c1414224138350" name="a919b9365d6a28290d7c1414224138350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a919b9365d6a28290d7c1414224138350">&#9670;&#160;</a></span>operator&lt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  195</span>{ <span class="keywordflow">return</span> !(rhs &lt; *<span class="keyword">this</span>); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aad1799d488dab7f0851f7bce9c86799f" name="aad1799d488dab7f0851f7bce9c86799f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1799d488dab7f0851f7bce9c86799f">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  302</span>                                            {</div>
+<div class="line"><span class="lineno">  303</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a> == other.m_ptr)</div>
+<div class="line"><span class="lineno">  304</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  305</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;type() != other.m_ptr-&gt;type())</div>
+<div class="line"><span class="lineno">  306</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  307</span> </div>
+<div class="line"><span class="lineno">  308</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;equals(other.m_ptr.get());</div>
+<div class="line"><span class="lineno">  309</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a85add86873a842bce861badecfeff652" name="a85add86873a842bce861badecfeff652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85add86873a842bce861badecfeff652">&#9670;&#160;</a></span>operator&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  196</span>{ <span class="keywordflow">return</span>  (rhs &lt; *<span class="keyword">this</span>); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa39a4415c003f166ed03753cd2ba0731" name="aa39a4415c003f166ed03753cd2ba0731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa39a4415c003f166ed03753cd2ba0731">&#9670;&#160;</a></span>operator&gt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool json11::Json::operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rhs</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  197</span>{ <span class="keywordflow">return</span> !(*<span class="keyword">this</span> &lt; rhs); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6e133c5bf6f709baadcac34b3e5e35c2" name="a6e133c5bf6f709baadcac34b3e5e35c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e133c5bf6f709baadcac34b3e5e35c2">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp; json11::Json::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27be11485819f6556791ef5b37c63fe6" name="a27be11485819f6556791ef5b37c63fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27be11485819f6556791ef5b37c63fe6">&#9670;&#160;</a></span>operator[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &amp; json11::Json::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  277</span>{ <span class="keywordflow">return</span> (*<a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>)[i];           }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9bed3f84db6e24947ea4d17cb67292fc" name="a9bed3f84db6e24947ea4d17cb67292fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bed3f84db6e24947ea4d17cb67292fc">&#9670;&#160;</a></span>parse() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> json11::Json::parse </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>err</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817b">JsonParse</a></td>          <td class="paramname"><span class="paramname"><em>strategy</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817baeb4339f9804764661370f6c43fdbf746">JsonParse::STANDARD</a></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  169</span>                                                            {</div>
+<div class="line"><span class="lineno">  170</span>        <span class="keywordflow">if</span> (in) {</div>
+<div class="line"><span class="lineno">  171</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="#a328337347162b928d9575bc57b3d20da">parse</a>(std::string(in), err, strategy);</div>
+<div class="line"><span class="lineno">  172</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  173</span>            err = <span class="stringliteral">&quot;null input&quot;</span>;</div>
+<div class="line"><span class="lineno">  174</span>            <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  175</span>        }</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a328337347162b928d9575bc57b3d20da"><div class="ttname"><a href="#a328337347162b928d9575bc57b3d20da">json11::Json::parse</a></div><div class="ttdeci">static Json parse(const std::string &amp;in, std::string &amp;err, JsonParse strategy=JsonParse::STANDARD)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a328337347162b928d9575bc57b3d20da" name="a328337347162b928d9575bc57b3d20da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328337347162b928d9575bc57b3d20da">&#9670;&#160;</a></span>parse() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> json11::Json::parse </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>err</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817b">JsonParse</a></td>          <td class="paramname"><span class="paramname"><em>strategy</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817baeb4339f9804764661370f6c43fdbf746">JsonParse::STANDARD</a></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bbedb3125d6b451a2b0e364da2477fe" name="a7bbedb3125d6b451a2b0e364da2477fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbedb3125d6b451a2b0e364da2477fe">&#9670;&#160;</a></span>parse_multi() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &gt; json11::Json::parse_multi </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>err</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817b">JsonParse</a></td>          <td class="paramname"><span class="paramname"><em>strategy</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817baeb4339f9804764661370f6c43fdbf746">JsonParse::STANDARD</a></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  187</span>                                              {</div>
+<div class="line"><span class="lineno">  188</span>        std::string::size_type parser_stop_pos;</div>
+<div class="line"><span class="lineno">  189</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#ada11e79d24bd8a21869f8c3e36ad9c54">parse_multi</a>(in, parser_stop_pos, err, strategy);</div>
+<div class="line"><span class="lineno">  190</span>    }</div>
+<div class="ttc" id="aclassjson11_1_1_json_html_ada11e79d24bd8a21869f8c3e36ad9c54"><div class="ttname"><a href="#ada11e79d24bd8a21869f8c3e36ad9c54">json11::Json::parse_multi</a></div><div class="ttdeci">static std::vector&lt; Json &gt; parse_multi(const std::string &amp;in, std::string::size_type &amp;parser_stop_pos, std::string &amp;err, JsonParse strategy=JsonParse::STANDARD)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ada11e79d24bd8a21869f8c3e36ad9c54" name="ada11e79d24bd8a21869f8c3e36ad9c54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada11e79d24bd8a21869f8c3e36ad9c54">&#9670;&#160;</a></span>parse_multi() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="#a5fbf95bb641ad8bac78a929fd1164ceb">Json</a> &gt; json11::Json::parse_multi </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string::size_type &amp;</td>          <td class="paramname"><span class="paramname"><em>parser_stop_pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>err</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817b">JsonParse</a></td>          <td class="paramname"><span class="paramname"><em>strategy</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespacejson11.html#a8ed5b6b8d6e11e5cdf2e213e192a817baeb4339f9804764661370f6c43fdbf746">JsonParse::STANDARD</a></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7054ba4a8432d19386e0d16cd69219f0" name="a7054ba4a8432d19386e0d16cd69219f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7054ba4a8432d19386e0d16cd69219f0">&#9670;&#160;</a></span>string_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string &amp; json11::Json::string_value </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  274</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;string_value(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa9c2e69e711a000bdbd424e6b2f06139" name="aa9c2e69e711a000bdbd424e6b2f06139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c2e69e711a000bdbd424e6b2f06139">&#9670;&#160;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a51a2f5c0508c32c3336bcf42ae0233e5">Json::Type</a> json11::Json::type </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  270</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a868af6aa3377a27a7cd1717d78ffda65">m_ptr</a>-&gt;type();         }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a868af6aa3377a27a7cd1717d78ffda65" name="a868af6aa3377a27a7cd1717d78ffda65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a868af6aa3377a27a7cd1717d78ffda65">&#9670;&#160;</a></span>m_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classjson11_1_1_json_value.html">JsonValue</a>&gt; json11::Json::m_ptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/_External/json11/<a class="el" href="json11_8hpp_source.html">json11.hpp</a></li>
+<li>Sources/Framework/_External/json11/<a class="el" href="json11_8cpp.html">json11.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacejson11.html">json11</a></li><li class="navelem"><a href="classjson11_1_1_json.html">Json</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

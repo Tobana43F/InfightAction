@@ -1,0 +1,23 @@
+digraph "NCollision::CGroup"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="NCollision::CGroup",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="複数の当たり判定をまとめて1つの当たり判定を構成する"];
+  Node2 -> Node1 [id="edge1_Node000001_Node000002",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">m_typeDataNone</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node2 [id="Node000002",label="NCollision::CNoneTypeData",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_n_collision_1_1_c_none_type_data.html",tooltip="Noneタイプのあたり判定データ"];
+  Node3 -> Node1 [id="edge2_Node000001_Node000003",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">m_typeDataAttack</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node3 [id="Node000003",label="NCollision::CAttackTypeData",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_n_collision_1_1_c_attack_type_data.html",tooltip="Attackタイプのあたり判定データ"];
+  Node4 -> Node3 [id="edge3_Node000003_Node000004",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">m_knockBackDir</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node4 [id="Node000004",label="NMath::SVector3",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_n_math_1_1_s_vector3.html",tooltip="Vector構造体"];
+  Node5 -> Node4 [id="edge4_Node000004_Node000005",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">vec2</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node5 [id="Node000005",label="NMath::SVector2",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$struct_n_math_1_1_s_vector2.html",tooltip="Vector構造体"];
+  Node6 -> Node1 [id="edge5_Node000001_Node000006",dir="back",color="darkorchid3",style="dashed",tooltip=" ",label=<<TABLE CELLBORDER="0" BORDER="0"><TR><TD VALIGN="top" ALIGN="LEFT" CELLPADDING="1" CELLSPACING="0">m_typeDataDamage</TD></TR>
+</TABLE>> ,fontcolor="grey" ];
+  Node6 [id="Node000006",label="NCollision::CDamageTypeData",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_n_collision_1_1_c_damage_type_data.html",tooltip="Damageタイプのあたり判定データ"];
+}

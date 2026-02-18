@@ -1,0 +1,880 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NObject::CGameObject クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_object_1_1_c_game_object.html','','class_n_object_1_1_c_game_object-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NObject::CGameObject クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ゲーム内のすべてのオブジェクトの基底クラスとなるクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_object___game_object_8h_source.html">Object_GameObject.h</a>&gt;</code></p>
+<div class="dynheader">
+NObject::CGameObject の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_object_1_1_c_game_object.png" usemap="#NObject_3A_3ACGameObject_map" alt=""/>
+  <map id="NObject_3A_3ACGameObject_map" name="NObject_3A_3ACGameObject_map">
+<area href="class_n_object_1_1_c_actor.html" title="ゲーム内のキャラクターや敵の基底クラス" alt="NObject::CActor" shape="rect" coords="153,56,296,80"/>
+<area href="class_n_object_1_1_c_effect.html" title="エフェクトオブジェクトの基底クラス" alt="NObject::CEffect" shape="rect" coords="306,56,449,80"/>
+<area href="class_n_object_1_1_c_player_life_u_i.html" title="プレイヤーの体力を画面上に表示するUI" alt="NObject::CPlayerLifeUI" shape="rect" coords="459,56,602,80"/>
+<area href="class_n_object_1_1_c_screen_fade.html" alt="NObject::CScreenFade" shape="rect" coords="612,56,755,80"/>
+<area href="class_n_object_1_1_c_sky_dome.html" title="スカイドームを管理するクラス" alt="NObject::CSkyDome" shape="rect" coords="765,56,908,80"/>
+<area href="class_n_object_1_1_c_stage.html" title="ステージオブジェクトクラス" alt="NObject::CStage" shape="rect" coords="918,56,1061,80"/>
+<area href="class_n_object_1_1_c_template.html" title="新規オブジェクトのファイルを作成するときのテンプレート ファイルをコピペして名前を変更" alt="NObject::CTemplate" shape="rect" coords="1071,56,1214,80"/>
+<area href="class_n_object_1_1_c_enemy.html" title="敵オブジェクトの基底クラスになるオブジェクト" alt="NObject::CEnemy" shape="rect" coords="76,112,219,136"/>
+<area href="class_n_object_1_1_c_player.html" title="テスト用のキャラクター" alt="NObject::CPlayer" shape="rect" coords="229,112,372,136"/>
+<area href="class_n_object_1_1_c_baby.html" title="雑魚敵(バビー)" alt="NObject::CBaby" shape="rect" coords="0,168,143,192"/>
+<area href="class_n_object_1_1_c_sand_bag.html" title="テスト用の敵" alt="NObject::CSandBag" shape="rect" coords="153,168,296,192"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:ac868ed3d84ef01884da62a5104c55966" id="r_ac868ed3d84ef01884da62a5104c55966"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#ac868ed3d84ef01884da62a5104c55966">EObjectState</a> { <a class="el" href="#ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028">LOAD</a>
+, <a class="el" href="#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">INIT</a>
+, <a class="el" href="#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">UPDATE</a>
+ }</td></tr>
+<tr class="memdesc:ac868ed3d84ef01884da62a5104c55966"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新の制御状態を表す定数  <a href="#ac868ed3d84ef01884da62a5104c55966">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7caf845184ced68122960133aa6b969a" id="r_a7caf845184ced68122960133aa6b969a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7caf845184ced68122960133aa6b969a">Init</a> ()</td></tr>
+<tr class="memdesc:a7caf845184ced68122960133aa6b969a"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化する  <br /></td></tr>
+<tr class="memitem:ae972af9c0b739cf9e802df174efe092a" id="r_ae972af9c0b739cf9e802df174efe092a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae972af9c0b739cf9e802df174efe092a">Update</a> ()</td></tr>
+<tr class="memdesc:ae972af9c0b739cf9e802df174efe092a"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理  <br /></td></tr>
+<tr class="memitem:aafa2ee04d4a01cfd0b2d875f9fb1f99d" id="r_aafa2ee04d4a01cfd0b2d875f9fb1f99d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aafa2ee04d4a01cfd0b2d875f9fb1f99d">Render</a> ()</td></tr>
+<tr class="memdesc:aafa2ee04d4a01cfd0b2d875f9fb1f99d"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画処理  <br /></td></tr>
+<tr class="memitem:aa34046adb0698a3533064c7b3f9cbc22" id="r_aa34046adb0698a3533064c7b3f9cbc22"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa34046adb0698a3533064c7b3f9cbc22">Destroy</a> ()</td></tr>
+<tr class="memdesc:aa34046adb0698a3533064c7b3f9cbc22"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了処理を行う(何度も実行できること)  <br /></td></tr>
+<tr class="memitem:aef389ac261cbf5e5898093a9ac06db66" id="r_aef389ac261cbf5e5898093a9ac06db66"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aef389ac261cbf5e5898093a9ac06db66">SetIsActive</a> (const bool _state)</td></tr>
+<tr class="memdesc:aef389ac261cbf5e5898093a9ac06db66"><td class="mdescLeft">&#160;</td><td class="mdescRight">有効状態を設定  <br /></td></tr>
+<tr class="memitem:a575707b1063df76e98c3aab335b2ce2f" id="r_a575707b1063df76e98c3aab335b2ce2f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a575707b1063df76e98c3aab335b2ce2f">GetIsActive</a> () const</td></tr>
+<tr class="memdesc:a575707b1063df76e98c3aab335b2ce2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">有効状態を取得  <br /></td></tr>
+<tr class="memitem:ad886ead881768ecf2df0ea072a85ba8c" id="r_ad886ead881768ecf2df0ea072a85ba8c"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_transform.html">CTransform</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a> ()</td></tr>
+<tr class="memdesc:ad886ead881768ecf2df0ea072a85ba8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transformを取得  <br /></td></tr>
+<tr class="memitem:a73af1188d97ef39ca6fe57ad32c3323f" id="r_a73af1188d97ef39ca6fe57ad32c3323f"><td class="memItemLeft">const <a class="el" href="class_n_object_1_1_c_transform.html">CTransform</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a73af1188d97ef39ca6fe57ad32c3323f">GetTransform</a> () const</td></tr>
+<tr class="memitem:ad728b6ed026185583ce27041d2b7b08f" id="r_ad728b6ed026185583ce27041d2b7b08f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad728b6ed026185583ce27041d2b7b08f">CGameObject</a> ()</td></tr>
+<tr class="memitem:a6093be13fcbfbd54e4b4176434c5cad3" id="r_a6093be13fcbfbd54e4b4176434c5cad3"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a6093be13fcbfbd54e4b4176434c5cad3">~CGameObject</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf" id="r_a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf">LoadProc</a> ()</td></tr>
+<tr class="memdesc:a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロードをマルチスレッドで行うための  <br /></td></tr>
+<tr class="memitem:a5dbe0f6403317df773e8f98e2f356473" id="r_a5dbe0f6403317df773e8f98e2f356473"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a5dbe0f6403317df773e8f98e2f356473">ReleaseProc</a> ()</td></tr>
+<tr class="memdesc:a5dbe0f6403317df773e8f98e2f356473"><td class="mdescLeft">&#160;</td><td class="mdescRight">解放を行う(1度だけ実行する)  <br /></td></tr>
+<tr class="memitem:a23b6fe4648cbdca08aef03edaa54a9eb" id="r_a23b6fe4648cbdca08aef03edaa54a9eb"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a23b6fe4648cbdca08aef03edaa54a9eb">InitProc</a> ()</td></tr>
+<tr class="memdesc:a23b6fe4648cbdca08aef03edaa54a9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化を行う(何度も実行できること)  <br /></td></tr>
+<tr class="memitem:a3859fb52e837d045b90942ddd4d24426" id="r_a3859fb52e837d045b90942ddd4d24426"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3859fb52e837d045b90942ddd4d24426">DestroyProc</a> ()</td></tr>
+<tr class="memdesc:a3859fb52e837d045b90942ddd4d24426"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了処理を行う(何度も実行できること)  <br /></td></tr>
+<tr class="memitem:a9671b365fe9ebe98c4d7c1dda3633d7e" id="r_a9671b365fe9ebe98c4d7c1dda3633d7e"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9671b365fe9ebe98c4d7c1dda3633d7e">UpdateFastProc</a> ()</td></tr>
+<tr class="memdesc:a9671b365fe9ebe98c4d7c1dda3633d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">処理順の制御のために、通常のUpdateより早く実行される更新関数  <br /></td></tr>
+<tr class="memitem:aed62e95b20bfdd55f3c7114e1e41a358" id="r_aed62e95b20bfdd55f3c7114e1e41a358"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aed62e95b20bfdd55f3c7114e1e41a358">UpdateProc</a> ()</td></tr>
+<tr class="memdesc:aed62e95b20bfdd55f3c7114e1e41a358"><td class="mdescLeft">&#160;</td><td class="mdescRight">継承後の更新処理  <br /></td></tr>
+<tr class="memitem:a35666e8b9094cfdc534b9e8c8daffcfd" id="r_a35666e8b9094cfdc534b9e8c8daffcfd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a35666e8b9094cfdc534b9e8c8daffcfd">UpdateLateProc</a> ()</td></tr>
+<tr class="memdesc:a35666e8b9094cfdc534b9e8c8daffcfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">処理順の制御のために、通常のUpdateより遅く実行される更新関数  <br /></td></tr>
+<tr class="memitem:a7eb3b5d63e38651310bc5eb0c553d233" id="r_a7eb3b5d63e38651310bc5eb0c553d233"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a7eb3b5d63e38651310bc5eb0c553d233">RenderProc</a> ()</td></tr>
+<tr class="memdesc:a7eb3b5d63e38651310bc5eb0c553d233"><td class="mdescLeft">&#160;</td><td class="mdescRight">継承後の描画処理  <br /></td></tr>
+<tr class="memitem:af14b5482da4191a057aea2a87730e965" id="r_af14b5482da4191a057aea2a87730e965"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#af14b5482da4191a057aea2a87730e965">RenderLateProc</a> ()</td></tr>
+<tr class="memdesc:af14b5482da4191a057aea2a87730e965"><td class="mdescLeft">&#160;</td><td class="mdescRight">継承後の通常のタイミングより遅い描画  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a16667b502ed32b24ab4de9584f4daec1" id="r_a16667b502ed32b24ab4de9584f4daec1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a16667b502ed32b24ab4de9584f4daec1">m_isActive</a></td></tr>
+<tr class="memitem:af065ef0c257ad1b320686b6bb221925a" id="r_af065ef0c257ad1b320686b6bb221925a"><td class="memItemLeft"><a class="el" href="#ac868ed3d84ef01884da62a5104c55966">EObjectState</a>&#160;</td><td class="memItemRight"><a class="el" href="#af065ef0c257ad1b320686b6bb221925a">m_objState</a></td></tr>
+<tr class="memitem:aa0532d7e35242c2a279404331820ec4c" id="r_aa0532d7e35242c2a279404331820ec4c"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_transform.html">CTransform</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa0532d7e35242c2a279404331820ec4c">m_transform</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>ゲーム内のすべてのオブジェクトの基底クラスとなるクラス </p>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型メンバ詳解</h2>
+<a id="ac868ed3d84ef01884da62a5104c55966" name="ac868ed3d84ef01884da62a5104c55966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac868ed3d84ef01884da62a5104c55966">&#9670;&#160;</a></span>EObjectState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ac868ed3d84ef01884da62a5104c55966">NObject::CGameObject::EObjectState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新の制御状態を表す定数 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028" name="ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028"></a>LOAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498" name="ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498"></a>INIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4" name="ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4"></a>UPDATE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>                                {</div>
+<div class="line"><span class="lineno">   13</span>            LOAD,           <span class="comment">// ロードを行う</span></div>
+<div class="line"><span class="lineno">   14</span>            INIT,           <span class="comment">// 初期化を行う</span></div>
+<div class="line"><span class="lineno">   15</span>            UPDATE,         <span class="comment">// 更新を行う</span></div>
+<div class="line"><span class="lineno">   16</span>        };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="ad728b6ed026185583ce27041d2b7b08f" name="ad728b6ed026185583ce27041d2b7b08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad728b6ed026185583ce27041d2b7b08f">&#9670;&#160;</a></span>CGameObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CGameObject::CGameObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    7</span>                             :</div>
+<div class="line"><span class="lineno">    8</span>        <a class="code hl_variable" href="#a16667b502ed32b24ab4de9584f4daec1">m_isActive</a>(<span class="keyword">true</span>),</div>
+<div class="line"><span class="lineno">    9</span>        <a class="code hl_variable" href="#af065ef0c257ad1b320686b6bb221925a">m_objState</a>(<a class="code hl_enumvalue" href="#ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028">EObjectState::LOAD</a>),</div>
+<div class="line"><span class="lineno">   10</span>        <a class="code hl_variable" href="#aa0532d7e35242c2a279404331820ec4c">m_transform</a>(*<span class="keyword">this</span>)</div>
+<div class="line"><span class="lineno">   11</span>    {</div>
+<div class="line"><span class="lineno">   12</span> </div>
+<div class="line"><span class="lineno">   13</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a16667b502ed32b24ab4de9584f4daec1"><div class="ttname"><a href="#a16667b502ed32b24ab4de9584f4daec1">NObject::CGameObject::m_isActive</a></div><div class="ttdeci">bool m_isActive</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:80</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_aa0532d7e35242c2a279404331820ec4c"><div class="ttname"><a href="#aa0532d7e35242c2a279404331820ec4c">NObject::CGameObject::m_transform</a></div><div class="ttdeci">CTransform m_transform</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:82</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028"><div class="ttname"><a href="#ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028">NObject::CGameObject::EObjectState::LOAD</a></div><div class="ttdeci">@ LOAD</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:13</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_af065ef0c257ad1b320686b6bb221925a"><div class="ttname"><a href="#af065ef0c257ad1b320686b6bb221925a">NObject::CGameObject::m_objState</a></div><div class="ttdeci">EObjectState m_objState</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:81</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6093be13fcbfbd54e4b4176434c5cad3" name="a6093be13fcbfbd54e4b4176434c5cad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6093be13fcbfbd54e4b4176434c5cad3">&#9670;&#160;</a></span>~CGameObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CGameObject::~CGameObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   17</span>    {</div>
+<div class="line"><span class="lineno">   18</span>        <a class="code hl_function" href="#aa34046adb0698a3533064c7b3f9cbc22">Destroy</a>();</div>
+<div class="line"><span class="lineno">   19</span>        <a class="code hl_function" href="#a5dbe0f6403317df773e8f98e2f356473">ReleaseProc</a>();</div>
+<div class="line"><span class="lineno">   20</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a5dbe0f6403317df773e8f98e2f356473"><div class="ttname"><a href="#a5dbe0f6403317df773e8f98e2f356473">NObject::CGameObject::ReleaseProc</a></div><div class="ttdeci">virtual void ReleaseProc()</div><div class="ttdoc">解放を行う(1度だけ実行する)</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:51</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_aa34046adb0698a3533064c7b3f9cbc22"><div class="ttname"><a href="#aa34046adb0698a3533064c7b3f9cbc22">NObject::CGameObject::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdoc">終了処理を行う(何度も実行できること)</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="aa34046adb0698a3533064c7b3f9cbc22" name="aa34046adb0698a3533064c7b3f9cbc22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34046adb0698a3533064c7b3f9cbc22">&#9670;&#160;</a></span>Destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CGameObject::Destroy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>終了処理を行う(何度も実行できること) </p>
+<dl class="section note"><dt>覚え書き</dt><dd>使用することはあまりない </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>    {</div>
+<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#af065ef0c257ad1b320686b6bb221925a">m_objState</a> == <a class="code hl_enumvalue" href="#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">EObjectState::UPDATE</a>) {</div>
+<div class="line"><span class="lineno">   32</span>            <a class="code hl_function" href="#a3859fb52e837d045b90942ddd4d24426">DestroyProc</a>();</div>
+<div class="line"><span class="lineno">   33</span>            <a class="code hl_variable" href="#af065ef0c257ad1b320686b6bb221925a">m_objState</a> = <a class="code hl_enumvalue" href="#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">EObjectState::INIT</a>;</div>
+<div class="line"><span class="lineno">   34</span>        }</div>
+<div class="line"><span class="lineno">   35</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a3859fb52e837d045b90942ddd4d24426"><div class="ttname"><a href="#a3859fb52e837d045b90942ddd4d24426">NObject::CGameObject::DestroyProc</a></div><div class="ttdeci">virtual void DestroyProc()</div><div class="ttdoc">終了処理を行う(何度も実行できること)</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:58</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4"><div class="ttname"><a href="#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">NObject::CGameObject::EObjectState::UPDATE</a></div><div class="ttdeci">@ UPDATE</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:15</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498"><div class="ttname"><a href="#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">NObject::CGameObject::EObjectState::INIT</a></div><div class="ttdeci">@ INIT</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3859fb52e837d045b90942ddd4d24426" name="a3859fb52e837d045b90942ddd4d24426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3859fb52e837d045b90942ddd4d24426">&#9670;&#160;</a></span>DestroyProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NObject::CGameObject::DestroyProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>終了処理を行う(何度も実行できること) </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#ae5cfbf16dfd6fd43f8848df415373cda">NObject::CActor</a>, <a class="el" href="class_n_object_1_1_c_baby.html#a2905ae0d60d7fc24f9a152a96188d949">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_effect.html#a4c1d920935628b205b7b98bf021f3cfa">NObject::CEffect</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#a756e3eb0c7294e98f981e2a0ec2164d2">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a1572c5b31e10cc8758634be5d54a4a20">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#ae17ebd0447def973c9f2ffb0dc6de975">NObject::CSandBag</a>, <a class="el" href="class_n_object_1_1_c_sky_dome.html#a815414a76241d70a08d609654c48e776">NObject::CSkyDome</a>, <a class="el" href="class_n_object_1_1_c_stage.html#a3e0968a7227d9760e79e6e455c47369e">NObject::CStage</a>, <a class="el" href="class_n_object_1_1_c_template.html#a6c7a7bf09296988975303e7a3c597881">NObject::CTemplate</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a575707b1063df76e98c3aab335b2ce2f" name="a575707b1063df76e98c3aab335b2ce2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575707b1063df76e98c3aab335b2ce2f">&#9670;&#160;</a></span>GetIsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NObject::CGameObject::GetIsActive </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>有効状態を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a16667b502ed32b24ab4de9584f4daec1">m_isActive</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad886ead881768ecf2df0ea072a85ba8c" name="ad886ead881768ecf2df0ea072a85ba8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad886ead881768ecf2df0ea072a85ba8c">&#9670;&#160;</a></span>GetTransform() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_transform.html">CTransform</a> &amp; NObject::CGameObject::GetTransform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transformを取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aa0532d7e35242c2a279404331820ec4c">m_transform</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a73af1188d97ef39ca6fe57ad32c3323f" name="a73af1188d97ef39ca6fe57ad32c3323f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73af1188d97ef39ca6fe57ad32c3323f">&#9670;&#160;</a></span>GetTransform() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_n_object_1_1_c_transform.html">CTransform</a> &amp; NObject::CGameObject::GetTransform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   40</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aa0532d7e35242c2a279404331820ec4c">m_transform</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7caf845184ced68122960133aa6b969a" name="a7caf845184ced68122960133aa6b969a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7caf845184ced68122960133aa6b969a">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CGameObject::Init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期化する </p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>    {</div>
+<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#af065ef0c257ad1b320686b6bb221925a">m_objState</a> != <a class="code hl_enumvalue" href="#ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028">EObjectState::LOAD</a>) {</div>
+<div class="line"><span class="lineno">   25</span>            <a class="code hl_variable" href="#af065ef0c257ad1b320686b6bb221925a">m_objState</a> = <a class="code hl_enumvalue" href="#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">EObjectState::INIT</a>;</div>
+<div class="line"><span class="lineno">   26</span>        }</div>
+<div class="line"><span class="lineno">   27</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a23b6fe4648cbdca08aef03edaa54a9eb" name="a23b6fe4648cbdca08aef03edaa54a9eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b6fe4648cbdca08aef03edaa54a9eb">&#9670;&#160;</a></span>InitProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NObject::CGameObject::InitProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化を行う(何度も実行できること) </p>
+<dl class="section note"><dt>覚え書き</dt><dd>初期化後は状態を「更新」にする </dd></dl>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#abfb91156fbb7ea5c2675dd536badeefa">NObject::CActor</a>, <a class="el" href="class_n_object_1_1_c_baby.html#aaf0990059d9fff85fad07771a860c8cb">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_effect.html#a70add0d2ac6b1c6cde017fa56fce74ce">NObject::CEffect</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#a3bf14b248e8b63ec4273813b5f23c1e9">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a2ebd64f87333b1dfd5eb4ee2eb0d9e73">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_player_life_u_i.html#ac9a34d39039c5141da162ebc9fa5add5">NObject::CPlayerLifeUI</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#aeff33160c469899775a3d8ab765aa524">NObject::CSandBag</a>, <a class="el" href="class_n_object_1_1_c_screen_fade.html#a3d4c787d3e1d4cdd2fbfa37fae5107f9">NObject::CScreenFade</a>, <a class="el" href="class_n_object_1_1_c_sky_dome.html#a14c556fde441602998877bd31b1f3001">NObject::CSkyDome</a>, <a class="el" href="class_n_object_1_1_c_stage.html#a791e9ff750b0e0897e6c330df7dd41e2">NObject::CStage</a>, <a class="el" href="class_n_object_1_1_c_template.html#aacbd4201f304657bbbac17267a6293f0">NObject::CTemplate</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>{ <a class="code hl_variable" href="#af065ef0c257ad1b320686b6bb221925a">m_objState</a> = <a class="code hl_enumvalue" href="#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">EObjectState::UPDATE</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf" name="a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf">&#9670;&#160;</a></span>LoadProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NObject::CGameObject::LoadProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ロードをマルチスレッドで行うための </p>
+<p>読み込みを行う(1度だけ実行する) </p><dl class="section note"><dt>覚え書き</dt><dd>ロード後は状態を「初期化」にする </dd></dl>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#a00605d237d20cb04f1bc174b6d9e7a96">NObject::CActor</a>, <a class="el" href="class_n_object_1_1_c_baby.html#a61c7178946ee9b537f1564f2a441b3cb">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_effect.html#a52c43da0f88ab4dbe7d26c31b465753b">NObject::CEffect</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#ae5b791d58e7c004bedc7706b8bc82787">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a2244413c71a89f3481bb06d8ccc2c3fb">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_player_life_u_i.html#a9385baf58fb7015ea9a6d74f7b8f8c45">NObject::CPlayerLifeUI</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a6e7705e69159c4e79de875796a34edd8">NObject::CSandBag</a>, <a class="el" href="class_n_object_1_1_c_sky_dome.html#af34a202227841d7780f9382a8d11fc96">NObject::CSkyDome</a>, <a class="el" href="class_n_object_1_1_c_stage.html#abd5643726dfc73c5a3b2e949194cb005">NObject::CStage</a>, <a class="el" href="class_n_object_1_1_c_template.html#a0504ea34c9a7d484d44fb517ff81f927">NObject::CTemplate</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{ <a class="code hl_variable" href="#af065ef0c257ad1b320686b6bb221925a">m_objState</a> = <a class="code hl_enumvalue" href="#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">EObjectState::INIT</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5dbe0f6403317df773e8f98e2f356473" name="a5dbe0f6403317df773e8f98e2f356473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dbe0f6403317df773e8f98e2f356473">&#9670;&#160;</a></span>ReleaseProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NObject::CGameObject::ReleaseProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解放を行う(1度だけ実行する) </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#ab7f20137067f7bc3f40de624e83f8857">NObject::CActor</a>, <a class="el" href="class_n_object_1_1_c_baby.html#a7b1223a64c7e493d3795353195801185">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_effect.html#af7cb5896228a50a1e4346e12a5859678">NObject::CEffect</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#ac13138c79ba760a169d24e46d220192f">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a643d389942f1d7f01606724daac7a5e6">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a0b15e7be6b726548cf51993d68bc3219">NObject::CSandBag</a>, <a class="el" href="class_n_object_1_1_c_sky_dome.html#a0dc74e204e1f1037508945178c8c3158">NObject::CSkyDome</a>, <a class="el" href="class_n_object_1_1_c_stage.html#abbd520613dee25875ab7c5e6602fc15e">NObject::CStage</a>, <a class="el" href="class_n_object_1_1_c_template.html#a81830bd4de350c1e96baeb57231c6d4e">NObject::CTemplate</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aafa2ee04d4a01cfd0b2d875f9fb1f99d" name="aafa2ee04d4a01cfd0b2d875f9fb1f99d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa2ee04d4a01cfd0b2d875f9fb1f99d">&#9670;&#160;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CGameObject::Render </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>描画処理 </p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>    {</div>
+<div class="line"><span class="lineno">   58</span>        <span class="comment">// 有効状態ではないときは描画を行わない</span></div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a16667b502ed32b24ab4de9584f4daec1">m_isActive</a>) {</div>
+<div class="line"><span class="lineno">   60</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   61</span>        }</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>        <span class="comment">// 座標と方向を描画</span></div>
+<div class="line"><span class="lineno">   64</span><span class="preprocessor">    #ifdef _GAME_DEBUG</span></div>
+<div class="line"><span class="lineno">   65</span>        NMath::SMatrix44 mat;</div>
+<div class="line"><span class="lineno">   66</span>        <a class="code hl_function" href="#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a>().<a class="code hl_function" href="class_n_object_1_1_c_transform.html#ab2a3fa0c33dee0bf2645048370458484">CalcWorldMatrix</a>(mat);</div>
+<div class="line"><span class="lineno">   67</span>        <a class="code hl_function" href="namespace_n_debug.html#a21f7d89018f05ec87cc49bf5e5ae3210">NDebug::RenderAxisDir</a>(mat, 1.0f);</div>
+<div class="line"><span class="lineno">   68</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>        <span class="comment">// 継承後の描画</span></div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_function" href="#a7eb3b5d63e38651310bc5eb0c553d233">RenderProc</a>();</div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_function" href="#af14b5482da4191a057aea2a87730e965">RenderLateProc</a>();</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a7eb3b5d63e38651310bc5eb0c553d233"><div class="ttname"><a href="#a7eb3b5d63e38651310bc5eb0c553d233">NObject::CGameObject::RenderProc</a></div><div class="ttdeci">virtual void RenderProc()</div><div class="ttdoc">継承後の描画処理</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:72</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ad886ead881768ecf2df0ea072a85ba8c"><div class="ttname"><a href="#ad886ead881768ecf2df0ea072a85ba8c">NObject::CGameObject::GetTransform</a></div><div class="ttdeci">CTransform &amp; GetTransform()</div><div class="ttdoc">Transformを取得</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:39</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_af14b5482da4191a057aea2a87730e965"><div class="ttname"><a href="#af14b5482da4191a057aea2a87730e965">NObject::CGameObject::RenderLateProc</a></div><div class="ttdeci">virtual void RenderLateProc()</div><div class="ttdoc">継承後の通常のタイミングより遅い描画</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:76</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_ab2a3fa0c33dee0bf2645048370458484"><div class="ttname"><a href="class_n_object_1_1_c_transform.html#ab2a3fa0c33dee0bf2645048370458484">NObject::CTransform::CalcWorldMatrix</a></div><div class="ttdeci">void CalcWorldMatrix(NMath::SMatrix44 &amp;_rDest) const</div><div class="ttdoc">ワールド行列を計算する</div><div class="ttdef"><b>Definition</b> Object_Transform.cpp:102</div></div>
+<div class="ttc" id="anamespace_n_debug_html_a21f7d89018f05ec87cc49bf5e5ae3210"><div class="ttname"><a href="namespace_n_debug.html#a21f7d89018f05ec87cc49bf5e5ae3210">NDebug::RenderAxisDir</a></div><div class="ttdeci">void RenderAxisDir(const NMath::SMatrix44 &amp;_rMat, const float _length, const float _alpha)</div><div class="ttdoc">軸方向を描画</div><div class="ttdef"><b>Definition</b> Debug_Util.cpp:49</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af14b5482da4191a057aea2a87730e965" name="af14b5482da4191a057aea2a87730e965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af14b5482da4191a057aea2a87730e965">&#9670;&#160;</a></span>RenderLateProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NObject::CGameObject::RenderLateProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>継承後の通常のタイミングより遅い描画 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>デバッグ描画用や、アルファ値を含む描画の描画順を制御するときに使用する </dd></dl>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#aeaf6c5cbda74c554d865125e22402dd5">NObject::CActor</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#af776656f7735d7e7c271d298319e26b5">NObject::CEnemy</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7eb3b5d63e38651310bc5eb0c553d233" name="a7eb3b5d63e38651310bc5eb0c553d233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb3b5d63e38651310bc5eb0c553d233">&#9670;&#160;</a></span>RenderProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NObject::CGameObject::RenderProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>継承後の描画処理 </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#a3b0c38c414fe7d1db6de80d60c0179a7">NObject::CActor</a>, <a class="el" href="class_n_object_1_1_c_baby.html#a03b8d270b43fcd4df2940b299c6c92af">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_effect.html#a3fd5bacdb237cd0d8d8df7fb4aa2a523">NObject::CEffect</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#ac74413c0a2d99763ad1ab936bda04697">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a5525eb0f01a67ba0e7034f285a9bed61">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_player_life_u_i.html#a72cbbc0941b56aa2361fb0f5d942423e">NObject::CPlayerLifeUI</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a82764050167beb3909297d64e8b9a61b">NObject::CSandBag</a>, <a class="el" href="class_n_object_1_1_c_screen_fade.html#a498294bb975e0d063b403ba228b9c2a7">NObject::CScreenFade</a>, <a class="el" href="class_n_object_1_1_c_sky_dome.html#a50d7699e2d203f7fde464a33abc547fd">NObject::CSkyDome</a>, <a class="el" href="class_n_object_1_1_c_stage.html#a432449165caf5b780aee420cba804c06">NObject::CStage</a>, <a class="el" href="class_n_object_1_1_c_template.html#a883910b0add729e720ae2fb72fb78f15">NObject::CTemplate</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aef389ac261cbf5e5898093a9ac06db66" name="aef389ac261cbf5e5898093a9ac06db66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef389ac261cbf5e5898093a9ac06db66">&#9670;&#160;</a></span>SetIsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CGameObject::SetIsActive </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>有効状態を設定 </p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <a class="code hl_variable" href="#a16667b502ed32b24ab4de9584f4daec1">m_isActive</a> = _state; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae972af9c0b739cf9e802df174efe092a" name="ae972af9c0b739cf9e802df174efe092a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae972af9c0b739cf9e802df174efe092a">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CGameObject::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新処理 </p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>    {</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">switch</span> (<a class="code hl_variable" href="#af065ef0c257ad1b320686b6bb221925a">m_objState</a>) {</div>
+<div class="line"><span class="lineno">   41</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028">EObjectState::LOAD</a>:</div>
+<div class="line"><span class="lineno">   42</span>                <a class="code hl_function" href="#a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf">LoadProc</a>();</div>
+<div class="line"><span class="lineno">   43</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">EObjectState::INIT</a>:</div>
+<div class="line"><span class="lineno">   44</span>                <a class="code hl_function" href="#a23b6fe4648cbdca08aef03edaa54a9eb">InitProc</a>();</div>
+<div class="line"><span class="lineno">   45</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">EObjectState::UPDATE</a>:</div>
+<div class="line"><span class="lineno">   46</span>                <span class="comment">// 有効状態の時のみ更新する</span></div>
+<div class="line"><span class="lineno">   47</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a16667b502ed32b24ab4de9584f4daec1">m_isActive</a>) {</div>
+<div class="line"><span class="lineno">   48</span>                    <a class="code hl_function" href="#a9671b365fe9ebe98c4d7c1dda3633d7e">UpdateFastProc</a>();</div>
+<div class="line"><span class="lineno">   49</span>                    <a class="code hl_function" href="#aed62e95b20bfdd55f3c7114e1e41a358">UpdateProc</a>();</div>
+<div class="line"><span class="lineno">   50</span>                    <a class="code hl_function" href="#a35666e8b9094cfdc534b9e8c8daffcfd">UpdateLateProc</a>();</div>
+<div class="line"><span class="lineno">   51</span>                }</div>
+<div class="line"><span class="lineno">   52</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   53</span>        }</div>
+<div class="line"><span class="lineno">   54</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a23b6fe4648cbdca08aef03edaa54a9eb"><div class="ttname"><a href="#a23b6fe4648cbdca08aef03edaa54a9eb">NObject::CGameObject::InitProc</a></div><div class="ttdeci">virtual void InitProc()</div><div class="ttdoc">初期化を行う(何度も実行できること)</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:55</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a35666e8b9094cfdc534b9e8c8daffcfd"><div class="ttname"><a href="#a35666e8b9094cfdc534b9e8c8daffcfd">NObject::CGameObject::UpdateLateProc</a></div><div class="ttdeci">virtual void UpdateLateProc()</div><div class="ttdoc">処理順の制御のために、通常のUpdateより遅く実行される更新関数</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:69</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf"><div class="ttname"><a href="#a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf">NObject::CGameObject::LoadProc</a></div><div class="ttdeci">virtual void LoadProc()</div><div class="ttdoc">ロードをマルチスレッドで行うための</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:48</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a9671b365fe9ebe98c4d7c1dda3633d7e"><div class="ttname"><a href="#a9671b365fe9ebe98c4d7c1dda3633d7e">NObject::CGameObject::UpdateFastProc</a></div><div class="ttdeci">virtual void UpdateFastProc()</div><div class="ttdoc">処理順の制御のために、通常のUpdateより早く実行される更新関数</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:62</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_aed62e95b20bfdd55f3c7114e1e41a358"><div class="ttname"><a href="#aed62e95b20bfdd55f3c7114e1e41a358">NObject::CGameObject::UpdateProc</a></div><div class="ttdeci">virtual void UpdateProc()</div><div class="ttdoc">継承後の更新処理</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:65</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9671b365fe9ebe98c4d7c1dda3633d7e" name="a9671b365fe9ebe98c4d7c1dda3633d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9671b365fe9ebe98c4d7c1dda3633d7e">&#9670;&#160;</a></span>UpdateFastProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NObject::CGameObject::UpdateFastProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>処理順の制御のために、通常のUpdateより早く実行される更新関数 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>できる限り使用せず、UpdateProcを使用すること。 </dd></dl>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#aae1df8321bb51d12789de0d58a74f659">NObject::CActor</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a35666e8b9094cfdc534b9e8c8daffcfd" name="a35666e8b9094cfdc534b9e8c8daffcfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35666e8b9094cfdc534b9e8c8daffcfd">&#9670;&#160;</a></span>UpdateLateProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NObject::CGameObject::UpdateLateProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>処理順の制御のために、通常のUpdateより遅く実行される更新関数 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>できる限り使用せず、UpdateProcを使用すること。 </dd></dl>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#ac0e325ecdadbe7ed196c78cbd1f04304">NObject::CActor</a>, <a class="el" href="class_n_object_1_1_c_baby.html#a0aba960950dbadea91728fee6a4aa314">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_player.html#a3d9988f7a1e8d946e6375ef69f7cee85">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a9642fb3bea1eca8cd7f1cbf2fccae965">NObject::CSandBag</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aed62e95b20bfdd55f3c7114e1e41a358" name="aed62e95b20bfdd55f3c7114e1e41a358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed62e95b20bfdd55f3c7114e1e41a358">&#9670;&#160;</a></span>UpdateProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NObject::CGameObject::UpdateProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>継承後の更新処理 </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#aa17dd9c0f95776494fcbbeed679a9a51">NObject::CActor</a>, <a class="el" href="class_n_object_1_1_c_baby.html#a79f18b19770d1e0e08c5c927cb06369e">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_effect.html#a66e5f672f53cdc9bdb99d7fe8eb22b55">NObject::CEffect</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#acf48bf6615a7e736aaca21f8fb3a05eb">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#aa3e6e924c56d23bf27f0baee8472d19d">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_player_life_u_i.html#af050265879d484bdc27bfff5be947fc3">NObject::CPlayerLifeUI</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a7411a6e50e716252dc3c4320501ce648">NObject::CSandBag</a>, <a class="el" href="class_n_object_1_1_c_screen_fade.html#a617a03934d7ab7559e1908bfbef63b76">NObject::CScreenFade</a>, <a class="el" href="class_n_object_1_1_c_sky_dome.html#a480f8e754a3ae7acd111216b7906d166">NObject::CSkyDome</a>, <a class="el" href="class_n_object_1_1_c_stage.html#a8a8a080aba83fde3d5c00fe9a227335e">NObject::CStage</a>, <a class="el" href="class_n_object_1_1_c_template.html#a56018b8887ba347bc7e2ecd76b668590">NObject::CTemplate</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{  }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a16667b502ed32b24ab4de9584f4daec1" name="a16667b502ed32b24ab4de9584f4daec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16667b502ed32b24ab4de9584f4daec1">&#9670;&#160;</a></span>m_isActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NObject::CGameObject::m_isActive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af065ef0c257ad1b320686b6bb221925a" name="af065ef0c257ad1b320686b6bb221925a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af065ef0c257ad1b320686b6bb221925a">&#9670;&#160;</a></span>m_objState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac868ed3d84ef01884da62a5104c55966">EObjectState</a> NObject::CGameObject::m_objState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0532d7e35242c2a279404331820ec4c" name="aa0532d7e35242c2a279404331820ec4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0532d7e35242c2a279404331820ec4c">&#9670;&#160;</a></span>m_transform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_transform.html">CTransform</a> NObject::CGameObject::m_transform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Object/<a class="el" href="_object___game_object_8h_source.html">Object_GameObject.h</a></li>
+<li>Sources/Framework/Object/<a class="el" href="_object___game_object_8cpp.html">Object_GameObject.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_object.html">NObject</a></li><li class="navelem"><a href="class_n_object_1_1_c_game_object.html">CGameObject</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

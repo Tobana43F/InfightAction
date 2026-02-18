@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Math/Vector/Math_Vector2.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_math___vector2_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Math_Vector2.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;DirectXMath.h&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+</div>
+<p><a href="_math___vector2_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:NMath_3A_3ASVector2" id="r_NMath_3A_3ASVector2"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector構造体  <a href="struct_n_math_1_1_s_vector2.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:NMath" id="r_NMath"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_math.html">NMath</a></td></tr>
+<tr class="memdesc:namespace_n_math"><td class="mdescLeft">&#160;</td><td class="mdescRight">基本的な計算を行う関数群 <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ac37ffcf39bd4f3c566c2c043b8218420" id="r_ac37ffcf39bd4f3c566c2c043b8218420"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac37ffcf39bd4f3c566c2c043b8218420">operator+</a> (const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_rhs)</td></tr>
+<tr class="memitem:a8c0d297490974734597ccda9a5af4245" id="r_a8c0d297490974734597ccda9a5af4245"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8c0d297490974734597ccda9a5af4245">operator-</a> (const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_rhs)</td></tr>
+<tr class="memitem:aa7c82c8a4508ce1543d5ec72ef6e7994" id="r_aa7c82c8a4508ce1543d5ec72ef6e7994"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa7c82c8a4508ce1543d5ec72ef6e7994">operator*</a> (const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_rhs)</td></tr>
+<tr class="memitem:ac48781961349b9620f5424204244ea1d" id="r_ac48781961349b9620f5424204244ea1d"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac48781961349b9620f5424204244ea1d">operator*</a> (const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_lhs, const float &amp;_rhs)</td></tr>
+<tr class="memitem:a2571bbc32488579491b9039341a284b6" id="r_a2571bbc32488579491b9039341a284b6"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2571bbc32488579491b9039341a284b6">operator*</a> (const float &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_rhs)</td></tr>
+<tr class="memitem:a018a6b2adb4439e95bf7c82e15bfe1a0" id="r_a018a6b2adb4439e95bf7c82e15bfe1a0"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a018a6b2adb4439e95bf7c82e15bfe1a0">operator/</a> (const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_rhs)</td></tr>
+<tr class="memitem:afa1cc825fed4e7147e8b7f956599ca22" id="r_afa1cc825fed4e7147e8b7f956599ca22"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#afa1cc825fed4e7147e8b7f956599ca22">operator/</a> (const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_lhs, const float &amp;_rhs)</td></tr>
+<tr class="memitem:a9c2de71436d01c14196c85246126ccf5" id="r_a9c2de71436d01c14196c85246126ccf5"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9c2de71436d01c14196c85246126ccf5">operator/</a> (const float &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;_rhs)</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a2571bbc32488579491b9039341a284b6" name="a2571bbc32488579491b9039341a284b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2571bbc32488579491b9039341a284b6">&#9670;&#160;</a></span>operator*() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  154</span>{</div>
+<div class="line"><span class="lineno">  155</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>(_rhs) *= _lhs;</div>
+<div class="line"><span class="lineno">  156</span>}</div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector2_html"><div class="ttname"><a href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a></div><div class="ttdoc">Vector構造体</div><div class="ttdef"><b>Definition</b> Math_Vector2.h:13</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac48781961349b9620f5424204244ea1d" name="ac48781961349b9620f5424204244ea1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac48781961349b9620f5424204244ea1d">&#9670;&#160;</a></span>operator*() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  149</span>{</div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>(_lhs) *= _rhs;</div>
+<div class="line"><span class="lineno">  151</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa7c82c8a4508ce1543d5ec72ef6e7994" name="aa7c82c8a4508ce1543d5ec72ef6e7994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7c82c8a4508ce1543d5ec72ef6e7994">&#9670;&#160;</a></span>operator*() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  144</span>{</div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>(_lhs) *= _rhs;</div>
+<div class="line"><span class="lineno">  146</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac37ffcf39bd4f3c566c2c043b8218420" name="ac37ffcf39bd4f3c566c2c043b8218420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac37ffcf39bd4f3c566c2c043b8218420">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  134</span>{</div>
+<div class="line"><span class="lineno">  135</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>(_lhs) += _rhs;</div>
+<div class="line"><span class="lineno">  136</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8c0d297490974734597ccda9a5af4245" name="a8c0d297490974734597ccda9a5af4245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0d297490974734597ccda9a5af4245">&#9670;&#160;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  139</span>{</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>(_lhs) -= _rhs;</div>
+<div class="line"><span class="lineno">  141</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9c2de71436d01c14196c85246126ccf5" name="a9c2de71436d01c14196c85246126ccf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c2de71436d01c14196c85246126ccf5">&#9670;&#160;</a></span>operator/() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  169</span>{</div>
+<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>(_rhs) /= _lhs;</div>
+<div class="line"><span class="lineno">  171</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afa1cc825fed4e7147e8b7f956599ca22" name="afa1cc825fed4e7147e8b7f956599ca22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1cc825fed4e7147e8b7f956599ca22">&#9670;&#160;</a></span>operator/() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  164</span>{</div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>(_lhs) /= _rhs;</div>
+<div class="line"><span class="lineno">  166</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a018a6b2adb4439e95bf7c82e15bfe1a0" name="a018a6b2adb4439e95bf7c82e15bfe1a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018a6b2adb4439e95bf7c82e15bfe1a0">&#9670;&#160;</a></span>operator/() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  159</span>{</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>(_lhs) /= _rhs;</div>
+<div class="line"><span class="lineno">  161</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_bc307321e09ac76e33455da22ae3eeba.html">Math</a></li><li class="navelem"><a href="dir_7a3047f484011033794c1a8533e644b4.html">Vector</a></li><li class="navelem"><a href="_math___vector2_8h.html">Math_Vector2.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameFramework/Input/Input_GameBuffer.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_input___game_buffer_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Input_GameBuffer.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_input___game_buffer_8h_source.html">Input_GameBuffer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_debug___assert_8h_source.html">Debug\Debug_Assert.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_input___game_8h_source.html">Input\Input_Game.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:NInput" id="r_NInput"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html">NInput</a></td></tr>
+<tr class="memdesc:namespace_n_input"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力の初期化、更新などの基本的な関数を定義する <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a783101085bb4927079208361167e43de" id="r_a783101085bb4927079208361167e43de"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(_bufArray,  _funcName)</td></tr>
+<tr class="memdesc:a783101085bb4927079208361167e43de"><td class="mdescLeft">&#160;</td><td class="mdescRight">バッファの更新の記述を省略するマクロ  <br /></td></tr>
+<tr class="memitem:abfaed2d8172139ea8c1d397617d9ddf2" id="r_abfaed2d8172139ea8c1d397617d9ddf2"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_idx)</td></tr>
+<tr class="memdesc:abfaed2d8172139ea8c1d397617d9ddf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">バッファオーバーフローを検知するためのアサートの記述を省略するマクロ  <br /></td></tr>
+<tr class="memitem:a58cf183eeb9e2d7214ee290a2c59c273" id="r_a58cf183eeb9e2d7214ee290a2c59c273"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(_boolDest,  _bufArray,  _frame,  _endFrame,  _pDestFrame)</td></tr>
+<tr class="memdesc:a58cf183eeb9e2d7214ee290a2c59c273"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolのゲッターの記述を省略するマクロ  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:aa34f6da070c5d5c6aaaab71c47a8aaaa" id="r_aa34f6da070c5d5c6aaaab71c47a8aaaa"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#aa34f6da070c5d5c6aaaab71c47a8aaaa">NInput::UpdateGameBuffer</a> ()</td></tr>
+<tr class="memdesc:aa34f6da070c5d5c6aaaab71c47a8aaaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">バッファの更新  <br /></td></tr>
+<tr class="memitem:a3f66b246b70eeb4ea5b8a7d1b127e315" id="r_a3f66b246b70eeb4ea5b8a7d1b127e315"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a3f66b246b70eeb4ea5b8a7d1b127e315">NInput::GetUpHold</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a7d1d7f77d28569275f6c78bb090608f1" id="r_a7d1d7f77d28569275f6c78bb090608f1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a7d1d7f77d28569275f6c78bb090608f1">NInput::GetDownHold</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:aba992cbff36110ddacef9f7a290e77d4" id="r_aba992cbff36110ddacef9f7a290e77d4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#aba992cbff36110ddacef9f7a290e77d4">NInput::GetRightHold</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a21c41000b32ff13a447f56db309af04b" id="r_a21c41000b32ff13a447f56db309af04b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a21c41000b32ff13a447f56db309af04b">NInput::GetLeftHold</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:ac7adc997dee4b36b94aa31331ebad7ee" id="r_ac7adc997dee4b36b94aa31331ebad7ee"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#ac7adc997dee4b36b94aa31331ebad7ee">NInput::GetUpTrigger</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:aef39edfbd94c8a76bf81c92be37259af" id="r_aef39edfbd94c8a76bf81c92be37259af"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#aef39edfbd94c8a76bf81c92be37259af">NInput::GetDownTrigger</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a5ff522efaa5d05c764f42e51d95c1954" id="r_a5ff522efaa5d05c764f42e51d95c1954"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a5ff522efaa5d05c764f42e51d95c1954">NInput::GetRightTrigger</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a632ffcc61b905effafe18c7e4eb28d0d" id="r_a632ffcc61b905effafe18c7e4eb28d0d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a632ffcc61b905effafe18c7e4eb28d0d">NInput::GetLeftTrigger</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a90ad17fbf8d7e1236d83a2b23469f262" id="r_a90ad17fbf8d7e1236d83a2b23469f262"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a90ad17fbf8d7e1236d83a2b23469f262">NInput::GetLeftAnalogX</a> (uint _frame)</td></tr>
+<tr class="memitem:a6a356219051e8c590afbae52bef730ec" id="r_a6a356219051e8c590afbae52bef730ec"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a6a356219051e8c590afbae52bef730ec">NInput::GetLeftAnalogY</a> (uint _frame)</td></tr>
+<tr class="memitem:a473a04b3f4712269bf45a70ea19cc35a" id="r_a473a04b3f4712269bf45a70ea19cc35a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a473a04b3f4712269bf45a70ea19cc35a">NInput::GetRightAnalogX</a> (uint _frame)</td></tr>
+<tr class="memitem:af4b8c4243a5cfa29b8b3eb817694df6f" id="r_af4b8c4243a5cfa29b8b3eb817694df6f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#af4b8c4243a5cfa29b8b3eb817694df6f">NInput::GetRightAnalogY</a> (uint _frame)</td></tr>
+<tr class="memitem:a30c30a88d6f1a7ad7ea52cdaf4ea691c" id="r_a30c30a88d6f1a7ad7ea52cdaf4ea691c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a30c30a88d6f1a7ad7ea52cdaf4ea691c">NInput::GetJump</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a16dd50079b0ecb94abdf32d0fd7c43f8" id="r_a16dd50079b0ecb94abdf32d0fd7c43f8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a16dd50079b0ecb94abdf32d0fd7c43f8">NInput::GetAttack1</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="abfaed2d8172139ea8c1d397617d9ddf2" name="abfaed2d8172139ea8c1d397617d9ddf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfaed2d8172139ea8c1d397617d9ddf2">&#9670;&#160;</a></span>AssertBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AssertBuf</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_idx</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_idx &lt; BUF_SIZE &amp;&amp; <span class="stringliteral">&quot;バッファーのサイズ外アクセスです。&quot;</span>)</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+</div><!-- fragment -->
+<p>バッファオーバーフローを検知するためのアサートの記述を省略するマクロ </p>
+
+</div>
+</div>
+<a id="a58cf183eeb9e2d7214ee290a2c59c273" name="a58cf183eeb9e2d7214ee290a2c59c273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58cf183eeb9e2d7214ee290a2c59c273">&#9670;&#160;</a></span>GetBool</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GetBool</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_boolDest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_bufArray</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><span class="keywordflow">if</span> (_endFrame != UINT_MAX) {                                        \</div>
+<div class="line">    Assert(_endFrame &gt; _frame &amp;&amp; <span class="stringliteral">&quot;範囲が正しくありません&quot;</span>);            \</div>
+<div class="line">    for (uint i = _frame; i &lt;= _endFrame; ++i) {                    \</div>
+<div class="line">        _boolDest |= _bufArray[i];                                  \</div>
+<div class="line">        if (_boolDest == <span class="keyword">true</span>) {                                    \</div>
+<div class="line">            if (_pDestFrame != <span class="keyword">nullptr</span>) { *_pDestFrame = i ; }      \</div>
+<div class="line">            <span class="keywordflow">break</span>;                                                  \</div>
+<div class="line">        }                                                           \</div>
+<div class="line">    }                                                               \</div>
+<div class="line">}                                                                   \</div>
+<div class="line"><span class="keywordflow">else</span> {                                                              \</div>
+<div class="line">    _boolDest = _bufArray[_frame];                                  \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>boolのゲッターの記述を省略するマクロ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_boolDest</td><td>結果の代入さき </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_bufArray</td><td>参照するバッファ </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">その他は、ヘッダを参照</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   24</span><span class="preprocessor">#define GetBool(_boolDest, _bufArray, _frame, _endFrame, _pDestFrame)   \</span></div>
+<div class="line"><span class="lineno">   25</span><span class="preprocessor">    if (_endFrame != UINT_MAX) {                                        \</span></div>
+<div class="line"><span class="lineno">   26</span><span class="preprocessor">        Assert(_endFrame &gt; _frame &amp;&amp; &quot;範囲が正しくありません&quot;);            \</span></div>
+<div class="line"><span class="lineno">   27</span><span class="preprocessor">        for (uint i = _frame; i &lt;= _endFrame; ++i) {                    \</span></div>
+<div class="line"><span class="lineno">   28</span><span class="preprocessor">            _boolDest |= _bufArray[i];                                  \</span></div>
+<div class="line"><span class="lineno">   29</span><span class="preprocessor">            if (_boolDest == true) {                                    \</span></div>
+<div class="line"><span class="lineno">   30</span><span class="preprocessor">                if (_pDestFrame != nullptr) { *_pDestFrame = i ; }      \</span></div>
+<div class="line"><span class="lineno">   31</span><span class="preprocessor">                break;                                                  \</span></div>
+<div class="line"><span class="lineno">   32</span><span class="preprocessor">            }                                                           \</span></div>
+<div class="line"><span class="lineno">   33</span><span class="preprocessor">        }                                                               \</span></div>
+<div class="line"><span class="lineno">   34</span><span class="preprocessor">    }                                                                   \</span></div>
+<div class="line"><span class="lineno">   35</span><span class="preprocessor">    else {                                                              \</span></div>
+<div class="line"><span class="lineno">   36</span><span class="preprocessor">        _boolDest = _bufArray[_frame];                                  \</span></div>
+<div class="line"><span class="lineno">   37</span><span class="preprocessor">    }                                                                   </span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a783101085bb4927079208361167e43de" name="a783101085bb4927079208361167e43de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a783101085bb4927079208361167e43de">&#9670;&#160;</a></span>UpdateOldBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define UpdateOldBuffer</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_bufArray</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_funcName</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">    {       \</div>
+<div class="line">    _bufArray[i] = _bufArray[i - 1];                    \</div>
+<div class="line">    if(i == 1){                                         \</div>
+<div class="line">        _bufArray[0] = NInput::_funcName();             \</div>
+<div class="line">    }                                                   \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p>バッファの更新の記述を省略するマクロ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_bufArray</td><td>更新するバッファ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_funcName</td><td>そのバッファの最新情報を取得する関数(NInputの関数) for分で使用するインデックスは整数の i とする </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   10</span><span class="preprocessor">#define UpdateOldBuffer(_bufArray, _funcName)   {       \</span></div>
+<div class="line"><span class="lineno">   11</span><span class="preprocessor">    _bufArray[i] = _bufArray[i - 1];                    \</span></div>
+<div class="line"><span class="lineno">   12</span><span class="preprocessor">    if(i == 1){                                         \</span></div>
+<div class="line"><span class="lineno">   13</span><span class="preprocessor">        _bufArray[0] = NInput::_funcName();             \</span></div>
+<div class="line"><span class="lineno">   14</span><span class="preprocessor">    }                                                   \</span></div>
+<div class="line"><span class="lineno">   15</span><span class="preprocessor">}</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_73b2b7c7692df5153c734ea07eeabb57.html">GameFramework</a></li><li class="navelem"><a href="dir_53a9f986aac2402824f4d7c3aeb38b9f.html">Input</a></li><li class="navelem"><a href="_input___game_buffer_8cpp.html">Input_GameBuffer.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

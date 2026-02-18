@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameApp/Util/Util_GameCommon.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_util___game_common_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Util_GameCommon.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_util___game_common_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//  ゲーム開発で使用するよく使う汎用的な関数を作成する場所</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//  テスト用のカメラ操作などを定義する。</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_camera___global_manager_8h.html">Camera\Camera_GlobalManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_util.html">NUtil</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_util.html#a05ec8d57bb5e7b02be3c43e6cb1464cb">PrintVector</a>(</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> _x,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> _y,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">const</span> NMath::SVector2&amp;  _rSrc);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_util.html#a05ec8d57bb5e7b02be3c43e6cb1464cb">PrintVector</a>(</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> _x,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> _y,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">const</span> NMath::SVector3&amp;  _rSrc);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_util.html#a05ec8d57bb5e7b02be3c43e6cb1464cb">PrintVector</a>(</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> _x,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> _y,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">const</span> NMath::SVector4&amp;  _rSrc);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_util.html#a740f0f692d6064983003b36be50c9d8e">PrintMatrix</a>(</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">const</span> float2&amp;           _pos,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">const</span> NMath::SMatrix44&amp; _mat);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_util.html#a61f0d7d017ec587f5a170abb57a7921e">ToVectorFromCamera</a>(</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        NMath::SVector3&amp;        _dest,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">const</span> NMath::SVector3&amp;  _src,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">NCamera::EManagerIndex</a> camIndex = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">NCamera::EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_util.html#afb7fa73dd1428ec3eea14c135c107e2c">ToVectorFromCameraXZ</a>(</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        NMath::SVector3&amp;        _dest,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">const</span> NMath::SVector3&amp;  _src,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">NCamera::EManagerIndex</a> camIndex = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">NCamera::EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
+<div class="ttc" id="a_camera___global_manager_8h_html"><div class="ttname"><a href="_camera___global_manager_8h.html">Camera_GlobalManager.h</a></div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">NCamera::EManagerIndex</a></div><div class="ttdeci">EManagerIndex</div><div class="ttdoc">カメラ情報をマネージャーに登録するインデックス</div><div class="ttdef"><b>Definition</b> Camera_Def.h:33</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">NCamera::EManagerIndex::MAIN</a></div><div class="ttdeci">@ MAIN</div><div class="ttdef"><b>Definition</b> Camera_Def.h:34</div></div>
+<div class="ttc" id="anamespace_n_util_html"><div class="ttname"><a href="namespace_n_util.html">NUtil</a></div><div class="ttdoc">汎用的な関数をまとめたヘッダ</div><div class="ttdef"><b>Definition</b> Util_Common.cpp:12</div></div>
+<div class="ttc" id="anamespace_n_util_html_a05ec8d57bb5e7b02be3c43e6cb1464cb"><div class="ttname"><a href="namespace_n_util.html#a05ec8d57bb5e7b02be3c43e6cb1464cb">NUtil::PrintVector</a></div><div class="ttdeci">void PrintVector(const float _x, const float _y, const NMath::SVector2 &amp;_rSrc)</div><div class="ttdoc">ベクトルをデバッグフォントで出力</div><div class="ttdef"><b>Definition</b> Util_GameCommon.cpp:9</div></div>
+<div class="ttc" id="anamespace_n_util_html_a61f0d7d017ec587f5a170abb57a7921e"><div class="ttname"><a href="namespace_n_util.html#a61f0d7d017ec587f5a170abb57a7921e">NUtil::ToVectorFromCamera</a></div><div class="ttdeci">void ToVectorFromCamera(NMath::SVector3 &amp;_dest, const NMath::SVector3 &amp;_src, const NCamera::EManagerIndex camIndex)</div><div class="ttdoc">指定したベクトルを現在のカメラからの相対ベクトルにする</div><div class="ttdef"><b>Definition</b> Util_GameCommon.cpp:57</div></div>
+<div class="ttc" id="anamespace_n_util_html_a740f0f692d6064983003b36be50c9d8e"><div class="ttname"><a href="namespace_n_util.html#a740f0f692d6064983003b36be50c9d8e">NUtil::PrintMatrix</a></div><div class="ttdeci">void PrintMatrix(const float2 &amp;_pos, const NMath::SMatrix44 &amp;_mat)</div><div class="ttdoc">行列をデバッグフォントで出力</div><div class="ttdef"><b>Definition</b> Util_GameCommon.cpp:42</div></div>
+<div class="ttc" id="anamespace_n_util_html_afb7fa73dd1428ec3eea14c135c107e2c"><div class="ttname"><a href="namespace_n_util.html#afb7fa73dd1428ec3eea14c135c107e2c">NUtil::ToVectorFromCameraXZ</a></div><div class="ttdeci">void ToVectorFromCameraXZ(NMath::SVector3 &amp;_dest, const NMath::SVector3 &amp;_src, const NCamera::EManagerIndex camIndex)</div><div class="ttdoc">指定したベクトルを指定したカメラからの相対ベクトルにする</div><div class="ttdef"><b>Definition</b> Util_GameCommon.cpp:78</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_f694c4fbc4aebbaf0d8c111126161e66.html">GameApp</a></li><li class="navelem"><a href="dir_10e4626bcad43577a9ce4ae0705b10dc.html">Util</a></li><li class="navelem"><a href="_util___game_common_8h.html">Util_GameCommon.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

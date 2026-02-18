@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Model/Model_Def.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_model___def_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Model_Def.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_model___def_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;array&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_math___type_8h.html">Math\Math_Type.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_direct_x___def_8h.html">DirectX\DirectX_Def.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include    &quot;<a class="code" href="_direct_x___util_8h.html">DirectX\DirectX_Util.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_model.html">NModel</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_vertex.html">   12</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_n_model_1_1_s_vertex.html">SVertex</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_vertex.html#af771a59630cb341c668df8d0bf0e387e">   13</a></span>        <a class="code hl_struct" href="struct_n_math_1_1_s_float3_data.html">NMath::SFloat3Data</a>      <a class="code hl_variable" href="struct_n_model_1_1_s_vertex.html#af771a59630cb341c668df8d0bf0e387e">pos</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_vertex.html#ad03ab3d27f91afe42a6b756259b17342">   14</a></span>        <a class="code hl_struct" href="struct_n_math_1_1_s_float3_data.html">NMath::SFloat3Data</a>      <a class="code hl_variable" href="struct_n_model_1_1_s_vertex.html#ad03ab3d27f91afe42a6b756259b17342">normal</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_vertex.html#a08007f7e178e300b459babf6c0623826">   15</a></span>        <a class="code hl_struct" href="struct_n_math_1_1_s_float2_data.html">NMath::SFloat2Data</a>      <a class="code hl_variable" href="struct_n_model_1_1_s_vertex.html#a08007f7e178e300b459babf6c0623826">texCoord</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    };</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_const_material.html">   19</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_n_model_1_1_s_const_material.html">SConstMaterial</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_const_material.html#af3399eef8531115118cd0f80e97dbfd6">   20</a></span>        float4      <a class="code hl_variable" href="struct_n_model_1_1_s_const_material.html#af3399eef8531115118cd0f80e97dbfd6">ambient</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_const_material.html#aa832bfaf75ba15a421f5424ceae96cfc">   21</a></span>        float4      <a class="code hl_variable" href="struct_n_model_1_1_s_const_material.html#aa832bfaf75ba15a421f5424ceae96cfc">diffuse</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_const_material.html#a4adeb63385d92d06a7eccd26ebc9989e">   22</a></span>        float4      <a class="code hl_variable" href="struct_n_model_1_1_s_const_material.html#a4adeb63385d92d06a7eccd26ebc9989e">specular</a>;   </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_const_material.html#aee1261c2b323ed4a335e8a6f14343602">   23</a></span>        float4      <a class="code hl_variable" href="struct_n_model_1_1_s_const_material.html#aee1261c2b323ed4a335e8a6f14343602">emmisive</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    };</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html">   27</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="struct_n_model_1_1_s_material.html#af539f0c6d40630456df174043861069d">SMaterial</a> {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html#af92a3bd26816867d82f0d31669e67964">   28</a></span>        float4          <a class="code hl_variable" href="struct_n_model_1_1_s_material.html#af92a3bd26816867d82f0d31669e67964">ambient</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html#ae5fabd61e0b10c68c4a98a2591de67a9">   29</a></span>        float4          <a class="code hl_variable" href="struct_n_model_1_1_s_material.html#ae5fabd61e0b10c68c4a98a2591de67a9">diffuse</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html#a338179716e40d6acee59722d716281d8">   30</a></span>        float4          <a class="code hl_variable" href="struct_n_model_1_1_s_material.html#a338179716e40d6acee59722d716281d8">specular</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html#aad2c3cfd35f0b9b6b34505f454cd66dc">   31</a></span>        float4          <a class="code hl_variable" href="struct_n_model_1_1_s_material.html#aad2c3cfd35f0b9b6b34505f454cd66dc">emmisive</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html#a03c187e8c68ecd5744b4a9ca0d99f5c6">   32</a></span>        <span class="keywordtype">float</span>           <a class="code hl_variable" href="struct_n_model_1_1_s_material.html#a03c187e8c68ecd5744b4a9ca0d99f5c6">specularPower</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html#ab50c4c6b21372994729aefca3d7bfda1">   33</a></span>        <span class="keywordtype">float</span>           <a class="code hl_variable" href="struct_n_model_1_1_s_material.html#ab50c4c6b21372994729aefca3d7bfda1">transparencyFactor</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html#a819aed94bc80ac0cc11933c09dbc810b">   35</a></span>        <a class="code hl_struct" href="struct_n_model_1_1_s_const_material.html">SConstMaterial</a>  <a class="code hl_variable" href="struct_n_model_1_1_s_material.html#a819aed94bc80ac0cc11933c09dbc810b">constantMaterial</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html#a684e49752f634e783354e7f8c5299c72">   37</a></span>        LPDIRECT3DTEXTURE9  <a class="code hl_variable" href="struct_n_model_1_1_s_material.html#a684e49752f634e783354e7f8c5299c72">texture</a>;    <span class="comment">// 参照するだけ</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html#a676fda42fbff8dc1b78df17cc5bf42f7">   41</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="struct_n_model_1_1_s_material.html#a676fda42fbff8dc1b78df17cc5bf42f7">Release</a>()</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="comment">// 参照するだけなので解放処理を行わない</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_variable" href="struct_n_model_1_1_s_material.html#a684e49752f634e783354e7f8c5299c72">texture</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_material.html#af539f0c6d40630456df174043861069d">   47</a></span>        <a class="code hl_function" href="struct_n_model_1_1_s_material.html#af539f0c6d40630456df174043861069d">SMaterial</a>() :</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <a class="code hl_variable" href="struct_n_model_1_1_s_material.html#a684e49752f634e783354e7f8c5299c72">texture</a>(nullptr)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        { }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    };</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="};">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html">   53</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="struct_n_model_1_1_s_mesh_node.html#aeffb7b47c74a378c1092d7caf3dba60f">SMeshNode</a> {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="comment">// バッファに使用する型</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#ab57af5a3e7a3b54f4a5ca5de7cc21be9">   55</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="struct_n_model_1_1_s_mesh_node.html#ab57af5a3e7a3b54f4a5ca5de7cc21be9">VertexType</a>    = <a class="code hl_struct" href="struct_n_model_1_1_s_vertex.html">NModel::SVertex</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#a6407d72ccc792bff7b280646d3d46eec">   56</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="struct_n_model_1_1_s_mesh_node.html#a6407d72ccc792bff7b280646d3d46eec">IndexType</a>     = uint;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="comment">// 初期状態のメッシュを保持するバッファ</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#a02bb1dd65bc7cfaf770ab0f4e0b4b9f4">   59</a></span>        std::vector&lt;VertexType&gt; <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#a02bb1dd65bc7cfaf770ab0f4e0b4b9f4">initVertices</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="comment">// 現在のメッシュを保持するバッファ</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#af7fe4c5c4c6ae39aad0631cd3d6592c5">   62</a></span>        IDirect3DIndexBuffer9*  <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#af7fe4c5c4c6ae39aad0631cd3d6592c5">pIB</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#a1b545c9065acd6ca7ee63fbcf45c64df">   63</a></span>        IDirect3DVertexBuffer9* <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#a1b545c9065acd6ca7ee63fbcf45c64df">pVB</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="comment">// メッシュ情報</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#a47ce7fcc225186f8772592badf055c8f">   66</a></span>        uint                <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#a47ce7fcc225186f8772592badf055c8f">indexCount</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#ae576c40239b68faefd7f23dc4991fac6">   67</a></span>        uint                <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#ae576c40239b68faefd7f23dc4991fac6">vertexCount</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="comment">// ウェイト情報</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#a2e9b71def4503f990cb74897401f098c">   70</a></span>        std::vector&lt;std::vector&lt;float&gt;&gt; <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#a2e9b71def4503f990cb74897401f098c">weights</a>;    <span class="comment">// [頂点][クラスター] = weight</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="comment">// マテリアル</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#aeebb53abbf1ea5787461fc70b6be9bd0">   73</a></span>        <a class="code hl_struct" href="struct_n_model_1_1_s_material.html">SMaterial</a>           <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#aeebb53abbf1ea5787461fc70b6be9bd0">material</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">// ノードの変換行列</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#a2b57df820c7b91eb1f1dff4ab50af3a1">   76</a></span>        <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>    <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#a2b57df820c7b91eb1f1dff4ab50af3a1">matrix</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="comment">// デバッグ情報</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#a41ad1824c50d50727f336ebfd4fefb45">   79</a></span>        std::string         <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#a41ad1824c50d50727f336ebfd4fefb45">nodeName</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span></div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#af3ed3538b0754e48286850021e950787">   82</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="struct_n_model_1_1_s_mesh_node.html#af3ed3538b0754e48286850021e950787">Release</a>()</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#aeebb53abbf1ea5787461fc70b6be9bd0">material</a>.Release();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(<a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#af7fe4c5c4c6ae39aad0631cd3d6592c5">pIB</a>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(<a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#a1b545c9065acd6ca7ee63fbcf45c64df">pVB</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        }</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_s_mesh_node.html#aeffb7b47c74a378c1092d7caf3dba60f">   89</a></span>        <a class="code hl_function" href="struct_n_model_1_1_s_mesh_node.html#aeffb7b47c74a378c1092d7caf3dba60f">SMeshNode</a>() :</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#af7fe4c5c4c6ae39aad0631cd3d6592c5">pIB</a>(nullptr),</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#a1b545c9065acd6ca7ee63fbcf45c64df">pVB</a>(nullptr),</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#a47ce7fcc225186f8772592badf055c8f">indexCount</a>(0),</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#ae576c40239b68faefd7f23dc4991fac6">vertexCount</a>(0)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        { }</div>
+</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    };</div>
+</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+<div class="ttc" id="a_direct_x___def_8h_html"><div class="ttname"><a href="_direct_x___def_8h.html">DirectX_Def.h</a></div></div>
+<div class="ttc" id="a_direct_x___util_8h_html"><div class="ttname"><a href="_direct_x___util_8h.html">DirectX_Util.h</a></div></div>
+<div class="ttc" id="a_direct_x___util_8h_html_afe4096368a51bd6079184745ddec2b6b"><div class="ttname"><a href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a></div><div class="ttdeci">#define ReleaseSafe(p)</div><div class="ttdoc">安全な解放処理</div><div class="ttdef"><b>Definition</b> DirectX_Util.h:8</div></div>
+<div class="ttc" id="a_math___type_8h_html"><div class="ttname"><a href="_math___type_8h.html">Math_Type.h</a></div></div>
+<div class="ttc" id="anamespace_n_model_html"><div class="ttname"><a href="namespace_n_model.html">NModel</a></div><div class="ttdoc">あたり判定情報の作成等の様々な関数群</div><div class="ttdef"><b>Definition</b> Collision_Util.h:11</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_float2_data_html"><div class="ttname"><a href="struct_n_math_1_1_s_float2_data.html">NMath::SFloat2Data</a></div><div class="ttdoc">float * 2型</div><div class="ttdef"><b>Definition</b> Math_Data.h:75</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_float3_data_html"><div class="ttname"><a href="struct_n_math_1_1_s_float3_data.html">NMath::SFloat3Data</a></div><div class="ttdoc">float * 3型</div><div class="ttdef"><b>Definition</b> Math_Data.h:48</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a></div><div class="ttdoc">4x4行列構造体</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:13</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_const_material_html"><div class="ttname"><a href="struct_n_model_1_1_s_const_material.html">NModel::SConstMaterial</a></div><div class="ttdoc">マテリアル情報</div><div class="ttdef"><b>Definition</b> Model_Def.h:19</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_const_material_html_a4adeb63385d92d06a7eccd26ebc9989e"><div class="ttname"><a href="struct_n_model_1_1_s_const_material.html#a4adeb63385d92d06a7eccd26ebc9989e">NModel::SConstMaterial::specular</a></div><div class="ttdeci">float4 specular</div><div class="ttdef"><b>Definition</b> Model_Def.h:22</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_const_material_html_aa832bfaf75ba15a421f5424ceae96cfc"><div class="ttname"><a href="struct_n_model_1_1_s_const_material.html#aa832bfaf75ba15a421f5424ceae96cfc">NModel::SConstMaterial::diffuse</a></div><div class="ttdeci">float4 diffuse</div><div class="ttdef"><b>Definition</b> Model_Def.h:21</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_const_material_html_aee1261c2b323ed4a335e8a6f14343602"><div class="ttname"><a href="struct_n_model_1_1_s_const_material.html#aee1261c2b323ed4a335e8a6f14343602">NModel::SConstMaterial::emmisive</a></div><div class="ttdeci">float4 emmisive</div><div class="ttdef"><b>Definition</b> Model_Def.h:23</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_const_material_html_af3399eef8531115118cd0f80e97dbfd6"><div class="ttname"><a href="struct_n_model_1_1_s_const_material.html#af3399eef8531115118cd0f80e97dbfd6">NModel::SConstMaterial::ambient</a></div><div class="ttdeci">float4 ambient</div><div class="ttdef"><b>Definition</b> Model_Def.h:20</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html"><div class="ttname"><a href="struct_n_model_1_1_s_material.html">NModel::SMaterial</a></div><div class="ttdoc">マテリアル管理構造体</div><div class="ttdef"><b>Definition</b> Model_Def.h:27</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_a03c187e8c68ecd5744b4a9ca0d99f5c6"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#a03c187e8c68ecd5744b4a9ca0d99f5c6">NModel::SMaterial::specularPower</a></div><div class="ttdeci">float specularPower</div><div class="ttdef"><b>Definition</b> Model_Def.h:32</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_a338179716e40d6acee59722d716281d8"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#a338179716e40d6acee59722d716281d8">NModel::SMaterial::specular</a></div><div class="ttdeci">float4 specular</div><div class="ttdef"><b>Definition</b> Model_Def.h:30</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_a676fda42fbff8dc1b78df17cc5bf42f7"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#a676fda42fbff8dc1b78df17cc5bf42f7">NModel::SMaterial::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdoc">テクスチャを開放する</div><div class="ttdef"><b>Definition</b> Model_Def.h:41</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_a684e49752f634e783354e7f8c5299c72"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#a684e49752f634e783354e7f8c5299c72">NModel::SMaterial::texture</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 texture</div><div class="ttdef"><b>Definition</b> Model_Def.h:37</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_a819aed94bc80ac0cc11933c09dbc810b"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#a819aed94bc80ac0cc11933c09dbc810b">NModel::SMaterial::constantMaterial</a></div><div class="ttdeci">SConstMaterial constantMaterial</div><div class="ttdef"><b>Definition</b> Model_Def.h:35</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_aad2c3cfd35f0b9b6b34505f454cd66dc"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#aad2c3cfd35f0b9b6b34505f454cd66dc">NModel::SMaterial::emmisive</a></div><div class="ttdeci">float4 emmisive</div><div class="ttdef"><b>Definition</b> Model_Def.h:31</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_ab50c4c6b21372994729aefca3d7bfda1"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#ab50c4c6b21372994729aefca3d7bfda1">NModel::SMaterial::transparencyFactor</a></div><div class="ttdeci">float transparencyFactor</div><div class="ttdef"><b>Definition</b> Model_Def.h:33</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_ae5fabd61e0b10c68c4a98a2591de67a9"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#ae5fabd61e0b10c68c4a98a2591de67a9">NModel::SMaterial::diffuse</a></div><div class="ttdeci">float4 diffuse</div><div class="ttdef"><b>Definition</b> Model_Def.h:29</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_af539f0c6d40630456df174043861069d"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#af539f0c6d40630456df174043861069d">NModel::SMaterial::SMaterial</a></div><div class="ttdeci">SMaterial()</div><div class="ttdef"><b>Definition</b> Model_Def.h:47</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_af92a3bd26816867d82f0d31669e67964"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#af92a3bd26816867d82f0d31669e67964">NModel::SMaterial::ambient</a></div><div class="ttdeci">float4 ambient</div><div class="ttdef"><b>Definition</b> Model_Def.h:28</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_a02bb1dd65bc7cfaf770ab0f4e0b4b9f4"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#a02bb1dd65bc7cfaf770ab0f4e0b4b9f4">NModel::SMeshNode::initVertices</a></div><div class="ttdeci">std::vector&lt; VertexType &gt; initVertices</div><div class="ttdef"><b>Definition</b> Model_Def.h:59</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_a1b545c9065acd6ca7ee63fbcf45c64df"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#a1b545c9065acd6ca7ee63fbcf45c64df">NModel::SMeshNode::pVB</a></div><div class="ttdeci">IDirect3DVertexBuffer9 * pVB</div><div class="ttdef"><b>Definition</b> Model_Def.h:63</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_a2b57df820c7b91eb1f1dff4ab50af3a1"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#a2b57df820c7b91eb1f1dff4ab50af3a1">NModel::SMeshNode::matrix</a></div><div class="ttdeci">NMath::SMatrix44 matrix</div><div class="ttdef"><b>Definition</b> Model_Def.h:76</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_a2e9b71def4503f990cb74897401f098c"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#a2e9b71def4503f990cb74897401f098c">NModel::SMeshNode::weights</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; float &gt; &gt; weights</div><div class="ttdef"><b>Definition</b> Model_Def.h:70</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_a41ad1824c50d50727f336ebfd4fefb45"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#a41ad1824c50d50727f336ebfd4fefb45">NModel::SMeshNode::nodeName</a></div><div class="ttdeci">std::string nodeName</div><div class="ttdef"><b>Definition</b> Model_Def.h:79</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_a47ce7fcc225186f8772592badf055c8f"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#a47ce7fcc225186f8772592badf055c8f">NModel::SMeshNode::indexCount</a></div><div class="ttdeci">uint indexCount</div><div class="ttdef"><b>Definition</b> Model_Def.h:66</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_a6407d72ccc792bff7b280646d3d46eec"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#a6407d72ccc792bff7b280646d3d46eec">NModel::SMeshNode::IndexType</a></div><div class="ttdeci">uint IndexType</div><div class="ttdef"><b>Definition</b> Model_Def.h:56</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_ab57af5a3e7a3b54f4a5ca5de7cc21be9"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#ab57af5a3e7a3b54f4a5ca5de7cc21be9">NModel::SMeshNode::VertexType</a></div><div class="ttdeci">NModel::SVertex VertexType</div><div class="ttdef"><b>Definition</b> Model_Def.h:55</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_ae576c40239b68faefd7f23dc4991fac6"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#ae576c40239b68faefd7f23dc4991fac6">NModel::SMeshNode::vertexCount</a></div><div class="ttdeci">uint vertexCount</div><div class="ttdef"><b>Definition</b> Model_Def.h:67</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_aeebb53abbf1ea5787461fc70b6be9bd0"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#aeebb53abbf1ea5787461fc70b6be9bd0">NModel::SMeshNode::material</a></div><div class="ttdeci">SMaterial material</div><div class="ttdef"><b>Definition</b> Model_Def.h:73</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_aeffb7b47c74a378c1092d7caf3dba60f"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#aeffb7b47c74a378c1092d7caf3dba60f">NModel::SMeshNode::SMeshNode</a></div><div class="ttdeci">SMeshNode()</div><div class="ttdef"><b>Definition</b> Model_Def.h:89</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_af3ed3538b0754e48286850021e950787"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#af3ed3538b0754e48286850021e950787">NModel::SMeshNode::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdoc">バッファを解放する</div><div class="ttdef"><b>Definition</b> Model_Def.h:82</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_af7fe4c5c4c6ae39aad0631cd3d6592c5"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#af7fe4c5c4c6ae39aad0631cd3d6592c5">NModel::SMeshNode::pIB</a></div><div class="ttdeci">IDirect3DIndexBuffer9 * pIB</div><div class="ttdef"><b>Definition</b> Model_Def.h:62</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_vertex_html"><div class="ttname"><a href="struct_n_model_1_1_s_vertex.html">NModel::SVertex</a></div><div class="ttdoc">モデルの頂点情報</div><div class="ttdef"><b>Definition</b> Model_Def.h:12</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_vertex_html_a08007f7e178e300b459babf6c0623826"><div class="ttname"><a href="struct_n_model_1_1_s_vertex.html#a08007f7e178e300b459babf6c0623826">NModel::SVertex::texCoord</a></div><div class="ttdeci">NMath::SFloat2Data texCoord</div><div class="ttdef"><b>Definition</b> Model_Def.h:15</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_vertex_html_ad03ab3d27f91afe42a6b756259b17342"><div class="ttname"><a href="struct_n_model_1_1_s_vertex.html#ad03ab3d27f91afe42a6b756259b17342">NModel::SVertex::normal</a></div><div class="ttdeci">NMath::SFloat3Data normal</div><div class="ttdef"><b>Definition</b> Model_Def.h:14</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_vertex_html_af771a59630cb341c668df8d0bf0e387e"><div class="ttname"><a href="struct_n_model_1_1_s_vertex.html#af771a59630cb341c668df8d0bf0e387e">NModel::SVertex::pos</a></div><div class="ttdeci">NMath::SFloat3Data pos</div><div class="ttdef"><b>Definition</b> Model_Def.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_29c2b75d94f06d56f2b2b0f90b4933d2.html">Model</a></li><li class="navelem"><a href="_model___def_8h.html">Model_Def.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

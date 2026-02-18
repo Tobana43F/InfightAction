@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameApp/Game/Manager/Game_MainManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_game___main_manager_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game_MainManager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game___main_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;array&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___player_8h.html">Object\Actor\Player\Object_Player.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___player_life_u_i_8h.html">Object\UI\Object_PlayerLifeUI.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___screen_fade_8h.html">Object\UI\Object_ScreenFade.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include    &quot;<a class="code" href="_game___stage_manager_8h.html">Game\Manager\Game_StageManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include    &quot;<a class="code" href="_collision___hit_test_8h.html">Collision\CollisionProc\Collision_HitTest.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include    &quot;<a class="code" href="_util___state_manager_8h.html">Util\Util_StateManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_game.html">NGame</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html">   19</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a0a6643d4a3f8912f586e5ffe3fcf79e9">CMainManager</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a6765851493a3655d397aa0f2c53ea527">   23</a></span>        <span class="keyword">static</span> <span class="keyword">const</span> uint   <a class="code hl_variable" href="class_n_game_1_1_c_main_manager.html#a6765851493a3655d397aa0f2c53ea527">STAGE_LEVEL_MAX</a> = 16;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4">   26</a></span>        <span class="keyword">enum class</span> <a class="code hl_enumeration" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4">EState</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4afaee4ca3c30ee18148ce3ada37466498">   27</a></span>            <a class="code hl_enumvalue" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4afaee4ca3c30ee18148ce3ada37466498">INIT</a>,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a2d5292e4f81063110be3bc5d8111ab53">   28</a></span>            <a class="code hl_enumvalue" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a2d5292e4f81063110be3bc5d8111ab53">INIT_NEXT_STATE</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a3ce542dfb80acd9d3ecc081f236950cf">   29</a></span>            <a class="code hl_enumvalue" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a3ce542dfb80acd9d3ecc081f236950cf">FADE_IN</a>,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a9b4a9a8f78576ca4d6118929b55c50f6">   30</a></span>            <a class="code hl_enumvalue" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a9b4a9a8f78576ca4d6118929b55c50f6">FADE_OUT_STAGE_CLEAR</a>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4ab7dfc781ef025aa9fa0db7b2f475c6c5">   31</a></span>            <a class="code hl_enumvalue" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4ab7dfc781ef025aa9fa0db7b2f475c6c5">FADE_OUT_GAME_CLEAR</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4aa72f03d6b9934ba477d29dba79838cb2">   32</a></span>            <a class="code hl_enumvalue" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4aa72f03d6b9934ba477d29dba79838cb2">FADE_OUT_GAME_OVER</a>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a15a8022d0ed9cd9c2a2e756822703eb4">   33</a></span>            <a class="code hl_enumvalue" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a15a8022d0ed9cd9c2a2e756822703eb4">UPDATE</a>,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a26a4b44a837bf97b972628509912b4a5">   34</a></span>            <a class="code hl_enumvalue" href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a26a4b44a837bf97b972628509912b4a5">MAX</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        };</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a969ccd3d2c84d21701ab1f5f7d178ec8">Setup</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a7359fbd44340d7ebc96b4bd7c5cf82f6">Init</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a4e4cc9996ab7d37350cc4c0f73204aac">Destory</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a6924ecef35b76b01fcabc4654ebc9f8d">Update</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a51b8e78def5116092f013fd54e5f7f37">Render</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="comment">// ステージの管理</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a41417864310685ebb3f7412ce35c23f0">   57</a></span>        uint                                                <a class="code hl_variable" href="class_n_game_1_1_c_main_manager.html#a41417864310685ebb3f7412ce35c23f0">m_stageLevelCount</a>;  <span class="comment">// ステージ数</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a7b0559b4b044b40e6f19e51c81152924">   58</a></span>        uint                                                <a class="code hl_variable" href="class_n_game_1_1_c_main_manager.html#a7b0559b4b044b40e6f19e51c81152924">m_curStageLevel</a>;    <span class="comment">// 現在のステージレベル</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a5120510d06abef31c41859e9fb9e7d0b">   59</a></span>        std::array&lt;NGame::CStageManager, STAGE_LEVEL_MAX&gt;   <a class="code hl_variable" href="class_n_game_1_1_c_main_manager.html#a5120510d06abef31c41859e9fb9e7d0b">m_stageManagers</a>;    <span class="comment">// 全てのステージレベルを管理する変数</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="comment">// プレイヤー</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a35bd9ecd0e1cec2892cf2cf66fe7d860">   62</a></span>        <a class="code hl_class" href="class_n_object_1_1_c_player.html">NObject::CPlayer</a>                <a class="code hl_variable" href="class_n_game_1_1_c_main_manager.html#a35bd9ecd0e1cec2892cf2cf66fe7d860">m_player</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">// 当たり判定を処理するクラス</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#aa30faf8599ef09bbddd0a011157f94cf">   65</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_proc_hit_test.html">NCollision::CProcHitTest</a>        <a class="code hl_variable" href="class_n_game_1_1_c_main_manager.html#aa30faf8599ef09bbddd0a011157f94cf">m_colProcPlayerAttackAndEnemyDamage</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#ad805700c37a83792887ba204ba5740a8">   66</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_proc_hit_test.html">NCollision::CProcHitTest</a>        <a class="code hl_variable" href="class_n_game_1_1_c_main_manager.html#ad805700c37a83792887ba204ba5740a8">m_colProcPlayerDamageAndEnemyAttack</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">// UI関係</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a0a6fef72ec403c694dc0c1b88aad7e9b">   69</a></span>        <a class="code hl_class" href="class_n_object_1_1_c_player_life_u_i.html">NObject::CPlayerLifeUI</a>          <a class="code hl_variable" href="class_n_game_1_1_c_main_manager.html#a0a6fef72ec403c694dc0c1b88aad7e9b">m_playerLifeUI</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a5525b6bc02ffa18e2e48814fec3d035e">   70</a></span>        <a class="code hl_class" href="class_n_object_1_1_c_screen_fade.html">NObject::CScreenFade</a>            <a class="code hl_variable" href="class_n_game_1_1_c_main_manager.html#a5525b6bc02ffa18e2e48814fec3d035e">m_screenFade</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="comment">// 状態管理</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#ae0781632f0f435e28970bd4301b622cd">   75</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="class_n_game_1_1_c_main_manager.html#ae0781632f0f435e28970bd4301b622cd">StateParam</a> = <a class="code hl_typedef" href="class_n_util_1_1_c_state_manager.html#a9515c92a0d8f456afd3e28ffc26e3b6d">NUtil::CStateManager&lt;CMainManager, EState&gt;::Param</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main_manager.html#a738fd3374de92cad366cf4d3e8275905">   76</a></span>        <a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager&lt;CMainManager, EState&gt;</a>  <a class="code hl_variable" href="class_n_game_1_1_c_main_manager.html#a738fd3374de92cad366cf4d3e8275905">m_state</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a388f5ce259399e0be24b805fb367e461">UpdateStateInit</a>(<a class="code hl_typedef" href="class_n_game_1_1_c_main_manager.html#ae0781632f0f435e28970bd4301b622cd">StateParam</a> _param);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#abfda2c2b56e54f0c5b59277a776daa66">UpdateStateInitNextStage</a>(<a class="code hl_typedef" href="class_n_game_1_1_c_main_manager.html#ae0781632f0f435e28970bd4301b622cd">StateParam</a> _param);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a5c9b0cbe11c4f97fdd67d2d93efb0daa">UpdateStateFadeIn</a>(<a class="code hl_typedef" href="class_n_game_1_1_c_main_manager.html#ae0781632f0f435e28970bd4301b622cd">StateParam</a> _param);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#ac738469efef7463fa439c5eb18349556">UpdateStateFadeOutStageClear</a>(<a class="code hl_typedef" href="class_n_game_1_1_c_main_manager.html#ae0781632f0f435e28970bd4301b622cd">StateParam</a> _param);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#aacd5d42ddf8cab1650eac2b4142072db">UpdateStateFadeOutGameClear</a>(<a class="code hl_typedef" href="class_n_game_1_1_c_main_manager.html#ae0781632f0f435e28970bd4301b622cd">StateParam</a> _param);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a494624fbb2b94a54fd111aafa6e85ac9">UpdateStateFadeOutGameOver</a>(<a class="code hl_typedef" href="class_n_game_1_1_c_main_manager.html#ae0781632f0f435e28970bd4301b622cd">StateParam</a> _param);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a82007161a5c4bb7f359a40ac3f9da913">UpdateStateUpdate</a>(<a class="code hl_typedef" href="class_n_game_1_1_c_main_manager.html#ae0781632f0f435e28970bd4301b622cd">StateParam</a> _param);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="comment">// 初期化関係処理</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a1b304b2296037d7c1dbb92c1bc9af13d">SetupAllStageLevel</a>();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#ac04d442f906e5403d5108a21ac377719">IniteCurStageLevel</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a85847438d0a60f7449ed202e66e7ad68">RegisterToGlobalManager</a>();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="comment">// 汎用関数</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>         </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a4bfc95f3f447d6846749e55e672fc61e">UpdateMain</a>();</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a11344e66510d62ad4752028c46b086e6">UpdateGameState</a>();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a0a6643d4a3f8912f586e5ffe3fcf79e9">CMainManager</a>();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <a class="code hl_function" href="class_n_game_1_1_c_main_manager.html#a8c1ffc55eb35ff8f0d5df0a8852127f2">~CMainManager</a>();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    };</div>
+</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
+<div class="ttc" id="a_collision___hit_test_8h_html"><div class="ttname"><a href="_collision___hit_test_8h.html">Collision_HitTest.h</a></div></div>
+<div class="ttc" id="a_game___stage_manager_8h_html"><div class="ttname"><a href="_game___stage_manager_8h.html">Game_StageManager.h</a></div></div>
+<div class="ttc" id="a_object___player_8h_html"><div class="ttname"><a href="_object___player_8h.html">Object_Player.h</a></div></div>
+<div class="ttc" id="a_object___player_life_u_i_8h_html"><div class="ttname"><a href="_object___player_life_u_i_8h.html">Object_PlayerLifeUI.h</a></div></div>
+<div class="ttc" id="a_object___screen_fade_8h_html"><div class="ttname"><a href="_object___screen_fade_8h.html">Object_ScreenFade.h</a></div></div>
+<div class="ttc" id="a_util___state_manager_8h_html"><div class="ttname"><a href="_util___state_manager_8h.html">Util_StateManager.h</a></div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html">NCollision::CProcHitTest</a></div><div class="ttdoc">攻撃と被攻撃の当たり判定を行う処理クラス</div><div class="ttdef"><b>Definition</b> Collision_HitTest.h:14</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a0a6643d4a3f8912f586e5ffe3fcf79e9"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a0a6643d4a3f8912f586e5ffe3fcf79e9">NGame::CMainManager::CMainManager</a></div><div class="ttdeci">CMainManager()</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:13</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a0a6fef72ec403c694dc0c1b88aad7e9b"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a0a6fef72ec403c694dc0c1b88aad7e9b">NGame::CMainManager::m_playerLifeUI</a></div><div class="ttdeci">NObject::CPlayerLifeUI m_playerLifeUI</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:69</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a11344e66510d62ad4752028c46b086e6"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a11344e66510d62ad4752028c46b086e6">NGame::CMainManager::UpdateGameState</a></div><div class="ttdeci">void UpdateGameState()</div><div class="ttdoc">ゲームのクリア状態を判断</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:287</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a1b304b2296037d7c1dbb92c1bc9af13d"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a1b304b2296037d7c1dbb92c1bc9af13d">NGame::CMainManager::SetupAllStageLevel</a></div><div class="ttdeci">void SetupAllStageLevel()</div><div class="ttdoc">ステージ情報の読み込み</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:236</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a35bd9ecd0e1cec2892cf2cf66fe7d860"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a35bd9ecd0e1cec2892cf2cf66fe7d860">NGame::CMainManager::m_player</a></div><div class="ttdeci">NObject::CPlayer m_player</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:62</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a388f5ce259399e0be24b805fb367e461"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a388f5ce259399e0be24b805fb367e461">NGame::CMainManager::UpdateStateInit</a></div><div class="ttdeci">void UpdateStateInit(StateParam _param)</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:126</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a39c6518c1927ff2e9ecccd7ec43d46d4"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4">NGame::CMainManager::EState</a></div><div class="ttdeci">EState</div><div class="ttdoc">ゲームの進行状態を示す定数</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:26</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a39c6518c1927ff2e9ecccd7ec43d46d4a15a8022d0ed9cd9c2a2e756822703eb4"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a15a8022d0ed9cd9c2a2e756822703eb4">NGame::CMainManager::EState::UPDATE</a></div><div class="ttdeci">@ UPDATE</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:33</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a39c6518c1927ff2e9ecccd7ec43d46d4a26a4b44a837bf97b972628509912b4a5"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a26a4b44a837bf97b972628509912b4a5">NGame::CMainManager::EState::MAX</a></div><div class="ttdeci">@ MAX</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:34</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a39c6518c1927ff2e9ecccd7ec43d46d4a2d5292e4f81063110be3bc5d8111ab53"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a2d5292e4f81063110be3bc5d8111ab53">NGame::CMainManager::EState::INIT_NEXT_STATE</a></div><div class="ttdeci">@ INIT_NEXT_STATE</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:28</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a39c6518c1927ff2e9ecccd7ec43d46d4a3ce542dfb80acd9d3ecc081f236950cf"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a3ce542dfb80acd9d3ecc081f236950cf">NGame::CMainManager::EState::FADE_IN</a></div><div class="ttdeci">@ FADE_IN</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:29</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a39c6518c1927ff2e9ecccd7ec43d46d4a9b4a9a8f78576ca4d6118929b55c50f6"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4a9b4a9a8f78576ca4d6118929b55c50f6">NGame::CMainManager::EState::FADE_OUT_STAGE_CLEAR</a></div><div class="ttdeci">@ FADE_OUT_STAGE_CLEAR</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:30</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a39c6518c1927ff2e9ecccd7ec43d46d4aa72f03d6b9934ba477d29dba79838cb2"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4aa72f03d6b9934ba477d29dba79838cb2">NGame::CMainManager::EState::FADE_OUT_GAME_OVER</a></div><div class="ttdeci">@ FADE_OUT_GAME_OVER</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:32</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a39c6518c1927ff2e9ecccd7ec43d46d4ab7dfc781ef025aa9fa0db7b2f475c6c5"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4ab7dfc781ef025aa9fa0db7b2f475c6c5">NGame::CMainManager::EState::FADE_OUT_GAME_CLEAR</a></div><div class="ttdeci">@ FADE_OUT_GAME_CLEAR</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:31</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a39c6518c1927ff2e9ecccd7ec43d46d4afaee4ca3c30ee18148ce3ada37466498"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a39c6518c1927ff2e9ecccd7ec43d46d4afaee4ca3c30ee18148ce3ada37466498">NGame::CMainManager::EState::INIT</a></div><div class="ttdeci">@ INIT</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:27</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a41417864310685ebb3f7412ce35c23f0"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a41417864310685ebb3f7412ce35c23f0">NGame::CMainManager::m_stageLevelCount</a></div><div class="ttdeci">uint m_stageLevelCount</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:57</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a494624fbb2b94a54fd111aafa6e85ac9"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a494624fbb2b94a54fd111aafa6e85ac9">NGame::CMainManager::UpdateStateFadeOutGameOver</a></div><div class="ttdeci">void UpdateStateFadeOutGameOver(StateParam _param)</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:209</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a4bfc95f3f447d6846749e55e672fc61e"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a4bfc95f3f447d6846749e55e672fc61e">NGame::CMainManager::UpdateMain</a></div><div class="ttdeci">void UpdateMain()</div><div class="ttdoc">ゲーム全体の更新処理</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:274</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a4e4cc9996ab7d37350cc4c0f73204aac"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a4e4cc9996ab7d37350cc4c0f73204aac">NGame::CMainManager::Destory</a></div><div class="ttdeci">void Destory()</div><div class="ttdoc">終了処理</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:93</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a5120510d06abef31c41859e9fb9e7d0b"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a5120510d06abef31c41859e9fb9e7d0b">NGame::CMainManager::m_stageManagers</a></div><div class="ttdeci">std::array&lt; NGame::CStageManager, STAGE_LEVEL_MAX &gt; m_stageManagers</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:59</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a51b8e78def5116092f013fd54e5f7f37"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a51b8e78def5116092f013fd54e5f7f37">NGame::CMainManager::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdoc">描画処理</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:110</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a5525b6bc02ffa18e2e48814fec3d035e"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a5525b6bc02ffa18e2e48814fec3d035e">NGame::CMainManager::m_screenFade</a></div><div class="ttdeci">NObject::CScreenFade m_screenFade</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:70</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a5c9b0cbe11c4f97fdd67d2d93efb0daa"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a5c9b0cbe11c4f97fdd67d2d93efb0daa">NGame::CMainManager::UpdateStateFadeIn</a></div><div class="ttdeci">void UpdateStateFadeIn(StateParam _param)</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:161</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a6765851493a3655d397aa0f2c53ea527"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a6765851493a3655d397aa0f2c53ea527">NGame::CMainManager::STAGE_LEVEL_MAX</a></div><div class="ttdeci">static const uint STAGE_LEVEL_MAX</div><div class="ttdoc">ステージの階層数の最大値</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:23</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a6924ecef35b76b01fcabc4654ebc9f8d"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a6924ecef35b76b01fcabc4654ebc9f8d">NGame::CMainManager::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新処理</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:100</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a7359fbd44340d7ebc96b4bd7c5cf82f6"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a7359fbd44340d7ebc96b4bd7c5cf82f6">NGame::CMainManager::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">初期化</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:68</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a738fd3374de92cad366cf4d3e8275905"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a738fd3374de92cad366cf4d3e8275905">NGame::CMainManager::m_state</a></div><div class="ttdeci">NUtil::CStateManager&lt; CMainManager, EState &gt; m_state</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:76</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a7b0559b4b044b40e6f19e51c81152924"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a7b0559b4b044b40e6f19e51c81152924">NGame::CMainManager::m_curStageLevel</a></div><div class="ttdeci">uint m_curStageLevel</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:58</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a82007161a5c4bb7f359a40ac3f9da913"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a82007161a5c4bb7f359a40ac3f9da913">NGame::CMainManager::UpdateStateUpdate</a></div><div class="ttdeci">void UpdateStateUpdate(StateParam _param)</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:225</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a85847438d0a60f7449ed202e66e7ad68"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a85847438d0a60f7449ed202e66e7ad68">NGame::CMainManager::RegisterToGlobalManager</a></div><div class="ttdeci">void RegisterToGlobalManager()</div><div class="ttdoc">グローバルマネージャに登録</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:264</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a8c1ffc55eb35ff8f0d5df0a8852127f2"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a8c1ffc55eb35ff8f0d5df0a8852127f2">NGame::CMainManager::~CMainManager</a></div><div class="ttdeci">~CMainManager()</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:37</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_a969ccd3d2c84d21701ab1f5f7d178ec8"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#a969ccd3d2c84d21701ab1f5f7d178ec8">NGame::CMainManager::Setup</a></div><div class="ttdeci">void Setup()</div><div class="ttdoc">使用可能状態にする</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:47</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_aa30faf8599ef09bbddd0a011157f94cf"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#aa30faf8599ef09bbddd0a011157f94cf">NGame::CMainManager::m_colProcPlayerAttackAndEnemyDamage</a></div><div class="ttdeci">NCollision::CProcHitTest m_colProcPlayerAttackAndEnemyDamage</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:65</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_aacd5d42ddf8cab1650eac2b4142072db"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#aacd5d42ddf8cab1650eac2b4142072db">NGame::CMainManager::UpdateStateFadeOutGameClear</a></div><div class="ttdeci">void UpdateStateFadeOutGameClear(StateParam _param)</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:191</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_abfda2c2b56e54f0c5b59277a776daa66"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#abfda2c2b56e54f0c5b59277a776daa66">NGame::CMainManager::UpdateStateInitNextStage</a></div><div class="ttdeci">void UpdateStateInitNextStage(StateParam _param)</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:140</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_ac04d442f906e5403d5108a21ac377719"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#ac04d442f906e5403d5108a21ac377719">NGame::CMainManager::IniteCurStageLevel</a></div><div class="ttdeci">void IniteCurStageLevel()</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:254</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_ac738469efef7463fa439c5eb18349556"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#ac738469efef7463fa439c5eb18349556">NGame::CMainManager::UpdateStateFadeOutStageClear</a></div><div class="ttdeci">void UpdateStateFadeOutStageClear(StateParam _param)</div><div class="ttdef"><b>Definition</b> Game_MainManager.cpp:176</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_ad805700c37a83792887ba204ba5740a8"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#ad805700c37a83792887ba204ba5740a8">NGame::CMainManager::m_colProcPlayerDamageAndEnemyAttack</a></div><div class="ttdeci">NCollision::CProcHitTest m_colProcPlayerDamageAndEnemyAttack</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:66</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_manager_html_ae0781632f0f435e28970bd4301b622cd"><div class="ttname"><a href="class_n_game_1_1_c_main_manager.html#ae0781632f0f435e28970bd4301b622cd">NGame::CMainManager::StateParam</a></div><div class="ttdeci">NUtil::CStateManager&lt; CMainManager, EState &gt;::Param StateParam</div><div class="ttdef"><b>Definition</b> Game_MainManager.h:75</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html"><div class="ttname"><a href="class_n_object_1_1_c_player.html">NObject::CPlayer</a></div><div class="ttdoc">テスト用のキャラクター</div><div class="ttdef"><b>Definition</b> Object_Player.h:16</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_life_u_i_html"><div class="ttname"><a href="class_n_object_1_1_c_player_life_u_i.html">NObject::CPlayerLifeUI</a></div><div class="ttdoc">プレイヤーの体力を画面上に表示するUI</div><div class="ttdef"><b>Definition</b> Object_PlayerLifeUI.h:13</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_screen_fade_html"><div class="ttname"><a href="class_n_object_1_1_c_screen_fade.html">NObject::CScreenFade</a></div><div class="ttdef"><b>Definition</b> Object_ScreenFade.h:10</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html"><div class="ttname"><a href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a></div><div class="ttdoc">状態遷移を管理するクラス</div><div class="ttdef"><b>Definition</b> Util_StateManager.h:18</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html_a9515c92a0d8f456afd3e28ffc26e3b6d"><div class="ttname"><a href="class_n_util_1_1_c_state_manager.html#a9515c92a0d8f456afd3e28ffc26e3b6d">NUtil::CStateManager::Param</a></div><div class="ttdeci">SStateParam&lt; TEnumState &gt; &amp; Param</div><div class="ttdoc">メンバ関数の引数になるパラメータ</div><div class="ttdef"><b>Definition</b> Util_StateManager.h:123</div></div>
+<div class="ttc" id="anamespace_n_game_html"><div class="ttname"><a href="namespace_n_game.html">NGame</a></div><div class="ttdoc">プレイヤーへのアクセス、敵へのアクセス、ステージ情報へのアクセスなど、 様々な場所で参照される情報にアクセスするための仲介を行う関数群</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:45</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_f694c4fbc4aebbaf0d8c111126161e66.html">GameApp</a></li><li class="navelem"><a href="dir_3aedba31b05c2e73ecb481a8aa7b3177.html">Game</a></li><li class="navelem"><a href="dir_27ce79e68317e0ec536efc61224c8bbc.html">Manager</a></li><li class="navelem"><a href="_game___main_manager_8h.html">Game_MainManager.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

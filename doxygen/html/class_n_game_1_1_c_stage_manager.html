@@ -1,0 +1,701 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NGame::CStageManager クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_game_1_1_c_stage_manager.html','','class_n_game_1_1_c_stage_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NGame::CStageManager クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>1階層分のステージ情報を保持するクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_game___stage_manager_8h_source.html">Game_StageManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:acc0307aa533aa0dfa981d96f96c42bee" id="r_acc0307aa533aa0dfa981d96f96c42bee"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acc0307aa533aa0dfa981d96f96c42bee">Setup</a> (const uint _stageNo, <a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a> _dataKey)</td></tr>
+<tr class="memdesc:acc0307aa533aa0dfa981d96f96c42bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステージ情報を読み込みこのクラスを使用できる状態にする  <br /></td></tr>
+<tr class="memitem:a2c47bc805782f05d60ac6c8ed2627187" id="r_a2c47bc805782f05d60ac6c8ed2627187"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2c47bc805782f05d60ac6c8ed2627187">Init</a> ()</td></tr>
+<tr class="memdesc:a2c47bc805782f05d60ac6c8ed2627187"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <br /></td></tr>
+<tr class="memitem:a843ccd17ea3bc43fe5ac4c584fd89d2f" id="r_a843ccd17ea3bc43fe5ac4c584fd89d2f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a843ccd17ea3bc43fe5ac4c584fd89d2f">Destory</a> ()</td></tr>
+<tr class="memdesc:a843ccd17ea3bc43fe5ac4c584fd89d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">サウンド終了用  <br /></td></tr>
+<tr class="memitem:a6c90bc8173ee3c2888a32353c029337a" id="r_a6c90bc8173ee3c2888a32353c029337a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6c90bc8173ee3c2888a32353c029337a">Update</a> ()</td></tr>
+<tr class="memdesc:a6c90bc8173ee3c2888a32353c029337a"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理  <br /></td></tr>
+<tr class="memitem:a86fce3200528eabada428f14c1fab11c" id="r_a86fce3200528eabada428f14c1fab11c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a86fce3200528eabada428f14c1fab11c">Render</a> ()</td></tr>
+<tr class="memdesc:a86fce3200528eabada428f14c1fab11c"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画処理  <br /></td></tr>
+<tr class="memitem:aa0aa7002f35b1ee33641b4bb2c36325e" id="r_aa0aa7002f35b1ee33641b4bb2c36325e"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#aa0aa7002f35b1ee33641b4bb2c36325e">GetStepCount</a> () const</td></tr>
+<tr class="memitem:a16a62f19a6d3f4bd1b0e46333c3e0879" id="r_a16a62f19a6d3f4bd1b0e46333c3e0879"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a16a62f19a6d3f4bd1b0e46333c3e0879">GetIsClear</a> () const</td></tr>
+<tr class="memitem:a7486a3afebacfef495b23dcb57560447" id="r_a7486a3afebacfef495b23dcb57560447"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a7486a3afebacfef495b23dcb57560447">GetStageID</a> () const</td></tr>
+<tr class="memitem:a5bace1cc565bf2fe33cc8cf439287ca7" id="r_a5bace1cc565bf2fe33cc8cf439287ca7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5bace1cc565bf2fe33cc8cf439287ca7">CStageManager</a> ()</td></tr>
+<tr class="memitem:a9597f5542122a7966645dde34d83f372" id="r_a9597f5542122a7966645dde34d83f372"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9597f5542122a7966645dde34d83f372">~CStageManager</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:aa31d17763d8f2e91f0154b631446abd8" id="r_aa31d17763d8f2e91f0154b631446abd8"><td class="memItemLeft">static const int&#160;</td><td class="memItemRight"><a class="el" href="#aa31d17763d8f2e91f0154b631446abd8">STEP_MAX</a> = 16</td></tr>
+<tr class="memdesc:aa31d17763d8f2e91f0154b631446abd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステップの最大数  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a498b23b2a543c1d4f99d847222ef7cca" id="r_a498b23b2a543c1d4f99d847222ef7cca"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a498b23b2a543c1d4f99d847222ef7cca">SetupStageInfo</a> (<a class="el" href="classjson11_1_1_json.html">json11::Json</a> &amp;_json)</td></tr>
+<tr class="memdesc:a498b23b2a543c1d4f99d847222ef7cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSONの情報から必要な値を取得する  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a963524439b18675566cf9e4045441a5c" id="r_a963524439b18675566cf9e4045441a5c"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a963524439b18675566cf9e4045441a5c">m_stepCount</a></td></tr>
+<tr class="memitem:a30a1470b5161f3fcd35c07e4f37d3d30" id="r_a30a1470b5161f3fcd35c07e4f37d3d30"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a30a1470b5161f3fcd35c07e4f37d3d30">m_isClear</a></td></tr>
+<tr class="memitem:a09a516f8cb77c1df90b5ebe23c635c4a" id="r_a09a516f8cb77c1df90b5ebe23c635c4a"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a09a516f8cb77c1df90b5ebe23c635c4a">m_curStep</a></td></tr>
+<tr class="memitem:a43a913a98956b031f0c293d346dac131" id="r_a43a913a98956b031f0c293d346dac131"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a43a913a98956b031f0c293d346dac131">m_stageCnt</a></td></tr>
+<tr class="memitem:a83bec7e38f5bec475a96a9a56a231a40" id="r_a83bec7e38f5bec475a96a9a56a231a40"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a83bec7e38f5bec475a96a9a56a231a40">m_stageID</a></td></tr>
+<tr class="memitem:a895d004e8a170ba67527c49bbf7d57b9" id="r_a895d004e8a170ba67527c49bbf7d57b9"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_stage.html">NObject::CStage</a>&#160;</td><td class="memItemRight"><a class="el" href="#a895d004e8a170ba67527c49bbf7d57b9">m_stage</a></td></tr>
+<tr class="memitem:a800f5b8cec517fc833cc38238c0a4e84" id="r_a800f5b8cec517fc833cc38238c0a4e84"><td class="memItemLeft"><a class="el" href="class_n_game_1_1_c_enemy_manager.html">CEnemyManager</a>&#160;</td><td class="memItemRight"><a class="el" href="#a800f5b8cec517fc833cc38238c0a4e84">m_enemyManager</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>1階層分のステージ情報を保持するクラス </p>
+<dl class="section note"><dt>覚え書き</dt><dd>主な処理内容<ul>
+<li>敵の生成制御などを行う</li>
+<li>ステージクリア判定 </li>
+</ul>
+</dd>
+<dd>
+説明<ul>
+<li>ステップとは、1階層内での敵の生成などによる進行の分割 ステップをクリアすると次のステップに行き、 　全てのステップをクリアするとステージクリア </li>
+</ul>
+</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">todo</a></b></dt><dd>ステージモデル、あたり判定などもここで管理する。 </dd></dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a5bace1cc565bf2fe33cc8cf439287ca7" name="a5bace1cc565bf2fe33cc8cf439287ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bace1cc565bf2fe33cc8cf439287ca7">&#9670;&#160;</a></span>CStageManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NGame::CStageManager::CStageManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    7</span>                                 : </div>
+<div class="line"><span class="lineno">    8</span>        <a class="code hl_variable" href="#a963524439b18675566cf9e4045441a5c">m_stepCount</a>(0),</div>
+<div class="line"><span class="lineno">    9</span>        <a class="code hl_variable" href="#a30a1470b5161f3fcd35c07e4f37d3d30">m_isClear</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   10</span>        <a class="code hl_variable" href="#a09a516f8cb77c1df90b5ebe23c635c4a">m_curStep</a>(0),</div>
+<div class="line"><span class="lineno">   11</span>        <a class="code hl_variable" href="#a43a913a98956b031f0c293d346dac131">m_stageCnt</a>(0),</div>
+<div class="line"><span class="lineno">   12</span>        <a class="code hl_variable" href="#a83bec7e38f5bec475a96a9a56a231a40">m_stageID</a>(UINT_MAX) <span class="comment">// 無効な値で初期化</span></div>
+<div class="line"><span class="lineno">   13</span>    {</div>
+<div class="line"><span class="lineno">   14</span> </div>
+<div class="line"><span class="lineno">   15</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_stage_manager_html_a09a516f8cb77c1df90b5ebe23c635c4a"><div class="ttname"><a href="#a09a516f8cb77c1df90b5ebe23c635c4a">NGame::CStageManager::m_curStep</a></div><div class="ttdeci">uint m_curStep</div><div class="ttdef"><b>Definition</b> Game_StageManager.h:59</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_stage_manager_html_a30a1470b5161f3fcd35c07e4f37d3d30"><div class="ttname"><a href="#a30a1470b5161f3fcd35c07e4f37d3d30">NGame::CStageManager::m_isClear</a></div><div class="ttdeci">bool m_isClear</div><div class="ttdef"><b>Definition</b> Game_StageManager.h:58</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_stage_manager_html_a43a913a98956b031f0c293d346dac131"><div class="ttname"><a href="#a43a913a98956b031f0c293d346dac131">NGame::CStageManager::m_stageCnt</a></div><div class="ttdeci">uint m_stageCnt</div><div class="ttdef"><b>Definition</b> Game_StageManager.h:60</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_stage_manager_html_a83bec7e38f5bec475a96a9a56a231a40"><div class="ttname"><a href="#a83bec7e38f5bec475a96a9a56a231a40">NGame::CStageManager::m_stageID</a></div><div class="ttdeci">uint m_stageID</div><div class="ttdef"><b>Definition</b> Game_StageManager.h:61</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_stage_manager_html_a963524439b18675566cf9e4045441a5c"><div class="ttname"><a href="#a963524439b18675566cf9e4045441a5c">NGame::CStageManager::m_stepCount</a></div><div class="ttdeci">uint m_stepCount</div><div class="ttdef"><b>Definition</b> Game_StageManager.h:55</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9597f5542122a7966645dde34d83f372" name="a9597f5542122a7966645dde34d83f372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9597f5542122a7966645dde34d83f372">&#9670;&#160;</a></span>~CStageManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NGame::CStageManager::~CStageManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   18</span>    {</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a843ccd17ea3bc43fe5ac4c584fd89d2f" name="a843ccd17ea3bc43fe5ac4c584fd89d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a843ccd17ea3bc43fe5ac4c584fd89d2f">&#9670;&#160;</a></span>Destory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CStageManager::Destory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>サウンド終了用 </p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>    { </div>
+<div class="line"><span class="lineno">   64</span>        <a class="code hl_variable" href="#a895d004e8a170ba67527c49bbf7d57b9">m_stage</a>.Destroy();</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_stage_manager_html_a895d004e8a170ba67527c49bbf7d57b9"><div class="ttname"><a href="#a895d004e8a170ba67527c49bbf7d57b9">NGame::CStageManager::m_stage</a></div><div class="ttdeci">NObject::CStage m_stage</div><div class="ttdef"><b>Definition</b> Game_StageManager.h:64</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a16a62f19a6d3f4bd1b0e46333c3e0879" name="a16a62f19a6d3f4bd1b0e46333c3e0879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a62f19a6d3f4bd1b0e46333c3e0879">&#9670;&#160;</a></span>GetIsClear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CStageManager::GetIsClear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a30a1470b5161f3fcd35c07e4f37d3d30">m_isClear</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7486a3afebacfef495b23dcb57560447" name="a7486a3afebacfef495b23dcb57560447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7486a3afebacfef495b23dcb57560447">&#9670;&#160;</a></span>GetStageID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NGame::CStageManager::GetStageID </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a83bec7e38f5bec475a96a9a56a231a40">m_stageID</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa0aa7002f35b1ee33641b4bb2c36325e" name="aa0aa7002f35b1ee33641b4bb2c36325e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0aa7002f35b1ee33641b4bb2c36325e">&#9670;&#160;</a></span>GetStepCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NGame::CStageManager::GetStepCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   48</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a963524439b18675566cf9e4045441a5c">m_stepCount</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2c47bc805782f05d60ac6c8ed2627187" name="a2c47bc805782f05d60ac6c8ed2627187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c47bc805782f05d60ac6c8ed2627187">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CStageManager::Init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期化 </p>
+<div class="fragment"><div class="line"><span class="lineno">   51</span>    {</div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_variable" href="#a30a1470b5161f3fcd35c07e4f37d3d30">m_isClear</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   53</span>        <a class="code hl_variable" href="#a09a516f8cb77c1df90b5ebe23c635c4a">m_curStep</a> = 0;</div>
+<div class="line"><span class="lineno">   54</span>        <a class="code hl_variable" href="#a43a913a98956b031f0c293d346dac131">m_stageCnt</a> = 0;</div>
+<div class="line"><span class="lineno">   55</span> </div>
+<div class="line"><span class="lineno">   56</span>        <a class="code hl_variable" href="#a895d004e8a170ba67527c49bbf7d57b9">m_stage</a>.SetStageCollision();    <span class="comment">// 明示的にステージのあたり判定を設定する</span></div>
+<div class="line"><span class="lineno">   57</span>        <a class="code hl_variable" href="#a895d004e8a170ba67527c49bbf7d57b9">m_stage</a>.Init();</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="#a800f5b8cec517fc833cc38238c0a4e84">m_enemyManager</a>.Init();</div>
+<div class="line"><span class="lineno">   60</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_stage_manager_html_a800f5b8cec517fc833cc38238c0a4e84"><div class="ttname"><a href="#a800f5b8cec517fc833cc38238c0a4e84">NGame::CStageManager::m_enemyManager</a></div><div class="ttdeci">CEnemyManager m_enemyManager</div><div class="ttdef"><b>Definition</b> Game_StageManager.h:65</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a86fce3200528eabada428f14c1fab11c" name="a86fce3200528eabada428f14c1fab11c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86fce3200528eabada428f14c1fab11c">&#9670;&#160;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CStageManager::Render </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>描画処理 </p>
+<div class="fragment"><div class="line"><span class="lineno">   93</span>    {</div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_variable" href="#a895d004e8a170ba67527c49bbf7d57b9">m_stage</a>.Render();</div>
+<div class="line"><span class="lineno">   95</span>        <a class="code hl_variable" href="#a800f5b8cec517fc833cc38238c0a4e84">m_enemyManager</a>.Render();</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acc0307aa533aa0dfa981d96f96c42bee" name="acc0307aa533aa0dfa981d96f96c42bee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc0307aa533aa0dfa981d96f96c42bee">&#9670;&#160;</a></span>Setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CStageManager::Setup </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_stageNo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a></td>          <td class="paramname"><span class="paramname"><em>_dataKey</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ステージ情報を読み込みこのクラスを使用できる状態にする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_stageNo</td><td>ステージの出現順番(IDとして使用する) </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>    {</div>
+<div class="line"><span class="lineno">   24</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_stageNo != UINT_MAX);</div>
+<div class="line"><span class="lineno">   25</span>        <a class="code hl_variable" href="#a83bec7e38f5bec475a96a9a56a231a40">m_stageID</a> = _stageNo;</div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   28</span>            <span class="comment">// アセット取得</span></div>
+<div class="line"><span class="lineno">   29</span>            <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CJsonFactory::SPAsset</a> pJson = <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CJsonFactory::GetInst</a>().Load(_dataKey);</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>            <span class="comment">// ステージ情報の読み込み</span></div>
+<div class="line"><span class="lineno">   32</span>            <a class="code hl_function" href="#a498b23b2a543c1d4f99d847222ef7cca">SetupStageInfo</a>(*pJson);</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>            <span class="comment">// 敵の読み込み</span></div>
+<div class="line"><span class="lineno">   35</span>            <a class="code hl_variable" href="#a800f5b8cec517fc833cc38238c0a4e84">m_enemyManager</a>.Setup(</div>
+<div class="line"><span class="lineno">   36</span>                _dataKey, </div>
+<div class="line"><span class="lineno">   37</span>                <a class="code hl_variable" href="#a83bec7e38f5bec475a96a9a56a231a40">m_stageID</a>,</div>
+<div class="line"><span class="lineno">   38</span>                <a class="code hl_variable" href="#a963524439b18675566cf9e4045441a5c">m_stepCount</a>);</div>
+<div class="line"><span class="lineno">   39</span>        }</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>* _err) {</div>
+<div class="line"><span class="lineno">   41</span>            std::string err = <span class="stringliteral">&quot;ステージ情報の読み込みで例外が発生しました。\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   42</span>            err += <span class="stringliteral">&quot;Message : &quot;</span>;</div>
+<div class="line"><span class="lineno">   43</span>            err += _err;</div>
+<div class="line"><span class="lineno">   44</span>            err += <span class="stringliteral">&quot;\n\n指定したファイル : &quot;</span>;</div>
+<div class="line"><span class="lineno">   45</span>            err += _dataKey;</div>
+<div class="line"><span class="lineno">   46</span>            <a class="code hl_define" href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a>(err.data());</div>
+<div class="line"><span class="lineno">   47</span>        }</div>
+<div class="line"><span class="lineno">   48</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+<div class="ttc" id="a_system___error_8h_html_a1ef9aee6b1a8c442c300a378918a4d5f"><div class="ttname"><a href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a></div><div class="ttdeci">#define ErrorEx(_pMessage)</div><div class="ttdoc">ファイル名と行の情報を付加するマクロ</div><div class="ttdef"><b>Definition</b> System_Error.h:5</div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a42a8f39a038c716e5e95b31ea67b8ece"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CFactory&lt; json11::Json, CJsonFactory &gt;::SPAsset</a></div><div class="ttdeci">std::shared_ptr&lt; json11::Json &gt; SPAsset</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:30</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_stage_manager_html_a498b23b2a543c1d4f99d847222ef7cca"><div class="ttname"><a href="#a498b23b2a543c1d4f99d847222ef7cca">NGame::CStageManager::SetupStageInfo</a></div><div class="ttdeci">void SetupStageInfo(json11::Json &amp;_json)</div><div class="ttdoc">JSONの情報から必要な値を取得する</div><div class="ttdef"><b>Definition</b> Game_StageManager.cpp:100</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_singleton_html_a08cc988d79fa3297df6ede328e44a770"><div class="ttname"><a href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NUtil::CSingleton&lt; CJsonFactory &gt;::GetInst</a></div><div class="ttdeci">static CJsonFactory &amp; GetInst()</div><div class="ttdef"><b>Definition</b> Util_SingletonTemplate.h:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a498b23b2a543c1d4f99d847222ef7cca" name="a498b23b2a543c1d4f99d847222ef7cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a498b23b2a543c1d4f99d847222ef7cca">&#9670;&#160;</a></span>SetupStageInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CStageManager::SetupStageInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classjson11_1_1_json.html">json11::Json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_json</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSONの情報から必要な値を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  101</span>    {</div>
+<div class="line"><span class="lineno">  102</span>        <a class="code hl_variable" href="#a963524439b18675566cf9e4045441a5c">m_stepCount</a> = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;uint&gt;</a>(_json[<span class="stringliteral">&quot;StepCount&quot;</span>].int_value());</div>
+<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a963524439b18675566cf9e4045441a5c">m_stepCount</a> &gt; <a class="code hl_variable" href="#aa31d17763d8f2e91f0154b631446abd8">STEP_MAX</a>) {</div>
+<div class="line"><span class="lineno">  104</span>            std::string err = <span class="stringliteral">&quot;ステップの数上限値を超えています。\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  105</span>            err += <span class="stringliteral">&quot;最大値 : &quot;</span>;</div>
+<div class="line"><span class="lineno">  106</span>            err += std::to_string(<a class="code hl_variable" href="#aa31d17763d8f2e91f0154b631446abd8">STEP_MAX</a>);</div>
+<div class="line"><span class="lineno">  107</span>            err += <span class="stringliteral">&quot;\n指定した値 : &quot;</span>;</div>
+<div class="line"><span class="lineno">  108</span>            err += std::to_string(<a class="code hl_variable" href="#a963524439b18675566cf9e4045441a5c">m_stepCount</a>);</div>
+<div class="line"><span class="lineno">  109</span>            <span class="keywordflow">throw</span>(err.data());</div>
+<div class="line"><span class="lineno">  110</span>        }</div>
+<div class="line"><span class="lineno">  111</span>    }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_a099b6a85136760ed980079095fc9afe4"><div class="ttname"><a href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast</a></div><div class="ttdeci">#define StaticCast</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:88</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_stage_manager_html_aa31d17763d8f2e91f0154b631446abd8"><div class="ttname"><a href="#aa31d17763d8f2e91f0154b631446abd8">NGame::CStageManager::STEP_MAX</a></div><div class="ttdeci">static const int STEP_MAX</div><div class="ttdoc">ステップの最大数</div><div class="ttdef"><b>Definition</b> Game_StageManager.h:22</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6c90bc8173ee3c2888a32353c029337a" name="a6c90bc8173ee3c2888a32353c029337a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c90bc8173ee3c2888a32353c029337a">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CStageManager::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新処理 </p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>    {</div>
+<div class="line"><span class="lineno">   69</span>        <span class="comment">// ステージ更新</span></div>
+<div class="line"><span class="lineno">   70</span>        <a class="code hl_variable" href="#a895d004e8a170ba67527c49bbf7d57b9">m_stage</a>.Update();</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>        <span class="comment">// 敵更新</span></div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="#a800f5b8cec517fc833cc38238c0a4e84">m_enemyManager</a>.Update(<a class="code hl_variable" href="#a09a516f8cb77c1df90b5ebe23c635c4a">m_curStep</a>);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>        <span class="comment">// クリアしていない間実行</span></div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a30a1470b5161f3fcd35c07e4f37d3d30">m_isClear</a>) {</div>
+<div class="line"><span class="lineno">   77</span>            <span class="comment">// 時間更新</span></div>
+<div class="line"><span class="lineno">   78</span>            <a class="code hl_variable" href="#a43a913a98956b031f0c293d346dac131">m_stageCnt</a>++;</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>            <span class="comment">// 敵の生存状態を確認しステップを進行</span></div>
+<div class="line"><span class="lineno">   81</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a800f5b8cec517fc833cc38238c0a4e84">m_enemyManager</a>.GetIsStepClear(<a class="code hl_variable" href="#a09a516f8cb77c1df90b5ebe23c635c4a">m_curStep</a>)) {</div>
+<div class="line"><span class="lineno">   82</span>                <a class="code hl_variable" href="#a09a516f8cb77c1df90b5ebe23c635c4a">m_curStep</a>++;</div>
+<div class="line"><span class="lineno">   83</span>                </div>
+<div class="line"><span class="lineno">   84</span>                <span class="comment">// ステップの最大を超えたらステージクリア</span></div>
+<div class="line"><span class="lineno">   85</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a09a516f8cb77c1df90b5ebe23c635c4a">m_curStep</a> &gt;= <a class="code hl_variable" href="#a963524439b18675566cf9e4045441a5c">m_stepCount</a>) {</div>
+<div class="line"><span class="lineno">   86</span>                    <a class="code hl_variable" href="#a30a1470b5161f3fcd35c07e4f37d3d30">m_isClear</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   87</span>                }</div>
+<div class="line"><span class="lineno">   88</span>            }</div>
+<div class="line"><span class="lineno">   89</span>        }</div>
+<div class="line"><span class="lineno">   90</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a09a516f8cb77c1df90b5ebe23c635c4a" name="a09a516f8cb77c1df90b5ebe23c635c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09a516f8cb77c1df90b5ebe23c635c4a">&#9670;&#160;</a></span>m_curStep</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NGame::CStageManager::m_curStep</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a800f5b8cec517fc833cc38238c0a4e84" name="a800f5b8cec517fc833cc38238c0a4e84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a800f5b8cec517fc833cc38238c0a4e84">&#9670;&#160;</a></span>m_enemyManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_game_1_1_c_enemy_manager.html">CEnemyManager</a> NGame::CStageManager::m_enemyManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30a1470b5161f3fcd35c07e4f37d3d30" name="a30a1470b5161f3fcd35c07e4f37d3d30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a1470b5161f3fcd35c07e4f37d3d30">&#9670;&#160;</a></span>m_isClear</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CStageManager::m_isClear</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a895d004e8a170ba67527c49bbf7d57b9" name="a895d004e8a170ba67527c49bbf7d57b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a895d004e8a170ba67527c49bbf7d57b9">&#9670;&#160;</a></span>m_stage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_stage.html">NObject::CStage</a> NGame::CStageManager::m_stage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43a913a98956b031f0c293d346dac131" name="a43a913a98956b031f0c293d346dac131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a913a98956b031f0c293d346dac131">&#9670;&#160;</a></span>m_stageCnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NGame::CStageManager::m_stageCnt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83bec7e38f5bec475a96a9a56a231a40" name="a83bec7e38f5bec475a96a9a56a231a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bec7e38f5bec475a96a9a56a231a40">&#9670;&#160;</a></span>m_stageID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NGame::CStageManager::m_stageID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a963524439b18675566cf9e4045441a5c" name="a963524439b18675566cf9e4045441a5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a963524439b18675566cf9e4045441a5c">&#9670;&#160;</a></span>m_stepCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NGame::CStageManager::m_stepCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa31d17763d8f2e91f0154b631446abd8" name="aa31d17763d8f2e91f0154b631446abd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31d17763d8f2e91f0154b631446abd8">&#9670;&#160;</a></span>STEP_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int NGame::CStageManager::STEP_MAX = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ステップの最大数 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/GameApp/Game/Manager/<a class="el" href="_game___stage_manager_8h_source.html">Game_StageManager.h</a></li>
+<li>Sources/GameApp/Game/Manager/<a class="el" href="_game___stage_manager_8cpp.html">Game_StageManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_game.html">NGame</a></li><li class="navelem"><a href="class_n_game_1_1_c_stage_manager.html">CStageManager</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameApp/Game/Manager/Game_EnemyManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_game___enemy_manager_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game_EnemyManager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game___enemy_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___enemy_8h.html">Object\Actor\Enemy\Object_Enemy.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &lt;array&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include    &quot;<a class="code" href="_asset___json_factory_8h.html">Asset\Factory\Asset_JsonFactory.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#undef ABSOLUTE </span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_game.html">NGame</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager.html">   14</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#a75450105da12ce87fa27466241194a54">CEnemyManager</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="comment">// 内部クラス</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html">   24</a></span>        <span class="keyword">class </span><a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ac7e5ec1b93cde99bfcc74523649fb7ae">CStageEnemy</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab33130ea8c4c79f319e3e00096d11b6e">   28</a></span>            <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab33130ea8c4c79f319e3e00096d11b6e">EInitDirMode</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab33130ea8c4c79f319e3e00096d11b6eae969ca6edc823fb67544348505fdb7dd">   29</a></span>                <a class="code hl_enumvalue" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab33130ea8c4c79f319e3e00096d11b6eae969ca6edc823fb67544348505fdb7dd">ABSOLUTE</a>,   <span class="comment">// 絶対座標上のベクトル方向を向く</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab33130ea8c4c79f319e3e00096d11b6ead8c9b5fe60d939033bc439a7d3d21849">   30</a></span>                <a class="code hl_enumvalue" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab33130ea8c4c79f319e3e00096d11b6ead8c9b5fe60d939033bc439a7d3d21849">FOCUS</a>       <span class="comment">// 注視点として、その方向を見る</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            };</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab134e08f8b5e794353d4c4e130dd0e2b">Setup</a>(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keyword">const</span> <a class="code hl_class" href="classjson11_1_1_json.html">json11::Json</a>&amp; _json,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <span class="keyword">const</span> uint          _stepMax);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#abf303f4a8adcd6dcb4dd43b8a7dfdd90">Init</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a0ed4378fe07ceb3c75a4bffc2f0c52e8">Update</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ae196bb67367a61edf8e4904be2b9069b">Render</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#af1a5568135eb4149213006d74f664e61">   51</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#af1a5568135eb4149213006d74f664e61">Spawn</a>() { <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a8fc794fc6e9339ab8c6c5df79c488ac7">m_isSpawned</a> = <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="comment">// ゲッター</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#af7b1c5e7f36ab7fe5956bd95255b6362">   59</a></span>            <a class="code hl_class" href="class_n_object_1_1_c_enemy.html">NObject::CEnemy</a>*    <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#af7b1c5e7f36ab7fe5956bd95255b6362">GetEnemy</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ae02beedb00df2ab77db9ec1efde68c5b">m_pEnemy</a>; }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a986f285b26bb407934110317f7bcffd9">   62</a></span>            <span class="keywordtype">bool</span>    <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a986f285b26bb407934110317f7bcffd9">GetIsSpawned</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a8fc794fc6e9339ab8c6c5df79c488ac7">m_isSpawned</a>; }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a8a210618c4fc9939caec8d261d97c44a">   65</a></span>            uint    <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a8a210618c4fc9939caec8d261d97c44a">GetSpawnStep</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#aa4bd292e7248daf41476d585b39c3910">m_spawnStageStep</a>; }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="comment">// 管理する敵オブジェクト</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ae02beedb00df2ab77db9ec1efde68c5b">   70</a></span>            <a class="code hl_class" href="class_n_object_1_1_c_enemy.html">NObject::CEnemy</a>*    <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ae02beedb00df2ab77db9ec1efde68c5b">m_pEnemy</a>;           <span class="comment">// 敵を管理する親のポインタ</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="comment">// プログラム非依存データ</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a4f343fe1329408a96bfe13370aa69d10">   73</a></span>            std::string         <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a4f343fe1329408a96bfe13370aa69d10">m_createClassName</a>;  <span class="comment">// 生成する際に使用したクラス名</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#aa4bd292e7248daf41476d585b39c3910">   75</a></span>            uint                <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#aa4bd292e7248daf41476d585b39c3910">m_spawnStageStep</a>;   <span class="comment">// 出現するステージのステップ数</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#abb39a6ca13eef30840ef1d964e706a92">   76</a></span>            float3              <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#abb39a6ca13eef30840ef1d964e706a92">m_initPos</a>;          <span class="comment">// 初期座標</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a67c2f057042fff63cde9466bedcbf9ab">   77</a></span>            <a class="code hl_enumeration" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab33130ea8c4c79f319e3e00096d11b6e">EInitDirMode</a>        <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a67c2f057042fff63cde9466bedcbf9ab">m_initDirMode</a>;      <span class="comment">// 初期姿勢決定モード</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a96e74b5fe9c4584c0d079be83820c060">   78</a></span>            float3              <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a96e74b5fe9c4584c0d079be83820c060">m_initForwardXZ</a>;    <span class="comment">// 初期のXZ平面での方向</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="comment">// プログラム上で設定するデータ</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a64f7d2966e1767d5bd98ff54e69db9f7">   81</a></span>            uint                <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a64f7d2966e1767d5bd98ff54e69db9f7">m_aliveCnt</a>;         <span class="comment">// 出現してからの経過時間(フレーム)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="comment">// 状態</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a8fc794fc6e9339ab8c6c5df79c488ac7">   84</a></span>            <span class="keywordtype">bool</span>                <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a8fc794fc6e9339ab8c6c5df79c488ac7">m_isSpawned</a>;        <span class="comment">// ステージ上に出現したフラグ</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ac7e5ec1b93cde99bfcc74523649fb7ae">CStageEnemy</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab4887cbe4579fee89213bd88fbc1f1d5">~CStageEnemy</a>();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        };</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="comment">// 定数値</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager.html#af860ea05f427b8062e6cdef060271ec0">   96</a></span>        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager.html#af860ea05f427b8062e6cdef060271ec0">ENEMY_MAX</a> = 128;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="comment">// 基本的な関数</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#aa9fa66b324ed10908826b5daeeff764e">Setup</a>(</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a>   _dataKey, </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keyword">const</span> uint                  _stageID,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keyword">const</span> uint                  _stepMax);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#a4c5d5fbc25785e424e213b8c76205a47">Init</a>();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#af57df55f2097e8950d9a9942b697a596">Update</a>(<span class="keyword">const</span> uint _curStep);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#ab6a2a350ded177739f4bc9fb5a3632f7">Render</a>();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="comment">// ゲッター</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordtype">bool</span>    <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#a2a8a898aadceb6f118036aef5dc7a037">GetIsStepClear</a>(<span class="keyword">const</span> uint _curStep) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager.html#ad8cbd7a8fdc15abf5059e15d12c213ab">  126</a></span>        uint                                <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager.html#ad8cbd7a8fdc15abf5059e15d12c213ab">m_enemyCount</a>;   <span class="comment">// 敵の数</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager.html#a53759b56a0683458e5ebdc648b2a2373">  127</a></span>        std::array&lt;CStageEnemy, ENEMY_MAX&gt;  <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager.html#a53759b56a0683458e5ebdc648b2a2373">m_stageEnemys</a>;  <span class="comment">// 全ての敵のポインタを保持するコンテナ</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager.html#a693c63003507427147bb41fc7e14811b">  129</a></span>        uint                                <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager.html#a693c63003507427147bb41fc7e14811b">m_stageID</a>;      <span class="comment">// 管理下にあるステージID</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager.html#a6e065a2132d16c22b229af60e972b2de">  130</a></span>        uint                                <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager.html#a6e065a2132d16c22b229af60e972b2de">m_stepCount</a>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager.html#ad9433066822bfd490b56ec8afdc9366b">  131</a></span>        std::vector&lt;bool&gt;                   <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager.html#ad9433066822bfd490b56ec8afdc9366b">m_isStepClearInfos</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_enemy_manager.html#a9181dc41dcddb592cc94a5a2a3d45d32">  133</a></span>        uint                                <a class="code hl_variable" href="class_n_game_1_1_c_enemy_manager.html#a9181dc41dcddb592cc94a5a2a3d45d32">m_prevStep</a>;         <span class="comment">// 1フレーム前のステップを保持し、変化を監視する</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#af578d20ee21c2341e92219fe69e93f04">SetupStageEnemys</a>(</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <a class="code hl_class" href="classjson11_1_1_json.html">json11::Json</a>&amp;   _json,</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <span class="keyword">const</span> uint      _stepMax);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#a176519fd232df7cf91ada92c8b566f8a">RegisterToGlobalManager</a>();</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#a6a2f80d64516f5fb7dec9284afc5638e">CheckIsStepClear</a>();</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#a7668accb08d14e82cae6d6439a37a979">SpawnEnemys</a>(uint _curStep);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#a75450105da12ce87fa27466241194a54">CEnemyManager</a>();</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <a class="code hl_function" href="class_n_game_1_1_c_enemy_manager.html#a9faba5cd5d4d5dc26566e11daa9985b2">~CEnemyManager</a>();</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    };</div>
+</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>}</div>
+<div class="ttc" id="a_asset___json_factory_8h_html"><div class="ttname"><a href="_asset___json_factory_8h.html">Asset_JsonFactory.h</a></div></div>
+<div class="ttc" id="a_object___enemy_8h_html"><div class="ttname"><a href="_object___enemy_8h.html">Object_Enemy.h</a></div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a4a6509d6bcd7f624a19f44a25380671e"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CFactory&lt; json11::Json, CJsonFactory &gt;::Key</a></div><div class="ttdeci">std::string Key</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:27</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_a0ed4378fe07ceb3c75a4bffc2f0c52e8"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a0ed4378fe07ceb3c75a4bffc2f0c52e8">NGame::CEnemyManager::CStageEnemy::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新関数</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:135</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_a4f343fe1329408a96bfe13370aa69d10"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a4f343fe1329408a96bfe13370aa69d10">NGame::CEnemyManager::CStageEnemy::m_createClassName</a></div><div class="ttdeci">std::string m_createClassName</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:73</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_a64f7d2966e1767d5bd98ff54e69db9f7"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a64f7d2966e1767d5bd98ff54e69db9f7">NGame::CEnemyManager::CStageEnemy::m_aliveCnt</a></div><div class="ttdeci">uint m_aliveCnt</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:81</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_a67c2f057042fff63cde9466bedcbf9ab"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a67c2f057042fff63cde9466bedcbf9ab">NGame::CEnemyManager::CStageEnemy::m_initDirMode</a></div><div class="ttdeci">EInitDirMode m_initDirMode</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:77</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_a8a210618c4fc9939caec8d261d97c44a"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a8a210618c4fc9939caec8d261d97c44a">NGame::CEnemyManager::CStageEnemy::GetSpawnStep</a></div><div class="ttdeci">uint GetSpawnStep() const</div><div class="ttdoc">出現するステップを取得</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:65</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_a8fc794fc6e9339ab8c6c5df79c488ac7"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a8fc794fc6e9339ab8c6c5df79c488ac7">NGame::CEnemyManager::CStageEnemy::m_isSpawned</a></div><div class="ttdeci">bool m_isSpawned</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:84</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_a96e74b5fe9c4584c0d079be83820c060"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a96e74b5fe9c4584c0d079be83820c060">NGame::CEnemyManager::CStageEnemy::m_initForwardXZ</a></div><div class="ttdeci">float3 m_initForwardXZ</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:78</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_a986f285b26bb407934110317f7bcffd9"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#a986f285b26bb407934110317f7bcffd9">NGame::CEnemyManager::CStageEnemy::GetIsSpawned</a></div><div class="ttdeci">bool GetIsSpawned() const</div><div class="ttdoc">出現状態を取得</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:62</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_aa4bd292e7248daf41476d585b39c3910"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#aa4bd292e7248daf41476d585b39c3910">NGame::CEnemyManager::CStageEnemy::m_spawnStageStep</a></div><div class="ttdeci">uint m_spawnStageStep</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:75</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_ab134e08f8b5e794353d4c4e130dd0e2b"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab134e08f8b5e794353d4c4e130dd0e2b">NGame::CEnemyManager::CStageEnemy::Setup</a></div><div class="ttdeci">void Setup(const json11::Json &amp;_json, const uint _stepMax)</div><div class="ttdoc">使用可能状態にする</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:33</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_ab33130ea8c4c79f319e3e00096d11b6e"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab33130ea8c4c79f319e3e00096d11b6e">NGame::CEnemyManager::CStageEnemy::EInitDirMode</a></div><div class="ttdeci">EInitDirMode</div><div class="ttdoc">初期姿勢の計算モード</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:28</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_ab33130ea8c4c79f319e3e00096d11b6ead8c9b5fe60d939033bc439a7d3d21849"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab33130ea8c4c79f319e3e00096d11b6ead8c9b5fe60d939033bc439a7d3d21849">NGame::CEnemyManager::CStageEnemy::FOCUS</a></div><div class="ttdeci">@ FOCUS</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:30</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_ab33130ea8c4c79f319e3e00096d11b6eae969ca6edc823fb67544348505fdb7dd"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab33130ea8c4c79f319e3e00096d11b6eae969ca6edc823fb67544348505fdb7dd">NGame::CEnemyManager::CStageEnemy::ABSOLUTE</a></div><div class="ttdeci">@ ABSOLUTE</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:29</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_ab4887cbe4579fee89213bd88fbc1f1d5"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ab4887cbe4579fee89213bd88fbc1f1d5">NGame::CEnemyManager::CStageEnemy::~CStageEnemy</a></div><div class="ttdeci">~CStageEnemy()</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:28</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_abb39a6ca13eef30840ef1d964e706a92"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#abb39a6ca13eef30840ef1d964e706a92">NGame::CEnemyManager::CStageEnemy::m_initPos</a></div><div class="ttdeci">float3 m_initPos</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:76</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_abf303f4a8adcd6dcb4dd43b8a7dfdd90"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#abf303f4a8adcd6dcb4dd43b8a7dfdd90">NGame::CEnemyManager::CStageEnemy::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">初期状態にする</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:83</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_ac7e5ec1b93cde99bfcc74523649fb7ae"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ac7e5ec1b93cde99bfcc74523649fb7ae">NGame::CEnemyManager::CStageEnemy::CStageEnemy</a></div><div class="ttdeci">CStageEnemy()</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:19</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_ae02beedb00df2ab77db9ec1efde68c5b"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ae02beedb00df2ab77db9ec1efde68c5b">NGame::CEnemyManager::CStageEnemy::m_pEnemy</a></div><div class="ttdeci">NObject::CEnemy * m_pEnemy</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:70</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_ae196bb67367a61edf8e4904be2b9069b"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#ae196bb67367a61edf8e4904be2b9069b">NGame::CEnemyManager::CStageEnemy::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdoc">描画処理</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:155</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_af1a5568135eb4149213006d74f664e61"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#af1a5568135eb4149213006d74f664e61">NGame::CEnemyManager::CStageEnemy::Spawn</a></div><div class="ttdeci">void Spawn()</div><div class="ttdoc">敵をスポーンさせる</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:51</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy_html_af7b1c5e7f36ab7fe5956bd95255b6362"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager_1_1_c_stage_enemy.html#af7b1c5e7f36ab7fe5956bd95255b6362">NGame::CEnemyManager::CStageEnemy::GetEnemy</a></div><div class="ttdeci">NObject::CEnemy * GetEnemy()</div><div class="ttdoc">敵情報を取得する</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:59</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a176519fd232df7cf91ada92c8b566f8a"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a176519fd232df7cf91ada92c8b566f8a">NGame::CEnemyManager::RegisterToGlobalManager</a></div><div class="ttdeci">void RegisterToGlobalManager()</div><div class="ttdoc">グローバルマネージャに敵を登録</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:289</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a2a8a898aadceb6f118036aef5dc7a037"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a2a8a898aadceb6f118036aef5dc7a037">NGame::CEnemyManager::GetIsStepClear</a></div><div class="ttdeci">bool GetIsStepClear(const uint _curStep) const</div><div class="ttdoc">指定したステップの敵をすべて倒したかどうか</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:266</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a4c5d5fbc25785e424e213b8c76205a47"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a4c5d5fbc25785e424e213b8c76205a47">NGame::CEnemyManager::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">初期化</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:221</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a53759b56a0683458e5ebdc648b2a2373"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a53759b56a0683458e5ebdc648b2a2373">NGame::CEnemyManager::m_stageEnemys</a></div><div class="ttdeci">std::array&lt; CStageEnemy, ENEMY_MAX &gt; m_stageEnemys</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:127</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a693c63003507427147bb41fc7e14811b"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a693c63003507427147bb41fc7e14811b">NGame::CEnemyManager::m_stageID</a></div><div class="ttdeci">uint m_stageID</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:129</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a6a2f80d64516f5fb7dec9284afc5638e"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a6a2f80d64516f5fb7dec9284afc5638e">NGame::CEnemyManager::CheckIsStepClear</a></div><div class="ttdeci">void CheckIsStepClear()</div><div class="ttdoc">敵の生存状態からステップのクリア状態を監視する</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:297</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a6e065a2132d16c22b229af60e972b2de"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a6e065a2132d16c22b229af60e972b2de">NGame::CEnemyManager::m_stepCount</a></div><div class="ttdeci">uint m_stepCount</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:130</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a75450105da12ce87fa27466241194a54"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a75450105da12ce87fa27466241194a54">NGame::CEnemyManager::CEnemyManager</a></div><div class="ttdeci">CEnemyManager()</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:167</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a7668accb08d14e82cae6d6439a37a979"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a7668accb08d14e82cae6d6439a37a979">NGame::CEnemyManager::SpawnEnemys</a></div><div class="ttdeci">void SpawnEnemys(uint _curStep)</div><div class="ttdoc">指定したステップに属する敵をすべて出現させる</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:338</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a9181dc41dcddb592cc94a5a2a3d45d32"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a9181dc41dcddb592cc94a5a2a3d45d32">NGame::CEnemyManager::m_prevStep</a></div><div class="ttdeci">uint m_prevStep</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:133</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_a9faba5cd5d4d5dc26566e11daa9985b2"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#a9faba5cd5d4d5dc26566e11daa9985b2">NGame::CEnemyManager::~CEnemyManager</a></div><div class="ttdeci">~CEnemyManager()</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:175</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_aa9fa66b324ed10908826b5daeeff764e"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#aa9fa66b324ed10908826b5daeeff764e">NGame::CEnemyManager::Setup</a></div><div class="ttdeci">void Setup(NAsset::CJsonFactory::Key _dataKey, const uint _stageID, const uint _stepMax)</div><div class="ttdoc">設定する敵情報を保持したJSONファイルをもとにセットアップする</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:182</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_ab6a2a350ded177739f4bc9fb5a3632f7"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#ab6a2a350ded177739f4bc9fb5a3632f7">NGame::CEnemyManager::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdoc">描画</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:258</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_ad8cbd7a8fdc15abf5059e15d12c213ab"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#ad8cbd7a8fdc15abf5059e15d12c213ab">NGame::CEnemyManager::m_enemyCount</a></div><div class="ttdeci">uint m_enemyCount</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:126</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_ad9433066822bfd490b56ec8afdc9366b"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#ad9433066822bfd490b56ec8afdc9366b">NGame::CEnemyManager::m_isStepClearInfos</a></div><div class="ttdeci">std::vector&lt; bool &gt; m_isStepClearInfos</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:131</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_af578d20ee21c2341e92219fe69e93f04"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#af578d20ee21c2341e92219fe69e93f04">NGame::CEnemyManager::SetupStageEnemys</a></div><div class="ttdeci">void SetupStageEnemys(json11::Json &amp;_json, const uint _stepMax)</div><div class="ttdoc">JSONの情報から敵を生成する</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:274</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_af57df55f2097e8950d9a9942b697a596"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#af57df55f2097e8950d9a9942b697a596">NGame::CEnemyManager::Update</a></div><div class="ttdeci">void Update(const uint _curStep)</div><div class="ttdoc">更新</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.cpp:236</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_enemy_manager_html_af860ea05f427b8062e6cdef060271ec0"><div class="ttname"><a href="class_n_game_1_1_c_enemy_manager.html#af860ea05f427b8062e6cdef060271ec0">NGame::CEnemyManager::ENEMY_MAX</a></div><div class="ttdeci">static const int ENEMY_MAX</div><div class="ttdoc">敵の最大数</div><div class="ttdef"><b>Definition</b> Game_EnemyManager.h:96</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_enemy_html"><div class="ttname"><a href="class_n_object_1_1_c_enemy.html">NObject::CEnemy</a></div><div class="ttdoc">敵オブジェクトの基底クラスになるオブジェクト</div><div class="ttdef"><b>Definition</b> Object_Enemy.h:8</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html"><div class="ttname"><a href="classjson11_1_1_json.html">json11::Json</a></div><div class="ttdef"><b>Definition</b> json11.hpp:79</div></div>
+<div class="ttc" id="anamespace_n_game_html"><div class="ttname"><a href="namespace_n_game.html">NGame</a></div><div class="ttdoc">プレイヤーへのアクセス、敵へのアクセス、ステージ情報へのアクセスなど、 様々な場所で参照される情報にアクセスするための仲介を行う関数群</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:45</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_f694c4fbc4aebbaf0d8c111126161e66.html">GameApp</a></li><li class="navelem"><a href="dir_3aedba31b05c2e73ecb481a8aa7b3177.html">Game</a></li><li class="navelem"><a href="dir_27ce79e68317e0ec536efc61224c8bbc.html">Manager</a></li><li class="navelem"><a href="_game___enemy_manager_8h.html">Game_EnemyManager.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

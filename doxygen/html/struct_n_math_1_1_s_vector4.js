@@ -1,0 +1,27 @@
+var struct_n_math_1_1_s_vector4 =
+[
+    [ "SVector4", "struct_n_math_1_1_s_vector4.html#acec22b483d59ca9a8f4842fc088fde13", null ],
+    [ "SVector4", "struct_n_math_1_1_s_vector4.html#abf3baa308b8c1e96814562398e37c794", null ],
+    [ "SVector4", "struct_n_math_1_1_s_vector4.html#a0c8b618211f5b829f181d9aeb38e6da0", null ],
+    [ "Get", "struct_n_math_1_1_s_vector4.html#a7b60f6be724ec420749bf99372cb3091", null ],
+    [ "GetLength", "struct_n_math_1_1_s_vector4.html#a8c752d014f0bba23bf03cb552c4b7fe8", null ],
+    [ "GetLengthSquare", "struct_n_math_1_1_s_vector4.html#aad72b1c048d86eff670a231bdbb02a5a", null ],
+    [ "GetNormal", "struct_n_math_1_1_s_vector4.html#a8b70fe78c16d80633ca673c66aaed1c1", null ],
+    [ "Normalize", "struct_n_math_1_1_s_vector4.html#a21d5a7da654a2724317519b7c03cb02d", null ],
+    [ "operator*=", "struct_n_math_1_1_s_vector4.html#ae9a7b50a16662b858d29b6c560e67320", null ],
+    [ "operator*=", "struct_n_math_1_1_s_vector4.html#a26606628bc58a4f186a35bd919d1258c", null ],
+    [ "operator+=", "struct_n_math_1_1_s_vector4.html#a30df7b2e9d7a1f99a68de469caacf71b", null ],
+    [ "operator-=", "struct_n_math_1_1_s_vector4.html#a4c5a0a5070af7f203317b65bf809d1e0", null ],
+    [ "operator/=", "struct_n_math_1_1_s_vector4.html#a067d0ab75200106f96f08e442e9f62f9", null ],
+    [ "operator/=", "struct_n_math_1_1_s_vector4.html#a01e30698fcb45d8196407c9a61a80b1a", null ],
+    [ "operator=", "struct_n_math_1_1_s_vector4.html#a1720e14ed0400d2a186b9e082d5371e0", null ],
+    [ "SetZero", "struct_n_math_1_1_s_vector4.html#a7e486fe2ff4cf5a3ab24ef1c710a803a", null ],
+    [ "array", "struct_n_math_1_1_s_vector4.html#a2b2bdf2bd49b9005e5d8214b37148d73", null ],
+    [ "simd", "struct_n_math_1_1_s_vector4.html#ab0e916a11387eca3d4850d357e794afa", null ],
+    [ "vec2", "struct_n_math_1_1_s_vector4.html#a351d957df8fa97ea34ababcf27169cb0", null ],
+    [ "vec3", "struct_n_math_1_1_s_vector4.html#a334a4d58fd95b35243a2fe616adc3d12", null ],
+    [ "w", "struct_n_math_1_1_s_vector4.html#a01548c03f76dc80f7a342ad61276f07f", null ],
+    [ "x", "struct_n_math_1_1_s_vector4.html#a93523056a3b683e7c0bb0ea8a0b96e09", null ],
+    [ "y", "struct_n_math_1_1_s_vector4.html#a79781a4be0be2190cb9e0baedbf050e5", null ],
+    [ "z", "struct_n_math_1_1_s_vector4.html#a436fad2f330f6871413f520d3c76f562", null ]
+];

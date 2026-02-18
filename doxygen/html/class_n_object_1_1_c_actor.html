@@ -1,0 +1,1749 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NObject::CActor クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_object_1_1_c_actor.html','','class_n_object_1_1_c_actor-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NObject::CActor クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ゲーム内のキャラクターや敵の基底クラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_object___actor_8h_source.html">Object_Actor.h</a>&gt;</code></p>
+<div class="dynheader">
+NObject::CActor の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_object_1_1_c_actor.png" usemap="#NObject_3A_3ACActor_map" alt=""/>
+  <map id="NObject_3A_3ACActor_map" name="NObject_3A_3ACActor_map">
+<area href="class_n_object_1_1_c_game_object.html" title="ゲーム内のすべてのオブジェクトの基底クラスとなるクラス" alt="NObject::CGameObject" shape="rect" coords="152,0,294,24"/>
+<area href="class_n_object_1_1_c_enemy.html" title="敵オブジェクトの基底クラスになるオブジェクト" alt="NObject::CEnemy" shape="rect" coords="76,112,218,136"/>
+<area href="class_n_object_1_1_c_player.html" title="テスト用のキャラクター" alt="NObject::CPlayer" shape="rect" coords="228,112,370,136"/>
+<area href="class_n_object_1_1_c_baby.html" title="雑魚敵(バビー)" alt="NObject::CBaby" shape="rect" coords="0,168,142,192"/>
+<area href="class_n_object_1_1_c_sand_bag.html" title="テスト用の敵" alt="NObject::CSandBag" shape="rect" coords="152,168,294,192"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a2522acee65a0f5542fbdeb8c0858b6b0" id="r_a2522acee65a0f5542fbdeb8c0858b6b0"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a2522acee65a0f5542fbdeb8c0858b6b0">ReceiveAttackInfos</a> = std::array&lt;<a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a>, <a class="el" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>&gt;</td></tr>
+<tr class="inherit_header pub_types_class_n_object_1_1_c_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_class_n_object_1_1_c_game_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> に属する継承公開型</td></tr>
+<tr class="memitem:ac868ed3d84ef01884da62a5104c55966 inherit pub_types_class_n_object_1_1_c_game_object" id="r_ac868ed3d84ef01884da62a5104c55966"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966">EObjectState</a> { <a class="el" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028">LOAD</a>
+, <a class="el" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">INIT</a>
+, <a class="el" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">UPDATE</a>
+ }</td></tr>
+<tr class="memdesc:ac868ed3d84ef01884da62a5104c55966"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新の制御状態を表す定数  <a href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:adf61f10bb2fa1a1423973ae4fcd2b7cc" id="r_adf61f10bb2fa1a1423973ae4fcd2b7cc"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#adf61f10bb2fa1a1423973ae4fcd2b7cc">GetLife</a> () const</td></tr>
+<tr class="memdesc:adf61f10bb2fa1a1423973ae4fcd2b7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">残りライフを取得する  <br /></td></tr>
+<tr class="memitem:a1aeb051d8d3c6268a6148e54448b062a" id="r_a1aeb051d8d3c6268a6148e54448b062a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a1aeb051d8d3c6268a6148e54448b062a">GetLifeMax</a> () const</td></tr>
+<tr class="memdesc:a1aeb051d8d3c6268a6148e54448b062a"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大ライフを取得する  <br /></td></tr>
+<tr class="memitem:a609e839283f3bbedd4142ff8454f6279" id="r_a609e839283f3bbedd4142ff8454f6279"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a609e839283f3bbedd4142ff8454f6279">GetIsAlive</a> () const</td></tr>
+<tr class="memdesc:a609e839283f3bbedd4142ff8454f6279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actorの生存状態を取得  <br /></td></tr>
+<tr class="memitem:ac02414e3b6261fe2a0237e5253deb2e0" id="r_ac02414e3b6261fe2a0237e5253deb2e0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac02414e3b6261fe2a0237e5253deb2e0">GetIsEliminated</a> () const</td></tr>
+<tr class="memdesc:ac02414e3b6261fe2a0237e5253deb2e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actorの消滅状態を取得(主にEnemy)  <br /></td></tr>
+<tr class="memitem:aa0bbdd7b8197c18b46fa2c0ccf785dcb" id="r_aa0bbdd7b8197c18b46fa2c0ccf785dcb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa0bbdd7b8197c18b46fa2c0ccf785dcb">AddReceiveAttackInfo</a> (<a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a> &amp;_rSrc)</td></tr>
+<tr class="memdesc:aa0bbdd7b8197c18b46fa2c0ccf785dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">受けた当たり判定情報を追加する  <br /></td></tr>
+<tr class="memitem:ae66c876104bb2da622a50e3c1971827f" id="r_ae66c876104bb2da622a50e3c1971827f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ae66c876104bb2da622a50e3c1971827f">CActor</a> ()</td></tr>
+<tr class="memitem:a9dd70b72b18f1d236152496ee079c525" id="r_a9dd70b72b18f1d236152496ee079c525"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a9dd70b72b18f1d236152496ee079c525">~CActor</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_n_object_1_1_c_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_object_1_1_c_game_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a7caf845184ced68122960133aa6b969a inherit pub_methods_class_n_object_1_1_c_game_object" id="r_a7caf845184ced68122960133aa6b969a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#a7caf845184ced68122960133aa6b969a">Init</a> ()</td></tr>
+<tr class="memdesc:a7caf845184ced68122960133aa6b969a inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化する  <br /></td></tr>
+<tr class="memitem:ae972af9c0b739cf9e802df174efe092a inherit pub_methods_class_n_object_1_1_c_game_object" id="r_ae972af9c0b739cf9e802df174efe092a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#ae972af9c0b739cf9e802df174efe092a">Update</a> ()</td></tr>
+<tr class="memdesc:ae972af9c0b739cf9e802df174efe092a inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理  <br /></td></tr>
+<tr class="memitem:aafa2ee04d4a01cfd0b2d875f9fb1f99d inherit pub_methods_class_n_object_1_1_c_game_object" id="r_aafa2ee04d4a01cfd0b2d875f9fb1f99d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#aafa2ee04d4a01cfd0b2d875f9fb1f99d">Render</a> ()</td></tr>
+<tr class="memdesc:aafa2ee04d4a01cfd0b2d875f9fb1f99d inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画処理  <br /></td></tr>
+<tr class="memitem:aa34046adb0698a3533064c7b3f9cbc22 inherit pub_methods_class_n_object_1_1_c_game_object" id="r_aa34046adb0698a3533064c7b3f9cbc22"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#aa34046adb0698a3533064c7b3f9cbc22">Destroy</a> ()</td></tr>
+<tr class="memdesc:aa34046adb0698a3533064c7b3f9cbc22 inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了処理を行う(何度も実行できること)  <br /></td></tr>
+<tr class="memitem:aef389ac261cbf5e5898093a9ac06db66 inherit pub_methods_class_n_object_1_1_c_game_object" id="r_aef389ac261cbf5e5898093a9ac06db66"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#aef389ac261cbf5e5898093a9ac06db66">SetIsActive</a> (const bool _state)</td></tr>
+<tr class="memdesc:aef389ac261cbf5e5898093a9ac06db66 inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">有効状態を設定  <br /></td></tr>
+<tr class="memitem:a575707b1063df76e98c3aab335b2ce2f inherit pub_methods_class_n_object_1_1_c_game_object" id="r_a575707b1063df76e98c3aab335b2ce2f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#a575707b1063df76e98c3aab335b2ce2f">GetIsActive</a> () const</td></tr>
+<tr class="memdesc:a575707b1063df76e98c3aab335b2ce2f inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">有効状態を取得  <br /></td></tr>
+<tr class="memitem:ad886ead881768ecf2df0ea072a85ba8c inherit pub_methods_class_n_object_1_1_c_game_object" id="r_ad886ead881768ecf2df0ea072a85ba8c"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_transform.html">CTransform</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a> ()</td></tr>
+<tr class="memdesc:ad886ead881768ecf2df0ea072a85ba8c inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transformを取得  <br /></td></tr>
+<tr class="memitem:a73af1188d97ef39ca6fe57ad32c3323f inherit pub_methods_class_n_object_1_1_c_game_object" id="r_a73af1188d97ef39ca6fe57ad32c3323f"><td class="memItemLeft">const <a class="el" href="class_n_object_1_1_c_transform.html">CTransform</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#a73af1188d97ef39ca6fe57ad32c3323f">GetTransform</a> () const</td></tr>
+<tr class="memitem:ad728b6ed026185583ce27041d2b7b08f inherit pub_methods_class_n_object_1_1_c_game_object" id="r_ad728b6ed026185583ce27041d2b7b08f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#ad728b6ed026185583ce27041d2b7b08f">CGameObject</a> ()</td></tr>
+<tr class="memitem:a6093be13fcbfbd54e4b4176434c5cad3 inherit pub_methods_class_n_object_1_1_c_game_object" id="r_a6093be13fcbfbd54e4b4176434c5cad3"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#a6093be13fcbfbd54e4b4176434c5cad3">~CGameObject</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:adcf8b023e7b10110470fc43e1b77681d" id="r_adcf8b023e7b10110470fc43e1b77681d"><td class="memItemLeft">static const uint&#160;</td><td class="memItemRight"><a class="el" href="#adcf8b023e7b10110470fc43e1b77681d">RECEIVE_ATTACK_INFO_BUF_SIZE</a> = 16</td></tr>
+<tr class="memitem:a80fc9e92c59c5703c059d9e03af89b67" id="r_a80fc9e92c59c5703c059d9e03af89b67"><td class="memItemLeft">static const uint&#160;</td><td class="memItemRight"><a class="el" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a> = 16</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a00605d237d20cb04f1bc174b6d9e7a96" id="r_a00605d237d20cb04f1bc174b6d9e7a96"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a00605d237d20cb04f1bc174b6d9e7a96">LoadProc</a> () override</td></tr>
+<tr class="memdesc:a00605d237d20cb04f1bc174b6d9e7a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成時に1度だけ行う処理を記述する  <br /></td></tr>
+<tr class="memitem:ab7f20137067f7bc3f40de624e83f8857" id="r_ab7f20137067f7bc3f40de624e83f8857"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ab7f20137067f7bc3f40de624e83f8857">ReleaseProc</a> () override</td></tr>
+<tr class="memdesc:ab7f20137067f7bc3f40de624e83f8857"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了時に1度だけ行う処理を記述する  <br /></td></tr>
+<tr class="memitem:abfb91156fbb7ea5c2675dd536badeefa" id="r_abfb91156fbb7ea5c2675dd536badeefa"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#abfb91156fbb7ea5c2675dd536badeefa">InitProc</a> () override</td></tr>
+<tr class="memdesc:abfb91156fbb7ea5c2675dd536badeefa"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化処理を記述する  <br /></td></tr>
+<tr class="memitem:ae5cfbf16dfd6fd43f8848df415373cda" id="r_ae5cfbf16dfd6fd43f8848df415373cda"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ae5cfbf16dfd6fd43f8848df415373cda">DestroyProc</a> () override</td></tr>
+<tr class="memdesc:ae5cfbf16dfd6fd43f8848df415373cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了処理を記述する  <br /></td></tr>
+<tr class="memitem:aae1df8321bb51d12789de0d58a74f659" id="r_aae1df8321bb51d12789de0d58a74f659"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aae1df8321bb51d12789de0d58a74f659">UpdateFastProc</a> () override</td></tr>
+<tr class="memdesc:aae1df8321bb51d12789de0d58a74f659"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動前の座標を取得する  <br /></td></tr>
+<tr class="memitem:aa17dd9c0f95776494fcbbeed679a9a51" id="r_aa17dd9c0f95776494fcbbeed679a9a51"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aa17dd9c0f95776494fcbbeed679a9a51">UpdateProc</a> () override</td></tr>
+<tr class="memdesc:aa17dd9c0f95776494fcbbeed679a9a51"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理を記述する  <br /></td></tr>
+<tr class="memitem:ac0e325ecdadbe7ed196c78cbd1f04304" id="r_ac0e325ecdadbe7ed196c78cbd1f04304"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ac0e325ecdadbe7ed196c78cbd1f04304">UpdateLateProc</a> () override</td></tr>
+<tr class="memdesc:ac0e325ecdadbe7ed196c78cbd1f04304"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定の更新を行う  <br /></td></tr>
+<tr class="memitem:a3b0c38c414fe7d1db6de80d60c0179a7" id="r_a3b0c38c414fe7d1db6de80d60c0179a7"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3b0c38c414fe7d1db6de80d60c0179a7">RenderProc</a> () override</td></tr>
+<tr class="memdesc:a3b0c38c414fe7d1db6de80d60c0179a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画処理を記述する  <br /></td></tr>
+<tr class="memitem:aeaf6c5cbda74c554d865125e22402dd5" id="r_aeaf6c5cbda74c554d865125e22402dd5"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aeaf6c5cbda74c554d865125e22402dd5">RenderLateProc</a> () override</td></tr>
+<tr class="memdesc:aeaf6c5cbda74c554d865125e22402dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定のデバッグ描画  <br /></td></tr>
+<tr class="memitem:a3915d4ddb9a7e7dd44d57f2a66f2746e" id="r_a3915d4ddb9a7e7dd44d57f2a66f2746e"><td class="memItemLeft">virtual <a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3915d4ddb9a7e7dd44d57f2a66f2746e">GetActorParamAssetKey</a> () <a class="el" href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a></td></tr>
+<tr class="memdesc:a3915d4ddb9a7e7dd44d57f2a66f2746e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ActorParamで読み込むファイル名を取得する  <br /></td></tr>
+<tr class="memitem:a90f0a2a97d90d56060048e81eb29ca82" id="r_a90f0a2a97d90d56060048e81eb29ca82"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a90f0a2a97d90d56060048e81eb29ca82">SetIsEliminated</a> ()</td></tr>
+<tr class="memdesc:a90f0a2a97d90d56060048e81eb29ca82"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵の削除状態を設定  <br /></td></tr>
+<tr class="memitem:ab815adb86e53bd16c00359b8282b4fa6" id="r_ab815adb86e53bd16c00359b8282b4fa6"><td class="memItemLeft">virtual <a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab815adb86e53bd16c00359b8282b4fa6">GetActorMoveAssetKey</a> () <a class="el" href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a></td></tr>
+<tr class="memdesc:ab815adb86e53bd16c00359b8282b4fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ActorMoveで使用する定数データのファイル名を変えす  <br /></td></tr>
+<tr class="memitem:a1ad5fa53e5e4f81b10eda00c56994c5a" id="r_a1ad5fa53e5e4f81b10eda00c56994c5a"><td class="memItemLeft">virtual <a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1ad5fa53e5e4f81b10eda00c56994c5a">GetStageGroundIndex</a> ()</td></tr>
+<tr class="memdesc:a1ad5fa53e5e4f81b10eda00c56994c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">地面として使用するステージ用あたり判定マネージャのインデックスを返す  <br /></td></tr>
+<tr class="memitem:af2dea5cd7578c83521caf3bde8943193" id="r_af2dea5cd7578c83521caf3bde8943193"><td class="memItemLeft">virtual <a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a>&#160;</td><td class="memItemRight"><a class="el" href="#af2dea5cd7578c83521caf3bde8943193">GetStageWallIndex</a> ()</td></tr>
+<tr class="memdesc:af2dea5cd7578c83521caf3bde8943193"><td class="mdescLeft">&#160;</td><td class="mdescRight">壁として使用するステージ用あたり判定マネージャのインデックスを返す  <br /></td></tr>
+<tr class="memitem:a5135c82f4947f13e8038e285565a602c" id="r_a5135c82f4947f13e8038e285565a602c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a5135c82f4947f13e8038e285565a602c">Operate</a> () <a class="el" href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a></td></tr>
+<tr class="memdesc:a5135c82f4947f13e8038e285565a602c"><td class="mdescLeft">&#160;</td><td class="mdescRight">プレイヤーの操作を行う関数  <br /></td></tr>
+<tr class="memitem:af695f5d94e66e29de434e6a6e34d8078" id="r_af695f5d94e66e29de434e6a6e34d8078"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#af695f5d94e66e29de434e6a6e34d8078">GetReceiveAttackInfoCount</a> () const</td></tr>
+<tr class="memdesc:af695f5d94e66e29de434e6a6e34d8078"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在フレームで受けた当たり判定情報の数を取得  <br /></td></tr>
+<tr class="memitem:a83b4bcce3745f1016c599ae13b44990c" id="r_a83b4bcce3745f1016c599ae13b44990c"><td class="memItemLeft">const <a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a83b4bcce3745f1016c599ae13b44990c">GetCurReceiveAttackInfo</a> (uint _idx) const</td></tr>
+<tr class="memdesc:a83b4bcce3745f1016c599ae13b44990c"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在フレームで受けた当たり判定情報を取得  <br /></td></tr>
+<tr class="memitem:a7ffde0f5d5e2e6454a6da4fcee6cbde3" id="r_a7ffde0f5d5e2e6454a6da4fcee6cbde3"><td class="memItemLeft">const <a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a7ffde0f5d5e2e6454a6da4fcee6cbde3">GetPrevReceiveAttackInfo</a> (uint _prevFrame, uint _infoIdx) const</td></tr>
+<tr class="memdesc:a7ffde0f5d5e2e6454a6da4fcee6cbde3"><td class="mdescLeft">&#160;</td><td class="mdescRight">過去フレームで受けた当たり判定情報を取得する  <br /></td></tr>
+<tr class="memitem:ace49b6dcc6915b0ea523b1caad39d276" id="r_ace49b6dcc6915b0ea523b1caad39d276"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ace49b6dcc6915b0ea523b1caad39d276">ProcDamage</a> (const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;_rDamage)</td></tr>
+<tr class="memdesc:ace49b6dcc6915b0ea523b1caad39d276"><td class="mdescLeft">&#160;</td><td class="mdescRight">被攻撃情報をもとにダメージ処理を実行する  <br /></td></tr>
+<tr class="memitem:a27d65e6fd6eaf919473f316ec016fe72" id="r_a27d65e6fd6eaf919473f316ec016fe72"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a27d65e6fd6eaf919473f316ec016fe72">SetDamageActorMoveParam</a> ()</td></tr>
+<tr class="memdesc:a27d65e6fd6eaf919473f316ec016fe72"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃を受けた際のActorMoveの設定を適用  <br /></td></tr>
+<tr class="memitem:a2b4d3dfce96b17b1f936194beaa79043" id="r_a2b4d3dfce96b17b1f936194beaa79043"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b4d3dfce96b17b1f936194beaa79043">SetNormalActorMoveParam</a> ()</td></tr>
+<tr class="memdesc:a2b4d3dfce96b17b1f936194beaa79043"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常時のActorMoveの設定を適用  <br /></td></tr>
+<tr class="memitem:a5c82a894050ba62f3a2ea0943278f6f8" id="r_a5c82a894050ba62f3a2ea0943278f6f8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5c82a894050ba62f3a2ea0943278f6f8">ApplyKnockBack</a> (const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;_rDamage)</td></tr>
+<tr class="memdesc:a5c82a894050ba62f3a2ea0943278f6f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージを受けた際のノックバックをActorMoveに適用する  <br /></td></tr>
+<tr class="memitem:af0cdf652d740f9eb8806fc2ad5ecddd4" id="r_af0cdf652d740f9eb8806fc2ad5ecddd4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af0cdf652d740f9eb8806fc2ad5ecddd4">LookAtAttacker</a> (const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;_rDamage)</td></tr>
+<tr class="memdesc:af0cdf652d740f9eb8806fc2ad5ecddd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージを受けた際に攻撃者の方向を向く(補完なし)  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:abd621445a67d87436d153b9ea7d50549" id="r_abd621445a67d87436d153b9ea7d50549"><td class="memItemLeft"><a class="el" href="struct_n_game_1_1_s_actor_param.html">NGame::SActorParam</a>&#160;</td><td class="memItemRight"><a class="el" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a></td></tr>
+<tr class="memitem:a9e858b93eacf30e3d8c14806dfa4c48a" id="r_a9e858b93eacf30e3d8c14806dfa4c48a"><td class="memItemLeft"><a class="el" href="class_n_game_1_1_c_actor_move.html">NGame::CActorMove</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad1b5b2631e11a4cdb22f107c522107b3" id="r_ad1b5b2631e11a4cdb22f107c522107b3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad1b5b2631e11a4cdb22f107c522107b3">InitReceiveAttackInfo</a> ()</td></tr>
+<tr class="memdesc:ad1b5b2631e11a4cdb22f107c522107b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">被攻撃情報を初期化する  <br /></td></tr>
+<tr class="memitem:a7fb033d64b258510c012913a868224e3" id="r_a7fb033d64b258510c012913a868224e3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7fb033d64b258510c012913a868224e3">ProcReceiveAttackInfo</a> ()</td></tr>
+<tr class="memdesc:a7fb033d64b258510c012913a868224e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在受けている攻撃をもとに処理を行う  <br /></td></tr>
+<tr class="memitem:ab5e0bdaae0b349dd52cf520ea347d3e7" id="r_ab5e0bdaae0b349dd52cf520ea347d3e7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab5e0bdaae0b349dd52cf520ea347d3e7">InitResultReceiveAttackInfo</a> ()</td></tr>
+<tr class="memdesc:ab5e0bdaae0b349dd52cf520ea347d3e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">最終的な受けた攻撃結果を初期化する  <br /></td></tr>
+<tr class="memitem:a86ae0657b5d168685eabdc580d058377" id="r_a86ae0657b5d168685eabdc580d058377"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a86ae0657b5d168685eabdc580d058377">MakeResultReceiveAttackInfo</a> ()</td></tr>
+<tr class="memdesc:a86ae0657b5d168685eabdc580d058377"><td class="mdescLeft">&#160;</td><td class="mdescRight">現フレームで受けた攻撃のうち、実際に反映させるダメージ量などを計算し、 最終結果を作成する。  <br /></td></tr>
+<tr class="memitem:af1c9633db4fbf40b4f8bb6ec3e5ed230" id="r_af1c9633db4fbf40b4f8bb6ec3e5ed230"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af1c9633db4fbf40b4f8bb6ec3e5ed230">ProcDamageCommon</a> (const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;_rDamage)</td></tr>
+<tr class="memdesc:af1c9633db4fbf40b4f8bb6ec3e5ed230"><td class="mdescLeft">&#160;</td><td class="mdescRight">被攻撃時の共通処理処理を実行  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ab0a758f6524a3b44e1d84da40804bff0" id="r_ab0a758f6524a3b44e1d84da40804bff0"><td class="memItemLeft">std::array&lt; <a class="el" href="#a2522acee65a0f5542fbdeb8c0858b6b0">ReceiveAttackInfos</a>, <a class="el" href="#adcf8b023e7b10110470fc43e1b77681d">RECEIVE_ATTACK_INFO_BUF_SIZE</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ab0a758f6524a3b44e1d84da40804bff0">m_receiveAttackInfoBufs</a></td></tr>
+<tr class="memdesc:ab0a758f6524a3b44e1d84da40804bff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">そのフレームで受けた攻撃判定情報をすべて保持するバッファ変数  <br /></td></tr>
+<tr class="memitem:a72a0061a6174a2cf0ae7f4bd7e5f4937" id="r_a72a0061a6174a2cf0ae7f4bd7e5f4937"><td class="memItemLeft"><a class="el" href="#a2522acee65a0f5542fbdeb8c0858b6b0">ReceiveAttackInfos</a>&#160;</td><td class="memItemRight"><a class="el" href="#a72a0061a6174a2cf0ae7f4bd7e5f4937">m_resultReceiveAttackInfos</a></td></tr>
+<tr class="memdesc:a72a0061a6174a2cf0ae7f4bd7e5f4937"><td class="mdescLeft">&#160;</td><td class="mdescRight">現フレームで受けた当たり判定のうち、過去フレーム(1フレーム前)で 受けていた当たり判定を省いた判定のみ保持する変数  <br /></td></tr>
+<tr class="memitem:a4588687369b5ac68894ed431e5f503cc" id="r_a4588687369b5ac68894ed431e5f503cc"><td class="memItemLeft"><a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a></td></tr>
+<tr class="memdesc:a4588687369b5ac68894ed431e5f503cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">最終的に反映される攻撃情報  <br /></td></tr>
+<tr class="memitem:af7cd61168de4c55ab75b5159bf14615a" id="r_af7cd61168de4c55ab75b5159bf14615a"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#af7cd61168de4c55ab75b5159bf14615a">m_curReceiveAttackInfoIndex</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>ゲーム内のキャラクターや敵の基底クラス </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承後のクラスで必要なこと<ul>
+<li>当たり判定クラス(Holder)の処理 </li>
+</ul>
+</dd></dl>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a2522acee65a0f5542fbdeb8c0858b6b0" name="a2522acee65a0f5542fbdeb8c0858b6b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2522acee65a0f5542fbdeb8c0858b6b0">&#9670;&#160;</a></span>ReceiveAttackInfos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a2522acee65a0f5542fbdeb8c0858b6b0">NObject::CActor::ReceiveAttackInfos</a> = std::array&lt;<a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a>, <a class="el" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>警告</dt><dd>外部では使用しないでください。 </dd></dl>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="ae66c876104bb2da622a50e3c1971827f" name="ae66c876104bb2da622a50e3c1971827f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66c876104bb2da622a50e3c1971827f">&#9670;&#160;</a></span>CActor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CActor::CActor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   61</span>                   : </div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_variable" href="#af7cd61168de4c55ab75b5159bf14615a">m_curReceiveAttackInfoIndex</a>(0),</div>
+<div class="line"><span class="lineno">   63</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>(*<span class="keyword">this</span>)</div>
+<div class="line"><span class="lineno">   64</span>    {</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a9e858b93eacf30e3d8c14806dfa4c48a"><div class="ttname"><a href="#a9e858b93eacf30e3d8c14806dfa4c48a">NObject::CActor::m_actorMove</a></div><div class="ttdeci">NGame::CActorMove m_actorMove</div><div class="ttdef"><b>Definition</b> Object_Actor.h:96</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_af7cd61168de4c55ab75b5159bf14615a"><div class="ttname"><a href="#af7cd61168de4c55ab75b5159bf14615a">NObject::CActor::m_curReceiveAttackInfoIndex</a></div><div class="ttdeci">uint m_curReceiveAttackInfoIndex</div><div class="ttdef"><b>Definition</b> Object_Actor.h:170</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9dd70b72b18f1d236152496ee079c525" name="a9dd70b72b18f1d236152496ee079c525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd70b72b18f1d236152496ee079c525">&#9670;&#160;</a></span>~CActor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CActor::~CActor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   69</span>    {</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="aa0bbdd7b8197c18b46fa2c0ccf785dcb" name="aa0bbdd7b8197c18b46fa2c0ccf785dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0bbdd7b8197c18b46fa2c0ccf785dcb">&#9670;&#160;</a></span>AddReceiveAttackInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::AddReceiveAttackInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rSrc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>受けた当たり判定情報を追加する </p>
+<p>RECEIVE_ATTACK_INFO_MAX以上は無視される。 </p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>    {</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#af7cd61168de4c55ab75b5159bf14615a">m_curReceiveAttackInfoIndex</a> &gt;= <a class="code hl_variable" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>) {</div>
+<div class="line"><span class="lineno">   77</span>            <a class="code hl_define" href="_system___error_8h.html#a7237f644657926eb3196ac84172fb8b4">OutWarningMessageEx</a>(<span class="stringliteral">&quot;1フレームに受けた攻撃数ががバッファの上限を超えました。\n配列のサイズを大きくするなどの対策をしてください。&quot;</span>);</div>
+<div class="line"><span class="lineno">   78</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   79</span>        }</div>
+<div class="line"><span class="lineno">   80</span>        </div>
+<div class="line"><span class="lineno">   81</span>        <span class="comment">// 現在のフレーム情報として追加</span></div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_variable" href="#ab0a758f6524a3b44e1d84da40804bff0">m_receiveAttackInfoBufs</a>[0][<a class="code hl_variable" href="#af7cd61168de4c55ab75b5159bf14615a">m_curReceiveAttackInfoIndex</a>] = _rSrc;</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>        <span class="comment">// 次の添え字へ進む</span></div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="#af7cd61168de4c55ab75b5159bf14615a">m_curReceiveAttackInfoIndex</a>++;</div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="ttc" id="a_system___error_8h_html_a7237f644657926eb3196ac84172fb8b4"><div class="ttname"><a href="_system___error_8h.html#a7237f644657926eb3196ac84172fb8b4">OutWarningMessageEx</a></div><div class="ttdeci">#define OutWarningMessageEx(_pMessage)</div><div class="ttdef"><b>Definition</b> System_Error.h:7</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a80fc9e92c59c5703c059d9e03af89b67"><div class="ttname"><a href="#a80fc9e92c59c5703c059d9e03af89b67">NObject::CActor::RECEIVE_ATTACK_INFO_MAX</a></div><div class="ttdeci">static const uint RECEIVE_ATTACK_INFO_MAX</div><div class="ttdef"><b>Definition</b> Object_Actor.h:22</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_ab0a758f6524a3b44e1d84da40804bff0"><div class="ttname"><a href="#ab0a758f6524a3b44e1d84da40804bff0">NObject::CActor::m_receiveAttackInfoBufs</a></div><div class="ttdeci">std::array&lt; ReceiveAttackInfos, RECEIVE_ATTACK_INFO_BUF_SIZE &gt; m_receiveAttackInfoBufs</div><div class="ttdoc">そのフレームで受けた攻撃判定情報をすべて保持するバッファ変数</div><div class="ttdef"><b>Definition</b> Object_Actor.h:159</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5c82a894050ba62f3a2ea0943278f6f8" name="a5c82a894050ba62f3a2ea0943278f6f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c82a894050ba62f3a2ea0943278f6f8">&#9670;&#160;</a></span>ApplyKnockBack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::ApplyKnockBack </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDamage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ダメージを受けた際のノックバックをActorMoveに適用する </p>
+<dl class="section note"><dt>覚え書き</dt><dd><a class="el" href="#a27d65e6fd6eaf919473f316ec016fe72" title="攻撃を受けた際のActorMoveの設定を適用">SetDamageActorMoveParam()</a>は内部で呼び出している </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  215</span>    {</div>
+<div class="line"><span class="lineno">  216</span>        <a class="code hl_function" href="#a27d65e6fd6eaf919473f316ec016fe72">SetDamageActorMoveParam</a>();</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.SetMove(_rDamage.<a class="code hl_variable" href="struct_n_game_1_1_s_damage_param.html#a3377d671e04b8910d145b47048257b65">knockBackDir</a>, _rDamage.<a class="code hl_variable" href="struct_n_game_1_1_s_damage_param.html#a944bcb9a10468c9fe9f2ef675fe5fe23">knockBackPow</a>);</div>
+<div class="line"><span class="lineno">  219</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a27d65e6fd6eaf919473f316ec016fe72"><div class="ttname"><a href="#a27d65e6fd6eaf919473f316ec016fe72">NObject::CActor::SetDamageActorMoveParam</a></div><div class="ttdeci">void SetDamageActorMoveParam()</div><div class="ttdoc">攻撃を受けた際のActorMoveの設定を適用</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:198</div></div>
+<div class="ttc" id="astruct_n_game_1_1_s_damage_param_html_a3377d671e04b8910d145b47048257b65"><div class="ttname"><a href="struct_n_game_1_1_s_damage_param.html#a3377d671e04b8910d145b47048257b65">NGame::SDamageParam::knockBackDir</a></div><div class="ttdeci">float3 knockBackDir</div><div class="ttdef"><b>Definition</b> Game_ActorParam.h:40</div></div>
+<div class="ttc" id="astruct_n_game_1_1_s_damage_param_html_a944bcb9a10468c9fe9f2ef675fe5fe23"><div class="ttname"><a href="struct_n_game_1_1_s_damage_param.html#a944bcb9a10468c9fe9f2ef675fe5fe23">NGame::SDamageParam::knockBackPow</a></div><div class="ttdeci">float knockBackPow</div><div class="ttdef"><b>Definition</b> Game_ActorParam.h:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae5cfbf16dfd6fd43f8848df415373cda" name="ae5cfbf16dfd6fd43f8848df415373cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5cfbf16dfd6fd43f8848df415373cda">&#9670;&#160;</a></span>DestroyProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::DestroyProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>終了処理を記述する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>あまり使うことはない </dd></dl>
+
+<p><a class="el" href="class_n_object_1_1_c_game_object.html#a3859fb52e837d045b90942ddd4d24426">NObject::CGameObject</a>を再実装しています。</p>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#a2905ae0d60d7fc24f9a152a96188d949">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#a756e3eb0c7294e98f981e2a0ec2164d2">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a1572c5b31e10cc8758634be5d54a4a20">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#ae17ebd0447def973c9f2ffb0dc6de975">NObject::CSandBag</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  129</span>    {</div>
+<div class="line"><span class="lineno">  130</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a3859fb52e837d045b90942ddd4d24426">CGameObject::DestroyProc</a>();</div>
+<div class="line"><span class="lineno">  131</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a3859fb52e837d045b90942ddd4d24426"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a3859fb52e837d045b90942ddd4d24426">NObject::CGameObject::DestroyProc</a></div><div class="ttdeci">virtual void DestroyProc()</div><div class="ttdoc">終了処理を行う(何度も実行できること)</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:58</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab815adb86e53bd16c00359b8282b4fa6" name="ab815adb86e53bd16c00359b8282b4fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab815adb86e53bd16c00359b8282b4fa6">&#9670;&#160;</a></span>GetActorMoveAssetKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a> NObject::CActor::GetActorMoveAssetKey </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ActorMoveで使用する定数データのファイル名を変えす </p>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#a987dc886035d28d35a47b36518b3ee18">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_player.html#a3e3d775bfa0d942f3ad733d3a861b0fc">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a30cfad8f627190695e5c0ac8d6dded53">NObject::CSandBag</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a3915d4ddb9a7e7dd44d57f2a66f2746e" name="a3915d4ddb9a7e7dd44d57f2a66f2746e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3915d4ddb9a7e7dd44d57f2a66f2746e">&#9670;&#160;</a></span>GetActorParamAssetKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a> NObject::CActor::GetActorParamAssetKey </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ActorParamで読み込むファイル名を取得する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#a303706bffe552f087485b643c4e399c8">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_player.html#ab76f25e9f66580f43bf900a19896d1a9">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#ae4677c641691662c5ca7ba7379e766ea">NObject::CSandBag</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a83b4bcce3745f1016c599ae13b44990c" name="a83b4bcce3745f1016c599ae13b44990c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b4bcce3745f1016c599ae13b44990c">&#9670;&#160;</a></span>GetCurReceiveAttackInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a> &amp; NObject::CActor::GetCurReceiveAttackInfo </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_idx</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在フレームで受けた当たり判定情報を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  177</span>    {</div>
+<div class="line"><span class="lineno">  178</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_idx &lt; <a class="code hl_variable" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>);</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#ab0a758f6524a3b44e1d84da40804bff0">m_receiveAttackInfoBufs</a>[0][_idx];</div>
+<div class="line"><span class="lineno">  180</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a609e839283f3bbedd4142ff8454f6279" name="a609e839283f3bbedd4142ff8454f6279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609e839283f3bbedd4142ff8454f6279">&#9670;&#160;</a></span>GetIsAlive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NObject::CActor::GetIsAlive </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Actorの生存状態を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.GetIsAlive(); }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_abd621445a67d87436d153b9ea7d50549"><div class="ttname"><a href="#abd621445a67d87436d153b9ea7d50549">NObject::CActor::m_actorParam</a></div><div class="ttdeci">NGame::SActorParam m_actorParam</div><div class="ttdef"><b>Definition</b> Object_Actor.h:85</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac02414e3b6261fe2a0237e5253deb2e0" name="ac02414e3b6261fe2a0237e5253deb2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02414e3b6261fe2a0237e5253deb2e0">&#9670;&#160;</a></span>GetIsEliminated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NObject::CActor::GetIsEliminated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Actorの消滅状態を取得(主にEnemy) </p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.isEliminated; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adf61f10bb2fa1a1423973ae4fcd2b7cc" name="adf61f10bb2fa1a1423973ae4fcd2b7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf61f10bb2fa1a1423973ae4fcd2b7cc">&#9670;&#160;</a></span>GetLife()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NObject::CActor::GetLife </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>残りライフを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.life; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1aeb051d8d3c6268a6148e54448b062a" name="a1aeb051d8d3c6268a6148e54448b062a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aeb051d8d3c6268a6148e54448b062a">&#9670;&#160;</a></span>GetLifeMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NObject::CActor::GetLifeMax </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最大ライフを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.maxLife; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7ffde0f5d5e2e6454a6da4fcee6cbde3" name="a7ffde0f5d5e2e6454a6da4fcee6cbde3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ffde0f5d5e2e6454a6da4fcee6cbde3">&#9670;&#160;</a></span>GetPrevReceiveAttackInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a> &amp; NObject::CActor::GetPrevReceiveAttackInfo </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_prevFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_infoIdx</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>過去フレームで受けた当たり判定情報を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  185</span>    {</div>
+<div class="line"><span class="lineno">  186</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_prevFrame &lt; <a class="code hl_variable" href="#adcf8b023e7b10110470fc43e1b77681d">RECEIVE_ATTACK_INFO_BUF_SIZE</a>);</div>
+<div class="line"><span class="lineno">  187</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_infoIdx &lt; <a class="code hl_variable" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>);</div>
+<div class="line"><span class="lineno">  188</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#ab0a758f6524a3b44e1d84da40804bff0">m_receiveAttackInfoBufs</a>[_prevFrame][_infoIdx];</div>
+<div class="line"><span class="lineno">  189</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_adcf8b023e7b10110470fc43e1b77681d"><div class="ttname"><a href="#adcf8b023e7b10110470fc43e1b77681d">NObject::CActor::RECEIVE_ATTACK_INFO_BUF_SIZE</a></div><div class="ttdeci">static const uint RECEIVE_ATTACK_INFO_BUF_SIZE</div><div class="ttdef"><b>Definition</b> Object_Actor.h:21</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af695f5d94e66e29de434e6a6e34d8078" name="af695f5d94e66e29de434e6a6e34d8078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af695f5d94e66e29de434e6a6e34d8078">&#9670;&#160;</a></span>GetReceiveAttackInfoCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NObject::CActor::GetReceiveAttackInfoCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在フレームで受けた当たり判定情報の数を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>{ <span class="keywordflow">return</span>  <a class="code hl_variable" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1ad5fa53e5e4f81b10eda00c56994c5a" name="a1ad5fa53e5e4f81b10eda00c56994c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ad5fa53e5e4f81b10eda00c56994c5a">&#9670;&#160;</a></span>GetStageGroundIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a> NObject::CActor::GetStageGroundIndex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地面として使用するステージ用あたり判定マネージャのインデックスを返す </p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>{ <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba535bb0ca9f07f199f69fe84a37d1f85c">NCollision::EStageCollisionIndex::GROUND_MAIN</a>; }</div>
+<div class="ttc" id="anamespace_n_collision_html_a51ad698afc6db73a5076a4d31706ad3ba535bb0ca9f07f199f69fe84a37d1f85c"><div class="ttname"><a href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba535bb0ca9f07f199f69fe84a37d1f85c">NCollision::EStageCollisionIndex::GROUND_MAIN</a></div><div class="ttdeci">@ GROUND_MAIN</div><div class="ttdef"><b>Definition</b> Collision_Manager.h:28</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af2dea5cd7578c83521caf3bde8943193" name="af2dea5cd7578c83521caf3bde8943193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2dea5cd7578c83521caf3bde8943193">&#9670;&#160;</a></span>GetStageWallIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a> NObject::CActor::GetStageWallIndex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>壁として使用するステージ用あたり判定マネージャのインデックスを返す </p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>{ <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba8142329bd79633cc855dac9e1d8e3875">NCollision::EStageCollisionIndex::WALL_MAIN</a>; }</div>
+<div class="ttc" id="anamespace_n_collision_html_a51ad698afc6db73a5076a4d31706ad3ba8142329bd79633cc855dac9e1d8e3875"><div class="ttname"><a href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba8142329bd79633cc855dac9e1d8e3875">NCollision::EStageCollisionIndex::WALL_MAIN</a></div><div class="ttdeci">@ WALL_MAIN</div><div class="ttdef"><b>Definition</b> Collision_Manager.h:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abfb91156fbb7ea5c2675dd536badeefa" name="abfb91156fbb7ea5c2675dd536badeefa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb91156fbb7ea5c2675dd536badeefa">&#9670;&#160;</a></span>InitProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::InitProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化処理を記述する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_game_object.html#a23b6fe4648cbdca08aef03edaa54a9eb">NObject::CGameObject</a>を再実装しています。</p>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#aaf0990059d9fff85fad07771a860c8cb">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#a3bf14b248e8b63ec4273813b5f23c1e9">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a2ebd64f87333b1dfd5eb4ee2eb0d9e73">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#aeff33160c469899775a3d8ab765aa524">NObject::CSandBag</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>    {</div>
+<div class="line"><span class="lineno">  110</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a23b6fe4648cbdca08aef03edaa54a9eb">CGameObject::InitProc</a>();</div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>        <a class="code hl_variable" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.Init();</div>
+<div class="line"><span class="lineno">  113</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.Init();</div>
+<div class="line"><span class="lineno">  114</span> </div>
+<div class="line"><span class="lineno">  115</span>        <span class="comment">// あたり判定情報を初期化</span></div>
+<div class="line"><span class="lineno">  116</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#adcf8b023e7b10110470fc43e1b77681d">RECEIVE_ATTACK_INFO_BUF_SIZE</a>; ++i) {</div>
+<div class="line"><span class="lineno">  117</span>            <span class="keywordflow">for</span> (uint j = 0; j &lt; <a class="code hl_variable" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>; ++j) {</div>
+<div class="line"><span class="lineno">  118</span>                <a class="code hl_variable" href="#ab0a758f6524a3b44e1d84da40804bff0">m_receiveAttackInfoBufs</a>[i][j].Init();</div>
+<div class="line"><span class="lineno">  119</span>            }</div>
+<div class="line"><span class="lineno">  120</span>        }</div>
+<div class="line"><span class="lineno">  121</span>        <span class="keywordflow">for</span> (uint j = 0; j &lt; <a class="code hl_variable" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>; ++j) {</div>
+<div class="line"><span class="lineno">  122</span>            <a class="code hl_variable" href="#a72a0061a6174a2cf0ae7f4bd7e5f4937">m_resultReceiveAttackInfos</a>[j].Init();</div>
+<div class="line"><span class="lineno">  123</span>        }</div>
+<div class="line"><span class="lineno">  124</span>        <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.Init();</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a4588687369b5ac68894ed431e5f503cc"><div class="ttname"><a href="#a4588687369b5ac68894ed431e5f503cc">NObject::CActor::m_resultDamage</a></div><div class="ttdeci">NGame::SDamageParam m_resultDamage</div><div class="ttdoc">最終的に反映される攻撃情報</div><div class="ttdef"><b>Definition</b> Object_Actor.h:166</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a72a0061a6174a2cf0ae7f4bd7e5f4937"><div class="ttname"><a href="#a72a0061a6174a2cf0ae7f4bd7e5f4937">NObject::CActor::m_resultReceiveAttackInfos</a></div><div class="ttdeci">ReceiveAttackInfos m_resultReceiveAttackInfos</div><div class="ttdoc">現フレームで受けた当たり判定のうち、過去フレーム(1フレーム前)で 受けていた当たり判定を省いた判定のみ保持する変数</div><div class="ttdef"><b>Definition</b> Object_Actor.h:163</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a23b6fe4648cbdca08aef03edaa54a9eb"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a23b6fe4648cbdca08aef03edaa54a9eb">NObject::CGameObject::InitProc</a></div><div class="ttdeci">virtual void InitProc()</div><div class="ttdoc">初期化を行う(何度も実行できること)</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:55</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad1b5b2631e11a4cdb22f107c522107b3" name="ad1b5b2631e11a4cdb22f107c522107b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b5b2631e11a4cdb22f107c522107b3">&#9670;&#160;</a></span>InitReceiveAttackInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::InitReceiveAttackInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被攻撃情報を初期化する </p>
+<dl class="section note"><dt>覚え書き</dt><dd><a class="el" href="#aa17dd9c0f95776494fcbbeed679a9a51" title="更新処理を記述する">UpdateProc()</a>で呼び出さ </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  249</span>    {</div>
+<div class="line"><span class="lineno">  250</span>        <span class="comment">// バッファを更新</span></div>
+<div class="line"><span class="lineno">  251</span>        <span class="keywordflow">for</span> (uint iBuf = <a class="code hl_variable" href="#adcf8b023e7b10110470fc43e1b77681d">RECEIVE_ATTACK_INFO_BUF_SIZE</a> - 1; iBuf &gt; 0; --iBuf) {</div>
+<div class="line"><span class="lineno">  252</span>            <a class="code hl_variable" href="#ab0a758f6524a3b44e1d84da40804bff0">m_receiveAttackInfoBufs</a>[iBuf] = <a class="code hl_variable" href="#ab0a758f6524a3b44e1d84da40804bff0">m_receiveAttackInfoBufs</a>[iBuf - 1];</div>
+<div class="line"><span class="lineno">  253</span>        }</div>
+<div class="line"><span class="lineno">  254</span> </div>
+<div class="line"><span class="lineno">  255</span>        <span class="comment">// 現在の当たり判定情報配列をすべて初期化</span></div>
+<div class="line"><span class="lineno">  256</span>        <span class="keywordflow">for</span> (uint iInfo = 0; iInfo &lt; <a class="code hl_variable" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>; ++iInfo) {</div>
+<div class="line"><span class="lineno">  257</span>            <a class="code hl_variable" href="#ab0a758f6524a3b44e1d84da40804bff0">m_receiveAttackInfoBufs</a>[0][iInfo].Init();</div>
+<div class="line"><span class="lineno">  258</span>        }</div>
+<div class="line"><span class="lineno">  259</span> </div>
+<div class="line"><span class="lineno">  260</span>        <span class="comment">// 現在受けた攻撃情報の数を初期化</span></div>
+<div class="line"><span class="lineno">  261</span>        <a class="code hl_variable" href="#af7cd61168de4c55ab75b5159bf14615a">m_curReceiveAttackInfoIndex</a> = 0;</div>
+<div class="line"><span class="lineno">  262</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab5e0bdaae0b349dd52cf520ea347d3e7" name="ab5e0bdaae0b349dd52cf520ea347d3e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e0bdaae0b349dd52cf520ea347d3e7">&#9670;&#160;</a></span>InitResultReceiveAttackInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::InitResultReceiveAttackInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最終的な受けた攻撃結果を初期化する </p>
+<dl class="section note"><dt>覚え書き</dt><dd><a class="el" href="#a7fb033d64b258510c012913a868224e3" title="現在受けている攻撃をもとに処理を行う">ProcReceiveAttackInfo()</a> で呼び出す </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  273</span>    {</div>
+<div class="line"><span class="lineno">  274</span>        <span class="comment">// 実際に反映させる情報を初期化する</span></div>
+<div class="line"><span class="lineno">  275</span>        <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.Init();</div>
+<div class="line"><span class="lineno">  276</span> </div>
+<div class="line"><span class="lineno">  277</span>        <span class="comment">// 現フレームの重複を排除した当たり判定情報を全て初期化</span></div>
+<div class="line"><span class="lineno">  278</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>; ++i) {</div>
+<div class="line"><span class="lineno">  279</span>            <a class="code hl_variable" href="#a72a0061a6174a2cf0ae7f4bd7e5f4937">m_resultReceiveAttackInfos</a>[i].Init();</div>
+<div class="line"><span class="lineno">  280</span>        }</div>
+<div class="line"><span class="lineno">  281</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a00605d237d20cb04f1bc174b6d9e7a96" name="a00605d237d20cb04f1bc174b6d9e7a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00605d237d20cb04f1bc174b6d9e7a96">&#9670;&#160;</a></span>LoadProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::LoadProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生成時に1度だけ行う処理を記述する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_game_object.html#a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf">NObject::CGameObject</a>を再実装しています。</p>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#a61c7178946ee9b537f1564f2a441b3cb">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#ae5b791d58e7c004bedc7706b8bc82787">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a2244413c71a89f3481bb06d8ccc2c3fb">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a6e7705e69159c4e79de875796a34edd8">NObject::CSandBag</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>    {</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf">CGameObject::LoadProc</a>();</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>        <span class="comment">// ActorParamのデータを読み込む</span></div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_variable" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.Setup(<a class="code hl_function" href="#a3915d4ddb9a7e7dd44d57f2a66f2746e">GetActorParamAssetKey</a>());</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>        <span class="comment">// ActorMoveのデータを読み込む</span></div>
+<div class="line"><span class="lineno">   97</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.Setup(</div>
+<div class="line"><span class="lineno">   98</span>            <a class="code hl_function" href="#ab815adb86e53bd16c00359b8282b4fa6">GetActorMoveAssetKey</a>(),</div>
+<div class="line"><span class="lineno">   99</span>            <a class="code hl_function" href="#a1ad5fa53e5e4f81b10eda00c56994c5a">GetStageGroundIndex</a>(),</div>
+<div class="line"><span class="lineno">  100</span>            <a class="code hl_function" href="#af2dea5cd7578c83521caf3bde8943193">GetStageWallIndex</a>());</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a1ad5fa53e5e4f81b10eda00c56994c5a"><div class="ttname"><a href="#a1ad5fa53e5e4f81b10eda00c56994c5a">NObject::CActor::GetStageGroundIndex</a></div><div class="ttdeci">virtual NCollision::EStageCollisionIndex GetStageGroundIndex()</div><div class="ttdoc">地面として使用するステージ用あたり判定マネージャのインデックスを返す</div><div class="ttdef"><b>Definition</b> Object_Actor.h:102</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a3915d4ddb9a7e7dd44d57f2a66f2746e"><div class="ttname"><a href="#a3915d4ddb9a7e7dd44d57f2a66f2746e">NObject::CActor::GetActorParamAssetKey</a></div><div class="ttdeci">virtual NAsset::CJsonFactory::Key GetActorParamAssetKey() PURE_FUNC</div><div class="ttdoc">ActorParamで読み込むファイル名を取得する</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_ab815adb86e53bd16c00359b8282b4fa6"><div class="ttname"><a href="#ab815adb86e53bd16c00359b8282b4fa6">NObject::CActor::GetActorMoveAssetKey</a></div><div class="ttdeci">virtual NAsset::CJsonFactory::Key GetActorMoveAssetKey() PURE_FUNC</div><div class="ttdoc">ActorMoveで使用する定数データのファイル名を変えす</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_af2dea5cd7578c83521caf3bde8943193"><div class="ttname"><a href="#af2dea5cd7578c83521caf3bde8943193">NObject::CActor::GetStageWallIndex</a></div><div class="ttdeci">virtual NCollision::EStageCollisionIndex GetStageWallIndex()</div><div class="ttdoc">壁として使用するステージ用あたり判定マネージャのインデックスを返す</div><div class="ttdef"><b>Definition</b> Object_Actor.h:105</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf">NObject::CGameObject::LoadProc</a></div><div class="ttdeci">virtual void LoadProc()</div><div class="ttdoc">ロードをマルチスレッドで行うための</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:48</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af0cdf652d740f9eb8806fc2ad5ecddd4" name="af0cdf652d740f9eb8806fc2ad5ecddd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0cdf652d740f9eb8806fc2ad5ecddd4">&#9670;&#160;</a></span>LookAtAttacker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::LookAtAttacker </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDamage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ダメージを受けた際に攻撃者の方向を向く(補完なし) </p>
+<div class="fragment"><div class="line"><span class="lineno">  223</span>    {</div>
+<div class="line"><span class="lineno">  224</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> myPos;</div>
+<div class="line"><span class="lineno">  225</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a>().<a class="code hl_function" href="class_n_object_1_1_c_transform.html#afb14226e20d91524f62af5a8ca349ff4">GetPos</a>(myPos);</div>
+<div class="line"><span class="lineno">  226</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> otherPos = _rDamage.<a class="code hl_variable" href="struct_n_game_1_1_s_damage_param.html#af9542c4637575ea7ec0eed100cc256ea">ownerPos</a>;</div>
+<div class="line"><span class="lineno">  227</span> </div>
+<div class="line"><span class="lineno">  228</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> mask(1, 0, 1);</div>
+<div class="line"><span class="lineno">  229</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> myPosXZ = myPos * mask;</div>
+<div class="line"><span class="lineno">  230</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> otherPosXZ = otherPos * mask;</div>
+<div class="line"><span class="lineno">  231</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> vecMyXZToOtherXZ = otherPosXZ - myPosXZ;</div>
+<div class="line"><span class="lineno">  232</span> </div>
+<div class="line"><span class="lineno">  233</span>        <span class="keywordflow">if</span> (vecMyXZToOtherXZ.GetLengthSquare() &gt; FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  234</span>            NMath::SMatrix44 posture;</div>
+<div class="line"><span class="lineno">  235</span>            <a class="code hl_function" href="namespace_n_math.html#abb4fca5eadc2da8ee8921f45ff3e0427">NMath::MakeMatrixLookAt</a>(</div>
+<div class="line"><span class="lineno">  236</span>                posture,</div>
+<div class="line"><span class="lineno">  237</span>                myPosXZ,</div>
+<div class="line"><span class="lineno">  238</span>                otherPosXZ,</div>
+<div class="line"><span class="lineno">  239</span>                <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>(0, 1, 0));</div>
+<div class="line"><span class="lineno">  240</span> </div>
+<div class="line"><span class="lineno">  241</span>            <span class="comment">// 姿勢部分のみ使用する(座標は元の値を設定)</span></div>
+<div class="line"><span class="lineno">  242</span>            posture.<a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#aacdf92892b936f02ac86f60c498e0f69">vec</a>[3].vec3 = myPos;</div>
+<div class="line"><span class="lineno">  243</span>            <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a>().<a class="code hl_function" href="class_n_object_1_1_c_transform.html#a2029c79e6a9fd54dcc2fd03d10d56173">SetLocalMatrix</a>(posture);</div>
+<div class="line"><span class="lineno">  244</span>        }</div>
+<div class="line"><span class="lineno">  245</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ad886ead881768ecf2df0ea072a85ba8c"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">NObject::CGameObject::GetTransform</a></div><div class="ttdeci">CTransform &amp; GetTransform()</div><div class="ttdoc">Transformを取得</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:39</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_a2029c79e6a9fd54dcc2fd03d10d56173"><div class="ttname"><a href="class_n_object_1_1_c_transform.html#a2029c79e6a9fd54dcc2fd03d10d56173">NObject::CTransform::SetLocalMatrix</a></div><div class="ttdeci">void SetLocalMatrix(const NMath::SMatrix44 &amp;_rSec)</div><div class="ttdoc">ローカル変換行列を設定する</div><div class="ttdef"><b>Definition</b> Object_Transform.h:85</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_afb14226e20d91524f62af5a8ca349ff4"><div class="ttname"><a href="class_n_object_1_1_c_transform.html#afb14226e20d91524f62af5a8ca349ff4">NObject::CTransform::GetPos</a></div><div class="ttdeci">void GetPos(float3 &amp;_rDest) const</div><div class="ttdoc">ワールド座標を取得</div><div class="ttdef"><b>Definition</b> Object_Transform.cpp:87</div></div>
+<div class="ttc" id="anamespace_n_common_html_ad01ce78d871cd1e3b54d317b707787bf"><div class="ttname"><a href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">NCommon::float3</a></div><div class="ttdeci">NMath::SVector3 float3</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:20</div></div>
+<div class="ttc" id="anamespace_n_math_html_abb4fca5eadc2da8ee8921f45ff3e0427"><div class="ttname"><a href="namespace_n_math.html#abb4fca5eadc2da8ee8921f45ff3e0427">NMath::MakeMatrixLookAt</a></div><div class="ttdeci">void MakeMatrixLookAt(SMatrix44 &amp;_dest, const SVector3 &amp;_pos, const SVector3 &amp;_targetPos, const SVector3 &amp;_upDir)</div><div class="ttdoc">座標から注視点を向く回転行列を作成する</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:269</div></div>
+<div class="ttc" id="astruct_n_game_1_1_s_damage_param_html_af9542c4637575ea7ec0eed100cc256ea"><div class="ttname"><a href="struct_n_game_1_1_s_damage_param.html#af9542c4637575ea7ec0eed100cc256ea">NGame::SDamageParam::ownerPos</a></div><div class="ttdeci">float3 ownerPos</div><div class="ttdef"><b>Definition</b> Game_ActorParam.h:36</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_aacdf92892b936f02ac86f60c498e0f69"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#aacdf92892b936f02ac86f60c498e0f69">NMath::SMatrix44::vec</a></div><div class="ttdeci">std::array&lt; SVector4, 4 &gt; vec</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:33</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a86ae0657b5d168685eabdc580d058377" name="a86ae0657b5d168685eabdc580d058377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ae0657b5d168685eabdc580d058377">&#9670;&#160;</a></span>MakeResultReceiveAttackInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::MakeResultReceiveAttackInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現フレームで受けた攻撃のうち、実際に反映させるダメージ量などを計算し、 最終結果を作成する。 </p>
+<dl class="section note"><dt>覚え書き</dt><dd><a class="el" href="#a7fb033d64b258510c012913a868224e3" title="現在受けている攻撃をもとに処理を行う">ProcReceiveAttackInfo()</a> で呼び出す </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  284</span>    {</div>
+<div class="line"><span class="lineno">  285</span>        <span class="comment">// 現在フレームから1フレーム前の情報を排除したデータを作成する</span></div>
+<div class="line"><span class="lineno">  286</span>        CreateExcludeReceiveAttackInfo(</div>
+<div class="line"><span class="lineno">  287</span>            <a class="code hl_variable" href="#a72a0061a6174a2cf0ae7f4bd7e5f4937">m_resultReceiveAttackInfos</a>,</div>
+<div class="line"><span class="lineno">  288</span>            <a class="code hl_variable" href="#ab0a758f6524a3b44e1d84da40804bff0">m_receiveAttackInfoBufs</a>[0],</div>
+<div class="line"><span class="lineno">  289</span>            <a class="code hl_variable" href="#ab0a758f6524a3b44e1d84da40804bff0">m_receiveAttackInfoBufs</a>[1]);</div>
+<div class="line"><span class="lineno">  290</span> </div>
+<div class="line"><span class="lineno">  291</span>        <span class="comment">// 最終的なダメージ量を取得する</span></div>
+<div class="line"><span class="lineno">  292</span>        <span class="keywordtype">int</span> curPriority = INT_MIN;  <span class="comment">// 最小値で初期化</span></div>
+<div class="line"><span class="lineno">  293</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>; ++i) {</div>
+<div class="line"><span class="lineno">  294</span>            <span class="comment">// 有効状態でなければ無視</span></div>
+<div class="line"><span class="lineno">  295</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a72a0061a6174a2cf0ae7f4bd7e5f4937">m_resultReceiveAttackInfos</a>[i].GetIsEnable()) {</div>
+<div class="line"><span class="lineno">  296</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  297</span>            }</div>
+<div class="line"><span class="lineno">  298</span> </div>
+<div class="line"><span class="lineno">  299</span>            <span class="comment">// 攻撃を受けたことを設定</span></div>
+<div class="line"><span class="lineno">  300</span>            <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.isReciveDamage = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  301</span> </div>
+<div class="line"><span class="lineno">  302</span>            <span class="comment">// アクセス省略</span></div>
+<div class="line"><span class="lineno">  303</span>            <span class="keyword">const</span> <span class="keyword">auto</span>&amp; receiveAttackInfo = <a class="code hl_variable" href="#a72a0061a6174a2cf0ae7f4bd7e5f4937">m_resultReceiveAttackInfos</a>[i];</div>
+<div class="line"><span class="lineno">  304</span>            <span class="keyword">const</span> <span class="keyword">auto</span>&amp; receiveAttackData = <a class="code hl_variable" href="#a72a0061a6174a2cf0ae7f4bd7e5f4937">m_resultReceiveAttackInfos</a>[i].GetReceiveAttackData();</div>
+<div class="line"><span class="lineno">  305</span> </div>
+<div class="line"><span class="lineno">  306</span>            <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  307</span>            <span class="comment">// 優先度による判断</span></div>
+<div class="line"><span class="lineno">  308</span>            <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  309</span>            <span class="keyword">auto</span> priority = receiveAttackData.GetPriority();</div>
+<div class="line"><span class="lineno">  310</span>            <span class="comment">// 優先度が高い場合はそのデータを使用する</span></div>
+<div class="line"><span class="lineno">  311</span>            <span class="keywordflow">if</span> (priority &gt; curPriority) {</div>
+<div class="line"><span class="lineno">  312</span>                <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.ownerPos = receiveAttackInfo.GetAttackOwnerPos();</div>
+<div class="line"><span class="lineno">  313</span>                <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.collidePos = receiveAttackInfo.GetCollidePos();</div>
+<div class="line"><span class="lineno">  314</span> </div>
+<div class="line"><span class="lineno">  315</span>                <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.damage = receiveAttackData.GetBaseDamage();</div>
+<div class="line"><span class="lineno">  316</span>                <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.knockBackDir = receiveAttackInfo.GetKnockBackDir();</div>
+<div class="line"><span class="lineno">  317</span>                <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.knockBackPow = receiveAttackData.GetKnockBackPow();</div>
+<div class="line"><span class="lineno">  318</span>                <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.receiveAttackStrengthType = receiveAttackData.GetStrengthType();</div>
+<div class="line"><span class="lineno">  319</span> </div>
+<div class="line"><span class="lineno">  320</span>                <span class="comment">// 優先度を更新</span></div>
+<div class="line"><span class="lineno">  321</span>                curPriority = priority;</div>
+<div class="line"><span class="lineno">  322</span>            }</div>
+<div class="line"><span class="lineno">  323</span>            <span class="comment">// 優先度が等しい場合</span></div>
+<div class="line"><span class="lineno">  324</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (curPriority == curPriority) {</div>
+<div class="line"><span class="lineno">  325</span>                <span class="comment">// 攻撃力の高いほうを取得</span></div>
+<div class="line"><span class="lineno">  326</span>                <span class="keyword">auto</span> damage = receiveAttackData.GetBaseDamage();</div>
+<div class="line"><span class="lineno">  327</span>                <span class="keywordflow">if</span> (damage &gt; <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.damage) {</div>
+<div class="line"><span class="lineno">  328</span>                    <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.damage = damage;</div>
+<div class="line"><span class="lineno">  329</span> </div>
+<div class="line"><span class="lineno">  330</span>                    <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.ownerPos = receiveAttackInfo.GetAttackOwnerPos();</div>
+<div class="line"><span class="lineno">  331</span>                    <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.collidePos = receiveAttackInfo.GetCollidePos();</div>
+<div class="line"><span class="lineno">  332</span>                    <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.knockBackDir = receiveAttackInfo.GetKnockBackDir();</div>
+<div class="line"><span class="lineno">  333</span>                    <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.knockBackPow = receiveAttackData.GetKnockBackPow();</div>
+<div class="line"><span class="lineno">  334</span>                    <a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>.receiveAttackStrengthType = receiveAttackData.GetStrengthType();</div>
+<div class="line"><span class="lineno">  335</span> </div>
+<div class="line"><span class="lineno">  336</span>                    <span class="comment">// 優先度を更新</span></div>
+<div class="line"><span class="lineno">  337</span>                    curPriority = priority;</div>
+<div class="line"><span class="lineno">  338</span>                }</div>
+<div class="line"><span class="lineno">  339</span>            }</div>
+<div class="line"><span class="lineno">  340</span>        }</div>
+<div class="line"><span class="lineno">  341</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5135c82f4947f13e8038e285565a602c" name="a5135c82f4947f13e8038e285565a602c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5135c82f4947f13e8038e285565a602c">&#9670;&#160;</a></span>Operate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NObject::CActor::Operate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>プレイヤーの操作を行う関数 </p>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#a84a6a7bd97614d7037bd44c9b5f1a483">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#a40b15ea2c559ea718d7bffc27b66b128">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a68922f994cb28b2e53d2436b59bb5b14">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a31ddc581e5c605752b5edca1685ca9d4">NObject::CSandBag</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="ace49b6dcc6915b0ea523b1caad39d276" name="ace49b6dcc6915b0ea523b1caad39d276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace49b6dcc6915b0ea523b1caad39d276">&#9670;&#160;</a></span>ProcDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::ProcDamage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDamage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被攻撃情報をもとにダメージ処理を実行する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承後にオーバーライドして、アニメーションの再生や、状態の遷移を行う </dd>
+<dd>
+<a class="el" href="#af1c9633db4fbf40b4f8bb6ec3e5ed230" title="被攻撃時の共通処理処理を実行">ProcDamageCommon()</a>で呼び出す </dd></dl>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#a55bac3ea0dada3fce3dc0a2e6474b00b">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#ad281caf7bffbadc72f7eb6594ee75a30">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a3bfdfce419937f9e7418fbaed3d754cd">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a96a8103b40b66df01ea651f3b444b26b">NObject::CSandBag</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  192</span>    {</div>
+<div class="line"><span class="lineno">  193</span>    </div>
+<div class="line"><span class="lineno">  194</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af1c9633db4fbf40b4f8bb6ec3e5ed230" name="af1c9633db4fbf40b4f8bb6ec3e5ed230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c9633db4fbf40b4f8bb6ec3e5ed230">&#9670;&#160;</a></span>ProcDamageCommon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::ProcDamageCommon </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDamage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>被攻撃時の共通処理処理を実行 </p>
+<div class="fragment"><div class="line"><span class="lineno">  344</span>    {</div>
+<div class="line"><span class="lineno">  345</span>        <span class="comment">// 攻撃を受けていない場合は無視</span></div>
+<div class="line"><span class="lineno">  346</span>        <span class="keywordflow">if</span> (!_rDamage.<a class="code hl_variable" href="struct_n_game_1_1_s_damage_param.html#abcab23b5967ed0cce9270c880e81814a">isReciveDamage</a>) {</div>
+<div class="line"><span class="lineno">  347</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  348</span>        }</div>
+<div class="line"><span class="lineno">  349</span> </div>
+<div class="line"><span class="lineno">  350</span>        <span class="comment">// 体力の減少処理</span></div>
+<div class="line"><span class="lineno">  351</span>        <a class="code hl_variable" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.life -= _rDamage.<a class="code hl_variable" href="struct_n_game_1_1_s_damage_param.html#a7e8dd382817d827e8a17434e83430b72">damage</a>;</div>
+<div class="line"><span class="lineno">  352</span> </div>
+<div class="line"><span class="lineno">  353</span>        <span class="comment">// 死亡時の状態遷移</span></div>
+<div class="line"><span class="lineno">  354</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.GetIsAlive()) {</div>
+<div class="line"><span class="lineno">  355</span>            <a class="code hl_variable" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.life = 0;  <span class="comment">// 値を補正</span></div>
+<div class="line"><span class="lineno">  356</span>        }</div>
+<div class="line"><span class="lineno">  357</span> </div>
+<div class="line"><span class="lineno">  358</span>        <span class="comment">// 継承後の処理を実行</span></div>
+<div class="line"><span class="lineno">  359</span>        <a class="code hl_function" href="#ace49b6dcc6915b0ea523b1caad39d276">ProcDamage</a>(_rDamage);</div>
+<div class="line"><span class="lineno">  360</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_ace49b6dcc6915b0ea523b1caad39d276"><div class="ttname"><a href="#ace49b6dcc6915b0ea523b1caad39d276">NObject::CActor::ProcDamage</a></div><div class="ttdeci">virtual void ProcDamage(const NGame::SDamageParam &amp;_rDamage)</div><div class="ttdoc">被攻撃情報をもとにダメージ処理を実行する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:191</div></div>
+<div class="ttc" id="astruct_n_game_1_1_s_damage_param_html_a7e8dd382817d827e8a17434e83430b72"><div class="ttname"><a href="struct_n_game_1_1_s_damage_param.html#a7e8dd382817d827e8a17434e83430b72">NGame::SDamageParam::damage</a></div><div class="ttdeci">int damage</div><div class="ttdef"><b>Definition</b> Game_ActorParam.h:39</div></div>
+<div class="ttc" id="astruct_n_game_1_1_s_damage_param_html_abcab23b5967ed0cce9270c880e81814a"><div class="ttname"><a href="struct_n_game_1_1_s_damage_param.html#abcab23b5967ed0cce9270c880e81814a">NGame::SDamageParam::isReciveDamage</a></div><div class="ttdeci">bool isReciveDamage</div><div class="ttdef"><b>Definition</b> Game_ActorParam.h:33</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7fb033d64b258510c012913a868224e3" name="a7fb033d64b258510c012913a868224e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb033d64b258510c012913a868224e3">&#9670;&#160;</a></span>ProcReceiveAttackInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::ProcReceiveAttackInfo </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在受けている攻撃をもとに処理を行う </p>
+<ul>
+<li>被攻撃判定処理をここですべて行う </li>
+</ul>
+<div class="fragment"><div class="line"><span class="lineno">  266</span>    {</div>
+<div class="line"><span class="lineno">  267</span>        <a class="code hl_function" href="#ab5e0bdaae0b349dd52cf520ea347d3e7">InitResultReceiveAttackInfo</a>();</div>
+<div class="line"><span class="lineno">  268</span>        <a class="code hl_function" href="#a86ae0657b5d168685eabdc580d058377">MakeResultReceiveAttackInfo</a>();</div>
+<div class="line"><span class="lineno">  269</span>        <a class="code hl_function" href="#af1c9633db4fbf40b4f8bb6ec3e5ed230">ProcDamageCommon</a>(<a class="code hl_variable" href="#a4588687369b5ac68894ed431e5f503cc">m_resultDamage</a>);</div>
+<div class="line"><span class="lineno">  270</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a86ae0657b5d168685eabdc580d058377"><div class="ttname"><a href="#a86ae0657b5d168685eabdc580d058377">NObject::CActor::MakeResultReceiveAttackInfo</a></div><div class="ttdeci">void MakeResultReceiveAttackInfo()</div><div class="ttdoc">現フレームで受けた攻撃のうち、実際に反映させるダメージ量などを計算し、 最終結果を作成する。</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:283</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_ab5e0bdaae0b349dd52cf520ea347d3e7"><div class="ttname"><a href="#ab5e0bdaae0b349dd52cf520ea347d3e7">NObject::CActor::InitResultReceiveAttackInfo</a></div><div class="ttdeci">void InitResultReceiveAttackInfo()</div><div class="ttdoc">最終的な受けた攻撃結果を初期化する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:272</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_af1c9633db4fbf40b4f8bb6ec3e5ed230"><div class="ttname"><a href="#af1c9633db4fbf40b4f8bb6ec3e5ed230">NObject::CActor::ProcDamageCommon</a></div><div class="ttdeci">void ProcDamageCommon(const NGame::SDamageParam &amp;_rDamage)</div><div class="ttdoc">被攻撃時の共通処理処理を実行</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:343</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab7f20137067f7bc3f40de624e83f8857" name="ab7f20137067f7bc3f40de624e83f8857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f20137067f7bc3f40de624e83f8857">&#9670;&#160;</a></span>ReleaseProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::ReleaseProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>終了時に1度だけ行う処理を記述する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_game_object.html#a5dbe0f6403317df773e8f98e2f356473">NObject::CGameObject</a>を再実装しています。</p>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#a7b1223a64c7e493d3795353195801185">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#ac13138c79ba760a169d24e46d220192f">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a643d389942f1d7f01606724daac7a5e6">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a0b15e7be6b726548cf51993d68bc3219">NObject::CSandBag</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>    {</div>
+<div class="line"><span class="lineno">  105</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a5dbe0f6403317df773e8f98e2f356473">CGameObject::ReleaseProc</a>();</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a5dbe0f6403317df773e8f98e2f356473"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a5dbe0f6403317df773e8f98e2f356473">NObject::CGameObject::ReleaseProc</a></div><div class="ttdeci">virtual void ReleaseProc()</div><div class="ttdoc">解放を行う(1度だけ実行する)</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aeaf6c5cbda74c554d865125e22402dd5" name="aeaf6c5cbda74c554d865125e22402dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf6c5cbda74c554d865125e22402dd5">&#9670;&#160;</a></span>RenderLateProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::RenderLateProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当たり判定のデバッグ描画 </p>
+
+<p><a class="el" href="class_n_object_1_1_c_game_object.html#af14b5482da4191a057aea2a87730e965">NObject::CGameObject</a>を再実装しています。</p>
+
+<p><a class="el" href="class_n_object_1_1_c_enemy.html#af776656f7735d7e7c271d298319e26b5">NObject::CEnemy</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  168</span>    {</div>
+<div class="line"><span class="lineno">  169</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#af14b5482da4191a057aea2a87730e965">CGameObject::RenderLateProc</a>();</div>
+<div class="line"><span class="lineno">  170</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.RenderDebug();</div>
+<div class="line"><span class="lineno">  171</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_af14b5482da4191a057aea2a87730e965"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#af14b5482da4191a057aea2a87730e965">NObject::CGameObject::RenderLateProc</a></div><div class="ttdeci">virtual void RenderLateProc()</div><div class="ttdoc">継承後の通常のタイミングより遅い描画</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:76</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3b0c38c414fe7d1db6de80d60c0179a7" name="a3b0c38c414fe7d1db6de80d60c0179a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b0c38c414fe7d1db6de80d60c0179a7">&#9670;&#160;</a></span>RenderProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::RenderProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>描画処理を記述する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_game_object.html#a7eb3b5d63e38651310bc5eb0c553d233">NObject::CGameObject</a>を再実装しています。</p>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#a03b8d270b43fcd4df2940b299c6c92af">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#ac74413c0a2d99763ad1ab936bda04697">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#a5525eb0f01a67ba0e7034f285a9bed61">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a82764050167beb3909297d64e8b9a61b">NObject::CSandBag</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>    {</div>
+<div class="line"><span class="lineno">  164</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a7eb3b5d63e38651310bc5eb0c553d233">CGameObject::RenderProc</a>();</div>
+<div class="line"><span class="lineno">  165</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a7eb3b5d63e38651310bc5eb0c553d233"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a7eb3b5d63e38651310bc5eb0c553d233">NObject::CGameObject::RenderProc</a></div><div class="ttdeci">virtual void RenderProc()</div><div class="ttdoc">継承後の描画処理</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:72</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a27d65e6fd6eaf919473f316ec016fe72" name="a27d65e6fd6eaf919473f316ec016fe72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d65e6fd6eaf919473f316ec016fe72">&#9670;&#160;</a></span>SetDamageActorMoveParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::SetDamageActorMoveParam </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>攻撃を受けた際のActorMoveの設定を適用 </p>
+<div class="fragment"><div class="line"><span class="lineno">  199</span>    {</div>
+<div class="line"><span class="lineno">  200</span>        <span class="comment">// ノックバック処理を適用するための設定</span></div>
+<div class="line"><span class="lineno">  201</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.SetIsApplyRotateMoveDir(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  202</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.SetApplyType(<a class="code hl_enumvalue" href="class_n_game_1_1_c_actor_move.html#afd909be7421c4cbe6d2e3fb2db48723fa4c5d06b02c97731aaa976179c62dcf76">NGame::CActorMove::EApplyType::DIRECT</a>);</div>
+<div class="line"><span class="lineno">  203</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_afd909be7421c4cbe6d2e3fb2db48723fa4c5d06b02c97731aaa976179c62dcf76"><div class="ttname"><a href="class_n_game_1_1_c_actor_move.html#afd909be7421c4cbe6d2e3fb2db48723fa4c5d06b02c97731aaa976179c62dcf76">NGame::CActorMove::EApplyType::DIRECT</a></div><div class="ttdeci">@ DIRECT</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:25</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a90f0a2a97d90d56060048e81eb29ca82" name="a90f0a2a97d90d56060048e81eb29ca82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f0a2a97d90d56060048e81eb29ca82">&#9670;&#160;</a></span>SetIsEliminated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::SetIsEliminated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>敵の削除状態を設定 </p>
+<div class="fragment"><div class="line"><span class="lineno">   91</span>{ <a class="code hl_variable" href="#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.isEliminated = <span class="keyword">true</span>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2b4d3dfce96b17b1f936194beaa79043" name="a2b4d3dfce96b17b1f936194beaa79043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b4d3dfce96b17b1f936194beaa79043">&#9670;&#160;</a></span>SetNormalActorMoveParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::SetNormalActorMoveParam </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>通常時のActorMoveの設定を適用 </p>
+<div class="fragment"><div class="line"><span class="lineno">  207</span>    {</div>
+<div class="line"><span class="lineno">  208</span>        <span class="comment">// 通常の移動をする設定</span></div>
+<div class="line"><span class="lineno">  209</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.SetIsApplyRotateMoveDir(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  210</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.SetApplyType(<a class="code hl_enumvalue" href="class_n_game_1_1_c_actor_move.html#afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce">NGame::CActorMove::EApplyType:: FORWARDING</a>);</div>
+<div class="line"><span class="lineno">  211</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce"><div class="ttname"><a href="class_n_game_1_1_c_actor_move.html#afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce">NGame::CActorMove::EApplyType::FORWARDING</a></div><div class="ttdeci">@ FORWARDING</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:24</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aae1df8321bb51d12789de0d58a74f659" name="aae1df8321bb51d12789de0d58a74f659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1df8321bb51d12789de0d58a74f659">&#9670;&#160;</a></span>UpdateFastProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::UpdateFastProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移動前の座標を取得する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_game_object.html#a9671b365fe9ebe98c4d7c1dda3633d7e">NObject::CGameObject</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  134</span>    {</div>
+<div class="line"><span class="lineno">  135</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a9671b365fe9ebe98c4d7c1dda3633d7e">CGameObject::UpdateFastProc</a>();</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.UpdateFast();</div>
+<div class="line"><span class="lineno">  138</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a9671b365fe9ebe98c4d7c1dda3633d7e"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a9671b365fe9ebe98c4d7c1dda3633d7e">NObject::CGameObject::UpdateFastProc</a></div><div class="ttdeci">virtual void UpdateFastProc()</div><div class="ttdoc">処理順の制御のために、通常のUpdateより早く実行される更新関数</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:62</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac0e325ecdadbe7ed196c78cbd1f04304" name="ac0e325ecdadbe7ed196c78cbd1f04304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e325ecdadbe7ed196c78cbd1f04304">&#9670;&#160;</a></span>UpdateLateProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::UpdateLateProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当たり判定の更新を行う </p>
+
+<p><a class="el" href="class_n_object_1_1_c_game_object.html#a35666e8b9094cfdc534b9e8c8daffcfd">NObject::CGameObject</a>を再実装しています。</p>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#a0aba960950dbadea91728fee6a4aa314">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_player.html#a3d9988f7a1e8d946e6375ef69f7cee85">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a9642fb3bea1eca8cd7f1cbf2fccae965">NObject::CSandBag</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>    {</div>
+<div class="line"><span class="lineno">  159</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a35666e8b9094cfdc534b9e8c8daffcfd">CGameObject::UpdateLateProc</a>();</div>
+<div class="line"><span class="lineno">  160</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a35666e8b9094cfdc534b9e8c8daffcfd"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a35666e8b9094cfdc534b9e8c8daffcfd">NObject::CGameObject::UpdateLateProc</a></div><div class="ttdeci">virtual void UpdateLateProc()</div><div class="ttdoc">処理順の制御のために、通常のUpdateより遅く実行される更新関数</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:69</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa17dd9c0f95776494fcbbeed679a9a51" name="aa17dd9c0f95776494fcbbeed679a9a51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17dd9c0f95776494fcbbeed679a9a51">&#9670;&#160;</a></span>UpdateProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CActor::UpdateProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新処理を記述する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_game_object.html#aed62e95b20bfdd55f3c7114e1e41a358">NObject::CGameObject</a>を再実装しています。</p>
+
+<p><a class="el" href="class_n_object_1_1_c_baby.html#a79f18b19770d1e0e08c5c927cb06369e">NObject::CBaby</a>, <a class="el" href="class_n_object_1_1_c_enemy.html#acf48bf6615a7e736aaca21f8fb3a05eb">NObject::CEnemy</a>, <a class="el" href="class_n_object_1_1_c_player.html#aa3e6e924c56d23bf27f0baee8472d19d">NObject::CPlayer</a>, <a class="el" href="class_n_object_1_1_c_sand_bag.html#a7411a6e50e716252dc3c4320501ce648">NObject::CSandBag</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  141</span>    {</div>
+<div class="line"><span class="lineno">  142</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#aed62e95b20bfdd55f3c7114e1e41a358">CGameObject::UpdateProc</a>();</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>        <span class="comment">// 現在受けている攻撃情報をもとに処理を行う</span></div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_function" href="#a7fb033d64b258510c012913a868224e3">ProcReceiveAttackInfo</a>();</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>        <span class="comment">// 受けた当たり判定情報を初期化</span></div>
+<div class="line"><span class="lineno">  148</span>        <a class="code hl_function" href="#ad1b5b2631e11a4cdb22f107c522107b3">InitReceiveAttackInfo</a>();</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>        <span class="comment">// 操作関数</span></div>
+<div class="line"><span class="lineno">  151</span>        <a class="code hl_function" href="#a5135c82f4947f13e8038e285565a602c">Operate</a>();</div>
+<div class="line"><span class="lineno">  152</span> </div>
+<div class="line"><span class="lineno">  153</span>        <span class="comment">// 移動量を適用</span></div>
+<div class="line"><span class="lineno">  154</span>        <a class="code hl_variable" href="#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.Update();</div>
+<div class="line"><span class="lineno">  155</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a5135c82f4947f13e8038e285565a602c"><div class="ttname"><a href="#a5135c82f4947f13e8038e285565a602c">NObject::CActor::Operate</a></div><div class="ttdeci">virtual void Operate() PURE_FUNC</div><div class="ttdoc">プレイヤーの操作を行う関数</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a7fb033d64b258510c012913a868224e3"><div class="ttname"><a href="#a7fb033d64b258510c012913a868224e3">NObject::CActor::ProcReceiveAttackInfo</a></div><div class="ttdeci">void ProcReceiveAttackInfo()</div><div class="ttdoc">現在受けている攻撃をもとに処理を行う</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:265</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_ad1b5b2631e11a4cdb22f107c522107b3"><div class="ttname"><a href="#ad1b5b2631e11a4cdb22f107c522107b3">NObject::CActor::InitReceiveAttackInfo</a></div><div class="ttdeci">void InitReceiveAttackInfo()</div><div class="ttdoc">被攻撃情報を初期化する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:248</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_aed62e95b20bfdd55f3c7114e1e41a358"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#aed62e95b20bfdd55f3c7114e1e41a358">NObject::CGameObject::UpdateProc</a></div><div class="ttdeci">virtual void UpdateProc()</div><div class="ttdoc">継承後の更新処理</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:65</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a9e858b93eacf30e3d8c14806dfa4c48a" name="a9e858b93eacf30e3d8c14806dfa4c48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e858b93eacf30e3d8c14806dfa4c48a">&#9670;&#160;</a></span>m_actorMove</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_game_1_1_c_actor_move.html">NGame::CActorMove</a> NObject::CActor::m_actorMove</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd621445a67d87436d153b9ea7d50549" name="abd621445a67d87436d153b9ea7d50549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd621445a67d87436d153b9ea7d50549">&#9670;&#160;</a></span>m_actorParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_n_game_1_1_s_actor_param.html">NGame::SActorParam</a> NObject::CActor::m_actorParam</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7cd61168de4c55ab75b5159bf14615a" name="af7cd61168de4c55ab75b5159bf14615a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7cd61168de4c55ab75b5159bf14615a">&#9670;&#160;</a></span>m_curReceiveAttackInfoIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NObject::CActor::m_curReceiveAttackInfoIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0a758f6524a3b44e1d84da40804bff0" name="ab0a758f6524a3b44e1d84da40804bff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a758f6524a3b44e1d84da40804bff0">&#9670;&#160;</a></span>m_receiveAttackInfoBufs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="#a2522acee65a0f5542fbdeb8c0858b6b0">ReceiveAttackInfos</a>, <a class="el" href="#adcf8b023e7b10110470fc43e1b77681d">RECEIVE_ATTACK_INFO_BUF_SIZE</a>&gt; NObject::CActor::m_receiveAttackInfoBufs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>そのフレームで受けた攻撃判定情報をすべて保持するバッファ変数 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>添え字の対応<ul>
+<li>0:最新　</li>
+<li>RECEIVE_ATTACK_INFO_BUF_SIZE - 1 : 最古 </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a4588687369b5ac68894ed431e5f503cc" name="a4588687369b5ac68894ed431e5f503cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4588687369b5ac68894ed431e5f503cc">&#9670;&#160;</a></span>m_resultDamage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> NObject::CActor::m_resultDamage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>最終的に反映される攻撃情報 </p>
+
+</div>
+</div>
+<a id="a72a0061a6174a2cf0ae7f4bd7e5f4937" name="a72a0061a6174a2cf0ae7f4bd7e5f4937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72a0061a6174a2cf0ae7f4bd7e5f4937">&#9670;&#160;</a></span>m_resultReceiveAttackInfos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a2522acee65a0f5542fbdeb8c0858b6b0">ReceiveAttackInfos</a> NObject::CActor::m_resultReceiveAttackInfos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現フレームで受けた当たり判定のうち、過去フレーム(1フレーム前)で 受けていた当たり判定を省いた判定のみ保持する変数 </p>
+
+</div>
+</div>
+<a id="adcf8b023e7b10110470fc43e1b77681d" name="adcf8b023e7b10110470fc43e1b77681d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcf8b023e7b10110470fc43e1b77681d">&#9670;&#160;</a></span>RECEIVE_ATTACK_INFO_BUF_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint NObject::CActor::RECEIVE_ATTACK_INFO_BUF_SIZE = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80fc9e92c59c5703c059d9e03af89b67" name="a80fc9e92c59c5703c059d9e03af89b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80fc9e92c59c5703c059d9e03af89b67">&#9670;&#160;</a></span>RECEIVE_ATTACK_INFO_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint NObject::CActor::RECEIVE_ATTACK_INFO_MAX = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/GameApp/Object/Actor/<a class="el" href="_object___actor_8h_source.html">Object_Actor.h</a></li>
+<li>Sources/GameApp/Object/Actor/<a class="el" href="_object___actor_8cpp.html">Object_Actor.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_object.html">NObject</a></li><li class="navelem"><a href="class_n_object_1_1_c_actor.html">CActor</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

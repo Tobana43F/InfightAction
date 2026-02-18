@@ -1,0 +1,988 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NObject::CPlayer::CDamageState クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_object_1_1_c_player_1_1_c_damage_state.html','','class_n_object_1_1_c_player_1_1_c_damage_state-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NObject::CPlayer::CDamageState クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ダメージ状態を管理するクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_object___player_8h_source.html">Object_Player.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a2c3a810f72c5b7c91089daff0b5683bd" id="r_a2c3a810f72c5b7c91089daff0b5683bd"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bd">EState</a> { <br />
+&#160;&#160;<a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bdac7439ca195784f97f373ba55bc25a574">GROUND_LOW</a>
+, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bdac57b49a85583b306372c40a6ed2d78d4">GROUND_MIDDLE</a>
+, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bdae34528cd9a61c2c9dd2535946b92cab3">GROUND_HIGH</a>
+, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bda378a0016e7b92a63768e04538dfe5302">GROUND_RECOVER</a>
+, <br />
+&#160;&#160;<a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929">AIR</a>
+, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bda882b150e7e5c77c2e78a994f958ec419">AIR_UP</a>
+, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bda9a15afed7721946ff4156b80609a769f">AIR_FALL</a>
+, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bdad2cecc546e3a75787d037760f75b3399">GROUNDED</a>
+, <br />
+&#160;&#160;<a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bda6f7a4106d13186211361f89e3bd9ce4c">LAY_RECOVER</a>
+, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bda83ebd7c89f4cc1a85396fba7d6f7e900">DIE</a>
+, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bda26a4b44a837bf97b972628509912b4a5">MAX</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a2c3a810f72c5b7c91089daff0b5683bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">管理する状態  <a href="#a2c3a810f72c5b7c91089daff0b5683bd">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a11ed42836fbe9f2c18f0483b670e5d11" id="r_a11ed42836fbe9f2c18f0483b670e5d11"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a11ed42836fbe9f2c18f0483b670e5d11">Load</a> ()</td></tr>
+<tr class="memdesc:a11ed42836fbe9f2c18f0483b670e5d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロード  <br /></td></tr>
+<tr class="memitem:af978180dea1e152458598dfa96606d69" id="r_af978180dea1e152458598dfa96606d69"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af978180dea1e152458598dfa96606d69">Init</a> ()</td></tr>
+<tr class="memdesc:af978180dea1e152458598dfa96606d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <br /></td></tr>
+<tr class="memitem:aef1b86e23fe4a7db6a6022a595788c97" id="r_aef1b86e23fe4a7db6a6022a595788c97"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aef1b86e23fe4a7db6a6022a595788c97">Entry</a> (const <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bd">EState</a> _state)</td></tr>
+<tr class="memdesc:aef1b86e23fe4a7db6a6022a595788c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">管理外の状態から遷移した際に実行される関数  <br /></td></tr>
+<tr class="memitem:a1da659286ffc0a4e61ab20788a8bee8d" id="r_a1da659286ffc0a4e61ab20788a8bee8d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1da659286ffc0a4e61ab20788a8bee8d">Update</a> ()</td></tr>
+<tr class="memdesc:a1da659286ffc0a4e61ab20788a8bee8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新  <br /></td></tr>
+<tr class="memitem:a4d2c1f31f892dfcfbe0893abbe7c5b7e" id="r_a4d2c1f31f892dfcfbe0893abbe7c5b7e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4d2c1f31f892dfcfbe0893abbe7c5b7e">UpdateLate</a> ()</td></tr>
+<tr class="memdesc:a4d2c1f31f892dfcfbe0893abbe7c5b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定の更新  <br /></td></tr>
+<tr class="memitem:ae250371fbf033662000a373b46773a1c" id="r_ae250371fbf033662000a373b46773a1c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae250371fbf033662000a373b46773a1c">RenderDebug</a> ()</td></tr>
+<tr class="memdesc:ae250371fbf033662000a373b46773a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定描画  <br /></td></tr>
+<tr class="memitem:a5e8a76df54d94fb65c56425d0841bbdb" id="r_a5e8a76df54d94fb65c56425d0841bbdb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5e8a76df54d94fb65c56425d0841bbdb">SetIsEnable</a> (bool _state)</td></tr>
+<tr class="memdesc:a5e8a76df54d94fb65c56425d0841bbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステートの有効状態を設定  <br /></td></tr>
+<tr class="memitem:a1a73ce31f86ddde4384d56ae38d3de3e" id="r_a1a73ce31f86ddde4384d56ae38d3de3e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1a73ce31f86ddde4384d56ae38d3de3e">CDamageState</a> (<a class="el" href="class_n_object_1_1_c_player.html#a1204b4ae7985fd4e3ce27504f02022ef">CPlayer</a> &amp;_bindObject)</td></tr>
+<tr class="memitem:a149f9d0d4604135898a4aa957d203fd4" id="r_a149f9d0d4604135898a4aa957d203fd4"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a149f9d0d4604135898a4aa957d203fd4">~CDamageState</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-types" class="groupheader"><a id="pri-types" name="pri-types"></a>
+非公開型</h2></td></tr>
+<tr class="memitem:a0963d419df7376b3d40145ebb8bb0042" id="r_a0963d419df7376b3d40145ebb8bb0042"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> = <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt;<a class="el" href="#a1a73ce31f86ddde4384d56ae38d3de3e">CDamageState</a>, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bd">EState</a>&gt;::Param</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a98a42eb1784e6b422d06dd6e160ac955" id="r_a98a42eb1784e6b422d06dd6e160ac955"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a98a42eb1784e6b422d06dd6e160ac955">UpdateStateGroundLow</a> (<a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> _state)</td></tr>
+<tr class="memitem:a43a6593d29ffd96450bd28120a2627fd" id="r_a43a6593d29ffd96450bd28120a2627fd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a43a6593d29ffd96450bd28120a2627fd">UpdateStateGroundMiddle</a> (<a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> _state)</td></tr>
+<tr class="memitem:af882a5710e8a8401c5f8a70a45357323" id="r_af882a5710e8a8401c5f8a70a45357323"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af882a5710e8a8401c5f8a70a45357323">UpdateStateGroundHigh</a> (<a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> _state)</td></tr>
+<tr class="memitem:ab9b1d263d4823b1294360e6b1efbcb88" id="r_ab9b1d263d4823b1294360e6b1efbcb88"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab9b1d263d4823b1294360e6b1efbcb88">UpdateStateGroundRecover</a> (<a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> _state)</td></tr>
+<tr class="memitem:ac2c8f0bcd56295a985d2963b8a974fac" id="r_ac2c8f0bcd56295a985d2963b8a974fac"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac2c8f0bcd56295a985d2963b8a974fac">UpdateStateAir</a> (<a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> _state)</td></tr>
+<tr class="memitem:ab7773977a86d1044a76f3fa4e52c0e3f" id="r_ab7773977a86d1044a76f3fa4e52c0e3f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab7773977a86d1044a76f3fa4e52c0e3f">UpdateStateAirUp</a> (<a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> _state)</td></tr>
+<tr class="memitem:a40ff8ebf80372ac4a307b6220f295ed7" id="r_a40ff8ebf80372ac4a307b6220f295ed7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a40ff8ebf80372ac4a307b6220f295ed7">UpdateStateAirFall</a> (<a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> _state)</td></tr>
+<tr class="memitem:a7b2c6d2a6d689c1a1cd9c15b7700c95e" id="r_a7b2c6d2a6d689c1a1cd9c15b7700c95e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7b2c6d2a6d689c1a1cd9c15b7700c95e">UpdateStateGrounded</a> (<a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> _state)</td></tr>
+<tr class="memitem:ae03b37501511850d3c7a2dbbc0dbcba5" id="r_ae03b37501511850d3c7a2dbbc0dbcba5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae03b37501511850d3c7a2dbbc0dbcba5">UpdateStateLayRecover</a> (<a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> _state)</td></tr>
+<tr class="memitem:a09702d299bb28c25e521d57a852cc801" id="r_a09702d299bb28c25e521d57a852cc801"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a09702d299bb28c25e521d57a852cc801">UpdateStateDie</a> (<a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a> _state)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a55cc6d271a7cb9581cb09534a4710142" id="r_a55cc6d271a7cb9581cb09534a4710142"><td class="memItemLeft"><a class="el" href="class_n_collision_1_1_c_holder.html">NCollision::CHolder</a>&#160;</td><td class="memItemRight"><a class="el" href="#a55cc6d271a7cb9581cb09534a4710142">m_colDamageHolder</a></td></tr>
+<tr class="memitem:a14eaa2505c66c96b42e8e13a7dfa5232" id="r_a14eaa2505c66c96b42e8e13a7dfa5232"><td class="memItemLeft"><a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; <a class="el" href="#a1a73ce31f86ddde4384d56ae38d3de3e">CDamageState</a>, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bd">EState</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a></td></tr>
+<tr class="memitem:a5f31bd223efbfb7f3e229a5d7dc715f1" id="r_a5f31bd223efbfb7f3e229a5d7dc715f1"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_player.html#a1204b4ae7985fd4e3ce27504f02022ef">CPlayer</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>ダメージ状態を管理するクラス </p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a0963d419df7376b3d40145ebb8bb0042" name="a0963d419df7376b3d40145ebb8bb0042"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0963d419df7376b3d40145ebb8bb0042">&#9670;&#160;</a></span>StateParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">NObject::CPlayer::CDamageState::StateParam</a> = <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt;<a class="el" href="#a1a73ce31f86ddde4384d56ae38d3de3e">CDamageState</a>, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bd">EState</a>&gt;::Param</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型メンバ詳解</h2>
+<a id="a2c3a810f72c5b7c91089daff0b5683bd" name="a2c3a810f72c5b7c91089daff0b5683bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3a810f72c5b7c91089daff0b5683bd">&#9670;&#160;</a></span>EState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bd">NObject::CPlayer::CDamageState::EState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>管理する状態 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bdac7439ca195784f97f373ba55bc25a574" name="a2c3a810f72c5b7c91089daff0b5683bdac7439ca195784f97f373ba55bc25a574"></a>GROUND_LOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bdac57b49a85583b306372c40a6ed2d78d4" name="a2c3a810f72c5b7c91089daff0b5683bdac57b49a85583b306372c40a6ed2d78d4"></a>GROUND_MIDDLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bdae34528cd9a61c2c9dd2535946b92cab3" name="a2c3a810f72c5b7c91089daff0b5683bdae34528cd9a61c2c9dd2535946b92cab3"></a>GROUND_HIGH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bda378a0016e7b92a63768e04538dfe5302" name="a2c3a810f72c5b7c91089daff0b5683bda378a0016e7b92a63768e04538dfe5302"></a>GROUND_RECOVER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929" name="a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929"></a>AIR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bda882b150e7e5c77c2e78a994f958ec419" name="a2c3a810f72c5b7c91089daff0b5683bda882b150e7e5c77c2e78a994f958ec419"></a>AIR_UP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bda9a15afed7721946ff4156b80609a769f" name="a2c3a810f72c5b7c91089daff0b5683bda9a15afed7721946ff4156b80609a769f"></a>AIR_FALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bdad2cecc546e3a75787d037760f75b3399" name="a2c3a810f72c5b7c91089daff0b5683bdad2cecc546e3a75787d037760f75b3399"></a>GROUNDED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bda6f7a4106d13186211361f89e3bd9ce4c" name="a2c3a810f72c5b7c91089daff0b5683bda6f7a4106d13186211361f89e3bd9ce4c"></a>LAY_RECOVER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bda83ebd7c89f4cc1a85396fba7d6f7e900" name="a2c3a810f72c5b7c91089daff0b5683bda83ebd7c89f4cc1a85396fba7d6f7e900"></a>DIE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3a810f72c5b7c91089daff0b5683bda26a4b44a837bf97b972628509912b4a5" name="a2c3a810f72c5b7c91089daff0b5683bda26a4b44a837bf97b972628509912b4a5"></a>MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><span class="lineno">  172</span>                              {</div>
+<div class="line"><span class="lineno">  173</span>                GROUND_LOW,</div>
+<div class="line"><span class="lineno">  174</span>                GROUND_MIDDLE,</div>
+<div class="line"><span class="lineno">  175</span>                GROUND_HIGH,</div>
+<div class="line"><span class="lineno">  176</span>                GROUND_RECOVER,</div>
+<div class="line"><span class="lineno">  177</span>                </div>
+<div class="line"><span class="lineno">  178</span>                AIR,            <span class="comment">// 空中ダメージ</span></div>
+<div class="line"><span class="lineno">  179</span>                AIR_UP,         <span class="comment">// 空中ダメージ上昇</span></div>
+<div class="line"><span class="lineno">  180</span>                AIR_FALL,       <span class="comment">// 空中ダメージ下降</span></div>
+<div class="line"><span class="lineno">  181</span>                GROUNDED,       <span class="comment">// 落下後の着地(叩きつけられる)</span></div>
+<div class="line"><span class="lineno">  182</span>                LAY_RECOVER,    <span class="comment">// 空中落下後の立ち上がり</span></div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>                DIE,</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>                <a class="code hl_enumvalue" href="namespace_n_polygon.html#ae5951f8c0da33ba8aaddf6c86b5dc091a45938ded5a84c75fad4f38d5ad6271bb">MAX</a>,</div>
+<div class="line"><span class="lineno">  187</span>            };</div>
+<div class="ttc" id="anamespace_n_polygon_html_ae5951f8c0da33ba8aaddf6c86b5dc091a45938ded5a84c75fad4f38d5ad6271bb"><div class="ttname"><a href="namespace_n_polygon.html#ae5951f8c0da33ba8aaddf6c86b5dc091a45938ded5a84c75fad4f38d5ad6271bb">NPolygon::MAX</a></div><div class="ttdeci">@ MAX</div><div class="ttdef"><b>Definition</b> Polygon_Def.h:32</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a1a73ce31f86ddde4384d56ae38d3de3e" name="a1a73ce31f86ddde4384d56ae38d3de3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a73ce31f86ddde4384d56ae38d3de3e">&#9670;&#160;</a></span>CDamageState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CPlayer::CDamageState::CDamageState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_object_1_1_c_player.html#a1204b4ae7985fd4e3ce27504f02022ef">CPlayer</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_bindObject</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    8</span>                                                          :</div>
+<div class="line"><span class="lineno">    9</span>        <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>(_bindObject),</div>
+<div class="line"><span class="lineno">   10</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>(<span class="keyword">this</span>)</div>
+<div class="line"><span class="lineno">   11</span>    {</div>
+<div class="line"><span class="lineno">   12</span>        <span class="comment">// 状態と関数の設定</span></div>
+<div class="line"><span class="lineno">   13</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Register(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bdac7439ca195784f97f373ba55bc25a574">EState::GROUND_LOW</a>, &amp;<a class="code hl_function" href="#a98a42eb1784e6b422d06dd6e160ac955">CDamageState::UpdateStateGroundLow</a>);</div>
+<div class="line"><span class="lineno">   14</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Register(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bdac57b49a85583b306372c40a6ed2d78d4">EState::GROUND_MIDDLE</a>, &amp;<a class="code hl_function" href="#a43a6593d29ffd96450bd28120a2627fd">CDamageState::UpdateStateGroundMiddle</a>);</div>
+<div class="line"><span class="lineno">   15</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Register(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bdae34528cd9a61c2c9dd2535946b92cab3">EState::GROUND_HIGH</a>, &amp;<a class="code hl_function" href="#af882a5710e8a8401c5f8a70a45357323">CDamageState::UpdateStateGroundHigh</a>);</div>
+<div class="line"><span class="lineno">   16</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Register(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda378a0016e7b92a63768e04538dfe5302">EState::GROUND_RECOVER</a>, &amp;<a class="code hl_function" href="#ab9b1d263d4823b1294360e6b1efbcb88">CDamageState::UpdateStateGroundRecover</a>);</div>
+<div class="line"><span class="lineno">   17</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Register(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929">EState::AIR</a>, &amp;<a class="code hl_function" href="#ac2c8f0bcd56295a985d2963b8a974fac">CDamageState::UpdateStateAir</a>);</div>
+<div class="line"><span class="lineno">   18</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Register(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda882b150e7e5c77c2e78a994f958ec419">EState::AIR_UP</a>, &amp;<a class="code hl_function" href="#ab7773977a86d1044a76f3fa4e52c0e3f">CDamageState::UpdateStateAirUp</a>);</div>
+<div class="line"><span class="lineno">   19</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Register(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda9a15afed7721946ff4156b80609a769f">EState::AIR_FALL</a>, &amp;<a class="code hl_function" href="#a40ff8ebf80372ac4a307b6220f295ed7">CDamageState::UpdateStateAirFall</a>);</div>
+<div class="line"><span class="lineno">   20</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Register(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bdad2cecc546e3a75787d037760f75b3399">EState::GROUNDED</a>, &amp;<a class="code hl_function" href="#a7b2c6d2a6d689c1a1cd9c15b7700c95e">CDamageState::UpdateStateGrounded</a>);</div>
+<div class="line"><span class="lineno">   21</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Register(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda6f7a4106d13186211361f89e3bd9ce4c">EState::LAY_RECOVER</a>, &amp;<a class="code hl_function" href="#ae03b37501511850d3c7a2dbbc0dbcba5">CDamageState::UpdateStateLayRecover</a>);</div>
+<div class="line"><span class="lineno">   22</span>        <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Register(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda83ebd7c89f4cc1a85396fba7d6f7e900">EState::DIE</a>, &amp;<a class="code hl_function" href="#a09702d299bb28c25e521d57a852cc801">CDamageState::UpdateStateDie</a>);</div>
+<div class="line"><span class="lineno">   23</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a09702d299bb28c25e521d57a852cc801"><div class="ttname"><a href="#a09702d299bb28c25e521d57a852cc801">NObject::CPlayer::CDamageState::UpdateStateDie</a></div><div class="ttdeci">void UpdateStateDie(StateParam _state)</div><div class="ttdef"><b>Definition</b> Object_PlayerDamageState.cpp:160</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a14eaa2505c66c96b42e8e13a7dfa5232"><div class="ttname"><a href="#a14eaa2505c66c96b42e8e13a7dfa5232">NObject::CPlayer::CDamageState::m_state</a></div><div class="ttdeci">NUtil::CStateManager&lt; CDamageState, EState &gt; m_state</div><div class="ttdef"><b>Definition</b> Object_Player.h:232</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929">NObject::CPlayer::CDamageState::EState::AIR</a></div><div class="ttdeci">@ AIR</div><div class="ttdef"><b>Definition</b> Object_Player.h:178</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bda378a0016e7b92a63768e04538dfe5302"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bda378a0016e7b92a63768e04538dfe5302">NObject::CPlayer::CDamageState::EState::GROUND_RECOVER</a></div><div class="ttdeci">@ GROUND_RECOVER</div><div class="ttdef"><b>Definition</b> Object_Player.h:176</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bda6f7a4106d13186211361f89e3bd9ce4c"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bda6f7a4106d13186211361f89e3bd9ce4c">NObject::CPlayer::CDamageState::EState::LAY_RECOVER</a></div><div class="ttdeci">@ LAY_RECOVER</div><div class="ttdef"><b>Definition</b> Object_Player.h:182</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bda83ebd7c89f4cc1a85396fba7d6f7e900"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bda83ebd7c89f4cc1a85396fba7d6f7e900">NObject::CPlayer::CDamageState::EState::DIE</a></div><div class="ttdeci">@ DIE</div><div class="ttdef"><b>Definition</b> Object_Player.h:184</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bda882b150e7e5c77c2e78a994f958ec419"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bda882b150e7e5c77c2e78a994f958ec419">NObject::CPlayer::CDamageState::EState::AIR_UP</a></div><div class="ttdeci">@ AIR_UP</div><div class="ttdef"><b>Definition</b> Object_Player.h:179</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bda9a15afed7721946ff4156b80609a769f"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bda9a15afed7721946ff4156b80609a769f">NObject::CPlayer::CDamageState::EState::AIR_FALL</a></div><div class="ttdeci">@ AIR_FALL</div><div class="ttdef"><b>Definition</b> Object_Player.h:180</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bdac57b49a85583b306372c40a6ed2d78d4"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bdac57b49a85583b306372c40a6ed2d78d4">NObject::CPlayer::CDamageState::EState::GROUND_MIDDLE</a></div><div class="ttdeci">@ GROUND_MIDDLE</div><div class="ttdef"><b>Definition</b> Object_Player.h:174</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bdac7439ca195784f97f373ba55bc25a574"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bdac7439ca195784f97f373ba55bc25a574">NObject::CPlayer::CDamageState::EState::GROUND_LOW</a></div><div class="ttdeci">@ GROUND_LOW</div><div class="ttdef"><b>Definition</b> Object_Player.h:173</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bdad2cecc546e3a75787d037760f75b3399"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bdad2cecc546e3a75787d037760f75b3399">NObject::CPlayer::CDamageState::EState::GROUNDED</a></div><div class="ttdeci">@ GROUNDED</div><div class="ttdef"><b>Definition</b> Object_Player.h:181</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bdae34528cd9a61c2c9dd2535946b92cab3"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bdae34528cd9a61c2c9dd2535946b92cab3">NObject::CPlayer::CDamageState::EState::GROUND_HIGH</a></div><div class="ttdeci">@ GROUND_HIGH</div><div class="ttdef"><b>Definition</b> Object_Player.h:175</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a40ff8ebf80372ac4a307b6220f295ed7"><div class="ttname"><a href="#a40ff8ebf80372ac4a307b6220f295ed7">NObject::CPlayer::CDamageState::UpdateStateAirFall</a></div><div class="ttdeci">void UpdateStateAirFall(StateParam _state)</div><div class="ttdef"><b>Definition</b> Object_PlayerDamageState.cpp:124</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a43a6593d29ffd96450bd28120a2627fd"><div class="ttname"><a href="#a43a6593d29ffd96450bd28120a2627fd">NObject::CPlayer::CDamageState::UpdateStateGroundMiddle</a></div><div class="ttdeci">void UpdateStateGroundMiddle(StateParam _state)</div><div class="ttdef"><b>Definition</b> Object_PlayerDamageState.cpp:71</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a5f31bd223efbfb7f3e229a5d7dc715f1"><div class="ttname"><a href="#a5f31bd223efbfb7f3e229a5d7dc715f1">NObject::CPlayer::CDamageState::m_bindObject</a></div><div class="ttdeci">CPlayer &amp; m_bindObject</div><div class="ttdef"><b>Definition</b> Object_Player.h:234</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a7b2c6d2a6d689c1a1cd9c15b7700c95e"><div class="ttname"><a href="#a7b2c6d2a6d689c1a1cd9c15b7700c95e">NObject::CPlayer::CDamageState::UpdateStateGrounded</a></div><div class="ttdeci">void UpdateStateGrounded(StateParam _state)</div><div class="ttdef"><b>Definition</b> Object_PlayerDamageState.cpp:131</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a98a42eb1784e6b422d06dd6e160ac955"><div class="ttname"><a href="#a98a42eb1784e6b422d06dd6e160ac955">NObject::CPlayer::CDamageState::UpdateStateGroundLow</a></div><div class="ttdeci">void UpdateStateGroundLow(StateParam _state)</div><div class="ttdef"><b>Definition</b> Object_PlayerDamageState.cpp:60</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_ab7773977a86d1044a76f3fa4e52c0e3f"><div class="ttname"><a href="#ab7773977a86d1044a76f3fa4e52c0e3f">NObject::CPlayer::CDamageState::UpdateStateAirUp</a></div><div class="ttdeci">void UpdateStateAirUp(StateParam _state)</div><div class="ttdef"><b>Definition</b> Object_PlayerDamageState.cpp:117</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_ab9b1d263d4823b1294360e6b1efbcb88"><div class="ttname"><a href="#ab9b1d263d4823b1294360e6b1efbcb88">NObject::CPlayer::CDamageState::UpdateStateGroundRecover</a></div><div class="ttdeci">void UpdateStateGroundRecover(StateParam _state)</div><div class="ttdef"><b>Definition</b> Object_PlayerDamageState.cpp:93</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_ac2c8f0bcd56295a985d2963b8a974fac"><div class="ttname"><a href="#ac2c8f0bcd56295a985d2963b8a974fac">NObject::CPlayer::CDamageState::UpdateStateAir</a></div><div class="ttdeci">void UpdateStateAir(StateParam _state)</div><div class="ttdef"><b>Definition</b> Object_PlayerDamageState.cpp:108</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_ae03b37501511850d3c7a2dbbc0dbcba5"><div class="ttname"><a href="#ae03b37501511850d3c7a2dbbc0dbcba5">NObject::CPlayer::CDamageState::UpdateStateLayRecover</a></div><div class="ttdeci">void UpdateStateLayRecover(StateParam _state)</div><div class="ttdef"><b>Definition</b> Object_PlayerDamageState.cpp:145</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_af882a5710e8a8401c5f8a70a45357323"><div class="ttname"><a href="#af882a5710e8a8401c5f8a70a45357323">NObject::CPlayer::CDamageState::UpdateStateGroundHigh</a></div><div class="ttdeci">void UpdateStateGroundHigh(StateParam _state)</div><div class="ttdef"><b>Definition</b> Object_PlayerDamageState.cpp:82</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a149f9d0d4604135898a4aa957d203fd4" name="a149f9d0d4604135898a4aa957d203fd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149f9d0d4604135898a4aa957d203fd4">&#9670;&#160;</a></span>~CDamageState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CPlayer::CDamageState::~CDamageState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   26</span>    {</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="aef1b86e23fe4a7db6a6022a595788c97" name="aef1b86e23fe4a7db6a6022a595788c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1b86e23fe4a7db6a6022a595788c97">&#9670;&#160;</a></span>Entry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::Entry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bd">EState</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>管理外の状態から遷移した際に実行される関数 </p>
+<div class="fragment"><div class="line"><span class="lineno">  199</span>                                            {</div>
+<div class="line"><span class="lineno">  200</span>                <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.ChangeState(_state); </div>
+<div class="line"><span class="lineno">  201</span>                <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_stateBig.ChangeState(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player.html#aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34">EBigState::DAMAGE</a>);</div>
+<div class="line"><span class="lineno">  202</span>            }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34"><div class="ttname"><a href="class_n_object_1_1_c_player.html#aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34">NObject::CPlayer::EBigState::DAMAGE</a></div><div class="ttdeci">@ DAMAGE</div><div class="ttdef"><b>Definition</b> Object_Player.h:27</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af978180dea1e152458598dfa96606d69" name="af978180dea1e152458598dfa96606d69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af978180dea1e152458598dfa96606d69">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::Init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化 </p>
+<div class="fragment"><div class="line"><span class="lineno">  194</span>            {</div>
+<div class="line"><span class="lineno">  195</span>                <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Reset();</div>
+<div class="line"><span class="lineno">  196</span>            }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a11ed42836fbe9f2c18f0483b670e5d11" name="a11ed42836fbe9f2c18f0483b670e5d11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11ed42836fbe9f2c18f0483b670e5d11">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::Load </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ロード </p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>    {</div>
+<div class="line"><span class="lineno">   32</span>        <span class="comment">// ----- 被ダメージ判定読み込み ----</span></div>
+<div class="line"><span class="lineno">   33</span>        <span class="keyword">const</span> <span class="keywordtype">char</span>* pDamageCollisionPaths[<a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;uint&gt;</a>(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda26a4b44a837bf97b972628509912b4a5">EState::MAX</a>)] = {</div>
+<div class="line"><span class="lineno">   34</span>            <span class="stringliteral">&quot;Asset/Data/Collision/Player/Damage_Common.json&quot;</span>,</div>
+<div class="line"><span class="lineno">   35</span>            <span class="stringliteral">&quot;Asset/Data/Collision/Player/Damage_Common.json&quot;</span>,</div>
+<div class="line"><span class="lineno">   36</span>            <span class="stringliteral">&quot;Asset/Data/Collision/Common/None.json&quot;</span>,</div>
+<div class="line"><span class="lineno">   37</span>            <span class="stringliteral">&quot;Asset/Data/Collision/Player/Damage_Common.json&quot;</span>,</div>
+<div class="line"><span class="lineno">   38</span>            <span class="stringliteral">&quot;Asset/Data/Collision/Player/Damage_Common.json&quot;</span>,</div>
+<div class="line"><span class="lineno">   39</span>            <span class="stringliteral">&quot;Asset/Data/Collision/Player/Damage_Common.json&quot;</span>,</div>
+<div class="line"><span class="lineno">   40</span>            <span class="stringliteral">&quot;Asset/Data/Collision/Player/Damage_Common.json&quot;</span>,</div>
+<div class="line"><span class="lineno">   41</span>            <span class="stringliteral">&quot;Asset/Data/Collision/Player/Damage_Common.json&quot;</span>,</div>
+<div class="line"><span class="lineno">   42</span>            <span class="stringliteral">&quot;Asset/Data/Collision/Player/Damage_Common.json&quot;</span>,</div>
+<div class="line"><span class="lineno">   43</span>            <span class="stringliteral">&quot;Asset/Data/Collision/Common/None.json&quot;</span>,</div>
+<div class="line"><span class="lineno">   44</span>        };</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>        <a class="code hl_variable" href="#a55cc6d271a7cb9581cb09534a4710142">m_colDamageHolder</a>.Load(</div>
+<div class="line"><span class="lineno">   47</span>            &amp;<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>,</div>
+<div class="line"><span class="lineno">   48</span>            <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;uint&gt;</a>(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda26a4b44a837bf97b972628509912b4a5">EState::MAX</a>),</div>
+<div class="line"><span class="lineno">   49</span>            pDamageCollisionPaths,</div>
+<div class="line"><span class="lineno">   50</span>            &amp;<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model);</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>        <span class="comment">//---- 当たり判定の登録 ----</span></div>
+<div class="line"><span class="lineno">   53</span>        <span class="keyword">auto</span> pPDEAProc = <a class="code hl_function" href="namespace_n_collision.html#a978978a8fd8c16ea0c460bc3e12451c0">NCollision::GetHitTestProc</a>(<a class="code hl_enumvalue" href="namespace_n_collision.html#afb38b993f637aed28b82feb071dae150a0033662f5ee0b3b24a740cc38087e4ef">NCollision::EHitTestProcManagerIndex::PLAYER_DEF_ENEMY_ATK</a>);</div>
+<div class="line"><span class="lineno">   54</span>        pPDEAProc-&gt;Register(<a class="code hl_variable" href="#a55cc6d271a7cb9581cb09534a4710142">m_colDamageHolder</a>, <a class="code hl_enumvalue" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ae9dd74edf28cfccd7568201f4935836f">NCollision::CProcHitTest::EType::DEFENDER</a>);</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_a099b6a85136760ed980079095fc9afe4"><div class="ttname"><a href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast</a></div><div class="ttdeci">#define StaticCast</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:88</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a7066370bd6447f68ba8b542fce9313e2ae9dd74edf28cfccd7568201f4935836f"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ae9dd74edf28cfccd7568201f4935836f">NCollision::CProcHitTest::DEFENDER</a></div><div class="ttdeci">@ DEFENDER</div><div class="ttdef"><b>Definition</b> Collision_HitTest.h:20</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bda26a4b44a837bf97b972628509912b4a5"><div class="ttname"><a href="#a2c3a810f72c5b7c91089daff0b5683bda26a4b44a837bf97b972628509912b4a5">NObject::CPlayer::CDamageState::EState::MAX</a></div><div class="ttdeci">@ MAX</div><div class="ttdef"><b>Definition</b> Object_Player.h:186</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a55cc6d271a7cb9581cb09534a4710142"><div class="ttname"><a href="#a55cc6d271a7cb9581cb09534a4710142">NObject::CPlayer::CDamageState::m_colDamageHolder</a></div><div class="ttdeci">NCollision::CHolder m_colDamageHolder</div><div class="ttdef"><b>Definition</b> Object_Player.h:228</div></div>
+<div class="ttc" id="anamespace_n_collision_html_a978978a8fd8c16ea0c460bc3e12451c0"><div class="ttname"><a href="namespace_n_collision.html#a978978a8fd8c16ea0c460bc3e12451c0">NCollision::GetHitTestProc</a></div><div class="ttdeci">CProcHitTest * GetHitTestProc(EHitTestProcManagerIndex _index)</div><div class="ttdoc">登録したHitTestを取得する</div><div class="ttdef"><b>Definition</b> Collision_Manager.cpp:105</div></div>
+<div class="ttc" id="anamespace_n_collision_html_afb38b993f637aed28b82feb071dae150a0033662f5ee0b3b24a740cc38087e4ef"><div class="ttname"><a href="namespace_n_collision.html#afb38b993f637aed28b82feb071dae150a0033662f5ee0b3b24a740cc38087e4ef">NCollision::EHitTestProcManagerIndex::PLAYER_DEF_ENEMY_ATK</a></div><div class="ttdeci">@ PLAYER_DEF_ENEMY_ATK</div><div class="ttdef"><b>Definition</b> Collision_Manager.h:53</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae250371fbf033662000a373b46773a1c" name="ae250371fbf033662000a373b46773a1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae250371fbf033662000a373b46773a1c">&#9670;&#160;</a></span>RenderDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::RenderDebug </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当たり判定描画 </p>
+<div class="fragment"><div class="line"><span class="lineno">  215</span>            {</div>
+<div class="line"><span class="lineno">  216</span>                <a class="code hl_variable" href="#a55cc6d271a7cb9581cb09534a4710142">m_colDamageHolder</a>.RenderDebug();</div>
+<div class="line"><span class="lineno">  217</span>            }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5e8a76df54d94fb65c56425d0841bbdb" name="a5e8a76df54d94fb65c56425d0841bbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8a76df54d94fb65c56425d0841bbdb">&#9670;&#160;</a></span>SetIsEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::SetIsEnable </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ステートの有効状態を設定 </p>
+<div class="fragment"><div class="line"><span class="lineno">  221</span>            {</div>
+<div class="line"><span class="lineno">  222</span>                <a class="code hl_variable" href="#a55cc6d271a7cb9581cb09534a4710142">m_colDamageHolder</a>.SetIsEnable(_state);</div>
+<div class="line"><span class="lineno">  223</span>            }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1da659286ffc0a4e61ab20788a8bee8d" name="a1da659286ffc0a4e61ab20788a8bee8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da659286ffc0a4e61ab20788a8bee8d">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新 </p>
+<div class="fragment"><div class="line"><span class="lineno">  205</span>{ <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.Update(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4d2c1f31f892dfcfbe0893abbe7c5b7e" name="a4d2c1f31f892dfcfbe0893abbe7c5b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d2c1f31f892dfcfbe0893abbe7c5b7e">&#9670;&#160;</a></span>UpdateLate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateLate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当たり判定の更新 </p>
+<div class="fragment"><div class="line"><span class="lineno">  209</span>            {</div>
+<div class="line"><span class="lineno">  210</span>                <a class="code hl_variable" href="#a55cc6d271a7cb9581cb09534a4710142">m_colDamageHolder</a>.Update(<a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.GetStateNumber());</div>
+<div class="line"><span class="lineno">  211</span>            }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac2c8f0bcd56295a985d2963b8a974fac" name="ac2c8f0bcd56295a985d2963b8a974fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c8f0bcd56295a985d2963b8a974fac">&#9670;&#160;</a></span>UpdateStateAir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateStateAir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  109</span>    {</div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">if</span> (_state.GetIsEntry()) {</div>
+<div class="line"><span class="lineno">  111</span>            <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.ChangeAnimation(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6ba776afab9e24ac73cfa9dfe804a1be106">ANM_DAMAGE_HEAVY</a>, <span class="keyword">false</span>, 1, 1);</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>            <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.ChangeState(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda882b150e7e5c77c2e78a994f958ec419">EState::AIR_UP</a>);</div>
+<div class="line"><span class="lineno">  114</span>        }</div>
+<div class="line"><span class="lineno">  115</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba776afab9e24ac73cfa9dfe804a1be106"><div class="ttname"><a href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6ba776afab9e24ac73cfa9dfe804a1be106">NObject::CPlayer::ANM_DAMAGE_HEAVY</a></div><div class="ttdeci">@ ANM_DAMAGE_HEAVY</div><div class="ttdef"><b>Definition</b> Object_Player.h:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a40ff8ebf80372ac4a307b6220f295ed7" name="a40ff8ebf80372ac4a307b6220f295ed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ff8ebf80372ac4a307b6220f295ed7">&#9670;&#160;</a></span>UpdateStateAirFall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateStateAirFall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  125</span>    {</div>
+<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.GetIsGrounded()) {</div>
+<div class="line"><span class="lineno">  127</span>            <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.ChangeState(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bdad2cecc546e3a75787d037760f75b3399">EState::GROUNDED</a>);</div>
+<div class="line"><span class="lineno">  128</span>        }</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab7773977a86d1044a76f3fa4e52c0e3f" name="ab7773977a86d1044a76f3fa4e52c0e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7773977a86d1044a76f3fa4e52c0e3f">&#9670;&#160;</a></span>UpdateStateAirUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateStateAirUp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  118</span>    {</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_actorMove.GetMoveSpeedY() &lt; 0) {</div>
+<div class="line"><span class="lineno">  120</span>            <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.ChangeState(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda9a15afed7721946ff4156b80609a769f">EState::AIR_FALL</a>);</div>
+<div class="line"><span class="lineno">  121</span>        }</div>
+<div class="line"><span class="lineno">  122</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a09702d299bb28c25e521d57a852cc801" name="a09702d299bb28c25e521d57a852cc801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09702d299bb28c25e521d57a852cc801">&#9670;&#160;</a></span>UpdateStateDie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateStateDie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  161</span>    {</div>
+<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">if</span> (_state.GetIsEntry()) {</div>
+<div class="line"><span class="lineno">  163</span>            <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.ChangeAnimation(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6bad5a1c5e2cadf2dca3bcfbb1a52c495c1">ANM_DAMAGE_DIE</a>, <span class="keyword">false</span>, 1, 1);</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>            <span class="comment">// 停止</span></div>
+<div class="line"><span class="lineno">  166</span>            <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_actorMove.SetMoveSpeedXZ(0);</div>
+<div class="line"><span class="lineno">  167</span>        }</div>
+<div class="line"><span class="lineno">  168</span> </div>
+<div class="line"><span class="lineno">  169</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.GetIsAnimationEnd()) {</div>
+<div class="line"><span class="lineno">  170</span>            <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.SetIsEliminated();</div>
+<div class="line"><span class="lineno">  171</span>        }</div>
+<div class="line"><span class="lineno">  172</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6bad5a1c5e2cadf2dca3bcfbb1a52c495c1"><div class="ttname"><a href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6bad5a1c5e2cadf2dca3bcfbb1a52c495c1">NObject::CPlayer::ANM_DAMAGE_DIE</a></div><div class="ttdeci">@ ANM_DAMAGE_DIE</div><div class="ttdef"><b>Definition</b> Object_Player.h:45</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7b2c6d2a6d689c1a1cd9c15b7700c95e" name="a7b2c6d2a6d689c1a1cd9c15b7700c95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b2c6d2a6d689c1a1cd9c15b7700c95e">&#9670;&#160;</a></span>UpdateStateGrounded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateStateGrounded </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  132</span>    {</div>
+<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">if</span> (_state.GetIsEntry()) {</div>
+<div class="line"><span class="lineno">  134</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> LAND_WAIT_FRAME = 10;</div>
+<div class="line"><span class="lineno">  135</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> anmSpeed = <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.GetAnimationFrameLength(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6ba497afab8676c7937cb1f5736707d9a26">ANM_NORMAL_GROUNDED</a>) / LAND_WAIT_FRAME;</div>
+<div class="line"><span class="lineno">  136</span>            <span class="keyword">const</span> <span class="keywordtype">int</span>   INTERPOLE_FRAME = 3;</div>
+<div class="line"><span class="lineno">  137</span>            <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.ChangeAnimation(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6ba497afab8676c7937cb1f5736707d9a26">ANM_NORMAL_GROUNDED</a>, <span class="keyword">false</span>, INTERPOLE_FRAME, anmSpeed);</div>
+<div class="line"><span class="lineno">  138</span>        }</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.GetIsAnimationEnd()) {</div>
+<div class="line"><span class="lineno">  141</span>            <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.ChangeState(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda6f7a4106d13186211361f89e3bd9ce4c">EState::LAY_RECOVER</a>);</div>
+<div class="line"><span class="lineno">  142</span>        }</div>
+<div class="line"><span class="lineno">  143</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba497afab8676c7937cb1f5736707d9a26"><div class="ttname"><a href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6ba497afab8676c7937cb1f5736707d9a26">NObject::CPlayer::ANM_NORMAL_GROUNDED</a></div><div class="ttdeci">@ ANM_NORMAL_GROUNDED</div><div class="ttdef"><b>Definition</b> Object_Player.h:52</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af882a5710e8a8401c5f8a70a45357323" name="af882a5710e8a8401c5f8a70a45357323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af882a5710e8a8401c5f8a70a45357323">&#9670;&#160;</a></span>UpdateStateGroundHigh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateStateGroundHigh </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   83</span>    {</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">if</span> (_state.GetIsEntry()) {</div>
+<div class="line"><span class="lineno">   85</span>            <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.ChangeAnimation(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6ba776afab9e24ac73cfa9dfe804a1be106">ANM_DAMAGE_HEAVY</a>, <span class="keyword">false</span>, 1, 1);</div>
+<div class="line"><span class="lineno">   86</span>        }</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.GetIsAnimationEnd()) {</div>
+<div class="line"><span class="lineno">   89</span>            <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.ChangeState(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda378a0016e7b92a63768e04538dfe5302">EState::GROUND_RECOVER</a>);</div>
+<div class="line"><span class="lineno">   90</span>        }</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a98a42eb1784e6b422d06dd6e160ac955" name="a98a42eb1784e6b422d06dd6e160ac955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98a42eb1784e6b422d06dd6e160ac955">&#9670;&#160;</a></span>UpdateStateGroundLow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateStateGroundLow </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   61</span>    {</div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">if</span> (_state.GetIsEntry()) {</div>
+<div class="line"><span class="lineno">   63</span>            <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.ChangeAnimation(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6ba8d261fa31f2b458d623f1d11686c2d5d">ANM_DAMAGE_LIGHT</a>, <span class="keyword">false</span>, 1, 1);</div>
+<div class="line"><span class="lineno">   64</span>        }</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.GetIsAnimationEnd()) {</div>
+<div class="line"><span class="lineno">   67</span>            <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.ChangeState(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda378a0016e7b92a63768e04538dfe5302">EState::GROUND_RECOVER</a>);</div>
+<div class="line"><span class="lineno">   68</span>        }</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba8d261fa31f2b458d623f1d11686c2d5d"><div class="ttname"><a href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6ba8d261fa31f2b458d623f1d11686c2d5d">NObject::CPlayer::ANM_DAMAGE_LIGHT</a></div><div class="ttdeci">@ ANM_DAMAGE_LIGHT</div><div class="ttdef"><b>Definition</b> Object_Player.h:47</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a43a6593d29ffd96450bd28120a2627fd" name="a43a6593d29ffd96450bd28120a2627fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a6593d29ffd96450bd28120a2627fd">&#9670;&#160;</a></span>UpdateStateGroundMiddle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateStateGroundMiddle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   72</span>    {</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">if</span> (_state.GetIsEntry()) {</div>
+<div class="line"><span class="lineno">   74</span>            <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.ChangeAnimation(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player.html#a9ee68d9af6818604bf632e5144cfbf6ba8d261fa31f2b458d623f1d11686c2d5d">ANM_DAMAGE_LIGHT</a>, <span class="keyword">false</span>, 1, 1);</div>
+<div class="line"><span class="lineno">   75</span>        }</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_model.GetIsAnimationEnd()) {</div>
+<div class="line"><span class="lineno">   78</span>            <a class="code hl_variable" href="#a14eaa2505c66c96b42e8e13a7dfa5232">m_state</a>.ChangeState(<a class="code hl_enumvalue" href="#a2c3a810f72c5b7c91089daff0b5683bda378a0016e7b92a63768e04538dfe5302">EState::GROUND_RECOVER</a>);</div>
+<div class="line"><span class="lineno">   79</span>        }</div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab9b1d263d4823b1294360e6b1efbcb88" name="ab9b1d263d4823b1294360e6b1efbcb88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b1d263d4823b1294360e6b1efbcb88">&#9670;&#160;</a></span>UpdateStateGroundRecover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateStateGroundRecover </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   94</span>    {</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">if</span> (_state.GetIsEntry()) {</div>
+<div class="line"><span class="lineno">   96</span>            <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.SetNormalActorMoveParam();</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>            <span class="comment">// 剣の保持状態により、遷移先を制御</span></div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_isSwordGrab) {</div>
+<div class="line"><span class="lineno">  100</span>                <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_normalState.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_normal_state.html#a8308e4d29e4f06885d3f2f0ca41737bfaa3f7e058f9d2a5e094d699f79ae2330d">CNormalState::EState::SWORD_SET</a>);</div>
+<div class="line"><span class="lineno">  101</span>            }</div>
+<div class="line"><span class="lineno">  102</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  103</span>                <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_normalState.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_normal_state.html#a8308e4d29e4f06885d3f2f0ca41737bfaa5daf7f2ebbba4975d61dab1c40188c7">CNormalState::EState::IDLE</a>);</div>
+<div class="line"><span class="lineno">  104</span>            }</div>
+<div class="line"><span class="lineno">  105</span>        }</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_normal_state_html_a8308e4d29e4f06885d3f2f0ca41737bfaa3f7e058f9d2a5e094d699f79ae2330d"><div class="ttname"><a href="class_n_object_1_1_c_player_1_1_c_normal_state.html#a8308e4d29e4f06885d3f2f0ca41737bfaa3f7e058f9d2a5e094d699f79ae2330d">NObject::CPlayer::CNormalState::EState::SWORD_SET</a></div><div class="ttdeci">@ SWORD_SET</div><div class="ttdef"><b>Definition</b> Object_Player.h:88</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_normal_state_html_a8308e4d29e4f06885d3f2f0ca41737bfaa5daf7f2ebbba4975d61dab1c40188c7"><div class="ttname"><a href="class_n_object_1_1_c_player_1_1_c_normal_state.html#a8308e4d29e4f06885d3f2f0ca41737bfaa5daf7f2ebbba4975d61dab1c40188c7">NObject::CPlayer::CNormalState::EState::IDLE</a></div><div class="ttdeci">@ IDLE</div><div class="ttdef"><b>Definition</b> Object_Player.h:78</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae03b37501511850d3c7a2dbbc0dbcba5" name="ae03b37501511850d3c7a2dbbc0dbcba5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae03b37501511850d3c7a2dbbc0dbcba5">&#9670;&#160;</a></span>UpdateStateLayRecover()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::CDamageState::UpdateStateLayRecover </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0963d419df7376b3d40145ebb8bb0042">StateParam</a></td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  146</span>    {</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">if</span> (_state.GetIsEntry()) {</div>
+<div class="line"><span class="lineno">  148</span>            <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.SetNormalActorMoveParam();</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>            <span class="comment">// 剣の保持状態により、遷移先を制御</span></div>
+<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_isSwordGrab) {</div>
+<div class="line"><span class="lineno">  152</span>                <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_normalState.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_normal_state.html#a8308e4d29e4f06885d3f2f0ca41737bfaa3f7e058f9d2a5e094d699f79ae2330d">CNormalState::EState::SWORD_SET</a>);</div>
+<div class="line"><span class="lineno">  153</span>            }</div>
+<div class="line"><span class="lineno">  154</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  155</span>                <a class="code hl_variable" href="#a5f31bd223efbfb7f3e229a5d7dc715f1">m_bindObject</a>.m_normalState.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_normal_state.html#a8308e4d29e4f06885d3f2f0ca41737bfaa5daf7f2ebbba4975d61dab1c40188c7">CNormalState::EState::IDLE</a>);</div>
+<div class="line"><span class="lineno">  156</span>            }</div>
+<div class="line"><span class="lineno">  157</span>        }</div>
+<div class="line"><span class="lineno">  158</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a5f31bd223efbfb7f3e229a5d7dc715f1" name="a5f31bd223efbfb7f3e229a5d7dc715f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f31bd223efbfb7f3e229a5d7dc715f1">&#9670;&#160;</a></span>m_bindObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_player.html#a1204b4ae7985fd4e3ce27504f02022ef">CPlayer</a>&amp; NObject::CPlayer::CDamageState::m_bindObject</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55cc6d271a7cb9581cb09534a4710142" name="a55cc6d271a7cb9581cb09534a4710142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55cc6d271a7cb9581cb09534a4710142">&#9670;&#160;</a></span>m_colDamageHolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_collision_1_1_c_holder.html">NCollision::CHolder</a> NObject::CPlayer::CDamageState::m_colDamageHolder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14eaa2505c66c96b42e8e13a7dfa5232" name="a14eaa2505c66c96b42e8e13a7dfa5232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14eaa2505c66c96b42e8e13a7dfa5232">&#9670;&#160;</a></span>m_state</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt;<a class="el" href="#a1a73ce31f86ddde4384d56ae38d3de3e">CDamageState</a>, <a class="el" href="#a2c3a810f72c5b7c91089daff0b5683bd">EState</a>&gt; NObject::CPlayer::CDamageState::m_state</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/GameApp/Object/Actor/Player/<a class="el" href="_object___player_8h_source.html">Object_Player.h</a></li>
+<li>Sources/GameApp/Object/Actor/Player/<a class="el" href="_object___player_damage_state_8cpp.html">Object_PlayerDamageState.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_object.html">NObject</a></li><li class="navelem"><a href="class_n_object_1_1_c_player.html">CPlayer</a></li><li class="navelem"><a href="class_n_object_1_1_c_player_1_1_c_damage_state.html">CDamageState</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

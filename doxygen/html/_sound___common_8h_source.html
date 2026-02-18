@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Sound/Sound_Common.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_sound___common_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Sound_Common.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_sound___common_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//=============================================================================</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// DirectX専用、音声処理関係</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef _INC_DX_SOUND_H</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define _INC_DX_SOUND_H</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_sound___asset_info_8h.html">Sound\Sound_AssetInfo.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include    &lt;xaudio2.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//==========================================================</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// プロトタイプ宣言</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_sound.html">NSound</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    HRESULT <a class="code hl_function" href="namespace_n_sound.html#a8adc496f30eb0858368d9cb959137c8a">InitSound</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span>    <a class="code hl_function" href="namespace_n_sound.html#ab51b004616159faa54ffec20f40583f7">DestroySound</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// サウンドの再生状態を管理する為に更新を行う</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span>    <a class="code hl_function" href="namespace_n_sound.html#a510e07b154a7cd798acdac57af999465">UpdateSound</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="comment">// 再生</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span>    <a class="code hl_function" href="namespace_n_sound.html#a8a04d9b3fdd6ddb8d5b85fb224f77ffc">Play</a>(<a class="code hl_enumeration" href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597">NSound::ELabel</a> _label);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// 停止</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span>    <a class="code hl_function" href="namespace_n_sound.html#a9c03e168292d8a8b53cd33946ce2873e">Stop</a>(<a class="code hl_enumeration" href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597">NSound::ELabel</a> _label);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="comment">// 一時停止</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">// 未実装</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span>    <a class="code hl_function" href="namespace_n_sound.html#a9563e6252eae1f6fe97b26037565f0fc">Pause</a>(<a class="code hl_enumeration" href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597">NSound::ELabel</a> _label);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_sound___asset_info_8h_html"><div class="ttname"><a href="_sound___asset_info_8h.html">Sound_AssetInfo.h</a></div></div>
+<div class="ttc" id="anamespace_n_sound_html"><div class="ttname"><a href="namespace_n_sound.html">NSound</a></div><div class="ttdoc">使用するサウンドを定義する</div><div class="ttdef"><b>Definition</b> Sound_AssetInfo.cpp:34</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a3736bd25d9408ba6dcd72eef505af597"><div class="ttname"><a href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597">NSound::ELabel</a></div><div class="ttdeci">ELabel</div><div class="ttdef"><b>Definition</b> Sound_AssetInfo.h:10</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a510e07b154a7cd798acdac57af999465"><div class="ttname"><a href="namespace_n_sound.html#a510e07b154a7cd798acdac57af999465">NSound::UpdateSound</a></div><div class="ttdeci">void UpdateSound(void)</div><div class="ttdef"><b>Definition</b> Sound_Common.cpp:134</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a8a04d9b3fdd6ddb8d5b85fb224f77ffc"><div class="ttname"><a href="namespace_n_sound.html#a8a04d9b3fdd6ddb8d5b85fb224f77ffc">NSound::Play</a></div><div class="ttdeci">void Play(NSound::ELabel _label)</div><div class="ttdef"><b>Definition</b> Sound_Common.cpp:141</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a8adc496f30eb0858368d9cb959137c8a"><div class="ttname"><a href="namespace_n_sound.html#a8adc496f30eb0858368d9cb959137c8a">NSound::InitSound</a></div><div class="ttdeci">HRESULT InitSound()</div><div class="ttdef"><b>Definition</b> Sound_Common.cpp:40</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a9563e6252eae1f6fe97b26037565f0fc"><div class="ttname"><a href="namespace_n_sound.html#a9563e6252eae1f6fe97b26037565f0fc">NSound::Pause</a></div><div class="ttdeci">void Pause(NSound::ELabel _label)</div><div class="ttdef"><b>Definition</b> Sound_Common.cpp:170</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a9c03e168292d8a8b53cd33946ce2873e"><div class="ttname"><a href="namespace_n_sound.html#a9c03e168292d8a8b53cd33946ce2873e">NSound::Stop</a></div><div class="ttdeci">void Stop(NSound::ELabel _label)</div><div class="ttdef"><b>Definition</b> Sound_Common.cpp:156</div></div>
+<div class="ttc" id="anamespace_n_sound_html_ab51b004616159faa54ffec20f40583f7"><div class="ttname"><a href="namespace_n_sound.html#ab51b004616159faa54ffec20f40583f7">NSound::DestroySound</a></div><div class="ttdeci">void DestroySound()</div><div class="ttdef"><b>Definition</b> Sound_Common.cpp:117</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_7e756d209a0663b2c8b355cea4eed5ea.html">Sound</a></li><li class="navelem"><a href="_sound___common_8h.html">Sound_Common.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

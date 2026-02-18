@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Scene/Scene_Base.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_scene___base_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Scene_Base.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_scene___base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &quot;<a class="code" href="_scene___manager_8h.html">Scene\Scene_Manager.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_scene.html">NScene</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span></div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_base.html">    9</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_scene_1_1_c_base.html#afcd64f57849910e02f743ba5bb8d2d64">CBase</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_base.html#aaa53abffce67aa629ef82034c5d7ca2b">Load</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_base.html#a6a3b865b9f6a015c44acd8e976439499">Init</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_base.html#a9edb46ac2cc610b5a3171d34722e649f">   22</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_base.html#a9edb46ac2cc610b5a3171d34722e649f">Destroy</a>() { };</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_base.html#abd3794ae5e88c2fad3277cf0cd1fc659">   26</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_base.html#abd3794ae5e88c2fad3277cf0cd1fc659">Release</a>() { };</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_base.html#a9841e96e5c9b4c4f28e2bbac74ac5014">Update</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_base.html#a826484564f1321c901b501414820b657">Render</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_function" href="class_n_scene_1_1_c_base.html#afcd64f57849910e02f743ba5bb8d2d64">CBase</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_n_scene_1_1_c_base.html#ac6d07819fd5ea7ced28e94010f3e04d6">~CBase</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    };</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="ttc" id="a_scene___manager_8h_html"><div class="ttname"><a href="_scene___manager_8h.html">Scene_Manager.h</a></div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_base_html_a6a3b865b9f6a015c44acd8e976439499"><div class="ttname"><a href="class_n_scene_1_1_c_base.html#a6a3b865b9f6a015c44acd8e976439499">NScene::CBase::Init</a></div><div class="ttdeci">virtual void Init()</div><div class="ttdoc">初期化</div><div class="ttdef"><b>Definition</b> Scene_Base.cpp:28</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_base_html_a826484564f1321c901b501414820b657"><div class="ttname"><a href="class_n_scene_1_1_c_base.html#a826484564f1321c901b501414820b657">NScene::CBase::Render</a></div><div class="ttdeci">virtual void Render()</div><div class="ttdoc">描画関数</div><div class="ttdef"><b>Definition</b> Scene_Base.cpp:39</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_base_html_a9841e96e5c9b4c4f28e2bbac74ac5014"><div class="ttname"><a href="class_n_scene_1_1_c_base.html#a9841e96e5c9b4c4f28e2bbac74ac5014">NScene::CBase::Update</a></div><div class="ttdeci">virtual void Update()</div><div class="ttdoc">更新関数</div><div class="ttdef"><b>Definition</b> Scene_Base.cpp:34</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_base_html_a9edb46ac2cc610b5a3171d34722e649f"><div class="ttname"><a href="class_n_scene_1_1_c_base.html#a9edb46ac2cc610b5a3171d34722e649f">NScene::CBase::Destroy</a></div><div class="ttdeci">virtual void Destroy()</div><div class="ttdoc">終了処理</div><div class="ttdef"><b>Definition</b> Scene_Base.h:22</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_base_html_aaa53abffce67aa629ef82034c5d7ca2b"><div class="ttname"><a href="class_n_scene_1_1_c_base.html#aaa53abffce67aa629ef82034c5d7ca2b">NScene::CBase::Load</a></div><div class="ttdeci">virtual void Load()</div><div class="ttdoc">リソースなどのロード</div><div class="ttdef"><b>Definition</b> Scene_Base.cpp:21</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_base_html_abd3794ae5e88c2fad3277cf0cd1fc659"><div class="ttname"><a href="class_n_scene_1_1_c_base.html#abd3794ae5e88c2fad3277cf0cd1fc659">NScene::CBase::Release</a></div><div class="ttdeci">virtual void Release()</div><div class="ttdoc">解放処理</div><div class="ttdef"><b>Definition</b> Scene_Base.h:26</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_base_html_ac6d07819fd5ea7ced28e94010f3e04d6"><div class="ttname"><a href="class_n_scene_1_1_c_base.html#ac6d07819fd5ea7ced28e94010f3e04d6">NScene::CBase::~CBase</a></div><div class="ttdeci">virtual ~CBase()</div><div class="ttdef"><b>Definition</b> Scene_Base.cpp:16</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_base_html_afcd64f57849910e02f743ba5bb8d2d64"><div class="ttname"><a href="class_n_scene_1_1_c_base.html#afcd64f57849910e02f743ba5bb8d2d64">NScene::CBase::CBase</a></div><div class="ttdeci">CBase()</div><div class="ttdef"><b>Definition</b> Scene_Base.cpp:11</div></div>
+<div class="ttc" id="anamespace_n_scene_html"><div class="ttname"><a href="namespace_n_scene.html">NScene</a></div><div class="ttdef"><b>Definition</b> Scene_Base.cpp:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_a0d2e4b0ef7753718e6298befeb747ce.html">Scene</a></li><li class="navelem"><a href="_scene___base_8h.html">Scene_Base.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

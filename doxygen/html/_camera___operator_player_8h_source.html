@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameApp/Camera/Operator/Camera_OperatorPlayer.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_camera___operator_player_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Camera_OperatorPlayer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_camera___operator_player_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="_camera___operator_base_8h.html">Camera_OperatorBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_math___type_8h.html">Math\Math_Type.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___game_object_8h.html">Object\Object_GameObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_camera.html">NCamera</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html">   17</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_camera_1_1_c_operator_player.html#aa6da88635a2233a80b0722e1ded622bc">COperatorPlayer</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_n_camera_1_1_c_operator_base.html#a0a56b1465d417beb754ac42ead9eb28a">COperatorBase</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#ac9624f8990a2426d472934baec697f2e">Setup</a>(</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keyword">const</span> <a class="code hl_class" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a>* _pFocusGameObject,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            <span class="keyword">const</span> <span class="keywordtype">float</span>*                _pMoveSpeed,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keyword">const</span> <span class="keywordtype">float</span>                 _playerMoveSpeedMax);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_camera_1_1_c_operator_player.html#aed5d5f2e8a4997a706259b036144614b">Init</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_camera_1_1_c_operator_player.html#a26947fd74438a1b3f3ca8240799597a2">Operate</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">// 定数</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#a6b5af31980c6a1d403014a4d9f2e3264">   36</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a6b5af31980c6a1d403014a4d9f2e3264">ROTATE_SPEED_DEG_PLAYER_MOVE_MAX</a>;   <span class="comment">// プレイヤーの移動によるカメラの回転の速度の最大</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                                    <span class="comment">// ※ 1秒間の回転角度</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#a2699b7ef62e5ce4aeae48120abf665a2">   38</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a2699b7ef62e5ce4aeae48120abf665a2">ROTATE_SPEED_DEG_PLAYER_MOVE_ACC</a>;   <span class="comment">// プレイヤーの移動によるカメラの回転の加速度</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                                                    <span class="comment">// ※ 1描画の回転角度</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#ae182a35792befc6f3440b24face4b40a">   40</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#ae182a35792befc6f3440b24face4b40a">ROTATE_SPEED_DEG_PLAYER_MOVE_DEC_RATIO</a>; <span class="comment">// プレイヤーの移動によるカメラの回転の減速率</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#afcfb8edcee10782ffa15caf27b58c870">   42</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#afcfb8edcee10782ffa15caf27b58c870">ROTATE_SPEED_DEG_INPUT_MAX</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#ac920ed36dca71664fde68a4c024b5521">   43</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#ac920ed36dca71664fde68a4c024b5521">ROTATE_SPEED_DEG_INPUT_ACC</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#abbffe8b936c3111ae56c2168b5acbe53">   44</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#abbffe8b936c3111ae56c2168b5acbe53">ROTATE_SPEED_DEG_INPUT_DEC_RATIO</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#ac3421643b72fe037bf4ba71b96de7182">   45</a></span>        <span class="keywordtype">int</span>     <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#ac3421643b72fe037bf4ba71b96de7182">INPUT_RELEASE_WAIT_CNT</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="comment">// 制御用</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#ae0f9fc0470bfb17e50ee5898fabbba81">   48</a></span>        <span class="keywordtype">bool</span>    <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#ae0f9fc0470bfb17e50ee5898fabbba81">m_isSetupOK</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="comment">// カメラ制御に使用する変数</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#a70e0d13a8a3664cc63c19507792c464e">   51</a></span>        <span class="keyword">const</span> <a class="code hl_class" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a>*     <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a70e0d13a8a3664cc63c19507792c464e">m_pFocusGameObject</a>; <span class="comment">// 注目、追尾するゲームオブジェクト</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#a30ce8d6a63341021132b3fd2338c9605">   52</a></span>        <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a>*          <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a30ce8d6a63341021132b3fd2338c9605">m_pPlayerMoveDirXZ</a>; <span class="comment">// プレイヤーのカメラに対する移動方向の参照</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#a24097a3c4332907c404e31c55cf7fe00">   53</a></span>        <span class="keyword">const</span> <span class="keywordtype">float</span>*                    <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a24097a3c4332907c404e31c55cf7fe00">m_pMoveSpeed</a>;       <span class="comment">// 移動量の参照</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#a8a750bfe7a1a2fab6879e62a2cb905a6">   54</a></span>        <span class="keywordtype">float</span>                           <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a8a750bfe7a1a2fab6879e62a2cb905a6">m_playerMoveSpeedMax</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#ab86a1ae95e338cd82e7a0bb97eec0ac5">   55</a></span>        float2                          <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#ab86a1ae95e338cd82e7a0bb97eec0ac5">m_inputRightAnalogRaw</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#aa2144c305f451812946f9179674adc87">   57</a></span>        float3  <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#aa2144c305f451812946f9179674adc87">m_focusOffset</a>;              <span class="comment">// 注目するオブジェクトの位置からのオフセット</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#ad2d830357bc7b9cccac2858b6f58ce7f">   58</a></span>        float3  <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#ad2d830357bc7b9cccac2858b6f58ce7f">m_targetCameraLocalPos</a>;     <span class="comment">// 注視するオブジェクトの位置からのカメラの相対座標の目的地</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#aad4e1dd5394e9cc764f783f1d69fae25">   59</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#aad4e1dd5394e9cc764f783f1d69fae25">m_rotateSpeedPlayerMove</a>;    <span class="comment">// プレイヤーの移動によるカメラの回転スピード</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#ab86af7ea207e24571d92bf30197e4c74">   60</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#ab86af7ea207e24571d92bf30197e4c74">m_rotateSpeedInput</a>;         <span class="comment">// 入力による回転速度</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#a11363a593d99050b7b5a730cf48aeb78">   61</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a11363a593d99050b7b5a730cf48aeb78">m_rotateSpeedSum</a>;   </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#aea137087a097113efe0dc402346c0f42">   62</a></span>        <span class="keywordtype">bool</span>    <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#aea137087a097113efe0dc402346c0f42">m_isOperatingWithStick</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#a983752c21b968905dd41d3784bafbe3b">   63</a></span>        <span class="keywordtype">int</span>     <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a983752c21b968905dd41d3784bafbe3b">m_noOperateCnt</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="foldopen" id="foldopen00066" data-start="{" data-end="}">
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="class_n_camera_1_1_c_operator_player.html#a84df91ce6274f2a083cb8d340637fc50">   66</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_camera_1_1_c_operator_player.html#a84df91ce6274f2a083cb8d340637fc50">InitVariable</a>()</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a6b5af31980c6a1d403014a4d9f2e3264">ROTATE_SPEED_DEG_PLAYER_MOVE_MAX</a> = 90;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a2699b7ef62e5ce4aeae48120abf665a2">ROTATE_SPEED_DEG_PLAYER_MOVE_ACC</a> = 10;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#ae182a35792befc6f3440b24face4b40a">ROTATE_SPEED_DEG_PLAYER_MOVE_DEC_RATIO</a> = 0.925f;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#afcfb8edcee10782ffa15caf27b58c870">ROTATE_SPEED_DEG_INPUT_MAX</a> = 180;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#ac920ed36dca71664fde68a4c024b5521">ROTATE_SPEED_DEG_INPUT_ACC</a> = 18;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#abbffe8b936c3111ae56c2168b5acbe53">ROTATE_SPEED_DEG_INPUT_DEC_RATIO</a> = 0.8f;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#ac3421643b72fe037bf4ba71b96de7182">INPUT_RELEASE_WAIT_CNT</a> = 30;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#aad4e1dd5394e9cc764f783f1d69fae25">m_rotateSpeedPlayerMove</a> = 0;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a11363a593d99050b7b5a730cf48aeb78">m_rotateSpeedSum</a> = 0;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#aea137087a097113efe0dc402346c0f42">m_isOperatingWithStick</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <a class="code hl_variable" href="class_n_camera_1_1_c_operator_player.html#a983752c21b968905dd41d3784bafbe3b">m_noOperateCnt</a> = 0;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        }</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_camera_1_1_c_operator_player.html#abb354766a2df6036991ef8dc8874b11c">RotateCameraPlayerMove</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_camera_1_1_c_operator_player.html#aed07a11d499ae52c3a862ab947c3ff62">RotateCameraInput</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_camera_1_1_c_operator_player.html#a2b799e604c97c6bcc609534281f9bd53">GetCameraTargetPos</a>(float3&amp; _rDest);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_camera_1_1_c_operator_player.html#ad24542d27667694441b65dce541c41a9">GetFocusPos</a>(float3&amp; _rDest);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <a class="code hl_function" href="class_n_camera_1_1_c_operator_player.html#aa6da88635a2233a80b0722e1ded622bc">COperatorPlayer</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_n_camera_1_1_c_operator_player.html#a00ae587f1bcad15e9b734ab816cc9832">~COperatorPlayer</a>();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    };</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
+<div class="ttc" id="a_camera___operator_base_8h_html"><div class="ttname"><a href="_camera___operator_base_8h.html">Camera_OperatorBase.h</a></div></div>
+<div class="ttc" id="a_math___type_8h_html"><div class="ttname"><a href="_math___type_8h.html">Math_Type.h</a></div></div>
+<div class="ttc" id="a_object___game_object_8h_html"><div class="ttname"><a href="_object___game_object_8h.html">Object_GameObject.h</a></div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_base_html_a0a56b1465d417beb754ac42ead9eb28a"><div class="ttname"><a href="class_n_camera_1_1_c_operator_base.html#a0a56b1465d417beb754ac42ead9eb28a">NCamera::COperatorBase::COperatorBase</a></div><div class="ttdeci">COperatorBase()</div><div class="ttdef"><b>Definition</b> Camera_OperatorBase.cpp:8</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a00ae587f1bcad15e9b734ab816cc9832"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a00ae587f1bcad15e9b734ab816cc9832">NCamera::COperatorPlayer::~COperatorPlayer</a></div><div class="ttdeci">virtual ~COperatorPlayer()</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.cpp:20</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a11363a593d99050b7b5a730cf48aeb78"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a11363a593d99050b7b5a730cf48aeb78">NCamera::COperatorPlayer::m_rotateSpeedSum</a></div><div class="ttdeci">float m_rotateSpeedSum</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:61</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a24097a3c4332907c404e31c55cf7fe00"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a24097a3c4332907c404e31c55cf7fe00">NCamera::COperatorPlayer::m_pMoveSpeed</a></div><div class="ttdeci">const float * m_pMoveSpeed</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:53</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a26947fd74438a1b3f3ca8240799597a2"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a26947fd74438a1b3f3ca8240799597a2">NCamera::COperatorPlayer::Operate</a></div><div class="ttdeci">virtual void Operate() override</div><div class="ttdoc">実際に操作を行う関数</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.cpp:49</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a2699b7ef62e5ce4aeae48120abf665a2"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a2699b7ef62e5ce4aeae48120abf665a2">NCamera::COperatorPlayer::ROTATE_SPEED_DEG_PLAYER_MOVE_ACC</a></div><div class="ttdeci">float ROTATE_SPEED_DEG_PLAYER_MOVE_ACC</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:38</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a2b799e604c97c6bcc609534281f9bd53"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a2b799e604c97c6bcc609534281f9bd53">NCamera::COperatorPlayer::GetCameraTargetPos</a></div><div class="ttdeci">void GetCameraTargetPos(float3 &amp;_rDest)</div><div class="ttdoc">カメラの目標位置を取得する</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.cpp:190</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a30ce8d6a63341021132b3fd2338c9605"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a30ce8d6a63341021132b3fd2338c9605">NCamera::COperatorPlayer::m_pPlayerMoveDirXZ</a></div><div class="ttdeci">const NMath::SVector2 * m_pPlayerMoveDirXZ</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:52</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a6b5af31980c6a1d403014a4d9f2e3264"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a6b5af31980c6a1d403014a4d9f2e3264">NCamera::COperatorPlayer::ROTATE_SPEED_DEG_PLAYER_MOVE_MAX</a></div><div class="ttdeci">float ROTATE_SPEED_DEG_PLAYER_MOVE_MAX</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:36</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a70e0d13a8a3664cc63c19507792c464e"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a70e0d13a8a3664cc63c19507792c464e">NCamera::COperatorPlayer::m_pFocusGameObject</a></div><div class="ttdeci">const NObject::CGameObject * m_pFocusGameObject</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:51</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a84df91ce6274f2a083cb8d340637fc50"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a84df91ce6274f2a083cb8d340637fc50">NCamera::COperatorPlayer::InitVariable</a></div><div class="ttdeci">void InitVariable()</div><div class="ttdoc">定数値を初期化</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:66</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a8a750bfe7a1a2fab6879e62a2cb905a6"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a8a750bfe7a1a2fab6879e62a2cb905a6">NCamera::COperatorPlayer::m_playerMoveSpeedMax</a></div><div class="ttdeci">float m_playerMoveSpeedMax</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:54</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_a983752c21b968905dd41d3784bafbe3b"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#a983752c21b968905dd41d3784bafbe3b">NCamera::COperatorPlayer::m_noOperateCnt</a></div><div class="ttdeci">int m_noOperateCnt</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:63</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_aa2144c305f451812946f9179674adc87"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#aa2144c305f451812946f9179674adc87">NCamera::COperatorPlayer::m_focusOffset</a></div><div class="ttdeci">float3 m_focusOffset</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:57</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_aa6da88635a2233a80b0722e1ded622bc"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#aa6da88635a2233a80b0722e1ded622bc">NCamera::COperatorPlayer::COperatorPlayer</a></div><div class="ttdeci">COperatorPlayer()</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.cpp:13</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_aad4e1dd5394e9cc764f783f1d69fae25"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#aad4e1dd5394e9cc764f783f1d69fae25">NCamera::COperatorPlayer::m_rotateSpeedPlayerMove</a></div><div class="ttdeci">float m_rotateSpeedPlayerMove</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:59</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_ab86a1ae95e338cd82e7a0bb97eec0ac5"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#ab86a1ae95e338cd82e7a0bb97eec0ac5">NCamera::COperatorPlayer::m_inputRightAnalogRaw</a></div><div class="ttdeci">float2 m_inputRightAnalogRaw</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:55</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_ab86af7ea207e24571d92bf30197e4c74"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#ab86af7ea207e24571d92bf30197e4c74">NCamera::COperatorPlayer::m_rotateSpeedInput</a></div><div class="ttdeci">float m_rotateSpeedInput</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:60</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_abb354766a2df6036991ef8dc8874b11c"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#abb354766a2df6036991ef8dc8874b11c">NCamera::COperatorPlayer::RotateCameraPlayerMove</a></div><div class="ttdeci">void RotateCameraPlayerMove()</div><div class="ttdoc">プレイヤーの移動によるカメラの移動(Y軸回転)</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.cpp:60</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_abbffe8b936c3111ae56c2168b5acbe53"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#abbffe8b936c3111ae56c2168b5acbe53">NCamera::COperatorPlayer::ROTATE_SPEED_DEG_INPUT_DEC_RATIO</a></div><div class="ttdeci">float ROTATE_SPEED_DEG_INPUT_DEC_RATIO</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:44</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_ac3421643b72fe037bf4ba71b96de7182"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#ac3421643b72fe037bf4ba71b96de7182">NCamera::COperatorPlayer::INPUT_RELEASE_WAIT_CNT</a></div><div class="ttdeci">int INPUT_RELEASE_WAIT_CNT</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:45</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_ac920ed36dca71664fde68a4c024b5521"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#ac920ed36dca71664fde68a4c024b5521">NCamera::COperatorPlayer::ROTATE_SPEED_DEG_INPUT_ACC</a></div><div class="ttdeci">float ROTATE_SPEED_DEG_INPUT_ACC</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:43</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_ad24542d27667694441b65dce541c41a9"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#ad24542d27667694441b65dce541c41a9">NCamera::COperatorPlayer::GetFocusPos</a></div><div class="ttdeci">void GetFocusPos(float3 &amp;_rDest)</div><div class="ttdoc">オフセットを考慮した注視する位置を取得</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.cpp:204</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_ad2d830357bc7b9cccac2858b6f58ce7f"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#ad2d830357bc7b9cccac2858b6f58ce7f">NCamera::COperatorPlayer::m_targetCameraLocalPos</a></div><div class="ttdeci">float3 m_targetCameraLocalPos</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:58</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_ae0f9fc0470bfb17e50ee5898fabbba81"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#ae0f9fc0470bfb17e50ee5898fabbba81">NCamera::COperatorPlayer::m_isSetupOK</a></div><div class="ttdeci">bool m_isSetupOK</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:48</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_ae182a35792befc6f3440b24face4b40a"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#ae182a35792befc6f3440b24face4b40a">NCamera::COperatorPlayer::ROTATE_SPEED_DEG_PLAYER_MOVE_DEC_RATIO</a></div><div class="ttdeci">float ROTATE_SPEED_DEG_PLAYER_MOVE_DEC_RATIO</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:40</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_aea137087a097113efe0dc402346c0f42"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#aea137087a097113efe0dc402346c0f42">NCamera::COperatorPlayer::m_isOperatingWithStick</a></div><div class="ttdeci">bool m_isOperatingWithStick</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:62</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_aed07a11d499ae52c3a862ab947c3ff62"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#aed07a11d499ae52c3a862ab947c3ff62">NCamera::COperatorPlayer::RotateCameraInput</a></div><div class="ttdeci">void RotateCameraInput()</div><div class="ttdoc">入力によるカメラの移動(Y軸回転)</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.cpp:149</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_aed5d5f2e8a4997a706259b036144614b"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#aed5d5f2e8a4997a706259b036144614b">NCamera::COperatorPlayer::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">値を初期化する</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.cpp:38</div></div>
+<div class="ttc" id="aclass_n_camera_1_1_c_operator_player_html_afcfb8edcee10782ffa15caf27b58c870"><div class="ttname"><a href="class_n_camera_1_1_c_operator_player.html#afcfb8edcee10782ffa15caf27b58c870">NCamera::COperatorPlayer::ROTATE_SPEED_DEG_INPUT_MAX</a></div><div class="ttdeci">float ROTATE_SPEED_DEG_INPUT_MAX</div><div class="ttdef"><b>Definition</b> Camera_OperatorPlayer.h:42</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a></div><div class="ttdoc">ゲーム内のすべてのオブジェクトの基底クラスとなるクラス</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:8</div></div>
+<div class="ttc" id="anamespace_n_camera_html"><div class="ttname"><a href="namespace_n_camera.html">NCamera</a></div><div class="ttdoc">カメラ行列を統括管理する</div><div class="ttdef"><b>Definition</b> Camera_OperatorBase.cpp:6</div></div>
+<div class="ttc" id="anamespace_n_camera_html_ac9624f8990a2426d472934baec697f2e"><div class="ttname"><a href="namespace_n_camera.html#ac9624f8990a2426d472934baec697f2e">NCamera::Setup</a></div><div class="ttdeci">void Setup()</div><div class="ttdoc">カメラに関するセットアップを行う</div><div class="ttdef"><b>Definition</b> Camera_Common.cpp:8</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector2_html"><div class="ttname"><a href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a></div><div class="ttdoc">Vector構造体</div><div class="ttdef"><b>Definition</b> Math_Vector2.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_f694c4fbc4aebbaf0d8c111126161e66.html">GameApp</a></li><li class="navelem"><a href="dir_19eb486fb8b34e970073f6177d6309e2.html">Camera</a></li><li class="navelem"><a href="dir_f950a77d43f4a5f2df689de55ab16b3e.html">Operator</a></li><li class="navelem"><a href="_camera___operator_player_8h.html">Camera_OperatorPlayer.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

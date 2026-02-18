@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameFramework/Collision/Holder/TypeData/Collision_TypeDataAttack.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_collision___type_data_attack_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Collision_TypeDataAttack.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_collision___type_data_attack_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="json11_8hpp.html">_External\json11\json11.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_collision.html">NCollision</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html">    9</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#a8b4bb4eaaefe63985915dd4cd6274c4c">CAttackTypeData</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="comment">// 攻撃情報用の定義</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2">   17</a></span>        <span class="keyword">enum class</span> <a class="code hl_enumeration" href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2">EKnockBackType</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2af555bd643706f9926e7652a92f6a07bd">   18</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2af555bd643706f9926e7652a92f6a07bd">RADIATE</a>,        <span class="comment">// 攻撃者から放射的にノックバックする</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2ab6f2249394a4def60a78b342dcc925b9">   19</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2ab6f2249394a4def60a78b342dcc925b9">DIRECTIONAL</a>,    <span class="comment">// プレイヤーから見た指定方向にノックバックする</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2af30e176936608b86536c1a96470fb000">   20</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2af30e176936608b86536c1a96470fb000">ABSOLUTE_DIR</a>    <span class="comment">// 絶対座標での指定した方向にノックバックする。</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        };</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193f">   24</a></span>        <span class="keyword">enum class</span> <a class="code hl_enumeration" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193f">EStrengthType</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fa41bc94cbd8eebea13ce0491b2ac11b88">   25</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fa41bc94cbd8eebea13ce0491b2ac11b88">LOW</a>,        <span class="comment">// 弱</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fa43eedd8685eb86592022f8da962e3474">   26</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fa43eedd8685eb86592022f8da962e3474">MIDDLE</a>,     <span class="comment">// 中</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fab89de3b4b81c4facfac906edf29aec8c">   27</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fab89de3b4b81c4facfac906edf29aec8c">HIGH</a>,       <span class="comment">// 強</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fab6aca448ac7622df1b7ffe2e2e57aeac">   28</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fab6aca448ac7622df1b7ffe2e2e57aeac">BLOW</a>        <span class="comment">// 吹き飛ばし</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        };</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="comment">// 基本的な関数群</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#a060b8466fbab9fb61fee0ed0c9c0cc6d">Load</a>(<a class="code hl_class" href="classjson11_1_1_json.html">json11::Json</a> _groupData, uint _enableFrame);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#ac97086d022704fcbc82d518b15dce86a">Init</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#afee4fd4fd51ea9944ca7ab2e0a877a02">Update</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="comment">// アクセッサ</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="comment">// ゲッター</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#a24e34c7de5bfe572f68e28d0131bba23">   51</a></span>        uint        <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#a24e34c7de5bfe572f68e28d0131bba23">GetSerialID</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#a46387577243e149816df5b5539cf2433">m_curSerialID</a>; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="comment">// 攻撃情報ゲッター</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#a27ff233689a59aae6ff7a7afc77ee277">   54</a></span>        <span class="keywordtype">int</span>                     <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#a27ff233689a59aae6ff7a7afc77ee277">GetPriority</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#ac884d3b0ddc3ead1a2cd7d40dcdde3bf">m_priority</a>; }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#a0a53e61c8031da4912f47aaa1c9285db">   55</a></span>        <span class="keywordtype">int</span>                     <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#a0a53e61c8031da4912f47aaa1c9285db">GetBaseDamage</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#a8e84aa96c808889c53f52935b060cc3c">m_baseDamage</a>; }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#ac687a35a9ade635a25387e68d05a13d5">   56</a></span>        <a class="code hl_enumeration" href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2">EKnockBackType</a>          <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#ac687a35a9ade635a25387e68d05a13d5">GetKnockBackType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#aef49ec18c78c58488db4a16321d19bec">m_knockBackType</a>; }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#a2cdc96aa0403968f7e75a354b432288b">   57</a></span>        <a class="code hl_enumeration" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193f">EStrengthType</a>           <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#a2cdc96aa0403968f7e75a354b432288b">GetStrengthType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#ac03984eb2d64fadfa42b7b6d48a9d45a">m_strengthType</a>; }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#a5bf0bf8f0930e9aa43a1b25f8c2629a9">   58</a></span>        <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp;  <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#a5bf0bf8f0930e9aa43a1b25f8c2629a9">GetKnockBackDir</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#a0cedaec9e136d27348d5e2cd668cb7dd">m_knockBackDir</a>; }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#af470eb4ef8f1a28d0aed7dff1be515ad">   59</a></span>        <span class="keywordtype">float</span>                   <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#af470eb4ef8f1a28d0aed7dff1be515ad">GetKnockBackPow</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#a827247b009f172e6f2f17e500d5802ea">m_knockBackPow</a>; }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="comment">// プログラム依存データ</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#a46387577243e149816df5b5539cf2433">   63</a></span>        uint                    <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#a46387577243e149816df5b5539cf2433">m_curSerialID</a>;      <span class="comment">// シリアルID(0から1づつ増加する)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#ad3e8f2bec2c5871d3d5789f457dea429">   64</a></span>        uint                    <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#ad3e8f2bec2c5871d3d5789f457dea429">m_cnt</a>;              <span class="comment">// シーケンス開始時のカウンタ</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">// プログラム非依存データ(外部データ)</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#ac97c01527f3b0dc3b3a762815f7e653b">   69</a></span>        uint                    <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#ac97c01527f3b0dc3b3a762815f7e653b">m_serialFrameCount</a>; <span class="comment">// シリアルフレームの数(0なら1度のみヒットする)</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#ac02417e7c76d7a768a73870149430169">   70</a></span>        std::vector&lt;uint&gt;       <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#ac02417e7c76d7a768a73870149430169">m_serialFrames</a>;     <span class="comment">// シリアルID(連続ヒットに使用するID)が変更されるフレーム</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                                                    <span class="comment">// 小さい値の順に並んでいること。</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                                                    <span class="comment">// GroupのEnableFrameより小さい値の中で設定する</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">// 攻撃情報(外部データ)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#ac884d3b0ddc3ead1a2cd7d40dcdde3bf">   78</a></span>        <span class="keywordtype">int</span>                     <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#ac884d3b0ddc3ead1a2cd7d40dcdde3bf">m_priority</a>;         <span class="comment">// 優先度(値が大きいほど優先される。基本は0)</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#a8e84aa96c808889c53f52935b060cc3c">   79</a></span>        <span class="keywordtype">int</span>                     <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#a8e84aa96c808889c53f52935b060cc3c">m_baseDamage</a>;       <span class="comment">// 基本のダメージ量</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#aef49ec18c78c58488db4a16321d19bec">   81</a></span>        <a class="code hl_enumeration" href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2">EKnockBackType</a>          <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#aef49ec18c78c58488db4a16321d19bec">m_knockBackType</a>;    <span class="comment">// ノックバックタイプ</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#ac03984eb2d64fadfa42b7b6d48a9d45a">   82</a></span>        <a class="code hl_enumeration" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193f">EStrengthType</a>           <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#ac03984eb2d64fadfa42b7b6d48a9d45a">m_strengthType</a>;     <span class="comment">// 強さ(タイプ)</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#a0cedaec9e136d27348d5e2cd668cb7dd">   83</a></span>        <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>         <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#a0cedaec9e136d27348d5e2cd668cb7dd">m_knockBackDir</a>;     <span class="comment">// ノックバック方向(正規化済みであること)</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_attack_type_data.html#a827247b009f172e6f2f17e500d5802ea">   84</a></span>        <span class="keywordtype">float</span>                   <a class="code hl_variable" href="class_n_collision_1_1_c_attack_type_data.html#a827247b009f172e6f2f17e500d5802ea">m_knockBackPow</a>;     <span class="comment">// ノックバックの強さ(衝撃)</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#a8b4bb4eaaefe63985915dd4cd6274c4c">CAttackTypeData</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <a class="code hl_function" href="class_n_collision_1_1_c_attack_type_data.html#a31b93cf89dfc51c96d0876a7b9aaa21a">~CAttackTypeData</a>();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    };</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a060b8466fbab9fb61fee0ed0c9c0cc6d"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a060b8466fbab9fb61fee0ed0c9c0cc6d">NCollision::CAttackTypeData::Load</a></div><div class="ttdeci">void Load(json11::Json _groupData, uint _enableFrame)</div><div class="ttdoc">jsonからのデータ読み込み</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.cpp:73</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a0a53e61c8031da4912f47aaa1c9285db"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a0a53e61c8031da4912f47aaa1c9285db">NCollision::CAttackTypeData::GetBaseDamage</a></div><div class="ttdeci">int GetBaseDamage() const</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:55</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a0cedaec9e136d27348d5e2cd668cb7dd"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a0cedaec9e136d27348d5e2cd668cb7dd">NCollision::CAttackTypeData::m_knockBackDir</a></div><div class="ttdeci">NMath::SVector3 m_knockBackDir</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:83</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a24e34c7de5bfe572f68e28d0131bba23"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a24e34c7de5bfe572f68e28d0131bba23">NCollision::CAttackTypeData::GetSerialID</a></div><div class="ttdeci">uint GetSerialID() const</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:51</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a27ff233689a59aae6ff7a7afc77ee277"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a27ff233689a59aae6ff7a7afc77ee277">NCollision::CAttackTypeData::GetPriority</a></div><div class="ttdeci">int GetPriority() const</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:54</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a2cdc96aa0403968f7e75a354b432288b"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a2cdc96aa0403968f7e75a354b432288b">NCollision::CAttackTypeData::GetStrengthType</a></div><div class="ttdeci">EStrengthType GetStrengthType() const</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:57</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a31b93cf89dfc51c96d0876a7b9aaa21a"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a31b93cf89dfc51c96d0876a7b9aaa21a">NCollision::CAttackTypeData::~CAttackTypeData</a></div><div class="ttdeci">~CAttackTypeData()</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.cpp:68</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a46387577243e149816df5b5539cf2433"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a46387577243e149816df5b5539cf2433">NCollision::CAttackTypeData::m_curSerialID</a></div><div class="ttdeci">uint m_curSerialID</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:63</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a5bf0bf8f0930e9aa43a1b25f8c2629a9"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a5bf0bf8f0930e9aa43a1b25f8c2629a9">NCollision::CAttackTypeData::GetKnockBackDir</a></div><div class="ttdeci">const NMath::SVector3 &amp; GetKnockBackDir() const</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:58</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a827247b009f172e6f2f17e500d5802ea"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a827247b009f172e6f2f17e500d5802ea">NCollision::CAttackTypeData::m_knockBackPow</a></div><div class="ttdeci">float m_knockBackPow</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:84</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a8b4bb4eaaefe63985915dd4cd6274c4c"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a8b4bb4eaaefe63985915dd4cd6274c4c">NCollision::CAttackTypeData::CAttackTypeData</a></div><div class="ttdeci">CAttackTypeData()</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.cpp:59</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_a8e84aa96c808889c53f52935b060cc3c"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#a8e84aa96c808889c53f52935b060cc3c">NCollision::CAttackTypeData::m_baseDamage</a></div><div class="ttdeci">int m_baseDamage</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:79</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_ac02417e7c76d7a768a73870149430169"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#ac02417e7c76d7a768a73870149430169">NCollision::CAttackTypeData::m_serialFrames</a></div><div class="ttdeci">std::vector&lt; uint &gt; m_serialFrames</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:70</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_ac03984eb2d64fadfa42b7b6d48a9d45a"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#ac03984eb2d64fadfa42b7b6d48a9d45a">NCollision::CAttackTypeData::m_strengthType</a></div><div class="ttdeci">EStrengthType m_strengthType</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:82</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_ac687a35a9ade635a25387e68d05a13d5"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#ac687a35a9ade635a25387e68d05a13d5">NCollision::CAttackTypeData::GetKnockBackType</a></div><div class="ttdeci">EKnockBackType GetKnockBackType() const</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:56</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_ac884d3b0ddc3ead1a2cd7d40dcdde3bf"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#ac884d3b0ddc3ead1a2cd7d40dcdde3bf">NCollision::CAttackTypeData::m_priority</a></div><div class="ttdeci">int m_priority</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:78</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_ac97086d022704fcbc82d518b15dce86a"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#ac97086d022704fcbc82d518b15dce86a">NCollision::CAttackTypeData::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">初期化</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.cpp:131</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_ac97c01527f3b0dc3b3a762815f7e653b"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#ac97c01527f3b0dc3b3a762815f7e653b">NCollision::CAttackTypeData::m_serialFrameCount</a></div><div class="ttdeci">uint m_serialFrameCount</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:69</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_ad3e8f2bec2c5871d3d5789f457dea429"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#ad3e8f2bec2c5871d3d5789f457dea429">NCollision::CAttackTypeData::m_cnt</a></div><div class="ttdeci">uint m_cnt</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:64</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_aef49ec18c78c58488db4a16321d19bec"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#aef49ec18c78c58488db4a16321d19bec">NCollision::CAttackTypeData::m_knockBackType</a></div><div class="ttdeci">EKnockBackType m_knockBackType</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:81</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af0e952d8da1505639104c7087028193f"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193f">NCollision::CAttackTypeData::EStrengthType</a></div><div class="ttdeci">EStrengthType</div><div class="ttdoc">攻撃の強さ(吹っ飛ばしなどの設定もこの値を使用する)</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:24</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af0e952d8da1505639104c7087028193fa41bc94cbd8eebea13ce0491b2ac11b88"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fa41bc94cbd8eebea13ce0491b2ac11b88">NCollision::CAttackTypeData::EStrengthType::LOW</a></div><div class="ttdeci">@ LOW</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:25</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af0e952d8da1505639104c7087028193fa43eedd8685eb86592022f8da962e3474"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fa43eedd8685eb86592022f8da962e3474">NCollision::CAttackTypeData::EStrengthType::MIDDLE</a></div><div class="ttdeci">@ MIDDLE</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:26</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af0e952d8da1505639104c7087028193fab6aca448ac7622df1b7ffe2e2e57aeac"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fab6aca448ac7622df1b7ffe2e2e57aeac">NCollision::CAttackTypeData::EStrengthType::BLOW</a></div><div class="ttdeci">@ BLOW</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:28</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af0e952d8da1505639104c7087028193fab89de3b4b81c4facfac906edf29aec8c"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fab89de3b4b81c4facfac906edf29aec8c">NCollision::CAttackTypeData::EStrengthType::HIGH</a></div><div class="ttdeci">@ HIGH</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:27</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af470eb4ef8f1a28d0aed7dff1be515ad"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af470eb4ef8f1a28d0aed7dff1be515ad">NCollision::CAttackTypeData::GetKnockBackPow</a></div><div class="ttdeci">float GetKnockBackPow() const</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:59</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af7037073a97a1dd853b5961b9fe577d2"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2">NCollision::CAttackTypeData::EKnockBackType</a></div><div class="ttdeci">EKnockBackType</div><div class="ttdoc">XZ平面でのノックバック方向のタイプ(Y軸は固定で0,1,0方向)</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:17</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af7037073a97a1dd853b5961b9fe577d2ab6f2249394a4def60a78b342dcc925b9"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2ab6f2249394a4def60a78b342dcc925b9">NCollision::CAttackTypeData::EKnockBackType::DIRECTIONAL</a></div><div class="ttdeci">@ DIRECTIONAL</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:19</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af7037073a97a1dd853b5961b9fe577d2af30e176936608b86536c1a96470fb000"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2af30e176936608b86536c1a96470fb000">NCollision::CAttackTypeData::EKnockBackType::ABSOLUTE_DIR</a></div><div class="ttdeci">@ ABSOLUTE_DIR</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:20</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af7037073a97a1dd853b5961b9fe577d2af555bd643706f9926e7652a92f6a07bd"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af7037073a97a1dd853b5961b9fe577d2af555bd643706f9926e7652a92f6a07bd">NCollision::CAttackTypeData::EKnockBackType::RADIATE</a></div><div class="ttdeci">@ RADIATE</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:18</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_afee4fd4fd51ea9944ca7ab2e0a877a02"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#afee4fd4fd51ea9944ca7ab2e0a877a02">NCollision::CAttackTypeData::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.cpp:137</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html"><div class="ttname"><a href="classjson11_1_1_json.html">json11::Json</a></div><div class="ttdef"><b>Definition</b> json11.hpp:79</div></div>
+<div class="ttc" id="ajson11_8hpp_html"><div class="ttname"><a href="json11_8hpp.html">json11.hpp</a></div></div>
+<div class="ttc" id="anamespace_n_collision_html"><div class="ttname"><a href="namespace_n_collision.html">NCollision</a></div><div class="ttdoc">当たり判定に使用する定義</div><div class="ttdef"><b>Definition</b> Collision_Common.cpp:34</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a></div><div class="ttdoc">Vector構造体</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:14</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_73b2b7c7692df5153c734ea07eeabb57.html">GameFramework</a></li><li class="navelem"><a href="dir_f0b42bc1344eca253e9e5e11898520d1.html">Collision</a></li><li class="navelem"><a href="dir_27f72761b4f547497f2bbb0e0fa81d2b.html">Holder</a></li><li class="navelem"><a href="dir_97d37bf5751b6a7d1ab04876d3ed99a5.html">TypeData</a></li><li class="navelem"><a href="_collision___type_data_attack_8h.html">Collision_TypeDataAttack.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

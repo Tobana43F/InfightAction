@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Math/Matrix/Math_Matrix44.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_math___matrix44_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Math_Matrix44.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_math___matrix44_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;DirectXMath.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &lt;array&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_math___vector4_8h.html">Math\Vector\Math_Vector4.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_math.html">NMath</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">// 前方宣言</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_n_math_1_1_s_quaternion.html">SQuaternion</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_matrix44.html">   13</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_matrix44.html#af6c414e7553145c69e4c208e4820fb3c">   16</a></span>            DirectX::XMMATRIX   <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#af6c414e7553145c69e4c208e4820fb3c">mat</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_matrix44.html#a6c2be004739472c0e4c1da5448d2bfe6">   20</a></span>                <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#a6c2be004739472c0e4c1da5448d2bfe6">e11</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#aa806de5e05a66bdd9a10d1c45ebb12fd">e12</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#aaee26807471efa5ffaf8d36fb29c3c26">e13</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#af69aaf9288e708d3c05fd280fc0712c1">e14</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_matrix44.html#a2cb8144d6252abe5dcd89123c1672509">   21</a></span>                <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#a2cb8144d6252abe5dcd89123c1672509">e21</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#a2b00a32dafb12d69e90ac08f6b5a30d0">e22</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#acf365d93d3eb451d922f6ddec1445e52">e23</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#ae51d115cf351c8d0fc3993996fbcc651">e24</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_matrix44.html#ad544c7275c0913a2d629abc8fff2b365">   22</a></span>                <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#ad544c7275c0913a2d629abc8fff2b365">e31</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#a7abf17cc82c80ed2cbf5a3c135705889">e32</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#a95b8ebe46c87b381c62ccf306635a38c">e33</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#acd07dbaea96503abf2744106349f40db">e34</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_matrix44.html#a7bbce3f809ef011d625acf56ad184e1e">   23</a></span>                <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#a7bbce3f809ef011d625acf56ad184e1e">e41</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#aac10a29cd597035a2083fa0c005721c7">e42</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#a856b0e11a3092b6e9f3d86049e7246bf">e43</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#a635c824d513cb83c6e6518acec56a3a0">e44</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            };</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_matrix44.html#a48297fae222d41c03a9c04ccb6e41bf3">   28</a></span>                std::array&lt;std::array&lt;float, 4&gt;, 4&gt; <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#a48297fae222d41c03a9c04ccb6e41bf3">flt</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            };</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_matrix44.html#aacdf92892b936f02ac86f60c498e0f69">   33</a></span>                std::array&lt;SVector4, 4&gt; <a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#aacdf92892b936f02ac86f60c498e0f69">vec</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            };</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        };</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">// コンストラクタ</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>(<span class="keyword">const</span> <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; _rhs);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>(</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">const</span> SVector4&amp; _vec1, </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keyword">const</span> SVector4&amp; _vec2,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keyword">const</span> SVector4&amp; _vec3,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">const</span> SVector4&amp; _vec4);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>(</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> _e11, <span class="keyword">const</span> <span class="keywordtype">float</span> _e12, <span class="keyword">const</span> <span class="keywordtype">float</span> _e13, <span class="keyword">const</span> <span class="keywordtype">float</span> _e14,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> _e21, <span class="keyword">const</span> <span class="keywordtype">float</span> _e22, <span class="keyword">const</span> <span class="keywordtype">float</span> _e23, <span class="keyword">const</span> <span class="keywordtype">float</span> _e24,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> _e31, <span class="keyword">const</span> <span class="keywordtype">float</span> _e32, <span class="keyword">const</span> <span class="keywordtype">float</span> _e33, <span class="keyword">const</span> <span class="keywordtype">float</span> _e34,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> _e41, <span class="keyword">const</span> <span class="keywordtype">float</span> _e42, <span class="keyword">const</span> <span class="keywordtype">float</span> _e43, <span class="keyword">const</span> <span class="keywordtype">float</span> _e44);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="comment">// オペレータ</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#ab65d6006fd900b6279e70018fc61438a">operator =  </a>(<span class="keyword">const</span> <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; _rhs);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#adead89f92dcabeacef2e249da2b5cee7">operator += </a>(<span class="keyword">const</span> <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; _rhs);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af8ce1bc03befc25af90794efa1c5e170">operator -= </a>(<span class="keyword">const</span> <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; _rhs);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#a86423a701ae64213852a61410e3e78fd">operator *= </a>(<span class="keyword">const</span> <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; _rhs);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#a86423a701ae64213852a61410e3e78fd">operator *= </a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _rhs);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#abf37d04fdc7b0ea48042b53053c31c54">operator /= </a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _rhs);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="comment">// ゲッター</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">float</span>           <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#a7d34564e73256be4f0f920f72c52a60c">Get</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _y, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _x) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keyword">const</span> SVector4&amp; <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#abf568d61df87c96899190f4ade451a83">GetRow</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _row) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="comment">// セッター</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordtype">void</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af37a69fe48c1e878c42b447169192ca7">SetRow</a>(</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>      _row,</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector4.html">NMath::SVector4</a>&amp;  _src);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">void</span>        <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af37a69fe48c1e878c42b447169192ca7">SetRow</a>(</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>      _row,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp;  _src);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">// ユーティリティ群</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#a5f9af56c6ab13b4c6f9daef520e1a145">SetZero</a>();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#aeb60c7b264ecaf9cae02e43769960ea3">SetIdentity</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#a3aee77c194db8bea68623ded6fea5152">Inverse</a>();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#acfdd83f09b0b30fb8fb7461a6aaf55d2">Transpose</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#a2f6f3fb615462a2fdedb9cf67b77d505">GetInverse</a>(<a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; _dest) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#a4da3a990c812902e04d4d3f037763e6b">GetTranspose</a>(<a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">SMatrix44</a>&amp; _dest) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af3246b5ea5447886ea60c7ef34a815cd">Decompose</a>(</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            SVector3*           _destScale,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            SQuaternion*        _destRotation,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            SVector3*           _destTrans) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    };</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> <a class="code hl_function" href="_math___matrix44_8h.html#abcbcac1636c6784786f14f7cc331c973">operator + </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _rhs);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> <a class="code hl_function" href="_math___matrix44_8h.html#abb37913e6658951a333dc3964145a1cb">operator - </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _rhs);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> <a class="code hl_function" href="_math___matrix44_8h.html#a7fd51883f6340286231138b151a790ed">operator * </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _rhs);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> <a class="code hl_function" href="_math___matrix44_8h.html#a7fd51883f6340286231138b151a790ed">operator * </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _lhs, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _rhs);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> <a class="code hl_function" href="_math___matrix44_8h.html#a7fd51883f6340286231138b151a790ed">operator * </a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _rhs);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> <a class="code hl_function" href="_math___matrix44_8h.html#a33dba3eb427befe043c5592908674322">operator / </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _lhs, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _rhs);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> <a class="code hl_function" href="_math___matrix44_8h.html#a33dba3eb427befe043c5592908674322">operator / </a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _rhs);</div>
+<div class="ttc" id="a_math___matrix44_8h_html_a33dba3eb427befe043c5592908674322"><div class="ttname"><a href="_math___matrix44_8h.html#a33dba3eb427befe043c5592908674322">operator/</a></div><div class="ttdeci">const NMath::SMatrix44 operator/(const NMath::SMatrix44 &amp;_lhs, const float &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:194</div></div>
+<div class="ttc" id="a_math___matrix44_8h_html_a7fd51883f6340286231138b151a790ed"><div class="ttname"><a href="_math___matrix44_8h.html#a7fd51883f6340286231138b151a790ed">operator*</a></div><div class="ttdeci">const NMath::SMatrix44 operator*(const NMath::SMatrix44 &amp;_lhs, const NMath::SMatrix44 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:179</div></div>
+<div class="ttc" id="a_math___matrix44_8h_html_abb37913e6658951a333dc3964145a1cb"><div class="ttname"><a href="_math___matrix44_8h.html#abb37913e6658951a333dc3964145a1cb">operator-</a></div><div class="ttdeci">const NMath::SMatrix44 operator-(const NMath::SMatrix44 &amp;_lhs, const NMath::SMatrix44 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:174</div></div>
+<div class="ttc" id="a_math___matrix44_8h_html_abcbcac1636c6784786f14f7cc331c973"><div class="ttname"><a href="_math___matrix44_8h.html#abcbcac1636c6784786f14f7cc331c973">operator+</a></div><div class="ttdeci">const NMath::SMatrix44 operator+(const NMath::SMatrix44 &amp;_lhs, const NMath::SMatrix44 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:169</div></div>
+<div class="ttc" id="a_math___vector4_8h_html"><div class="ttname"><a href="_math___vector4_8h.html">Math_Vector4.h</a></div></div>
+<div class="ttc" id="anamespace_n_math_html"><div class="ttname"><a href="namespace_n_math.html">NMath</a></div><div class="ttdoc">基本的な計算を行う関数群</div><div class="ttdef"><b>Definition</b> Math_Data.cpp:6</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a></div><div class="ttdoc">4x4行列構造体</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:13</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a2b00a32dafb12d69e90ac08f6b5a30d0"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a2b00a32dafb12d69e90ac08f6b5a30d0">NMath::SMatrix44::e22</a></div><div class="ttdeci">float e22</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:21</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a2cb8144d6252abe5dcd89123c1672509"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a2cb8144d6252abe5dcd89123c1672509">NMath::SMatrix44::e21</a></div><div class="ttdeci">float e21</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:21</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a2f6f3fb615462a2fdedb9cf67b77d505"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a2f6f3fb615462a2fdedb9cf67b77d505">NMath::SMatrix44::GetInverse</a></div><div class="ttdeci">void GetInverse(SMatrix44 &amp;_dest) const</div><div class="ttdoc">要素を逆行列にする</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:135</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a3aee77c194db8bea68623ded6fea5152"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a3aee77c194db8bea68623ded6fea5152">NMath::SMatrix44::Inverse</a></div><div class="ttdeci">void Inverse()</div><div class="ttdoc">要素を逆行列にする</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:125</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a48297fae222d41c03a9c04ccb6e41bf3"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a48297fae222d41c03a9c04ccb6e41bf3">NMath::SMatrix44::flt</a></div><div class="ttdeci">std::array&lt; std::array&lt; float, 4 &gt;, 4 &gt; flt</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:28</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a4da3a990c812902e04d4d3f037763e6b"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a4da3a990c812902e04d4d3f037763e6b">NMath::SMatrix44::GetTranspose</a></div><div class="ttdeci">void GetTranspose(SMatrix44 &amp;_dest) const</div><div class="ttdoc">要素を転置行列にする</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:140</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a5f9af56c6ab13b4c6f9daef520e1a145"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a5f9af56c6ab13b4c6f9daef520e1a145">NMath::SMatrix44::SetZero</a></div><div class="ttdeci">void SetZero()</div><div class="ttdoc">ゼロを設定する</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:111</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a635c824d513cb83c6e6518acec56a3a0"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a635c824d513cb83c6e6518acec56a3a0">NMath::SMatrix44::e44</a></div><div class="ttdeci">float e44</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:23</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a6c2be004739472c0e4c1da5448d2bfe6"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a6c2be004739472c0e4c1da5448d2bfe6">NMath::SMatrix44::e11</a></div><div class="ttdeci">float e11</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:20</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a7abf17cc82c80ed2cbf5a3c135705889"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a7abf17cc82c80ed2cbf5a3c135705889">NMath::SMatrix44::e32</a></div><div class="ttdeci">float e32</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:22</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a7bbce3f809ef011d625acf56ad184e1e"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a7bbce3f809ef011d625acf56ad184e1e">NMath::SMatrix44::e41</a></div><div class="ttdeci">float e41</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:23</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a7d34564e73256be4f0f920f72c52a60c"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a7d34564e73256be4f0f920f72c52a60c">NMath::SMatrix44::Get</a></div><div class="ttdeci">float Get(const unsigned int _y, const unsigned int _x) const</div><div class="ttdoc">添え字を指定して値を取得</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:82</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a856b0e11a3092b6e9f3d86049e7246bf"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a856b0e11a3092b6e9f3d86049e7246bf">NMath::SMatrix44::e43</a></div><div class="ttdeci">float e43</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:23</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a86423a701ae64213852a61410e3e78fd"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a86423a701ae64213852a61410e3e78fd">NMath::SMatrix44::operator*=</a></div><div class="ttdeci">SMatrix44 &amp; operator*=(const SMatrix44 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:62</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a95b8ebe46c87b381c62ccf306635a38c"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a95b8ebe46c87b381c62ccf306635a38c">NMath::SMatrix44::e33</a></div><div class="ttdeci">float e33</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:22</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_aa806de5e05a66bdd9a10d1c45ebb12fd"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#aa806de5e05a66bdd9a10d1c45ebb12fd">NMath::SMatrix44::e12</a></div><div class="ttdeci">float e12</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:20</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_aac10a29cd597035a2083fa0c005721c7"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#aac10a29cd597035a2083fa0c005721c7">NMath::SMatrix44::e42</a></div><div class="ttdeci">float e42</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:23</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_aacdf92892b936f02ac86f60c498e0f69"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#aacdf92892b936f02ac86f60c498e0f69">NMath::SMatrix44::vec</a></div><div class="ttdeci">std::array&lt; SVector4, 4 &gt; vec</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:33</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_aaee26807471efa5ffaf8d36fb29c3c26"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#aaee26807471efa5ffaf8d36fb29c3c26">NMath::SMatrix44::e13</a></div><div class="ttdeci">float e13</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:20</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_ab65d6006fd900b6279e70018fc61438a"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#ab65d6006fd900b6279e70018fc61438a">NMath::SMatrix44::operator=</a></div><div class="ttdeci">SMatrix44 &amp; operator=(const SMatrix44 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:44</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_abf37d04fdc7b0ea48042b53053c31c54"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#abf37d04fdc7b0ea48042b53053c31c54">NMath::SMatrix44::operator/=</a></div><div class="ttdeci">SMatrix44 &amp; operator/=(const float &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:74</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_abf568d61df87c96899190f4ade451a83"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#abf568d61df87c96899190f4ade451a83">NMath::SMatrix44::GetRow</a></div><div class="ttdeci">const SVector4 &amp; GetRow(const unsigned int _row) const</div><div class="ttdoc">行を取得</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:89</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_acd07dbaea96503abf2744106349f40db"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#acd07dbaea96503abf2744106349f40db">NMath::SMatrix44::e34</a></div><div class="ttdeci">float e34</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:22</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_acf365d93d3eb451d922f6ddec1445e52"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#acf365d93d3eb451d922f6ddec1445e52">NMath::SMatrix44::e23</a></div><div class="ttdeci">float e23</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:21</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_acfdd83f09b0b30fb8fb7461a6aaf55d2"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#acfdd83f09b0b30fb8fb7461a6aaf55d2">NMath::SMatrix44::Transpose</a></div><div class="ttdeci">void Transpose()</div><div class="ttdoc">要素を転置行列にする</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:130</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_ad544c7275c0913a2d629abc8fff2b365"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#ad544c7275c0913a2d629abc8fff2b365">NMath::SMatrix44::e31</a></div><div class="ttdeci">float e31</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:22</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_adead89f92dcabeacef2e249da2b5cee7"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#adead89f92dcabeacef2e249da2b5cee7">NMath::SMatrix44::operator+=</a></div><div class="ttdeci">SMatrix44 &amp; operator+=(const SMatrix44 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:50</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_ae51d115cf351c8d0fc3993996fbcc651"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#ae51d115cf351c8d0fc3993996fbcc651">NMath::SMatrix44::e24</a></div><div class="ttdeci">float e24</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:21</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_aeb60c7b264ecaf9cae02e43769960ea3"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#aeb60c7b264ecaf9cae02e43769960ea3">NMath::SMatrix44::SetIdentity</a></div><div class="ttdeci">void SetIdentity()</div><div class="ttdoc">単位行列を設定する</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:116</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_af3246b5ea5447886ea60c7ef34a815cd"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#af3246b5ea5447886ea60c7ef34a815cd">NMath::SMatrix44::Decompose</a></div><div class="ttdeci">void Decompose(SVector3 *_destScale, SQuaternion *_destRotation, SVector3 *_destTrans) const</div><div class="ttdoc">行列成分を分解する</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:145</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_af37a69fe48c1e878c42b447169192ca7"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#af37a69fe48c1e878c42b447169192ca7">NMath::SMatrix44::SetRow</a></div><div class="ttdeci">void SetRow(const unsigned int _row, const NMath::SVector4 &amp;_src)</div><div class="ttdoc">行に値を設定</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:95</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_af4848d1002bd0d9678fdf2512f1c81a4"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#af4848d1002bd0d9678fdf2512f1c81a4">NMath::SMatrix44::SMatrix44</a></div><div class="ttdeci">SMatrix44()</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:8</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_af69aaf9288e708d3c05fd280fc0712c1"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#af69aaf9288e708d3c05fd280fc0712c1">NMath::SMatrix44::e14</a></div><div class="ttdeci">float e14</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:20</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_af6c414e7553145c69e4c208e4820fb3c"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#af6c414e7553145c69e4c208e4820fb3c">NMath::SMatrix44::mat</a></div><div class="ttdeci">DirectX::XMMATRIX mat</div><div class="ttdoc">SIMDアクセス用</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:16</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_af8ce1bc03befc25af90794efa1c5e170"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#af8ce1bc03befc25af90794efa1c5e170">NMath::SMatrix44::operator-=</a></div><div class="ttdeci">SMatrix44 &amp; operator-=(const SMatrix44 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:56</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_quaternion_html"><div class="ttname"><a href="struct_n_math_1_1_s_quaternion.html">NMath::SQuaternion</a></div><div class="ttdoc">クオータニオン</div><div class="ttdef"><b>Definition</b> Math_Quaternion.h:11</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a></div><div class="ttdoc">Vector構造体</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:14</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector4_html"><div class="ttname"><a href="struct_n_math_1_1_s_vector4.html">NMath::SVector4</a></div><div class="ttdoc">Vector構造体</div><div class="ttdef"><b>Definition</b> Math_Vector4.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_bc307321e09ac76e33455da22ae3eeba.html">Math</a></li><li class="navelem"><a href="dir_6d770083596cb585edc75acccd710b19.html">Matrix</a></li><li class="navelem"><a href="_math___matrix44_8h.html">Math_Matrix44.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

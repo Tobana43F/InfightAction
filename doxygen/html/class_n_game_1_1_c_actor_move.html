@@ -1,0 +1,2496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NGame::CActorMove クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_game_1_1_c_actor_move.html','','class_n_game_1_1_c_actor_move-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NGame::CActorMove クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Actorクラスの移動を管理するクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_game___actor_move_8h_source.html">Game_ActorMove.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:CActorBody" id="r_CActorBody"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_n_game_1_1_c_actor_move_1_1_c_actor_body.html">CActorBody</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actorの体の当たり判定  <a href="class_n_game_1_1_c_actor_move_1_1_c_actor_body.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:afd909be7421c4cbe6d2e3fb2db48723f" id="r_afd909be7421c4cbe6d2e3fb2db48723f"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#afd909be7421c4cbe6d2e3fb2db48723f">EApplyType</a> { <a class="el" href="#afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce">FORWARDING</a>
+, <a class="el" href="#afd909be7421c4cbe6d2e3fb2db48723fa4c5d06b02c97731aaa976179c62dcf76">DIRECT</a>
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab201f5868bce33cf2d6300373348ed58" id="r_ab201f5868bce33cf2d6300373348ed58"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab201f5868bce33cf2d6300373348ed58">Setup</a> (<a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a> _key, <a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a> _colGroundIndex, <a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a> _colWallIndex)</td></tr>
+<tr class="memdesc:ab201f5868bce33cf2d6300373348ed58"><td class="mdescLeft">&#160;</td><td class="mdescRight">定数値をロードする  <br /></td></tr>
+<tr class="memitem:a559e7a69194104cf197d5158ca785a17" id="r_a559e7a69194104cf197d5158ca785a17"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a559e7a69194104cf197d5158ca785a17">Init</a> ()</td></tr>
+<tr class="memdesc:a559e7a69194104cf197d5158ca785a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化処理  <br /></td></tr>
+<tr class="memitem:a1908510681d79f464afe506c3b667e15" id="r_a1908510681d79f464afe506c3b667e15"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1908510681d79f464afe506c3b667e15">UpdateFast</a> ()</td></tr>
+<tr class="memdesc:a1908510681d79f464afe506c3b667e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">前座標を取得  <br /></td></tr>
+<tr class="memitem:a6fbd9c277b5986a9db4b885565ffe9a3" id="r_a6fbd9c277b5986a9db4b885565ffe9a3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6fbd9c277b5986a9db4b885565ffe9a3">Update</a> ()</td></tr>
+<tr class="memdesc:a6fbd9c277b5986a9db4b885565ffe9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動量をバインドさアれたゲームオブジェクトに適用  <br /></td></tr>
+<tr class="memitem:a6021ee9cee434899c39f61233b490d8d" id="r_a6021ee9cee434899c39f61233b490d8d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6021ee9cee434899c39f61233b490d8d">RenderDebug</a> ()</td></tr>
+<tr class="memdesc:a6021ee9cee434899c39f61233b490d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバッグ用描画  <br /></td></tr>
+<tr class="memitem:a52900c809dec2ec81f96dc8036e0c064" id="r_a52900c809dec2ec81f96dc8036e0c064"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a52900c809dec2ec81f96dc8036e0c064">AccelXZ</a> (float _ratio=1.0f)</td></tr>
+<tr class="memdesc:a52900c809dec2ec81f96dc8036e0c064"><td class="mdescLeft">&#160;</td><td class="mdescRight">XZ方向の加速  <br /></td></tr>
+<tr class="memitem:a34fa14fcd63b18e0f651c9a96b9d312a" id="r_a34fa14fcd63b18e0f651c9a96b9d312a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a34fa14fcd63b18e0f651c9a96b9d312a">AccelXZDirect</a> (const float _accelDelta)</td></tr>
+<tr class="memdesc:a34fa14fcd63b18e0f651c9a96b9d312a"><td class="mdescLeft">&#160;</td><td class="mdescRight">XZ方向の加速量を直接指定する  <br /></td></tr>
+<tr class="memitem:a3ac28fda2ef857a3950cd6fbacdf2315" id="r_a3ac28fda2ef857a3950cd6fbacdf2315"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3ac28fda2ef857a3950cd6fbacdf2315">AccelYDirect</a> (const float _accelDelta)</td></tr>
+<tr class="memdesc:a3ac28fda2ef857a3950cd6fbacdf2315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y方向の加速量を直接指定する  <br /></td></tr>
+<tr class="memitem:aa3c9a18aad4fab70c1163cece808d13b" id="r_aa3c9a18aad4fab70c1163cece808d13b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa3c9a18aad4fab70c1163cece808d13b">Jump</a> (const float _jumpPow)</td></tr>
+<tr class="memdesc:aa3c9a18aad4fab70c1163cece808d13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジャンプ(Y方向の加速)  <br /></td></tr>
+<tr class="memitem:a7653bf03c8e23fa1800681626a84142c" id="r_a7653bf03c8e23fa1800681626a84142c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7653bf03c8e23fa1800681626a84142c">SetMove</a> (const float3 &amp;_dir, const float _speed)</td></tr>
+<tr class="memdesc:a7653bf03c8e23fa1800681626a84142c"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動方向と移動量で設定する  <br /></td></tr>
+<tr class="memitem:a09307c21543ff83be9b57dc5f4632ee1" id="r_a09307c21543ff83be9b57dc5f4632ee1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a09307c21543ff83be9b57dc5f4632ee1">SetMoveSpeedXZ</a> (const float _moveSpeed)</td></tr>
+<tr class="memdesc:a09307c21543ff83be9b57dc5f4632ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">XZ平面での移動量を設定する  <br /></td></tr>
+<tr class="memitem:adc4e0976e1deec280df4762ccef138f4" id="r_adc4e0976e1deec280df4762ccef138f4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adc4e0976e1deec280df4762ccef138f4">SetMoveDirXZ</a> (const float3 &amp;_moveDir)</td></tr>
+<tr class="memdesc:adc4e0976e1deec280df4762ccef138f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">XZ平面での移動方向を設定する  <br /></td></tr>
+<tr class="memitem:a1e6edb751890ffa036a9812cbf290f7c" id="r_a1e6edb751890ffa036a9812cbf290f7c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1e6edb751890ffa036a9812cbf290f7c">SetMoveSpeedY</a> (const float _moveSpeed)</td></tr>
+<tr class="memdesc:a1e6edb751890ffa036a9812cbf290f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y軸方向の移動量を設定する  <br /></td></tr>
+<tr class="memitem:a5dc0f3f3edf438d9b7e2071bdaf2babf" id="r_a5dc0f3f3edf438d9b7e2071bdaf2babf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5dc0f3f3edf438d9b7e2071bdaf2babf">SetIsApplyDeccel</a> (const bool _state)</td></tr>
+<tr class="memdesc:a5dc0f3f3edf438d9b7e2071bdaf2babf"><td class="mdescLeft">&#160;</td><td class="mdescRight">減速をするためのフラグをセット  <br /></td></tr>
+<tr class="memitem:a8db661a611391fc5835fc5698414af66" id="r_a8db661a611391fc5835fc5698414af66"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8db661a611391fc5835fc5698414af66">SetIsApplyRotateMoveDir</a> (const bool _state)</td></tr>
+<tr class="memdesc:a8db661a611391fc5835fc5698414af66"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動方向を向くように回転させるフラグを設定する  <br /></td></tr>
+<tr class="memitem:af8092d382835dbd4d525e4397636338e" id="r_af8092d382835dbd4d525e4397636338e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af8092d382835dbd4d525e4397636338e">SetIsApplySpeedY</a> (const bool _state)</td></tr>
+<tr class="memdesc:af8092d382835dbd4d525e4397636338e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y軸方向のスピードを適用するフラグを設定する  <br /></td></tr>
+<tr class="memitem:a4daf90151a3cf51452566441536e7a0d" id="r_a4daf90151a3cf51452566441536e7a0d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4daf90151a3cf51452566441536e7a0d">SetApplyType</a> (const <a class="el" href="#afd909be7421c4cbe6d2e3fb2db48723f">EApplyType</a> _type=<a class="el" href="#afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce">EApplyType::FORWARDING</a>)</td></tr>
+<tr class="memdesc:a4daf90151a3cf51452566441536e7a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">動作の適用方法を設定する  <br /></td></tr>
+<tr class="memitem:a72dd50b5373c6db015466d783d1d8526" id="r_a72dd50b5373c6db015466d783d1d8526"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a72dd50b5373c6db015466d783d1d8526">SetMoveSpeedXZRatio</a> (const float _ratio)</td></tr>
+<tr class="memdesc:a72dd50b5373c6db015466d783d1d8526"><td class="mdescLeft">&#160;</td><td class="mdescRight">XZ平面の最大速度の調整値を設定する  <br /></td></tr>
+<tr class="memitem:a9fa521f7488c670a071afd7d8081c1a8" id="r_a9fa521f7488c670a071afd7d8081c1a8"><td class="memItemLeft">const float3 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a9fa521f7488c670a071afd7d8081c1a8">GetPrevPos</a> () const</td></tr>
+<tr class="memitem:a494e98e36b7131407a9e201e38006d93" id="r_a494e98e36b7131407a9e201e38006d93"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a494e98e36b7131407a9e201e38006d93">GetMoveSpeedXZ</a> () const</td></tr>
+<tr class="memitem:a898e4b26f0799f7deb17d492703ac049" id="r_a898e4b26f0799f7deb17d492703ac049"><td class="memItemLeft">const float3 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a898e4b26f0799f7deb17d492703ac049">GetMoveDirXZ</a> () const</td></tr>
+<tr class="memitem:a18c820545e3c109585f935a5fdf92f8e" id="r_a18c820545e3c109585f935a5fdf92f8e"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a18c820545e3c109585f935a5fdf92f8e">GetMoveSpeedY</a> () const</td></tr>
+<tr class="memitem:aa869f6af945c18f7e163b93f85ca718b" id="r_aa869f6af945c18f7e163b93f85ca718b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa869f6af945c18f7e163b93f85ca718b">GetIsGroundedRaw</a> () const</td></tr>
+<tr class="memdesc:aa869f6af945c18f7e163b93f85ca718b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジャンプの制御を考慮しない生の着地状態データを取得する  <br /></td></tr>
+<tr class="memitem:aabd8023e462178ff18876b853cde059e" id="r_aabd8023e462178ff18876b853cde059e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aabd8023e462178ff18876b853cde059e">GetIsGrounded</a> () const</td></tr>
+<tr class="memdesc:aabd8023e462178ff18876b853cde059e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジャンプの制御を考慮して着地状態を取得する  <br /></td></tr>
+<tr class="memitem:ab21a19363aa658081590a3b05149b87c" id="r_ab21a19363aa658081590a3b05149b87c"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ab21a19363aa658081590a3b05149b87c">GetMoveSpeed</a> () const</td></tr>
+<tr class="memdesc:ab21a19363aa658081590a3b05149b87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">XZ平面とY軸方向の速度を考慮した、3D空間上での移動量を取得  <br /></td></tr>
+<tr class="memitem:a60b327cab480ca25f444c4ba54c10f30" id="r_a60b327cab480ca25f444c4ba54c10f30"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a60b327cab480ca25f444c4ba54c10f30">GetMoveSpeedXZMax</a> () const</td></tr>
+<tr class="memitem:a7457f16253248dba0b54c4d879f5d91d" id="r_a7457f16253248dba0b54c4d879f5d91d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7457f16253248dba0b54c4d879f5d91d">CActorMove</a> (<a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> &amp;_rGameObject)</td></tr>
+<tr class="memitem:a02a9994f03089fdf6a4d68522dbd510e" id="r_a02a9994f03089fdf6a4d68522dbd510e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a02a9994f03089fdf6a4d68522dbd510e">~CActorMove</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:aacf2a24c3e2e523709ed8f34d6da2df2" id="r_aacf2a24c3e2e523709ed8f34d6da2df2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aacf2a24c3e2e523709ed8f34d6da2df2">LoadConstant</a> (<a class="el" href="classjson11_1_1_json.html">json11::Json</a> &amp;_json)</td></tr>
+<tr class="memdesc:aacf2a24c3e2e523709ed8f34d6da2df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">定数値をJSONから読み込む  <br /></td></tr>
+<tr class="memitem:a68acab64b161371ad64ce4734d01fec1" id="r_a68acab64b161371ad64ce4734d01fec1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a68acab64b161371ad64ce4734d01fec1">UpdateJump</a> ()</td></tr>
+<tr class="memdesc:a68acab64b161371ad64ce4734d01fec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジャンプの制御  <br /></td></tr>
+<tr class="memitem:a4491b383114bfd7454f2fe10ae022bf9" id="r_a4491b383114bfd7454f2fe10ae022bf9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4491b383114bfd7454f2fe10ae022bf9">AccelGravity</a> ()</td></tr>
+<tr class="memdesc:a4491b383114bfd7454f2fe10ae022bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y軸方向の重力加速を行う  <br /></td></tr>
+<tr class="memitem:a8d6b39ced201be5ffb96d8901a975c10" id="r_a8d6b39ced201be5ffb96d8901a975c10"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8d6b39ced201be5ffb96d8901a975c10">ApplyMoveXZ</a> ()</td></tr>
+<tr class="memdesc:a8d6b39ced201be5ffb96d8901a975c10"><td class="mdescLeft">&#160;</td><td class="mdescRight">XZ平面での更新  <br /></td></tr>
+<tr class="memitem:a8902a9a8278b8d03fd0fa281847c82bc" id="r_a8902a9a8278b8d03fd0fa281847c82bc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8902a9a8278b8d03fd0fa281847c82bc">CorrectWallXZ</a> ()</td></tr>
+<tr class="memdesc:a8902a9a8278b8d03fd0fa281847c82bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">壁との判定  <br /></td></tr>
+<tr class="memitem:a9e090196ede35764f88230ce02f1246d" id="r_a9e090196ede35764f88230ce02f1246d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9e090196ede35764f88230ce02f1246d">ApplyMoveY</a> ()</td></tr>
+<tr class="memdesc:a9e090196ede35764f88230ce02f1246d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y軸の更新  <br /></td></tr>
+<tr class="memitem:a1ea0f98a9fcdafbf3b3b29180cf53f09" id="r_a1ea0f98a9fcdafbf3b3b29180cf53f09"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1ea0f98a9fcdafbf3b3b29180cf53f09">CorrectGroundY</a> ()</td></tr>
+<tr class="memdesc:a1ea0f98a9fcdafbf3b3b29180cf53f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">地面との判定(Y軸を地面の高さに補正する)  <br /></td></tr>
+<tr class="memitem:a3343093352b3b3e066c012f0aa3a1c61" id="r_a3343093352b3b3e066c012f0aa3a1c61"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3343093352b3b3e066c012f0aa3a1c61">RotateMoveDirWithSpeed</a> ()</td></tr>
+<tr class="memdesc:a3343093352b3b3e066c012f0aa3a1c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動速度によって移動方向に回転させる  <br /></td></tr>
+<tr class="memitem:ac541442521e358f57e29bbec9b192f81" id="r_ac541442521e358f57e29bbec9b192f81"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac541442521e358f57e29bbec9b192f81">ApplyMovement</a> ()</td></tr>
+<tr class="memdesc:ac541442521e358f57e29bbec9b192f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動量と回転量を適用  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:acf6f69b2edbe9e95c20eda5700eb41be" id="r_acf6f69b2edbe9e95c20eda5700eb41be"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> *&#160;</td><td class="memItemRight"><a class="el" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a></td></tr>
+<tr class="memitem:af5c6c3ffeaba0ae84d6a1d46b974d57e" id="r_af5c6c3ffeaba0ae84d6a1d46b974d57e"><td class="memItemLeft">float3&#160;</td><td class="memItemRight"><a class="el" href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">m_prevPos</a></td></tr>
+<tr class="memitem:ac6d5011bda855d7c1de54a1a58d53205" id="r_ac6d5011bda855d7c1de54a1a58d53205"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac6d5011bda855d7c1de54a1a58d53205">m_curAccelXZ</a></td></tr>
+<tr class="memitem:a5df62ce360ff7bddf30e2b97d788497d" id="r_a5df62ce360ff7bddf30e2b97d788497d"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a></td></tr>
+<tr class="memitem:ae665eb7bb54e7a2511bc2d29a7135d3e" id="r_ae665eb7bb54e7a2511bc2d29a7135d3e"><td class="memItemLeft">float3&#160;</td><td class="memItemRight"><a class="el" href="#ae665eb7bb54e7a2511bc2d29a7135d3e">m_moveDirXZ</a></td></tr>
+<tr class="memitem:a508969ddcb00f34cc4cd81ca69722e24" id="r_a508969ddcb00f34cc4cd81ca69722e24"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a508969ddcb00f34cc4cd81ca69722e24">m_curAccelY</a></td></tr>
+<tr class="memitem:aaee890efcc0c31fa055894ea7aaf3e3d" id="r_aaee890efcc0c31fa055894ea7aaf3e3d"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a></td></tr>
+<tr class="memitem:a9d92a7dd4fb1050d1d9235e6b0a8d772" id="r_a9d92a7dd4fb1050d1d9235e6b0a8d772"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a9d92a7dd4fb1050d1d9235e6b0a8d772">m_moveSpeedXZMaxRatio</a></td></tr>
+<tr class="memitem:ac8f747f8bee4b3c4fbde2ae0fbd10405" id="r_ac8f747f8bee4b3c4fbde2ae0fbd10405"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac8f747f8bee4b3c4fbde2ae0fbd10405">m_isGrounded</a></td></tr>
+<tr class="memitem:a9ad199b234c23d406e307158af28f7de" id="r_a9ad199b234c23d406e307158af28f7de"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9ad199b234c23d406e307158af28f7de">m_isCollideWall</a></td></tr>
+<tr class="memitem:ab09c720aceee03cc02af29df7b89c47f" id="r_ab09c720aceee03cc02af29df7b89c47f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab09c720aceee03cc02af29df7b89c47f">m_isJumpControl</a></td></tr>
+<tr class="memitem:a3949fbdf691f63775c52bc8621be4ad8" id="r_a3949fbdf691f63775c52bc8621be4ad8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3949fbdf691f63775c52bc8621be4ad8">m_isJumpFrame</a></td></tr>
+<tr class="memitem:ae99da703b4fbc852a7c1fb665cf425c0" id="r_ae99da703b4fbc852a7c1fb665cf425c0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae99da703b4fbc852a7c1fb665cf425c0">m_isReleaseGround</a></td></tr>
+<tr class="memitem:ae5efbcaf2ca626840be6fdbfd7e12d29" id="r_ae5efbcaf2ca626840be6fdbfd7e12d29"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae5efbcaf2ca626840be6fdbfd7e12d29">m_isApplyDeccel</a></td></tr>
+<tr class="memitem:a62c7913a1ea0ce51d76e72ae03a08000" id="r_a62c7913a1ea0ce51d76e72ae03a08000"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a62c7913a1ea0ce51d76e72ae03a08000">m_isApplyRotateToMoveDir</a></td></tr>
+<tr class="memitem:aa6befb97cfdd402c9c0172b91f061c01" id="r_aa6befb97cfdd402c9c0172b91f061c01"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa6befb97cfdd402c9c0172b91f061c01">m_isApplySpeedY</a></td></tr>
+<tr class="memitem:a0aae7bfa83e8a23979700265eafab38b" id="r_a0aae7bfa83e8a23979700265eafab38b"><td class="memItemLeft"><a class="el" href="#afd909be7421c4cbe6d2e3fb2db48723f">EApplyType</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0aae7bfa83e8a23979700265eafab38b">m_applyType</a></td></tr>
+<tr class="memitem:a3f847f5862b8ba7dae9666130ce8ae74" id="r_a3f847f5862b8ba7dae9666130ce8ae74"><td class="memItemLeft"><a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3f847f5862b8ba7dae9666130ce8ae74">m_colGroundIndex</a></td></tr>
+<tr class="memitem:a2f5e95cd4c076835bddf29b16ab31fad" id="r_a2f5e95cd4c076835bddf29b16ab31fad"><td class="memItemLeft"><a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2f5e95cd4c076835bddf29b16ab31fad">m_colWallIndex</a></td></tr>
+<tr class="memitem:a967606819bb48749bf7e3cdeea7ae0d0" id="r_a967606819bb48749bf7e3cdeea7ae0d0"><td class="memItemLeft"><a class="el" href="class_n_collision_1_1_c_mesh.html">NCollision::CMesh</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a967606819bb48749bf7e3cdeea7ae0d0">m_pColMeshGround</a></td></tr>
+<tr class="memitem:a9674152022e1ebe84c1d25428b40d824" id="r_a9674152022e1ebe84c1d25428b40d824"><td class="memItemLeft"><a class="el" href="class_n_collision_1_1_c_mesh.html">NCollision::CMesh</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a9674152022e1ebe84c1d25428b40d824">m_pColMeshWall</a></td></tr>
+<tr class="memitem:afda75ff8a3a4dded7a73a2f38a5f8b69" id="r_afda75ff8a3a4dded7a73a2f38a5f8b69"><td class="memItemLeft"><a class="el" href="class_n_game_1_1_c_actor_move_1_1_c_actor_body.html">CActorBody</a>&#160;</td><td class="memItemRight"><a class="el" href="#afda75ff8a3a4dded7a73a2f38a5f8b69">m_body</a></td></tr>
+<tr class="memitem:a005f1c18af1f3d189a07f3c65017383d" id="r_a005f1c18af1f3d189a07f3c65017383d"><td class="memItemLeft">float3&#160;</td><td class="memItemRight"><a class="el" href="#a005f1c18af1f3d189a07f3c65017383d">m_posAfterApplyMoveXZ</a></td></tr>
+<tr class="memitem:a20ef6c9ae9c8fa6370a85ff28c641bdc" id="r_a20ef6c9ae9c8fa6370a85ff28c641bdc"><td class="memItemLeft">float3&#160;</td><td class="memItemRight"><a class="el" href="#a20ef6c9ae9c8fa6370a85ff28c641bdc">m_posAfterApplyMoveY</a></td></tr>
+<tr class="memitem:a8bfd9708bd77ce33dda25577b3a7a28a" id="r_a8bfd9708bd77ce33dda25577b3a7a28a"><td class="memItemLeft">float3&#160;</td><td class="memItemRight"><a class="el" href="#a8bfd9708bd77ce33dda25577b3a7a28a">m_posAfterUpdate</a></td></tr>
+<tr class="memitem:afe4ddaed76e0a53eed0ef5a010baa143" id="r_afe4ddaed76e0a53eed0ef5a010baa143"><td class="memItemLeft"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&#160;</td><td class="memItemRight"><a class="el" href="#afe4ddaed76e0a53eed0ef5a010baa143">m_curMatTrans</a></td></tr>
+<tr class="memitem:a9281870af900f2bb79f9f4b7a2c87da3" id="r_a9281870af900f2bb79f9f4b7a2c87da3"><td class="memItemLeft"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&#160;</td><td class="memItemRight"><a class="el" href="#a9281870af900f2bb79f9f4b7a2c87da3">m_curMatRot</a></td></tr>
+<tr class="memitem:ad2ee693a944bad3c53be8e12cf0e823c" id="r_ad2ee693a944bad3c53be8e12cf0e823c"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad2ee693a944bad3c53be8e12cf0e823c">m_constMoveSpeedXZMax</a></td></tr>
+<tr class="memitem:aa180a61687fb981755a57d61df009932" id="r_aa180a61687fb981755a57d61df009932"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aa180a61687fb981755a57d61df009932">m_constMoveSpeedXZAcc</a></td></tr>
+<tr class="memitem:a1cc3a7f5a9fdb638edd39e35ac5f2243" id="r_a1cc3a7f5a9fdb638edd39e35ac5f2243"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1cc3a7f5a9fdb638edd39e35ac5f2243">m_constMoveSpeedXZDecRatio</a></td></tr>
+<tr class="memitem:a702cb49966d41c764491a7eab0741cc6" id="r_a702cb49966d41c764491a7eab0741cc6"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a702cb49966d41c764491a7eab0741cc6">m_constMoveSpeedXZDecRatioAir</a></td></tr>
+<tr class="memitem:a1a7fc3b776b91694c4f4294b6b9f8521" id="r_a1a7fc3b776b91694c4f4294b6b9f8521"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1a7fc3b776b91694c4f4294b6b9f8521">m_constFallSpeedMax</a></td></tr>
+<tr class="memitem:a4abc75139a621d8521dbde4ccce41542" id="r_a4abc75139a621d8521dbde4ccce41542"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a4abc75139a621d8521dbde4ccce41542">m_constJumpSpeedMax</a></td></tr>
+<tr class="memitem:af837a74fafcd0a5470ef3722ce31876d" id="r_af837a74fafcd0a5470ef3722ce31876d"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#af837a74fafcd0a5470ef3722ce31876d">m_constGravityScale</a></td></tr>
+<tr class="memitem:a3f8e7b778d1fa65927abd4ee5a7499fd" id="r_a3f8e7b778d1fa65927abd4ee5a7499fd"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a3f8e7b778d1fa65927abd4ee5a7499fd">m_constDeltaGravity</a></td></tr>
+<tr class="memitem:a94779f2dcdf6e0ed940d33f89f9af2cf" id="r_a94779f2dcdf6e0ed940d33f89f9af2cf"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a94779f2dcdf6e0ed940d33f89f9af2cf">m_constRotSpeedMaxDeg</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>Actorクラスの移動を管理するクラス </p>
+<dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">バグ</a></b></dt><dd>軽微なバグ<ul>
+<li>当たり判定の描画が1フレームずれて、初期化後に原点に描画されてしまう。 　実際にあたり判定がとられているかは要検証 </li>
+</ul>
+</dd></dl>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型メンバ詳解</h2>
+<a id="afd909be7421c4cbe6d2e3fb2db48723f" name="afd909be7421c4cbe6d2e3fb2db48723f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd909be7421c4cbe6d2e3fb2db48723f">&#9670;&#160;</a></span>EApplyType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#afd909be7421c4cbe6d2e3fb2db48723f">NGame::CActorMove::EApplyType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce" name="afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce"></a>FORWARDING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afd909be7421c4cbe6d2e3fb2db48723fa4c5d06b02c97731aaa976179c62dcf76" name="afd909be7421c4cbe6d2e3fb2db48723fa4c5d06b02c97731aaa976179c62dcf76"></a>DIRECT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>                              {</div>
+<div class="line"><span class="lineno">   24</span>            FORWARDING, <span class="comment">// 前方を向くように進行する(回転と移動が連動する)(移動などの動作に使用)</span></div>
+<div class="line"><span class="lineno">   25</span>            DIRECT,     <span class="comment">// MoveDir方向を向き移動方向に移動(回転と移動が別々に動作する)(ノックバックなどの動作に使用)</span></div>
+<div class="line"><span class="lineno">   26</span>        };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a7457f16253248dba0b54c4d879f5d91d" name="a7457f16253248dba0b54c4d879f5d91d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7457f16253248dba0b54c4d879f5d91d">&#9670;&#160;</a></span>CActorMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NGame::CActorMove::CActorMove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rGameObject</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  101</span>                                                           : </div>
+<div class="line"><span class="lineno">  102</span>        <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>(&amp;_rGameObject),</div>
+<div class="line"><span class="lineno">  103</span>        <a class="code hl_variable" href="#ac6d5011bda855d7c1de54a1a58d53205">m_curAccelXZ</a>(0),</div>
+<div class="line"><span class="lineno">  104</span>        <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a>(0),</div>
+<div class="line"><span class="lineno">  105</span>        <a class="code hl_variable" href="#a508969ddcb00f34cc4cd81ca69722e24">m_curAccelY</a>(0),</div>
+<div class="line"><span class="lineno">  106</span>        <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a>(0),</div>
+<div class="line"><span class="lineno">  107</span>        <a class="code hl_variable" href="#a9d92a7dd4fb1050d1d9235e6b0a8d772">m_moveSpeedXZMaxRatio</a>(1),</div>
+<div class="line"><span class="lineno">  108</span>        <a class="code hl_variable" href="#ac8f747f8bee4b3c4fbde2ae0fbd10405">m_isGrounded</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  109</span>        <a class="code hl_variable" href="#a9ad199b234c23d406e307158af28f7de">m_isCollideWall</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  110</span>        <a class="code hl_variable" href="#ab09c720aceee03cc02af29df7b89c47f">m_isJumpControl</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  111</span>        <a class="code hl_variable" href="#a3949fbdf691f63775c52bc8621be4ad8">m_isJumpFrame</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  112</span>        <a class="code hl_variable" href="#ae99da703b4fbc852a7c1fb665cf425c0">m_isReleaseGround</a>(<span class="keyword">true</span>),    <span class="comment">// 初期状態で離れている</span></div>
+<div class="line"><span class="lineno">  113</span>        <a class="code hl_variable" href="#ae5efbcaf2ca626840be6fdbfd7e12d29">m_isApplyDeccel</a>(<span class="keyword">true</span>),</div>
+<div class="line"><span class="lineno">  114</span>        <a class="code hl_variable" href="#a62c7913a1ea0ce51d76e72ae03a08000">m_isApplyRotateToMoveDir</a>(<span class="keyword">true</span>),</div>
+<div class="line"><span class="lineno">  115</span>        <a class="code hl_variable" href="#aa6befb97cfdd402c9c0172b91f061c01">m_isApplySpeedY</a>(<span class="keyword">true</span>),</div>
+<div class="line"><span class="lineno">  116</span>        <a class="code hl_variable" href="#a0aae7bfa83e8a23979700265eafab38b">m_applyType</a>(<a class="code hl_enumvalue" href="#afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce">EApplyType::FORWARDING</a>),</div>
+<div class="line"><span class="lineno">  117</span>        <a class="code hl_variable" href="#a3f847f5862b8ba7dae9666130ce8ae74">m_colGroundIndex</a>(<a class="code hl_enumvalue" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba535bb0ca9f07f199f69fe84a37d1f85c">NCollision::EStageCollisionIndex::GROUND_MAIN</a>),</div>
+<div class="line"><span class="lineno">  118</span>        <a class="code hl_variable" href="#a2f5e95cd4c076835bddf29b16ab31fad">m_colWallIndex</a>(<a class="code hl_enumvalue" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba8142329bd79633cc855dac9e1d8e3875">NCollision::EStageCollisionIndex::WALL_MAIN</a>),</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="#a967606819bb48749bf7e3cdeea7ae0d0">m_pColMeshGround</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_variable" href="#a9674152022e1ebe84c1d25428b40d824">m_pColMeshWall</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  121</span>        <a class="code hl_variable" href="#ad2ee693a944bad3c53be8e12cf0e823c">m_constMoveSpeedXZMax</a>(0),</div>
+<div class="line"><span class="lineno">  122</span>        <a class="code hl_variable" href="#aa180a61687fb981755a57d61df009932">m_constMoveSpeedXZAcc</a>(0),</div>
+<div class="line"><span class="lineno">  123</span>        <a class="code hl_variable" href="#a1cc3a7f5a9fdb638edd39e35ac5f2243">m_constMoveSpeedXZDecRatio</a>(0),</div>
+<div class="line"><span class="lineno">  124</span>        <a class="code hl_variable" href="#a702cb49966d41c764491a7eab0741cc6">m_constMoveSpeedXZDecRatioAir</a>(0),</div>
+<div class="line"><span class="lineno">  125</span>        <a class="code hl_variable" href="#a1a7fc3b776b91694c4f4294b6b9f8521">m_constFallSpeedMax</a>(0),</div>
+<div class="line"><span class="lineno">  126</span>        <a class="code hl_variable" href="#a4abc75139a621d8521dbde4ccce41542">m_constJumpSpeedMax</a>(0),</div>
+<div class="line"><span class="lineno">  127</span>        <a class="code hl_variable" href="#af837a74fafcd0a5470ef3722ce31876d">m_constGravityScale</a>(0),</div>
+<div class="line"><span class="lineno">  128</span>        <a class="code hl_variable" href="#a3f8e7b778d1fa65927abd4ee5a7499fd">m_constDeltaGravity</a>(0)</div>
+<div class="line"><span class="lineno">  129</span>    {</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span> </div>
+<div class="line"><span class="lineno">  132</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a0aae7bfa83e8a23979700265eafab38b"><div class="ttname"><a href="#a0aae7bfa83e8a23979700265eafab38b">NGame::CActorMove::m_applyType</a></div><div class="ttdeci">EApplyType m_applyType</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:193</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a1a7fc3b776b91694c4f4294b6b9f8521"><div class="ttname"><a href="#a1a7fc3b776b91694c4f4294b6b9f8521">NGame::CActorMove::m_constFallSpeedMax</a></div><div class="ttdeci">float m_constFallSpeedMax</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:217</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a1cc3a7f5a9fdb638edd39e35ac5f2243"><div class="ttname"><a href="#a1cc3a7f5a9fdb638edd39e35ac5f2243">NGame::CActorMove::m_constMoveSpeedXZDecRatio</a></div><div class="ttdeci">float m_constMoveSpeedXZDecRatio</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:215</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a2f5e95cd4c076835bddf29b16ab31fad"><div class="ttname"><a href="#a2f5e95cd4c076835bddf29b16ab31fad">NGame::CActorMove::m_colWallIndex</a></div><div class="ttdeci">NCollision::EStageCollisionIndex m_colWallIndex</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:197</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a3949fbdf691f63775c52bc8621be4ad8"><div class="ttname"><a href="#a3949fbdf691f63775c52bc8621be4ad8">NGame::CActorMove::m_isJumpFrame</a></div><div class="ttdeci">bool m_isJumpFrame</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:186</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a3f847f5862b8ba7dae9666130ce8ae74"><div class="ttname"><a href="#a3f847f5862b8ba7dae9666130ce8ae74">NGame::CActorMove::m_colGroundIndex</a></div><div class="ttdeci">NCollision::EStageCollisionIndex m_colGroundIndex</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:196</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a3f8e7b778d1fa65927abd4ee5a7499fd"><div class="ttname"><a href="#a3f8e7b778d1fa65927abd4ee5a7499fd">NGame::CActorMove::m_constDeltaGravity</a></div><div class="ttdeci">float m_constDeltaGravity</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:221</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a4abc75139a621d8521dbde4ccce41542"><div class="ttname"><a href="#a4abc75139a621d8521dbde4ccce41542">NGame::CActorMove::m_constJumpSpeedMax</a></div><div class="ttdeci">float m_constJumpSpeedMax</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:218</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a508969ddcb00f34cc4cd81ca69722e24"><div class="ttname"><a href="#a508969ddcb00f34cc4cd81ca69722e24">NGame::CActorMove::m_curAccelY</a></div><div class="ttdeci">float m_curAccelY</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:175</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a5df62ce360ff7bddf30e2b97d788497d"><div class="ttname"><a href="#a5df62ce360ff7bddf30e2b97d788497d">NGame::CActorMove::m_moveSpeedXZ</a></div><div class="ttdeci">float m_moveSpeedXZ</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:173</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a62c7913a1ea0ce51d76e72ae03a08000"><div class="ttname"><a href="#a62c7913a1ea0ce51d76e72ae03a08000">NGame::CActorMove::m_isApplyRotateToMoveDir</a></div><div class="ttdeci">bool m_isApplyRotateToMoveDir</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:191</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a702cb49966d41c764491a7eab0741cc6"><div class="ttname"><a href="#a702cb49966d41c764491a7eab0741cc6">NGame::CActorMove::m_constMoveSpeedXZDecRatioAir</a></div><div class="ttdeci">float m_constMoveSpeedXZDecRatioAir</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:216</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a9674152022e1ebe84c1d25428b40d824"><div class="ttname"><a href="#a9674152022e1ebe84c1d25428b40d824">NGame::CActorMove::m_pColMeshWall</a></div><div class="ttdeci">NCollision::CMesh * m_pColMeshWall</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:200</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a967606819bb48749bf7e3cdeea7ae0d0"><div class="ttname"><a href="#a967606819bb48749bf7e3cdeea7ae0d0">NGame::CActorMove::m_pColMeshGround</a></div><div class="ttdeci">NCollision::CMesh * m_pColMeshGround</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:199</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a9ad199b234c23d406e307158af28f7de"><div class="ttname"><a href="#a9ad199b234c23d406e307158af28f7de">NGame::CActorMove::m_isCollideWall</a></div><div class="ttdeci">bool m_isCollideWall</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:183</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a9d92a7dd4fb1050d1d9235e6b0a8d772"><div class="ttname"><a href="#a9d92a7dd4fb1050d1d9235e6b0a8d772">NGame::CActorMove::m_moveSpeedXZMaxRatio</a></div><div class="ttdeci">float m_moveSpeedXZMaxRatio</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:179</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_aa180a61687fb981755a57d61df009932"><div class="ttname"><a href="#aa180a61687fb981755a57d61df009932">NGame::CActorMove::m_constMoveSpeedXZAcc</a></div><div class="ttdeci">float m_constMoveSpeedXZAcc</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:214</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_aa6befb97cfdd402c9c0172b91f061c01"><div class="ttname"><a href="#aa6befb97cfdd402c9c0172b91f061c01">NGame::CActorMove::m_isApplySpeedY</a></div><div class="ttdeci">bool m_isApplySpeedY</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:192</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_aaee890efcc0c31fa055894ea7aaf3e3d"><div class="ttname"><a href="#aaee890efcc0c31fa055894ea7aaf3e3d">NGame::CActorMove::m_moveSpeedY</a></div><div class="ttdeci">float m_moveSpeedY</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:176</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_ab09c720aceee03cc02af29df7b89c47f"><div class="ttname"><a href="#ab09c720aceee03cc02af29df7b89c47f">NGame::CActorMove::m_isJumpControl</a></div><div class="ttdeci">bool m_isJumpControl</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:185</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_ac6d5011bda855d7c1de54a1a58d53205"><div class="ttname"><a href="#ac6d5011bda855d7c1de54a1a58d53205">NGame::CActorMove::m_curAccelXZ</a></div><div class="ttdeci">float m_curAccelXZ</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:172</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_ac8f747f8bee4b3c4fbde2ae0fbd10405"><div class="ttname"><a href="#ac8f747f8bee4b3c4fbde2ae0fbd10405">NGame::CActorMove::m_isGrounded</a></div><div class="ttdeci">bool m_isGrounded</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:182</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_acf6f69b2edbe9e95c20eda5700eb41be"><div class="ttname"><a href="#acf6f69b2edbe9e95c20eda5700eb41be">NGame::CActorMove::m_pGameObject</a></div><div class="ttdeci">NObject::CGameObject * m_pGameObject</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:168</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_ad2ee693a944bad3c53be8e12cf0e823c"><div class="ttname"><a href="#ad2ee693a944bad3c53be8e12cf0e823c">NGame::CActorMove::m_constMoveSpeedXZMax</a></div><div class="ttdeci">float m_constMoveSpeedXZMax</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:213</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_ae5efbcaf2ca626840be6fdbfd7e12d29"><div class="ttname"><a href="#ae5efbcaf2ca626840be6fdbfd7e12d29">NGame::CActorMove::m_isApplyDeccel</a></div><div class="ttdeci">bool m_isApplyDeccel</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:190</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_ae99da703b4fbc852a7c1fb665cf425c0"><div class="ttname"><a href="#ae99da703b4fbc852a7c1fb665cf425c0">NGame::CActorMove::m_isReleaseGround</a></div><div class="ttdeci">bool m_isReleaseGround</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:187</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_af837a74fafcd0a5470ef3722ce31876d"><div class="ttname"><a href="#af837a74fafcd0a5470ef3722ce31876d">NGame::CActorMove::m_constGravityScale</a></div><div class="ttdeci">float m_constGravityScale</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:220</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce"><div class="ttname"><a href="#afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce">NGame::CActorMove::EApplyType::FORWARDING</a></div><div class="ttdeci">@ FORWARDING</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:24</div></div>
+<div class="ttc" id="anamespace_n_collision_html_a51ad698afc6db73a5076a4d31706ad3ba535bb0ca9f07f199f69fe84a37d1f85c"><div class="ttname"><a href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba535bb0ca9f07f199f69fe84a37d1f85c">NCollision::EStageCollisionIndex::GROUND_MAIN</a></div><div class="ttdeci">@ GROUND_MAIN</div><div class="ttdef"><b>Definition</b> Collision_Manager.h:28</div></div>
+<div class="ttc" id="anamespace_n_collision_html_a51ad698afc6db73a5076a4d31706ad3ba8142329bd79633cc855dac9e1d8e3875"><div class="ttname"><a href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba8142329bd79633cc855dac9e1d8e3875">NCollision::EStageCollisionIndex::WALL_MAIN</a></div><div class="ttdeci">@ WALL_MAIN</div><div class="ttdef"><b>Definition</b> Collision_Manager.h:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a02a9994f03089fdf6a4d68522dbd510e" name="a02a9994f03089fdf6a4d68522dbd510e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02a9994f03089fdf6a4d68522dbd510e">&#9670;&#160;</a></span>~CActorMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NGame::CActorMove::~CActorMove </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  135</span>    {</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a4491b383114bfd7454f2fe10ae022bf9" name="a4491b383114bfd7454f2fe10ae022bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4491b383114bfd7454f2fe10ae022bf9">&#9670;&#160;</a></span>AccelGravity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::AccelGravity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Y軸方向の重力加速を行う </p>
+<div class="fragment"><div class="line"><span class="lineno">  349</span>    {</div>
+<div class="line"><span class="lineno">  350</span>        <a class="code hl_variable" href="#a508969ddcb00f34cc4cd81ca69722e24">m_curAccelY</a> += <a class="code hl_variable" href="#a3f8e7b778d1fa65927abd4ee5a7499fd">m_constDeltaGravity</a>;</div>
+<div class="line"><span class="lineno">  351</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a52900c809dec2ec81f96dc8036e0c064" name="a52900c809dec2ec81f96dc8036e0c064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52900c809dec2ec81f96dc8036e0c064">&#9670;&#160;</a></span>AccelXZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::AccelXZ </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>_ratio</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XZ方向の加速 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_ratio</td><td>加速度(読み込み済みの定数値)の適用量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  216</span>    {</div>
+<div class="line"><span class="lineno">  217</span>        <span class="comment">// 最大値でクランプ</span></div>
+<div class="line"><span class="lineno">  218</span>        <span class="keywordflow">if</span> (_ratio &gt; 1.0f) {</div>
+<div class="line"><span class="lineno">  219</span>            _ratio = 1.0f;</div>
+<div class="line"><span class="lineno">  220</span>        }</div>
+<div class="line"><span class="lineno">  221</span>        <span class="comment">// 最小値でクランプ</span></div>
+<div class="line"><span class="lineno">  222</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_ratio &lt; -1.0f) {</div>
+<div class="line"><span class="lineno">  223</span>            _ratio = -1.0f;</div>
+<div class="line"><span class="lineno">  224</span>        }</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>        <span class="comment">// 加速度を設定</span></div>
+<div class="line"><span class="lineno">  227</span>        <a class="code hl_variable" href="#ac6d5011bda855d7c1de54a1a58d53205">m_curAccelXZ</a> += <a class="code hl_variable" href="#aa180a61687fb981755a57d61df009932">m_constMoveSpeedXZAcc</a> * _ratio;</div>
+<div class="line"><span class="lineno">  228</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a34fa14fcd63b18e0f651c9a96b9d312a" name="a34fa14fcd63b18e0f651c9a96b9d312a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34fa14fcd63b18e0f651c9a96b9d312a">&#9670;&#160;</a></span>AccelXZDirect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::AccelXZDirect </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_accelDelta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XZ方向の加速量を直接指定する </p>
+<div class="fragment"><div class="line"><span class="lineno">  231</span>    {</div>
+<div class="line"><span class="lineno">  232</span>        <a class="code hl_variable" href="#ac6d5011bda855d7c1de54a1a58d53205">m_curAccelXZ</a> += _accelDelta;</div>
+<div class="line"><span class="lineno">  233</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3ac28fda2ef857a3950cd6fbacdf2315" name="a3ac28fda2ef857a3950cd6fbacdf2315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ac28fda2ef857a3950cd6fbacdf2315">&#9670;&#160;</a></span>AccelYDirect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::AccelYDirect </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_accelDelta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Y方向の加速量を直接指定する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_accelDelta</td><td>加速量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  236</span>    {</div>
+<div class="line"><span class="lineno">  237</span>        <a class="code hl_variable" href="#a508969ddcb00f34cc4cd81ca69722e24">m_curAccelY</a> += _accelDelta;</div>
+<div class="line"><span class="lineno">  238</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac541442521e358f57e29bbec9b192f81" name="ac541442521e358f57e29bbec9b192f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac541442521e358f57e29bbec9b192f81">&#9670;&#160;</a></span>ApplyMovement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::ApplyMovement </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移動量と回転量を適用 </p>
+<div class="fragment"><div class="line"><span class="lineno">  560</span>    {</div>
+<div class="line"><span class="lineno">  561</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0aae7bfa83e8a23979700265eafab38b">m_applyType</a> == <a class="code hl_enumvalue" href="#afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce">EApplyType::FORWARDING</a>) {</div>
+<div class="line"><span class="lineno">  562</span>            <span class="comment">// Y軸移動量はそのまま適用する</span></div>
+<div class="line"><span class="lineno">  563</span>            <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>  finalY = <a class="code hl_variable" href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">m_prevPos</a>;</div>
+<div class="line"><span class="lineno">  564</span>            finalY.y = <a class="code hl_variable" href="#a8bfd9708bd77ce33dda25577b3a7a28a">m_posAfterUpdate</a>.y;</div>
+<div class="line"><span class="lineno">  565</span>            <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().SetPos(finalY);</div>
+<div class="line"><span class="lineno">  566</span> </div>
+<div class="line"><span class="lineno">  567</span>            <span class="comment">// 移動量</span></div>
+<div class="line"><span class="lineno">  568</span>            <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>  mask(1, 0, 1);</div>
+<div class="line"><span class="lineno">  569</span>            <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>  curMoveXZ = (<a class="code hl_variable" href="#a8bfd9708bd77ce33dda25577b3a7a28a">m_posAfterUpdate</a> - <a class="code hl_variable" href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">m_prevPos</a>) * mask;</div>
+<div class="line"><span class="lineno">  570</span> </div>
+<div class="line"><span class="lineno">  571</span>            <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>  forward(0, 0, 1);</div>
+<div class="line"><span class="lineno">  572</span>            <span class="keywordtype">float</span>   finalSpeedXZ = curMoveXZ.GetLength();</div>
+<div class="line"><span class="lineno">  573</span> </div>
+<div class="line"><span class="lineno">  574</span>            <span class="comment">// 移動量を行列で取得</span></div>
+<div class="line"><span class="lineno">  575</span>            <a class="code hl_function" href="namespace_n_math.html#a85ff876cdbdb6be183bf013d67f36705">NMath::MakeMatrixTranslation</a>(<a class="code hl_variable" href="#afe4ddaed76e0a53eed0ef5a010baa143">m_curMatTrans</a>, forward * finalSpeedXZ);</div>
+<div class="line"><span class="lineno">  576</span> </div>
+<div class="line"><span class="lineno">  577</span>            <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  578</span>            NMath::SMatrix44    matCur = <a class="code hl_variable" href="#a9281870af900f2bb79f9f4b7a2c87da3">m_curMatRot</a> * <a class="code hl_variable" href="#afe4ddaed76e0a53eed0ef5a010baa143">m_curMatTrans</a>;</div>
+<div class="line"><span class="lineno">  579</span>            NMath::SMatrix44    matLocal = <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().GetLocalMatrix();</div>
+<div class="line"><span class="lineno">  580</span>            matLocal = matCur * matLocal;</div>
+<div class="line"><span class="lineno">  581</span>            <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().SetLocalMatrix(matLocal);</div>
+<div class="line"><span class="lineno">  582</span> </div>
+<div class="line"><span class="lineno">  583</span>            <span class="comment">// 補正後の値を設定</span></div>
+<div class="line"><span class="lineno">  584</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9ad199b234c23d406e307158af28f7de">m_isCollideWall</a>) {</div>
+<div class="line"><span class="lineno">  585</span>                <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().SetPos(<a class="code hl_variable" href="#a8bfd9708bd77ce33dda25577b3a7a28a">m_posAfterUpdate</a>);</div>
+<div class="line"><span class="lineno">  586</span>            }</div>
+<div class="line"><span class="lineno">  587</span>        }</div>
+<div class="line"><span class="lineno">  588</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0aae7bfa83e8a23979700265eafab38b">m_applyType</a> == <a class="code hl_enumvalue" href="#afd909be7421c4cbe6d2e3fb2db48723fa4c5d06b02c97731aaa976179c62dcf76">EApplyType::DIRECT</a>) {</div>
+<div class="line"><span class="lineno">  589</span>            <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().SetPos(<a class="code hl_variable" href="#a8bfd9708bd77ce33dda25577b3a7a28a">m_posAfterUpdate</a>);</div>
+<div class="line"><span class="lineno">  590</span> </div>
+<div class="line"><span class="lineno">  591</span>            NMath::SMatrix44    matLocal = <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().GetLocalMatrix();</div>
+<div class="line"><span class="lineno">  592</span>            NMath::SMatrix44    matNew = <a class="code hl_variable" href="#a9281870af900f2bb79f9f4b7a2c87da3">m_curMatRot</a> * matLocal;</div>
+<div class="line"><span class="lineno">  593</span>            <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().SetLocalMatrix(matNew);</div>
+<div class="line"><span class="lineno">  594</span>        }</div>
+<div class="line"><span class="lineno">  595</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a8bfd9708bd77ce33dda25577b3a7a28a"><div class="ttname"><a href="#a8bfd9708bd77ce33dda25577b3a7a28a">NGame::CActorMove::m_posAfterUpdate</a></div><div class="ttdeci">float3 m_posAfterUpdate</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:207</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a9281870af900f2bb79f9f4b7a2c87da3"><div class="ttname"><a href="#a9281870af900f2bb79f9f4b7a2c87da3">NGame::CActorMove::m_curMatRot</a></div><div class="ttdeci">NMath::SMatrix44 m_curMatRot</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:210</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_af5c6c3ffeaba0ae84d6a1d46b974d57e"><div class="ttname"><a href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">NGame::CActorMove::m_prevPos</a></div><div class="ttdeci">float3 m_prevPos</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:171</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_afd909be7421c4cbe6d2e3fb2db48723fa4c5d06b02c97731aaa976179c62dcf76"><div class="ttname"><a href="#afd909be7421c4cbe6d2e3fb2db48723fa4c5d06b02c97731aaa976179c62dcf76">NGame::CActorMove::EApplyType::DIRECT</a></div><div class="ttdeci">@ DIRECT</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:25</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_afe4ddaed76e0a53eed0ef5a010baa143"><div class="ttname"><a href="#afe4ddaed76e0a53eed0ef5a010baa143">NGame::CActorMove::m_curMatTrans</a></div><div class="ttdeci">NMath::SMatrix44 m_curMatTrans</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:209</div></div>
+<div class="ttc" id="anamespace_n_common_html_ad01ce78d871cd1e3b54d317b707787bf"><div class="ttname"><a href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">NCommon::float3</a></div><div class="ttdeci">NMath::SVector3 float3</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:20</div></div>
+<div class="ttc" id="anamespace_n_math_html_a85ff876cdbdb6be183bf013d67f36705"><div class="ttname"><a href="namespace_n_math.html#a85ff876cdbdb6be183bf013d67f36705">NMath::MakeMatrixTranslation</a></div><div class="ttdeci">void MakeMatrixTranslation(SMatrix44 &amp;_rDest, const float _x, const float _y, const float _z)</div><div class="ttdoc">平行移動行列を作成する</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:18</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8d6b39ced201be5ffb96d8901a975c10" name="a8d6b39ced201be5ffb96d8901a975c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d6b39ced201be5ffb96d8901a975c10">&#9670;&#160;</a></span>ApplyMoveXZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::ApplyMoveXZ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>XZ平面での更新 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>インデントを増やさないためここで行った</dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  354</span>    {</div>
+<div class="line"><span class="lineno">  355</span>        <span class="comment">// 加速量がない場合は減速する</span></div>
+<div class="line"><span class="lineno">  356</span>        <span class="keywordflow">if</span> (abs(<a class="code hl_variable" href="#ac6d5011bda855d7c1de54a1a58d53205">m_curAccelXZ</a>) &lt; FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  357</span> </div>
+<div class="line"><span class="lineno">  358</span>            <span class="keywordtype">float</span> decRatio = 1.0f;</div>
+<div class="line"><span class="lineno">  359</span> </div>
+<div class="line"><span class="lineno">  360</span>            <span class="comment">// 着地状態により減速率を変える</span></div>
+<div class="line"><span class="lineno">  361</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ac8f747f8bee4b3c4fbde2ae0fbd10405">m_isGrounded</a>) {</div>
+<div class="line"><span class="lineno">  362</span>                decRatio = <a class="code hl_variable" href="#a1cc3a7f5a9fdb638edd39e35ac5f2243">m_constMoveSpeedXZDecRatio</a>;</div>
+<div class="line"><span class="lineno">  363</span>            }</div>
+<div class="line"><span class="lineno">  364</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  365</span>                decRatio = <a class="code hl_variable" href="#a702cb49966d41c764491a7eab0741cc6">m_constMoveSpeedXZDecRatioAir</a>;</div>
+<div class="line"><span class="lineno">  366</span>            }</div>
+<div class="line"><span class="lineno">  367</span> </div>
+<div class="line"><span class="lineno">  368</span>            <span class="comment">// 減速を適用するかを判断する</span></div>
+<div class="line"><span class="lineno">  370</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#ae5efbcaf2ca626840be6fdbfd7e12d29">m_isApplyDeccel</a>) {</div>
+<div class="line"><span class="lineno">  371</span>                decRatio = 1.0f;</div>
+<div class="line"><span class="lineno">  372</span>            }</div>
+<div class="line"><span class="lineno">  373</span> </div>
+<div class="line"><span class="lineno">  374</span>            <span class="comment">// 原則を適用</span></div>
+<div class="line"><span class="lineno">  375</span>            <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> *= decRatio;</div>
+<div class="line"><span class="lineno">  376</span> </div>
+<div class="line"><span class="lineno">  377</span>            <span class="comment">// 停止を判断</span></div>
+<div class="line"><span class="lineno">  378</span>            <span class="keywordflow">if</span> (abs(<a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a>) &lt; MOVE_SPEED_MIN) {</div>
+<div class="line"><span class="lineno">  379</span>                <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> = 0;</div>
+<div class="line"><span class="lineno">  380</span>            }</div>
+<div class="line"><span class="lineno">  381</span>        }</div>
+<div class="line"><span class="lineno">  382</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  383</span>            <span class="comment">// 加速度を移動量に適用</span></div>
+<div class="line"><span class="lineno">  384</span>            <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> += <a class="code hl_variable" href="#ac6d5011bda855d7c1de54a1a58d53205">m_curAccelXZ</a>;</div>
+<div class="line"><span class="lineno">  385</span> </div>
+<div class="line"><span class="lineno">  386</span>            <span class="comment">// 最大側でクランプ</span></div>
+<div class="line"><span class="lineno">  387</span>            <span class="keywordtype">float</span> moveSpeedMax = <a class="code hl_variable" href="#ad2ee693a944bad3c53be8e12cf0e823c">m_constMoveSpeedXZMax</a> * <a class="code hl_variable" href="#a9d92a7dd4fb1050d1d9235e6b0a8d772">m_moveSpeedXZMaxRatio</a>;</div>
+<div class="line"><span class="lineno">  388</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> &gt; moveSpeedMax) {</div>
+<div class="line"><span class="lineno">  389</span>                <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> = moveSpeedMax;</div>
+<div class="line"><span class="lineno">  390</span>            }</div>
+<div class="line"><span class="lineno">  391</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> &lt; -moveSpeedMax) {</div>
+<div class="line"><span class="lineno">  392</span>                <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> = -moveSpeedMax;</div>
+<div class="line"><span class="lineno">  393</span>            }</div>
+<div class="line"><span class="lineno">  394</span>        }</div>
+<div class="line"><span class="lineno">  395</span> </div>
+<div class="line"><span class="lineno">  396</span>        <span class="comment">// 前座標からXZの移動量を適用した値を計算</span></div>
+<div class="line"><span class="lineno">  397</span>        <a class="code hl_variable" href="#a005f1c18af1f3d189a07f3c65017383d">m_posAfterApplyMoveXZ</a> = <a class="code hl_variable" href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">m_prevPos</a> + (<a class="code hl_variable" href="#ae665eb7bb54e7a2511bc2d29a7135d3e">m_moveDirXZ</a> * <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a>);</div>
+<div class="line"><span class="lineno">  398</span> </div>
+<div class="line"><span class="lineno">  399</span>        <span class="comment">// 現在の加速量を初期化</span></div>
+<div class="line"><span class="lineno">  400</span>        <a class="code hl_variable" href="#ac6d5011bda855d7c1de54a1a58d53205">m_curAccelXZ</a> = 0;</div>
+<div class="line"><span class="lineno">  401</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a005f1c18af1f3d189a07f3c65017383d"><div class="ttname"><a href="#a005f1c18af1f3d189a07f3c65017383d">NGame::CActorMove::m_posAfterApplyMoveXZ</a></div><div class="ttdeci">float3 m_posAfterApplyMoveXZ</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:205</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_ae665eb7bb54e7a2511bc2d29a7135d3e"><div class="ttname"><a href="#ae665eb7bb54e7a2511bc2d29a7135d3e">NGame::CActorMove::m_moveDirXZ</a></div><div class="ttdeci">float3 m_moveDirXZ</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:174</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9e090196ede35764f88230ce02f1246d" name="a9e090196ede35764f88230ce02f1246d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e090196ede35764f88230ce02f1246d">&#9670;&#160;</a></span>ApplyMoveY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::ApplyMoveY </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Y軸の更新 </p>
+<p>スピードを適用しない場合はスピードを0にする</p>
+<div class="fragment"><div class="line"><span class="lineno">  426</span>    {</div>
+<div class="line"><span class="lineno">  427</span>        <span class="comment">// 加速度を移動速度に適用</span></div>
+<div class="line"><span class="lineno">  428</span>        <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a> += <a class="code hl_variable" href="#a508969ddcb00f34cc4cd81ca69722e24">m_curAccelY</a>;</div>
+<div class="line"><span class="lineno">  429</span>        </div>
+<div class="line"><span class="lineno">  430</span>        <span class="comment">// スピード最大速度でクランプ</span></div>
+<div class="line"><span class="lineno">  431</span>        <span class="comment">// 落下(-方向)をクランプ</span></div>
+<div class="line"><span class="lineno">  432</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a> &lt; <a class="code hl_variable" href="#a1a7fc3b776b91694c4f4294b6b9f8521">m_constFallSpeedMax</a>) {</div>
+<div class="line"><span class="lineno">  433</span>            <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a> = <a class="code hl_variable" href="#a1a7fc3b776b91694c4f4294b6b9f8521">m_constFallSpeedMax</a>;</div>
+<div class="line"><span class="lineno">  434</span>        }</div>
+<div class="line"><span class="lineno">  435</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a> &gt; <a class="code hl_variable" href="#a4abc75139a621d8521dbde4ccce41542">m_constJumpSpeedMax</a>) {</div>
+<div class="line"><span class="lineno">  436</span>            <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a> = <a class="code hl_variable" href="#a4abc75139a621d8521dbde4ccce41542">m_constJumpSpeedMax</a>;</div>
+<div class="line"><span class="lineno">  437</span>        }</div>
+<div class="line"><span class="lineno">  438</span></div>
+<div class="line"><span class="lineno">  440</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#aa6befb97cfdd402c9c0172b91f061c01">m_isApplySpeedY</a>) {</div>
+<div class="line"><span class="lineno">  441</span>            <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a> = 0;</div>
+<div class="line"><span class="lineno">  442</span>        }</div>
+<div class="line"><span class="lineno">  443</span> </div>
+<div class="line"><span class="lineno">  444</span>        <span class="comment">// スピードを適用した後の座標を取得</span></div>
+<div class="line"><span class="lineno">  445</span>        <a class="code hl_variable" href="#a20ef6c9ae9c8fa6370a85ff28c641bdc">m_posAfterApplyMoveY</a> = <a class="code hl_variable" href="#a005f1c18af1f3d189a07f3c65017383d">m_posAfterApplyMoveXZ</a> + (<a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>(0, 1, 0) * <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a>);</div>
+<div class="line"><span class="lineno">  446</span> </div>
+<div class="line"><span class="lineno">  447</span>        <span class="comment">// 最終的な座標として保持</span></div>
+<div class="line"><span class="lineno">  448</span>        <a class="code hl_variable" href="#a8bfd9708bd77ce33dda25577b3a7a28a">m_posAfterUpdate</a> = <a class="code hl_variable" href="#a20ef6c9ae9c8fa6370a85ff28c641bdc">m_posAfterApplyMoveY</a>;</div>
+<div class="line"><span class="lineno">  449</span> </div>
+<div class="line"><span class="lineno">  450</span>        <span class="comment">// 現在の加速量を初期化</span></div>
+<div class="line"><span class="lineno">  451</span>        <a class="code hl_variable" href="#a508969ddcb00f34cc4cd81ca69722e24">m_curAccelY</a> = 0;</div>
+<div class="line"><span class="lineno">  452</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a20ef6c9ae9c8fa6370a85ff28c641bdc"><div class="ttname"><a href="#a20ef6c9ae9c8fa6370a85ff28c641bdc">NGame::CActorMove::m_posAfterApplyMoveY</a></div><div class="ttdeci">float3 m_posAfterApplyMoveY</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:206</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1ea0f98a9fcdafbf3b3b29180cf53f09" name="a1ea0f98a9fcdafbf3b3b29180cf53f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea0f98a9fcdafbf3b3b29180cf53f09">&#9670;&#160;</a></span>CorrectGroundY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::CorrectGroundY </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>地面との判定(Y軸を地面の高さに補正する) </p>
+<div class="fragment"><div class="line"><span class="lineno">  455</span>    {</div>
+<div class="line"><span class="lineno">  456</span>        <span class="comment">// 地面のメッシュが設定されていない場合は無視</span></div>
+<div class="line"><span class="lineno">  457</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a967606819bb48749bf7e3cdeea7ae0d0">m_pColMeshGround</a> == <span class="keyword">nullptr</span>) { <span class="keywordflow">return</span>; }</div>
+<div class="line"><span class="lineno">  458</span> </div>
+<div class="line"><span class="lineno">  459</span>        <span class="comment">// 地面方向に向けて飛ばすレイの情報を作成</span></div>
+<div class="line"><span class="lineno">  460</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>            rayStartPos = <a class="code hl_variable" href="#a005f1c18af1f3d189a07f3c65017383d">m_posAfterApplyMoveXZ</a> + GROUND_RAY_OFFSET;</div>
+<div class="line"><span class="lineno">  461</span>        <span class="keyword">const</span> NMath::SVector3   vecRayStartToPos = <a class="code hl_variable" href="#a20ef6c9ae9c8fa6370a85ff28c641bdc">m_posAfterApplyMoveY</a> - rayStartPos;</div>
+<div class="line"><span class="lineno">  462</span> </div>
+<div class="line"><span class="lineno">  463</span>        <span class="comment">// 地面との当たり判定を実行</span></div>
+<div class="line"><span class="lineno">  464</span>        <span class="keywordtype">bool</span>    sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  465</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>  crossPos;</div>
+<div class="line"><span class="lineno">  466</span>        sts = <a class="code hl_variable" href="#a967606819bb48749bf7e3cdeea7ae0d0">m_pColMeshGround</a>-&gt;SerchGroundOrigToDirection(</div>
+<div class="line"><span class="lineno">  467</span>            crossPos,</div>
+<div class="line"><span class="lineno">  468</span>            rayStartPos,</div>
+<div class="line"><span class="lineno">  469</span>            vecRayStartToPos.<a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a751fce7c099a2d2427ef2e025e75049a">GetLengthSquare</a>());</div>
+<div class="line"><span class="lineno">  470</span> </div>
+<div class="line"><span class="lineno">  471</span>        <span class="comment">// 地面との当たり判定</span></div>
+<div class="line"><span class="lineno">  472</span>        <span class="keywordflow">if</span> (sts) {</div>
+<div class="line"><span class="lineno">  473</span>            <a class="code hl_variable" href="#ac8f747f8bee4b3c4fbde2ae0fbd10405">m_isGrounded</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  474</span> </div>
+<div class="line"><span class="lineno">  475</span>            <span class="comment">// 地面の高さに補正された値を適用</span></div>
+<div class="line"><span class="lineno">  476</span>            <a class="code hl_variable" href="#a8bfd9708bd77ce33dda25577b3a7a28a">m_posAfterUpdate</a> = crossPos;</div>
+<div class="line"><span class="lineno">  477</span>        }</div>
+<div class="line"><span class="lineno">  478</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  479</span>            <a class="code hl_variable" href="#ac8f747f8bee4b3c4fbde2ae0fbd10405">m_isGrounded</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  480</span>        }</div>
+<div class="line"><span class="lineno">  481</span> </div>
+<div class="line"><span class="lineno">  482</span>        <span class="comment">// 値を適用</span></div>
+<div class="line"><span class="lineno">  483</span>        <span class="comment">//m_pGameObject-&gt;GetTransform().SetPos(m_posAfterUpdate);</span></div>
+<div class="line"><span class="lineno">  484</span>    }</div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a751fce7c099a2d2427ef2e025e75049a"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a751fce7c099a2d2427ef2e025e75049a">NMath::SVector3::GetLengthSquare</a></div><div class="ttdeci">float GetLengthSquare() const</div><div class="ttdoc">ベクトルの長さの2乗を取得する(計算量省略用)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:110</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8902a9a8278b8d03fd0fa281847c82bc" name="a8902a9a8278b8d03fd0fa281847c82bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8902a9a8278b8d03fd0fa281847c82bc">&#9670;&#160;</a></span>CorrectWallXZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::CorrectWallXZ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>壁との判定 </p>
+<div class="fragment"><div class="line"><span class="lineno">  404</span>    {</div>
+<div class="line"><span class="lineno">  405</span>        <span class="comment">// 壁用の当たり判定が設定されていない場合は無視</span></div>
+<div class="line"><span class="lineno">  406</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9674152022e1ebe84c1d25428b40d824">m_pColMeshWall</a> == <span class="keyword">nullptr</span>) { <span class="keywordflow">return</span>; }</div>
+<div class="line"><span class="lineno">  407</span> </div>
+<div class="line"><span class="lineno">  408</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  409</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> pushback;</div>
+<div class="line"><span class="lineno">  410</span>        NCollision::SSphere sphere;</div>
+<div class="line"><span class="lineno">  411</span>        <a class="code hl_variable" href="#afda75ff8a3a4dded7a73a2f38a5f8b69">m_body</a>.GetWorldCol(sphere, <a class="code hl_variable" href="#a005f1c18af1f3d189a07f3c65017383d">m_posAfterApplyMoveXZ</a>);</div>
+<div class="line"><span class="lineno">  412</span>        sts = <a class="code hl_function" href="namespace_n_collision.html#a981b33bbde5a765571bbd9b8acf4de49">NCollision::CheckSphereAndMeshWall</a>(</div>
+<div class="line"><span class="lineno">  413</span>            sphere,</div>
+<div class="line"><span class="lineno">  414</span>            *<a class="code hl_variable" href="#a9674152022e1ebe84c1d25428b40d824">m_pColMeshWall</a>,</div>
+<div class="line"><span class="lineno">  415</span>            pushback);</div>
+<div class="line"><span class="lineno">  416</span>        <span class="keywordflow">if</span> (sts) {</div>
+<div class="line"><span class="lineno">  417</span>            <a class="code hl_variable" href="#a005f1c18af1f3d189a07f3c65017383d">m_posAfterApplyMoveXZ</a> += pushback;</div>
+<div class="line"><span class="lineno">  418</span>            <a class="code hl_variable" href="#a9ad199b234c23d406e307158af28f7de">m_isCollideWall</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  419</span>        }</div>
+<div class="line"><span class="lineno">  420</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  421</span>            <a class="code hl_variable" href="#a9ad199b234c23d406e307158af28f7de">m_isCollideWall</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  422</span>        }</div>
+<div class="line"><span class="lineno">  423</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_afda75ff8a3a4dded7a73a2f38a5f8b69"><div class="ttname"><a href="#afda75ff8a3a4dded7a73a2f38a5f8b69">NGame::CActorMove::m_body</a></div><div class="ttdeci">CActorBody m_body</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:202</div></div>
+<div class="ttc" id="anamespace_n_collision_html_a981b33bbde5a765571bbd9b8acf4de49"><div class="ttname"><a href="namespace_n_collision.html#a981b33bbde5a765571bbd9b8acf4de49">NCollision::CheckSphereAndMeshWall</a></div><div class="ttdeci">bool CheckSphereAndMeshWall(const SSphere &amp;_rSphere, const CMesh &amp;_rMeshWall, NMath::SVector3 &amp;_rDestPushBack)</div><div class="ttdoc">球と壁メッシュの当たり判定</div><div class="ttdef"><b>Definition</b> Collision_Common.cpp:238</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aabd8023e462178ff18876b853cde059e" name="aabd8023e462178ff18876b853cde059e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd8023e462178ff18876b853cde059e">&#9670;&#160;</a></span>GetIsGrounded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CActorMove::GetIsGrounded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ジャンプの制御を考慮して着地状態を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  154</span>{ <span class="keywordflow">return</span> (<a class="code hl_variable" href="#ac8f747f8bee4b3c4fbde2ae0fbd10405">m_isGrounded</a> &amp; <a class="code hl_variable" href="#ae99da703b4fbc852a7c1fb665cf425c0">m_isReleaseGround</a>); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa869f6af945c18f7e163b93f85ca718b" name="aa869f6af945c18f7e163b93f85ca718b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa869f6af945c18f7e163b93f85ca718b">&#9670;&#160;</a></span>GetIsGroundedRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CActorMove::GetIsGroundedRaw </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ジャンプの制御を考慮しない生の着地状態データを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac8f747f8bee4b3c4fbde2ae0fbd10405">m_isGrounded</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a898e4b26f0799f7deb17d492703ac049" name="a898e4b26f0799f7deb17d492703ac049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a898e4b26f0799f7deb17d492703ac049">&#9670;&#160;</a></span>GetMoveDirXZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float3 &amp; NGame::CActorMove::GetMoveDirXZ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  147</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ae665eb7bb54e7a2511bc2d29a7135d3e">m_moveDirXZ</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab21a19363aa658081590a3b05149b87c" name="ab21a19363aa658081590a3b05149b87c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21a19363aa658081590a3b05149b87c">&#9670;&#160;</a></span>GetMoveSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::GetMoveSpeed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XZ平面とY軸方向の速度を考慮した、3D空間上での移動量を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  292</span>    {</div>
+<div class="line"><span class="lineno">  293</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> moveSpeed;</div>
+<div class="line"><span class="lineno">  294</span>        moveSpeed = </div>
+<div class="line"><span class="lineno">  295</span>            <a class="code hl_variable" href="#ae665eb7bb54e7a2511bc2d29a7135d3e">m_moveDirXZ</a> * <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> +</div>
+<div class="line"><span class="lineno">  296</span>            <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>(0, 1, 0) * <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a>;</div>
+<div class="line"><span class="lineno">  297</span>        <span class="keywordflow">return</span> moveSpeed.GetLength();</div>
+<div class="line"><span class="lineno">  298</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a494e98e36b7131407a9e201e38006d93" name="a494e98e36b7131407a9e201e38006d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494e98e36b7131407a9e201e38006d93">&#9670;&#160;</a></span>GetMoveSpeedXZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::GetMoveSpeedXZ </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  146</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a60b327cab480ca25f444c4ba54c10f30" name="a60b327cab480ca25f444c4ba54c10f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b327cab480ca25f444c4ba54c10f30">&#9670;&#160;</a></span>GetMoveSpeedXZMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::GetMoveSpeedXZMax </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  163</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad2ee693a944bad3c53be8e12cf0e823c">m_constMoveSpeedXZMax</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a18c820545e3c109585f935a5fdf92f8e" name="a18c820545e3c109585f935a5fdf92f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18c820545e3c109585f935a5fdf92f8e">&#9670;&#160;</a></span>GetMoveSpeedY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::GetMoveSpeedY </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  148</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9fa521f7488c670a071afd7d8081c1a8" name="a9fa521f7488c670a071afd7d8081c1a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa521f7488c670a071afd7d8081c1a8">&#9670;&#160;</a></span>GetPrevPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float3 &amp; NGame::CActorMove::GetPrevPos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  145</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">m_prevPos</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a559e7a69194104cf197d5158ca785a17" name="a559e7a69194104cf197d5158ca785a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a559e7a69194104cf197d5158ca785a17">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::Init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期化処理 </p>
+<div class="fragment"><div class="line"><span class="lineno">  166</span>    {</div>
+<div class="line"><span class="lineno">  167</span>        <span class="comment">// パラメータ初期化</span></div>
+<div class="line"><span class="lineno">  168</span>        <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> = 0;</div>
+<div class="line"><span class="lineno">  169</span>        <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a> = 0;</div>
+<div class="line"><span class="lineno">  170</span> </div>
+<div class="line"><span class="lineno">  171</span>        <span class="comment">// 座標関係の変数をすべてオブジェクトの位置で初期化する</span></div>
+<div class="line"><span class="lineno">  172</span>        <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().GetPos(<a class="code hl_variable" href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">m_prevPos</a>);</div>
+<div class="line"><span class="lineno">  173</span>        <a class="code hl_variable" href="#a005f1c18af1f3d189a07f3c65017383d">m_posAfterApplyMoveXZ</a> = <a class="code hl_variable" href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">m_prevPos</a>;</div>
+<div class="line"><span class="lineno">  174</span>        <a class="code hl_variable" href="#a20ef6c9ae9c8fa6370a85ff28c641bdc">m_posAfterApplyMoveY</a> = <a class="code hl_variable" href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">m_prevPos</a>;</div>
+<div class="line"><span class="lineno">  175</span>        <a class="code hl_variable" href="#a8bfd9708bd77ce33dda25577b3a7a28a">m_posAfterUpdate</a> = <a class="code hl_variable" href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">m_prevPos</a>;</div>
+<div class="line"><span class="lineno">  176</span> </div>
+<div class="line"><span class="lineno">  177</span>        <span class="comment">// ステージのあたり判定を再設定</span></div>
+<div class="line"><span class="lineno">  178</span>        <a class="code hl_variable" href="#a967606819bb48749bf7e3cdeea7ae0d0">m_pColMeshGround</a> = <a class="code hl_function" href="namespace_n_collision.html#a12c78b0fce7212d2d268e356dbfb22b6">NCollision::GetStageCollision</a>(<a class="code hl_variable" href="#a3f847f5862b8ba7dae9666130ce8ae74">m_colGroundIndex</a>);</div>
+<div class="line"><span class="lineno">  179</span>        <a class="code hl_variable" href="#a9674152022e1ebe84c1d25428b40d824">m_pColMeshWall</a> = <a class="code hl_function" href="namespace_n_collision.html#a12c78b0fce7212d2d268e356dbfb22b6">NCollision::GetStageCollision</a>(<a class="code hl_variable" href="#a2f5e95cd4c076835bddf29b16ab31fad">m_colWallIndex</a>);</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#a967606819bb48749bf7e3cdeea7ae0d0">m_pColMeshGround</a> != <span class="keyword">nullptr</span> &amp;&amp; <span class="stringliteral">&quot;地面のあたり判定がnullptrでした。&quot;</span>);</div>
+<div class="line"><span class="lineno">  182</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#a9674152022e1ebe84c1d25428b40d824">m_pColMeshWall</a> != <span class="keyword">nullptr</span> &amp;&amp; <span class="stringliteral">&quot;壁のあたり判定がnullptrでした。&quot;</span>);</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+<div class="ttc" id="anamespace_n_collision_html_a12c78b0fce7212d2d268e356dbfb22b6"><div class="ttname"><a href="namespace_n_collision.html#a12c78b0fce7212d2d268e356dbfb22b6">NCollision::GetStageCollision</a></div><div class="ttdeci">CMesh * GetStageCollision(EStageCollisionIndex _index)</div><div class="ttdoc">指定したインデックスに登録されているステージ用当たり判定を取得する。</div><div class="ttdef"><b>Definition</b> Collision_Manager.cpp:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa3c9a18aad4fab70c1163cece808d13b" name="aa3c9a18aad4fab70c1163cece808d13b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3c9a18aad4fab70c1163cece808d13b">&#9670;&#160;</a></span>Jump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::Jump </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_jumpPow</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジャンプ(Y方向の加速) </p>
+<p>AccelYと違い、現在の落下速度を0にし、Y軸方向の加速度を直接設定する ジャンプ後に空中状態になった後に着地状態を判別する </p>
+<div class="fragment"><div class="line"><span class="lineno">  241</span>    {</div>
+<div class="line"><span class="lineno">  242</span>        <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a> = 0;</div>
+<div class="line"><span class="lineno">  243</span>        <a class="code hl_variable" href="#a508969ddcb00f34cc4cd81ca69722e24">m_curAccelY</a> = _jumpPow;</div>
+<div class="line"><span class="lineno">  244</span>        <a class="code hl_variable" href="#a3949fbdf691f63775c52bc8621be4ad8">m_isJumpFrame</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  245</span>        <a class="code hl_variable" href="#ae99da703b4fbc852a7c1fb665cf425c0">m_isReleaseGround</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  246</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aacf2a24c3e2e523709ed8f34d6da2df2" name="aacf2a24c3e2e523709ed8f34d6da2df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf2a24c3e2e523709ed8f34d6da2df2">&#9670;&#160;</a></span>LoadConstant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::LoadConstant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classjson11_1_1_json.html">json11::Json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_json</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>定数値をJSONから読み込む </p>
+<div class="fragment"><div class="line"><span class="lineno">  303</span>    {</div>
+<div class="line"><span class="lineno">  304</span>        <a class="code hl_variable" href="#ad2ee693a944bad3c53be8e12cf0e823c">m_constMoveSpeedXZMax</a> = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(_json[<span class="stringliteral">&quot;MoveSpeedXZMax&quot;</span>].number_value() * NSystem::DELTA_TIME);</div>
+<div class="line"><span class="lineno">  305</span>        <a class="code hl_variable" href="#aa180a61687fb981755a57d61df009932">m_constMoveSpeedXZAcc</a> = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(_json[<span class="stringliteral">&quot;MoveSpeedXZAcc&quot;</span>].number_value() * NSystem::DELTA_TIME);</div>
+<div class="line"><span class="lineno">  306</span>        <a class="code hl_variable" href="#a1cc3a7f5a9fdb638edd39e35ac5f2243">m_constMoveSpeedXZDecRatio</a> = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(_json[<span class="stringliteral">&quot;MoveSpeedXZDecRatio&quot;</span>].number_value());</div>
+<div class="line"><span class="lineno">  307</span>        <a class="code hl_variable" href="#a702cb49966d41c764491a7eab0741cc6">m_constMoveSpeedXZDecRatioAir</a> = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(_json[<span class="stringliteral">&quot;MoveSpeedXZDecRatioAir&quot;</span>].number_value());</div>
+<div class="line"><span class="lineno">  308</span>        <a class="code hl_variable" href="#af837a74fafcd0a5470ef3722ce31876d">m_constGravityScale</a> = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(_json[<span class="stringliteral">&quot;GravityScale&quot;</span>].number_value());</div>
+<div class="line"><span class="lineno">  309</span>        <a class="code hl_variable" href="#a3f8e7b778d1fa65927abd4ee5a7499fd">m_constDeltaGravity</a> = (NPhysics::GRAVITY_ACC.y * NSystem::DELTA_TIME) * <a class="code hl_variable" href="#af837a74fafcd0a5470ef3722ce31876d">m_constGravityScale</a>;</div>
+<div class="line"><span class="lineno">  310</span> </div>
+<div class="line"><span class="lineno">  311</span>        <a class="code hl_variable" href="#a1a7fc3b776b91694c4f4294b6b9f8521">m_constFallSpeedMax</a> = FALL_SPEED_MAX * NSystem::DELTA_TIME;</div>
+<div class="line"><span class="lineno">  312</span>        <a class="code hl_variable" href="#a4abc75139a621d8521dbde4ccce41542">m_constJumpSpeedMax</a> = JUMP_SPEED_MAX * NSystem::DELTA_TIME;</div>
+<div class="line"><span class="lineno">  313</span> </div>
+<div class="line"><span class="lineno">  314</span>        <a class="code hl_variable" href="#a94779f2dcdf6e0ed940d33f89f9af2cf">m_constRotSpeedMaxDeg</a> = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(_json[<span class="stringliteral">&quot;RotSpeedMaxDeg&quot;</span>].number_value() * NSystem::DELTA_TIME);</div>
+<div class="line"><span class="lineno">  315</span>    }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_a099b6a85136760ed980079095fc9afe4"><div class="ttname"><a href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast</a></div><div class="ttdeci">#define StaticCast</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:88</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a94779f2dcdf6e0ed940d33f89f9af2cf"><div class="ttname"><a href="#a94779f2dcdf6e0ed940d33f89f9af2cf">NGame::CActorMove::m_constRotSpeedMaxDeg</a></div><div class="ttdeci">float m_constRotSpeedMaxDeg</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:223</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6021ee9cee434899c39f61233b490d8d" name="a6021ee9cee434899c39f61233b490d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6021ee9cee434899c39f61233b490d8d">&#9670;&#160;</a></span>RenderDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::RenderDebug </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デバッグ用描画 </p>
+<div class="fragment"><div class="line"><span class="lineno">  209</span>    {</div>
+<div class="line"><span class="lineno">  210</span><span class="preprocessor">    #ifdef _GAME_DEBUG</span></div>
+<div class="line"><span class="lineno">  211</span>        <a class="code hl_variable" href="#afda75ff8a3a4dded7a73a2f38a5f8b69">m_body</a>.RenderDebug(<a class="code hl_variable" href="#a8bfd9708bd77ce33dda25577b3a7a28a">m_posAfterUpdate</a>);</div>
+<div class="line"><span class="lineno">  212</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  213</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3343093352b3b3e066c012f0aa3a1c61" name="a3343093352b3b3e066c012f0aa3a1c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3343093352b3b3e066c012f0aa3a1c61">&#9670;&#160;</a></span>RotateMoveDirWithSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::RotateMoveDirWithSpeed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移動速度によって移動方向に回転させる </p>
+<div class="fragment"><div class="line"><span class="lineno">  487</span>    {</div>
+<div class="line"><span class="lineno">  488</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a62c7913a1ea0ce51d76e72ae03a08000">m_isApplyRotateToMoveDir</a>) { </div>
+<div class="line"><span class="lineno">  489</span>            <a class="code hl_variable" href="#a9281870af900f2bb79f9f4b7a2c87da3">m_curMatRot</a>.SetIdentity();</div>
+<div class="line"><span class="lineno">  490</span>            <span class="keywordflow">return</span>; </div>
+<div class="line"><span class="lineno">  491</span>        }</div>
+<div class="line"><span class="lineno">  492</span> </div>
+<div class="line"><span class="lineno">  493</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>    maskXZ(1, 0, 1);</div>
+<div class="line"><span class="lineno">  494</span>        NMath::SVector3 objDirXZ = <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().GetForward();</div>
+<div class="line"><span class="lineno">  495</span>        objDirXZ.<a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a618080b518a6bf55fe6dc4cba1f44751">Normalize</a>();</div>
+<div class="line"><span class="lineno">  496</span>        objDirXZ *= maskXZ;</div>
+<div class="line"><span class="lineno">  497</span> </div>
+<div class="line"><span class="lineno">  498</span>        <span class="comment">//----</span></div>
+<div class="line"><span class="lineno">  499</span>        <span class="comment">// 回転量行列を作成</span></div>
+<div class="line"><span class="lineno">  500</span>        <span class="keywordtype">float</span> diffRotCos = <a class="code hl_function" href="namespace_n_math.html#adf1030e37cad91dd402a975d0c63962c">NMath::Dot</a>(objDirXZ, <a class="code hl_variable" href="#ae665eb7bb54e7a2511bc2d29a7135d3e">m_moveDirXZ</a>);</div>
+<div class="line"><span class="lineno">  501</span>        <span class="keywordtype">float</span> diffRotRad = acos(diffRotCos);</div>
+<div class="line"><span class="lineno">  502</span> </div>
+<div class="line"><span class="lineno">  503</span>        <span class="comment">// 移動量のクオータニオンを作成</span></div>
+<div class="line"><span class="lineno">  504</span>        D3DXQUATERNION  qt; <span class="comment">// 回転の移動量</span></div>
+<div class="line"><span class="lineno">  505</span> </div>
+<div class="line"><span class="lineno">  506</span>        <span class="keywordtype">float</span> dot = 0;</div>
+<div class="line"><span class="lineno">  507</span>        NMath::SQuaternion  qtMoveRot;</div>
+<div class="line"><span class="lineno">  508</span>        <a class="code hl_function" href="namespace_n_math.html#a14e85eb567eac6ce3ccd4196899d1b97">NMath::MakeQuaternionRotationArc</a>(</div>
+<div class="line"><span class="lineno">  509</span>            qtMoveRot,</div>
+<div class="line"><span class="lineno">  510</span>            objDirXZ,</div>
+<div class="line"><span class="lineno">  511</span>            <a class="code hl_variable" href="#ae665eb7bb54e7a2511bc2d29a7135d3e">m_moveDirXZ</a>,</div>
+<div class="line"><span class="lineno">  512</span>            &amp;dot);</div>
+<div class="line"><span class="lineno">  513</span> </div>
+<div class="line"><span class="lineno">  514</span>        <span class="keywordtype">float</span> speedRatio = <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> / <a class="code hl_variable" href="#ad2ee693a944bad3c53be8e12cf0e823c">m_constMoveSpeedXZMax</a>;</div>
+<div class="line"><span class="lineno">  515</span>        <span class="keywordtype">float</span> rad = <a class="code hl_function" href="namespace_n_math.html#a021dda373e172df5a6dc551676e4cab5">NMath::ArcCos</a>(dot) * speedRatio;</div>
+<div class="line"><span class="lineno">  516</span>        <span class="keywordflow">if</span> (rad &gt; <a class="code hl_function" href="namespace_n_math.html#a354e36a68e3d381f3b090a0eae18cb16">NMath::ToRad</a>(<a class="code hl_variable" href="#a94779f2dcdf6e0ed940d33f89f9af2cf">m_constRotSpeedMaxDeg</a>)) {</div>
+<div class="line"><span class="lineno">  517</span>            rad = <a class="code hl_function" href="namespace_n_math.html#a354e36a68e3d381f3b090a0eae18cb16">NMath::ToRad</a>(<a class="code hl_variable" href="#a94779f2dcdf6e0ed940d33f89f9af2cf">m_constRotSpeedMaxDeg</a>);</div>
+<div class="line"><span class="lineno">  518</span>        }</div>
+<div class="line"><span class="lineno">  519</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> &lt;= FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  520</span>            rad = 0;</div>
+<div class="line"><span class="lineno">  521</span>        }</div>
+<div class="line"><span class="lineno">  522</span> </div>
+<div class="line"><span class="lineno">  523</span>        NMath::SVector3 dirVec;</div>
+<div class="line"><span class="lineno">  524</span>        <span class="keywordtype">float</span> dir = 0;</div>
+<div class="line"><span class="lineno">  525</span>        <a class="code hl_function" href="namespace_n_math.html#a0f8df25d8f843c0e020a44c9887e6998">NMath::Cross</a>(dirVec, objDirXZ, <a class="code hl_variable" href="#ae665eb7bb54e7a2511bc2d29a7135d3e">m_moveDirXZ</a>);</div>
+<div class="line"><span class="lineno">  526</span>        dir = dirVec.<a class="code hl_variable" href="struct_n_math_1_1_s_vector3.html#a88189d14db6c3ed68e1c52a40ea07f00">y</a>;</div>
+<div class="line"><span class="lineno">  527</span>        <span class="keywordflow">if</span> (dir &lt; 0) {</div>
+<div class="line"><span class="lineno">  528</span>            rad = -rad;</div>
+<div class="line"><span class="lineno">  529</span>        }</div>
+<div class="line"><span class="lineno">  530</span> </div>
+<div class="line"><span class="lineno">  531</span>        <span class="keyword">const</span> D3DXVECTOR3 ROT_AXIS(0, 1, 0);</div>
+<div class="line"><span class="lineno">  532</span>        D3DXQuaternionRotationAxis(&amp;qt, (D3DXVECTOR3*)&amp;ROT_AXIS, rad);</div>
+<div class="line"><span class="lineno">  533</span> </div>
+<div class="line"><span class="lineno">  534</span>        <span class="comment">// 現在の姿勢のクオータニオンを作成</span></div>
+<div class="line"><span class="lineno">  535</span>        NMath::SMatrix44 matWorld;</div>
+<div class="line"><span class="lineno">  536</span>        matWorld = <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().GetLocalMatrix();</div>
+<div class="line"><span class="lineno">  537</span>        D3DXMATRIX  matWorldDX;</div>
+<div class="line"><span class="lineno">  538</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(matWorldDX, matWorld);</div>
+<div class="line"><span class="lineno">  539</span>        D3DXQUATERNION  qtCur;</div>
+<div class="line"><span class="lineno">  540</span>        D3DXQuaternionIdentity(&amp;qtCur);</div>
+<div class="line"><span class="lineno">  541</span>        D3DXQuaternionRotationMatrix(</div>
+<div class="line"><span class="lineno">  542</span>            &amp;qtCur,</div>
+<div class="line"><span class="lineno">  543</span>            &amp;matWorldDX);</div>
+<div class="line"><span class="lineno">  544</span> </div>
+<div class="line"><span class="lineno">  545</span>        D3DXMATRIX  mat;</div>
+<div class="line"><span class="lineno">  546</span>        D3DXMatrixRotationQuaternion(&amp;mat, &amp;qt);</div>
+<div class="line"><span class="lineno">  547</span> </div>
+<div class="line"><span class="lineno">  548</span>        NMath::SMatrix44 matRot;</div>
+<div class="line"><span class="lineno">  549</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a2d9d6d2e4b85368582f322b350278250">NDirectX::ToSMatrix44</a>(matRot, mat);</div>
+<div class="line"><span class="lineno">  550</span> </div>
+<div class="line"><span class="lineno">  551</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  552</span>        <span class="comment">// 変化量を取得</span></div>
+<div class="line"><span class="lineno">  553</span>        <a class="code hl_variable" href="#a9281870af900f2bb79f9f4b7a2c87da3">m_curMatRot</a> = matRot;</div>
+<div class="line"><span class="lineno">  554</span> </div>
+<div class="line"><span class="lineno">  555</span>        <span class="comment">//matWorld = matCur * matWorld;</span></div>
+<div class="line"><span class="lineno">  556</span>        <span class="comment">//m_pGameObject-&gt;GetTransform().SetLocalMatrix(matWorld);</span></div>
+<div class="line"><span class="lineno">  557</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a2d9d6d2e4b85368582f322b350278250"><div class="ttname"><a href="namespace_n_direct_x.html#a2d9d6d2e4b85368582f322b350278250">NDirectX::ToSMatrix44</a></div><div class="ttdeci">void ToSMatrix44(NMath::SMatrix44 &amp;_dest, const D3DXMATRIX &amp;_src)</div><div class="ttdoc">独自定義フォーマットに変換</div><div class="ttdef"><b>Definition</b> DirectX_Util.cpp:58</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_a6ace719c3abbc964180a4fb4584ff8a8"><div class="ttname"><a href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a></div><div class="ttdeci">void ToD3DMatrix(D3DXMATRIX &amp;_dest, const NMath::SMatrix44 &amp;_src)</div><div class="ttdoc">DirectXの定義に変換</div><div class="ttdef"><b>Definition</b> DirectX_Util.cpp:18</div></div>
+<div class="ttc" id="anamespace_n_math_html_a021dda373e172df5a6dc551676e4cab5"><div class="ttname"><a href="namespace_n_math.html#a021dda373e172df5a6dc551676e4cab5">NMath::ArcCos</a></div><div class="ttdeci">float ArcCos(float _cosTheta)</div><div class="ttdoc">例外防止のacos関数</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:236</div></div>
+<div class="ttc" id="anamespace_n_math_html_a0f8df25d8f843c0e020a44c9887e6998"><div class="ttname"><a href="namespace_n_math.html#a0f8df25d8f843c0e020a44c9887e6998">NMath::Cross</a></div><div class="ttdeci">void Cross(SVector2 &amp;_rDest, const SVector2 &amp;_rVec1, const SVector2 &amp;_rVec2)</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:109</div></div>
+<div class="ttc" id="anamespace_n_math_html_a14e85eb567eac6ce3ccd4196899d1b97"><div class="ttname"><a href="namespace_n_math.html#a14e85eb567eac6ce3ccd4196899d1b97">NMath::MakeQuaternionRotationArc</a></div><div class="ttdeci">void MakeQuaternionRotationArc(SQuaternion &amp;_dest, const SVector3 &amp;_v0, const SVector3 &amp;_v1, float *_pDestAngleRadOut)</div><div class="ttdoc">2つのベクトルからクォータニオンを作成する</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:184</div></div>
+<div class="ttc" id="anamespace_n_math_html_a354e36a68e3d381f3b090a0eae18cb16"><div class="ttname"><a href="namespace_n_math.html#a354e36a68e3d381f3b090a0eae18cb16">NMath::ToRad</a></div><div class="ttdeci">float ToRad(float _deg)</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:8</div></div>
+<div class="ttc" id="anamespace_n_math_html_adf1030e37cad91dd402a975d0c63962c"><div class="ttname"><a href="namespace_n_math.html#adf1030e37cad91dd402a975d0c63962c">NMath::Dot</a></div><div class="ttdeci">float Dot(const SVector2 &amp;_rVec1, const SVector2 &amp;_rVec2)</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:119</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a618080b518a6bf55fe6dc4cba1f44751"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a618080b518a6bf55fe6dc4cba1f44751">NMath::SVector3::Normalize</a></div><div class="ttdeci">void Normalize()</div><div class="ttdoc">要素を正規化する</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:100</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a88189d14db6c3ed68e1c52a40ea07f00"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a88189d14db6c3ed68e1c52a40ea07f00">NMath::SVector3::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:21</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4daf90151a3cf51452566441536e7a0d" name="a4daf90151a3cf51452566441536e7a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4daf90151a3cf51452566441536e7a0d">&#9670;&#160;</a></span>SetApplyType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::SetApplyType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#afd909be7421c4cbe6d2e3fb2db48723f">EApplyType</a></td>          <td class="paramname"><span class="paramname"><em>_type</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="#afd909be7421c4cbe6d2e3fb2db48723fa92d5f2010ddf30a38352de388488a0ce">EApplyType::FORWARDING</a></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>動作の適用方法を設定する </p>
+<div class="fragment"><div class="line"><span class="lineno">  136</span>{ <a class="code hl_variable" href="#a0aae7bfa83e8a23979700265eafab38b">m_applyType</a> = _type; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5dc0f3f3edf438d9b7e2071bdaf2babf" name="a5dc0f3f3edf438d9b7e2071bdaf2babf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc0f3f3edf438d9b7e2071bdaf2babf">&#9670;&#160;</a></span>SetIsApplyDeccel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::SetIsApplyDeccel </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>減速をするためのフラグをセット </p>
+<div class="fragment"><div class="line"><span class="lineno">  127</span>{ <a class="code hl_variable" href="#ae5efbcaf2ca626840be6fdbfd7e12d29">m_isApplyDeccel</a> = _state; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8db661a611391fc5835fc5698414af66" name="a8db661a611391fc5835fc5698414af66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db661a611391fc5835fc5698414af66">&#9670;&#160;</a></span>SetIsApplyRotateMoveDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::SetIsApplyRotateMoveDir </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移動方向を向くように回転させるフラグを設定する </p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>{ <a class="code hl_variable" href="#a62c7913a1ea0ce51d76e72ae03a08000">m_isApplyRotateToMoveDir</a> = _state; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af8092d382835dbd4d525e4397636338e" name="af8092d382835dbd4d525e4397636338e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8092d382835dbd4d525e4397636338e">&#9670;&#160;</a></span>SetIsApplySpeedY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::SetIsApplySpeedY </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Y軸方向のスピードを適用するフラグを設定する </p>
+<div class="fragment"><div class="line"><span class="lineno">  133</span>{ <a class="code hl_variable" href="#aa6befb97cfdd402c9c0172b91f061c01">m_isApplySpeedY</a> = _state; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7653bf03c8e23fa1800681626a84142c" name="a7653bf03c8e23fa1800681626a84142c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7653bf03c8e23fa1800681626a84142c">&#9670;&#160;</a></span>SetMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::SetMove </td>
+          <td>(</td>
+          <td class="paramtype">const float3 &amp;</td>          <td class="paramname"><span class="paramname"><em>_dir</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_speed</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移動方向と移動量で設定する </p>
+<div class="fragment"><div class="line"><span class="lineno">  249</span>    {</div>
+<div class="line"><span class="lineno">  250</span>        <span class="comment">// XZ平面に分解</span></div>
+<div class="line"><span class="lineno">  251</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> maskXZ(1, 0, 1);</div>
+<div class="line"><span class="lineno">  252</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>  dirXZ = _dir * maskXZ;</div>
+<div class="line"><span class="lineno">  253</span>        <a class="code hl_function" href="#adc4e0976e1deec280df4762ccef138f4">SetMoveDirXZ</a>(dirXZ);</div>
+<div class="line"><span class="lineno">  254</span>        <a class="code hl_function" href="#a09307c21543ff83be9b57dc5f4632ee1">SetMoveSpeedXZ</a>(dirXZ.GetLength() * _speed);</div>
+<div class="line"><span class="lineno">  255</span> </div>
+<div class="line"><span class="lineno">  256</span>        <span class="comment">// Y軸方向に分解</span></div>
+<div class="line"><span class="lineno">  257</span>        <a class="code hl_function" href="#a1e6edb751890ffa036a9812cbf290f7c">SetMoveSpeedY</a>(_dir.y * _speed);</div>
+<div class="line"><span class="lineno">  258</span> </div>
+<div class="line"><span class="lineno">  259</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a09307c21543ff83be9b57dc5f4632ee1"><div class="ttname"><a href="#a09307c21543ff83be9b57dc5f4632ee1">NGame::CActorMove::SetMoveSpeedXZ</a></div><div class="ttdeci">void SetMoveSpeedXZ(const float _moveSpeed)</div><div class="ttdoc">XZ平面での移動量を設定する</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:116</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a1e6edb751890ffa036a9812cbf290f7c"><div class="ttname"><a href="#a1e6edb751890ffa036a9812cbf290f7c">NGame::CActorMove::SetMoveSpeedY</a></div><div class="ttdeci">void SetMoveSpeedY(const float _moveSpeed)</div><div class="ttdoc">Y軸方向の移動量を設定する</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:124</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_adc4e0976e1deec280df4762ccef138f4"><div class="ttname"><a href="#adc4e0976e1deec280df4762ccef138f4">NGame::CActorMove::SetMoveDirXZ</a></div><div class="ttdeci">void SetMoveDirXZ(const float3 &amp;_moveDir)</div><div class="ttdoc">XZ平面での移動方向を設定する</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:261</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adc4e0976e1deec280df4762ccef138f4" name="adc4e0976e1deec280df4762ccef138f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc4e0976e1deec280df4762ccef138f4">&#9670;&#160;</a></span>SetMoveDirXZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::SetMoveDirXZ </td>
+          <td>(</td>
+          <td class="paramtype">const float3 &amp;</td>          <td class="paramname"><span class="paramname"><em>_moveDir</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XZ平面での移動方向を設定する </p>
+<p>引数のYの値を無視し、正規化した値を設定する </p><dl class="section note"><dt>覚え書き</dt><dd>長さが０になるベクトルを渡すと、無視し、値を変更しない。 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  262</span>    {</div>
+<div class="line"><span class="lineno">  263</span>        <span class="comment">// XZ平面にする</span></div>
+<div class="line"><span class="lineno">  264</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> mask(1, 0, 1);</div>
+<div class="line"><span class="lineno">  265</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>      moveDirXZ = _moveDir * mask;</div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>        <span class="keywordflow">if</span> (moveDirXZ.GetLengthSquare() &lt; FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  268</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  269</span>        }</div>
+<div class="line"><span class="lineno">  270</span> </div>
+<div class="line"><span class="lineno">  271</span>        <span class="comment">// 正規化</span></div>
+<div class="line"><span class="lineno">  272</span>        moveDirXZ.<a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a618080b518a6bf55fe6dc4cba1f44751">Normalize</a>();</div>
+<div class="line"><span class="lineno">  273</span> </div>
+<div class="line"><span class="lineno">  274</span>        <span class="comment">// 値を格納</span></div>
+<div class="line"><span class="lineno">  275</span>        <a class="code hl_variable" href="#ae665eb7bb54e7a2511bc2d29a7135d3e">m_moveDirXZ</a> = moveDirXZ;</div>
+<div class="line"><span class="lineno">  276</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a09307c21543ff83be9b57dc5f4632ee1" name="a09307c21543ff83be9b57dc5f4632ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09307c21543ff83be9b57dc5f4632ee1">&#9670;&#160;</a></span>SetMoveSpeedXZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::SetMoveSpeedXZ </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_moveSpeed</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>XZ平面での移動量を設定する </p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>{ <a class="code hl_variable" href="#a5df62ce360ff7bddf30e2b97d788497d">m_moveSpeedXZ</a> = _moveSpeed; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a72dd50b5373c6db015466d783d1d8526" name="a72dd50b5373c6db015466d783d1d8526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72dd50b5373c6db015466d783d1d8526">&#9670;&#160;</a></span>SetMoveSpeedXZRatio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::SetMoveSpeedXZRatio </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_ratio</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>XZ平面の最大速度の調整値を設定する </p>
+<div class="fragment"><div class="line"><span class="lineno">  279</span>    {</div>
+<div class="line"><span class="lineno">  280</span>        <span class="keywordtype">float</span> ratio = _ratio;;</div>
+<div class="line"><span class="lineno">  281</span>        <span class="keywordflow">if</span> (ratio &lt; 0) {</div>
+<div class="line"><span class="lineno">  282</span>            ratio = 0;</div>
+<div class="line"><span class="lineno">  283</span>        }</div>
+<div class="line"><span class="lineno">  284</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ratio &gt; 1) {</div>
+<div class="line"><span class="lineno">  285</span>            ratio = 1;</div>
+<div class="line"><span class="lineno">  286</span>        }</div>
+<div class="line"><span class="lineno">  287</span> </div>
+<div class="line"><span class="lineno">  288</span>        <a class="code hl_variable" href="#a9d92a7dd4fb1050d1d9235e6b0a8d772">m_moveSpeedXZMaxRatio</a> = ratio;</div>
+<div class="line"><span class="lineno">  289</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1e6edb751890ffa036a9812cbf290f7c" name="a1e6edb751890ffa036a9812cbf290f7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6edb751890ffa036a9812cbf290f7c">&#9670;&#160;</a></span>SetMoveSpeedY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::SetMoveSpeedY </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_moveSpeed</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Y軸方向の移動量を設定する </p>
+<div class="fragment"><div class="line"><span class="lineno">  124</span>{ <a class="code hl_variable" href="#aaee890efcc0c31fa055894ea7aaf3e3d">m_moveSpeedY</a> = _moveSpeed; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab201f5868bce33cf2d6300373348ed58" name="ab201f5868bce33cf2d6300373348ed58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab201f5868bce33cf2d6300373348ed58">&#9670;&#160;</a></span>Setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::Setup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a></td>          <td class="paramname"><span class="paramname"><em>_key</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a></td>          <td class="paramname"><span class="paramname"><em>_colGroundIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a></td>          <td class="paramname"><span class="paramname"><em>_colWallIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定数値をロードする </p>
+<div class="fragment"><div class="line"><span class="lineno">  143</span>    {</div>
+<div class="line"><span class="lineno">  144</span>        <span class="comment">// あたり判定用コリジョン設定</span></div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_variable" href="#a3f847f5862b8ba7dae9666130ce8ae74">m_colGroundIndex</a> = _colGroundIndex;</div>
+<div class="line"><span class="lineno">  146</span>        <a class="code hl_variable" href="#a2f5e95cd4c076835bddf29b16ab31fad">m_colWallIndex</a> = _colWallIndex;</div>
+<div class="line"><span class="lineno">  147</span> </div>
+<div class="line"><span class="lineno">  148</span>        <span class="comment">// データ読み込み</span></div>
+<div class="line"><span class="lineno">  149</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  150</span>            <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CJsonFactory::SPAsset</a> pJson;</div>
+<div class="line"><span class="lineno">  151</span>            pJson = <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CJsonFactory::GetInst</a>().Load(_key);</div>
+<div class="line"><span class="lineno">  152</span>            <a class="code hl_function" href="#aacf2a24c3e2e523709ed8f34d6da2df2">LoadConstant</a>(*pJson);</div>
+<div class="line"><span class="lineno">  153</span>            <a class="code hl_variable" href="#afda75ff8a3a4dded7a73a2f38a5f8b69">m_body</a>.Setup(*pJson);</div>
+<div class="line"><span class="lineno">  154</span>        }</div>
+<div class="line"><span class="lineno">  155</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>* _err) {</div>
+<div class="line"><span class="lineno">  156</span>            std::string err = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  157</span>            err += <span class="stringliteral">&quot;ActorMoveのSetupでエラーが起きました。\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  158</span>            err += <span class="stringliteral">&quot;FilePath : &quot;</span>;</div>
+<div class="line"><span class="lineno">  159</span>            err += _key.data();</div>
+<div class="line"><span class="lineno">  160</span>            err += <span class="stringliteral">&quot;\n\n [Message]\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  161</span>            err += _err;</div>
+<div class="line"><span class="lineno">  162</span>        }</div>
+<div class="line"><span class="lineno">  163</span>    }</div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a42a8f39a038c716e5e95b31ea67b8ece"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CFactory&lt; json11::Json, CJsonFactory &gt;::SPAsset</a></div><div class="ttdeci">std::shared_ptr&lt; json11::Json &gt; SPAsset</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:30</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_aacf2a24c3e2e523709ed8f34d6da2df2"><div class="ttname"><a href="#aacf2a24c3e2e523709ed8f34d6da2df2">NGame::CActorMove::LoadConstant</a></div><div class="ttdeci">void LoadConstant(json11::Json &amp;_json)</div><div class="ttdoc">定数値をJSONから読み込む</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:302</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_singleton_html_a08cc988d79fa3297df6ede328e44a770"><div class="ttname"><a href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NUtil::CSingleton&lt; CJsonFactory &gt;::GetInst</a></div><div class="ttdeci">static CJsonFactory &amp; GetInst()</div><div class="ttdef"><b>Definition</b> Util_SingletonTemplate.h:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6fbd9c277b5986a9db4b885565ffe9a3" name="a6fbd9c277b5986a9db4b885565ffe9a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fbd9c277b5986a9db4b885565ffe9a3">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>移動量をバインドさアれたゲームオブジェクトに適用 </p>
+<div class="fragment"><div class="line"><span class="lineno">  192</span>    {</div>
+<div class="line"><span class="lineno">  193</span>        <span class="comment">// ジャンプの制御を開始</span></div>
+<div class="line"><span class="lineno">  194</span>        <a class="code hl_function" href="#a68acab64b161371ad64ce4734d01fec1">UpdateJump</a>();</div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  196</span>        <span class="comment">// 重力加速</span></div>
+<div class="line"><span class="lineno">  197</span>        <a class="code hl_function" href="#a4491b383114bfd7454f2fe10ae022bf9">AccelGravity</a>();</div>
+<div class="line"><span class="lineno">  198</span> </div>
+<div class="line"><span class="lineno">  199</span>        <span class="comment">// 移動を適用とステージとのあたり判定</span></div>
+<div class="line"><span class="lineno">  200</span>        <a class="code hl_function" href="#a8d6b39ced201be5ffb96d8901a975c10">ApplyMoveXZ</a>();</div>
+<div class="line"><span class="lineno">  201</span>        <a class="code hl_function" href="#a8902a9a8278b8d03fd0fa281847c82bc">CorrectWallXZ</a>();</div>
+<div class="line"><span class="lineno">  202</span>        <a class="code hl_function" href="#a9e090196ede35764f88230ce02f1246d">ApplyMoveY</a>();</div>
+<div class="line"><span class="lineno">  203</span>        <a class="code hl_function" href="#a1ea0f98a9fcdafbf3b3b29180cf53f09">CorrectGroundY</a>();</div>
+<div class="line"><span class="lineno">  204</span>        <a class="code hl_function" href="#a3343093352b3b3e066c012f0aa3a1c61">RotateMoveDirWithSpeed</a>();</div>
+<div class="line"><span class="lineno">  205</span>        <a class="code hl_function" href="#ac541442521e358f57e29bbec9b192f81">ApplyMovement</a>();</div>
+<div class="line"><span class="lineno">  206</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a1ea0f98a9fcdafbf3b3b29180cf53f09"><div class="ttname"><a href="#a1ea0f98a9fcdafbf3b3b29180cf53f09">NGame::CActorMove::CorrectGroundY</a></div><div class="ttdeci">void CorrectGroundY()</div><div class="ttdoc">地面との判定(Y軸を地面の高さに補正する)</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:454</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a3343093352b3b3e066c012f0aa3a1c61"><div class="ttname"><a href="#a3343093352b3b3e066c012f0aa3a1c61">NGame::CActorMove::RotateMoveDirWithSpeed</a></div><div class="ttdeci">void RotateMoveDirWithSpeed()</div><div class="ttdoc">移動速度によって移動方向に回転させる</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:486</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a4491b383114bfd7454f2fe10ae022bf9"><div class="ttname"><a href="#a4491b383114bfd7454f2fe10ae022bf9">NGame::CActorMove::AccelGravity</a></div><div class="ttdeci">void AccelGravity()</div><div class="ttdoc">Y軸方向の重力加速を行う</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:348</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a68acab64b161371ad64ce4734d01fec1"><div class="ttname"><a href="#a68acab64b161371ad64ce4734d01fec1">NGame::CActorMove::UpdateJump</a></div><div class="ttdeci">void UpdateJump()</div><div class="ttdoc">ジャンプの制御</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:317</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a8902a9a8278b8d03fd0fa281847c82bc"><div class="ttname"><a href="#a8902a9a8278b8d03fd0fa281847c82bc">NGame::CActorMove::CorrectWallXZ</a></div><div class="ttdeci">void CorrectWallXZ()</div><div class="ttdoc">壁との判定</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:403</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a8d6b39ced201be5ffb96d8901a975c10"><div class="ttname"><a href="#a8d6b39ced201be5ffb96d8901a975c10">NGame::CActorMove::ApplyMoveXZ</a></div><div class="ttdeci">void ApplyMoveXZ()</div><div class="ttdoc">XZ平面での更新</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:353</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_a9e090196ede35764f88230ce02f1246d"><div class="ttname"><a href="#a9e090196ede35764f88230ce02f1246d">NGame::CActorMove::ApplyMoveY</a></div><div class="ttdeci">void ApplyMoveY()</div><div class="ttdoc">Y軸の更新</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:425</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_html_ac541442521e358f57e29bbec9b192f81"><div class="ttname"><a href="#ac541442521e358f57e29bbec9b192f81">NGame::CActorMove::ApplyMovement</a></div><div class="ttdeci">void ApplyMovement()</div><div class="ttdoc">移動量と回転量を適用</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:559</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1908510681d79f464afe506c3b667e15" name="a1908510681d79f464afe506c3b667e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1908510681d79f464afe506c3b667e15">&#9670;&#160;</a></span>UpdateFast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::UpdateFast </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>前座標を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  187</span>    {</div>
+<div class="line"><span class="lineno">  188</span>        <a class="code hl_variable" href="#acf6f69b2edbe9e95c20eda5700eb41be">m_pGameObject</a>-&gt;GetTransform().GetPos(<a class="code hl_variable" href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">m_prevPos</a>);</div>
+<div class="line"><span class="lineno">  189</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a68acab64b161371ad64ce4734d01fec1" name="a68acab64b161371ad64ce4734d01fec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68acab64b161371ad64ce4734d01fec1">&#9670;&#160;</a></span>UpdateJump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::UpdateJump </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ジャンプの制御 </p>
+<p>ジャンプ後に空中に遷移したことを確認する </p>
+<div class="fragment"><div class="line"><span class="lineno">  318</span>    {</div>
+<div class="line"><span class="lineno">  319</span>        <span class="comment">// ジャンプ開始時の初期化</span></div>
+<div class="line"><span class="lineno">  320</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a3949fbdf691f63775c52bc8621be4ad8">m_isJumpFrame</a>) {</div>
+<div class="line"><span class="lineno">  321</span>            <a class="code hl_variable" href="#ab09c720aceee03cc02af29df7b89c47f">m_isJumpControl</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  322</span>            <a class="code hl_variable" href="#ae99da703b4fbc852a7c1fb665cf425c0">m_isReleaseGround</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  323</span> </div>
+<div class="line"><span class="lineno">  324</span>            <span class="comment">// トリガー初期化</span></div>
+<div class="line"><span class="lineno">  325</span>            <a class="code hl_variable" href="#a3949fbdf691f63775c52bc8621be4ad8">m_isJumpFrame</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  326</span>        }</div>
+<div class="line"><span class="lineno">  327</span> </div>
+<div class="line"><span class="lineno">  328</span>        <span class="comment">// ジャンプ制御中フラグ</span></div>
+<div class="line"><span class="lineno">  329</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ab09c720aceee03cc02af29df7b89c47f">m_isJumpControl</a>) {</div>
+<div class="line"><span class="lineno">  330</span> </div>
+<div class="line"><span class="lineno">  331</span>            <span class="comment">// ジャンプ後に地面から離れていない間</span></div>
+<div class="line"><span class="lineno">  332</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#ae99da703b4fbc852a7c1fb665cf425c0">m_isReleaseGround</a>) {</div>
+<div class="line"><span class="lineno">  333</span> </div>
+<div class="line"><span class="lineno">  334</span>                <span class="comment">// 地面から離れたかをチェック</span></div>
+<div class="line"><span class="lineno">  335</span>                <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#ac8f747f8bee4b3c4fbde2ae0fbd10405">m_isGrounded</a>) {</div>
+<div class="line"><span class="lineno">  336</span>                    <a class="code hl_variable" href="#ae99da703b4fbc852a7c1fb665cf425c0">m_isReleaseGround</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  337</span>                    <a class="code hl_variable" href="#ab09c720aceee03cc02af29df7b89c47f">m_isJumpControl</a> = <span class="keyword">false</span>;    <span class="comment">// ジャンプの制御を終了</span></div>
+<div class="line"><span class="lineno">  338</span>                }</div>
+<div class="line"><span class="lineno">  339</span>            }</div>
+<div class="line"><span class="lineno">  340</span>        }</div>
+<div class="line"><span class="lineno">  341</span>        <span class="comment">// ジャンプ制御中でない場合はフラグを初期化する</span></div>
+<div class="line"><span class="lineno">  342</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  343</span>            <span class="comment">//m_isReleaseGround = true;</span></div>
+<div class="line"><span class="lineno">  344</span>        }</div>
+<div class="line"><span class="lineno">  345</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a0aae7bfa83e8a23979700265eafab38b" name="a0aae7bfa83e8a23979700265eafab38b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aae7bfa83e8a23979700265eafab38b">&#9670;&#160;</a></span>m_applyType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#afd909be7421c4cbe6d2e3fb2db48723f">EApplyType</a> NGame::CActorMove::m_applyType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afda75ff8a3a4dded7a73a2f38a5f8b69" name="afda75ff8a3a4dded7a73a2f38a5f8b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda75ff8a3a4dded7a73a2f38a5f8b69">&#9670;&#160;</a></span>m_body</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_game_1_1_c_actor_move_1_1_c_actor_body.html">CActorBody</a> NGame::CActorMove::m_body</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f847f5862b8ba7dae9666130ce8ae74" name="a3f847f5862b8ba7dae9666130ce8ae74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f847f5862b8ba7dae9666130ce8ae74">&#9670;&#160;</a></span>m_colGroundIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a> NGame::CActorMove::m_colGroundIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f5e95cd4c076835bddf29b16ab31fad" name="a2f5e95cd4c076835bddf29b16ab31fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f5e95cd4c076835bddf29b16ab31fad">&#9670;&#160;</a></span>m_colWallIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a> NGame::CActorMove::m_colWallIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f8e7b778d1fa65927abd4ee5a7499fd" name="a3f8e7b778d1fa65927abd4ee5a7499fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f8e7b778d1fa65927abd4ee5a7499fd">&#9670;&#160;</a></span>m_constDeltaGravity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_constDeltaGravity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a7fc3b776b91694c4f4294b6b9f8521" name="a1a7fc3b776b91694c4f4294b6b9f8521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a7fc3b776b91694c4f4294b6b9f8521">&#9670;&#160;</a></span>m_constFallSpeedMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_constFallSpeedMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af837a74fafcd0a5470ef3722ce31876d" name="af837a74fafcd0a5470ef3722ce31876d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af837a74fafcd0a5470ef3722ce31876d">&#9670;&#160;</a></span>m_constGravityScale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_constGravityScale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4abc75139a621d8521dbde4ccce41542" name="a4abc75139a621d8521dbde4ccce41542"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4abc75139a621d8521dbde4ccce41542">&#9670;&#160;</a></span>m_constJumpSpeedMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_constJumpSpeedMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa180a61687fb981755a57d61df009932" name="aa180a61687fb981755a57d61df009932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa180a61687fb981755a57d61df009932">&#9670;&#160;</a></span>m_constMoveSpeedXZAcc</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_constMoveSpeedXZAcc</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cc3a7f5a9fdb638edd39e35ac5f2243" name="a1cc3a7f5a9fdb638edd39e35ac5f2243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cc3a7f5a9fdb638edd39e35ac5f2243">&#9670;&#160;</a></span>m_constMoveSpeedXZDecRatio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_constMoveSpeedXZDecRatio</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a702cb49966d41c764491a7eab0741cc6" name="a702cb49966d41c764491a7eab0741cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a702cb49966d41c764491a7eab0741cc6">&#9670;&#160;</a></span>m_constMoveSpeedXZDecRatioAir</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_constMoveSpeedXZDecRatioAir</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2ee693a944bad3c53be8e12cf0e823c" name="ad2ee693a944bad3c53be8e12cf0e823c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ee693a944bad3c53be8e12cf0e823c">&#9670;&#160;</a></span>m_constMoveSpeedXZMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_constMoveSpeedXZMax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94779f2dcdf6e0ed940d33f89f9af2cf" name="a94779f2dcdf6e0ed940d33f89f9af2cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94779f2dcdf6e0ed940d33f89f9af2cf">&#9670;&#160;</a></span>m_constRotSpeedMaxDeg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_constRotSpeedMaxDeg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6d5011bda855d7c1de54a1a58d53205" name="ac6d5011bda855d7c1de54a1a58d53205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d5011bda855d7c1de54a1a58d53205">&#9670;&#160;</a></span>m_curAccelXZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_curAccelXZ</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a508969ddcb00f34cc4cd81ca69722e24" name="a508969ddcb00f34cc4cd81ca69722e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508969ddcb00f34cc4cd81ca69722e24">&#9670;&#160;</a></span>m_curAccelY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_curAccelY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9281870af900f2bb79f9f4b7a2c87da3" name="a9281870af900f2bb79f9f4b7a2c87da3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9281870af900f2bb79f9f4b7a2c87da3">&#9670;&#160;</a></span>m_curMatRot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> NGame::CActorMove::m_curMatRot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe4ddaed76e0a53eed0ef5a010baa143" name="afe4ddaed76e0a53eed0ef5a010baa143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe4ddaed76e0a53eed0ef5a010baa143">&#9670;&#160;</a></span>m_curMatTrans</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> NGame::CActorMove::m_curMatTrans</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5efbcaf2ca626840be6fdbfd7e12d29" name="ae5efbcaf2ca626840be6fdbfd7e12d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5efbcaf2ca626840be6fdbfd7e12d29">&#9670;&#160;</a></span>m_isApplyDeccel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CActorMove::m_isApplyDeccel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62c7913a1ea0ce51d76e72ae03a08000" name="a62c7913a1ea0ce51d76e72ae03a08000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c7913a1ea0ce51d76e72ae03a08000">&#9670;&#160;</a></span>m_isApplyRotateToMoveDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CActorMove::m_isApplyRotateToMoveDir</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6befb97cfdd402c9c0172b91f061c01" name="aa6befb97cfdd402c9c0172b91f061c01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6befb97cfdd402c9c0172b91f061c01">&#9670;&#160;</a></span>m_isApplySpeedY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CActorMove::m_isApplySpeedY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ad199b234c23d406e307158af28f7de" name="a9ad199b234c23d406e307158af28f7de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad199b234c23d406e307158af28f7de">&#9670;&#160;</a></span>m_isCollideWall</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CActorMove::m_isCollideWall</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8f747f8bee4b3c4fbde2ae0fbd10405" name="ac8f747f8bee4b3c4fbde2ae0fbd10405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f747f8bee4b3c4fbde2ae0fbd10405">&#9670;&#160;</a></span>m_isGrounded</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CActorMove::m_isGrounded</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab09c720aceee03cc02af29df7b89c47f" name="ab09c720aceee03cc02af29df7b89c47f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09c720aceee03cc02af29df7b89c47f">&#9670;&#160;</a></span>m_isJumpControl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CActorMove::m_isJumpControl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3949fbdf691f63775c52bc8621be4ad8" name="a3949fbdf691f63775c52bc8621be4ad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3949fbdf691f63775c52bc8621be4ad8">&#9670;&#160;</a></span>m_isJumpFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CActorMove::m_isJumpFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae99da703b4fbc852a7c1fb665cf425c0" name="ae99da703b4fbc852a7c1fb665cf425c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae99da703b4fbc852a7c1fb665cf425c0">&#9670;&#160;</a></span>m_isReleaseGround</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NGame::CActorMove::m_isReleaseGround</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae665eb7bb54e7a2511bc2d29a7135d3e" name="ae665eb7bb54e7a2511bc2d29a7135d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae665eb7bb54e7a2511bc2d29a7135d3e">&#9670;&#160;</a></span>m_moveDirXZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float3 NGame::CActorMove::m_moveDirXZ</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5df62ce360ff7bddf30e2b97d788497d" name="a5df62ce360ff7bddf30e2b97d788497d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5df62ce360ff7bddf30e2b97d788497d">&#9670;&#160;</a></span>m_moveSpeedXZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_moveSpeedXZ</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d92a7dd4fb1050d1d9235e6b0a8d772" name="a9d92a7dd4fb1050d1d9235e6b0a8d772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d92a7dd4fb1050d1d9235e6b0a8d772">&#9670;&#160;</a></span>m_moveSpeedXZMaxRatio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_moveSpeedXZMaxRatio</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaee890efcc0c31fa055894ea7aaf3e3d" name="aaee890efcc0c31fa055894ea7aaf3e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee890efcc0c31fa055894ea7aaf3e3d">&#9670;&#160;</a></span>m_moveSpeedY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::m_moveSpeedY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a967606819bb48749bf7e3cdeea7ae0d0" name="a967606819bb48749bf7e3cdeea7ae0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967606819bb48749bf7e3cdeea7ae0d0">&#9670;&#160;</a></span>m_pColMeshGround</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_collision_1_1_c_mesh.html">NCollision::CMesh</a>* NGame::CActorMove::m_pColMeshGround</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9674152022e1ebe84c1d25428b40d824" name="a9674152022e1ebe84c1d25428b40d824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9674152022e1ebe84c1d25428b40d824">&#9670;&#160;</a></span>m_pColMeshWall</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_collision_1_1_c_mesh.html">NCollision::CMesh</a>* NGame::CActorMove::m_pColMeshWall</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf6f69b2edbe9e95c20eda5700eb41be" name="acf6f69b2edbe9e95c20eda5700eb41be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6f69b2edbe9e95c20eda5700eb41be">&#9670;&#160;</a></span>m_pGameObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a>* NGame::CActorMove::m_pGameObject</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a005f1c18af1f3d189a07f3c65017383d" name="a005f1c18af1f3d189a07f3c65017383d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005f1c18af1f3d189a07f3c65017383d">&#9670;&#160;</a></span>m_posAfterApplyMoveXZ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float3 NGame::CActorMove::m_posAfterApplyMoveXZ</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20ef6c9ae9c8fa6370a85ff28c641bdc" name="a20ef6c9ae9c8fa6370a85ff28c641bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ef6c9ae9c8fa6370a85ff28c641bdc">&#9670;&#160;</a></span>m_posAfterApplyMoveY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float3 NGame::CActorMove::m_posAfterApplyMoveY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bfd9708bd77ce33dda25577b3a7a28a" name="a8bfd9708bd77ce33dda25577b3a7a28a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bfd9708bd77ce33dda25577b3a7a28a">&#9670;&#160;</a></span>m_posAfterUpdate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float3 NGame::CActorMove::m_posAfterUpdate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5c6c3ffeaba0ae84d6a1d46b974d57e" name="af5c6c3ffeaba0ae84d6a1d46b974d57e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5c6c3ffeaba0ae84d6a1d46b974d57e">&#9670;&#160;</a></span>m_prevPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float3 NGame::CActorMove::m_prevPos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/GameApp/Game/Def/<a class="el" href="_game___actor_move_8h_source.html">Game_ActorMove.h</a></li>
+<li>Sources/GameApp/Game/Def/<a class="el" href="_game___actor_move_8cpp.html">Game_ActorMove.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_game.html">NGame</a></li><li class="navelem"><a href="class_n_game_1_1_c_actor_move.html">CActorMove</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

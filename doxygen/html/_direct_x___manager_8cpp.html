@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/DirectX/DirectX_Manager.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_direct_x___manager_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">DirectX_Manager.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_direct_x___manager_8h_source.html">DirectX_Manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_direct_x___util_8h_source.html">DirectX\DirectX_Util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_system___error_8h_source.html">System\System_Error.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:NDirectX" id="r_NDirectX"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_direct_x.html">NDirectX</a></td></tr>
+<tr class="memdesc:namespace_n_direct_x"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバッグフォントを管理する <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:adf1bd9acd955d3f50b0941cc5d399b29" id="r_adf1bd9acd955d3f50b0941cc5d399b29"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_direct_x.html#adf1bd9acd955d3f50b0941cc5d399b29">NDirectX::Setup</a> (HINSTANCE _hInstance, HWND _hWnd, UINT _width, UINT _height)</td></tr>
+<tr class="memitem:aec553ffcacf7dabb351056d3b0d53680" id="r_aec553ffcacf7dabb351056d3b0d53680"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_direct_x.html#aec553ffcacf7dabb351056d3b0d53680">NDirectX::TearDown</a> ()</td></tr>
+<tr class="memitem:ab213af265d85f773a3fb450ca43e3650" id="r_ab213af265d85f773a3fb450ca43e3650"><td class="memItemLeft">LPDIRECT3DDEVICE9&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a> ()</td></tr>
+<tr class="memdesc:ab213af265d85f773a3fb450ca43e3650"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバイスを取得  <br /></td></tr>
+<tr class="memitem:adc930537f1a3d324a4b9fd9feb8b34cf" id="r_adc930537f1a3d324a4b9fd9feb8b34cf"><td class="memItemLeft">D3DPRESENT_PARAMETERS&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_direct_x.html#adc930537f1a3d324a4b9fd9feb8b34cf">NDirectX::GetD3DParam</a> ()</td></tr>
+<tr class="memdesc:adc930537f1a3d324a4b9fd9feb8b34cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバイスコンテキストを取得  <br /></td></tr>
+<tr class="memitem:a3ac51a59330b3de1d46a8938d145540c" id="r_a3ac51a59330b3de1d46a8938d145540c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_direct_x.html#a3ac51a59330b3de1d46a8938d145540c">NDirectX::ClearBackBuffer</a> (const float4 &amp;_color)</td></tr>
+<tr class="memdesc:a3ac51a59330b3de1d46a8938d145540c"><td class="mdescLeft">&#160;</td><td class="mdescRight">バックバッファを初期状態にする  <br /></td></tr>
+<tr class="memitem:a318872c400e5f7fbd5e6b36e29cfa4ac" id="r_a318872c400e5f7fbd5e6b36e29cfa4ac"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_direct_x.html#a318872c400e5f7fbd5e6b36e29cfa4ac">NDirectX::Present</a> ()</td></tr>
+<tr class="memdesc:a318872c400e5f7fbd5e6b36e29cfa4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">画面を切り替える  <br /></td></tr>
+<tr class="memitem:ad066ca87c358294161c6afa6099f0596" id="r_ad066ca87c358294161c6afa6099f0596"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_direct_x.html#ad066ca87c358294161c6afa6099f0596">NDirectX::BeginScene</a> ()</td></tr>
+<tr class="memdesc:ad066ca87c358294161c6afa6099f0596"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定パイプラインでの描画を開始  <br /></td></tr>
+<tr class="memitem:aa169d6ccd017f73e071c5df681c3d2ae" id="r_aa169d6ccd017f73e071c5df681c3d2ae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_direct_x.html#aa169d6ccd017f73e071c5df681c3d2ae">NDirectX::EndScene</a> ()</td></tr>
+<tr class="memdesc:aa169d6ccd017f73e071c5df681c3d2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">固定パイプラインの描画を終了  <br /></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_f51c047ac36bb56b54cc777d5e2f159e.html">DirectX</a></li><li class="navelem"><a href="_direct_x___manager_8cpp.html">DirectX_Manager.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

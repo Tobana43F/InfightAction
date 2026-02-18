@@ -1,0 +1,1780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NInput 名前空間</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('namespace_n_input.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NInput 名前空間</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>入力の初期化、更新などの基本的な関数を定義する  
+<a href="#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a85f25d0cea1d42cf9e9cd8502fddf53a" id="r_a85f25d0cea1d42cf9e9cd8502fddf53a"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53a">EJoystickDef</a> { <br />
+&#160;&#160;<a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aaf5c6d4d3c1820dddc1971e041fa020cf">JOY_A</a>
+, <a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aaa7cf376a7e09e78c09fc289b4c555131">JOY_B</a>
+, <a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa920aeba03a0887d255d09ca598fb113f">JOY_X</a>
+, <a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa6eb364bf8102f4d1b3778dc78d99db52">JOY_Y</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa060cbcbdbb9ec7dd4ec39d51902ab687">JOY_L</a>
+, <a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aaf7a6c25299363555e937b144f846e24c">JOY_R</a>
+, <a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa5f44a4053f64644bf6c3de7b1d14ed0e">JOY_BACK</a>
+, <a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aad1c2d9e0c8ea06080160070c05e96f03">JOY_START</a>
+, <br />
+&#160;&#160;<a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa8bf4aed426e25b1fd1f3acc2a47eb21a">JOY_L3</a>
+, <a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aae9ff6a97ec60b671132e6d65eda2ee28">JOY_R3</a>
+, <a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa0d7068fd1e45e006e50f1ead61466dde">JOY_DEF_MAX</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a85f25d0cea1d42cf9e9cd8502fddf53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイスティックの入力に使用する定数  <a href="#a85f25d0cea1d42cf9e9cd8502fddf53a">[詳解]</a><br /></td></tr>
+<tr class="memitem:a8baf08a2310062e3b440f02aa9f0f8a8" id="r_a8baf08a2310062e3b440f02aa9f0f8a8"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a8baf08a2310062e3b440f02aa9f0f8a8">ESystemKeyDef</a> { <br />
+&#160;&#160;<a class="el" href="#a8baf08a2310062e3b440f02aa9f0f8a8a6c2ff1c7900ec833a88ee356f5902b04">SYS_DEBUG_SWITCH_FREE_CAM</a> = DIK_F2
+, <a class="el" href="#a8baf08a2310062e3b440f02aa9f0f8a8a1dc79a2aebacc9d2ec50039f604041f3">SYS_DEBUG_SWITCH_FREE_CAM_LOCK</a> = DIK_F1
+, <a class="el" href="#a8baf08a2310062e3b440f02aa9f0f8a8a9ca44a4f137a3bb52143fe40bd66440b">SYS_DEBUG_PAUSE_SWITCH</a> = DIK_F6
+, <a class="el" href="#a8baf08a2310062e3b440f02aa9f0f8a8a510f03377db70f6fca50266bcb0c2d16">SYS_DEBUG_PAUSE_STEP</a> = DIK_F7
+, <br />
+&#160;&#160;<a class="el" href="#a8baf08a2310062e3b440f02aa9f0f8a8a88166d909c382368938a61dfd708c33e">SYS_DEBUG_SLOW_SWITCH</a> = DIK_F5
+, <a class="el" href="#a8baf08a2310062e3b440f02aa9f0f8a8ae0c2e3b46c6741310686bab2b0574920">SYS_DEBUG_SLOW_SPEED_UP</a> = DIK_F4
+, <a class="el" href="#a8baf08a2310062e3b440f02aa9f0f8a8a30ba070a721e60759d57bb52be81a41b">SYS_DEBUG_SLOW_SPEED_DOWN</a> = DIK_F3
+<br />
+ }</td></tr>
+<tr class="memdesc:a8baf08a2310062e3b440f02aa9f0f8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">システムで使用するボタンの定義  <a href="#a8baf08a2310062e3b440f02aa9f0f8a8">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a98f157c2bab93518decb39fe841dbe75" id="r_a98f157c2bab93518decb39fe841dbe75"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a98f157c2bab93518decb39fe841dbe75">Setup</a> (HINSTANCE _hInstance, HWND _hWnd)</td></tr>
+<tr class="memdesc:a98f157c2bab93518decb39fe841dbe75"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力の初期化  <br /></td></tr>
+<tr class="memitem:acadd8371ae4b2de2a85fc9f374d6c465" id="r_acadd8371ae4b2de2a85fc9f374d6c465"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acadd8371ae4b2de2a85fc9f374d6c465">TearDown</a> ()</td></tr>
+<tr class="memdesc:acadd8371ae4b2de2a85fc9f374d6c465"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力の解放処理  <br /></td></tr>
+<tr class="memitem:a19d3b61df3d7420511324f29bdf2230e" id="r_a19d3b61df3d7420511324f29bdf2230e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a19d3b61df3d7420511324f29bdf2230e">Update</a> ()</td></tr>
+<tr class="memdesc:a19d3b61df3d7420511324f29bdf2230e"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理  <br /></td></tr>
+<tr class="memitem:a9ef88d9ecbede78f3cc732068c8f6262" id="r_a9ef88d9ecbede78f3cc732068c8f6262"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9ef88d9ecbede78f3cc732068c8f6262">GetKeyPress</a> (int _key)</td></tr>
+<tr class="memdesc:a9ef88d9ecbede78f3cc732068c8f6262"><td class="mdescLeft">&#160;</td><td class="mdescRight">キーの状態を取得  <br /></td></tr>
+<tr class="memitem:a40ad8b8599759afb124e26ab59161cb3" id="r_a40ad8b8599759afb124e26ab59161cb3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a40ad8b8599759afb124e26ab59161cb3">GetKeyDown</a> (int _key)</td></tr>
+<tr class="memitem:ae9ad4655b18b93ab43af28ff04550a5e" id="r_ae9ad4655b18b93ab43af28ff04550a5e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae9ad4655b18b93ab43af28ff04550a5e">GetKeyUp</a> (int _key)</td></tr>
+<tr class="memitem:adb75a6cad551c06f5c82b56fc9b35e52" id="r_adb75a6cad551c06f5c82b56fc9b35e52"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#adb75a6cad551c06f5c82b56fc9b35e52">GetKeyRepeat</a> (int _key)</td></tr>
+<tr class="memitem:ada9a23e86c6694f152009b220a15e798" id="r_ada9a23e86c6694f152009b220a15e798"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ada9a23e86c6694f152009b220a15e798">GetJoystickUpHold</a> ()</td></tr>
+<tr class="memitem:a35087e59f9cfe2fd81006fbb3487a337" id="r_a35087e59f9cfe2fd81006fbb3487a337"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a35087e59f9cfe2fd81006fbb3487a337">GetJoystickDownHold</a> ()</td></tr>
+<tr class="memitem:acef3c143af9b436138a3437df207fc00" id="r_acef3c143af9b436138a3437df207fc00"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acef3c143af9b436138a3437df207fc00">GetJoystickRightHold</a> ()</td></tr>
+<tr class="memitem:a1a960c433056a16ec88052f763b46f04" id="r_a1a960c433056a16ec88052f763b46f04"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1a960c433056a16ec88052f763b46f04">GetJoystickLeftHold</a> ()</td></tr>
+<tr class="memitem:af18d4f6a0df654cdb3c0cc68683c7a98" id="r_af18d4f6a0df654cdb3c0cc68683c7a98"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af18d4f6a0df654cdb3c0cc68683c7a98">GetJoystickUpTrigger</a> ()</td></tr>
+<tr class="memitem:af7259b1233aa19640b79194ac5a8e316" id="r_af7259b1233aa19640b79194ac5a8e316"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af7259b1233aa19640b79194ac5a8e316">GetJoystickDownTrigger</a> ()</td></tr>
+<tr class="memitem:abb6e56f04277903bedf66c3258b65d87" id="r_abb6e56f04277903bedf66c3258b65d87"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#abb6e56f04277903bedf66c3258b65d87">GetJoystickRightTrigger</a> ()</td></tr>
+<tr class="memitem:a39b7e001ebbd6b76430fe9baeed52a6f" id="r_a39b7e001ebbd6b76430fe9baeed52a6f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a39b7e001ebbd6b76430fe9baeed52a6f">GetJoystickLeftTrigger</a> ()</td></tr>
+<tr class="memitem:a0694415d664f131944a27aa1f5714343" id="r_a0694415d664f131944a27aa1f5714343"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0694415d664f131944a27aa1f5714343">GetJoystickPress</a> (int _buttonNo)</td></tr>
+<tr class="memitem:ac0307169b6e73ac33bdf7e3654bf8572" id="r_ac0307169b6e73ac33bdf7e3654bf8572"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac0307169b6e73ac33bdf7e3654bf8572">GetJoystickDown</a> (int _buttonNo)</td></tr>
+<tr class="memitem:a60af33329cce5100cb70816c58e874bc" id="r_a60af33329cce5100cb70816c58e874bc"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a60af33329cce5100cb70816c58e874bc">GetJoystickUp</a> (int _buttonNo)</td></tr>
+<tr class="memitem:a37427fa02e5fd4adfda682c592ceaf93" id="r_a37427fa02e5fd4adfda682c592ceaf93"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a37427fa02e5fd4adfda682c592ceaf93">UpdateVirtualAnalog</a> ()</td></tr>
+<tr class="memdesc:a37427fa02e5fd4adfda682c592ceaf93"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想アナログ入力を更新する  <br /></td></tr>
+<tr class="memitem:a7feb3f335716b60529b3c70834405eb3" id="r_a7feb3f335716b60529b3c70834405eb3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7feb3f335716b60529b3c70834405eb3">GetUpHold</a> ()</td></tr>
+<tr class="memdesc:a7feb3f335716b60529b3c70834405eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">汎用方向入力  <br /></td></tr>
+<tr class="memitem:ab2873eaa103002e1c1349483cf8f30c9" id="r_ab2873eaa103002e1c1349483cf8f30c9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab2873eaa103002e1c1349483cf8f30c9">GetDownHold</a> ()</td></tr>
+<tr class="memitem:a1a38e352e91bb44929fc3c2688414501" id="r_a1a38e352e91bb44929fc3c2688414501"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1a38e352e91bb44929fc3c2688414501">GetRightHold</a> ()</td></tr>
+<tr class="memitem:acc2c260494075f11b4e0ccc16e5665dd" id="r_acc2c260494075f11b4e0ccc16e5665dd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acc2c260494075f11b4e0ccc16e5665dd">GetLeftHold</a> ()</td></tr>
+<tr class="memitem:a36ddf6769810261b4a83f0da078f8baf" id="r_a36ddf6769810261b4a83f0da078f8baf"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a36ddf6769810261b4a83f0da078f8baf">GetUpTrigger</a> ()</td></tr>
+<tr class="memitem:a88b456a71d6301173a408e2e80bc081c" id="r_a88b456a71d6301173a408e2e80bc081c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a88b456a71d6301173a408e2e80bc081c">GetDownTrigger</a> ()</td></tr>
+<tr class="memitem:afcd0dd91a7b537b12aedfaef7c0c88d8" id="r_afcd0dd91a7b537b12aedfaef7c0c88d8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#afcd0dd91a7b537b12aedfaef7c0c88d8">GetRightTrigger</a> ()</td></tr>
+<tr class="memitem:a0cf0bd4e842222eb5276e17e63b72036" id="r_a0cf0bd4e842222eb5276e17e63b72036"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0cf0bd4e842222eb5276e17e63b72036">GetLeftTrigger</a> ()</td></tr>
+<tr class="memitem:a7499affb7166f7592750c51813d03324" id="r_a7499affb7166f7592750c51813d03324"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a7499affb7166f7592750c51813d03324">GetLeftAnalogX</a> ()</td></tr>
+<tr class="memdesc:a7499affb7166f7592750c51813d03324"><td class="mdescLeft">&#160;</td><td class="mdescRight">アナログ入力  <br /></td></tr>
+<tr class="memitem:ad5e27f708f1f604eaa12481acc196b41" id="r_ad5e27f708f1f604eaa12481acc196b41"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad5e27f708f1f604eaa12481acc196b41">GetLeftAnalogY</a> ()</td></tr>
+<tr class="memitem:a1f2346d77fd9c44683532fbebc864ded" id="r_a1f2346d77fd9c44683532fbebc864ded"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1f2346d77fd9c44683532fbebc864ded">GetRightAnalogX</a> ()</td></tr>
+<tr class="memitem:ac2ad4dd7451ee4124a08b410cdd2d607" id="r_ac2ad4dd7451ee4124a08b410cdd2d607"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac2ad4dd7451ee4124a08b410cdd2d607">GetRightAnalogY</a> ()</td></tr>
+<tr class="memitem:a2d61f73f6f0d0e13505a2c7b5319b6c6" id="r_a2d61f73f6f0d0e13505a2c7b5319b6c6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2d61f73f6f0d0e13505a2c7b5319b6c6">GetStart</a> ()</td></tr>
+<tr class="memdesc:a2d61f73f6f0d0e13505a2c7b5319b6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">スタートボタンを取得  <br /></td></tr>
+<tr class="memitem:ad3f1621a24a58d24593b6433f6999e65" id="r_ad3f1621a24a58d24593b6433f6999e65"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad3f1621a24a58d24593b6433f6999e65">GetDecide</a> ()</td></tr>
+<tr class="memdesc:ad3f1621a24a58d24593b6433f6999e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">決定キー  <br /></td></tr>
+<tr class="memitem:abcb6b374b9decaba89e7da285fb7a072" id="r_abcb6b374b9decaba89e7da285fb7a072"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#abcb6b374b9decaba89e7da285fb7a072">GetCancel</a> ()</td></tr>
+<tr class="memdesc:abcb6b374b9decaba89e7da285fb7a072"><td class="mdescLeft">&#160;</td><td class="mdescRight">キャンセルキー  <br /></td></tr>
+<tr class="memitem:a311f8c2af980b3e94217d528b64ef24c" id="r_a311f8c2af980b3e94217d528b64ef24c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a311f8c2af980b3e94217d528b64ef24c">GetReset</a> ()</td></tr>
+<tr class="memdesc:a311f8c2af980b3e94217d528b64ef24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">リセットボタン(システムキー)  <br /></td></tr>
+<tr class="memitem:a041f9903f4d97d5daf45a0f5c79a0489" id="r_a041f9903f4d97d5daf45a0f5c79a0489"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a041f9903f4d97d5daf45a0f5c79a0489">GetJump</a> ()</td></tr>
+<tr class="memdesc:a041f9903f4d97d5daf45a0f5c79a0489"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジャンプボタン  <br /></td></tr>
+<tr class="memitem:a268ee944b038ee199dfe80a0c3f94a9b" id="r_a268ee944b038ee199dfe80a0c3f94a9b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a268ee944b038ee199dfe80a0c3f94a9b">GetAttack1</a> ()</td></tr>
+<tr class="memdesc:a268ee944b038ee199dfe80a0c3f94a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃ボタン１  <br /></td></tr>
+<tr class="memitem:aa34f6da070c5d5c6aaaab71c47a8aaaa" id="r_aa34f6da070c5d5c6aaaab71c47a8aaaa"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa34f6da070c5d5c6aaaab71c47a8aaaa">UpdateGameBuffer</a> ()</td></tr>
+<tr class="memdesc:aa34f6da070c5d5c6aaaab71c47a8aaaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">バッファの更新  <br /></td></tr>
+<tr class="memitem:a3f66b246b70eeb4ea5b8a7d1b127e315" id="r_a3f66b246b70eeb4ea5b8a7d1b127e315"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3f66b246b70eeb4ea5b8a7d1b127e315">GetUpHold</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a7d1d7f77d28569275f6c78bb090608f1" id="r_a7d1d7f77d28569275f6c78bb090608f1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7d1d7f77d28569275f6c78bb090608f1">GetDownHold</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:aba992cbff36110ddacef9f7a290e77d4" id="r_aba992cbff36110ddacef9f7a290e77d4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aba992cbff36110ddacef9f7a290e77d4">GetRightHold</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a21c41000b32ff13a447f56db309af04b" id="r_a21c41000b32ff13a447f56db309af04b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a21c41000b32ff13a447f56db309af04b">GetLeftHold</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:ac7adc997dee4b36b94aa31331ebad7ee" id="r_ac7adc997dee4b36b94aa31331ebad7ee"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac7adc997dee4b36b94aa31331ebad7ee">GetUpTrigger</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:aef39edfbd94c8a76bf81c92be37259af" id="r_aef39edfbd94c8a76bf81c92be37259af"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aef39edfbd94c8a76bf81c92be37259af">GetDownTrigger</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a5ff522efaa5d05c764f42e51d95c1954" id="r_a5ff522efaa5d05c764f42e51d95c1954"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a5ff522efaa5d05c764f42e51d95c1954">GetRightTrigger</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a632ffcc61b905effafe18c7e4eb28d0d" id="r_a632ffcc61b905effafe18c7e4eb28d0d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a632ffcc61b905effafe18c7e4eb28d0d">GetLeftTrigger</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a90ad17fbf8d7e1236d83a2b23469f262" id="r_a90ad17fbf8d7e1236d83a2b23469f262"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a90ad17fbf8d7e1236d83a2b23469f262">GetLeftAnalogX</a> (uint _frame)</td></tr>
+<tr class="memitem:a6a356219051e8c590afbae52bef730ec" id="r_a6a356219051e8c590afbae52bef730ec"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a6a356219051e8c590afbae52bef730ec">GetLeftAnalogY</a> (uint _frame)</td></tr>
+<tr class="memitem:a473a04b3f4712269bf45a70ea19cc35a" id="r_a473a04b3f4712269bf45a70ea19cc35a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a473a04b3f4712269bf45a70ea19cc35a">GetRightAnalogX</a> (uint _frame)</td></tr>
+<tr class="memitem:af4b8c4243a5cfa29b8b3eb817694df6f" id="r_af4b8c4243a5cfa29b8b3eb817694df6f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#af4b8c4243a5cfa29b8b3eb817694df6f">GetRightAnalogY</a> (uint _frame)</td></tr>
+<tr class="memitem:a30c30a88d6f1a7ad7ea52cdaf4ea691c" id="r_a30c30a88d6f1a7ad7ea52cdaf4ea691c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a30c30a88d6f1a7ad7ea52cdaf4ea691c">GetJump</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+<tr class="memitem:a16dd50079b0ecb94abdf32d0fd7c43f8" id="r_a16dd50079b0ecb94abdf32d0fd7c43f8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a16dd50079b0ecb94abdf32d0fd7c43f8">GetAttack1</a> (uint _frame, uint _endFrame, uint *_pDestFrame)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a5938dd09bc24bd1548a371d8fd40aa7f" id="r_a5938dd09bc24bd1548a371d8fd40aa7f"><td class="memItemLeft">const uint&#160;</td><td class="memItemRight"><a class="el" href="#a5938dd09bc24bd1548a371d8fd40aa7f">GAME_BUFFER_SIZE</a> = 300</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>入力の初期化、更新などの基本的な関数を定義する </p>
+<p>ゲーム用入力の履歴を保持する</p>
+<ul>
+<li>すべての入力の更新などの管理</li>
+<li>キーボードの入力</li>
+</ul>
+<dl class="section note"><dt>覚え書き</dt><dd>新しい入力を追加した場合は、必要であるなら Input_GameBuffer に関数を追加する。</dd>
+<dd>
+共通事項<ul>
+<li>Input_Game の入力を毎フレーム取得し、履歴を保持する 取得できる値についてはInput_Gameを参照</li>
+<li>履歴をとる必要のない値は保持しない(決定キーなど) </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_frame</td><td>何フレーム前の情報を取得するかを指定(0 = 現在の情報を取得する) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_endFrame</td><td>_frameから_endFrameの間で入力がある場合、trueを返す _frameと_endFrameを含む _endFrameにUINT_MAXを指定すると、範囲指定を無効にする </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">_pDestFrame</td><td>範囲を指定した場合、trueになった一番直近のフレームを取得する </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型詳解</h2>
+<a id="a85f25d0cea1d42cf9e9cd8502fddf53a" name="a85f25d0cea1d42cf9e9cd8502fddf53a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53a">&#9670;&#160;</a></span>EJoystickDef</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a85f25d0cea1d42cf9e9cd8502fddf53a">NInput::EJoystickDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジョイスティックの入力に使用する定数 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aaf5c6d4d3c1820dddc1971e041fa020cf" name="a85f25d0cea1d42cf9e9cd8502fddf53aaf5c6d4d3c1820dddc1971e041fa020cf"></a>JOY_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aaa7cf376a7e09e78c09fc289b4c555131" name="a85f25d0cea1d42cf9e9cd8502fddf53aaa7cf376a7e09e78c09fc289b4c555131"></a>JOY_B&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aa920aeba03a0887d255d09ca598fb113f" name="a85f25d0cea1d42cf9e9cd8502fddf53aa920aeba03a0887d255d09ca598fb113f"></a>JOY_X&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aa6eb364bf8102f4d1b3778dc78d99db52" name="a85f25d0cea1d42cf9e9cd8502fddf53aa6eb364bf8102f4d1b3778dc78d99db52"></a>JOY_Y&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aa060cbcbdbb9ec7dd4ec39d51902ab687" name="a85f25d0cea1d42cf9e9cd8502fddf53aa060cbcbdbb9ec7dd4ec39d51902ab687"></a>JOY_L&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aaf7a6c25299363555e937b144f846e24c" name="a85f25d0cea1d42cf9e9cd8502fddf53aaf7a6c25299363555e937b144f846e24c"></a>JOY_R&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aa5f44a4053f64644bf6c3de7b1d14ed0e" name="a85f25d0cea1d42cf9e9cd8502fddf53aa5f44a4053f64644bf6c3de7b1d14ed0e"></a>JOY_BACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aad1c2d9e0c8ea06080160070c05e96f03" name="a85f25d0cea1d42cf9e9cd8502fddf53aad1c2d9e0c8ea06080160070c05e96f03"></a>JOY_START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aa8bf4aed426e25b1fd1f3acc2a47eb21a" name="a85f25d0cea1d42cf9e9cd8502fddf53aa8bf4aed426e25b1fd1f3acc2a47eb21a"></a>JOY_L3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aae9ff6a97ec60b671132e6d65eda2ee28" name="a85f25d0cea1d42cf9e9cd8502fddf53aae9ff6a97ec60b671132e6d65eda2ee28"></a>JOY_R3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a85f25d0cea1d42cf9e9cd8502fddf53aa0d7068fd1e45e006e50f1ead61466dde" name="a85f25d0cea1d42cf9e9cd8502fddf53aa0d7068fd1e45e006e50f1ead61466dde"></a>JOY_DEF_MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><span class="lineno">    8</span>                      {</div>
+<div class="line"><span class="lineno">    9</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aaf5c6d4d3c1820dddc1971e041fa020cf">JOY_A</a>,</div>
+<div class="line"><span class="lineno">   10</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aaa7cf376a7e09e78c09fc289b4c555131">JOY_B</a>,</div>
+<div class="line"><span class="lineno">   11</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa920aeba03a0887d255d09ca598fb113f">JOY_X</a>,</div>
+<div class="line"><span class="lineno">   12</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa6eb364bf8102f4d1b3778dc78d99db52">JOY_Y</a>,</div>
+<div class="line"><span class="lineno">   13</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa060cbcbdbb9ec7dd4ec39d51902ab687">JOY_L</a>,</div>
+<div class="line"><span class="lineno">   14</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aaf7a6c25299363555e937b144f846e24c">JOY_R</a>,</div>
+<div class="line"><span class="lineno">   15</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa5f44a4053f64644bf6c3de7b1d14ed0e">JOY_BACK</a>,</div>
+<div class="line"><span class="lineno">   16</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aad1c2d9e0c8ea06080160070c05e96f03">JOY_START</a>,</div>
+<div class="line"><span class="lineno">   17</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa8bf4aed426e25b1fd1f3acc2a47eb21a">JOY_L3</a>,</div>
+<div class="line"><span class="lineno">   18</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aae9ff6a97ec60b671132e6d65eda2ee28">JOY_R3</a>,</div>
+<div class="line"><span class="lineno">   19</span>        <a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa0d7068fd1e45e006e50f1ead61466dde">JOY_DEF_MAX</a></div>
+<div class="line"><span class="lineno">   20</span>    };</div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aa060cbcbdbb9ec7dd4ec39d51902ab687"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aa060cbcbdbb9ec7dd4ec39d51902ab687">NInput::JOY_L</a></div><div class="ttdeci">@ JOY_L</div><div class="ttdef"><b>Definition</b> Input_Def.h:13</div></div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aa0d7068fd1e45e006e50f1ead61466dde"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aa0d7068fd1e45e006e50f1ead61466dde">NInput::JOY_DEF_MAX</a></div><div class="ttdeci">@ JOY_DEF_MAX</div><div class="ttdef"><b>Definition</b> Input_Def.h:19</div></div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aa5f44a4053f64644bf6c3de7b1d14ed0e"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aa5f44a4053f64644bf6c3de7b1d14ed0e">NInput::JOY_BACK</a></div><div class="ttdeci">@ JOY_BACK</div><div class="ttdef"><b>Definition</b> Input_Def.h:15</div></div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aa6eb364bf8102f4d1b3778dc78d99db52"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aa6eb364bf8102f4d1b3778dc78d99db52">NInput::JOY_Y</a></div><div class="ttdeci">@ JOY_Y</div><div class="ttdef"><b>Definition</b> Input_Def.h:12</div></div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aa8bf4aed426e25b1fd1f3acc2a47eb21a"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aa8bf4aed426e25b1fd1f3acc2a47eb21a">NInput::JOY_L3</a></div><div class="ttdeci">@ JOY_L3</div><div class="ttdef"><b>Definition</b> Input_Def.h:17</div></div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aa920aeba03a0887d255d09ca598fb113f"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aa920aeba03a0887d255d09ca598fb113f">NInput::JOY_X</a></div><div class="ttdeci">@ JOY_X</div><div class="ttdef"><b>Definition</b> Input_Def.h:11</div></div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aaa7cf376a7e09e78c09fc289b4c555131"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aaa7cf376a7e09e78c09fc289b4c555131">NInput::JOY_B</a></div><div class="ttdeci">@ JOY_B</div><div class="ttdef"><b>Definition</b> Input_Def.h:10</div></div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aad1c2d9e0c8ea06080160070c05e96f03"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aad1c2d9e0c8ea06080160070c05e96f03">NInput::JOY_START</a></div><div class="ttdeci">@ JOY_START</div><div class="ttdef"><b>Definition</b> Input_Def.h:16</div></div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aae9ff6a97ec60b671132e6d65eda2ee28"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aae9ff6a97ec60b671132e6d65eda2ee28">NInput::JOY_R3</a></div><div class="ttdeci">@ JOY_R3</div><div class="ttdef"><b>Definition</b> Input_Def.h:18</div></div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aaf5c6d4d3c1820dddc1971e041fa020cf"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aaf5c6d4d3c1820dddc1971e041fa020cf">NInput::JOY_A</a></div><div class="ttdeci">@ JOY_A</div><div class="ttdef"><b>Definition</b> Input_Def.h:9</div></div>
+<div class="ttc" id="anamespace_n_input_html_a85f25d0cea1d42cf9e9cd8502fddf53aaf7a6c25299363555e937b144f846e24c"><div class="ttname"><a href="#a85f25d0cea1d42cf9e9cd8502fddf53aaf7a6c25299363555e937b144f846e24c">NInput::JOY_R</a></div><div class="ttdeci">@ JOY_R</div><div class="ttdef"><b>Definition</b> Input_Def.h:14</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8baf08a2310062e3b440f02aa9f0f8a8" name="a8baf08a2310062e3b440f02aa9f0f8a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8baf08a2310062e3b440f02aa9f0f8a8">&#9670;&#160;</a></span>ESystemKeyDef</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a8baf08a2310062e3b440f02aa9f0f8a8">NInput::ESystemKeyDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>システムで使用するボタンの定義 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a8baf08a2310062e3b440f02aa9f0f8a8a6c2ff1c7900ec833a88ee356f5902b04" name="a8baf08a2310062e3b440f02aa9f0f8a8a6c2ff1c7900ec833a88ee356f5902b04"></a>SYS_DEBUG_SWITCH_FREE_CAM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8baf08a2310062e3b440f02aa9f0f8a8a1dc79a2aebacc9d2ec50039f604041f3" name="a8baf08a2310062e3b440f02aa9f0f8a8a1dc79a2aebacc9d2ec50039f604041f3"></a>SYS_DEBUG_SWITCH_FREE_CAM_LOCK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8baf08a2310062e3b440f02aa9f0f8a8a9ca44a4f137a3bb52143fe40bd66440b" name="a8baf08a2310062e3b440f02aa9f0f8a8a9ca44a4f137a3bb52143fe40bd66440b"></a>SYS_DEBUG_PAUSE_SWITCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8baf08a2310062e3b440f02aa9f0f8a8a510f03377db70f6fca50266bcb0c2d16" name="a8baf08a2310062e3b440f02aa9f0f8a8a510f03377db70f6fca50266bcb0c2d16"></a>SYS_DEBUG_PAUSE_STEP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8baf08a2310062e3b440f02aa9f0f8a8a88166d909c382368938a61dfd708c33e" name="a8baf08a2310062e3b440f02aa9f0f8a8a88166d909c382368938a61dfd708c33e"></a>SYS_DEBUG_SLOW_SWITCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8baf08a2310062e3b440f02aa9f0f8a8ae0c2e3b46c6741310686bab2b0574920" name="a8baf08a2310062e3b440f02aa9f0f8a8ae0c2e3b46c6741310686bab2b0574920"></a>SYS_DEBUG_SLOW_SPEED_UP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8baf08a2310062e3b440f02aa9f0f8a8a30ba070a721e60759d57bb52be81a41b" name="a8baf08a2310062e3b440f02aa9f0f8a8a30ba070a721e60759d57bb52be81a41b"></a>SYS_DEBUG_SLOW_SPEED_DOWN&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>                       {</div>
+<div class="line"><span class="lineno">   24</span>        <a class="code hl_enumvalue" href="#a8baf08a2310062e3b440f02aa9f0f8a8a6c2ff1c7900ec833a88ee356f5902b04">SYS_DEBUG_SWITCH_FREE_CAM</a>   = DIK_F2,   <span class="comment">// デバッグカメラに切り替え</span></div>
+<div class="line"><span class="lineno">   25</span>        <a class="code hl_enumvalue" href="#a8baf08a2310062e3b440f02aa9f0f8a8a1dc79a2aebacc9d2ec50039f604041f3">SYS_DEBUG_SWITCH_FREE_CAM_LOCK</a> = DIK_F1,    <span class="comment">// デバッグカメラの固定</span></div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>        <a class="code hl_enumvalue" href="#a8baf08a2310062e3b440f02aa9f0f8a8a9ca44a4f137a3bb52143fe40bd66440b">SYS_DEBUG_PAUSE_SWITCH</a>      = DIK_F6,   <span class="comment">// ポーズ切り替えボタン</span></div>
+<div class="line"><span class="lineno">   28</span>        <a class="code hl_enumvalue" href="#a8baf08a2310062e3b440f02aa9f0f8a8a510f03377db70f6fca50266bcb0c2d16">SYS_DEBUG_PAUSE_STEP</a>        = DIK_F7,   <span class="comment">// ポーズ中にステップするボタン</span></div>
+<div class="line"><span class="lineno">   29</span>        <a class="code hl_enumvalue" href="#a8baf08a2310062e3b440f02aa9f0f8a8a88166d909c382368938a61dfd708c33e">SYS_DEBUG_SLOW_SWITCH</a>       = DIK_F5,   <span class="comment">// スロー切り替えボタン</span></div>
+<div class="line"><span class="lineno">   30</span>        <a class="code hl_enumvalue" href="#a8baf08a2310062e3b440f02aa9f0f8a8ae0c2e3b46c6741310686bab2b0574920">SYS_DEBUG_SLOW_SPEED_UP</a>     = DIK_F4,   <span class="comment">// スロー加速ボタン</span></div>
+<div class="line"><span class="lineno">   31</span>        <a class="code hl_enumvalue" href="#a8baf08a2310062e3b440f02aa9f0f8a8a30ba070a721e60759d57bb52be81a41b">SYS_DEBUG_SLOW_SPEED_DOWN</a>   = DIK_F3    <span class="comment">// スロー減速ボタン</span></div>
+<div class="line"><span class="lineno">   32</span>    };</div>
+<div class="ttc" id="anamespace_n_input_html_a8baf08a2310062e3b440f02aa9f0f8a8a1dc79a2aebacc9d2ec50039f604041f3"><div class="ttname"><a href="#a8baf08a2310062e3b440f02aa9f0f8a8a1dc79a2aebacc9d2ec50039f604041f3">NInput::SYS_DEBUG_SWITCH_FREE_CAM_LOCK</a></div><div class="ttdeci">@ SYS_DEBUG_SWITCH_FREE_CAM_LOCK</div><div class="ttdef"><b>Definition</b> Input_Def.h:25</div></div>
+<div class="ttc" id="anamespace_n_input_html_a8baf08a2310062e3b440f02aa9f0f8a8a30ba070a721e60759d57bb52be81a41b"><div class="ttname"><a href="#a8baf08a2310062e3b440f02aa9f0f8a8a30ba070a721e60759d57bb52be81a41b">NInput::SYS_DEBUG_SLOW_SPEED_DOWN</a></div><div class="ttdeci">@ SYS_DEBUG_SLOW_SPEED_DOWN</div><div class="ttdef"><b>Definition</b> Input_Def.h:31</div></div>
+<div class="ttc" id="anamespace_n_input_html_a8baf08a2310062e3b440f02aa9f0f8a8a510f03377db70f6fca50266bcb0c2d16"><div class="ttname"><a href="#a8baf08a2310062e3b440f02aa9f0f8a8a510f03377db70f6fca50266bcb0c2d16">NInput::SYS_DEBUG_PAUSE_STEP</a></div><div class="ttdeci">@ SYS_DEBUG_PAUSE_STEP</div><div class="ttdef"><b>Definition</b> Input_Def.h:28</div></div>
+<div class="ttc" id="anamespace_n_input_html_a8baf08a2310062e3b440f02aa9f0f8a8a6c2ff1c7900ec833a88ee356f5902b04"><div class="ttname"><a href="#a8baf08a2310062e3b440f02aa9f0f8a8a6c2ff1c7900ec833a88ee356f5902b04">NInput::SYS_DEBUG_SWITCH_FREE_CAM</a></div><div class="ttdeci">@ SYS_DEBUG_SWITCH_FREE_CAM</div><div class="ttdef"><b>Definition</b> Input_Def.h:24</div></div>
+<div class="ttc" id="anamespace_n_input_html_a8baf08a2310062e3b440f02aa9f0f8a8a88166d909c382368938a61dfd708c33e"><div class="ttname"><a href="#a8baf08a2310062e3b440f02aa9f0f8a8a88166d909c382368938a61dfd708c33e">NInput::SYS_DEBUG_SLOW_SWITCH</a></div><div class="ttdeci">@ SYS_DEBUG_SLOW_SWITCH</div><div class="ttdef"><b>Definition</b> Input_Def.h:29</div></div>
+<div class="ttc" id="anamespace_n_input_html_a8baf08a2310062e3b440f02aa9f0f8a8a9ca44a4f137a3bb52143fe40bd66440b"><div class="ttname"><a href="#a8baf08a2310062e3b440f02aa9f0f8a8a9ca44a4f137a3bb52143fe40bd66440b">NInput::SYS_DEBUG_PAUSE_SWITCH</a></div><div class="ttdeci">@ SYS_DEBUG_PAUSE_SWITCH</div><div class="ttdef"><b>Definition</b> Input_Def.h:27</div></div>
+<div class="ttc" id="anamespace_n_input_html_a8baf08a2310062e3b440f02aa9f0f8a8ae0c2e3b46c6741310686bab2b0574920"><div class="ttname"><a href="#a8baf08a2310062e3b440f02aa9f0f8a8ae0c2e3b46c6741310686bab2b0574920">NInput::SYS_DEBUG_SLOW_SPEED_UP</a></div><div class="ttdeci">@ SYS_DEBUG_SLOW_SPEED_UP</div><div class="ttdef"><b>Definition</b> Input_Def.h:30</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a268ee944b038ee199dfe80a0c3f94a9b" name="a268ee944b038ee199dfe80a0c3f94a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a268ee944b038ee199dfe80a0c3f94a9b">&#9670;&#160;</a></span>GetAttack1() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetAttack1 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>攻撃ボタン１ </p>
+<div class="fragment"><div class="line"><span class="lineno">  298</span>    {</div>
+<div class="line"><span class="lineno">  299</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  300</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  301</span>        sts |= <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_X);</div>
+<div class="line"><span class="lineno">  302</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  303</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#ab941a2d4946c25d11734a22391eb0cb8">NDirectX::GetJoystickButtonTrigger</a>(<a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa920aeba03a0887d255d09ca598fb113f">JOY_X</a>);</div>
+<div class="line"><span class="lineno">  304</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  305</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab941a2d4946c25d11734a22391eb0cb8"><div class="ttname"><a href="namespace_n_direct_x.html#ab941a2d4946c25d11734a22391eb0cb8">NDirectX::GetJoystickButtonTrigger</a></div><div class="ttdeci">bool GetJoystickButtonTrigger(int _no)</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:986</div></div>
+<div class="ttc" id="anamespace_n_input_html_a40ad8b8599759afb124e26ab59161cb3"><div class="ttname"><a href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a></div><div class="ttdeci">bool GetKeyDown(int _key)</div><div class="ttdef"><b>Definition</b> Input_Common.cpp:41</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a16dd50079b0ecb94abdf32d0fd7c43f8" name="a16dd50079b0ecb94abdf32d0fd7c43f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16dd50079b0ecb94abdf32d0fd7c43f8">&#9670;&#160;</a></span>GetAttack1() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetAttack1 </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  194</span>    {</div>
+<div class="line"><span class="lineno">  195</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  196</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  197</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(sts, g_bufAttack1, _frame, _endFrame, _pDestFrame);</div>
+<div class="line"><span class="lineno">  198</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  199</span>    }</div>
+<div class="ttc" id="a_input___game_buffer_8cpp_html_a58cf183eeb9e2d7214ee290a2c59c273"><div class="ttname"><a href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a></div><div class="ttdeci">#define GetBool(_boolDest, _bufArray, _frame, _endFrame, _pDestFrame)</div><div class="ttdoc">boolのゲッターの記述を省略するマクロ</div><div class="ttdef"><b>Definition</b> Input_GameBuffer.cpp:24</div></div>
+<div class="ttc" id="a_input___game_buffer_8cpp_html_abfaed2d8172139ea8c1d397617d9ddf2"><div class="ttname"><a href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a></div><div class="ttdeci">#define AssertBuf(_idx)</div><div class="ttdoc">バッファオーバーフローを検知するためのアサートの記述を省略するマクロ</div><div class="ttdef"><b>Definition</b> Input_GameBuffer.cpp:18</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abcb6b374b9decaba89e7da285fb7a072" name="abcb6b374b9decaba89e7da285fb7a072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb6b374b9decaba89e7da285fb7a072">&#9670;&#160;</a></span>GetCancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetCancel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>キャンセルキー </p>
+<div class="fragment"><div class="line"><span class="lineno">  262</span>    {</div>
+<div class="line"><span class="lineno">  263</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  264</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  265</span>        sts |= <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_B);</div>
+<div class="line"><span class="lineno">  266</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  267</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#ab941a2d4946c25d11734a22391eb0cb8">NDirectX::GetJoystickButtonTrigger</a>(<a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aaa7cf376a7e09e78c09fc289b4c555131">JOY_B</a>);</div>
+<div class="line"><span class="lineno">  268</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  269</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad3f1621a24a58d24593b6433f6999e65" name="ad3f1621a24a58d24593b6433f6999e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f1621a24a58d24593b6433f6999e65">&#9670;&#160;</a></span>GetDecide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetDecide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>決定キー </p>
+<div class="fragment"><div class="line"><span class="lineno">  252</span>    {</div>
+<div class="line"><span class="lineno">  253</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  254</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  255</span>        sts |= <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_A);</div>
+<div class="line"><span class="lineno">  256</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  257</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#ab941a2d4946c25d11734a22391eb0cb8">NDirectX::GetJoystickButtonTrigger</a>(<a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aaf5c6d4d3c1820dddc1971e041fa020cf">JOY_A</a>);</div>
+<div class="line"><span class="lineno">  258</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  259</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab2873eaa103002e1c1349483cf8f30c9" name="ab2873eaa103002e1c1349483cf8f30c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2873eaa103002e1c1349483cf8f30c9">&#9670;&#160;</a></span>GetDownHold() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetDownHold </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   84</span>    {</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   86</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">   87</span>        sts |= <a class="code hl_function" href="#a9ef88d9ecbede78f3cc732068c8f6262">NInput::GetKeyPress</a>(GK_DOWN);</div>
+<div class="line"><span class="lineno">   88</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">   89</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#a49f58b94db4b89bd0865decbadb0cf9f">NDirectX::GetJoystickDownHold</a>();</div>
+<div class="line"><span class="lineno">   90</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#a689942986f995d15dc627edd30d8ffa2">NDirectX::GetPOVDownHold</a>();</div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a49f58b94db4b89bd0865decbadb0cf9f"><div class="ttname"><a href="namespace_n_direct_x.html#a49f58b94db4b89bd0865decbadb0cf9f">NDirectX::GetJoystickDownHold</a></div><div class="ttdeci">bool GetJoystickDownHold()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:688</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_a689942986f995d15dc627edd30d8ffa2"><div class="ttname"><a href="namespace_n_direct_x.html#a689942986f995d15dc627edd30d8ffa2">NDirectX::GetPOVDownHold</a></div><div class="ttdeci">bool GetPOVDownHold()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:802</div></div>
+<div class="ttc" id="anamespace_n_input_html_a9ef88d9ecbede78f3cc732068c8f6262"><div class="ttname"><a href="#a9ef88d9ecbede78f3cc732068c8f6262">NInput::GetKeyPress</a></div><div class="ttdeci">bool GetKeyPress(int _key)</div><div class="ttdoc">キーの状態を取得</div><div class="ttdef"><b>Definition</b> Input_Common.cpp:36</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7d1d7f77d28569275f6c78bb090608f1" name="a7d1d7f77d28569275f6c78bb090608f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1d7f77d28569275f6c78bb090608f1">&#9670;&#160;</a></span>GetDownHold() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetDownHold </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  100</span>    {</div>
+<div class="line"><span class="lineno">  101</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  102</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  103</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(sts, g_bufDownHold, _frame, _endFrame, _pDestFrame);</div>
+<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a88b456a71d6301173a408e2e80bc081c" name="a88b456a71d6301173a408e2e80bc081c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b456a71d6301173a408e2e80bc081c">&#9670;&#160;</a></span>GetDownTrigger() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetDownTrigger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  129</span>    {</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  131</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  132</span>        sts |= <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_DOWN);</div>
+<div class="line"><span class="lineno">  133</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  134</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#a6a4ccca8af8295d01490bb2319b2f7b0">NDirectX::GetJoystickDownTrigger</a>();</div>
+<div class="line"><span class="lineno">  135</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#aad51189a5b270687d130d60d7b659b54">NDirectX::GetPOVDownTrigger</a>();</div>
+<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  137</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a6a4ccca8af8295d01490bb2319b2f7b0"><div class="ttname"><a href="namespace_n_direct_x.html#a6a4ccca8af8295d01490bb2319b2f7b0">NDirectX::GetJoystickDownTrigger</a></div><div class="ttdeci">bool GetJoystickDownTrigger()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:705</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_aad51189a5b270687d130d60d7b659b54"><div class="ttname"><a href="namespace_n_direct_x.html#aad51189a5b270687d130d60d7b659b54">NDirectX::GetPOVDownTrigger</a></div><div class="ttdeci">bool GetPOVDownTrigger()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:864</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aef39edfbd94c8a76bf81c92be37259af" name="aef39edfbd94c8a76bf81c92be37259af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef39edfbd94c8a76bf81c92be37259af">&#9670;&#160;</a></span>GetDownTrigger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetDownTrigger </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  134</span>    {</div>
+<div class="line"><span class="lineno">  135</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  136</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  137</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(sts, g_bufDownTrig, _frame, _endFrame, _pDestFrame);</div>
+<div class="line"><span class="lineno">  138</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac0307169b6e73ac33bdf7e3654bf8572" name="ac0307169b6e73ac33bdf7e3654bf8572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0307169b6e73ac33bdf7e3654bf8572">&#9670;&#160;</a></span>GetJoystickDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickDown </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_buttonNo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  102</span>    {</div>
+<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#ab941a2d4946c25d11734a22391eb0cb8">NDirectX::GetJoystickButtonTrigger</a>(_buttonNo);</div>
+<div class="line"><span class="lineno">  104</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a35087e59f9cfe2fd81006fbb3487a337" name="a35087e59f9cfe2fd81006fbb3487a337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35087e59f9cfe2fd81006fbb3487a337">&#9670;&#160;</a></span>GetJoystickDownHold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickDownHold </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   62</span>    {</div>
+<div class="line"><span class="lineno">   63</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#a49f58b94db4b89bd0865decbadb0cf9f">NDirectX::GetJoystickDownHold</a>();</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af7259b1233aa19640b79194ac5a8e316" name="af7259b1233aa19640b79194ac5a8e316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7259b1233aa19640b79194ac5a8e316">&#9670;&#160;</a></span>GetJoystickDownTrigger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickDownTrigger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   82</span>    {</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#a6a4ccca8af8295d01490bb2319b2f7b0">NDirectX::GetJoystickDownTrigger</a>();</div>
+<div class="line"><span class="lineno">   84</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1a960c433056a16ec88052f763b46f04" name="a1a960c433056a16ec88052f763b46f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a960c433056a16ec88052f763b46f04">&#9670;&#160;</a></span>GetJoystickLeftHold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickLeftHold </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   72</span>    {</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#ac3c316d4594ce734718cf3c86d9bf721">NDirectX::GetJoystickLeftHold</a>();</div>
+<div class="line"><span class="lineno">   74</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_ac3c316d4594ce734718cf3c86d9bf721"><div class="ttname"><a href="namespace_n_direct_x.html#ac3c316d4594ce734718cf3c86d9bf721">NDirectX::GetJoystickLeftHold</a></div><div class="ttdeci">bool GetJoystickLeftHold()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:674</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a39b7e001ebbd6b76430fe9baeed52a6f" name="a39b7e001ebbd6b76430fe9baeed52a6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39b7e001ebbd6b76430fe9baeed52a6f">&#9670;&#160;</a></span>GetJoystickLeftTrigger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickLeftTrigger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   92</span>    {</div>
+<div class="line"><span class="lineno">   93</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#afdfc1a6f40f438ec570129e3e6459a33">NDirectX::GetJoystickLeftTrigger</a>();</div>
+<div class="line"><span class="lineno">   94</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_afdfc1a6f40f438ec570129e3e6459a33"><div class="ttname"><a href="namespace_n_direct_x.html#afdfc1a6f40f438ec570129e3e6459a33">NDirectX::GetJoystickLeftTrigger</a></div><div class="ttdeci">bool GetJoystickLeftTrigger()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:725</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0694415d664f131944a27aa1f5714343" name="a0694415d664f131944a27aa1f5714343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0694415d664f131944a27aa1f5714343">&#9670;&#160;</a></span>GetJoystickPress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickPress </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_buttonNo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   97</span>    {</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#aa44df25b0641c27576d64ec9d0d67267">NDirectX::GetJoystickButtonHold</a>(_buttonNo);</div>
+<div class="line"><span class="lineno">   99</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_aa44df25b0641c27576d64ec9d0d67267"><div class="ttname"><a href="namespace_n_direct_x.html#aa44df25b0641c27576d64ec9d0d67267">NDirectX::GetJoystickButtonHold</a></div><div class="ttdeci">bool GetJoystickButtonHold(int _no)</div><div class="ttdoc">ジョイスティックのボタン入力</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:977</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acef3c143af9b436138a3437df207fc00" name="acef3c143af9b436138a3437df207fc00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef3c143af9b436138a3437df207fc00">&#9670;&#160;</a></span>GetJoystickRightHold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickRightHold </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   67</span>    {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#afd8cc446a73835c0ad8c35ae17bc0a4d">NDirectX::GetJoystickRightHold</a>();</div>
+<div class="line"><span class="lineno">   69</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_afd8cc446a73835c0ad8c35ae17bc0a4d"><div class="ttname"><a href="namespace_n_direct_x.html#afd8cc446a73835c0ad8c35ae17bc0a4d">NDirectX::GetJoystickRightHold</a></div><div class="ttdeci">bool GetJoystickRightHold()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:667</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abb6e56f04277903bedf66c3258b65d87" name="abb6e56f04277903bedf66c3258b65d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb6e56f04277903bedf66c3258b65d87">&#9670;&#160;</a></span>GetJoystickRightTrigger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickRightTrigger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   87</span>    {</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#a2a9c2a407939bc7362cacae45dc25ba2">NDirectX::GetJoystickRightTrigger</a>();</div>
+<div class="line"><span class="lineno">   89</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a2a9c2a407939bc7362cacae45dc25ba2"><div class="ttname"><a href="namespace_n_direct_x.html#a2a9c2a407939bc7362cacae45dc25ba2">NDirectX::GetJoystickRightTrigger</a></div><div class="ttdeci">bool GetJoystickRightTrigger()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:715</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a60af33329cce5100cb70816c58e874bc" name="a60af33329cce5100cb70816c58e874bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60af33329cce5100cb70816c58e874bc">&#9670;&#160;</a></span>GetJoystickUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickUp </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_buttonNo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  107</span>    {</div>
+<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#a2ca637b4d95c1123970bc6b2a00cfd6f">NDirectX::GetJoystickButtonRelease</a>(_buttonNo);</div>
+<div class="line"><span class="lineno">  109</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a2ca637b4d95c1123970bc6b2a00cfd6f"><div class="ttname"><a href="namespace_n_direct_x.html#a2ca637b4d95c1123970bc6b2a00cfd6f">NDirectX::GetJoystickButtonRelease</a></div><div class="ttdeci">bool GetJoystickButtonRelease(int _no)</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:1001</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ada9a23e86c6694f152009b220a15e798" name="ada9a23e86c6694f152009b220a15e798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9a23e86c6694f152009b220a15e798">&#9670;&#160;</a></span>GetJoystickUpHold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickUpHold </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   57</span>    {</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#aec50aeb3a28788302e972a4601c49047">NDirectX::GetJoystickUpHold</a>();</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_aec50aeb3a28788302e972a4601c49047"><div class="ttname"><a href="namespace_n_direct_x.html#aec50aeb3a28788302e972a4601c49047">NDirectX::GetJoystickUpHold</a></div><div class="ttdeci">bool GetJoystickUpHold()</div><div class="ttdoc">左ジョイスティックの入力押下状態</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:681</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af18d4f6a0df654cdb3c0cc68683c7a98" name="af18d4f6a0df654cdb3c0cc68683c7a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af18d4f6a0df654cdb3c0cc68683c7a98">&#9670;&#160;</a></span>GetJoystickUpTrigger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJoystickUpTrigger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   77</span>    {</div>
+<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#a43c20eabe9f2d3c841bc901a5c50ca6c">NDirectX::GetJoystickUpTrigger</a>();</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a43c20eabe9f2d3c841bc901a5c50ca6c"><div class="ttname"><a href="namespace_n_direct_x.html#a43c20eabe9f2d3c841bc901a5c50ca6c">NDirectX::GetJoystickUpTrigger</a></div><div class="ttdeci">bool GetJoystickUpTrigger()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:695</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a041f9903f4d97d5daf45a0f5c79a0489" name="a041f9903f4d97d5daf45a0f5c79a0489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041f9903f4d97d5daf45a0f5c79a0489">&#9670;&#160;</a></span>GetJump() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJump </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ジャンプボタン </p>
+<div class="fragment"><div class="line"><span class="lineno">  288</span>    {</div>
+<div class="line"><span class="lineno">  289</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  290</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  291</span>        sts |= <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_A);</div>
+<div class="line"><span class="lineno">  292</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  293</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#ab941a2d4946c25d11734a22391eb0cb8">NDirectX::GetJoystickButtonTrigger</a>(<a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aaf5c6d4d3c1820dddc1971e041fa020cf">JOY_A</a>);</div>
+<div class="line"><span class="lineno">  294</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  295</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a30c30a88d6f1a7ad7ea52cdaf4ea691c" name="a30c30a88d6f1a7ad7ea52cdaf4ea691c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c30a88d6f1a7ad7ea52cdaf4ea691c">&#9670;&#160;</a></span>GetJump() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetJump </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  186</span>    {</div>
+<div class="line"><span class="lineno">  187</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  188</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  189</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(sts, g_bufJump, _frame, _endFrame, _pDestFrame);</div>
+<div class="line"><span class="lineno">  190</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  191</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a40ad8b8599759afb124e26ab59161cb3" name="a40ad8b8599759afb124e26ab59161cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40ad8b8599759afb124e26ab59161cb3">&#9670;&#160;</a></span>GetKeyDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetKeyDown </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   42</span>    {</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#a23e28015f5e57c9f618543b68fd398de">NDirectX::GetKeyboardTrigger</a>(_key);</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a23e28015f5e57c9f618543b68fd398de"><div class="ttname"><a href="namespace_n_direct_x.html#a23e28015f5e57c9f618543b68fd398de">NDirectX::GetKeyboardTrigger</a></div><div class="ttdeci">bool GetKeyboardTrigger(int key)</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:440</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9ef88d9ecbede78f3cc732068c8f6262" name="a9ef88d9ecbede78f3cc732068c8f6262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ef88d9ecbede78f3cc732068c8f6262">&#9670;&#160;</a></span>GetKeyPress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetKeyPress </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>キーの状態を取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_key</td><td>DirectXの定義(DIK_)を引数にとる </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>    {</div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#adab7792fbfd4f57c735c7e8eb1c4a9eb">NDirectX::GetKeyboardPress</a>(_key);</div>
+<div class="line"><span class="lineno">   39</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_adab7792fbfd4f57c735c7e8eb1c4a9eb"><div class="ttname"><a href="namespace_n_direct_x.html#adab7792fbfd4f57c735c7e8eb1c4a9eb">NDirectX::GetKeyboardPress</a></div><div class="ttdeci">bool GetKeyboardPress(int key)</div><div class="ttdoc">キーボードの入力</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:432</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adb75a6cad551c06f5c82b56fc9b35e52" name="adb75a6cad551c06f5c82b56fc9b35e52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb75a6cad551c06f5c82b56fc9b35e52">&#9670;&#160;</a></span>GetKeyRepeat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetKeyRepeat </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   52</span>    {</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#ab10e24eb812a7c865fe63865dcef7fde">NDirectX::GetKeyboardRepeat</a>(_key);</div>
+<div class="line"><span class="lineno">   54</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab10e24eb812a7c865fe63865dcef7fde"><div class="ttname"><a href="namespace_n_direct_x.html#ab10e24eb812a7c865fe63865dcef7fde">NDirectX::GetKeyboardRepeat</a></div><div class="ttdeci">bool GetKeyboardRepeat(int key)</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:448</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae9ad4655b18b93ab43af28ff04550a5e" name="ae9ad4655b18b93ab43af28ff04550a5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ad4655b18b93ab43af28ff04550a5e">&#9670;&#160;</a></span>GetKeyUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetKeyUp </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   47</span>    {</div>
+<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespace_n_direct_x.html#a4e578f7d3b178e5b0c105d9e84ce6bdc">NDirectX::GetKeyboardRelease</a>(_key);</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a4e578f7d3b178e5b0c105d9e84ce6bdc"><div class="ttname"><a href="namespace_n_direct_x.html#a4e578f7d3b178e5b0c105d9e84ce6bdc">NDirectX::GetKeyboardRelease</a></div><div class="ttdeci">bool GetKeyboardRelease(int key)</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:456</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7499affb7166f7592750c51813d03324" name="a7499affb7166f7592750c51813d03324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7499affb7166f7592750c51813d03324">&#9670;&#160;</a></span>GetLeftAnalogX() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NInput::GetLeftAnalogX </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アナログ入力 </p>
+<p>ジョイスティックの入力が優先される </p><dl class="section return"><dt>戻り値</dt><dd>ジョイスティックのアナログ値 -1 ~ 1 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  166</span>    {</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keywordtype">float</span> analog = 0;</div>
+<div class="line"><span class="lineno">  168</span>        analog = <a class="code hl_function" href="namespace_n_direct_x.html#a860e6e25a3a807e391f1c1472abafebd">NDirectX::GetLeftJoystickXNormal</a>();</div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  171</span>        <span class="keywordtype">float</span> analogVirtual = 0;</div>
+<div class="line"><span class="lineno">  172</span>        analogVirtual = g_virtualLeftAnalogX;</div>
+<div class="line"><span class="lineno">  173</span>        <span class="keywordflow">if</span> (abs(analog) &lt; FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  174</span>            analog = analogVirtual;</div>
+<div class="line"><span class="lineno">  175</span>        }</div>
+<div class="line"><span class="lineno">  176</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>        <span class="keywordflow">if</span> (analog &gt; 1) { analog = 1; }</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">if</span> (analog &lt; -1) { analog = -1; }</div>
+<div class="line"><span class="lineno">  180</span>        <span class="keywordflow">return</span> analog;</div>
+<div class="line"><span class="lineno">  181</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a860e6e25a3a807e391f1c1472abafebd"><div class="ttname"><a href="namespace_n_direct_x.html#a860e6e25a3a807e391f1c1472abafebd">NDirectX::GetLeftJoystickXNormal</a></div><div class="ttdeci">float GetLeftJoystickXNormal()</div><div class="ttdoc">ジョイスティックの入力(正規化済み)</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:644</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a90ad17fbf8d7e1236d83a2b23469f262" name="a90ad17fbf8d7e1236d83a2b23469f262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90ad17fbf8d7e1236d83a2b23469f262">&#9670;&#160;</a></span>GetLeftAnalogX() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NInput::GetLeftAnalogX </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  160</span>    {</div>
+<div class="line"><span class="lineno">  161</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">return</span> g_bufLeftAnalogX[_frame];</div>
+<div class="line"><span class="lineno">  163</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad5e27f708f1f604eaa12481acc196b41" name="ad5e27f708f1f604eaa12481acc196b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5e27f708f1f604eaa12481acc196b41">&#9670;&#160;</a></span>GetLeftAnalogY() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NInput::GetLeftAnalogY </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  184</span>    {</div>
+<div class="line"><span class="lineno">  185</span>        <span class="keywordtype">float</span> analog = 0;</div>
+<div class="line"><span class="lineno">  186</span>        analog = <a class="code hl_function" href="namespace_n_direct_x.html#ad4b3ac94fee0d02d41e6f649184208be">NDirectX::GetLeftJoystickYNormal</a>();</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  189</span>        <span class="keywordtype">float</span> analogVirtual = 0;</div>
+<div class="line"><span class="lineno">  190</span>        analogVirtual = g_virtualLeftAnalogY;</div>
+<div class="line"><span class="lineno">  191</span>        <span class="keywordflow">if</span> (abs(analog) &lt; FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  192</span>            analog = analogVirtual;</div>
+<div class="line"><span class="lineno">  193</span>        }</div>
+<div class="line"><span class="lineno">  194</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  196</span>        <span class="keywordflow">if</span> (analog &gt; 1) { analog = 1; }</div>
+<div class="line"><span class="lineno">  197</span>        <span class="keywordflow">if</span> (analog &lt; -1) { analog = -1; }</div>
+<div class="line"><span class="lineno">  198</span>        <span class="keywordflow">return</span> analog;</div>
+<div class="line"><span class="lineno">  199</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_ad4b3ac94fee0d02d41e6f649184208be"><div class="ttname"><a href="namespace_n_direct_x.html#ad4b3ac94fee0d02d41e6f649184208be">NDirectX::GetLeftJoystickYNormal</a></div><div class="ttdeci">float GetLeftJoystickYNormal()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:649</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6a356219051e8c590afbae52bef730ec" name="a6a356219051e8c590afbae52bef730ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a356219051e8c590afbae52bef730ec">&#9670;&#160;</a></span>GetLeftAnalogY() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NInput::GetLeftAnalogY </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  166</span>    {</div>
+<div class="line"><span class="lineno">  167</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  168</span>        <span class="keywordflow">return</span> g_bufLeftAnalogY[_frame];</div>
+<div class="line"><span class="lineno">  169</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acc2c260494075f11b4e0ccc16e5665dd" name="acc2c260494075f11b4e0ccc16e5665dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc2c260494075f11b4e0ccc16e5665dd">&#9670;&#160;</a></span>GetLeftHold() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetLeftHold </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  106</span>    {</div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  108</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  109</span>        sts |= <a class="code hl_function" href="#a9ef88d9ecbede78f3cc732068c8f6262">NInput::GetKeyPress</a>(GK_LEFT);</div>
+<div class="line"><span class="lineno">  110</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  111</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#ac3c316d4594ce734718cf3c86d9bf721">NDirectX::GetJoystickLeftHold</a>();</div>
+<div class="line"><span class="lineno">  112</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#abc836c4237a427c1d6664e6aa9eff084">NDirectX::GetPOVLeftHold</a>();</div>
+<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_abc836c4237a427c1d6664e6aa9eff084"><div class="ttname"><a href="namespace_n_direct_x.html#abc836c4237a427c1d6664e6aa9eff084">NDirectX::GetPOVLeftHold</a></div><div class="ttdeci">bool GetPOVLeftHold()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:814</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a21c41000b32ff13a447f56db309af04b" name="a21c41000b32ff13a447f56db309af04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21c41000b32ff13a447f56db309af04b">&#9670;&#160;</a></span>GetLeftHold() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetLeftHold </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  116</span>    {</div>
+<div class="line"><span class="lineno">  117</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  118</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(sts, g_bufLeftHold, _frame, _endFrame, _pDestFrame);</div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  121</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0cf0bd4e842222eb5276e17e63b72036" name="a0cf0bd4e842222eb5276e17e63b72036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cf0bd4e842222eb5276e17e63b72036">&#9670;&#160;</a></span>GetLeftTrigger() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetLeftTrigger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  151</span>    {</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  153</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  154</span>        sts |= <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_LEFT);</div>
+<div class="line"><span class="lineno">  155</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  156</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#afdfc1a6f40f438ec570129e3e6459a33">NDirectX::GetJoystickLeftTrigger</a>();</div>
+<div class="line"><span class="lineno">  157</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#acc777659ff0f7694189279d78378959d">NDirectX::GetPOVLeftTrigger</a>();</div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  159</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_acc777659ff0f7694189279d78378959d"><div class="ttname"><a href="namespace_n_direct_x.html#acc777659ff0f7694189279d78378959d">NDirectX::GetPOVLeftTrigger</a></div><div class="ttdeci">bool GetPOVLeftTrigger()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:882</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a632ffcc61b905effafe18c7e4eb28d0d" name="a632ffcc61b905effafe18c7e4eb28d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632ffcc61b905effafe18c7e4eb28d0d">&#9670;&#160;</a></span>GetLeftTrigger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetLeftTrigger </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  150</span>    {</div>
+<div class="line"><span class="lineno">  151</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  153</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(sts, g_bufLeftTrig, _frame, _endFrame, _pDestFrame);</div>
+<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  155</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a311f8c2af980b3e94217d528b64ef24c" name="a311f8c2af980b3e94217d528b64ef24c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311f8c2af980b3e94217d528b64ef24c">&#9670;&#160;</a></span>GetReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetReset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>リセットボタン(システムキー) </p>
+<dl class="section note"><dt>覚え書き</dt><dd>ゲームのタイトル画面に戻るなどに使用する </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  272</span>    {</div>
+<div class="line"><span class="lineno">  273</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  274</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  275</span>        sts |= <a class="code hl_function" href="#a9ef88d9ecbede78f3cc732068c8f6262">NInput::GetKeyPress</a>(GK_START) &amp;&amp;</div>
+<div class="line"><span class="lineno">  276</span>            <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_BACK);</div>
+<div class="line"><span class="lineno">  277</span>        sts |= <a class="code hl_function" href="#a9ef88d9ecbede78f3cc732068c8f6262">NInput::GetKeyPress</a>(GK_BACK) &amp;&amp;</div>
+<div class="line"><span class="lineno">  278</span>            <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_START);</div>
+<div class="line"><span class="lineno">  279</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  280</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#aa44df25b0641c27576d64ec9d0d67267">NDirectX::GetJoystickButtonHold</a>(<a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aad1c2d9e0c8ea06080160070c05e96f03">JOY_START</a>) &amp;&amp;</div>
+<div class="line"><span class="lineno">  281</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab941a2d4946c25d11734a22391eb0cb8">NDirectX::GetJoystickButtonTrigger</a>(<a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa5f44a4053f64644bf6c3de7b1d14ed0e">JOY_BACK</a>);</div>
+<div class="line"><span class="lineno">  282</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#aa44df25b0641c27576d64ec9d0d67267">NDirectX::GetJoystickButtonHold</a>(<a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aa5f44a4053f64644bf6c3de7b1d14ed0e">JOY_BACK</a>) &amp;&amp;</div>
+<div class="line"><span class="lineno">  283</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab941a2d4946c25d11734a22391eb0cb8">NDirectX::GetJoystickButtonTrigger</a>(<a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aad1c2d9e0c8ea06080160070c05e96f03">JOY_START</a>);</div>
+<div class="line"><span class="lineno">  284</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  285</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1f2346d77fd9c44683532fbebc864ded" name="a1f2346d77fd9c44683532fbebc864ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f2346d77fd9c44683532fbebc864ded">&#9670;&#160;</a></span>GetRightAnalogX() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NInput::GetRightAnalogX </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  202</span>    {</div>
+<div class="line"><span class="lineno">  203</span>        <span class="keywordtype">float</span> analog = 0;</div>
+<div class="line"><span class="lineno">  204</span>        analog = <a class="code hl_function" href="namespace_n_direct_x.html#a72f469e70b87243258b71ff7040de081">NDirectX::GetRightJoystickXNormal</a>();</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  207</span>        <span class="keywordtype">float</span> analogVirtual = 0;</div>
+<div class="line"><span class="lineno">  208</span>        analogVirtual = g_virtualRightAnalogX;</div>
+<div class="line"><span class="lineno">  209</span>        <span class="keywordflow">if</span> (abs(analog) &lt; FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  210</span>            analog = analogVirtual;</div>
+<div class="line"><span class="lineno">  211</span>        }</div>
+<div class="line"><span class="lineno">  212</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  213</span> </div>
+<div class="line"><span class="lineno">  214</span>        <span class="keywordflow">if</span> (analog &gt; 1) { analog = 1; }</div>
+<div class="line"><span class="lineno">  215</span>        <span class="keywordflow">if</span> (analog &lt; -1) { analog = -1; }</div>
+<div class="line"><span class="lineno">  216</span>        <span class="keywordflow">return</span> analog;</div>
+<div class="line"><span class="lineno">  217</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a72f469e70b87243258b71ff7040de081"><div class="ttname"><a href="namespace_n_direct_x.html#a72f469e70b87243258b71ff7040de081">NDirectX::GetRightJoystickXNormal</a></div><div class="ttdeci">float GetRightJoystickXNormal()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:654</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a473a04b3f4712269bf45a70ea19cc35a" name="a473a04b3f4712269bf45a70ea19cc35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473a04b3f4712269bf45a70ea19cc35a">&#9670;&#160;</a></span>GetRightAnalogX() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NInput::GetRightAnalogX </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  172</span>    {</div>
+<div class="line"><span class="lineno">  173</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  174</span>        <span class="keywordflow">return</span> g_bufRightAnalogX[_frame];</div>
+<div class="line"><span class="lineno">  175</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac2ad4dd7451ee4124a08b410cdd2d607" name="ac2ad4dd7451ee4124a08b410cdd2d607"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ad4dd7451ee4124a08b410cdd2d607">&#9670;&#160;</a></span>GetRightAnalogY() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NInput::GetRightAnalogY </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  220</span>    {</div>
+<div class="line"><span class="lineno">  221</span>        <span class="keywordtype">float</span> analog = 0;</div>
+<div class="line"><span class="lineno">  222</span>        analog = <a class="code hl_function" href="namespace_n_direct_x.html#addaeff6517fc6817f8e79611db65030d">NDirectX::GetRightJoystickYNormal</a>();</div>
+<div class="line"><span class="lineno">  223</span> </div>
+<div class="line"><span class="lineno">  224</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  225</span>        <span class="keywordtype">float</span> analogVirtual = 0;</div>
+<div class="line"><span class="lineno">  226</span>        analogVirtual = g_virtualRightAnalogY;</div>
+<div class="line"><span class="lineno">  227</span>        <span class="keywordflow">if</span> (abs(analog) &lt; FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  228</span>            analog = analogVirtual;</div>
+<div class="line"><span class="lineno">  229</span>        }</div>
+<div class="line"><span class="lineno">  230</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  231</span> </div>
+<div class="line"><span class="lineno">  232</span>        <span class="keywordflow">if</span> (analog &gt; 1) { analog = 1; }</div>
+<div class="line"><span class="lineno">  233</span>        <span class="keywordflow">if</span> (analog &lt; -1) { analog = -1; }</div>
+<div class="line"><span class="lineno">  234</span>        <span class="keywordflow">return</span> analog;</div>
+<div class="line"><span class="lineno">  235</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_addaeff6517fc6817f8e79611db65030d"><div class="ttname"><a href="namespace_n_direct_x.html#addaeff6517fc6817f8e79611db65030d">NDirectX::GetRightJoystickYNormal</a></div><div class="ttdeci">float GetRightJoystickYNormal()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:659</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af4b8c4243a5cfa29b8b3eb817694df6f" name="af4b8c4243a5cfa29b8b3eb817694df6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b8c4243a5cfa29b8b3eb817694df6f">&#9670;&#160;</a></span>GetRightAnalogY() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NInput::GetRightAnalogY </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  178</span>    {</div>
+<div class="line"><span class="lineno">  179</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  180</span>        <span class="keywordflow">return</span> g_bufRightAnalogY[_frame];</div>
+<div class="line"><span class="lineno">  181</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1a38e352e91bb44929fc3c2688414501" name="a1a38e352e91bb44929fc3c2688414501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a38e352e91bb44929fc3c2688414501">&#9670;&#160;</a></span>GetRightHold() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetRightHold </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   95</span>    {</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   97</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">   98</span>        sts |= <a class="code hl_function" href="#a9ef88d9ecbede78f3cc732068c8f6262">NInput::GetKeyPress</a>(GK_RIGHT);</div>
+<div class="line"><span class="lineno">   99</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  100</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#afd8cc446a73835c0ad8c35ae17bc0a4d">NDirectX::GetJoystickRightHold</a>();</div>
+<div class="line"><span class="lineno">  101</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#ac1d0acff4a999ff34336d22235fd963f">NDirectX::GetPOVRightHold</a>();</div>
+<div class="line"><span class="lineno">  102</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_ac1d0acff4a999ff34336d22235fd963f"><div class="ttname"><a href="namespace_n_direct_x.html#ac1d0acff4a999ff34336d22235fd963f">NDirectX::GetPOVRightHold</a></div><div class="ttdeci">bool GetPOVRightHold()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:790</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aba992cbff36110ddacef9f7a290e77d4" name="aba992cbff36110ddacef9f7a290e77d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba992cbff36110ddacef9f7a290e77d4">&#9670;&#160;</a></span>GetRightHold() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetRightHold </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  108</span>    {</div>
+<div class="line"><span class="lineno">  109</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  111</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(sts, g_bufRightHold, _frame, _endFrame, _pDestFrame);</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  113</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afcd0dd91a7b537b12aedfaef7c0c88d8" name="afcd0dd91a7b537b12aedfaef7c0c88d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd0dd91a7b537b12aedfaef7c0c88d8">&#9670;&#160;</a></span>GetRightTrigger() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetRightTrigger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  140</span>    {</div>
+<div class="line"><span class="lineno">  141</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  142</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  143</span>        sts |= <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_RIGHT);</div>
+<div class="line"><span class="lineno">  144</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  145</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#a2a9c2a407939bc7362cacae45dc25ba2">NDirectX::GetJoystickRightTrigger</a>();</div>
+<div class="line"><span class="lineno">  146</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#ab2a6690e8215011c3637939821ab70bb">NDirectX::GetPOVRightTrigger</a>();</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  148</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab2a6690e8215011c3637939821ab70bb"><div class="ttname"><a href="namespace_n_direct_x.html#ab2a6690e8215011c3637939821ab70bb">NDirectX::GetPOVRightTrigger</a></div><div class="ttdeci">bool GetPOVRightTrigger()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:845</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5ff522efaa5d05c764f42e51d95c1954" name="a5ff522efaa5d05c764f42e51d95c1954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ff522efaa5d05c764f42e51d95c1954">&#9670;&#160;</a></span>GetRightTrigger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetRightTrigger </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(sts, g_bufRightTrig, _frame, _endFrame, _pDestFrame);</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  147</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2d61f73f6f0d0e13505a2c7b5319b6c6" name="a2d61f73f6f0d0e13505a2c7b5319b6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d61f73f6f0d0e13505a2c7b5319b6c6">&#9670;&#160;</a></span>GetStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetStart </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>スタートボタンを取得 </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">todo</a></b></dt><dd>GameBufferの方に追加していない(Bufferを使用することがあるなら追加する) </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  242</span>    {</div>
+<div class="line"><span class="lineno">  243</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  244</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  245</span>        sts |= <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_START);</div>
+<div class="line"><span class="lineno">  246</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  247</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#ab941a2d4946c25d11734a22391eb0cb8">NDirectX::GetJoystickButtonTrigger</a>(<a class="code hl_enumvalue" href="#a85f25d0cea1d42cf9e9cd8502fddf53aad1c2d9e0c8ea06080160070c05e96f03">JOY_START</a>);</div>
+<div class="line"><span class="lineno">  248</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  249</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7feb3f335716b60529b3c70834405eb3" name="a7feb3f335716b60529b3c70834405eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7feb3f335716b60529b3c70834405eb3">&#9670;&#160;</a></span>GetUpHold() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetUpHold </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>汎用方向入力 </p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>    {</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   75</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">   76</span>        sts |= <a class="code hl_function" href="#a9ef88d9ecbede78f3cc732068c8f6262">NInput::GetKeyPress</a>(GK_UP);</div>
+<div class="line"><span class="lineno">   77</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">   78</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#aec50aeb3a28788302e972a4601c49047">NDirectX::GetJoystickUpHold</a>();</div>
+<div class="line"><span class="lineno">   79</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#aeb62ce189832f0e9c39b79af78d073c7">NDirectX::GetPOVUpHold</a>();</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_aeb62ce189832f0e9c39b79af78d073c7"><div class="ttname"><a href="namespace_n_direct_x.html#aeb62ce189832f0e9c39b79af78d073c7">NDirectX::GetPOVUpHold</a></div><div class="ttdeci">bool GetPOVUpHold()</div><div class="ttdoc">POVの入力</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:778</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3f66b246b70eeb4ea5b8a7d1b127e315" name="a3f66b246b70eeb4ea5b8a7d1b127e315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f66b246b70eeb4ea5b8a7d1b127e315">&#9670;&#160;</a></span>GetUpHold() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetUpHold </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   92</span>    {</div>
+<div class="line"><span class="lineno">   93</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   95</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(sts, g_bufUpHold, _frame, _endFrame, _pDestFrame);</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a36ddf6769810261b4a83f0da078f8baf" name="a36ddf6769810261b4a83f0da078f8baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ddf6769810261b4a83f0da078f8baf">&#9670;&#160;</a></span>GetUpTrigger() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetUpTrigger </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  118</span>    {</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  120</span><span class="preprocessor">    #ifdef _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">  121</span>        sts |= <a class="code hl_function" href="#a40ad8b8599759afb124e26ab59161cb3">NInput::GetKeyDown</a>(GK_UP);</div>
+<div class="line"><span class="lineno">  122</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  123</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#a43c20eabe9f2d3c841bc901a5c50ca6c">NDirectX::GetJoystickUpTrigger</a>();</div>
+<div class="line"><span class="lineno">  124</span>        sts |= <a class="code hl_function" href="namespace_n_direct_x.html#a7502458d7abd466ab4c7c48084453843">NDirectX::GetPOVUpTrigger</a>();</div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  126</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a7502458d7abd466ab4c7c48084453843"><div class="ttname"><a href="namespace_n_direct_x.html#a7502458d7abd466ab4c7c48084453843">NDirectX::GetPOVUpTrigger</a></div><div class="ttdeci">bool GetPOVUpTrigger()</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:826</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac7adc997dee4b36b94aa31331ebad7ee" name="ac7adc997dee4b36b94aa31331ebad7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7adc997dee4b36b94aa31331ebad7ee">&#9670;&#160;</a></span>GetUpTrigger() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::GetUpTrigger </td>
+          <td>(</td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint</td>          <td class="paramname"><span class="paramname"><em>_endFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint *</td>          <td class="paramname"><span class="paramname"><em>_pDestFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  126</span>    {</div>
+<div class="line"><span class="lineno">  127</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#abfaed2d8172139ea8c1d397617d9ddf2">AssertBuf</a>(_frame);</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  129</span>        <a class="code hl_define" href="_input___game_buffer_8cpp.html#a58cf183eeb9e2d7214ee290a2c59c273">GetBool</a>(sts, g_bufUpTrig, _frame, _endFrame, _pDestFrame);</div>
+<div class="line"><span class="lineno">  130</span>        <span class="keywordflow">return</span> sts;</div>
+<div class="line"><span class="lineno">  131</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a98f157c2bab93518decb39fe841dbe75" name="a98f157c2bab93518decb39fe841dbe75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f157c2bab93518decb39fe841dbe75">&#9670;&#160;</a></span>Setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NInput::Setup </td>
+          <td>(</td>
+          <td class="paramtype">HINSTANCE</td>          <td class="paramname"><span class="paramname"><em>_hInstance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HWND</td>          <td class="paramname"><span class="paramname"><em>_hWnd</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>入力の初期化 </p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>    {</div>
+<div class="line"><span class="lineno">   12</span>        HRESULT hr = E_FAIL;</div>
+<div class="line"><span class="lineno">   13</span>        hr = <a class="code hl_function" href="namespace_n_direct_x.html#ac689cf97193a1e28cc97d1309bc9ac54">NDirectX::InitInput</a>(_hInstance, _hWnd);</div>
+<div class="line"><span class="lineno">   14</span>        <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">   15</span>            <a class="code hl_define" href="_system___error_8h.html#a3633f4271a8d0653bf3840262366bb98">OutErrorMessageEx</a>(<span class="stringliteral">&quot;入力の初期化処理に失敗しました。&quot;</span>);</div>
+<div class="line"><span class="lineno">   16</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   17</span>        }</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   20</span>    }</div>
+<div class="ttc" id="a_system___error_8h_html_a3633f4271a8d0653bf3840262366bb98"><div class="ttname"><a href="_system___error_8h.html#a3633f4271a8d0653bf3840262366bb98">OutErrorMessageEx</a></div><div class="ttdeci">#define OutErrorMessageEx(_pMessage)</div><div class="ttdef"><b>Definition</b> System_Error.h:6</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_ac689cf97193a1e28cc97d1309bc9ac54"><div class="ttname"><a href="namespace_n_direct_x.html#ac689cf97193a1e28cc97d1309bc9ac54">NDirectX::InitInput</a></div><div class="ttdeci">HRESULT InitInput(HINSTANCE hInst, HWND gHWnd)</div><div class="ttdoc">入力初期化</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:228</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acadd8371ae4b2de2a85fc9f374d6c465" name="acadd8371ae4b2de2a85fc9f374d6c465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acadd8371ae4b2de2a85fc9f374d6c465">&#9670;&#160;</a></span>TearDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NInput::TearDown </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>入力の解放処理 </p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>    {</div>
+<div class="line"><span class="lineno">   24</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a98b656894eae3bf3ba47bc3c8c572131">NDirectX::UninitInput</a>();</div>
+<div class="line"><span class="lineno">   25</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a98b656894eae3bf3ba47bc3c8c572131"><div class="ttname"><a href="namespace_n_direct_x.html#a98b656894eae3bf3ba47bc3c8c572131">NDirectX::UninitInput</a></div><div class="ttdeci">void UninitInput(void)</div><div class="ttdoc">入力終了処理</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:299</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a19d3b61df3d7420511324f29bdf2230e" name="a19d3b61df3d7420511324f29bdf2230e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d3b61df3d7420511324f29bdf2230e">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NInput::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新処理 </p>
+<div class="fragment"><div class="line"><span class="lineno">   28</span>    {</div>
+<div class="line"><span class="lineno">   29</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a3f5c7a7b0d6ddeda4d71bca4f761ff06">NDirectX::UpdateInput</a>();</div>
+<div class="line"><span class="lineno">   30</span>        <a class="code hl_function" href="#a37427fa02e5fd4adfda682c592ceaf93">NInput::UpdateVirtualAnalog</a>();</div>
+<div class="line"><span class="lineno">   31</span>        <a class="code hl_function" href="#aa34f6da070c5d5c6aaaab71c47a8aaaa">NInput::UpdateGameBuffer</a>();</div>
+<div class="line"><span class="lineno">   32</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a3f5c7a7b0d6ddeda4d71bca4f761ff06"><div class="ttname"><a href="namespace_n_direct_x.html#a3f5c7a7b0d6ddeda4d71bca4f761ff06">NDirectX::UpdateInput</a></div><div class="ttdeci">void UpdateInput(void)</div><div class="ttdoc">入力の更新</div><div class="ttdef"><b>Definition</b> DirectX_Input.cpp:322</div></div>
+<div class="ttc" id="anamespace_n_input_html_a37427fa02e5fd4adfda682c592ceaf93"><div class="ttname"><a href="#a37427fa02e5fd4adfda682c592ceaf93">NInput::UpdateVirtualAnalog</a></div><div class="ttdeci">void UpdateVirtualAnalog()</div><div class="ttdoc">仮想アナログ入力を更新する</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:59</div></div>
+<div class="ttc" id="anamespace_n_input_html_aa34f6da070c5d5c6aaaab71c47a8aaaa"><div class="ttname"><a href="#aa34f6da070c5d5c6aaaab71c47a8aaaa">NInput::UpdateGameBuffer</a></div><div class="ttdeci">void UpdateGameBuffer()</div><div class="ttdoc">バッファの更新</div><div class="ttdef"><b>Definition</b> Input_GameBuffer.cpp:65</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa34f6da070c5d5c6aaaab71c47a8aaaa" name="aa34f6da070c5d5c6aaaab71c47a8aaaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34f6da070c5d5c6aaaab71c47a8aaaa">&#9670;&#160;</a></span>UpdateGameBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NInput::UpdateGameBuffer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>バッファの更新 </p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>    {</div>
+<div class="line"><span class="lineno">   67</span>        <span class="comment">// 過去バッファを更新</span></div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">for</span> (uint i = BUF_SIZE - 1; i &gt; 0; --i) {</div>
+<div class="line"><span class="lineno">   69</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufUpHold, <a class="code hl_function" href="#a7feb3f335716b60529b3c70834405eb3">GetUpHold</a>);</div>
+<div class="line"><span class="lineno">   70</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufDownHold, <a class="code hl_function" href="#ab2873eaa103002e1c1349483cf8f30c9">GetDownHold</a>);</div>
+<div class="line"><span class="lineno">   71</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufRightHold, <a class="code hl_function" href="#a1a38e352e91bb44929fc3c2688414501">GetRightHold</a>);</div>
+<div class="line"><span class="lineno">   72</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufLeftHold, <a class="code hl_function" href="#acc2c260494075f11b4e0ccc16e5665dd">GetLeftHold</a>);</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufUpTrig, <a class="code hl_function" href="#a36ddf6769810261b4a83f0da078f8baf">GetUpTrigger</a>);</div>
+<div class="line"><span class="lineno">   75</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufDownTrig, <a class="code hl_function" href="#a88b456a71d6301173a408e2e80bc081c">GetDownTrigger</a>);</div>
+<div class="line"><span class="lineno">   76</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufRightTrig, <a class="code hl_function" href="#afcd0dd91a7b537b12aedfaef7c0c88d8">GetRightTrigger</a>);</div>
+<div class="line"><span class="lineno">   77</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufLeftTrig, <a class="code hl_function" href="#a0cf0bd4e842222eb5276e17e63b72036">GetLeftTrigger</a>);</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufLeftAnalogX, <a class="code hl_function" href="#a7499affb7166f7592750c51813d03324">GetLeftAnalogX</a>);</div>
+<div class="line"><span class="lineno">   80</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufLeftAnalogY, <a class="code hl_function" href="#ad5e27f708f1f604eaa12481acc196b41">GetLeftAnalogY</a>);</div>
+<div class="line"><span class="lineno">   81</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufRightAnalogX, <a class="code hl_function" href="#a1f2346d77fd9c44683532fbebc864ded">GetRightAnalogX</a>);</div>
+<div class="line"><span class="lineno">   82</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufRightAnalogY, <a class="code hl_function" href="#ac2ad4dd7451ee4124a08b410cdd2d607">GetRightAnalogY</a>);</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufJump, <a class="code hl_function" href="#a041f9903f4d97d5daf45a0f5c79a0489">GetJump</a>);</div>
+<div class="line"><span class="lineno">   85</span>            <a class="code hl_define" href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a>(g_bufAttack1, <a class="code hl_function" href="#a268ee944b038ee199dfe80a0c3f94a9b">GetAttack1</a>);</div>
+<div class="line"><span class="lineno">   86</span>        }</div>
+<div class="line"><span class="lineno">   87</span>    }</div>
+<div class="ttc" id="a_input___game_buffer_8cpp_html_a783101085bb4927079208361167e43de"><div class="ttname"><a href="_input___game_buffer_8cpp.html#a783101085bb4927079208361167e43de">UpdateOldBuffer</a></div><div class="ttdeci">#define UpdateOldBuffer(_bufArray, _funcName)</div><div class="ttdoc">バッファの更新の記述を省略するマクロ</div><div class="ttdef"><b>Definition</b> Input_GameBuffer.cpp:10</div></div>
+<div class="ttc" id="anamespace_n_input_html_a041f9903f4d97d5daf45a0f5c79a0489"><div class="ttname"><a href="#a041f9903f4d97d5daf45a0f5c79a0489">NInput::GetJump</a></div><div class="ttdeci">bool GetJump()</div><div class="ttdoc">ジャンプボタン</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:287</div></div>
+<div class="ttc" id="anamespace_n_input_html_a0cf0bd4e842222eb5276e17e63b72036"><div class="ttname"><a href="#a0cf0bd4e842222eb5276e17e63b72036">NInput::GetLeftTrigger</a></div><div class="ttdeci">bool GetLeftTrigger()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:150</div></div>
+<div class="ttc" id="anamespace_n_input_html_a1a38e352e91bb44929fc3c2688414501"><div class="ttname"><a href="#a1a38e352e91bb44929fc3c2688414501">NInput::GetRightHold</a></div><div class="ttdeci">bool GetRightHold()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:94</div></div>
+<div class="ttc" id="anamespace_n_input_html_a1f2346d77fd9c44683532fbebc864ded"><div class="ttname"><a href="#a1f2346d77fd9c44683532fbebc864ded">NInput::GetRightAnalogX</a></div><div class="ttdeci">float GetRightAnalogX()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:201</div></div>
+<div class="ttc" id="anamespace_n_input_html_a268ee944b038ee199dfe80a0c3f94a9b"><div class="ttname"><a href="#a268ee944b038ee199dfe80a0c3f94a9b">NInput::GetAttack1</a></div><div class="ttdeci">bool GetAttack1()</div><div class="ttdoc">攻撃ボタン１</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:297</div></div>
+<div class="ttc" id="anamespace_n_input_html_a36ddf6769810261b4a83f0da078f8baf"><div class="ttname"><a href="#a36ddf6769810261b4a83f0da078f8baf">NInput::GetUpTrigger</a></div><div class="ttdeci">bool GetUpTrigger()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:117</div></div>
+<div class="ttc" id="anamespace_n_input_html_a7499affb7166f7592750c51813d03324"><div class="ttname"><a href="#a7499affb7166f7592750c51813d03324">NInput::GetLeftAnalogX</a></div><div class="ttdeci">float GetLeftAnalogX()</div><div class="ttdoc">アナログ入力</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:165</div></div>
+<div class="ttc" id="anamespace_n_input_html_a7feb3f335716b60529b3c70834405eb3"><div class="ttname"><a href="#a7feb3f335716b60529b3c70834405eb3">NInput::GetUpHold</a></div><div class="ttdeci">bool GetUpHold()</div><div class="ttdoc">汎用方向入力</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:72</div></div>
+<div class="ttc" id="anamespace_n_input_html_a88b456a71d6301173a408e2e80bc081c"><div class="ttname"><a href="#a88b456a71d6301173a408e2e80bc081c">NInput::GetDownTrigger</a></div><div class="ttdeci">bool GetDownTrigger()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:128</div></div>
+<div class="ttc" id="anamespace_n_input_html_ab2873eaa103002e1c1349483cf8f30c9"><div class="ttname"><a href="#ab2873eaa103002e1c1349483cf8f30c9">NInput::GetDownHold</a></div><div class="ttdeci">bool GetDownHold()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:83</div></div>
+<div class="ttc" id="anamespace_n_input_html_ac2ad4dd7451ee4124a08b410cdd2d607"><div class="ttname"><a href="#ac2ad4dd7451ee4124a08b410cdd2d607">NInput::GetRightAnalogY</a></div><div class="ttdeci">float GetRightAnalogY()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:219</div></div>
+<div class="ttc" id="anamespace_n_input_html_acc2c260494075f11b4e0ccc16e5665dd"><div class="ttname"><a href="#acc2c260494075f11b4e0ccc16e5665dd">NInput::GetLeftHold</a></div><div class="ttdeci">bool GetLeftHold()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:105</div></div>
+<div class="ttc" id="anamespace_n_input_html_ad5e27f708f1f604eaa12481acc196b41"><div class="ttname"><a href="#ad5e27f708f1f604eaa12481acc196b41">NInput::GetLeftAnalogY</a></div><div class="ttdeci">float GetLeftAnalogY()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:183</div></div>
+<div class="ttc" id="anamespace_n_input_html_afcd0dd91a7b537b12aedfaef7c0c88d8"><div class="ttname"><a href="#afcd0dd91a7b537b12aedfaef7c0c88d8">NInput::GetRightTrigger</a></div><div class="ttdeci">bool GetRightTrigger()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:139</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a37427fa02e5fd4adfda682c592ceaf93" name="a37427fa02e5fd4adfda682c592ceaf93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37427fa02e5fd4adfda682c592ceaf93">&#9670;&#160;</a></span>UpdateVirtualAnalog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NInput::UpdateVirtualAnalog </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>仮想アナログ入力を更新する </p>
+<div class="fragment"><div class="line"><span class="lineno">   60</span>    {</div>
+<div class="line"><span class="lineno">   61</span><span class="preprocessor">    #ifdef  _USE_KEYBOARD_GAME_INPUT</span></div>
+<div class="line"><span class="lineno">   62</span>        UpdateVirtualAnalogLeft();</div>
+<div class="line"><span class="lineno">   63</span>        UpdateVirtualAnalogRight();</div>
+<div class="line"><span class="lineno">   64</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">変数詳解</h2>
+<a id="a5938dd09bc24bd1548a371d8fd40aa7f" name="a5938dd09bc24bd1548a371d8fd40aa7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5938dd09bc24bd1548a371d8fd40aa7f">&#9670;&#160;</a></span>GAME_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint NInput::GAME_BUFFER_SIZE = 300</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_input.html">NInput</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,2371 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NModel::CObject クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_model_1_1_c_object.html','','class_n_model_1_1_c_object-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NModel::CObject クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>描画する数だけ生成するモデルを扱うオブジェクト  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_model___object_8h_source.html">Model_Object.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae6bef07bdcc60bf840e84d64ac42987e" id="r_ae6bef07bdcc60bf840e84d64ac42987e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae6bef07bdcc60bf840e84d64ac42987e">Load</a> (<a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CModelFactory::Key</a> _key)</td></tr>
+<tr class="memdesc:ae6bef07bdcc60bf840e84d64ac42987e"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用するモデルを設定する  <br /></td></tr>
+<tr class="memitem:ac2bd5826664fcea1458d08a4ee4779db" id="r_ac2bd5826664fcea1458d08a4ee4779db"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac2bd5826664fcea1458d08a4ee4779db">Release</a> ()</td></tr>
+<tr class="memdesc:ac2bd5826664fcea1458d08a4ee4779db"><td class="mdescLeft">&#160;</td><td class="mdescRight">読み込んだ情報を開放する  <br /></td></tr>
+<tr class="memitem:a9a106e5861be671c65b70b2aa38a6673" id="r_a9a106e5861be671c65b70b2aa38a6673"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9a106e5861be671c65b70b2aa38a6673">Update</a> ()</td></tr>
+<tr class="memdesc:a9a106e5861be671c65b70b2aa38a6673"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションを更新  <br /></td></tr>
+<tr class="memitem:aaec31eb56ec85712832728f64c02f356" id="r_aaec31eb56ec85712832728f64c02f356"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaec31eb56ec85712832728f64c02f356">RenderDebug</a> (<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_matWorld)</td></tr>
+<tr class="memdesc:aaec31eb56ec85712832728f64c02f356"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバッグ用シェーダーで描画  <br /></td></tr>
+<tr class="memitem:ae0a16edc9f150947af181adf57e66422" id="r_ae0a16edc9f150947af181adf57e66422"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae0a16edc9f150947af181adf57e66422">RenderDebugAlpha</a> (<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_matWorld)</td></tr>
+<tr class="memdesc:ae0a16edc9f150947af181adf57e66422"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバッグ用シェーダ―で描画  <br /></td></tr>
+<tr class="memitem:abe6dadf1585d01358cd44f0c2f27474a" id="r_abe6dadf1585d01358cd44f0c2f27474a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abe6dadf1585d01358cd44f0c2f27474a">RenderNode</a> (const uint _nodeIndex)</td></tr>
+<tr class="memdesc:abe6dadf1585d01358cd44f0c2f27474a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードを描画  <br /></td></tr>
+<tr class="memitem:aa860d0ea4d8746170d9d4688159ca2c8" id="r_aa860d0ea4d8746170d9d4688159ca2c8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa860d0ea4d8746170d9d4688159ca2c8">ChangeAnimation</a> (const uint _anmStackIdx, const bool _isLoop, const uint _interpoleFrame, const float _speedFramePerFrame=FLT_MAX)</td></tr>
+<tr class="memdesc:aa860d0ea4d8746170d9d4688159ca2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの変更完全版  <br /></td></tr>
+<tr class="memitem:a3ce56db4c50d34a76a3f83dba4247349" id="r_a3ce56db4c50d34a76a3f83dba4247349"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3ce56db4c50d34a76a3f83dba4247349">SetAnimationSpeed</a> (const float _speedFramePerFrame=1.0f)</td></tr>
+<tr class="memdesc:a3ce56db4c50d34a76a3f83dba4247349"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの速度を設定  <br /></td></tr>
+<tr class="memitem:a70a03eb96f99732d4b1c3b5fe369d8c5" id="r_a70a03eb96f99732d4b1c3b5fe369d8c5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a70a03eb96f99732d4b1c3b5fe369d8c5">SetAnimationFrame</a> (const float _frame)</td></tr>
+<tr class="memdesc:a70a03eb96f99732d4b1c3b5fe369d8c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションのフレームを指定する  <br /></td></tr>
+<tr class="memitem:a566eea423fdbdd25ae4e656120af5955" id="r_a566eea423fdbdd25ae4e656120af5955"><td class="memItemLeft">DWORD&#160;</td><td class="memItemRight"><a class="el" href="#a566eea423fdbdd25ae4e656120af5955">GetFVF</a> () const</td></tr>
+<tr class="memdesc:a566eea423fdbdd25ae4e656120af5955"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデルデータのフォーマットを取得する  <br /></td></tr>
+<tr class="memitem:a338a193db0f3f8f21e33fdaf8067a95b" id="r_a338a193db0f3f8f21e33fdaf8067a95b"><td class="memItemLeft">const <a class="el" href="class_n_model_1_1_c_manager.html">NModel::CManager</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a338a193db0f3f8f21e33fdaf8067a95b">GetModelManager</a> () const</td></tr>
+<tr class="memdesc:a338a193db0f3f8f21e33fdaf8067a95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデルの元データを取得する  <br /></td></tr>
+<tr class="memitem:abafe3dda6aba3a0f2d97eee345c52185" id="r_abafe3dda6aba3a0f2d97eee345c52185"><td class="memItemLeft">const uint&#160;</td><td class="memItemRight"><a class="el" href="#abafe3dda6aba3a0f2d97eee345c52185">GetMeshNodeCount</a> () const</td></tr>
+<tr class="memdesc:abafe3dda6aba3a0f2d97eee345c52185"><td class="mdescLeft">&#160;</td><td class="mdescRight">メッシュノードの数を取得する  <br /></td></tr>
+<tr class="memitem:a6e0d9ff487be5b63cc2b461381005b62" id="r_a6e0d9ff487be5b63cc2b461381005b62"><td class="memItemLeft">const <a class="el" href="struct_n_model_1_1_s_mesh_node.html">SMeshNode</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a6e0d9ff487be5b63cc2b461381005b62">GetMeshNode</a> (const uint _nodeIndex) const</td></tr>
+<tr class="memdesc:a6e0d9ff487be5b63cc2b461381005b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">メッシュノードを取得する  <br /></td></tr>
+<tr class="memitem:abed9f190601721df77ccdf7070bb5596" id="r_abed9f190601721df77ccdf7070bb5596"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abed9f190601721df77ccdf7070bb5596">GetMeshNodeMatrix</a> (<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rDest, const uint _nodeIndex, const <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_worldMatrix) const</td></tr>
+<tr class="memdesc:abed9f190601721df77ccdf7070bb5596"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードを描画する行列を取得する  <br /></td></tr>
+<tr class="memitem:a3a58433eb3305a480f936b2dfa19144d" id="r_a3a58433eb3305a480f936b2dfa19144d"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a3a58433eb3305a480f936b2dfa19144d">GetAnimationIndex</a> () const</td></tr>
+<tr class="memdesc:a3a58433eb3305a480f936b2dfa19144d"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のアニメーションインデックスを取得する  <br /></td></tr>
+<tr class="memitem:ad1d061de452a329e577833773d2683f2" id="r_ad1d061de452a329e577833773d2683f2"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad1d061de452a329e577833773d2683f2">GetAnimationFrame</a> () const</td></tr>
+<tr class="memdesc:ad1d061de452a329e577833773d2683f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のアニメーションフレームを取得する  <br /></td></tr>
+<tr class="memitem:a1c6cec09459fc7b50a6c2154ec1f65ad" id="r_a1c6cec09459fc7b50a6c2154ec1f65ad"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1c6cec09459fc7b50a6c2154ec1f65ad">GetAnimationFrameLoop</a> () const</td></tr>
+<tr class="memdesc:a1c6cec09459fc7b50a6c2154ec1f65ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">同じアニメーションを再生した時間を取得する  <br /></td></tr>
+<tr class="memitem:aaeb87a9b961e51b9e1cc58c87fb9b963" id="r_aaeb87a9b961e51b9e1cc58c87fb9b963"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aaeb87a9b961e51b9e1cc58c87fb9b963">GetAnimationFrameLength</a> (unsigned int _anmStackIdx=UINT_MAX) const</td></tr>
+<tr class="memdesc:aaeb87a9b961e51b9e1cc58c87fb9b963"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションフレームの長さを取得  <br /></td></tr>
+<tr class="memitem:a324a6444f86a7733e553961b6b2a6037" id="r_a324a6444f86a7733e553961b6b2a6037"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a324a6444f86a7733e553961b6b2a6037">GetAnimationStartFrame</a> (unsigned int _anmStackIdx=UINT_MAX) const</td></tr>
+<tr class="memdesc:a324a6444f86a7733e553961b6b2a6037"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの開始フレームを取得する  <br /></td></tr>
+<tr class="memitem:aafc79025741899b743fbd5c6d4d211cb" id="r_aafc79025741899b743fbd5c6d4d211cb"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#aafc79025741899b743fbd5c6d4d211cb">GetAnimationStopFrame</a> (unsigned int _anmStackIdx=UINT_MAX) const</td></tr>
+<tr class="memdesc:aafc79025741899b743fbd5c6d4d211cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの終了フレームを取得する  <br /></td></tr>
+<tr class="memitem:af248a451fca7a9dc05673aeb320a4419" id="r_af248a451fca7a9dc05673aeb320a4419"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#af248a451fca7a9dc05673aeb320a4419">GetIsAnimationEnd</a> () const</td></tr>
+<tr class="memdesc:af248a451fca7a9dc05673aeb320a4419"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの終了フラグを取得する  <br /></td></tr>
+<tr class="memitem:ae7a155a73fd57e0c7eba5ad16bc30b20" id="r_ae7a155a73fd57e0c7eba5ad16bc30b20"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae7a155a73fd57e0c7eba5ad16bc30b20">GetClusterMatrix</a> (<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rDest, const uint _clusterIndex) const</td></tr>
+<tr class="memdesc:ae7a155a73fd57e0c7eba5ad16bc30b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">クラスターの行列を取得  <br /></td></tr>
+<tr class="memitem:a4a1962f1c1a52234d5d6d2c0f39eff4b" id="r_a4a1962f1c1a52234d5d6d2c0f39eff4b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4a1962f1c1a52234d5d6d2c0f39eff4b">CObject</a> ()</td></tr>
+<tr class="memitem:a5f8ca8071fc8787bee7c13568c816cba" id="r_a5f8ca8071fc8787bee7c13568c816cba"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a5f8ca8071fc8787bee7c13568c816cba">~CObject</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a88510059c90ad0a04b64927924f40d2a" id="r_a88510059c90ad0a04b64927924f40d2a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a88510059c90ad0a04b64927924f40d2a">SetupMeshNode</a> ()</td></tr>
+<tr class="memdesc:a88510059c90ad0a04b64927924f40d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデル情報から必要情報を抽出し、使用可能状態にする  <br /></td></tr>
+<tr class="memitem:a57bfc9c9f0b4258c8177e7a5f41eac7b" id="r_a57bfc9c9f0b4258c8177e7a5f41eac7b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a57bfc9c9f0b4258c8177e7a5f41eac7b">UpdateAnimation</a> ()</td></tr>
+<tr class="memdesc:a57bfc9c9f0b4258c8177e7a5f41eac7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの更新をまとめた関数  <br /></td></tr>
+<tr class="memitem:a1de42a4ab6513b976c1f9bffcc812604" id="r_a1de42a4ab6513b976c1f9bffcc812604"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1de42a4ab6513b976c1f9bffcc812604">UpdateAnimationFrame</a> ()</td></tr>
+<tr class="memdesc:a1de42a4ab6513b976c1f9bffcc812604"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの再生フレームを更新  <br /></td></tr>
+<tr class="memitem:a949189ff5d60a7718ec9f95af926e953" id="r_a949189ff5d60a7718ec9f95af926e953"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a949189ff5d60a7718ec9f95af926e953">UpdateNodeMatrix</a> (<a class="el" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a> &amp;_rFbxLoader, const float _rCurFrame)</td></tr>
+<tr class="memdesc:a949189ff5d60a7718ec9f95af926e953"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードの変換行列を更新する  <br /></td></tr>
+<tr class="memitem:a4ddab732a363af8d8eb8c076dc4d83ca" id="r_a4ddab732a363af8d8eb8c076dc4d83ca"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4ddab732a363af8d8eb8c076dc4d83ca">UpdateClusterMatrix</a> (std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;_rDestClusterMatrix, std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;_rDestNodeMatrix, <a class="el" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a> &amp;_rFbxLoader, const uint _clusterCount, const float _rCurFrame)</td></tr>
+<tr class="memdesc:a4ddab732a363af8d8eb8c076dc4d83ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">頂点変換を行うため、それぞれのクラスターの行列を作成する  <br /></td></tr>
+<tr class="memitem:a2b36c7bf77b6a7478d233c4a79eb8ebf" id="r_a2b36c7bf77b6a7478d233c4a79eb8ebf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b36c7bf77b6a7478d233c4a79eb8ebf">UpdateVertex</a> (std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;_rSrc, <a class="el" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a> &amp;_rFbxLoader)</td></tr>
+<tr class="memdesc:a2b36c7bf77b6a7478d233c4a79eb8ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">頂点を変換する  <br /></td></tr>
+<tr class="memitem:a3bacb3963d70956ae7c66008cc9c17a8" id="r_a3bacb3963d70956ae7c66008cc9c17a8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3bacb3963d70956ae7c66008cc9c17a8">CalcInterpoleMatrix</a> (std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;_rDestClusterMatrix, std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;_rDestNodeMatrix, <a class="el" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a> &amp;_rFbxLoader, const uint _clusterCount, const uint _interpoleFrame)</td></tr>
+<tr class="memdesc:a3bacb3963d70956ae7c66008cc9c17a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">補完時の、補完完了後のクラスター行列を計算する  <br /></td></tr>
+<tr class="memitem:a716c3193161fb64daa0685fe3317ad76" id="r_a716c3193161fb64daa0685fe3317ad76"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a716c3193161fb64daa0685fe3317ad76">InterpoleMatrix</a> (const uint _clusterCount, const float _ratio, std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;_destMatrix, std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;_startMatrix, std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;_endMatrix)</td></tr>
+<tr class="memdesc:a716c3193161fb64daa0685fe3317ad76"><td class="mdescLeft">&#160;</td><td class="mdescRight">二つの行列間を補完する  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:abb9020ad4363144864a9724bd07032d4" id="r_abb9020ad4363144864a9724bd07032d4"><td class="memItemLeft"><a class="el" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CModelFactory::SPAsset</a>&#160;</td><td class="memItemRight"><a class="el" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a></td></tr>
+<tr class="memitem:ac20dda842453722b1bd3c592b45a7d7f" id="r_ac20dda842453722b1bd3c592b45a7d7f"><td class="memItemLeft">std::vector&lt; <a class="el" href="struct_n_model_1_1_s_mesh_node.html">SMeshNode</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a></td></tr>
+<tr class="memitem:a29fd8d1794a7a21f0fbace397a9baf5e" id="r_a29fd8d1794a7a21f0fbace397a9baf5e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a29fd8d1794a7a21f0fbace397a9baf5e">m_hasAnimation</a></td></tr>
+<tr class="memitem:a27a439f7a0c0b28611d435b409c9197e" id="r_a27a439f7a0c0b28611d435b409c9197e"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a27a439f7a0c0b28611d435b409c9197e">m_clusterCount</a></td></tr>
+<tr class="memitem:a0c8816abbade57141f7f1eaa9bc88d67" id="r_a0c8816abbade57141f7f1eaa9bc88d67"><td class="memItemLeft">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0c8816abbade57141f7f1eaa9bc88d67">m_matCluster</a></td></tr>
+<tr class="memitem:a20a045c914fef024994075f5cf48590d" id="r_a20a045c914fef024994075f5cf48590d"><td class="memItemLeft">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a20a045c914fef024994075f5cf48590d">m_matClusterNode</a></td></tr>
+<tr class="memitem:a979d23e45f678532a40f102947b7fc3b" id="r_a979d23e45f678532a40f102947b7fc3b"><td class="memItemLeft">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a979d23e45f678532a40f102947b7fc3b">m_matInterpoleClusterStart</a></td></tr>
+<tr class="memitem:a70b5aef9021f088645af24d096428b42" id="r_a70b5aef9021f088645af24d096428b42"><td class="memItemLeft">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a70b5aef9021f088645af24d096428b42">m_matInterpoleClusterEnd</a></td></tr>
+<tr class="memitem:a6cc6938d4e043bbaa9402508a29bd558" id="r_a6cc6938d4e043bbaa9402508a29bd558"><td class="memItemLeft">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a6cc6938d4e043bbaa9402508a29bd558">m_matInterpoleClusterNodeStart</a></td></tr>
+<tr class="memitem:ada39c4d2f2759f9ea383d793fb2e2d33" id="r_ada39c4d2f2759f9ea383d793fb2e2d33"><td class="memItemLeft">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ada39c4d2f2759f9ea383d793fb2e2d33">m_matInterpoleClusterNodeEnd</a></td></tr>
+<tr class="memitem:a2d906e5795b249dd5b4f4efe543a9eda" id="r_a2d906e5795b249dd5b4f4efe543a9eda"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a></td></tr>
+<tr class="memitem:a74d5c4e282fe4c208400ed7eb7b7bfd7" id="r_a74d5c4e282fe4c208400ed7eb7b7bfd7"><td class="memItemLeft">FbxLongLong&#160;</td><td class="memItemRight"><a class="el" href="#a74d5c4e282fe4c208400ed7eb7b7bfd7">m_fbxTimePerFrame</a></td></tr>
+<tr class="memitem:a7a3ad3c62db2e753d906111ed7737806" id="r_a7a3ad3c62db2e753d906111ed7737806"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a></td></tr>
+<tr class="memitem:ac9800a2ae5ad1219e8e53a7641fa1b37" id="r_ac9800a2ae5ad1219e8e53a7641fa1b37"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac9800a2ae5ad1219e8e53a7641fa1b37">m_anmFrameLoop</a></td></tr>
+<tr class="memitem:aa674b24b5da4ba37d55df9b22a0020d9" id="r_aa674b24b5da4ba37d55df9b22a0020d9"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a></td></tr>
+<tr class="memitem:ac2f4ab48a495cfee70247840678a5b28" id="r_ac2f4ab48a495cfee70247840678a5b28"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac2f4ab48a495cfee70247840678a5b28">m_isLoop</a></td></tr>
+<tr class="memitem:a8efac6479cd0b2e2dc1a78f41d3d8a6b" id="r_a8efac6479cd0b2e2dc1a78f41d3d8a6b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8efac6479cd0b2e2dc1a78f41d3d8a6b">m_isAnmEnd</a></td></tr>
+<tr class="memitem:a6a7a8a3e740cd512ade1729b36407352" id="r_a6a7a8a3e740cd512ade1729b36407352"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a6a7a8a3e740cd512ade1729b36407352">m_interpoleFrame</a></td></tr>
+<tr class="memitem:ac60d8be0899204968b00b890f1099fd6" id="r_ac60d8be0899204968b00b890f1099fd6"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#ac60d8be0899204968b00b890f1099fd6">m_interpoleFrameCnt</a></td></tr>
+<tr class="memitem:a984511a1707770703b54a307322ac70c" id="r_a984511a1707770703b54a307322ac70c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a984511a1707770703b54a307322ac70c">m_isInterpole</a></td></tr>
+<tr class="memitem:a9157024932882a0fc943b77399e36b18" id="r_a9157024932882a0fc943b77399e36b18"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9157024932882a0fc943b77399e36b18">m_isInterpoleMatrixReady</a></td></tr>
+<tr class="memitem:a4673e4beff4ef281efc4e63f06fad66a" id="r_a4673e4beff4ef281efc4e63f06fad66a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a4673e4beff4ef281efc4e63f06fad66a">m_interpoleCompleteFrame</a></td></tr>
+<tr class="memitem:a1b314f3ba02362b930a5f38d69211f20" id="r_a1b314f3ba02362b930a5f38d69211f20"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1b314f3ba02362b930a5f38d69211f20">m_isSetupMatrix</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a47aa737ad7406951f1d04491d30f025e" id="r_a47aa737ad7406951f1d04491d30f025e"><td class="memItemLeft">static constexpr uint&#160;</td><td class="memItemRight"><a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> = 255</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>描画する数だけ生成するモデルを扱うオブジェクト </p>
+<p>ファイルから読み込んだデータを、アニメーションさせるなどの制御を行う。 </p><dl class="section note"><dt>覚え書き</dt><dd>アニメーションは254個まで対応 </dd></dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a4a1962f1c1a52234d5d6d2c0f39eff4b" name="a4a1962f1c1a52234d5d6d2c0f39eff4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1962f1c1a52234d5d6d2c0f39eff4b">&#9670;&#160;</a></span>CObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NModel::CObject::CObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  385</span>                     :</div>
+<div class="line"><span class="lineno">  386</span>        <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  387</span>        <a class="code hl_variable" href="#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a>(0),</div>
+<div class="line"><span class="lineno">  388</span>        <a class="code hl_variable" href="#a74d5c4e282fe4c208400ed7eb7b7bfd7">m_fbxTimePerFrame</a>(0),</div>
+<div class="line"><span class="lineno">  389</span>        <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a>(0),</div>
+<div class="line"><span class="lineno">  390</span>        <a class="code hl_variable" href="#ac9800a2ae5ad1219e8e53a7641fa1b37">m_anmFrameLoop</a>(0),</div>
+<div class="line"><span class="lineno">  391</span>        <a class="code hl_variable" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a>(1),</div>
+<div class="line"><span class="lineno">  392</span>        <a class="code hl_variable" href="#a29fd8d1794a7a21f0fbace397a9baf5e">m_hasAnimation</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  393</span>        <a class="code hl_variable" href="#ac2f4ab48a495cfee70247840678a5b28">m_isLoop</a>(<span class="keyword">true</span>),</div>
+<div class="line"><span class="lineno">  394</span>        <a class="code hl_variable" href="#a8efac6479cd0b2e2dc1a78f41d3d8a6b">m_isAnmEnd</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  395</span>        <a class="code hl_variable" href="#a6a7a8a3e740cd512ade1729b36407352">m_interpoleFrame</a>(0),</div>
+<div class="line"><span class="lineno">  396</span>        <a class="code hl_variable" href="#a984511a1707770703b54a307322ac70c">m_isInterpole</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  397</span>        <a class="code hl_variable" href="#a9157024932882a0fc943b77399e36b18">m_isInterpoleMatrixReady</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">  398</span>        <a class="code hl_variable" href="#a4673e4beff4ef281efc4e63f06fad66a">m_interpoleCompleteFrame</a>(0),</div>
+<div class="line"><span class="lineno">  399</span>        <a class="code hl_variable" href="#a1b314f3ba02362b930a5f38d69211f20">m_isSetupMatrix</a>(<span class="keyword">false</span>)</div>
+<div class="line"><span class="lineno">  400</span>    {</div>
+<div class="line"><span class="lineno">  401</span> </div>
+<div class="line"><span class="lineno">  402</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a1b314f3ba02362b930a5f38d69211f20"><div class="ttname"><a href="#a1b314f3ba02362b930a5f38d69211f20">NModel::CObject::m_isSetupMatrix</a></div><div class="ttdeci">bool m_isSetupMatrix</div><div class="ttdef"><b>Definition</b> Model_Object.h:153</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a29fd8d1794a7a21f0fbace397a9baf5e"><div class="ttname"><a href="#a29fd8d1794a7a21f0fbace397a9baf5e">NModel::CObject::m_hasAnimation</a></div><div class="ttdeci">bool m_hasAnimation</div><div class="ttdef"><b>Definition</b> Model_Object.h:126</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a2d906e5795b249dd5b4f4efe543a9eda"><div class="ttname"><a href="#a2d906e5795b249dd5b4f4efe543a9eda">NModel::CObject::m_anmStackIndex</a></div><div class="ttdeci">uint m_anmStackIndex</div><div class="ttdef"><b>Definition</b> Model_Object.h:137</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a4673e4beff4ef281efc4e63f06fad66a"><div class="ttname"><a href="#a4673e4beff4ef281efc4e63f06fad66a">NModel::CObject::m_interpoleCompleteFrame</a></div><div class="ttdeci">float m_interpoleCompleteFrame</div><div class="ttdef"><b>Definition</b> Model_Object.h:152</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a6a7a8a3e740cd512ade1729b36407352"><div class="ttname"><a href="#a6a7a8a3e740cd512ade1729b36407352">NModel::CObject::m_interpoleFrame</a></div><div class="ttdeci">uint m_interpoleFrame</div><div class="ttdef"><b>Definition</b> Model_Object.h:148</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a74d5c4e282fe4c208400ed7eb7b7bfd7"><div class="ttname"><a href="#a74d5c4e282fe4c208400ed7eb7b7bfd7">NModel::CObject::m_fbxTimePerFrame</a></div><div class="ttdeci">FbxLongLong m_fbxTimePerFrame</div><div class="ttdef"><b>Definition</b> Model_Object.h:138</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a7a3ad3c62db2e753d906111ed7737806"><div class="ttname"><a href="#a7a3ad3c62db2e753d906111ed7737806">NModel::CObject::m_anmFrame</a></div><div class="ttdeci">float m_anmFrame</div><div class="ttdef"><b>Definition</b> Model_Object.h:139</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a8efac6479cd0b2e2dc1a78f41d3d8a6b"><div class="ttname"><a href="#a8efac6479cd0b2e2dc1a78f41d3d8a6b">NModel::CObject::m_isAnmEnd</a></div><div class="ttdeci">bool m_isAnmEnd</div><div class="ttdef"><b>Definition</b> Model_Object.h:147</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a9157024932882a0fc943b77399e36b18"><div class="ttname"><a href="#a9157024932882a0fc943b77399e36b18">NModel::CObject::m_isInterpoleMatrixReady</a></div><div class="ttdeci">bool m_isInterpoleMatrixReady</div><div class="ttdef"><b>Definition</b> Model_Object.h:151</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a984511a1707770703b54a307322ac70c"><div class="ttname"><a href="#a984511a1707770703b54a307322ac70c">NModel::CObject::m_isInterpole</a></div><div class="ttdeci">bool m_isInterpole</div><div class="ttdef"><b>Definition</b> Model_Object.h:150</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_aa674b24b5da4ba37d55df9b22a0020d9"><div class="ttname"><a href="#aa674b24b5da4ba37d55df9b22a0020d9">NModel::CObject::m_anmSpeedFrame</a></div><div class="ttdeci">float m_anmSpeedFrame</div><div class="ttdef"><b>Definition</b> Model_Object.h:144</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_abb9020ad4363144864a9724bd07032d4"><div class="ttname"><a href="#abb9020ad4363144864a9724bd07032d4">NModel::CObject::m_pModelManager</a></div><div class="ttdeci">NAsset::CModelFactory::SPAsset m_pModelManager</div><div class="ttdef"><b>Definition</b> Model_Object.h:123</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ac2f4ab48a495cfee70247840678a5b28"><div class="ttname"><a href="#ac2f4ab48a495cfee70247840678a5b28">NModel::CObject::m_isLoop</a></div><div class="ttdeci">bool m_isLoop</div><div class="ttdef"><b>Definition</b> Model_Object.h:146</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ac9800a2ae5ad1219e8e53a7641fa1b37"><div class="ttname"><a href="#ac9800a2ae5ad1219e8e53a7641fa1b37">NModel::CObject::m_anmFrameLoop</a></div><div class="ttdeci">float m_anmFrameLoop</div><div class="ttdef"><b>Definition</b> Model_Object.h:141</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5f8ca8071fc8787bee7c13568c816cba" name="a5f8ca8071fc8787bee7c13568c816cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f8ca8071fc8787bee7c13568c816cba">&#9670;&#160;</a></span>~CObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NModel::CObject::~CObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  405</span>    {</div>
+<div class="line"><span class="lineno">  406</span>        <a class="code hl_function" href="#ac2bd5826664fcea1458d08a4ee4779db">Release</a>();</div>
+<div class="line"><span class="lineno">  407</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ac2bd5826664fcea1458d08a4ee4779db"><div class="ttname"><a href="#ac2bd5826664fcea1458d08a4ee4779db">NModel::CObject::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdoc">読み込んだ情報を開放する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:433</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a3bacb3963d70956ae7c66008cc9c17a8" name="a3bacb3963d70956ae7c66008cc9c17a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bacb3963d70956ae7c66008cc9c17a8">&#9670;&#160;</a></span>CalcInterpoleMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::CalcInterpoleMatrix </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDestClusterMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDestNodeMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rFbxLoader</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_clusterCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_interpoleFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>補完時の、補完完了後のクラスター行列を計算する </p>
+<div class="fragment"><div class="line"><span class="lineno"> 1072</span>    {</div>
+<div class="line"><span class="lineno"> 1073</span>        <a class="code hl_define" href="_debug___assert_8h.html#ad7c42ee53403d76904988502c7454163">AssertPlus</a>(_rFbxLoader.<a class="code hl_function" href="class_n_model_1_1_c_fbx_loader.html#ab4202178ed862304c4e44df7c164810e">GetMeshNodeCount</a>()); <span class="comment">// メッシュの存在を確認</span></div>
+<div class="line"><span class="lineno"> 1074</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#a984511a1707770703b54a307322ac70c">m_isInterpole</a>);</div>
+<div class="line"><span class="lineno"> 1075</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(!<a class="code hl_variable" href="#a9157024932882a0fc943b77399e36b18">m_isInterpoleMatrixReady</a>);</div>
+<div class="line"><span class="lineno"> 1076</span>        <a class="code hl_define" href="_debug___assert_8h.html#ad7c42ee53403d76904988502c7454163">AssertPlus</a>(_interpoleFrame);</div>
+<div class="line"><span class="lineno"> 1077</span> </div>
+<div class="line"><span class="lineno"> 1078</span>        <span class="comment">// 0番目のメッシュを使い、Fbxのメッシュ情報などにアクセスする</span></div>
+<div class="line"><span class="lineno"> 1079</span>        SFbxMeshNode&amp; rFbxMeshNode = _rFbxLoader.<a class="code hl_function" href="class_n_model_1_1_c_fbx_loader.html#ae6b617b4f9de43da80c4062daafc69ec">GetMeshNode</a>(0);</div>
+<div class="line"><span class="lineno"> 1080</span> </div>
+<div class="line"><span class="lineno"> 1081</span>        <span class="comment">// スキンを取得</span></div>
+<div class="line"><span class="lineno"> 1082</span>        FbxMesh* <span class="keyword">const</span> pFbxMesh = rFbxMeshNode.<a class="code hl_variable" href="struct_n_model_1_1_s_fbx_mesh_node.html#a4850fb5723a8e77751ff1ade8dcfdb7b">pFbxMesh</a>;</div>
+<div class="line"><span class="lineno"> 1083</span>        FbxSkin* <span class="keyword">const</span> pFbxSkin = rFbxMeshNode.pFbxSkin;</div>
+<div class="line"><span class="lineno"> 1084</span> </div>
+<div class="line"><span class="lineno"> 1085</span>        <span class="comment">// 補間時の時間を取得</span></div>
+<div class="line"><span class="lineno"> 1086</span>        <span class="keywordtype">float</span>               anmFrameOffset;     <span class="comment">// 開始(終了)フレーム</span></div>
+<div class="line"><span class="lineno"> 1087</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a> &gt;= 0) {</div>
+<div class="line"><span class="lineno"> 1088</span>            anmFrameOffset = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(<a class="code hl_function" href="#a324a6444f86a7733e553961b6b2a6037">GetAnimationStartFrame</a>());</div>
+<div class="line"><span class="lineno"> 1089</span>        }</div>
+<div class="line"><span class="lineno"> 1090</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno"> 1091</span>            anmFrameOffset = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(<a class="code hl_function" href="#aafc79025741899b743fbd5c6d4d211cb">GetAnimationStopFrame</a>());</div>
+<div class="line"><span class="lineno"> 1092</span>        }</div>
+<div class="line"><span class="lineno"> 1093</span> </div>
+<div class="line"><span class="lineno"> 1094</span>        <a class="code hl_variable" href="#a4673e4beff4ef281efc4e63f06fad66a">m_interpoleCompleteFrame</a> = (<a class="code hl_variable" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a> * _interpoleFrame) + anmFrameOffset;</div>
+<div class="line"><span class="lineno"> 1095</span>        <span class="keyword">const</span> FbxLongLong   fbxTimePerFrame = _rFbxLoader.<a class="code hl_function" href="class_n_model_1_1_c_fbx_loader.html#aa75f70772f3aa58734cd85baa5e46e94">GetFbxTimePerFrame</a>();</div>
+<div class="line"><span class="lineno"> 1096</span>        <span class="keyword">const</span> FbxLongLong   fbxTime = <span class="keyword">static_cast&lt;</span>FbxLongLong<span class="keyword">&gt;</span>(<a class="code hl_variable" href="#a4673e4beff4ef281efc4e63f06fad66a">m_interpoleCompleteFrame</a> * fbxTimePerFrame);</div>
+<div class="line"><span class="lineno"> 1097</span> </div>
+<div class="line"><span class="lineno"> 1098</span>        <span class="comment">// クラスター数を取得</span></div>
+<div class="line"><span class="lineno"> 1099</span>        <span class="keywordflow">for</span> (uint iClst = 0; iClst &lt; _clusterCount; ++iClst) {</div>
+<div class="line"><span class="lineno"> 1100</span>            ::CalcClusterMatrix(</div>
+<div class="line"><span class="lineno"> 1101</span>                _rDestClusterMatrix[iClst],</div>
+<div class="line"><span class="lineno"> 1102</span>                _rDestNodeMatrix[iClst],</div>
+<div class="line"><span class="lineno"> 1103</span>                fbxTime,</div>
+<div class="line"><span class="lineno"> 1104</span>                iClst,</div>
+<div class="line"><span class="lineno"> 1105</span>                pFbxMesh,</div>
+<div class="line"><span class="lineno"> 1106</span>                pFbxSkin);</div>
+<div class="line"><span class="lineno"> 1107</span>        }</div>
+<div class="line"><span class="lineno"> 1108</span>    }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_a099b6a85136760ed980079095fc9afe4"><div class="ttname"><a href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast</a></div><div class="ttdeci">#define StaticCast</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:88</div></div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+<div class="ttc" id="a_debug___assert_8h_html_ad7c42ee53403d76904988502c7454163"><div class="ttname"><a href="_debug___assert_8h.html#ad7c42ee53403d76904988502c7454163">AssertPlus</a></div><div class="ttdeci">#define AssertPlus(var)</div><div class="ttdoc">値を検証する</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:38</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_aa75f70772f3aa58734cd85baa5e46e94"><div class="ttname"><a href="class_n_model_1_1_c_fbx_loader.html#aa75f70772f3aa58734cd85baa5e46e94">NModel::CFbxLoader::GetFbxTimePerFrame</a></div><div class="ttdeci">FbxLongLong GetFbxTimePerFrame() const</div><div class="ttdoc">1フレームFBX時間を取得する</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:37</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_ab4202178ed862304c4e44df7c164810e"><div class="ttname"><a href="class_n_model_1_1_c_fbx_loader.html#ab4202178ed862304c4e44df7c164810e">NModel::CFbxLoader::GetMeshNodeCount</a></div><div class="ttdeci">size_t GetMeshNodeCount() const</div><div class="ttdoc">メッシュノードの数を取得</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:24</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_ae6b617b4f9de43da80c4062daafc69ec"><div class="ttname"><a href="class_n_model_1_1_c_fbx_loader.html#ae6b617b4f9de43da80c4062daafc69ec">NModel::CFbxLoader::GetMeshNode</a></div><div class="ttdeci">SFbxMeshNode &amp; GetMeshNode(const unsigned int _idx)</div><div class="ttdoc">メッシュノードを取得</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:27</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a324a6444f86a7733e553961b6b2a6037"><div class="ttname"><a href="#a324a6444f86a7733e553961b6b2a6037">NModel::CObject::GetAnimationStartFrame</a></div><div class="ttdeci">uint GetAnimationStartFrame(unsigned int _anmStackIdx=UINT_MAX) const</div><div class="ttdoc">アニメーションの開始フレームを取得する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:747</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_aafc79025741899b743fbd5c6d4d211cb"><div class="ttname"><a href="#aafc79025741899b743fbd5c6d4d211cb">NModel::CObject::GetAnimationStopFrame</a></div><div class="ttdeci">uint GetAnimationStopFrame(unsigned int _anmStackIdx=UINT_MAX) const</div><div class="ttdoc">アニメーションの終了フレームを取得する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:761</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_fbx_mesh_node_html_a4850fb5723a8e77751ff1ade8dcfdb7b"><div class="ttname"><a href="struct_n_model_1_1_s_fbx_mesh_node.html#a4850fb5723a8e77751ff1ade8dcfdb7b">NModel::SFbxMeshNode::pFbxMesh</a></div><div class="ttdeci">FbxMesh * pFbxMesh</div><div class="ttdef"><b>Definition</b> Model_FbxDef.h:163</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa860d0ea4d8746170d9d4688159ca2c8" name="aa860d0ea4d8746170d9d4688159ca2c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa860d0ea4d8746170d9d4688159ca2c8">&#9670;&#160;</a></span>ChangeAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::ChangeAnimation </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_anmStackIdx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>_isLoop</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_interpoleFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_speedFramePerFrame</em></span><span class="paramdefsep"> = </span><span class="paramdefval">FLT_MAX</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アニメーションの変更完全版 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_anmStackIdx</td><td>設定するアニメーション </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_isLoop</td><td>アニメーションをループするフラグ<ul>
+<li>true : ループ, false : 1度のみ </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_speedFramePerFrame</td><td>アニメーション速度<ul>
+<li><a class="el" href="#a3ce56db4c50d34a76a3f83dba4247349" title="アニメーションの速度を設定">SetAnimationSpeed()</a>を参照</li>
+<li>FLT_MAX を指定すると、現在の速度を維持する </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  656</span>    {</div>
+<div class="line"><span class="lineno">  657</span>        <span class="comment">// アニメーションが存在しない場合は警告を出力し、無視する</span></div>
+<div class="line"><span class="lineno">  658</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a29fd8d1794a7a21f0fbace397a9baf5e">m_hasAnimation</a>) {</div>
+<div class="line"><span class="lineno">  659</span>            <a class="code hl_define" href="_system___error_8h.html#a7237f644657926eb3196ac84172fb8b4">OutWarningMessageEx</a>(<span class="stringliteral">&quot;アニメーションが存在しないのに、アニメーションの変更が呼ばれました。&quot;</span>);</div>
+<div class="line"><span class="lineno">  660</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  661</span>        }</div>
+<div class="line"><span class="lineno">  662</span> </div>
+<div class="line"><span class="lineno">  663</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_anmStackIdx &lt; m_pModelManager-&gt;GetModel().GetAnimationCount());</div>
+<div class="line"><span class="lineno">  664</span> </div>
+<div class="line"><span class="lineno">  665</span>        <a class="code hl_variable" href="#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a> = _anmStackIdx;</div>
+<div class="line"><span class="lineno">  666</span>        <a class="code hl_variable" href="#ac2f4ab48a495cfee70247840678a5b28">m_isLoop</a> = _isLoop;</div>
+<div class="line"><span class="lineno">  667</span>        <a class="code hl_variable" href="#a8efac6479cd0b2e2dc1a78f41d3d8a6b">m_isAnmEnd</a> = <span class="keyword">false</span>; <span class="comment">// アニメーション終了フラグをリセット</span></div>
+<div class="line"><span class="lineno">  668</span> </div>
+<div class="line"><span class="lineno">  669</span>        <span class="comment">// アニメーション速度を設定</span></div>
+<div class="line"><span class="lineno">  670</span>        <span class="keywordflow">if</span> (_speedFramePerFrame != FLT_MAX) {   <span class="comment">// FLT_MAXが渡されたときは、スピードを変更しない</span></div>
+<div class="line"><span class="lineno">  671</span>            <a class="code hl_function" href="#a3ce56db4c50d34a76a3f83dba4247349">SetAnimationSpeed</a>(_speedFramePerFrame);</div>
+<div class="line"><span class="lineno">  672</span>        }</div>
+<div class="line"><span class="lineno">  673</span> </div>
+<div class="line"><span class="lineno">  674</span>        <span class="comment">// アニメーションの初期フレームを設定</span></div>
+<div class="line"><span class="lineno">  675</span>        <span class="keyword">const</span> SFbxAnimationStack&amp; anmStack = <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>-&gt;GetModel().GetAnmStack(_anmStackIdx);</div>
+<div class="line"><span class="lineno">  676</span>        <span class="comment">// 0または正の値の時は、開始フレームを設定</span></div>
+<div class="line"><span class="lineno">  677</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a> &gt;= 0) {</div>
+<div class="line"><span class="lineno">  678</span>            <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(anmStack.startFrame);</div>
+<div class="line"><span class="lineno">  679</span>        }</div>
+<div class="line"><span class="lineno">  680</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  681</span>            <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(anmStack.stopFrame);</div>
+<div class="line"><span class="lineno">  682</span>        }</div>
+<div class="line"><span class="lineno">  683</span>        <a class="code hl_variable" href="#ac9800a2ae5ad1219e8e53a7641fa1b37">m_anmFrameLoop</a> = 0;</div>
+<div class="line"><span class="lineno">  684</span> </div>
+<div class="line"><span class="lineno">  685</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_interpoleFrame * abs(<a class="code hl_variable" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a>) &lt;= <a class="code hl_function" href="#aaeb87a9b961e51b9e1cc58c87fb9b963">GetAnimationFrameLength</a>() &amp;&amp;</div>
+<div class="line"><span class="lineno">  686</span>                <span class="stringliteral">&quot;補完するフレーム数がアニメーションの長さを超えています。&quot;</span>);</div>
+<div class="line"><span class="lineno">  687</span> </div>
+<div class="line"><span class="lineno">  688</span>        <span class="comment">// 補完設定</span></div>
+<div class="line"><span class="lineno">  689</span>        <a class="code hl_variable" href="#ac60d8be0899204968b00b890f1099fd6">m_interpoleFrameCnt</a> = 1;</div>
+<div class="line"><span class="lineno">  690</span>        <span class="keywordflow">if</span> (_interpoleFrame &gt; 0) {</div>
+<div class="line"><span class="lineno">  691</span>            <a class="code hl_variable" href="#a6a7a8a3e740cd512ade1729b36407352">m_interpoleFrame</a>            = _interpoleFrame;</div>
+<div class="line"><span class="lineno">  692</span>            <a class="code hl_variable" href="#a984511a1707770703b54a307322ac70c">m_isInterpole</a>               = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  693</span>            <a class="code hl_variable" href="#a9157024932882a0fc943b77399e36b18">m_isInterpoleMatrixReady</a>    = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  694</span>        }</div>
+<div class="line"><span class="lineno">  695</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  696</span>            <a class="code hl_variable" href="#a6a7a8a3e740cd512ade1729b36407352">m_interpoleFrame</a>            = 0;</div>
+<div class="line"><span class="lineno">  697</span>            <a class="code hl_variable" href="#a984511a1707770703b54a307322ac70c">m_isInterpole</a>               = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  698</span>            <a class="code hl_variable" href="#a9157024932882a0fc943b77399e36b18">m_isInterpoleMatrixReady</a>    = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  699</span>        }</div>
+<div class="line"><span class="lineno">  700</span>    }</div>
+<div class="ttc" id="a_system___error_8h_html_a7237f644657926eb3196ac84172fb8b4"><div class="ttname"><a href="_system___error_8h.html#a7237f644657926eb3196ac84172fb8b4">OutWarningMessageEx</a></div><div class="ttdeci">#define OutWarningMessageEx(_pMessage)</div><div class="ttdef"><b>Definition</b> System_Error.h:7</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a3ce56db4c50d34a76a3f83dba4247349"><div class="ttname"><a href="#a3ce56db4c50d34a76a3f83dba4247349">NModel::CObject::SetAnimationSpeed</a></div><div class="ttdeci">void SetAnimationSpeed(const float _speedFramePerFrame=1.0f)</div><div class="ttdoc">アニメーションの速度を設定</div><div class="ttdef"><b>Definition</b> Model_Object.h:58</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_aaeb87a9b961e51b9e1cc58c87fb9b963"><div class="ttname"><a href="#aaeb87a9b961e51b9e1cc58c87fb9b963">NModel::CObject::GetAnimationFrameLength</a></div><div class="ttdeci">float GetAnimationFrameLength(unsigned int _anmStackIdx=UINT_MAX) const</div><div class="ttdoc">アニメーションフレームの長さを取得</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:729</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ac60d8be0899204968b00b890f1099fd6"><div class="ttname"><a href="#ac60d8be0899204968b00b890f1099fd6">NModel::CObject::m_interpoleFrameCnt</a></div><div class="ttdeci">uint m_interpoleFrameCnt</div><div class="ttdef"><b>Definition</b> Model_Object.h:149</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad1d061de452a329e577833773d2683f2" name="ad1d061de452a329e577833773d2683f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d061de452a329e577833773d2683f2">&#9670;&#160;</a></span>GetAnimationFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NModel::CObject::GetAnimationFrame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在のアニメーションフレームを取得する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>0 からのフレーム数で取得する。 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> - <a class="code hl_function" href="#a324a6444f86a7733e553961b6b2a6037">GetAnimationStartFrame</a>(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaeb87a9b961e51b9e1cc58c87fb9b963" name="aaeb87a9b961e51b9e1cc58c87fb9b963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeb87a9b961e51b9e1cc58c87fb9b963">&#9670;&#160;</a></span>GetAnimationFrameLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NModel::CObject::GetAnimationFrameLength </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>_anmStackIdx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">UINT_MAX</span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アニメーションフレームの長さを取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_anmStackIdx</td><td>取得するアニメーションのインデックス<ul>
+<li>UINT_MAX を指定すると現在再生中のアニメーションフレームの長さを取得する </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  730</span>    {</div>
+<div class="line"><span class="lineno">  731</span>        <span class="comment">// 今のアニメーションインデックスを設定する</span></div>
+<div class="line"><span class="lineno">  732</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> anmStackIdx = <a class="code hl_variable" href="#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a>;</div>
+<div class="line"><span class="lineno">  733</span> </div>
+<div class="line"><span class="lineno">  734</span>        <span class="comment">// 指定されたアニメーションのフレームを取得する場合</span></div>
+<div class="line"><span class="lineno">  735</span>        <span class="keywordflow">if</span> (_anmStackIdx != UINT_MAX) {</div>
+<div class="line"><span class="lineno">  736</span>            <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_anmStackIdx &lt; m_pModelManager-&gt;GetModel().GetAnimationCount() &amp;&amp; <span class="stringliteral">&quot;指定したアニメーションインデックスが不正です。&quot;</span>);</div>
+<div class="line"><span class="lineno">  737</span>            anmStackIdx = _anmStackIdx;</div>
+<div class="line"><span class="lineno">  738</span>        }</div>
+<div class="line"><span class="lineno">  739</span>        <span class="keyword">const</span> SFbxAnimationStack&amp; anmStack = <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>-&gt;GetModel().GetAnmStack(anmStackIdx);</div>
+<div class="line"><span class="lineno">  740</span> </div>
+<div class="line"><span class="lineno">  741</span>        <span class="keywordtype">float</span> anmStartFrame = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(anmStack.startFrame);</div>
+<div class="line"><span class="lineno">  742</span>        <span class="keywordtype">float</span> anmStopFrame = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(anmStack.stopFrame);</div>
+<div class="line"><span class="lineno">  743</span> </div>
+<div class="line"><span class="lineno">  744</span>        <span class="keywordflow">return</span> (anmStopFrame - anmStartFrame);</div>
+<div class="line"><span class="lineno">  745</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1c6cec09459fc7b50a6c2154ec1f65ad" name="a1c6cec09459fc7b50a6c2154ec1f65ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c6cec09459fc7b50a6c2154ec1f65ad">&#9670;&#160;</a></span>GetAnimationFrameLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NModel::CObject::GetAnimationFrameLoop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>同じアニメーションを再生した時間を取得する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>時間はm_anmSpeedFrameずつ増える </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac9800a2ae5ad1219e8e53a7641fa1b37">m_anmFrameLoop</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3a58433eb3305a480f936b2dfa19144d" name="a3a58433eb3305a480f936b2dfa19144d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a58433eb3305a480f936b2dfa19144d">&#9670;&#160;</a></span>GetAnimationIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NModel::CObject::GetAnimationIndex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在のアニメーションインデックスを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a324a6444f86a7733e553961b6b2a6037" name="a324a6444f86a7733e553961b6b2a6037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324a6444f86a7733e553961b6b2a6037">&#9670;&#160;</a></span>GetAnimationStartFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NModel::CObject::GetAnimationStartFrame </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>_anmStackIdx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">UINT_MAX</span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アニメーションの開始フレームを取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_anmStackIdx</td><td>取得するアニメーションのインデックス<ul>
+<li>UINT_MAX を指定すると現在再生中のアニメーションフレームの長さを取得する </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  748</span>    {</div>
+<div class="line"><span class="lineno">  749</span>        <span class="comment">// 今のアニメーションインデックスを設定する</span></div>
+<div class="line"><span class="lineno">  750</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> anmStackIdx = <a class="code hl_variable" href="#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a>;</div>
+<div class="line"><span class="lineno">  751</span> </div>
+<div class="line"><span class="lineno">  752</span>        <span class="comment">// 指定されたアニメーションのフレームを取得する場合</span></div>
+<div class="line"><span class="lineno">  753</span>        <span class="keywordflow">if</span> (_anmStackIdx != UINT_MAX) {</div>
+<div class="line"><span class="lineno">  754</span>            <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_anmStackIdx &lt; m_pModelManager-&gt;GetModel().GetAnimationCount() &amp;&amp; <span class="stringliteral">&quot;指定したアニメーションインデックスが不正です。&quot;</span>);</div>
+<div class="line"><span class="lineno">  755</span>            anmStackIdx = _anmStackIdx;</div>
+<div class="line"><span class="lineno">  756</span>        }</div>
+<div class="line"><span class="lineno">  757</span>        <span class="keyword">const</span> SFbxAnimationStack&amp; anmStack = <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>-&gt;GetModel().GetAnmStack(anmStackIdx);</div>
+<div class="line"><span class="lineno">  758</span>        <span class="keywordflow">return</span> anmStack.startFrame;</div>
+<div class="line"><span class="lineno">  759</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aafc79025741899b743fbd5c6d4d211cb" name="aafc79025741899b743fbd5c6d4d211cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc79025741899b743fbd5c6d4d211cb">&#9670;&#160;</a></span>GetAnimationStopFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NModel::CObject::GetAnimationStopFrame </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>_anmStackIdx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">UINT_MAX</span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アニメーションの終了フレームを取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_anmStackIdx</td><td>取得するアニメーションのインデックス<ul>
+<li>UINT_MAX を指定すると現在再生中のアニメーションフレームの長さを取得する </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  762</span>    {</div>
+<div class="line"><span class="lineno">  763</span>        <span class="comment">// 今のアニメーションインデックスを設定する</span></div>
+<div class="line"><span class="lineno">  764</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> anmStackIdx = <a class="code hl_variable" href="#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a>;</div>
+<div class="line"><span class="lineno">  765</span> </div>
+<div class="line"><span class="lineno">  766</span>        <span class="comment">// 指定されたアニメーションのフレームを取得する場合</span></div>
+<div class="line"><span class="lineno">  767</span>        <span class="keywordflow">if</span> (_anmStackIdx != UINT_MAX) {</div>
+<div class="line"><span class="lineno">  768</span>            <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_anmStackIdx &lt; m_pModelManager-&gt;GetModel().GetAnimationCount() &amp;&amp; <span class="stringliteral">&quot;指定したアニメーションインデックスが不正です。&quot;</span>);</div>
+<div class="line"><span class="lineno">  769</span>            anmStackIdx = _anmStackIdx;</div>
+<div class="line"><span class="lineno">  770</span>        }</div>
+<div class="line"><span class="lineno">  771</span>        <span class="keyword">const</span> SFbxAnimationStack&amp; anmStack = <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>-&gt;GetModel().GetAnmStack(anmStackIdx);</div>
+<div class="line"><span class="lineno">  772</span>        <span class="keywordflow">return</span> anmStack.stopFrame;</div>
+<div class="line"><span class="lineno">  773</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae7a155a73fd57e0c7eba5ad16bc30b20" name="ae7a155a73fd57e0c7eba5ad16bc30b20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a155a73fd57e0c7eba5ad16bc30b20">&#9670;&#160;</a></span>GetClusterMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::GetClusterMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_clusterIndex</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>クラスターの行列を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  778</span>    {</div>
+<div class="line"><span class="lineno">  779</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_clusterIndex &lt; <a class="code hl_variable" href="#a27a439f7a0c0b28611d435b409c9197e">m_clusterCount</a>);</div>
+<div class="line"><span class="lineno">  780</span>        _rDest = <a class="code hl_variable" href="#a20a045c914fef024994075f5cf48590d">m_matClusterNode</a>[_clusterIndex];</div>
+<div class="line"><span class="lineno">  781</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a20a045c914fef024994075f5cf48590d"><div class="ttname"><a href="#a20a045c914fef024994075f5cf48590d">NModel::CObject::m_matClusterNode</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matClusterNode</div><div class="ttdef"><b>Definition</b> Model_Object.h:129</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a27a439f7a0c0b28611d435b409c9197e"><div class="ttname"><a href="#a27a439f7a0c0b28611d435b409c9197e">NModel::CObject::m_clusterCount</a></div><div class="ttdeci">uint m_clusterCount</div><div class="ttdef"><b>Definition</b> Model_Object.h:127</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a566eea423fdbdd25ae4e656120af5955" name="a566eea423fdbdd25ae4e656120af5955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a566eea423fdbdd25ae4e656120af5955">&#9670;&#160;</a></span>GetFVF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD NModel::CObject::GetFVF </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モデルデータのフォーマットを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  710</span>    {</div>
+<div class="line"><span class="lineno">  711</span>        <span class="keywordflow">return</span> MODEL_FVF;</div>
+<div class="line"><span class="lineno">  712</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af248a451fca7a9dc05673aeb320a4419" name="af248a451fca7a9dc05673aeb320a4419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af248a451fca7a9dc05673aeb320a4419">&#9670;&#160;</a></span>GetIsAnimationEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CObject::GetIsAnimationEnd </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーションの終了フラグを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a8efac6479cd0b2e2dc1a78f41d3d8a6b">m_isAnmEnd</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6e0d9ff487be5b63cc2b461381005b62" name="a6e0d9ff487be5b63cc2b461381005b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e0d9ff487be5b63cc2b461381005b62">&#9670;&#160;</a></span>GetMeshNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_model_1_1_s_mesh_node.html">SMeshNode</a> &amp; NModel::CObject::GetMeshNode </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_nodeIndex</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>メッシュノードを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  715</span>    {</div>
+<div class="line"><span class="lineno">  716</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_nodeIndex &lt; <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.size());</div>
+<div class="line"><span class="lineno">  717</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>[_nodeIndex];</div>
+<div class="line"><span class="lineno">  718</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ac20dda842453722b1bd3c592b45a7d7f"><div class="ttname"><a href="#ac20dda842453722b1bd3c592b45a7d7f">NModel::CObject::m_meshNodes</a></div><div class="ttdeci">std::vector&lt; SMeshNode &gt; m_meshNodes</div><div class="ttdef"><b>Definition</b> Model_Object.h:124</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abafe3dda6aba3a0f2d97eee345c52185" name="abafe3dda6aba3a0f2d97eee345c52185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abafe3dda6aba3a0f2d97eee345c52185">&#9670;&#160;</a></span>GetMeshNodeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint NModel::CObject::GetMeshNodeCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>メッシュノードの数を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.size(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abed9f190601721df77ccdf7070bb5596" name="abed9f190601721df77ccdf7070bb5596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed9f190601721df77ccdf7070bb5596">&#9670;&#160;</a></span>GetMeshNodeMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::GetMeshNodeMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_nodeIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_worldMatrix</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ノードを描画する行列を取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">_rDest</td><td>描画する行列の取得先 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_nodeIndex</td><td>描画するノード </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_worldMatrix</td><td>オブジェクトのワールド変換行列(GameObjectのワールド変換行列) </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  724</span>    {</div>
+<div class="line"><span class="lineno">  725</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_nodeIndex &lt; <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.size());</div>
+<div class="line"><span class="lineno">  726</span>        _rDest = <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>[_nodeIndex].matrix * _worldMatrix;</div>
+<div class="line"><span class="lineno">  727</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a338a193db0f3f8f21e33fdaf8067a95b" name="a338a193db0f3f8f21e33fdaf8067a95b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338a193db0f3f8f21e33fdaf8067a95b">&#9670;&#160;</a></span>GetModelManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_n_model_1_1_c_manager.html">NModel::CManager</a> * NModel::CObject::GetModelManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>モデルの元データを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>.get(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a716c3193161fb64daa0685fe3317ad76" name="a716c3193161fb64daa0685fe3317ad76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a716c3193161fb64daa0685fe3317ad76">&#9670;&#160;</a></span>InterpoleMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::InterpoleMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_clusterCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_ratio</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>_destMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>_startMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>_endMatrix</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>二つの行列間を補完する </p>
+<div class="fragment"><div class="line"><span class="lineno"> 1117</span>    {</div>
+<div class="line"><span class="lineno"> 1118</span>        <span class="keywordtype">float</span> ratio = _ratio;</div>
+<div class="line"><span class="lineno"> 1119</span>        <span class="comment">// _ratioをクランプ</span></div>
+<div class="line"><span class="lineno"> 1120</span>        <span class="keywordflow">if</span> (ratio &lt; 0) {</div>
+<div class="line"><span class="lineno"> 1121</span>            ratio = 0;</div>
+<div class="line"><span class="lineno"> 1122</span>        }</div>
+<div class="line"><span class="lineno"> 1123</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ratio &gt; 1) {</div>
+<div class="line"><span class="lineno"> 1124</span>            ratio = 1;</div>
+<div class="line"><span class="lineno"> 1125</span>        }</div>
+<div class="line"><span class="lineno"> 1126</span> </div>
+<div class="line"><span class="lineno"> 1127</span>        <span class="comment">// 行列からクオータニオンに変換</span></div>
+<div class="line"><span class="lineno"> 1128</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; _clusterCount; ++i) {</div>
+<div class="line"><span class="lineno"> 1129</span>            <span class="keywordtype">float</span> ratio0 = 1 - ratio;</div>
+<div class="line"><span class="lineno"> 1130</span>            <span class="keywordtype">float</span> ratio1 = ratio;</div>
+<div class="line"><span class="lineno"> 1131</span> </div>
+<div class="line"><span class="lineno"> 1132</span>            _destMatrix[i] =</div>
+<div class="line"><span class="lineno"> 1133</span>                _startMatrix[i] * ratio0 +</div>
+<div class="line"><span class="lineno"> 1134</span>                _endMatrix[i] * ratio1;</div>
+<div class="line"><span class="lineno"> 1135</span>        }</div>
+<div class="line"><span class="lineno"> 1136</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae6bef07bdcc60bf840e84d64ac42987e" name="ae6bef07bdcc60bf840e84d64ac42987e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6bef07bdcc60bf840e84d64ac42987e">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CModelFactory::Key</a></td>          <td class="paramname"><span class="paramname"><em>_key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用するモデルを設定する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>_key の値はAsset/Asset_AssetFactoryを参照 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  410</span>    {</div>
+<div class="line"><span class="lineno">  411</span>        <span class="comment">// モデルデータを取得</span></div>
+<div class="line"><span class="lineno">  412</span>        <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a> = <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CModelFactory::GetInst</a>().Load(_key);</div>
+<div class="line"><span class="lineno">  413</span> </div>
+<div class="line"><span class="lineno">  414</span>        <span class="comment">// モデルデータから作成</span></div>
+<div class="line"><span class="lineno">  415</span>        <a class="code hl_function" href="#a88510059c90ad0a04b64927924f40d2a">SetupMeshNode</a>();</div>
+<div class="line"><span class="lineno">  416</span> </div>
+<div class="line"><span class="lineno">  417</span>        <span class="comment">// デバッグ用シェーダーをロード</span></div>
+<div class="line"><span class="lineno">  418</span>        <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CShaderFactory::Key</a> keyDebugShader = <span class="stringliteral">&quot;Debug/DebugTexture.hlsl&quot;</span>;</div>
+<div class="line"><span class="lineno">  419</span>        <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CShaderFactory::GetInst</a>().SetLoadInfo(</div>
+<div class="line"><span class="lineno">  420</span>            keyDebugShader,</div>
+<div class="line"><span class="lineno">  421</span>            <span class="stringliteral">&quot;VS&quot;</span>,</div>
+<div class="line"><span class="lineno">  422</span>            <span class="stringliteral">&quot;PS&quot;</span>);</div>
+<div class="line"><span class="lineno">  423</span>        g_shaderDebug = <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CShaderFactory::GetInst</a>().Load(keyDebugShader);</div>
+<div class="line"><span class="lineno">  424</span> </div>
+<div class="line"><span class="lineno">  425</span>        <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CShaderFactory::Key</a> keyDebugAlphaShader = <span class="stringliteral">&quot;Debug/DebugAlpha.hlsl&quot;</span>;</div>
+<div class="line"><span class="lineno">  426</span>        <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CShaderFactory::GetInst</a>().SetLoadInfo(</div>
+<div class="line"><span class="lineno">  427</span>            keyDebugAlphaShader,</div>
+<div class="line"><span class="lineno">  428</span>            <span class="stringliteral">&quot;VS&quot;</span>,</div>
+<div class="line"><span class="lineno">  429</span>            <span class="stringliteral">&quot;PS&quot;</span>);</div>
+<div class="line"><span class="lineno">  430</span>        g_shaderDebugAlpha = <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CShaderFactory::GetInst</a>().Load(keyDebugAlphaShader);</div>
+<div class="line"><span class="lineno">  431</span>    }</div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a4a6509d6bcd7f624a19f44a25380671e"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CFactory&lt; NShader::CManager, CShaderFactory &gt;::Key</a></div><div class="ttdeci">std::string Key</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:27</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a88510059c90ad0a04b64927924f40d2a"><div class="ttname"><a href="#a88510059c90ad0a04b64927924f40d2a">NModel::CObject::SetupMeshNode</a></div><div class="ttdeci">void SetupMeshNode()</div><div class="ttdoc">モデル情報から必要情報を抽出し、使用可能状態にする</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:785</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_singleton_html_a08cc988d79fa3297df6ede328e44a770"><div class="ttname"><a href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NUtil::CSingleton&lt; CModelFactory &gt;::GetInst</a></div><div class="ttdeci">static CModelFactory &amp; GetInst()</div><div class="ttdef"><b>Definition</b> Util_SingletonTemplate.h:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac2bd5826664fcea1458d08a4ee4779db" name="ac2bd5826664fcea1458d08a4ee4779db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2bd5826664fcea1458d08a4ee4779db">&#9670;&#160;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::Release </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>読み込んだ情報を開放する </p>
+<div class="fragment"><div class="line"><span class="lineno">  434</span>    {</div>
+<div class="line"><span class="lineno">  435</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  436</span>            <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>[i].Release();</div>
+<div class="line"><span class="lineno">  437</span>        }</div>
+<div class="line"><span class="lineno">  438</span>        <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.clear();</div>
+<div class="line"><span class="lineno">  439</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaec31eb56ec85712832728f64c02f356" name="aaec31eb56ec85712832728f64c02f356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec31eb56ec85712832728f64c02f356">&#9670;&#160;</a></span>RenderDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::RenderDebug </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_matWorld</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デバッグ用シェーダーで描画 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>透明度を無視した描画(モデルの表示テスト用) </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  447</span>    {</div>
+<div class="line"><span class="lineno">  448</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> nodeCount = <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.size();</div>
+<div class="line"><span class="lineno">  449</span>        <span class="keywordflow">if</span> (nodeCount &lt;= 0) {</div>
+<div class="line"><span class="lineno">  450</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  451</span>        }</div>
+<div class="line"><span class="lineno">  452</span> </div>
+<div class="line"><span class="lineno">  453</span>        <span class="comment">// カメラを設定</span></div>
+<div class="line"><span class="lineno">  454</span>        <a class="code hl_function" href="namespace_n_camera.html#a8115b26b2d21a2eda8798696cdee2003">NCamera::SetViewMatrix</a>();</div>
+<div class="line"><span class="lineno">  455</span>        <a class="code hl_function" href="namespace_n_camera.html#a9b631e8399b3cb50cb03a00f4d91f2e9">NCamera::SetProjMatrix</a>();</div>
+<div class="line"><span class="lineno">  456</span>        <a class="code hl_function" href="namespace_n_camera.html#a9940d9dd1c7e7c477336be31fd7a2b3f">NCamera::SetViewport</a>();</div>
+<div class="line"><span class="lineno">  457</span> </div>
+<div class="line"><span class="lineno">  458</span>        <a class="code hl_function" href="#a57bfc9c9f0b4258c8177e7a5f41eac7b">UpdateAnimation</a>();</div>
+<div class="line"><span class="lineno">  459</span> </div>
+<div class="line"><span class="lineno">  460</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; nodeCount; ++i) {</div>
+<div class="line"><span class="lineno">  461</span> </div>
+<div class="line"><span class="lineno">  462</span>            SMeshNode&amp; meshNode = <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>[i];</div>
+<div class="line"><span class="lineno">  463</span> </div>
+<div class="line"><span class="lineno">  464</span>            <span class="keywordflow">if</span> (meshNode.vertexCount &lt;= 0) {</div>
+<div class="line"><span class="lineno">  465</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  466</span>            }</div>
+<div class="line"><span class="lineno">  467</span> </div>
+<div class="line"><span class="lineno">  468</span>            <span class="comment">// DirectXの描画設定</span></div>
+<div class="line"><span class="lineno">  469</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);</div>
+<div class="line"><span class="lineno">  470</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetFVF(MODEL_FVF);</div>
+<div class="line"><span class="lineno">  471</span>            g_shaderDebug-&gt;SetShaderToPipeline();</div>
+<div class="line"><span class="lineno">  472</span> </div>
+<div class="line"><span class="lineno">  473</span>            <span class="comment">// ワールド変換行列の設定</span></div>
+<div class="line"><span class="lineno">  474</span>            D3DXMATRIX mat;</div>
+<div class="line"><span class="lineno">  475</span>            NMath::SMatrix44 matWorld;</div>
+<div class="line"><span class="lineno">  476</span> </div>
+<div class="line"><span class="lineno">  477</span>            matWorld = meshNode.matrix * _matWorld;</div>
+<div class="line"><span class="lineno">  478</span> </div>
+<div class="line"><span class="lineno">  479</span>            <span class="comment">// シェーダ―へ行列を設定</span></div>
+<div class="line"><span class="lineno">  480</span>            <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(mat, matWorld);</div>
+<div class="line"><span class="lineno">  481</span>            g_shaderDebug-&gt;GetVSCT()-&gt;SetMatrix(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(), <span class="stringliteral">&quot;g_world&quot;</span>, &amp;mat);</div>
+<div class="line"><span class="lineno">  482</span> </div>
+<div class="line"><span class="lineno">  483</span>            NMath::SMatrix44 view;</div>
+<div class="line"><span class="lineno">  484</span>            <a class="code hl_function" href="namespace_n_camera.html#ad24c0a0bd262bfcd7b0299a8804c0a48">NCamera::GetViewMatrix</a>(view);</div>
+<div class="line"><span class="lineno">  485</span>            <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(mat, view);</div>
+<div class="line"><span class="lineno">  486</span>            g_shaderDebug-&gt;GetVSCT()-&gt;SetMatrix(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(), <span class="stringliteral">&quot;g_view&quot;</span>, &amp;mat);</div>
+<div class="line"><span class="lineno">  487</span> </div>
+<div class="line"><span class="lineno">  488</span>            NMath::SMatrix44 proj;</div>
+<div class="line"><span class="lineno">  489</span>            <a class="code hl_function" href="namespace_n_camera.html#a10d6cf4a8f5b26e13a79008e0484a3d7">NCamera::GetProjMatrix</a>(proj);</div>
+<div class="line"><span class="lineno">  490</span>            <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(mat, proj);</div>
+<div class="line"><span class="lineno">  491</span>            g_shaderDebug-&gt;GetVSCT()-&gt;SetMatrix(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(), <span class="stringliteral">&quot;g_projection&quot;</span>, &amp;mat);</div>
+<div class="line"><span class="lineno">  492</span> </div>
+<div class="line"><span class="lineno">  493</span>            <span class="keywordtype">bool</span> hasTexture = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  494</span>            <span class="keywordflow">if</span> (meshNode.material.texture != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  495</span>                hasTexture = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  496</span>            }</div>
+<div class="line"><span class="lineno">  497</span>            g_shaderDebug-&gt;GetPSCT()-&gt;SetBool(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(), <span class="stringliteral">&quot;g_hasTexture&quot;</span>, hasTexture);</div>
+<div class="line"><span class="lineno">  498</span>            <span class="keywordtype">int</span> idx = g_shaderDebug-&gt;GetPSCT()-&gt;GetSamplerIndex(<span class="stringliteral">&quot;g_sampler&quot;</span>);</div>
+<div class="line"><span class="lineno">  499</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTexture(idx, meshNode.material.texture);</div>
+<div class="line"><span class="lineno">  500</span> </div>
+<div class="line"><span class="lineno">  501</span>            <span class="comment">// 頂点バッファを設定</span></div>
+<div class="line"><span class="lineno">  502</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetStreamSource(</div>
+<div class="line"><span class="lineno">  503</span>                0,</div>
+<div class="line"><span class="lineno">  504</span>                meshNode.pVB,</div>
+<div class="line"><span class="lineno">  505</span>                0,</div>
+<div class="line"><span class="lineno">  506</span>                <span class="keyword">sizeof</span>(SVertex));</div>
+<div class="line"><span class="lineno">  507</span> </div>
+<div class="line"><span class="lineno">  508</span>            <span class="comment">// インデックスバッファを設定</span></div>
+<div class="line"><span class="lineno">  509</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetIndices(meshNode.pIB);</div>
+<div class="line"><span class="lineno">  510</span> </div>
+<div class="line"><span class="lineno">  511</span>            <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> polygonCount = (int)(meshNode.indexCount / 3.0f);</div>
+<div class="line"><span class="lineno">  512</span>            HRESULT hr;</div>
+<div class="line"><span class="lineno">  513</span>            hr = <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;DrawIndexedPrimitive(</div>
+<div class="line"><span class="lineno">  514</span>                D3DPT_TRIANGLELIST,</div>
+<div class="line"><span class="lineno">  515</span>                0,</div>
+<div class="line"><span class="lineno">  516</span>                0,</div>
+<div class="line"><span class="lineno">  517</span>                meshNode.indexCount,</div>
+<div class="line"><span class="lineno">  518</span>                0,</div>
+<div class="line"><span class="lineno">  519</span>                polygonCount);</div>
+<div class="line"><span class="lineno">  520</span> </div>
+<div class="line"><span class="lineno">  521</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetVertexShader(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  522</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetPixelShader(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  523</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetStreamSource(0, <span class="keyword">nullptr</span>, 0, 0);</div>
+<div class="line"><span class="lineno">  524</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetIndices(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  525</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTexture(0, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  526</span> </div>
+<div class="line"><span class="lineno">  527</span>        }</div>
+<div class="line"><span class="lineno">  528</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a57bfc9c9f0b4258c8177e7a5f41eac7b"><div class="ttname"><a href="#a57bfc9c9f0b4258c8177e7a5f41eac7b">NModel::CObject::UpdateAnimation</a></div><div class="ttdeci">void UpdateAnimation()</div><div class="ttdoc">アニメーションの更新をまとめた関数</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:839</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a10d6cf4a8f5b26e13a79008e0484a3d7"><div class="ttname"><a href="namespace_n_camera.html#a10d6cf4a8f5b26e13a79008e0484a3d7">NCamera::GetProjMatrix</a></div><div class="ttdeci">void GetProjMatrix(NMath::SMatrix44 &amp;_dest, const EManagerIndex _index)</div><div class="ttdoc">プロジェクション変換行列を取得</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:160</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a8115b26b2d21a2eda8798696cdee2003"><div class="ttname"><a href="namespace_n_camera.html#a8115b26b2d21a2eda8798696cdee2003">NCamera::SetViewMatrix</a></div><div class="ttdeci">void SetViewMatrix(const EManagerIndex _index)</div><div class="ttdoc">指定したインデックスのビュー変換行列を固定パイプラインに設定</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:101</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a9940d9dd1c7e7c477336be31fd7a2b3f"><div class="ttname"><a href="namespace_n_camera.html#a9940d9dd1c7e7c477336be31fd7a2b3f">NCamera::SetViewport</a></div><div class="ttdeci">void SetViewport(const EManagerIndex _index)</div><div class="ttdoc">指定したインデックスのビューポートぱイプラインに設定</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:123</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a9b631e8399b3cb50cb03a00f4d91f2e9"><div class="ttname"><a href="namespace_n_camera.html#a9b631e8399b3cb50cb03a00f4d91f2e9">NCamera::SetProjMatrix</a></div><div class="ttdeci">void SetProjMatrix(const EManagerIndex _index)</div><div class="ttdoc">指定したインデックスのプロジェクション変換行列を固定パイプラインに設定</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:112</div></div>
+<div class="ttc" id="anamespace_n_camera_html_ad24c0a0bd262bfcd7b0299a8804c0a48"><div class="ttname"><a href="namespace_n_camera.html#ad24c0a0bd262bfcd7b0299a8804c0a48">NCamera::GetViewMatrix</a></div><div class="ttdeci">void GetViewMatrix(NMath::SMatrix44 &amp;_dest, const EManagerIndex _index)</div><div class="ttdoc">ビュー変換行列を取得</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:152</div></div>
+<div class="ttc" id="anamespace_n_common_html_a8094a1e0c0e75a57e0924da7c4c894c3"><div class="ttname"><a href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">NCommon::uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:9</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_a6ace719c3abbc964180a4fb4584ff8a8"><div class="ttname"><a href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a></div><div class="ttdeci">void ToD3DMatrix(D3DXMATRIX &amp;_dest, const NMath::SMatrix44 &amp;_src)</div><div class="ttdoc">DirectXの定義に変換</div><div class="ttdef"><b>Definition</b> DirectX_Util.cpp:18</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab213af265d85f773a3fb450ca43e3650"><div class="ttname"><a href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 GetD3DDevice()</div><div class="ttdoc">デバイスを取得</div><div class="ttdef"><b>Definition</b> DirectX_Manager.cpp:95</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae0a16edc9f150947af181adf57e66422" name="ae0a16edc9f150947af181adf57e66422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a16edc9f150947af181adf57e66422">&#9670;&#160;</a></span>RenderDebugAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::RenderDebugAlpha </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_matWorld</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デバッグ用シェーダ―で描画 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>透明度を考慮した描画(描画順のテスト用) </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  531</span>    {</div>
+<div class="line"><span class="lineno">  532</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> nodeCount = <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.size();</div>
+<div class="line"><span class="lineno">  533</span>        <span class="keywordflow">if</span> (nodeCount &lt;= 0) {</div>
+<div class="line"><span class="lineno">  534</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  535</span>        }</div>
+<div class="line"><span class="lineno">  536</span> </div>
+<div class="line"><span class="lineno">  537</span>        <span class="comment">// カメラを設定</span></div>
+<div class="line"><span class="lineno">  538</span>        <a class="code hl_function" href="namespace_n_camera.html#a8115b26b2d21a2eda8798696cdee2003">NCamera::SetViewMatrix</a>();</div>
+<div class="line"><span class="lineno">  539</span>        <a class="code hl_function" href="namespace_n_camera.html#a9b631e8399b3cb50cb03a00f4d91f2e9">NCamera::SetProjMatrix</a>();</div>
+<div class="line"><span class="lineno">  540</span>        <a class="code hl_function" href="namespace_n_camera.html#a9940d9dd1c7e7c477336be31fd7a2b3f">NCamera::SetViewport</a>();</div>
+<div class="line"><span class="lineno">  541</span> </div>
+<div class="line"><span class="lineno">  542</span>        <a class="code hl_function" href="#a57bfc9c9f0b4258c8177e7a5f41eac7b">UpdateAnimation</a>();</div>
+<div class="line"><span class="lineno">  543</span> </div>
+<div class="line"><span class="lineno">  544</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; nodeCount; ++i) {</div>
+<div class="line"><span class="lineno">  545</span> </div>
+<div class="line"><span class="lineno">  546</span>            SMeshNode&amp; meshNode = <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>[i];</div>
+<div class="line"><span class="lineno">  547</span> </div>
+<div class="line"><span class="lineno">  548</span>            <span class="keywordflow">if</span> (meshNode.vertexCount &lt;= 0) {</div>
+<div class="line"><span class="lineno">  549</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  550</span>            }</div>
+<div class="line"><span class="lineno">  551</span> </div>
+<div class="line"><span class="lineno">  552</span>            <span class="comment">// DirectXの描画設定</span></div>
+<div class="line"><span class="lineno">  553</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);</div>
+<div class="line"><span class="lineno">  554</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetFVF(MODEL_FVF);</div>
+<div class="line"><span class="lineno">  555</span>            g_shaderDebugAlpha-&gt;SetShaderToPipeline();</div>
+<div class="line"><span class="lineno">  556</span> </div>
+<div class="line"><span class="lineno">  557</span>            <span class="comment">// ワールド変換行列の設定</span></div>
+<div class="line"><span class="lineno">  558</span>            D3DXMATRIX mat;</div>
+<div class="line"><span class="lineno">  559</span>            NMath::SMatrix44 matWorld;</div>
+<div class="line"><span class="lineno">  560</span> </div>
+<div class="line"><span class="lineno">  561</span>            matWorld = meshNode.matrix * _matWorld;</div>
+<div class="line"><span class="lineno">  562</span> </div>
+<div class="line"><span class="lineno">  563</span>            <span class="comment">// シェーダ―へ行列を設定</span></div>
+<div class="line"><span class="lineno">  564</span>            <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(mat, matWorld);</div>
+<div class="line"><span class="lineno">  565</span>            g_shaderDebugAlpha-&gt;GetVSCT()-&gt;SetMatrix(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(), <span class="stringliteral">&quot;g_world&quot;</span>, &amp;mat);</div>
+<div class="line"><span class="lineno">  566</span> </div>
+<div class="line"><span class="lineno">  567</span>            NMath::SMatrix44 view;</div>
+<div class="line"><span class="lineno">  568</span>            <a class="code hl_function" href="namespace_n_camera.html#ad24c0a0bd262bfcd7b0299a8804c0a48">NCamera::GetViewMatrix</a>(view);</div>
+<div class="line"><span class="lineno">  569</span>            <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(mat, view);</div>
+<div class="line"><span class="lineno">  570</span>            g_shaderDebugAlpha-&gt;GetVSCT()-&gt;SetMatrix(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(), <span class="stringliteral">&quot;g_view&quot;</span>, &amp;mat);</div>
+<div class="line"><span class="lineno">  571</span> </div>
+<div class="line"><span class="lineno">  572</span>            NMath::SMatrix44 proj;</div>
+<div class="line"><span class="lineno">  573</span>            <a class="code hl_function" href="namespace_n_camera.html#a10d6cf4a8f5b26e13a79008e0484a3d7">NCamera::GetProjMatrix</a>(proj);</div>
+<div class="line"><span class="lineno">  574</span>            <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(mat, proj);</div>
+<div class="line"><span class="lineno">  575</span>            g_shaderDebugAlpha-&gt;GetVSCT()-&gt;SetMatrix(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(), <span class="stringliteral">&quot;g_projection&quot;</span>, &amp;mat);</div>
+<div class="line"><span class="lineno">  576</span> </div>
+<div class="line"><span class="lineno">  577</span>            <span class="keywordtype">bool</span> hasTexture = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  578</span>            <span class="keywordflow">if</span> (meshNode.material.texture != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  579</span>                hasTexture = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  580</span>            }</div>
+<div class="line"><span class="lineno">  581</span>            g_shaderDebugAlpha-&gt;GetPSCT()-&gt;SetBool(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(), <span class="stringliteral">&quot;g_hasTexture&quot;</span>, hasTexture);</div>
+<div class="line"><span class="lineno">  582</span>            <span class="keywordtype">int</span> idx = g_shaderDebugAlpha-&gt;GetPSCT()-&gt;GetSamplerIndex(<span class="stringliteral">&quot;g_sampler&quot;</span>);</div>
+<div class="line"><span class="lineno">  583</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTexture(idx, meshNode.material.texture);</div>
+<div class="line"><span class="lineno">  584</span> </div>
+<div class="line"><span class="lineno">  585</span>            <span class="comment">// 頂点バッファを設定</span></div>
+<div class="line"><span class="lineno">  586</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetStreamSource(</div>
+<div class="line"><span class="lineno">  587</span>                0,</div>
+<div class="line"><span class="lineno">  588</span>                meshNode.pVB,</div>
+<div class="line"><span class="lineno">  589</span>                0,</div>
+<div class="line"><span class="lineno">  590</span>                <span class="keyword">sizeof</span>(SVertex));</div>
+<div class="line"><span class="lineno">  591</span> </div>
+<div class="line"><span class="lineno">  592</span>            <span class="comment">// インデックスバッファを設定</span></div>
+<div class="line"><span class="lineno">  593</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetIndices(meshNode.pIB);</div>
+<div class="line"><span class="lineno">  594</span> </div>
+<div class="line"><span class="lineno">  595</span>            <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> polygonCount = (int)(meshNode.indexCount / 3.0f);</div>
+<div class="line"><span class="lineno">  596</span>            HRESULT hr;</div>
+<div class="line"><span class="lineno">  597</span>            hr = <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;DrawIndexedPrimitive(</div>
+<div class="line"><span class="lineno">  598</span>                D3DPT_TRIANGLELIST,</div>
+<div class="line"><span class="lineno">  599</span>                0,</div>
+<div class="line"><span class="lineno">  600</span>                0,</div>
+<div class="line"><span class="lineno">  601</span>                meshNode.indexCount,</div>
+<div class="line"><span class="lineno">  602</span>                0,</div>
+<div class="line"><span class="lineno">  603</span>                polygonCount);</div>
+<div class="line"><span class="lineno">  604</span> </div>
+<div class="line"><span class="lineno">  605</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetVertexShader(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  606</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetPixelShader(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  607</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetStreamSource(0, <span class="keyword">nullptr</span>, 0, 0);</div>
+<div class="line"><span class="lineno">  608</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetIndices(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  609</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTexture(0, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  610</span> </div>
+<div class="line"><span class="lineno">  611</span>        }</div>
+<div class="line"><span class="lineno">  612</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abe6dadf1585d01358cd44f0c2f27474a" name="abe6dadf1585d01358cd44f0c2f27474a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe6dadf1585d01358cd44f0c2f27474a">&#9670;&#160;</a></span>RenderNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::RenderNode </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_nodeIndex</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ノードを描画 </p>
+<div class="fragment"><div class="line"><span class="lineno">  616</span>    {</div>
+<div class="line"><span class="lineno">  617</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_nodeIndex &lt; <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.size());</div>
+<div class="line"><span class="lineno">  618</span>        SMeshNode&amp; meshNode = <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>[_nodeIndex];</div>
+<div class="line"><span class="lineno">  619</span> </div>
+<div class="line"><span class="lineno">  620</span>        <span class="comment">// 頂点がない場合は何もしない</span></div>
+<div class="line"><span class="lineno">  621</span>        <span class="keywordflow">if</span> (meshNode.vertexCount &lt;= 0) {</div>
+<div class="line"><span class="lineno">  622</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  623</span>        }</div>
+<div class="line"><span class="lineno">  624</span> </div>
+<div class="line"><span class="lineno">  625</span>        <span class="comment">// 頂点バッファを設定</span></div>
+<div class="line"><span class="lineno">  626</span>        <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetStreamSource(</div>
+<div class="line"><span class="lineno">  627</span>            0,</div>
+<div class="line"><span class="lineno">  628</span>            meshNode.pVB,</div>
+<div class="line"><span class="lineno">  629</span>            0,</div>
+<div class="line"><span class="lineno">  630</span>            <span class="keyword">sizeof</span>(SVertex));</div>
+<div class="line"><span class="lineno">  631</span> </div>
+<div class="line"><span class="lineno">  632</span>        <span class="comment">// インデックスバッファを設定</span></div>
+<div class="line"><span class="lineno">  633</span>        <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetIndices(meshNode.pIB);</div>
+<div class="line"><span class="lineno">  634</span> </div>
+<div class="line"><span class="lineno">  635</span>        <span class="comment">// バッファを使用して描画</span></div>
+<div class="line"><span class="lineno">  636</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> polygonCount = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;int&gt;</a>(meshNode.indexCount / 3.0f);</div>
+<div class="line"><span class="lineno">  637</span>        HRESULT hr;</div>
+<div class="line"><span class="lineno">  638</span>        hr = <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;DrawIndexedPrimitive(</div>
+<div class="line"><span class="lineno">  639</span>            D3DPT_TRIANGLELIST,</div>
+<div class="line"><span class="lineno">  640</span>            0,</div>
+<div class="line"><span class="lineno">  641</span>            0,</div>
+<div class="line"><span class="lineno">  642</span>            meshNode.indexCount,</div>
+<div class="line"><span class="lineno">  643</span>            0,</div>
+<div class="line"><span class="lineno">  644</span>            polygonCount);</div>
+<div class="line"><span class="lineno">  645</span> </div>
+<div class="line"><span class="lineno">  646</span>        <span class="comment">// リセット</span></div>
+<div class="line"><span class="lineno">  647</span>        <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetStreamSource(0, <span class="keyword">nullptr</span>, 0, 0);</div>
+<div class="line"><span class="lineno">  648</span>        <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetIndices(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  649</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a70a03eb96f99732d4b1c3b5fe369d8c5" name="a70a03eb96f99732d4b1c3b5fe369d8c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a03eb96f99732d4b1c3b5fe369d8c5">&#9670;&#160;</a></span>SetAnimationFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::SetAnimationFrame </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_frame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アニメーションのフレームを指定する </p>
+<div class="fragment"><div class="line"><span class="lineno">  703</span>    {</div>
+<div class="line"><span class="lineno">  704</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_frame &lt; <a class="code hl_function" href="#a324a6444f86a7733e553961b6b2a6037">GetAnimationStartFrame</a>() &amp;&amp; <span class="stringliteral">&quot;指定したフレームが範囲外です&quot;</span>);</div>
+<div class="line"><span class="lineno">  705</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_frame &gt; <a class="code hl_function" href="#aafc79025741899b743fbd5c6d4d211cb">GetAnimationStopFrame</a>() &amp;&amp; <span class="stringliteral">&quot;指定したフレームが範囲外です&quot;</span>);</div>
+<div class="line"><span class="lineno">  706</span>        <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> = _frame;</div>
+<div class="line"><span class="lineno">  707</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3ce56db4c50d34a76a3f83dba4247349" name="a3ce56db4c50d34a76a3f83dba4247349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce56db4c50d34a76a3f83dba4247349">&#9670;&#160;</a></span>SetAnimationSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::SetAnimationSpeed </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_speedFramePerFrame</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0f</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーションの速度を設定 </p>
+<p>1フレームで進行するアニメーションのフレーム数 </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_speedFramePerFrame</td><td>1フレームのアニメーション進行フレーム<ul>
+<li>デフォルトは 1</li>
+<li>負の値を設定すると逆再生 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{ <a class="code hl_variable" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a> = _speedFramePerFrame; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a88510059c90ad0a04b64927924f40d2a" name="a88510059c90ad0a04b64927924f40d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88510059c90ad0a04b64927924f40d2a">&#9670;&#160;</a></span>SetupMeshNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::SetupMeshNode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>モデル情報から必要情報を抽出し、使用可能状態にする </p>
+<div class="fragment"><div class="line"><span class="lineno">  786</span>    {</div>
+<div class="line"><span class="lineno">  787</span>        <a class="code hl_define" href="_debug___assert_8h.html#a73fdb60411ae5c7145be5bffb2f7c240">AssertNotNull</a>(<a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>);</div>
+<div class="line"><span class="lineno">  788</span> </div>
+<div class="line"><span class="lineno">  789</span>        <span class="comment">// アニメーションが存在するかを取得</span></div>
+<div class="line"><span class="lineno">  790</span>        <span class="keywordflow">if</span>(<a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>-&gt;GetModel().GetAnimationCount() &gt; 0){</div>
+<div class="line"><span class="lineno">  791</span>            <a class="code hl_variable" href="#a29fd8d1794a7a21f0fbace397a9baf5e">m_hasAnimation</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  792</span>        }</div>
+<div class="line"><span class="lineno">  793</span> </div>
+<div class="line"><span class="lineno">  794</span>        <span class="comment">// アニメーションの単位時間を取得</span></div>
+<div class="line"><span class="lineno">  795</span>        <a class="code hl_variable" href="#a74d5c4e282fe4c208400ed7eb7b7bfd7">m_fbxTimePerFrame</a> = <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>-&gt;GetModel().GetFbxTimePerFrame();</div>
+<div class="line"><span class="lineno">  796</span> </div>
+<div class="line"><span class="lineno">  797</span>        <span class="comment">// メッシュノード数を取得</span></div>
+<div class="line"><span class="lineno">  798</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> nodeCount = <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>-&gt;GetModel().GetMeshNodeCount();</div>
+<div class="line"><span class="lineno">  799</span>        <a class="code hl_define" href="_debug___assert_8h.html#ad7c42ee53403d76904988502c7454163">AssertPlus</a>(nodeCount);</div>
+<div class="line"><span class="lineno">  800</span> </div>
+<div class="line"><span class="lineno">  801</span>        <span class="comment">// すべてのメッシュノードを必要な形に整形し取得</span></div>
+<div class="line"><span class="lineno">  802</span>        <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.resize(nodeCount);</div>
+<div class="line"><span class="lineno">  803</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; nodeCount; ++i) {</div>
+<div class="line"><span class="lineno">  804</span>            SMeshNode       meshNode;</div>
+<div class="line"><span class="lineno">  805</span>            SFbxMeshNode&amp;   rFbxMeshNode = <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>-&gt;GetModel().GetMeshNode(i);</div>
+<div class="line"><span class="lineno">  806</span> </div>
+<div class="line"><span class="lineno">  807</span>            <span class="comment">// インデックスバッファを作成</span></div>
+<div class="line"><span class="lineno">  808</span>            CreateIndexBuffer(</div>
+<div class="line"><span class="lineno">  809</span>                <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(),</div>
+<div class="line"><span class="lineno">  810</span>                rFbxMeshNode,</div>
+<div class="line"><span class="lineno">  811</span>                meshNode);</div>
+<div class="line"><span class="lineno">  812</span> </div>
+<div class="line"><span class="lineno">  813</span>            <span class="comment">// 頂点バッファを作成</span></div>
+<div class="line"><span class="lineno">  814</span>            CreateVertexBuffer(</div>
+<div class="line"><span class="lineno">  815</span>                <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(),</div>
+<div class="line"><span class="lineno">  816</span>                rFbxMeshNode,</div>
+<div class="line"><span class="lineno">  817</span>                meshNode);</div>
+<div class="line"><span class="lineno">  818</span> </div>
+<div class="line"><span class="lineno">  819</span>            <span class="comment">// 変換行列を取得</span></div>
+<div class="line"><span class="lineno">  820</span>            meshNode.matrix = rFbxMeshNode.matrix;</div>
+<div class="line"><span class="lineno">  821</span> </div>
+<div class="line"><span class="lineno">  822</span>            <span class="comment">// マテリアル情報を作成</span></div>
+<div class="line"><span class="lineno">  823</span>            CreateMaterial(</div>
+<div class="line"><span class="lineno">  824</span>                <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(),</div>
+<div class="line"><span class="lineno">  825</span>                rFbxMeshNode,</div>
+<div class="line"><span class="lineno">  826</span>                meshNode);</div>
+<div class="line"><span class="lineno">  827</span> </div>
+<div class="line"><span class="lineno">  828</span>            <span class="comment">// クラスタ数を取得</span></div>
+<div class="line"><span class="lineno">  829</span>            <a class="code hl_variable" href="#a27a439f7a0c0b28611d435b409c9197e">m_clusterCount</a> = rFbxMeshNode.clusterCount;</div>
+<div class="line"><span class="lineno">  830</span> </div>
+<div class="line"><span class="lineno">  831</span>            <span class="comment">// デバッグ情報を取得</span></div>
+<div class="line"><span class="lineno">  832</span>            meshNode.nodeName = rFbxMeshNode.nodeName;</div>
+<div class="line"><span class="lineno">  833</span> </div>
+<div class="line"><span class="lineno">  834</span>            <span class="comment">// 格納</span></div>
+<div class="line"><span class="lineno">  835</span>            <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>[i] = meshNode;</div>
+<div class="line"><span class="lineno">  836</span>        }</div>
+<div class="line"><span class="lineno">  837</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_a73fdb60411ae5c7145be5bffb2f7c240"><div class="ttname"><a href="_debug___assert_8h.html#a73fdb60411ae5c7145be5bffb2f7c240">AssertNotNull</a></div><div class="ttdeci">#define AssertNotNull(var)</div><div class="ttdoc">Nullでないことを検証する</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:35</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9a106e5861be671c65b70b2aa38a6673" name="a9a106e5861be671c65b70b2aa38a6673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a106e5861be671c65b70b2aa38a6673">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アニメーションを更新 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>描画の前に必ず行う。 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  442</span>    {</div>
+<div class="line"><span class="lineno">  443</span>        <a class="code hl_function" href="#a57bfc9c9f0b4258c8177e7a5f41eac7b">UpdateAnimation</a>();</div>
+<div class="line"><span class="lineno">  444</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a57bfc9c9f0b4258c8177e7a5f41eac7b" name="a57bfc9c9f0b4258c8177e7a5f41eac7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57bfc9c9f0b4258c8177e7a5f41eac7b">&#9670;&#160;</a></span>UpdateAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::UpdateAnimation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーションの更新をまとめた関数 </p>
+<div class="fragment"><div class="line"><span class="lineno">  840</span>    {</div>
+<div class="line"><span class="lineno">  841</span>        <span class="comment">// アクセス省略</span></div>
+<div class="line"><span class="lineno">  842</span>        NModel::CFbxLoader&amp; rFbx = <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>-&gt;GetModel();</div>
+<div class="line"><span class="lineno">  843</span> </div>
+<div class="line"><span class="lineno">  844</span>        <a class="code hl_function" href="#a949189ff5d60a7718ec9f95af926e953">UpdateNodeMatrix</a>(rFbx, <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a>);</div>
+<div class="line"><span class="lineno">  845</span> </div>
+<div class="line"><span class="lineno">  846</span>        <span class="comment">// アニメーションがない場合は何もしない</span></div>
+<div class="line"><span class="lineno">  847</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a29fd8d1794a7a21f0fbace397a9baf5e">m_hasAnimation</a>) {</div>
+<div class="line"><span class="lineno">  848</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  849</span>        }</div>
+<div class="line"><span class="lineno">  850</span> </div>
+<div class="line"><span class="lineno">  851</span>        <span class="comment">// 使用するアニメーションを切り替える</span></div>
+<div class="line"><span class="lineno">  852</span>        rFbx.<a class="code hl_function" href="class_n_model_1_1_c_fbx_loader.html#a980c6d0692cc6815c7f956443b883259">SetAnmStack</a>(<a class="code hl_variable" href="#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a>);</div>
+<div class="line"><span class="lineno">  853</span> </div>
+<div class="line"><span class="lineno">  854</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  855</span>        <span class="comment">// 処理が多い</span></div>
+<div class="line"><span class="lineno">  856</span> </div>
+<div class="line"><span class="lineno">  857</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a984511a1707770703b54a307322ac70c">m_isInterpole</a> &amp;&amp; <a class="code hl_variable" href="#a1b314f3ba02362b930a5f38d69211f20">m_isSetupMatrix</a>) {</div>
+<div class="line"><span class="lineno">  858</span>            <span class="comment">// 補完に必要な行列を計算する</span></div>
+<div class="line"><span class="lineno">  859</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#a9157024932882a0fc943b77399e36b18">m_isInterpoleMatrixReady</a>) {</div>
+<div class="line"><span class="lineno">  860</span>                <span class="comment">// 補完後の行列を作成する</span></div>
+<div class="line"><span class="lineno">  861</span>                <a class="code hl_function" href="#a3bacb3963d70956ae7c66008cc9c17a8">CalcInterpoleMatrix</a>(</div>
+<div class="line"><span class="lineno">  862</span>                    <a class="code hl_variable" href="#a70b5aef9021f088645af24d096428b42">m_matInterpoleClusterEnd</a>,</div>
+<div class="line"><span class="lineno">  863</span>                    <a class="code hl_variable" href="#ada39c4d2f2759f9ea383d793fb2e2d33">m_matInterpoleClusterNodeEnd</a>,</div>
+<div class="line"><span class="lineno">  864</span>                    rFbx,</div>
+<div class="line"><span class="lineno">  865</span>                    <a class="code hl_variable" href="#a27a439f7a0c0b28611d435b409c9197e">m_clusterCount</a>,</div>
+<div class="line"><span class="lineno">  866</span>                    <a class="code hl_variable" href="#a6a7a8a3e740cd512ade1729b36407352">m_interpoleFrame</a>);</div>
+<div class="line"><span class="lineno">  867</span> </div>
+<div class="line"><span class="lineno">  868</span>                <span class="comment">// 補完開始時の行列を保持する(現在の行列をコピー)</span></div>
+<div class="line"><span class="lineno">  869</span>                memcpy(</div>
+<div class="line"><span class="lineno">  870</span>                    &amp;<a class="code hl_variable" href="#a979d23e45f678532a40f102947b7fc3b">m_matInterpoleClusterStart</a>[0],</div>
+<div class="line"><span class="lineno">  871</span>                    &amp;<a class="code hl_variable" href="#a0c8816abbade57141f7f1eaa9bc88d67">m_matCluster</a>[0],</div>
+<div class="line"><span class="lineno">  872</span>                    <span class="keyword">sizeof</span>(std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;));</div>
+<div class="line"><span class="lineno">  873</span>                memcpy(</div>
+<div class="line"><span class="lineno">  874</span>                    &amp;<a class="code hl_variable" href="#a6cc6938d4e043bbaa9402508a29bd558">m_matInterpoleClusterNodeStart</a>[0],</div>
+<div class="line"><span class="lineno">  875</span>                    &amp;<a class="code hl_variable" href="#a20a045c914fef024994075f5cf48590d">m_matClusterNode</a>[0],</div>
+<div class="line"><span class="lineno">  876</span>                    <span class="keyword">sizeof</span>(std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;));</div>
+<div class="line"><span class="lineno">  877</span> </div>
+<div class="line"><span class="lineno">  878</span>                <a class="code hl_variable" href="#a9157024932882a0fc943b77399e36b18">m_isInterpoleMatrixReady</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  879</span>            }</div>
+<div class="line"><span class="lineno">  880</span> </div>
+<div class="line"><span class="lineno">  881</span>            <span class="comment">// 行列を補完する</span></div>
+<div class="line"><span class="lineno">  882</span>            <span class="keywordtype">float</span>   ratio = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(<a class="code hl_variable" href="#ac60d8be0899204968b00b890f1099fd6">m_interpoleFrameCnt</a>) / <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(<a class="code hl_variable" href="#a6a7a8a3e740cd512ade1729b36407352">m_interpoleFrame</a> + 1);</div>
+<div class="line"><span class="lineno">  883</span> </div>
+<div class="line"><span class="lineno">  884</span>            <span class="comment">// クラスター行列を補完</span></div>
+<div class="line"><span class="lineno">  885</span>            <a class="code hl_function" href="#a716c3193161fb64daa0685fe3317ad76">InterpoleMatrix</a>(</div>
+<div class="line"><span class="lineno">  886</span>                <a class="code hl_variable" href="#a27a439f7a0c0b28611d435b409c9197e">m_clusterCount</a>,</div>
+<div class="line"><span class="lineno">  887</span>                ratio,</div>
+<div class="line"><span class="lineno">  888</span>                <a class="code hl_variable" href="#a0c8816abbade57141f7f1eaa9bc88d67">m_matCluster</a>,</div>
+<div class="line"><span class="lineno">  889</span>                <a class="code hl_variable" href="#a979d23e45f678532a40f102947b7fc3b">m_matInterpoleClusterStart</a>,</div>
+<div class="line"><span class="lineno">  890</span>                <a class="code hl_variable" href="#a70b5aef9021f088645af24d096428b42">m_matInterpoleClusterEnd</a>);</div>
+<div class="line"><span class="lineno">  891</span> </div>
+<div class="line"><span class="lineno">  892</span>            <span class="comment">// クラスターノードの行列を補完</span></div>
+<div class="line"><span class="lineno">  893</span>            <a class="code hl_function" href="#a716c3193161fb64daa0685fe3317ad76">InterpoleMatrix</a>(</div>
+<div class="line"><span class="lineno">  894</span>                <a class="code hl_variable" href="#a27a439f7a0c0b28611d435b409c9197e">m_clusterCount</a>,</div>
+<div class="line"><span class="lineno">  895</span>                ratio,</div>
+<div class="line"><span class="lineno">  896</span>                <a class="code hl_variable" href="#a20a045c914fef024994075f5cf48590d">m_matClusterNode</a>,</div>
+<div class="line"><span class="lineno">  897</span>                <a class="code hl_variable" href="#a6cc6938d4e043bbaa9402508a29bd558">m_matInterpoleClusterNodeStart</a>,</div>
+<div class="line"><span class="lineno">  898</span>                <a class="code hl_variable" href="#ada39c4d2f2759f9ea383d793fb2e2d33">m_matInterpoleClusterNodeEnd</a>);</div>
+<div class="line"><span class="lineno">  899</span> </div>
+<div class="line"><span class="lineno">  900</span>            <span class="comment">// 補完の終了を検知</span></div>
+<div class="line"><span class="lineno">  901</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ac60d8be0899204968b00b890f1099fd6">m_interpoleFrameCnt</a> &gt;= <a class="code hl_variable" href="#a6a7a8a3e740cd512ade1729b36407352">m_interpoleFrame</a>) {</div>
+<div class="line"><span class="lineno">  902</span>                <a class="code hl_variable" href="#a984511a1707770703b54a307322ac70c">m_isInterpole</a>               = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  903</span>                <a class="code hl_variable" href="#a9157024932882a0fc943b77399e36b18">m_isInterpoleMatrixReady</a>    = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  904</span>                </div>
+<div class="line"><span class="lineno">  905</span>                <span class="comment">// 次のフレームを補間完了後のフレームに設定</span></div>
+<div class="line"><span class="lineno">  906</span>                <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> = <a class="code hl_variable" href="#a4673e4beff4ef281efc4e63f06fad66a">m_interpoleCompleteFrame</a> - <a class="code hl_variable" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a>;</div>
+<div class="line"><span class="lineno">  907</span>            }</div>
+<div class="line"><span class="lineno">  908</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  909</span>                <a class="code hl_variable" href="#ac60d8be0899204968b00b890f1099fd6">m_interpoleFrameCnt</a>++;</div>
+<div class="line"><span class="lineno">  910</span>            }</div>
+<div class="line"><span class="lineno">  911</span>        }</div>
+<div class="line"><span class="lineno">  912</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  913</span>            <span class="comment">// 頂点変換用のボーン行列を作成</span></div>
+<div class="line"><span class="lineno">  914</span>            <a class="code hl_function" href="#a4ddab732a363af8d8eb8c076dc4d83ca">UpdateClusterMatrix</a>(<a class="code hl_variable" href="#a0c8816abbade57141f7f1eaa9bc88d67">m_matCluster</a>, <a class="code hl_variable" href="#a20a045c914fef024994075f5cf48590d">m_matClusterNode</a>, rFbx, <a class="code hl_variable" href="#a27a439f7a0c0b28611d435b409c9197e">m_clusterCount</a>, <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a>);</div>
+<div class="line"><span class="lineno">  915</span>            <a class="code hl_variable" href="#a1b314f3ba02362b930a5f38d69211f20">m_isSetupMatrix</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  916</span>        }</div>
+<div class="line"><span class="lineno">  917</span> </div>
+<div class="line"><span class="lineno">  918</span>        <span class="comment">// 作成したボーン行列で頂点変換</span></div>
+<div class="line"><span class="lineno">  919</span>        <a class="code hl_function" href="#a2b36c7bf77b6a7478d233c4a79eb8ebf">UpdateVertex</a>(<a class="code hl_variable" href="#a0c8816abbade57141f7f1eaa9bc88d67">m_matCluster</a>, rFbx);</div>
+<div class="line"><span class="lineno">  920</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  921</span> </div>
+<div class="line"><span class="lineno">  922</span>        <span class="comment">// アニメーションの制御</span></div>
+<div class="line"><span class="lineno">  923</span>        <a class="code hl_function" href="#a1de42a4ab6513b976c1f9bffcc812604">UpdateAnimationFrame</a>();</div>
+<div class="line"><span class="lineno">  924</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a980c6d0692cc6815c7f956443b883259"><div class="ttname"><a href="class_n_model_1_1_c_fbx_loader.html#a980c6d0692cc6815c7f956443b883259">NModel::CFbxLoader::SetAnmStack</a></div><div class="ttdeci">void SetAnmStack(const unsigned int _idxAnmStack)</div><div class="ttdoc">使用するアニメーションスタックをセットする</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.cpp:683</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a0c8816abbade57141f7f1eaa9bc88d67"><div class="ttname"><a href="#a0c8816abbade57141f7f1eaa9bc88d67">NModel::CObject::m_matCluster</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matCluster</div><div class="ttdef"><b>Definition</b> Model_Object.h:128</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a1de42a4ab6513b976c1f9bffcc812604"><div class="ttname"><a href="#a1de42a4ab6513b976c1f9bffcc812604">NModel::CObject::UpdateAnimationFrame</a></div><div class="ttdeci">void UpdateAnimationFrame()</div><div class="ttdoc">アニメーションの再生フレームを更新</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:926</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a2b36c7bf77b6a7478d233c4a79eb8ebf"><div class="ttname"><a href="#a2b36c7bf77b6a7478d233c4a79eb8ebf">NModel::CObject::UpdateVertex</a></div><div class="ttdeci">void UpdateVertex(std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_rSrc, NModel::CFbxLoader &amp;_rFbxLoader)</div><div class="ttdoc">頂点を変換する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:1031</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a3bacb3963d70956ae7c66008cc9c17a8"><div class="ttname"><a href="#a3bacb3963d70956ae7c66008cc9c17a8">NModel::CObject::CalcInterpoleMatrix</a></div><div class="ttdeci">void CalcInterpoleMatrix(std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_rDestClusterMatrix, std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_rDestNodeMatrix, NModel::CFbxLoader &amp;_rFbxLoader, const uint _clusterCount, const uint _interpoleFrame)</div><div class="ttdoc">補完時の、補完完了後のクラスター行列を計算する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:1066</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a4ddab732a363af8d8eb8c076dc4d83ca"><div class="ttname"><a href="#a4ddab732a363af8d8eb8c076dc4d83ca">NModel::CObject::UpdateClusterMatrix</a></div><div class="ttdeci">void UpdateClusterMatrix(std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_rDestClusterMatrix, std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_rDestNodeMatrix, NModel::CFbxLoader &amp;_rFbxLoader, const uint _clusterCount, const float _rCurFrame)</div><div class="ttdoc">頂点変換を行うため、それぞれのクラスターの行列を作成する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:997</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a6cc6938d4e043bbaa9402508a29bd558"><div class="ttname"><a href="#a6cc6938d4e043bbaa9402508a29bd558">NModel::CObject::m_matInterpoleClusterNodeStart</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matInterpoleClusterNodeStart</div><div class="ttdef"><b>Definition</b> Model_Object.h:133</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a70b5aef9021f088645af24d096428b42"><div class="ttname"><a href="#a70b5aef9021f088645af24d096428b42">NModel::CObject::m_matInterpoleClusterEnd</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matInterpoleClusterEnd</div><div class="ttdef"><b>Definition</b> Model_Object.h:132</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a716c3193161fb64daa0685fe3317ad76"><div class="ttname"><a href="#a716c3193161fb64daa0685fe3317ad76">NModel::CObject::InterpoleMatrix</a></div><div class="ttdeci">void InterpoleMatrix(const uint _clusterCount, const float _ratio, std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_destMatrix, std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_startMatrix, std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_endMatrix)</div><div class="ttdoc">二つの行列間を補完する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:1111</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a949189ff5d60a7718ec9f95af926e953"><div class="ttname"><a href="#a949189ff5d60a7718ec9f95af926e953">NModel::CObject::UpdateNodeMatrix</a></div><div class="ttdeci">void UpdateNodeMatrix(NModel::CFbxLoader &amp;_rFbxLoader, const float _rCurFrame)</div><div class="ttdoc">ノードの変換行列を更新する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:974</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a979d23e45f678532a40f102947b7fc3b"><div class="ttname"><a href="#a979d23e45f678532a40f102947b7fc3b">NModel::CObject::m_matInterpoleClusterStart</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matInterpoleClusterStart</div><div class="ttdef"><b>Definition</b> Model_Object.h:131</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ada39c4d2f2759f9ea383d793fb2e2d33"><div class="ttname"><a href="#ada39c4d2f2759f9ea383d793fb2e2d33">NModel::CObject::m_matInterpoleClusterNodeEnd</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matInterpoleClusterNodeEnd</div><div class="ttdef"><b>Definition</b> Model_Object.h:134</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1de42a4ab6513b976c1f9bffcc812604" name="a1de42a4ab6513b976c1f9bffcc812604"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de42a4ab6513b976c1f9bffcc812604">&#9670;&#160;</a></span>UpdateAnimationFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::UpdateAnimationFrame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーションの再生フレームを更新 </p>
+<div class="fragment"><div class="line"><span class="lineno">  927</span>    {</div>
+<div class="line"><span class="lineno">  928</span>        <span class="keyword">const</span> SFbxAnimationStack&amp; anmStack = <a class="code hl_variable" href="#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>-&gt;GetModel().GetAnmStack(<a class="code hl_variable" href="#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a>);</div>
+<div class="line"><span class="lineno">  929</span> </div>
+<div class="line"><span class="lineno">  930</span>        <span class="comment">// loop用カウンタの終了時動作用に、更新前の値を保持する</span></div>
+<div class="line"><span class="lineno">  931</span>        <span class="keywordtype">float</span> prevAnmFrameLoop = <a class="code hl_variable" href="#ac9800a2ae5ad1219e8e53a7641fa1b37">m_anmFrameLoop</a>;</div>
+<div class="line"><span class="lineno">  932</span>        <a class="code hl_variable" href="#ac9800a2ae5ad1219e8e53a7641fa1b37">m_anmFrameLoop</a> += abs(<a class="code hl_variable" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a>);</div>
+<div class="line"><span class="lineno">  933</span> </div>
+<div class="line"><span class="lineno">  934</span>        <span class="comment">// フレームを更新</span></div>
+<div class="line"><span class="lineno">  935</span>        <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> += <a class="code hl_variable" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a>;</div>
+<div class="line"><span class="lineno">  936</span> </div>
+<div class="line"><span class="lineno">  937</span>        <span class="comment">// アニメーション終了フラグをリセット</span></div>
+<div class="line"><span class="lineno">  938</span>        <a class="code hl_variable" href="#a8efac6479cd0b2e2dc1a78f41d3d8a6b">m_isAnmEnd</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  939</span> </div>
+<div class="line"><span class="lineno">  940</span>        <span class="comment">// 終了した時の動作</span></div>
+<div class="line"><span class="lineno">  941</span>        <span class="comment">// 通常再生時</span></div>
+<div class="line"><span class="lineno">  942</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a> &gt;= 0) {</div>
+<div class="line"><span class="lineno">  943</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> &gt;= <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(anmStack.stopFrame)) {</div>
+<div class="line"><span class="lineno">  944</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ac2f4ab48a495cfee70247840678a5b28">m_isLoop</a>) {</div>
+<div class="line"><span class="lineno">  945</span>                    <span class="comment">// ループ時は、最初のフレームに戻す</span></div>
+<div class="line"><span class="lineno">  946</span>                    <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(anmStack.startFrame);</div>
+<div class="line"><span class="lineno">  947</span>                }</div>
+<div class="line"><span class="lineno">  948</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  949</span>                    <span class="comment">// ループしない場合は、最後のフレームを代入し続ける</span></div>
+<div class="line"><span class="lineno">  950</span>                    <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(anmStack.stopFrame);</div>
+<div class="line"><span class="lineno">  951</span>                    <a class="code hl_variable" href="#a8efac6479cd0b2e2dc1a78f41d3d8a6b">m_isAnmEnd</a> = <span class="keyword">true</span>;  <span class="comment">// 終了フラグ</span></div>
+<div class="line"><span class="lineno">  952</span>                    <a class="code hl_variable" href="#ac9800a2ae5ad1219e8e53a7641fa1b37">m_anmFrameLoop</a> = prevAnmFrameLoop;</div>
+<div class="line"><span class="lineno">  953</span>                }</div>
+<div class="line"><span class="lineno">  954</span>            }</div>
+<div class="line"><span class="lineno">  955</span>        }</div>
+<div class="line"><span class="lineno">  956</span>        <span class="comment">// 逆再生時</span></div>
+<div class="line"><span class="lineno">  957</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  958</span>            <span class="comment">// 逆再生で終了した時の動作</span></div>
+<div class="line"><span class="lineno">  959</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> &lt;= <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(anmStack.startFrame)) {</div>
+<div class="line"><span class="lineno">  960</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="#ac2f4ab48a495cfee70247840678a5b28">m_isLoop</a>) {</div>
+<div class="line"><span class="lineno">  961</span>                    <span class="comment">// ループ時は、最後のフレームに戻す</span></div>
+<div class="line"><span class="lineno">  962</span>                    <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(anmStack.stopFrame);</div>
+<div class="line"><span class="lineno">  963</span>                }</div>
+<div class="line"><span class="lineno">  964</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  965</span>                    <span class="comment">// 終了時は、最初のフレームを代入し続ける</span></div>
+<div class="line"><span class="lineno">  966</span>                    <a class="code hl_variable" href="#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(anmStack.startFrame);</div>
+<div class="line"><span class="lineno">  967</span>                    <a class="code hl_variable" href="#a8efac6479cd0b2e2dc1a78f41d3d8a6b">m_isAnmEnd</a> = <span class="keyword">true</span>;  <span class="comment">// 終了フラグ</span></div>
+<div class="line"><span class="lineno">  968</span>                    <a class="code hl_variable" href="#ac9800a2ae5ad1219e8e53a7641fa1b37">m_anmFrameLoop</a> = prevAnmFrameLoop;</div>
+<div class="line"><span class="lineno">  969</span>                }</div>
+<div class="line"><span class="lineno">  970</span>            }</div>
+<div class="line"><span class="lineno">  971</span>        }</div>
+<div class="line"><span class="lineno">  972</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4ddab732a363af8d8eb8c076dc4d83ca" name="a4ddab732a363af8d8eb8c076dc4d83ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ddab732a363af8d8eb8c076dc4d83ca">&#9670;&#160;</a></span>UpdateClusterMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::UpdateClusterMatrix </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDestClusterMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDestNodeMatrix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rFbxLoader</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_clusterCount</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_rCurFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>頂点変換を行うため、それぞれのクラスターの行列を作成する </p>
+<div class="fragment"><div class="line"><span class="lineno"> 1003</span>    {</div>
+<div class="line"><span class="lineno"> 1004</span>        <a class="code hl_define" href="_debug___assert_8h.html#ad7c42ee53403d76904988502c7454163">AssertPlus</a>(_rFbxLoader.<a class="code hl_function" href="class_n_model_1_1_c_fbx_loader.html#ab4202178ed862304c4e44df7c164810e">GetMeshNodeCount</a>()); <span class="comment">// メッシュの存在を確認</span></div>
+<div class="line"><span class="lineno"> 1005</span> </div>
+<div class="line"><span class="lineno"> 1006</span>        <span class="comment">// 0番目のメッシュを使い、Fbxのメッシュ情報などにアクセスする</span></div>
+<div class="line"><span class="lineno"> 1007</span>        SFbxMeshNode&amp; rFbxMeshNode = _rFbxLoader.<a class="code hl_function" href="class_n_model_1_1_c_fbx_loader.html#ae6b617b4f9de43da80c4062daafc69ec">GetMeshNode</a>(0);</div>
+<div class="line"><span class="lineno"> 1008</span> </div>
+<div class="line"><span class="lineno"> 1009</span>        <span class="comment">// スキンを取得</span></div>
+<div class="line"><span class="lineno"> 1010</span>        FbxMesh* <span class="keyword">const</span> pFbxMesh = rFbxMeshNode.<a class="code hl_variable" href="struct_n_model_1_1_s_fbx_mesh_node.html#a4850fb5723a8e77751ff1ade8dcfdb7b">pFbxMesh</a>;</div>
+<div class="line"><span class="lineno"> 1011</span>        FbxSkin* <span class="keyword">const</span> pFbxSkin = rFbxMeshNode.pFbxSkin;</div>
+<div class="line"><span class="lineno"> 1012</span> </div>
+<div class="line"><span class="lineno"> 1013</span>        <span class="comment">// Fbx単位時間を取得</span></div>
+<div class="line"><span class="lineno"> 1014</span>        <span class="keyword">const</span> FbxLongLong   fbxTimePerFrame = _rFbxLoader.<a class="code hl_function" href="class_n_model_1_1_c_fbx_loader.html#aa75f70772f3aa58734cd85baa5e46e94">GetFbxTimePerFrame</a>();</div>
+<div class="line"><span class="lineno"> 1015</span> </div>
+<div class="line"><span class="lineno"> 1016</span> </div>
+<div class="line"><span class="lineno"> 1017</span>        <span class="keyword">const</span> FbxLongLong   fbxCurTime = <span class="keyword">static_cast&lt;</span>FbxLongLong<span class="keyword">&gt;</span>(_rCurFrame * fbxTimePerFrame);</div>
+<div class="line"><span class="lineno"> 1018</span> </div>
+<div class="line"><span class="lineno"> 1019</span>        <span class="comment">// クラスター数を取得</span></div>
+<div class="line"><span class="lineno"> 1020</span>        <span class="keywordflow">for</span> (uint iClst = 0; iClst &lt; _clusterCount; ++iClst) {</div>
+<div class="line"><span class="lineno"> 1021</span>            ::CalcClusterMatrix(</div>
+<div class="line"><span class="lineno"> 1022</span>                _rDestClusterMatrix[iClst],</div>
+<div class="line"><span class="lineno"> 1023</span>                _rDestNodeMatrix[iClst],</div>
+<div class="line"><span class="lineno"> 1024</span>                fbxCurTime,</div>
+<div class="line"><span class="lineno"> 1025</span>                iClst,</div>
+<div class="line"><span class="lineno"> 1026</span>                pFbxMesh,</div>
+<div class="line"><span class="lineno"> 1027</span>                pFbxSkin);</div>
+<div class="line"><span class="lineno"> 1028</span>        }</div>
+<div class="line"><span class="lineno"> 1029</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a949189ff5d60a7718ec9f95af926e953" name="a949189ff5d60a7718ec9f95af926e953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949189ff5d60a7718ec9f95af926e953">&#9670;&#160;</a></span>UpdateNodeMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::UpdateNodeMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rFbxLoader</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_rCurFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ノードの変換行列を更新する </p>
+<div class="fragment"><div class="line"><span class="lineno">  977</span>    {</div>
+<div class="line"><span class="lineno">  978</span>        <span class="keyword">const</span> FbxLongLong   fbxTimePerFrame = _rFbxLoader.<a class="code hl_function" href="class_n_model_1_1_c_fbx_loader.html#aa75f70772f3aa58734cd85baa5e46e94">GetFbxTimePerFrame</a>();</div>
+<div class="line"><span class="lineno">  979</span>        <span class="keyword">const</span> FbxLongLong   fbxCurTime = <span class="keyword">static_cast&lt;</span>FbxLongLong<span class="keyword">&gt;</span>(_rCurFrame * fbxTimePerFrame);</div>
+<div class="line"><span class="lineno">  980</span> </div>
+<div class="line"><span class="lineno">  981</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> meshCount = _rFbxLoader.<a class="code hl_function" href="class_n_model_1_1_c_fbx_loader.html#ab4202178ed862304c4e44df7c164810e">GetMeshNodeCount</a>();</div>
+<div class="line"><span class="lineno">  982</span> </div>
+<div class="line"><span class="lineno">  983</span>        <span class="keywordflow">for</span> (uint iMesh = 0; iMesh &lt; meshCount; ++iMesh) {</div>
+<div class="line"><span class="lineno">  984</span>            SFbxMeshNode&amp; rFbxMesh = _rFbxLoader.<a class="code hl_function" href="class_n_model_1_1_c_fbx_loader.html#ae6b617b4f9de43da80c4062daafc69ec">GetMeshNode</a>(iMesh);</div>
+<div class="line"><span class="lineno">  985</span>            FbxMesh* pFbxMesh = rFbxMesh.<a class="code hl_variable" href="struct_n_model_1_1_s_fbx_mesh_node.html#a4850fb5723a8e77751ff1ade8dcfdb7b">pFbxMesh</a>;</div>
+<div class="line"><span class="lineno">  986</span> </div>
+<div class="line"><span class="lineno">  987</span>            <span class="comment">//AssertNotNull(pFbxMesh);</span></div>
+<div class="line"><span class="lineno">  988</span>            <span class="keywordflow">if</span> (pFbxMesh == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  989</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  990</span>            }</div>
+<div class="line"><span class="lineno">  991</span> </div>
+<div class="line"><span class="lineno">  992</span>            FbxAMatrix mat = pFbxMesh-&gt;GetNode()-&gt;EvaluateGlobalTransform(fbxCurTime);</div>
+<div class="line"><span class="lineno">  993</span>            <a class="code hl_function" href="namespace_n_model.html#ad8812511ce1603f75c08106245bf89e2">ToSMatrix44</a>(<a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>[iMesh].matrix, mat);            </div>
+<div class="line"><span class="lineno">  994</span>        }</div>
+<div class="line"><span class="lineno">  995</span>    }</div>
+<div class="ttc" id="anamespace_n_model_html_ad8812511ce1603f75c08106245bf89e2"><div class="ttname"><a href="namespace_n_model.html#ad8812511ce1603f75c08106245bf89e2">NModel::ToSMatrix44</a></div><div class="ttdeci">void ToSMatrix44(NMath::SMatrix44 &amp;_rDest, const FbxAMatrix &amp;_rSrc)</div><div class="ttdoc">Fbxの行列を独自定義の行列に変換</div><div class="ttdef"><b>Definition</b> Model_FbxUtil.h:11</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2b36c7bf77b6a7478d233c4a79eb8ebf" name="a2b36c7bf77b6a7478d233c4a79eb8ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b36c7bf77b6a7478d233c4a79eb8ebf">&#9670;&#160;</a></span>UpdateVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CObject::UpdateVertex </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>_rSrc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rFbxLoader</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>頂点を変換する </p>
+<div class="fragment"><div class="line"><span class="lineno"> 1034</span>    {</div>
+<div class="line"><span class="lineno"> 1035</span>        <span class="comment">// Fbx単位時間を取得</span></div>
+<div class="line"><span class="lineno"> 1036</span>        <span class="keyword">const</span> FbxLongLong   fbxTimePerFrame = <a class="code hl_variable" href="#a74d5c4e282fe4c208400ed7eb7b7bfd7">m_fbxTimePerFrame</a>;</div>
+<div class="line"><span class="lineno"> 1037</span> </div>
+<div class="line"><span class="lineno"> 1038</span>        <span class="keywordtype">int</span> meshNodeCount = <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.size();</div>
+<div class="line"><span class="lineno"> 1039</span>        std::vector&lt;SMeshNode&gt;&amp; meshNodes = <a class="code hl_variable" href="#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>;</div>
+<div class="line"><span class="lineno"> 1040</span> </div>
+<div class="line"><span class="lineno"> 1041</span>        <span class="comment">// すべてのメッシュノードを変換する</span></div>
+<div class="line"><span class="lineno"> 1042</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iMesh = 0; iMesh &lt; meshNodeCount; ++iMesh) {</div>
+<div class="line"><span class="lineno"> 1043</span>            <span class="comment">// メッシュノードを取得</span></div>
+<div class="line"><span class="lineno"> 1044</span>            SMeshNode&amp;      rMeshNode = meshNodes[iMesh];</div>
+<div class="line"><span class="lineno"> 1045</span> </div>
+<div class="line"><span class="lineno"> 1046</span>            <span class="comment">// ノードの変換行列の逆行列</span></div>
+<div class="line"><span class="lineno"> 1047</span>            NMath::SMatrix44 matMeshNodeInv;</div>
+<div class="line"><span class="lineno"> 1048</span>            matMeshNodeInv = rMeshNode.matrix;</div>
+<div class="line"><span class="lineno"> 1049</span>            matMeshNodeInv.<a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#a3aee77c194db8bea68623ded6fea5152">Inverse</a>();</div>
+<div class="line"><span class="lineno"> 1050</span> </div>
+<div class="line"><span class="lineno"> 1051</span>            <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno"> 1052</span>            <span class="comment">// 変換後の頂点を作成</span></div>
+<div class="line"><span class="lineno"> 1053</span>            <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno"> 1054</span>            UpdateMeshVertex(</div>
+<div class="line"><span class="lineno"> 1055</span>                rMeshNode.pVB,</div>
+<div class="line"><span class="lineno"> 1056</span>                rMeshNode.initVertices,</div>
+<div class="line"><span class="lineno"> 1057</span>                rMeshNode.weights,</div>
+<div class="line"><span class="lineno"> 1058</span>                matMeshNodeInv,</div>
+<div class="line"><span class="lineno"> 1059</span>                <a class="code hl_variable" href="#a27a439f7a0c0b28611d435b409c9197e">m_clusterCount</a>,</div>
+<div class="line"><span class="lineno"> 1060</span>                <a class="code hl_variable" href="#a0c8816abbade57141f7f1eaa9bc88d67">m_matCluster</a>);</div>
+<div class="line"><span class="lineno"> 1061</span>        }</div>
+<div class="line"><span class="lineno"> 1062</span>    }</div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a3aee77c194db8bea68623ded6fea5152"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a3aee77c194db8bea68623ded6fea5152">NMath::SMatrix44::Inverse</a></div><div class="ttdeci">void Inverse()</div><div class="ttdoc">要素を逆行列にする</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:125</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a47aa737ad7406951f1d04491d30f025e" name="a47aa737ad7406951f1d04491d30f025e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47aa737ad7406951f1d04491d30f025e">&#9670;&#160;</a></span>CLUSTER_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NModel::CObject::CLUSTER_MAX = 255</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a3ad3c62db2e753d906111ed7737806" name="a7a3ad3c62db2e753d906111ed7737806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a3ad3c62db2e753d906111ed7737806">&#9670;&#160;</a></span>m_anmFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NModel::CObject::m_anmFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9800a2ae5ad1219e8e53a7641fa1b37" name="ac9800a2ae5ad1219e8e53a7641fa1b37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9800a2ae5ad1219e8e53a7641fa1b37">&#9670;&#160;</a></span>m_anmFrameLoop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NModel::CObject::m_anmFrameLoop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa674b24b5da4ba37d55df9b22a0020d9" name="aa674b24b5da4ba37d55df9b22a0020d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa674b24b5da4ba37d55df9b22a0020d9">&#9670;&#160;</a></span>m_anmSpeedFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NModel::CObject::m_anmSpeedFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d906e5795b249dd5b4f4efe543a9eda" name="a2d906e5795b249dd5b4f4efe543a9eda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d906e5795b249dd5b4f4efe543a9eda">&#9670;&#160;</a></span>m_anmStackIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NModel::CObject::m_anmStackIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27a439f7a0c0b28611d435b409c9197e" name="a27a439f7a0c0b28611d435b409c9197e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a439f7a0c0b28611d435b409c9197e">&#9670;&#160;</a></span>m_clusterCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NModel::CObject::m_clusterCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74d5c4e282fe4c208400ed7eb7b7bfd7" name="a74d5c4e282fe4c208400ed7eb7b7bfd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74d5c4e282fe4c208400ed7eb7b7bfd7">&#9670;&#160;</a></span>m_fbxTimePerFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FbxLongLong NModel::CObject::m_fbxTimePerFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29fd8d1794a7a21f0fbace397a9baf5e" name="a29fd8d1794a7a21f0fbace397a9baf5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29fd8d1794a7a21f0fbace397a9baf5e">&#9670;&#160;</a></span>m_hasAnimation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CObject::m_hasAnimation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4673e4beff4ef281efc4e63f06fad66a" name="a4673e4beff4ef281efc4e63f06fad66a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4673e4beff4ef281efc4e63f06fad66a">&#9670;&#160;</a></span>m_interpoleCompleteFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NModel::CObject::m_interpoleCompleteFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a7a8a3e740cd512ade1729b36407352" name="a6a7a8a3e740cd512ade1729b36407352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a7a8a3e740cd512ade1729b36407352">&#9670;&#160;</a></span>m_interpoleFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NModel::CObject::m_interpoleFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac60d8be0899204968b00b890f1099fd6" name="ac60d8be0899204968b00b890f1099fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60d8be0899204968b00b890f1099fd6">&#9670;&#160;</a></span>m_interpoleFrameCnt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NModel::CObject::m_interpoleFrameCnt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8efac6479cd0b2e2dc1a78f41d3d8a6b" name="a8efac6479cd0b2e2dc1a78f41d3d8a6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8efac6479cd0b2e2dc1a78f41d3d8a6b">&#9670;&#160;</a></span>m_isAnmEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CObject::m_isAnmEnd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a984511a1707770703b54a307322ac70c" name="a984511a1707770703b54a307322ac70c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a984511a1707770703b54a307322ac70c">&#9670;&#160;</a></span>m_isInterpole</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CObject::m_isInterpole</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9157024932882a0fc943b77399e36b18" name="a9157024932882a0fc943b77399e36b18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9157024932882a0fc943b77399e36b18">&#9670;&#160;</a></span>m_isInterpoleMatrixReady</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CObject::m_isInterpoleMatrixReady</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2f4ab48a495cfee70247840678a5b28" name="ac2f4ab48a495cfee70247840678a5b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f4ab48a495cfee70247840678a5b28">&#9670;&#160;</a></span>m_isLoop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CObject::m_isLoop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b314f3ba02362b930a5f38d69211f20" name="a1b314f3ba02362b930a5f38d69211f20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b314f3ba02362b930a5f38d69211f20">&#9670;&#160;</a></span>m_isSetupMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CObject::m_isSetupMatrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c8816abbade57141f7f1eaa9bc88d67" name="a0c8816abbade57141f7f1eaa9bc88d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c8816abbade57141f7f1eaa9bc88d67">&#9670;&#160;</a></span>m_matCluster</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a>&gt; NModel::CObject::m_matCluster</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20a045c914fef024994075f5cf48590d" name="a20a045c914fef024994075f5cf48590d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a045c914fef024994075f5cf48590d">&#9670;&#160;</a></span>m_matClusterNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a>&gt; NModel::CObject::m_matClusterNode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70b5aef9021f088645af24d096428b42" name="a70b5aef9021f088645af24d096428b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b5aef9021f088645af24d096428b42">&#9670;&#160;</a></span>m_matInterpoleClusterEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a>&gt; NModel::CObject::m_matInterpoleClusterEnd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada39c4d2f2759f9ea383d793fb2e2d33" name="ada39c4d2f2759f9ea383d793fb2e2d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada39c4d2f2759f9ea383d793fb2e2d33">&#9670;&#160;</a></span>m_matInterpoleClusterNodeEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a>&gt; NModel::CObject::m_matInterpoleClusterNodeEnd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6cc6938d4e043bbaa9402508a29bd558" name="a6cc6938d4e043bbaa9402508a29bd558"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc6938d4e043bbaa9402508a29bd558">&#9670;&#160;</a></span>m_matInterpoleClusterNodeStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a>&gt; NModel::CObject::m_matInterpoleClusterNodeStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a979d23e45f678532a40f102947b7fc3b" name="a979d23e45f678532a40f102947b7fc3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979d23e45f678532a40f102947b7fc3b">&#9670;&#160;</a></span>m_matInterpoleClusterStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>, <a class="el" href="#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a>&gt; NModel::CObject::m_matInterpoleClusterStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac20dda842453722b1bd3c592b45a7d7f" name="ac20dda842453722b1bd3c592b45a7d7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20dda842453722b1bd3c592b45a7d7f">&#9670;&#160;</a></span>m_meshNodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_n_model_1_1_s_mesh_node.html">SMeshNode</a>&gt; NModel::CObject::m_meshNodes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb9020ad4363144864a9724bd07032d4" name="abb9020ad4363144864a9724bd07032d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9020ad4363144864a9724bd07032d4">&#9670;&#160;</a></span>m_pModelManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CModelFactory::SPAsset</a> NModel::CObject::m_pModelManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Model/<a class="el" href="_model___object_8h_source.html">Model_Object.h</a></li>
+<li>Sources/Framework/Model/<a class="el" href="_model___object_8cpp.html">Model_Object.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_model.html">NModel</a></li><li class="navelem"><a href="class_n_model_1_1_c_object.html">CObject</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

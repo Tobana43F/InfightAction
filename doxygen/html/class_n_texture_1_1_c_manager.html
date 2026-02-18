@@ -1,0 +1,1070 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NTexture::CManager クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_texture_1_1_c_manager.html','','class_n_texture_1_1_c_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NTexture::CManager クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>テクスチャ情報を管理するクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_texture___manager_8h_source.html">Texture_Manager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:CAnmStack" id="r_CAnmStack"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html">CAnmStack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャのスプライトアニメーションを管理するクラス @detais 他で使用することがないので、クラスをすべて隠ぺいするためにCPPに記述  <a href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a3fe45b4de1a247f1f2cdc29dec66c4d7" id="r_a3fe45b4de1a247f1f2cdc29dec66c4d7"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a3fe45b4de1a247f1f2cdc29dec66c4d7">TextureObj</a> = LPDIRECT3DTEXTURE9</td></tr>
+<tr class="memdesc:a3fe45b4de1a247f1f2cdc29dec66c4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">管理するテクスチャのエイリアス  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aaf67c5f6e474c333d5abc9fbb5b4b21f" id="r_aaf67c5f6e474c333d5abc9fbb5b4b21f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaf67c5f6e474c333d5abc9fbb5b4b21f">Load</a> (const char *_pFilePath)</td></tr>
+<tr class="memdesc:aaf67c5f6e474c333d5abc9fbb5b4b21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">読み込み関数  <br /></td></tr>
+<tr class="memitem:a8a2ac9fd00750354a1c50ebbfca701c5" id="r_a8a2ac9fd00750354a1c50ebbfca701c5"><td class="memItemLeft">const <a class="el" href="#a3fe45b4de1a247f1f2cdc29dec66c4d7">TextureObj</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a8a2ac9fd00750354a1c50ebbfca701c5">GetTexture</a> () const</td></tr>
+<tr class="memdesc:a8a2ac9fd00750354a1c50ebbfca701c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャを取得する  <br /></td></tr>
+<tr class="memitem:a884716d03441f2443d0697b6d4d16a0b" id="r_a884716d03441f2443d0697b6d4d16a0b"><td class="memItemLeft">const float2 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a884716d03441f2443d0697b6d4d16a0b">GetDivLength</a> () const</td></tr>
+<tr class="memdesc:a884716d03441f2443d0697b6d4d16a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">分割後の1辺の長さを取得する  <br /></td></tr>
+<tr class="memitem:a8bd2e1dcfe6c57a0a0e36b6d73d7cc35" id="r_a8bd2e1dcfe6c57a0a0e36b6d73d7cc35"><td class="memItemLeft">const int2 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a8bd2e1dcfe6c57a0a0e36b6d73d7cc35">GetDivCount</a> () const</td></tr>
+<tr class="memdesc:a8bd2e1dcfe6c57a0a0e36b6d73d7cc35"><td class="mdescLeft">&#160;</td><td class="mdescRight">分割数を取得する  <br /></td></tr>
+<tr class="memitem:ab0405badb84b06c53c341a659b158b8c" id="r_ab0405badb84b06c53c341a659b158b8c"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#ab0405badb84b06c53c341a659b158b8c">GetDivCountAll</a> () const</td></tr>
+<tr class="memdesc:ab0405badb84b06c53c341a659b158b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャ全体の分割数を取得する  <br /></td></tr>
+<tr class="memitem:ad4ffffe88ee46245497de56c5747bd34" id="r_ad4ffffe88ee46245497de56c5747bd34"><td class="memItemLeft">const int2 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ad4ffffe88ee46245497de56c5747bd34">GetSizeInt</a> () const</td></tr>
+<tr class="memdesc:ad4ffffe88ee46245497de56c5747bd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャのサイズを取得する  <br /></td></tr>
+<tr class="memitem:a7f52ed938367a97538dce14a0c8f411f" id="r_a7f52ed938367a97538dce14a0c8f411f"><td class="memItemLeft">float2&#160;</td><td class="memItemRight"><a class="el" href="#a7f52ed938367a97538dce14a0c8f411f">GetSize</a> () const</td></tr>
+<tr class="memdesc:a7f52ed938367a97538dce14a0c8f411f"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャサイズをfloatで取得する  <br /></td></tr>
+<tr class="memitem:a845d050083d9fcfab431c7dccd184c68" id="r_a845d050083d9fcfab431c7dccd184c68"><td class="memItemLeft">const float2 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a845d050083d9fcfab431c7dccd184c68">GetDivSize</a> () const</td></tr>
+<tr class="memdesc:a845d050083d9fcfab431c7dccd184c68"><td class="mdescLeft">&#160;</td><td class="mdescRight">分割後の1つ当たりのテクスチャのサイズを取得する  <br /></td></tr>
+<tr class="memitem:aa2b0a5c498c43ffca850d529e3d6080b" id="r_aa2b0a5c498c43ffca850d529e3d6080b"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#aa2b0a5c498c43ffca850d529e3d6080b">GetFilePath</a> () const</td></tr>
+<tr class="memdesc:aa2b0a5c498c43ffca850d529e3d6080b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ファイルパスを取得する  <br /></td></tr>
+<tr class="memitem:a3e7fa7723b290b386e7e42b48d3d8e36" id="r_a3e7fa7723b290b386e7e42b48d3d8e36"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a3e7fa7723b290b386e7e42b48d3d8e36">GetAnmStackCount</a> () const</td></tr>
+<tr class="memdesc:a3e7fa7723b290b386e7e42b48d3d8e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーション数を取得  <br /></td></tr>
+<tr class="memitem:a27510c268830f353fd83246781d93fa8" id="r_a27510c268830f353fd83246781d93fa8"><td class="memItemLeft">const char *&#160;</td><td class="memItemRight"><a class="el" href="#a27510c268830f353fd83246781d93fa8">GetAnmStackName</a> (const uint _anmStackNo) const</td></tr>
+<tr class="memdesc:a27510c268830f353fd83246781d93fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーション名を取得  <br /></td></tr>
+<tr class="memitem:a949293502fccbc3abf7d9efbdcb9f8f2" id="r_a949293502fccbc3abf7d9efbdcb9f8f2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a949293502fccbc3abf7d9efbdcb9f8f2">GetIsLoop</a> (const uint _anmStackNo) const</td></tr>
+<tr class="memdesc:a949293502fccbc3abf7d9efbdcb9f8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">アイメーションのループフラグを取得  <br /></td></tr>
+<tr class="memitem:a7be0dc931cbf2f68ae3c7608b9004c9b" id="r_a7be0dc931cbf2f68ae3c7608b9004c9b"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a7be0dc931cbf2f68ae3c7608b9004c9b">GetFrameCount</a> (const uint _anmStackNo) const</td></tr>
+<tr class="memdesc:a7be0dc931cbf2f68ae3c7608b9004c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションのフレーム長(アニメーションの長さ)を取得  <br /></td></tr>
+<tr class="memitem:a5b36f46749e6a8b252d10e8f470fc994" id="r_a5b36f46749e6a8b252d10e8f470fc994"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a5b36f46749e6a8b252d10e8f470fc994">GetFrame</a> (const uint _anmStackNo, const uint _anmFrameNo) const</td></tr>
+<tr class="memdesc:a5b36f46749e6a8b252d10e8f470fc994"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションのフレームを取得  <br /></td></tr>
+<tr class="memitem:a92b2ad124085d7ea356deffcf5c31f44" id="r_a92b2ad124085d7ea356deffcf5c31f44"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a92b2ad124085d7ea356deffcf5c31f44">CManager</a> ()</td></tr>
+<tr class="memitem:a81a0e01232f113aa013e750649fdde1d" id="r_a81a0e01232f113aa013e750649fdde1d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a81a0e01232f113aa013e750649fdde1d">~CManager</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a3780389c9bd048fac6423f3f1aba95f2" id="r_a3780389c9bd048fac6423f3f1aba95f2"><td class="memItemLeft">static const unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a3780389c9bd048fac6423f3f1aba95f2">ANM_STACK_MAX</a> = 32</td></tr>
+<tr class="memdesc:a3780389c9bd048fac6423f3f1aba95f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャが保持するアニメーションの最大数  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3a72e45dff9cae26b11ebb26561d6335" id="r_a3a72e45dff9cae26b11ebb26561d6335"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3a72e45dff9cae26b11ebb26561d6335">LoadTexture</a> (const char *_pFilePath)</td></tr>
+<tr class="memdesc:a3a72e45dff9cae26b11ebb26561d6335"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャの生成  <br /></td></tr>
+<tr class="memitem:a6a06a088a056396d839d5fd30a4a1315" id="r_a6a06a088a056396d839d5fd30a4a1315"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6a06a088a056396d839d5fd30a4a1315">LoadInfo</a> (const char *_pFilePath)</td></tr>
+<tr class="memdesc:a6a06a088a056396d839d5fd30a4a1315"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャの付与情報の読み込み  <br /></td></tr>
+<tr class="memitem:a614c49925d5a1ad194e34823d0528b2c" id="r_a614c49925d5a1ad194e34823d0528b2c"><td class="memItemLeft">const <a class="el" href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html">CAnmStack</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a614c49925d5a1ad194e34823d0528b2c">GetAnmStack</a> (const uint _anmStackNo) const</td></tr>
+<tr class="memdesc:a614c49925d5a1ad194e34823d0528b2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションスタックを取得  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a6d09fea550565d736a49e15516dbf910" id="r_a6d09fea550565d736a49e15516dbf910"><td class="memItemLeft"><a class="el" href="#a3fe45b4de1a247f1f2cdc29dec66c4d7">TextureObj</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6d09fea550565d736a49e15516dbf910">m_texture</a></td></tr>
+<tr class="memitem:a823a4b10bc18ac851f7d0bad509bc335" id="r_a823a4b10bc18ac851f7d0bad509bc335"><td class="memItemLeft">float2&#160;</td><td class="memItemRight"><a class="el" href="#a823a4b10bc18ac851f7d0bad509bc335">m_divLength</a></td></tr>
+<tr class="memitem:a0cd1c23dc491ff6f8c2a7c69509eb345" id="r_a0cd1c23dc491ff6f8c2a7c69509eb345"><td class="memItemLeft">int2&#160;</td><td class="memItemRight"><a class="el" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a></td></tr>
+<tr class="memitem:ac0210a863ea7beab894520df3a62be7d" id="r_ac0210a863ea7beab894520df3a62be7d"><td class="memItemLeft">int2&#160;</td><td class="memItemRight"><a class="el" href="#ac0210a863ea7beab894520df3a62be7d">m_size</a></td></tr>
+<tr class="memitem:aee7b3cb99c491df65233bc8c5b8eb75d" id="r_aee7b3cb99c491df65233bc8c5b8eb75d"><td class="memItemLeft">float2&#160;</td><td class="memItemRight"><a class="el" href="#aee7b3cb99c491df65233bc8c5b8eb75d">m_divSize</a></td></tr>
+<tr class="memitem:aa6e74ec3b362bbebbe256b359691e942" id="r_aa6e74ec3b362bbebbe256b359691e942"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aa6e74ec3b362bbebbe256b359691e942">m_filePath</a></td></tr>
+<tr class="memitem:a118b60956a467464558c5876a641054f" id="r_a118b60956a467464558c5876a641054f"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a118b60956a467464558c5876a641054f">m_anmStackCount</a></td></tr>
+<tr class="memitem:a5fff276e1c7304e179c09aa1e37a091d" id="r_a5fff276e1c7304e179c09aa1e37a091d"><td class="memItemLeft">std::array&lt; <a class="el" href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html">CAnmStack</a>, <a class="el" href="#a3780389c9bd048fac6423f3f1aba95f2">ANM_STACK_MAX</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5fff276e1c7304e179c09aa1e37a091d">m_anmStacks</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>テクスチャ情報を管理するクラス </p>
+<p>テクスチャアニメーションについて</p><ul>
+<li>アニメーションは1つのテクスチャを分割し、それを連続して切り替えることでアニメーションを行る</li>
+<li>divCount(4,2)の場合<ul>
+<li>左上から 0, 1, 2, 3,</li>
+<li>折り返して 4, 5, 6, 7</li>
+<li>となる。 この番号を基に、テクスチャに張り付けるUV座標を計算し、アニメーションを行う</li>
+</ul>
+</li>
+</ul>
+<dl class="section note"><dt>覚え書き</dt><dd>用語<ul>
+<li>AnmStack 1つのアニメーションのこと</li>
+<li>Frame アニメーション内の1つの連番を特定するあたい</li>
+</ul>
+</dd>
+<dd>
+ポリゴンクラスに張り付けるためのテクスチャとして作成した。 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">todo</a></b></dt><dd>全てのテクスチャを管理できるように、 テクスチャの生成などもできるようにする。 </dd></dl>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a3fe45b4de1a247f1f2cdc29dec66c4d7" name="a3fe45b4de1a247f1f2cdc29dec66c4d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe45b4de1a247f1f2cdc29dec66c4d7">&#9670;&#160;</a></span>TextureObj</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a3fe45b4de1a247f1f2cdc29dec66c4d7">NTexture::CManager::TextureObj</a> = LPDIRECT3DTEXTURE9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>管理するテクスチャのエイリアス </p>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a92b2ad124085d7ea356deffcf5c31f44" name="a92b2ad124085d7ea356deffcf5c31f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92b2ad124085d7ea356deffcf5c31f44">&#9670;&#160;</a></span>CManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NTexture::CManager::CManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                       : </div>
+<div class="line"><span class="lineno">   58</span>        <a class="code hl_variable" href="#a6d09fea550565d736a49e15516dbf910">m_texture</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="#a823a4b10bc18ac851f7d0bad509bc335">m_divLength</a>(1,1),</div>
+<div class="line"><span class="lineno">   60</span>        <a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>(1,1),</div>
+<div class="line"><span class="lineno">   61</span>        <a class="code hl_variable" href="#ac0210a863ea7beab894520df3a62be7d">m_size</a>(0,0),</div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_variable" href="#aee7b3cb99c491df65233bc8c5b8eb75d">m_divSize</a>(0,0),</div>
+<div class="line"><span class="lineno">   63</span>        <a class="code hl_variable" href="#aa6e74ec3b362bbebbe256b359691e942">m_filePath</a>(<span class="stringliteral">&quot;&quot;</span>),</div>
+<div class="line"><span class="lineno">   64</span>        <a class="code hl_variable" href="#a118b60956a467464558c5876a641054f">m_anmStackCount</a>(0)</div>
+<div class="line"><span class="lineno">   65</span>    {</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>    }</div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_a0cd1c23dc491ff6f8c2a7c69509eb345"><div class="ttname"><a href="#a0cd1c23dc491ff6f8c2a7c69509eb345">NTexture::CManager::m_divCount</a></div><div class="ttdeci">int2 m_divCount</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:139</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_a118b60956a467464558c5876a641054f"><div class="ttname"><a href="#a118b60956a467464558c5876a641054f">NTexture::CManager::m_anmStackCount</a></div><div class="ttdeci">uint m_anmStackCount</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:147</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_a6d09fea550565d736a49e15516dbf910"><div class="ttname"><a href="#a6d09fea550565d736a49e15516dbf910">NTexture::CManager::m_texture</a></div><div class="ttdeci">TextureObj m_texture</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:137</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_a823a4b10bc18ac851f7d0bad509bc335"><div class="ttname"><a href="#a823a4b10bc18ac851f7d0bad509bc335">NTexture::CManager::m_divLength</a></div><div class="ttdeci">float2 m_divLength</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:138</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_aa6e74ec3b362bbebbe256b359691e942"><div class="ttname"><a href="#aa6e74ec3b362bbebbe256b359691e942">NTexture::CManager::m_filePath</a></div><div class="ttdeci">std::string m_filePath</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:144</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_ac0210a863ea7beab894520df3a62be7d"><div class="ttname"><a href="#ac0210a863ea7beab894520df3a62be7d">NTexture::CManager::m_size</a></div><div class="ttdeci">int2 m_size</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:141</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_aee7b3cb99c491df65233bc8c5b8eb75d"><div class="ttname"><a href="#aee7b3cb99c491df65233bc8c5b8eb75d">NTexture::CManager::m_divSize</a></div><div class="ttdeci">float2 m_divSize</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:142</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a81a0e01232f113aa013e750649fdde1d" name="a81a0e01232f113aa013e750649fdde1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a0e01232f113aa013e750649fdde1d">&#9670;&#160;</a></span>~CManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NTexture::CManager::~CManager </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   70</span>    {</div>
+<div class="line"><span class="lineno">   71</span>        <span class="comment">// テクスチャの解放</span></div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(<a class="code hl_variable" href="#a6d09fea550565d736a49e15516dbf910">m_texture</a>);</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="ttc" id="a_direct_x___util_8h_html_afe4096368a51bd6079184745ddec2b6b"><div class="ttname"><a href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a></div><div class="ttdeci">#define ReleaseSafe(p)</div><div class="ttdoc">安全な解放処理</div><div class="ttdef"><b>Definition</b> DirectX_Util.h:8</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a614c49925d5a1ad194e34823d0528b2c" name="a614c49925d5a1ad194e34823d0528b2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a614c49925d5a1ad194e34823d0528b2c">&#9670;&#160;</a></span>GetAnmStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html">CManager::CAnmStack</a> &amp; NTexture::CManager::GetAnmStack </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_anmStackNo</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーションスタックを取得 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>引数の値が正常な値化をチェックしたうえで返す。 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  218</span>    {</div>
+<div class="line"><span class="lineno">  219</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_anmStackNo &lt; <a class="code hl_variable" href="#a118b60956a467464558c5876a641054f">m_anmStackCount</a> &amp;&amp; <span class="stringliteral">&quot;不正なアニメーションスタックが指定されました。&quot;</span>);</div>
+<div class="line"><span class="lineno">  220</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a5fff276e1c7304e179c09aa1e37a091d">m_anmStacks</a>[_anmStackNo];</div>
+<div class="line"><span class="lineno">  221</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_a5fff276e1c7304e179c09aa1e37a091d"><div class="ttname"><a href="#a5fff276e1c7304e179c09aa1e37a091d">NTexture::CManager::m_anmStacks</a></div><div class="ttdeci">std::array&lt; CAnmStack, ANM_STACK_MAX &gt; m_anmStacks</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:148</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3e7fa7723b290b386e7e42b48d3d8e36" name="a3e7fa7723b290b386e7e42b48d3d8e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7fa7723b290b386e7e42b48d3d8e36">&#9670;&#160;</a></span>GetAnmStackCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NTexture::CManager::GetAnmStackCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーション数を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a118b60956a467464558c5876a641054f">m_anmStackCount</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a27510c268830f353fd83246781d93fa8" name="a27510c268830f353fd83246781d93fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27510c268830f353fd83246781d93fa8">&#9670;&#160;</a></span>GetAnmStackName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * NTexture::CManager::GetAnmStackName </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_anmStackNo</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アニメーション名を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>    {</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a614c49925d5a1ad194e34823d0528b2c">GetAnmStack</a>(_anmStackNo).<a class="code hl_function" href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html#a6d6a5c65c661b8265707bc504750de72">GetStackName</a>();</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_1_1_c_anm_stack_html_a6d6a5c65c661b8265707bc504750de72"><div class="ttname"><a href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html#a6d6a5c65c661b8265707bc504750de72">NTexture::CManager::CAnmStack::GetStackName</a></div><div class="ttdeci">const char * GetStackName() const</div><div class="ttdoc">アニメーション名を取得</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:110</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_a614c49925d5a1ad194e34823d0528b2c"><div class="ttname"><a href="#a614c49925d5a1ad194e34823d0528b2c">NTexture::CManager::GetAnmStack</a></div><div class="ttdeci">const CAnmStack &amp; GetAnmStack(const uint _anmStackNo) const</div><div class="ttdoc">アニメーションスタックを取得</div><div class="ttdef"><b>Definition</b> Texture_Manager.cpp:217</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8bd2e1dcfe6c57a0a0e36b6d73d7cc35" name="a8bd2e1dcfe6c57a0a0e36b6d73d7cc35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd2e1dcfe6c57a0a0e36b6d73d7cc35">&#9670;&#160;</a></span>GetDivCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int2 &amp; NTexture::CManager::GetDivCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>分割数を取得する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>1つのテクスチャを分割して複数枚のテクスチャを含む場合は1以上の値になる </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab0405badb84b06c53c341a659b158b8c" name="ab0405badb84b06c53c341a659b158b8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0405badb84b06c53c341a659b158b8c">&#9670;&#160;</a></span>GetDivCountAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NTexture::CManager::GetDivCountAll </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャ全体の分割数を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>.x * <a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>.y; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a884716d03441f2443d0697b6d4d16a0b" name="a884716d03441f2443d0697b6d4d16a0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a884716d03441f2443d0697b6d4d16a0b">&#9670;&#160;</a></span>GetDivLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float2 &amp; NTexture::CManager::GetDivLength </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>分割後の1辺の長さを取得する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>分割した1つの画像あたりのUV値のサイズになる(０〜１) </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a823a4b10bc18ac851f7d0bad509bc335">m_divLength</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a845d050083d9fcfab431c7dccd184c68" name="a845d050083d9fcfab431c7dccd184c68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a845d050083d9fcfab431c7dccd184c68">&#9670;&#160;</a></span>GetDivSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float2 &amp; NTexture::CManager::GetDivSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>分割後の1つ当たりのテクスチャのサイズを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aee7b3cb99c491df65233bc8c5b8eb75d">m_divSize</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa2b0a5c498c43ffca850d529e3d6080b" name="aa2b0a5c498c43ffca850d529e3d6080b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b0a5c498c43ffca850d529e3d6080b">&#9670;&#160;</a></span>GetFilePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * NTexture::CManager::GetFilePath </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ファイルパスを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>{ <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="#aa6e74ec3b362bbebbe256b359691e942">m_filePath</a>[0]; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5b36f46749e6a8b252d10e8f470fc994" name="a5b36f46749e6a8b252d10e8f470fc994"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b36f46749e6a8b252d10e8f470fc994">&#9670;&#160;</a></span>GetFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NTexture::CManager::GetFrame </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_anmStackNo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_anmFrameNo</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アニメーションのフレームを取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  109</span>    {</div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a614c49925d5a1ad194e34823d0528b2c">GetAnmStack</a>(_anmStackNo).<a class="code hl_function" href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html#ae16602d5320fe5fdca57dbf1671ad958">GetFrame</a>(_anmFrameNo);</div>
+<div class="line"><span class="lineno">  111</span>    }</div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_1_1_c_anm_stack_html_ae16602d5320fe5fdca57dbf1671ad958"><div class="ttname"><a href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html#ae16602d5320fe5fdca57dbf1671ad958">NTexture::CManager::CAnmStack::GetFrame</a></div><div class="ttdeci">uint GetFrame(uint _frameNo) const</div><div class="ttdoc">アニメーションのテクスチャの連番位置を取得</div><div class="ttdef"><b>Definition</b> Texture_Manager.cpp:45</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7be0dc931cbf2f68ae3c7608b9004c9b" name="a7be0dc931cbf2f68ae3c7608b9004c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be0dc931cbf2f68ae3c7608b9004c9b">&#9670;&#160;</a></span>GetFrameCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NTexture::CManager::GetFrameCount </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_anmStackNo</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アニメーションのフレーム長(アニメーションの長さ)を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>    {</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a614c49925d5a1ad194e34823d0528b2c">GetAnmStack</a>(_anmStackNo).<a class="code hl_function" href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html#a1ac4000006749449f54a466aea17c9bf">GetFrameCount</a>();</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_1_1_c_anm_stack_html_a1ac4000006749449f54a466aea17c9bf"><div class="ttname"><a href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html#a1ac4000006749449f54a466aea17c9bf">NTexture::CManager::CAnmStack::GetFrameCount</a></div><div class="ttdeci">uint GetFrameCount() const</div><div class="ttdoc">フレーム数を取得</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:116</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a949293502fccbc3abf7d9efbdcb9f8f2" name="a949293502fccbc3abf7d9efbdcb9f8f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949293502fccbc3abf7d9efbdcb9f8f2">&#9670;&#160;</a></span>GetIsLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NTexture::CManager::GetIsLoop </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_anmStackNo</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アイメーションのループフラグを取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>    {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="#a614c49925d5a1ad194e34823d0528b2c">GetAnmStack</a>(_anmStackNo).<a class="code hl_function" href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html#ab9a3ec7e17c9af88856249f683d27663">GetIsLoop</a>();</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_1_1_c_anm_stack_html_ab9a3ec7e17c9af88856249f683d27663"><div class="ttname"><a href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html#ab9a3ec7e17c9af88856249f683d27663">NTexture::CManager::CAnmStack::GetIsLoop</a></div><div class="ttdeci">bool GetIsLoop() const</div><div class="ttdoc">ループフラグを取得</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:113</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7f52ed938367a97538dce14a0c8f411f" name="a7f52ed938367a97538dce14a0c8f411f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f52ed938367a97538dce14a0c8f411f">&#9670;&#160;</a></span>GetSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float2 NTexture::CManager::GetSize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャサイズをfloatで取得する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>float型のほうが利用しやすいため、この関数を用意している </dd>
+<dd>
+float型である必要がない場合は、GetSizeInt()を利用すること。 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{ <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespace_n_common.html#a8b49077ea33f612f0c58c1845ac9c89c">float2</a>(<a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(<a class="code hl_variable" href="#ac0210a863ea7beab894520df3a62be7d">m_size</a>.x), <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(<a class="code hl_variable" href="#ac0210a863ea7beab894520df3a62be7d">m_size</a>.y)); }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_a099b6a85136760ed980079095fc9afe4"><div class="ttname"><a href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast</a></div><div class="ttdeci">#define StaticCast</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:88</div></div>
+<div class="ttc" id="anamespace_n_common_html_a8b49077ea33f612f0c58c1845ac9c89c"><div class="ttname"><a href="namespace_n_common.html#a8b49077ea33f612f0c58c1845ac9c89c">NCommon::float2</a></div><div class="ttdeci">NMath::SVector2 float2</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:19</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad4ffffe88ee46245497de56c5747bd34" name="ad4ffffe88ee46245497de56c5747bd34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ffffe88ee46245497de56c5747bd34">&#9670;&#160;</a></span>GetSizeInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int2 &amp; NTexture::CManager::GetSizeInt </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャのサイズを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ac0210a863ea7beab894520df3a62be7d">m_size</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8a2ac9fd00750354a1c50ebbfca701c5" name="a8a2ac9fd00750354a1c50ebbfca701c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a2ac9fd00750354a1c50ebbfca701c5">&#9670;&#160;</a></span>GetTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#a3fe45b4de1a247f1f2cdc29dec66c4d7">TextureObj</a> &amp; NTexture::CManager::GetTexture </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a6d09fea550565d736a49e15516dbf910">m_texture</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaf67c5f6e474c333d5abc9fbb5b4b21f" name="aaf67c5f6e474c333d5abc9fbb5b4b21f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf67c5f6e474c333d5abc9fbb5b4b21f">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NTexture::CManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_pFilePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>読み込み関数 </p>
+<div class="fragment"><div class="line"><span class="lineno">   77</span>    {</div>
+<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   79</span>            <a class="code hl_function" href="#a3a72e45dff9cae26b11ebb26561d6335">LoadTexture</a>(_pFilePath);</div>
+<div class="line"><span class="lineno">   80</span>            <a class="code hl_function" href="#a6a06a088a056396d839d5fd30a4a1315">LoadInfo</a>(_pFilePath);</div>
+<div class="line"><span class="lineno">   81</span>        }</div>
+<div class="line"><span class="lineno">   82</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>* _err) {</div>
+<div class="line"><span class="lineno">   83</span>            std::string err = <span class="stringliteral">&quot;テクスチャの読み込みで例外が発生しました。\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   84</span>            err += <span class="stringliteral">&quot;Message : &quot;</span>;</div>
+<div class="line"><span class="lineno">   85</span>            err += _err;</div>
+<div class="line"><span class="lineno">   86</span>            err += <span class="stringliteral">&quot;\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   87</span>            err += <span class="stringliteral">&quot;指定されたパス : &quot;</span>;</div>
+<div class="line"><span class="lineno">   88</span>            err += _pFilePath;</div>
+<div class="line"><span class="lineno">   89</span>            <a class="code hl_define" href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a>(err.data());</div>
+<div class="line"><span class="lineno">   90</span>        }</div>
+<div class="line"><span class="lineno">   91</span>    }</div>
+<div class="ttc" id="a_system___error_8h_html_a1ef9aee6b1a8c442c300a378918a4d5f"><div class="ttname"><a href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a></div><div class="ttdeci">#define ErrorEx(_pMessage)</div><div class="ttdoc">ファイル名と行の情報を付加するマクロ</div><div class="ttdef"><b>Definition</b> System_Error.h:5</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_a3a72e45dff9cae26b11ebb26561d6335"><div class="ttname"><a href="#a3a72e45dff9cae26b11ebb26561d6335">NTexture::CManager::LoadTexture</a></div><div class="ttdeci">void LoadTexture(const char *_pFilePath)</div><div class="ttdoc">テクスチャの生成</div><div class="ttdef"><b>Definition</b> Texture_Manager.cpp:115</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_a6a06a088a056396d839d5fd30a4a1315"><div class="ttname"><a href="#a6a06a088a056396d839d5fd30a4a1315">NTexture::CManager::LoadInfo</a></div><div class="ttdeci">void LoadInfo(const char *_pFilePath)</div><div class="ttdoc">テクスチャの付与情報の読み込み</div><div class="ttdef"><b>Definition</b> Texture_Manager.cpp:146</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6a06a088a056396d839d5fd30a4a1315" name="a6a06a088a056396d839d5fd30a4a1315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a06a088a056396d839d5fd30a4a1315">&#9670;&#160;</a></span>LoadInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NTexture::CManager::LoadInfo </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_pFilePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャの付与情報の読み込み </p>
+<dl class="section note"><dt>覚え書き</dt><dd>同名のJsonファイルに付与情報を記述し、そのファイルから情報を取得 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  147</span>    {</div>
+<div class="line"><span class="lineno">  148</span>        <span class="comment">// ファイルパスを保持</span></div>
+<div class="line"><span class="lineno">  149</span>        <a class="code hl_variable" href="#aa6e74ec3b362bbebbe256b359691e942">m_filePath</a> = _pFilePath;</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  152</span>        <span class="comment">// 付与情報を保持するJsonファイルの読み込み</span></div>
+<div class="line"><span class="lineno">  153</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>        <span class="comment">// 読み込んだファイルのディレクトリを取得</span></div>
+<div class="line"><span class="lineno">  156</span>        std::string jsonBindDir = <span class="stringliteral">&quot;Asset/&quot;</span>;</div>
+<div class="line"><span class="lineno">  157</span>        <span class="keywordtype">size_t</span>      dirAssetOffset = <a class="code hl_variable" href="#aa6e74ec3b362bbebbe256b359691e942">m_filePath</a>.find_first_of(jsonBindDir); <span class="comment">// Asset/を無視する</span></div>
+<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">if</span> (dirAssetOffset == std::string::npos) {</div>
+<div class="line"><span class="lineno">  159</span>            dirAssetOffset = 0; <span class="comment">// Asset/がなければ最初から</span></div>
+<div class="line"><span class="lineno">  160</span>        }</div>
+<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  162</span>            dirAssetOffset = std::strlen(jsonBindDir.data());</div>
+<div class="line"><span class="lineno">  163</span>        }</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>        <span class="keyword">const</span> <span class="keywordtype">size_t</span>        dirOffset   = <a class="code hl_variable" href="#aa6e74ec3b362bbebbe256b359691e942">m_filePath</a>.find_last_of(<span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><span class="lineno">  166</span>        <span class="keyword">const</span> std::string   dir         = <a class="code hl_variable" href="#aa6e74ec3b362bbebbe256b359691e942">m_filePath</a>.substr(dirAssetOffset, dirOffset - dirAssetOffset);</div>
+<div class="line"><span class="lineno">  167</span>        <span class="keyword">const</span> std::string   extension   = <span class="stringliteral">&quot;.json&quot;</span>;</div>
+<div class="line"><span class="lineno">  168</span>        <span class="keyword">const</span> std::string   infoFilePath = dir + extension; <span class="comment">// 付与情報を記述したJsonファイルのパスを作成</span></div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span>        <span class="comment">// Jsonファイルを読み込む</span></div>
+<div class="line"><span class="lineno">  171</span>        <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CJsonFactory::SPAsset</a> pJson = <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CJsonFactory::GetInst</a>().Load(infoFilePath);</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>        <span class="comment">// アクセスしやすいようにする</span></div>
+<div class="line"><span class="lineno">  174</span>        <span class="keyword">auto</span>&amp; json = *pJson;</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  177</span>        <span class="comment">// Jsonファイルから情報を読み込む</span></div>
+<div class="line"><span class="lineno">  178</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  179</span> </div>
+<div class="line"><span class="lineno">  180</span>        <span class="comment">// 分割数を読み込む</span></div>
+<div class="line"><span class="lineno">  181</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; 2; ++i) {</div>
+<div class="line"><span class="lineno">  182</span>            <a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>.array[i] = json[<span class="stringliteral">&quot;DivCount&quot;</span>].array_items()[i].int_value();</div>
+<div class="line"><span class="lineno">  183</span>        }</div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>        <span class="comment">// 分割数が0いかになることは認めない</span></div>
+<div class="line"><span class="lineno">  186</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>.x &lt;= 0 || <a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>.y &lt;= 0) {</div>
+<div class="line"><span class="lineno">  187</span>            <span class="keywordflow">throw</span>(<span class="stringliteral">&quot;DivCountには1以上の値を設定してください。&quot;</span>);</div>
+<div class="line"><span class="lineno">  188</span>        }</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>        <span class="comment">// 読み込んだ分割数から分割後の一辺の長さを取得</span></div>
+<div class="line"><span class="lineno">  191</span>        <a class="code hl_variable" href="#a823a4b10bc18ac851f7d0bad509bc335">m_divLength</a>.x = 1.0f / <a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>.x;</div>
+<div class="line"><span class="lineno">  192</span>        <a class="code hl_variable" href="#a823a4b10bc18ac851f7d0bad509bc335">m_divLength</a>.y = 1.0f / <a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>.y;</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>        <span class="comment">// テクスチャサイズ</span></div>
+<div class="line"><span class="lineno">  195</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; 2; ++i) {</div>
+<div class="line"><span class="lineno">  196</span>            <a class="code hl_variable" href="#ac0210a863ea7beab894520df3a62be7d">m_size</a>.array[i] = json[<span class="stringliteral">&quot;Size&quot;</span>].array_items()[i].int_value();</div>
+<div class="line"><span class="lineno">  197</span>        }</div>
+<div class="line"><span class="lineno">  198</span> </div>
+<div class="line"><span class="lineno">  199</span>        <span class="comment">// 分割後のサイズ</span></div>
+<div class="line"><span class="lineno">  200</span>        <a class="code hl_variable" href="#aee7b3cb99c491df65233bc8c5b8eb75d">m_divSize</a>.x = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(<a class="code hl_variable" href="#ac0210a863ea7beab894520df3a62be7d">m_size</a>.x) / <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(<a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>.x);</div>
+<div class="line"><span class="lineno">  201</span>        <a class="code hl_variable" href="#aee7b3cb99c491df65233bc8c5b8eb75d">m_divSize</a>.y = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(<a class="code hl_variable" href="#ac0210a863ea7beab894520df3a62be7d">m_size</a>.y) / <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(<a class="code hl_variable" href="#a0cd1c23dc491ff6f8c2a7c69509eb345">m_divCount</a>.y);</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>        <span class="comment">// アニメーション情報</span></div>
+<div class="line"><span class="lineno">  204</span>        <a class="code hl_variable" href="#a118b60956a467464558c5876a641054f">m_anmStackCount</a> = json[<span class="stringliteral">&quot;AnmStack&quot;</span>].array_items().size();</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a118b60956a467464558c5876a641054f">m_anmStackCount</a> &gt; <a class="code hl_variable" href="#a3780389c9bd048fac6423f3f1aba95f2">ANM_STACK_MAX</a>) {</div>
+<div class="line"><span class="lineno">  207</span>            <span class="keywordflow">throw</span>(<span class="stringliteral">&quot;AnmStackが管理可能最大数を超えています。\n管理可能数を増やすか、AnmStackを減らしてください。&quot;</span>);</div>
+<div class="line"><span class="lineno">  208</span>        }</div>
+<div class="line"><span class="lineno">  209</span> </div>
+<div class="line"><span class="lineno">  210</span>        <span class="comment">// 全てのアニメーション情報を取得</span></div>
+<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#a118b60956a467464558c5876a641054f">m_anmStackCount</a>; ++i) {</div>
+<div class="line"><span class="lineno">  212</span>            <span class="keyword">auto</span>&amp; jsonAnmStack = json[<span class="stringliteral">&quot;AnmStack&quot;</span>].array_items()[i];</div>
+<div class="line"><span class="lineno">  213</span>            <a class="code hl_variable" href="#a5fff276e1c7304e179c09aa1e37a091d">m_anmStacks</a>[i].Load(jsonAnmStack);</div>
+<div class="line"><span class="lineno">  214</span>        }</div>
+<div class="line"><span class="lineno">  215</span>    }</div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a42a8f39a038c716e5e95b31ea67b8ece"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CFactory&lt; json11::Json, CJsonFactory &gt;::SPAsset</a></div><div class="ttdeci">std::shared_ptr&lt; json11::Json &gt; SPAsset</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:30</div></div>
+<div class="ttc" id="aclass_n_texture_1_1_c_manager_html_a3780389c9bd048fac6423f3f1aba95f2"><div class="ttname"><a href="#a3780389c9bd048fac6423f3f1aba95f2">NTexture::CManager::ANM_STACK_MAX</a></div><div class="ttdeci">static const unsigned int ANM_STACK_MAX</div><div class="ttdoc">テクスチャが保持するアニメーションの最大数</div><div class="ttdef"><b>Definition</b> Texture_Manager.h:32</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_singleton_html_a08cc988d79fa3297df6ede328e44a770"><div class="ttname"><a href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NUtil::CSingleton&lt; CJsonFactory &gt;::GetInst</a></div><div class="ttdeci">static CJsonFactory &amp; GetInst()</div><div class="ttdef"><b>Definition</b> Util_SingletonTemplate.h:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3a72e45dff9cae26b11ebb26561d6335" name="a3a72e45dff9cae26b11ebb26561d6335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a72e45dff9cae26b11ebb26561d6335">&#9670;&#160;</a></span>LoadTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NTexture::CManager::LoadTexture </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_pFilePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャの生成 </p>
+<div class="fragment"><div class="line"><span class="lineno">  116</span>    {</div>
+<div class="line"><span class="lineno">  117</span>        <span class="comment">// テクスチャの読み込み</span></div>
+<div class="line"><span class="lineno">  118</span>        HRESULT hr;</div>
+<div class="line"><span class="lineno">  119</span>        hr = D3DXCreateTextureFromFile(</div>
+<div class="line"><span class="lineno">  120</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(),</div>
+<div class="line"><span class="lineno">  121</span>            _pFilePath,</div>
+<div class="line"><span class="lineno">  122</span>            &amp;<a class="code hl_variable" href="#a6d09fea550565d736a49e15516dbf910">m_texture</a>);</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>        <span class="comment">// 読み込み失敗時</span></div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  126</span>            LPVOID <span class="keywordtype">string</span> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  127</span>            FormatMessage(FORMAT_MESSAGE_ALLOCATE_BUFFER |</div>
+<div class="line"><span class="lineno">  128</span>                FORMAT_MESSAGE_FROM_SYSTEM,</div>
+<div class="line"><span class="lineno">  129</span>                NULL,</div>
+<div class="line"><span class="lineno">  130</span>                hr,</div>
+<div class="line"><span class="lineno">  131</span>                MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),</div>
+<div class="line"><span class="lineno">  132</span>                (LPTSTR)&amp;<span class="keywordtype">string</span>,</div>
+<div class="line"><span class="lineno">  133</span>                0,</div>
+<div class="line"><span class="lineno">  134</span>                NULL);</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>            std::string str = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  137</span>            str += <span class="stringliteral">&quot;HRESULT Message : &quot;</span>;</div>
+<div class="line"><span class="lineno">  138</span>            <span class="keywordflow">if</span> (<span class="keywordtype">string</span> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  139</span>                str += (LPCSTR)<span class="keywordtype">string</span>;</div>
+<div class="line"><span class="lineno">  140</span>                LocalFree(<span class="keywordtype">string</span>);</div>
+<div class="line"><span class="lineno">  141</span>            }</div>
+<div class="line"><span class="lineno">  142</span>            <span class="keywordflow">throw</span>(str.data());</div>
+<div class="line"><span class="lineno">  143</span>        }</div>
+<div class="line"><span class="lineno">  144</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab213af265d85f773a3fb450ca43e3650"><div class="ttname"><a href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 GetD3DDevice()</div><div class="ttdoc">デバイスを取得</div><div class="ttdef"><b>Definition</b> DirectX_Manager.cpp:95</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a3780389c9bd048fac6423f3f1aba95f2" name="a3780389c9bd048fac6423f3f1aba95f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3780389c9bd048fac6423f3f1aba95f2">&#9670;&#160;</a></span>ANM_STACK_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int NTexture::CManager::ANM_STACK_MAX = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テクスチャが保持するアニメーションの最大数 </p>
+
+</div>
+</div>
+<a id="a118b60956a467464558c5876a641054f" name="a118b60956a467464558c5876a641054f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a118b60956a467464558c5876a641054f">&#9670;&#160;</a></span>m_anmStackCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NTexture::CManager::m_anmStackCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5fff276e1c7304e179c09aa1e37a091d" name="a5fff276e1c7304e179c09aa1e37a091d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fff276e1c7304e179c09aa1e37a091d">&#9670;&#160;</a></span>m_anmStacks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="class_n_texture_1_1_c_manager_1_1_c_anm_stack.html">CAnmStack</a>, <a class="el" href="#a3780389c9bd048fac6423f3f1aba95f2">ANM_STACK_MAX</a>&gt; NTexture::CManager::m_anmStacks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cd1c23dc491ff6f8c2a7c69509eb345" name="a0cd1c23dc491ff6f8c2a7c69509eb345"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd1c23dc491ff6f8c2a7c69509eb345">&#9670;&#160;</a></span>m_divCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int2 NTexture::CManager::m_divCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a823a4b10bc18ac851f7d0bad509bc335" name="a823a4b10bc18ac851f7d0bad509bc335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a823a4b10bc18ac851f7d0bad509bc335">&#9670;&#160;</a></span>m_divLength</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float2 NTexture::CManager::m_divLength</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee7b3cb99c491df65233bc8c5b8eb75d" name="aee7b3cb99c491df65233bc8c5b8eb75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee7b3cb99c491df65233bc8c5b8eb75d">&#9670;&#160;</a></span>m_divSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float2 NTexture::CManager::m_divSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6e74ec3b362bbebbe256b359691e942" name="aa6e74ec3b362bbebbe256b359691e942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e74ec3b362bbebbe256b359691e942">&#9670;&#160;</a></span>m_filePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NTexture::CManager::m_filePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0210a863ea7beab894520df3a62be7d" name="ac0210a863ea7beab894520df3a62be7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0210a863ea7beab894520df3a62be7d">&#9670;&#160;</a></span>m_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int2 NTexture::CManager::m_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d09fea550565d736a49e15516dbf910" name="a6d09fea550565d736a49e15516dbf910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d09fea550565d736a49e15516dbf910">&#9670;&#160;</a></span>m_texture</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a3fe45b4de1a247f1f2cdc29dec66c4d7">TextureObj</a> NTexture::CManager::m_texture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Texture/<a class="el" href="_texture___manager_8h_source.html">Texture_Manager.h</a></li>
+<li>Sources/Framework/Texture/<a class="el" href="_texture___manager_8cpp.html">Texture_Manager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_texture.html">NTexture</a></li><li class="navelem"><a href="class_n_texture_1_1_c_manager.html">CManager</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

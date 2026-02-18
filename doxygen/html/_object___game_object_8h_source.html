@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Object/Object_GameObject.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_object___game_object_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Object_GameObject.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_object___game_object_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___transform_8h.html">Object_Transform.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_object.html">NObject</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html">    8</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ad728b6ed026185583ce27041d2b7b08f">CGameObject</a>  {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966">   12</a></span>        <span class="keyword">enum class</span> <a class="code hl_enumeration" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966">EObjectState</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028">   13</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028">LOAD</a>,           <span class="comment">// ロードを行う</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">   14</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">INIT</a>,           <span class="comment">// 初期化を行う</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">   15</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">UPDATE</a>,         <span class="comment">// 更新を行う</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        };</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a7caf845184ced68122960133aa6b969a">Init</a>();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ae972af9c0b739cf9e802df174efe092a">Update</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#aafa2ee04d4a01cfd0b2d875f9fb1f99d">Render</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#aa34046adb0698a3533064c7b3f9cbc22">Destroy</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#aef389ac261cbf5e5898093a9ac06db66">   33</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#aef389ac261cbf5e5898093a9ac06db66">SetIsActive</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> _state)     { <a class="code hl_variable" href="class_n_object_1_1_c_game_object.html#a16667b502ed32b24ab4de9584f4daec1">m_isActive</a> = _state; }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#a575707b1063df76e98c3aab335b2ce2f">   36</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a575707b1063df76e98c3aab335b2ce2f">GetIsActive</a>()<span class="keyword"> const                </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_object_1_1_c_game_object.html#a16667b502ed32b24ab4de9584f4daec1">m_isActive</a>; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">   39</a></span>        <a class="code hl_class" href="class_n_object_1_1_c_transform.html">CTransform</a>&amp;         <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a>()       { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_object_1_1_c_game_object.html#aa0532d7e35242c2a279404331820ec4c">m_transform</a>; }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#a73af1188d97ef39ca6fe57ad32c3323f">   40</a></span>        <span class="keyword">const</span> <a class="code hl_class" href="class_n_object_1_1_c_transform.html">CTransform</a>&amp;   <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a73af1188d97ef39ca6fe57ad32c3323f">GetTransform</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_object_1_1_c_game_object.html#aa0532d7e35242c2a279404331820ec4c">m_transform</a>; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf">   48</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf">LoadProc</a>() { <a class="code hl_variable" href="class_n_object_1_1_c_game_object.html#af065ef0c257ad1b320686b6bb221925a">m_objState</a> = <a class="code hl_enumvalue" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">EObjectState::INIT</a>; }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#a5dbe0f6403317df773e8f98e2f356473">   51</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a5dbe0f6403317df773e8f98e2f356473">ReleaseProc</a>(){ }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#a23b6fe4648cbdca08aef03edaa54a9eb">   55</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a23b6fe4648cbdca08aef03edaa54a9eb">InitProc</a>() { <a class="code hl_variable" href="class_n_object_1_1_c_game_object.html#af065ef0c257ad1b320686b6bb221925a">m_objState</a> = <a class="code hl_enumvalue" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">EObjectState::UPDATE</a>; }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#a3859fb52e837d045b90942ddd4d24426">   58</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a3859fb52e837d045b90942ddd4d24426">DestroyProc</a>(){ }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#a9671b365fe9ebe98c4d7c1dda3633d7e">   62</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a9671b365fe9ebe98c4d7c1dda3633d7e">UpdateFastProc</a>() { }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#aed62e95b20bfdd55f3c7114e1e41a358">   65</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#aed62e95b20bfdd55f3c7114e1e41a358">UpdateProc</a>(){  }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#a35666e8b9094cfdc534b9e8c8daffcfd">   69</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a35666e8b9094cfdc534b9e8c8daffcfd">UpdateLateProc</a>() { }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#a7eb3b5d63e38651310bc5eb0c553d233">   72</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a7eb3b5d63e38651310bc5eb0c553d233">RenderProc</a>(){ }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#af14b5482da4191a057aea2a87730e965">   76</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#af14b5482da4191a057aea2a87730e965">RenderLateProc</a>() { }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#a16667b502ed32b24ab4de9584f4daec1">   80</a></span>        <span class="keywordtype">bool</span>            <a class="code hl_variable" href="class_n_object_1_1_c_game_object.html#a16667b502ed32b24ab4de9584f4daec1">m_isActive</a>;     <span class="comment">// オブジェクトの有効状態(更新と描画を行うフラグ)</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#af065ef0c257ad1b320686b6bb221925a">   81</a></span>        <a class="code hl_enumeration" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966">EObjectState</a>    <a class="code hl_variable" href="class_n_object_1_1_c_game_object.html#af065ef0c257ad1b320686b6bb221925a">m_objState</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_game_object.html#aa0532d7e35242c2a279404331820ec4c">   82</a></span>        <a class="code hl_class" href="class_n_object_1_1_c_transform.html">CTransform</a>      <a class="code hl_variable" href="class_n_object_1_1_c_game_object.html#aa0532d7e35242c2a279404331820ec4c">m_transform</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ad728b6ed026185583ce27041d2b7b08f">CGameObject</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#a6093be13fcbfbd54e4b4176434c5cad3">~CGameObject</a>();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    };</div>
+</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
+<div class="ttc" id="a_object___transform_8h_html"><div class="ttname"><a href="_object___transform_8h.html">Object_Transform.h</a></div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a16667b502ed32b24ab4de9584f4daec1"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a16667b502ed32b24ab4de9584f4daec1">NObject::CGameObject::m_isActive</a></div><div class="ttdeci">bool m_isActive</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:80</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a23b6fe4648cbdca08aef03edaa54a9eb"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a23b6fe4648cbdca08aef03edaa54a9eb">NObject::CGameObject::InitProc</a></div><div class="ttdeci">virtual void InitProc()</div><div class="ttdoc">初期化を行う(何度も実行できること)</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:55</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a35666e8b9094cfdc534b9e8c8daffcfd"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a35666e8b9094cfdc534b9e8c8daffcfd">NObject::CGameObject::UpdateLateProc</a></div><div class="ttdeci">virtual void UpdateLateProc()</div><div class="ttdoc">処理順の制御のために、通常のUpdateより遅く実行される更新関数</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:69</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a3859fb52e837d045b90942ddd4d24426"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a3859fb52e837d045b90942ddd4d24426">NObject::CGameObject::DestroyProc</a></div><div class="ttdeci">virtual void DestroyProc()</div><div class="ttdoc">終了処理を行う(何度も実行できること)</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:58</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a5329ee8ed0b6b5f3d0e7c02eb6ba0fdf">NObject::CGameObject::LoadProc</a></div><div class="ttdeci">virtual void LoadProc()</div><div class="ttdoc">ロードをマルチスレッドで行うための</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:48</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a575707b1063df76e98c3aab335b2ce2f"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a575707b1063df76e98c3aab335b2ce2f">NObject::CGameObject::GetIsActive</a></div><div class="ttdeci">bool GetIsActive() const</div><div class="ttdoc">有効状態を取得</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:36</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a5dbe0f6403317df773e8f98e2f356473"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a5dbe0f6403317df773e8f98e2f356473">NObject::CGameObject::ReleaseProc</a></div><div class="ttdeci">virtual void ReleaseProc()</div><div class="ttdoc">解放を行う(1度だけ実行する)</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:51</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a6093be13fcbfbd54e4b4176434c5cad3"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a6093be13fcbfbd54e4b4176434c5cad3">NObject::CGameObject::~CGameObject</a></div><div class="ttdeci">virtual ~CGameObject()</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:16</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a73af1188d97ef39ca6fe57ad32c3323f"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a73af1188d97ef39ca6fe57ad32c3323f">NObject::CGameObject::GetTransform</a></div><div class="ttdeci">const CTransform &amp; GetTransform() const</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:40</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a7caf845184ced68122960133aa6b969a"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a7caf845184ced68122960133aa6b969a">NObject::CGameObject::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">初期化する</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:22</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a7eb3b5d63e38651310bc5eb0c553d233"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a7eb3b5d63e38651310bc5eb0c553d233">NObject::CGameObject::RenderProc</a></div><div class="ttdeci">virtual void RenderProc()</div><div class="ttdoc">継承後の描画処理</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:72</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_a9671b365fe9ebe98c4d7c1dda3633d7e"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#a9671b365fe9ebe98c4d7c1dda3633d7e">NObject::CGameObject::UpdateFastProc</a></div><div class="ttdeci">virtual void UpdateFastProc()</div><div class="ttdoc">処理順の制御のために、通常のUpdateより早く実行される更新関数</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:62</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_aa0532d7e35242c2a279404331820ec4c"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#aa0532d7e35242c2a279404331820ec4c">NObject::CGameObject::m_transform</a></div><div class="ttdeci">CTransform m_transform</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:82</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_aa34046adb0698a3533064c7b3f9cbc22"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#aa34046adb0698a3533064c7b3f9cbc22">NObject::CGameObject::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdoc">終了処理を行う(何度も実行できること)</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:29</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_aafa2ee04d4a01cfd0b2d875f9fb1f99d"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#aafa2ee04d4a01cfd0b2d875f9fb1f99d">NObject::CGameObject::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdoc">描画処理</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:56</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ac868ed3d84ef01884da62a5104c55966"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966">NObject::CGameObject::EObjectState</a></div><div class="ttdeci">EObjectState</div><div class="ttdoc">更新の制御状態を表す定数</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:12</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">NObject::CGameObject::EObjectState::UPDATE</a></div><div class="ttdeci">@ UPDATE</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:15</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028">NObject::CGameObject::EObjectState::LOAD</a></div><div class="ttdeci">@ LOAD</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:13</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">NObject::CGameObject::EObjectState::INIT</a></div><div class="ttdeci">@ INIT</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:14</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ad728b6ed026185583ce27041d2b7b08f"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#ad728b6ed026185583ce27041d2b7b08f">NObject::CGameObject::CGameObject</a></div><div class="ttdeci">CGameObject()</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:7</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ad886ead881768ecf2df0ea072a85ba8c"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">NObject::CGameObject::GetTransform</a></div><div class="ttdeci">CTransform &amp; GetTransform()</div><div class="ttdoc">Transformを取得</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:39</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ae972af9c0b739cf9e802df174efe092a"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#ae972af9c0b739cf9e802df174efe092a">NObject::CGameObject::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新処理</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:38</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_aed62e95b20bfdd55f3c7114e1e41a358"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#aed62e95b20bfdd55f3c7114e1e41a358">NObject::CGameObject::UpdateProc</a></div><div class="ttdeci">virtual void UpdateProc()</div><div class="ttdoc">継承後の更新処理</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:65</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_aef389ac261cbf5e5898093a9ac06db66"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#aef389ac261cbf5e5898093a9ac06db66">NObject::CGameObject::SetIsActive</a></div><div class="ttdeci">void SetIsActive(const bool _state)</div><div class="ttdoc">有効状態を設定</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:33</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_af065ef0c257ad1b320686b6bb221925a"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#af065ef0c257ad1b320686b6bb221925a">NObject::CGameObject::m_objState</a></div><div class="ttdeci">EObjectState m_objState</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:81</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_af14b5482da4191a057aea2a87730e965"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#af14b5482da4191a057aea2a87730e965">NObject::CGameObject::RenderLateProc</a></div><div class="ttdeci">virtual void RenderLateProc()</div><div class="ttdoc">継承後の通常のタイミングより遅い描画</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:76</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html"><div class="ttname"><a href="class_n_object_1_1_c_transform.html">NObject::CTransform</a></div><div class="ttdoc">オブジェクトの位置や姿勢など、基本的な情報を保持するクラス</div><div class="ttdef"><b>Definition</b> Object_Transform.h:17</div></div>
+<div class="ttc" id="anamespace_n_object_html"><div class="ttname"><a href="namespace_n_object.html">NObject</a></div><div class="ttdoc">プレイヤークラスの内部クラスの実装</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_d6ba287663ed7708ac51b706a95a0abe.html">Object</a></li><li class="navelem"><a href="_object___game_object_8h.html">Object_GameObject.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

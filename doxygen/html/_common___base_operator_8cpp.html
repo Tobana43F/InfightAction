@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Common/Common_BaseOperator.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_common___base_operator_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Common_BaseOperator.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_common___base_operator_8h_source.html">Common_BaseOperator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_windows___include_8h_source.html">Windows\Windows_Include.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a699a668f8b9200c49f5b7e94ef22967e" id="r_a699a668f8b9200c49f5b7e94ef22967e"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#a699a668f8b9200c49f5b7e94ef22967e">operator new</a> (size_t _size, size_t _alignment, int _blockUse, const char *_fileName, int _lineNumber)  throw ()</td></tr>
+<tr class="memdesc:a699a668f8b9200c49f5b7e94ef22967e"><td class="mdescLeft">&#160;</td><td class="mdescRight">アライメントを指定できるプレースメントnew  <br /></td></tr>
+<tr class="memitem:ab155b161dc8a6aa00828b3c51d33a9ed" id="r_ab155b161dc8a6aa00828b3c51d33a9ed"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab155b161dc8a6aa00828b3c51d33a9ed">operator delete</a> (void *_p, size_t _alignment, int _blockUse, const char *_fileName, int _lineNumber)  throw ()</td></tr>
+<tr class="memdesc:ab155b161dc8a6aa00828b3c51d33a9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">プレースメントnewに対応したdelete  <br /></td></tr>
+<tr class="memitem:a4cbe6e5fc1e0ec0eb80d5462604f68d7" id="r_a4cbe6e5fc1e0ec0eb80d5462604f68d7"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#a4cbe6e5fc1e0ec0eb80d5462604f68d7">operator new[]</a> (size_t _size, size_t _alignment, int _blockUse, const char *_fileName, int _lineNumber)  throw ()</td></tr>
+<tr class="memdesc:a4cbe6e5fc1e0ec0eb80d5462604f68d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">アライメントを指定できるプレースメントnew[]  <br /></td></tr>
+<tr class="memitem:a0b07ef543a8e9c56a641324522a23ae5" id="r_a0b07ef543a8e9c56a641324522a23ae5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0b07ef543a8e9c56a641324522a23ae5">operator delete[]</a> (void *_p, size_t _alignment, int _blockUse, const char *_fileName, int _lineNumber)  throw ()</td></tr>
+<tr class="memdesc:a0b07ef543a8e9c56a641324522a23ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">プレースメントnewに対応したdelete[]  <br /></td></tr>
+<tr class="memitem:a667a375ffdc28f46a5e5cce29f93c8d5" id="r_a667a375ffdc28f46a5e5cce29f93c8d5"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#a667a375ffdc28f46a5e5cce29f93c8d5">operator new</a> (size_t _size)  throw ()</td></tr>
+<tr class="memdesc:a667a375ffdc28f46a5e5cce29f93c8d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">グローバルのnewのオーバーロード(他のライブラリから使用できるようにする)  <br /></td></tr>
+<tr class="memitem:ae7931ab42fcaab23bc7729128016a022" id="r_ae7931ab42fcaab23bc7729128016a022"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae7931ab42fcaab23bc7729128016a022">operator delete</a> (void *_p)  throw ()</td></tr>
+<tr class="memdesc:ae7931ab42fcaab23bc7729128016a022"><td class="mdescLeft">&#160;</td><td class="mdescRight">グローバルのdeleteのオーバーロード  <br /></td></tr>
+<tr class="memitem:a2e4e15490a22c6906005022d8df8d59d" id="r_a2e4e15490a22c6906005022d8df8d59d"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#a2e4e15490a22c6906005022d8df8d59d">operator new[]</a> (size_t _size)  throw ()</td></tr>
+<tr class="memdesc:a2e4e15490a22c6906005022d8df8d59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">グローバルのnew[]のオーバーロード(他のライブラリから使用できるようにする)  <br /></td></tr>
+<tr class="memitem:abdf4fb64472d959230a631af7836eb73" id="r_abdf4fb64472d959230a631af7836eb73"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abdf4fb64472d959230a631af7836eb73">operator delete[]</a> (void *_p)  throw ()</td></tr>
+<tr class="memdesc:abdf4fb64472d959230a631af7836eb73"><td class="mdescLeft">&#160;</td><td class="mdescRight">グローバルのdelete[]のオーバーロード  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="ae7931ab42fcaab23bc7729128016a022" name="ae7931ab42fcaab23bc7729128016a022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7931ab42fcaab23bc7729128016a022">&#9670;&#160;</a></span>operator delete() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operator delete </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>_p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2">&#160;)</td><td></td><td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>グローバルのdeleteのオーバーロード </p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{</div>
+<div class="line"><span class="lineno">   71</span>    _aligned_free_dbg(_p);</div>
+<div class="line"><span class="lineno">   72</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab155b161dc8a6aa00828b3c51d33a9ed" name="ab155b161dc8a6aa00828b3c51d33a9ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab155b161dc8a6aa00828b3c51d33a9ed">&#9670;&#160;</a></span>operator delete() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operator delete </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>_p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_alignment</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_blockUse</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_lineNumber</em></span>&#160;)</td>
+        </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2">&#160;)</td><td></td><td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>プレースメントnewに対応したdelete </p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{</div>
+<div class="line"><span class="lineno">   25</span>    UNREFERENCED_PARAMETER(_alignment);</div>
+<div class="line"><span class="lineno">   26</span>    UNREFERENCED_PARAMETER(_blockUse);</div>
+<div class="line"><span class="lineno">   27</span>    UNREFERENCED_PARAMETER(_fileName);</div>
+<div class="line"><span class="lineno">   28</span>    UNREFERENCED_PARAMETER(_lineNumber);</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    _aligned_free_dbg(_p);</div>
+<div class="line"><span class="lineno">   31</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abdf4fb64472d959230a631af7836eb73" name="abdf4fb64472d959230a631af7836eb73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf4fb64472d959230a631af7836eb73">&#9670;&#160;</a></span>operator delete[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operator delete[] </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>_p</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2">&#160;)</td><td></td><td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>グローバルのdelete[]のオーバーロード </p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>                                         {</div>
+<div class="line"><span class="lineno">   80</span>    _aligned_free_dbg(_p);</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0b07ef543a8e9c56a641324522a23ae5" name="a0b07ef543a8e9c56a641324522a23ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b07ef543a8e9c56a641324522a23ae5">&#9670;&#160;</a></span>operator delete[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void operator delete[] </td>
+          <td>(</td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>_p</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_alignment</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_blockUse</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_lineNumber</em></span>&#160;)</td>
+        </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2">&#160;)</td><td></td><td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>プレースメントnewに対応したdelete[] </p>
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
+<div class="line"><span class="lineno">   53</span>    UNREFERENCED_PARAMETER(_alignment);</div>
+<div class="line"><span class="lineno">   54</span>    UNREFERENCED_PARAMETER(_blockUse);</div>
+<div class="line"><span class="lineno">   55</span>    UNREFERENCED_PARAMETER(_fileName);</div>
+<div class="line"><span class="lineno">   56</span>    UNREFERENCED_PARAMETER(_lineNumber);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    _aligned_free_dbg(_p);</div>
+<div class="line"><span class="lineno">   59</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a667a375ffdc28f46a5e5cce29f93c8d5" name="a667a375ffdc28f46a5e5cce29f93c8d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a667a375ffdc28f46a5e5cce29f93c8d5">&#9670;&#160;</a></span>operator new() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * operator new </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2">&#160;)</td><td></td><td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>グローバルのnewのオーバーロード(他のライブラリから使用できるようにする) </p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordtype">void</span>* p = _aligned_malloc_dbg(_size, 16, <span class="stringliteral">&quot;Global operator new&quot;</span>, 0);</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">return</span> p;</div>
+<div class="line"><span class="lineno">   67</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a699a668f8b9200c49f5b7e94ef22967e" name="a699a668f8b9200c49f5b7e94ef22967e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699a668f8b9200c49f5b7e94ef22967e">&#9670;&#160;</a></span>operator new() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * operator new </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_alignment</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_blockUse</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_lineNumber</em></span>&#160;)</td>
+        </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2">&#160;)</td><td></td><td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アライメントを指定できるプレースメントnew </p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>{</div>
+<div class="line"><span class="lineno">   12</span>    UNREFERENCED_PARAMETER(_blockUse);</div>
+<div class="line"><span class="lineno">   13</span>    <span class="keywordtype">void</span>* p = _aligned_malloc_dbg(_size, _alignment, _fileName, _lineNumber);</div>
+<div class="line"><span class="lineno">   14</span>    assert(p != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   15</span>    <span class="keywordflow">return</span> p;</div>
+<div class="line"><span class="lineno">   16</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2e4e15490a22c6906005022d8df8d59d" name="a2e4e15490a22c6906005022d8df8d59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e4e15490a22c6906005022d8df8d59d">&#9670;&#160;</a></span>operator new[]() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * operator new[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2">&#160;)</td><td></td><td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>グローバルのnew[]のオーバーロード(他のライブラリから使用できるようにする) </p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                                           {</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordtype">void</span>* p = _aligned_malloc_dbg(_size, 16, <span class="stringliteral">&quot;Global operator new&quot;</span>, 0);</div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">return</span> p;</div>
+<div class="line"><span class="lineno">   77</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4cbe6e5fc1e0ec0eb80d5462604f68d7" name="a4cbe6e5fc1e0ec0eb80d5462604f68d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cbe6e5fc1e0ec0eb80d5462604f68d7">&#9670;&#160;</a></span>operator new[]() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * operator new[] </td>
+          <td>(</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_alignment</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_blockUse</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_lineNumber</em></span>&#160;)</td>
+        </tr>
+        <tr>
+          <td align="right">throw </td><td>(</td><td colspan="2">&#160;)</td><td></td><td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アライメントを指定できるプレースメントnew[] </p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{</div>
+<div class="line"><span class="lineno">   40</span>    UNREFERENCED_PARAMETER(_blockUse);</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordtype">void</span>* p = _aligned_malloc_dbg(_size, _alignment, _fileName, _lineNumber);</div>
+<div class="line"><span class="lineno">   42</span>    assert(p != <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">return</span> p;</div>
+<div class="line"><span class="lineno">   44</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_4d143146e7b59ee2f3377afcac1d64f0.html">Common</a></li><li class="navelem"><a href="_common___base_operator_8cpp.html">Common_BaseOperator.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

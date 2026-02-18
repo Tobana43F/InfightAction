@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['c_0',['c',['../struct_n_collision_1_1_s_plane.html#ac9f8a3b2de43b998d679893da2722efb',1,'NCollision::SPlane']]],
+  ['center_1',['center',['../struct_n_collision_1_1_s_plane_info.html#a30dec8746dc137bdf29b1b68d702b21f',1,'NCollision::SPlaneInfo::center'],['../struct_o_b_b_b_b_o_x.html#ac76a945ad4986165d3f8dd0cd47a47ce',1,'OBBBBOX::center']]],
+  ['centerpos_2',['centerPos',['../struct_n_collision_1_1_s_sphere.html#a6179a508944ae05f2e9aea3c69e57a9b',1,'NCollision::SSphere::centerPos'],['../struct_n_collision_1_1_s_o_b_box.html#ae4fb6963d0022242833d0680af1d8e9b',1,'NCollision::SOBBox::centerPos']]],
+  ['cluster_5fmax_3',['CLUSTER_MAX',['../class_n_model_1_1_c_object.html#a47aa737ad7406951f1d04491d30f025e',1,'NModel::CObject']]],
+  ['clustercount_4',['clusterCount',['../struct_n_model_1_1_s_fbx_mesh_node.html#aa8c7cbdae891db902fcbfacb06bd3083',1,'NModel::SFbxMeshNode']]],
+  ['col_5',['col',['../struct_n_graphic_1_1_s_default_vertex.html#a3b12da4467ac2c13d0e5e20258b4f00d',1,'NGraphic::SDefaultVertex']]],
+  ['collidepos_6',['collidePos',['../struct_n_game_1_1_s_damage_param.html#a8397cfff5fde828a149cae2b12e276ed',1,'NGame::SDamageParam']]],
+  ['collisionid_7',['collisionID',['../struct_n_collision_1_1_c_proc_1_1_s_collide_data.html#ae169a2f35066d12714a4471e6b1795da',1,'NCollision::CProc::SCollideData']]],
+  ['colors_8',['colors',['../struct_n_polygon_1_1_s_data.html#a52571dfb165199aca7f9c23568ca66c9',1,'NPolygon::SData']]],
+  ['combinedtransformmatrix_9',['CombinedTransformMatrix',['../struct_n_model_1_1_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html#a50d3f6bb2e89d8ad9792d50220dbbc85',1,'NModel::D3DXFRAME_DERIVED']]],
+  ['constantmaterial_10',['constantMaterial',['../struct_n_model_1_1_s_material.html#a819aed94bc80ac0cc11933c09dbc810b',1,'NModel::SMaterial']]],
+  ['cullmodel_11',['cullModel',['../struct_n_polygon_1_1_s_data.html#a4cff2ea30351a86c2cb67c651606ebd0',1,'NPolygon::SData']]],
+  ['currentcenter_12',['Currentcenter',['../struct_o_b_b_b_b_o_x.html#ae84e5bcb96d4d9e581676a9b5ffd151d',1,'OBBBBOX']]],
+  ['currentvecaxisx_13',['CurrentvecAxisX',['../struct_o_b_b_b_b_o_x.html#ab7396157e18eb849ebeec609df0c1285',1,'OBBBBOX']]],
+  ['currentvecaxisy_14',['CurrentvecAxisY',['../struct_o_b_b_b_b_o_x.html#a9826d794e52abc22b3b26b0911c3065a',1,'OBBBBOX']]],
+  ['currentvecaxisz_15',['CurrentvecAxisZ',['../struct_o_b_b_b_b_o_x.html#a3000ba14b590b60eb92b77a5d5867bd7',1,'OBBBBOX']]]
+];

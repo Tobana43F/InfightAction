@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NAsset::CFactory&lt; TAsset, TInherit &gt; クラステンプレート</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_asset_1_1_c_factory.html','','class_n_asset_1_1_c_factory-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NAsset::CFactory&lt; TAsset, TInherit &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>アセットの生成と解放を管理する基底クラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_asset___factory_8h_source.html">Asset_Factory.h</a>&gt;</code></p>
+<div class="dynheader">
+NAsset::CFactory&lt; TAsset, TInherit &gt; の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_asset_1_1_c_factory.png" usemap="#NAsset_3A_3ACFactory_3C_20TAsset_2C_20TInherit_20_3E_map" alt=""/>
+  <map id="NAsset_3A_3ACFactory_3C_20TAsset_2C_20TInherit_20_3E_map" name="NAsset_3A_3ACFactory_3C_20TAsset_2C_20TInherit_20_3E_map">
+<area href="class_n_util_1_1_c_singleton.html" alt="NUtil::CSingleton&lt; TInherit &gt;" shape="rect" coords="0,0,224,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a4a6509d6bcd7f624a19f44a25380671e" id="r_a4a6509d6bcd7f624a19f44a25380671e"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a4a6509d6bcd7f624a19f44a25380671e">Key</a> = std::string</td></tr>
+<tr class="memdesc:a4a6509d6bcd7f624a19f44a25380671e"><td class="mdescLeft">&#160;</td><td class="mdescRight">キーの型  <br /></td></tr>
+<tr class="memitem:a42a8f39a038c716e5e95b31ea67b8ece" id="r_a42a8f39a038c716e5e95b31ea67b8ece"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a42a8f39a038c716e5e95b31ea67b8ece">SPAsset</a> = std::shared_ptr&lt;TAsset&gt;</td></tr>
+<tr class="memdesc:a42a8f39a038c716e5e95b31ea67b8ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">アセットのシェアードポインタ型  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a213af16b62f4f5fe5fa7b54b808952ce" id="r_a213af16b62f4f5fe5fa7b54b808952ce"><td class="memItemLeft"><a class="el" href="#a42a8f39a038c716e5e95b31ea67b8ece">SPAsset</a>&#160;</td><td class="memItemRight"><a class="el" href="#a213af16b62f4f5fe5fa7b54b808952ce">Load</a> (<a class="el" href="#a4a6509d6bcd7f624a19f44a25380671e">Key</a> _key)</td></tr>
+<tr class="memdesc:a213af16b62f4f5fe5fa7b54b808952ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">アセットを取得する  <br /></td></tr>
+<tr class="memitem:a224f707d4e9b82bdb7eb7b2c083ed845" id="r_a224f707d4e9b82bdb7eb7b2c083ed845"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a224f707d4e9b82bdb7eb7b2c083ed845">Optimize</a> ()</td></tr>
+<tr class="memdesc:a224f707d4e9b82bdb7eb7b2c083ed845"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用されていないアセットを開放する  <br /></td></tr>
+<tr class="memitem:ac2a0ad914847c7eccce6150538b037cd" id="r_ac2a0ad914847c7eccce6150538b037cd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac2a0ad914847c7eccce6150538b037cd">DumpRefCount</a> (const char *_fileName)</td></tr>
+<tr class="memdesc:ac2a0ad914847c7eccce6150538b037cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">アセットのロード状況をダンプする  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab4fbb48395dba9c37f78a265ea0ad8cb" id="r_ab4fbb48395dba9c37f78a265ea0ad8cb"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#ab4fbb48395dba9c37f78a265ea0ad8cb">LoadAsset</a> (<a class="el" href="#a42a8f39a038c716e5e95b31ea67b8ece">SPAsset</a> &amp;_dest, const <a class="el" href="#a4a6509d6bcd7f624a19f44a25380671e">Key</a> &amp;_key) <a class="el" href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a></td></tr>
+<tr class="memdesc:ab4fbb48395dba9c37f78a265ea0ad8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">アセットのロードを行う  <br /></td></tr>
+<tr class="memitem:a0e8ab8646ad905e42be497f5b672f2fd" id="r_a0e8ab8646ad905e42be497f5b672f2fd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a0e8ab8646ad905e42be497f5b672f2fd">Release</a> (<a class="el" href="#a42a8f39a038c716e5e95b31ea67b8ece">SPAsset</a> &amp;_src, const <a class="el" href="#a4a6509d6bcd7f624a19f44a25380671e">Key</a> &amp;_key)</td></tr>
+<tr class="memdesc:a0e8ab8646ad905e42be497f5b672f2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">アセットの解放処理  <br /></td></tr>
+<tr class="memitem:a7f3ec46065a1a50c36fa49847be52d04" id="r_a7f3ec46065a1a50c36fa49847be52d04"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7f3ec46065a1a50c36fa49847be52d04">CFactory</a> ()</td></tr>
+<tr class="memitem:acd2fee018762f99346871490e04c6163" id="r_acd2fee018762f99346871490e04c6163"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#acd2fee018762f99346871490e04c6163">~CFactory</a> ()</td></tr>
+<tr class="inherit_header pro_methods_class_n_util_1_1_c_singleton"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_n_util_1_1_c_singleton')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_util_1_1_c_singleton.html">NUtil::CSingleton&lt; TInherit &gt;</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a97cfcf92b87fb2ccd8af91ba4da711a0 inherit pro_methods_class_n_util_1_1_c_singleton" id="r_a97cfcf92b87fb2ccd8af91ba4da711a0"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_n_util_1_1_c_singleton.html#a97cfcf92b87fb2ccd8af91ba4da711a0">CSingleton</a> ()</td></tr>
+<tr class="memitem:a65e2b0370638610dff53a0de4ec2bde4 inherit pro_methods_class_n_util_1_1_c_singleton" id="r_a65e2b0370638610dff53a0de4ec2bde4"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_n_util_1_1_c_singleton.html#a65e2b0370638610dff53a0de4ec2bde4">~CSingleton</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:acb12fcdca0be7b9a30b4731c98f259c6" id="r_acb12fcdca0be7b9a30b4731c98f259c6"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#acb12fcdca0be7b9a30b4731c98f259c6">m_bindDirectory</a></td></tr>
+<tr class="memitem:a4b6803216a38b83d31245fe2a5a53d20" id="r_a4b6803216a38b83d31245fe2a5a53d20"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a4b6803216a38b83d31245fe2a5a53d20">m_dumpFileExtension</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a0086aaf30891dcfbda39b6011c17ae28" id="r_a0086aaf30891dcfbda39b6011c17ae28"><td class="memItemLeft">std::map&lt; <a class="el" href="#a4a6509d6bcd7f624a19f44a25380671e">Key</a>, <a class="el" href="#a42a8f39a038c716e5e95b31ea67b8ece">SPAsset</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
+フレンド</h2></td></tr>
+<tr class="memitem:aabd2c6805408875ff5fbcb7777e7d0f9" id="r_aabd2c6805408875ff5fbcb7777e7d0f9"><td class="memItemLeft">class&#160;</td><td class="memItemRight"><a class="el" href="#aabd2c6805408875ff5fbcb7777e7d0f9">NUtil::CSingleton&lt; CFactory&lt; TAsset, TInherit &gt; &gt;</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_n_util_1_1_c_singleton"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_class_n_util_1_1_c_singleton')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_util_1_1_c_singleton.html">NUtil::CSingleton&lt; TInherit &gt;</a> に属する継承静的公開メンバ関数</td></tr>
+<tr class="memitem:a08cc988d79fa3297df6ede328e44a770 inherit pub_static_methods_class_n_util_1_1_c_singleton" id="r_a08cc988d79fa3297df6ede328e44a770"><td class="memItemLeft">static TInherit &amp;&#160;</td><td class="memItemRight"><a class="el" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">GetInst</a> ()</td></tr>
+<tr class="memdesc:a08cc988d79fa3297df6ede328e44a770 inherit pub_static_methods_class_n_util_1_1_c_singleton"><td class="mdescLeft">&#160;</td><td class="mdescRight">インスタンスの取得  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename TAsset, class TInherit&gt;<br />
+class NAsset::CFactory&lt; TAsset, TInherit &gt;</div><p>アセットの生成と解放を管理する基底クラス </p>
+<p>アセットを管理する1つのディレクトリを指定し、 そのディレクトリからの相対パスをKeyとする。 ※ 相対パスは [BindDirectory/]AssetDirectory/Asset.xxx の形式で記述 </p><dl class="section note"><dt>覚え書き</dt><dd>使用するときは必ずアセットへのスマートポインタで参照カウントの整合性をとること </dd></dl>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a4a6509d6bcd7f624a19f44a25380671e" name="a4a6509d6bcd7f624a19f44a25380671e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a6509d6bcd7f624a19f44a25380671e">&#9670;&#160;</a></span>Key</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::Key = std::string</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>キーの型 </p>
+
+</div>
+</div>
+<a id="a42a8f39a038c716e5e95b31ea67b8ece" name="a42a8f39a038c716e5e95b31ea67b8ece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a8f39a038c716e5e95b31ea67b8ece">&#9670;&#160;</a></span>SPAsset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::SPAsset = std::shared_ptr&lt;TAsset&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アセットのシェアードポインタ型 </p>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a7f3ec46065a1a50c36fa49847be52d04" name="a7f3ec46065a1a50c36fa49847be52d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3ec46065a1a50c36fa49847be52d04">&#9670;&#160;</a></span>CFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::CFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  168</span>                   : </div>
+<div class="line"><span class="lineno">  169</span>            <a class="code hl_variable" href="#acb12fcdca0be7b9a30b4731c98f259c6">m_bindDirectory</a>(<span class="stringliteral">&quot;&quot;</span>),</div>
+<div class="line"><span class="lineno">  170</span>            <a class="code hl_variable" href="#a4b6803216a38b83d31245fe2a5a53d20">m_dumpFileExtension</a>(<span class="stringliteral">&quot;AssetFactoryDump&quot;</span>){ }</div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a4b6803216a38b83d31245fe2a5a53d20"><div class="ttname"><a href="#a4b6803216a38b83d31245fe2a5a53d20">NAsset::CFactory::m_dumpFileExtension</a></div><div class="ttdeci">std::string m_dumpFileExtension</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:149</div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_acb12fcdca0be7b9a30b4731c98f259c6"><div class="ttname"><a href="#acb12fcdca0be7b9a30b4731c98f259c6">NAsset::CFactory::m_bindDirectory</a></div><div class="ttdeci">std::string m_bindDirectory</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:148</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acd2fee018762f99346871490e04c6163" name="acd2fee018762f99346871490e04c6163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2fee018762f99346871490e04c6163">&#9670;&#160;</a></span>~CFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::~<a class="el" href="#a7f3ec46065a1a50c36fa49847be52d04">CFactory</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  171</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="ac2a0ad914847c7eccce6150538b037cd" name="ac2a0ad914847c7eccce6150538b037cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2a0ad914847c7eccce6150538b037cd">&#9670;&#160;</a></span>DumpRefCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::DumpRefCount </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アセットのロード状況をダンプする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_fileName</td><td>書き込む(作成する)ファイル名 ※拡張子は記述しない </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>        {</div>
+<div class="line"><span class="lineno">   95</span>            <span class="comment">// ディレクトリにバインドされていることを確認</span></div>
+<div class="line"><span class="lineno">   96</span>            <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#acb12fcdca0be7b9a30b4731c98f259c6">m_bindDirectory</a>.compare(<span class="stringliteral">&quot;&quot;</span>) != 0);</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">BUF_SIZE</a> = 256;</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordtype">char</span> <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">prevDirectory</a>[<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">BUF_SIZE</a>];</div>
+<div class="line"><span class="lineno">  100</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">GetCurrentDirectory</a>(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">BUF_SIZE</a>, <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">prevDirectory</a>);</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>            <span class="comment">// 書き込む(作成)するファイル名を作成</span></div>
+<div class="line"><span class="lineno">  103</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::string</a> <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">outDirectory</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  104</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">outDirectory</a> += <span class="stringliteral">&quot;Output/Dump/AssetFactory/&quot;</span>;</div>
+<div class="line"><span class="lineno">  105</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">SetCurrentDirectory</a>(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">outDirectory</a>.data());</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::string</a> <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">fileName</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  108</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">fileName</a> += <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">_fileName</a>;</div>
+<div class="line"><span class="lineno">  109</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">fileName</a> += <span class="stringliteral">&quot;.&quot;</span>;</div>
+<div class="line"><span class="lineno">  110</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">fileName</a> += <a class="code hl_variable" href="#a4b6803216a38b83d31245fe2a5a53d20">m_dumpFileExtension</a>;</div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::ofstream</a>   <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">file</a>;</div>
+<div class="line"><span class="lineno">  113</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">file</a>.open(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">fileName</a>.data(), <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">file</a>.out | <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">file</a>.trunc);</div>
+<div class="line"><span class="lineno">  114</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">file</a> &lt;&lt; <span class="stringliteral">&quot;バインドされているディレクトリ : &quot;</span> &lt;&lt; <a class="code hl_variable" href="#acb12fcdca0be7b9a30b4731c98f259c6">m_bindDirectory</a> &lt;&lt; <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  115</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">file</a> &lt;&lt; <span class="stringliteral">&quot;管理中のアセット数 : &quot;</span> &lt;&lt; <a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.size() &lt;&lt; <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  116</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">file</a> &lt;&lt; <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>            <span class="comment">//  コンテナ内をすべて走査</span></div>
+<div class="line"><span class="lineno">  119</span>            <span class="keyword">auto</span>     <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a> = <a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.begin();</div>
+<div class="line"><span class="lineno">  120</span>            <span class="keywordflow">while</span> (<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a> != <a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.end()) {</div>
+<div class="line"><span class="lineno">  121</span>                <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::string</a> <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">key</a> = <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a>-&gt;first;</div>
+<div class="line"><span class="lineno">  122</span>                <span class="keywordtype">int</span>         <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">refCount</a> = 0;</div>
+<div class="line"><span class="lineno">  123</span>                </div>
+<div class="line"><span class="lineno">  124</span>                <span class="comment">// 存在しない場合は使用されていないので無視</span></div>
+<div class="line"><span class="lineno">  125</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.count(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">key</a>) &lt;= 0) {</div>
+<div class="line"><span class="lineno">  126</span>                    <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">refCount</a> = 0;</div>
+<div class="line"><span class="lineno">  127</span>                }</div>
+<div class="line"><span class="lineno">  128</span>                <span class="comment">// 存在している場合は参照カウントが１(自のクラスのみ参照)の場合は削除する</span></div>
+<div class="line"><span class="lineno">  129</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  130</span>                    <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">refCount</a> = <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a>-&gt;second.use_count();</div>
+<div class="line"><span class="lineno">  131</span>                }</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>                <span class="comment">// 出力</span></div>
+<div class="line"><span class="lineno">  134</span>                <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">file</a> &lt;&lt; <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::setw</a>(30) &lt;&lt; <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::left</a> &lt;&lt; <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">key</a> &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">refCount</a> &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::endl</a>;</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>                <span class="comment">// 次へ</span></div>
+<div class="line"><span class="lineno">  137</span>                <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a>++;</div>
+<div class="line"><span class="lineno">  138</span>            }</div>
+<div class="line"><span class="lineno">  139</span> </div>
+<div class="line"><span class="lineno">  140</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">file</a>.close();</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>            <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">SetCurrentDirectory</a>(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">prevDirectory</a>);</div>
+<div class="line"><span class="lineno">  143</span>        }</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a></div><div class="ttdoc">アセットの生成と解放を管理する基底クラス</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:21</div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a0086aaf30891dcfbda39b6011c17ae28"><div class="ttname"><a href="#a0086aaf30891dcfbda39b6011c17ae28">NAsset::CFactory::m_assetArray</a></div><div class="ttdeci">std::map&lt; Key, SPAsset &gt; m_assetArray</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:165</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a213af16b62f4f5fe5fa7b54b808952ce" name="a213af16b62f4f5fe5fa7b54b808952ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a213af16b62f4f5fe5fa7b54b808952ce">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a42a8f39a038c716e5e95b31ea67b8ece">SPAsset</a> <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a4a6509d6bcd7f624a19f44a25380671e">Key</a></td>          <td class="paramname"><span class="paramname"><em>_key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アセットを取得する </p>
+<p>読み込まれていない場合は読み込む そのディレクトリからの相対パスをKeyとする。 ※ 相対パスは [BindDirectory/]AssetDirectory/Asset.xxx の形式で記述 </p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>        {</div>
+<div class="line"><span class="lineno">   39</span>            <span class="comment">// ディレクトリにバインドされていることを確認</span></div>
+<div class="line"><span class="lineno">   40</span>            <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#acb12fcdca0be7b9a30b4731c98f259c6">m_bindDirectory</a>.compare(<span class="stringliteral">&quot;&quot;</span>) != 0);</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>            <span class="comment">//  アセットが読み込まれていない場合は読み込む</span></div>
+<div class="line"><span class="lineno">   43</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.count(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">_key</a>) &lt;= 0) {</div>
+<div class="line"><span class="lineno">   44</span>                <a class="code hl_typedef" href="#a42a8f39a038c716e5e95b31ea67b8ece">SPAsset</a> <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">pAsset</a> = <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::make_shared&lt;TAsset&gt;</a>();</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>                <span class="keywordtype">bool</span> <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">sts</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   47</span>                <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">sts</a> = <a class="code hl_function" href="#ab4fbb48395dba9c37f78a265ea0ad8cb">LoadAsset</a>(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">pAsset</a>, <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">_key</a>);</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>                <span class="comment">// 読み込み失敗時はエラーメッセージを表示し、例外処理。</span></div>
+<div class="line"><span class="lineno">   50</span>                <span class="keywordflow">if</span> (!<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">sts</a>) {</div>
+<div class="line"><span class="lineno">   51</span>                    <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::string</a> <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">str</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">   52</span>                    <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">str</a> += <span class="stringliteral">&quot;アセットの読み込みに失敗しました。\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   53</span>                    <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">str</a> += <span class="stringliteral">&quot;BindDirectory : &quot;</span> + <a class="code hl_variable" href="#acb12fcdca0be7b9a30b4731c98f259c6">m_bindDirectory</a> + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   54</span>                    <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">str</a> += <span class="stringliteral">&quot;Key(FilePath) : &quot;</span> + <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">_key</a> + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   55</span>                    <a class="code hl_define" href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a>(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">str</a>.data());</div>
+<div class="line"><span class="lineno">   56</span>                }</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>                <a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.emplace(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">_key</a>, <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">pAsset</a>);</div>
+<div class="line"><span class="lineno">   59</span>            }</div>
+<div class="line"><span class="lineno">   60</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>[<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">_key</a>];</div>
+<div class="line"><span class="lineno">   61</span>        }</div>
+<div class="ttc" id="a_system___error_8h_html_a1ef9aee6b1a8c442c300a378918a4d5f"><div class="ttname"><a href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a></div><div class="ttdeci">#define ErrorEx(_pMessage)</div><div class="ttdoc">ファイル名と行の情報を付加するマクロ</div><div class="ttdef"><b>Definition</b> System_Error.h:5</div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a42a8f39a038c716e5e95b31ea67b8ece"><div class="ttname"><a href="#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CFactory::SPAsset</a></div><div class="ttdeci">std::shared_ptr&lt; TAsset &gt; SPAsset</div><div class="ttdoc">アセットのシェアードポインタ型</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:30</div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_ab4fbb48395dba9c37f78a265ea0ad8cb"><div class="ttname"><a href="#ab4fbb48395dba9c37f78a265ea0ad8cb">NAsset::CFactory::LoadAsset</a></div><div class="ttdeci">virtual bool LoadAsset(SPAsset &amp;_dest, const Key &amp;_key) PURE_FUNC</div><div class="ttdoc">アセットのロードを行う</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab4fbb48395dba9c37f78a265ea0ad8cb" name="ab4fbb48395dba9c37f78a265ea0ad8cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fbb48395dba9c37f78a265ea0ad8cb">&#9670;&#160;</a></span>LoadAsset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::LoadAsset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a42a8f39a038c716e5e95b31ea67b8ece">SPAsset</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_dest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a4a6509d6bcd7f624a19f44a25380671e">Key</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_key</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アセットのロードを行う </p>
+<dl class="section return"><dt>戻り値</dt><dd>ロード可否状態(true : 成功, false : 失敗) </dd></dl>
+
+<p><a class="el" href="class_n_asset_1_1_c_json_factory.html#a1d8b2b06da0a85b3ad797c3bbe03648c">NAsset::CJsonFactory</a>, <a class="el" href="class_n_asset_1_1_c_model_factory.html#a42aff4e65dc2c22e9b0e53553b7dc167">NAsset::CModelFactory</a>, <a class="el" href="class_n_asset_1_1_c_shader_factory.html#a90865553fa646d5f426d1e6a822f046d">NAsset::CShaderFactory</a>, <a class="el" href="class_n_asset_1_1_c_texture_factory.html#aaee1dc659962dc80b3a436975b5fe9ff">NAsset::CTextureFactory</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a224f707d4e9b82bdb7eb7b2c083ed845" name="a224f707d4e9b82bdb7eb7b2c083ed845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a224f707d4e9b82bdb7eb7b2c083ed845">&#9670;&#160;</a></span>Optimize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::Optimize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>使用されていないアセットを開放する </p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>        {</div>
+<div class="line"><span class="lineno">   66</span>            <span class="comment">// ディレクトリにバインドされていることを確認</span></div>
+<div class="line"><span class="lineno">   67</span>            <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#acb12fcdca0be7b9a30b4731c98f259c6">m_bindDirectory</a>.compare(<span class="stringliteral">&quot;&quot;</span>) != 0);</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>            <span class="comment">//  コンテナ内をすべて走査</span></div>
+<div class="line"><span class="lineno">   70</span>            <span class="keyword">auto</span> <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a> = <a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.begin();</div>
+<div class="line"><span class="lineno">   71</span>            <span class="keywordflow">while</span> (<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a> != <a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.end()) {</div>
+<div class="line"><span class="lineno">   72</span>                <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">std::string</a> <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">key</a> = <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a>-&gt;first;</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>                <span class="comment">// 存在しない場合は使用されていないので無視</span></div>
+<div class="line"><span class="lineno">   75</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.count(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">key</a>) &lt;= 0) {</div>
+<div class="line"><span class="lineno">   76</span>                    <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a>++;</div>
+<div class="line"><span class="lineno">   77</span>                }</div>
+<div class="line"><span class="lineno">   78</span>                <span class="comment">// 存在している場合は参照カウントが１(自のクラスのみ参照)の場合は削除する</span></div>
+<div class="line"><span class="lineno">   79</span>                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a>-&gt;second.use_count() == 1) {</div>
+<div class="line"><span class="lineno">   80</span>                    <a class="code hl_function" href="#a0e8ab8646ad905e42be497f5b672f2fd">Release</a>(<a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.at(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">key</a>), <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">key</a>);</div>
+<div class="line"><span class="lineno">   81</span>                    <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a> = <a class="code hl_variable" href="#a0086aaf30891dcfbda39b6011c17ae28">m_assetArray</a>.erase(<a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a>);  <span class="comment">// 削除し、次のイテレータを取得</span></div>
+<div class="line"><span class="lineno">   82</span>                }</div>
+<div class="line"><span class="lineno">   83</span>                <span class="comment">// 使用されている場合は無視する</span></div>
+<div class="line"><span class="lineno">   84</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   85</span>                    <a class="code hl_class" href="class_n_asset_1_1_c_factory.html">itr</a>++;</div>
+<div class="line"><span class="lineno">   86</span>                }</div>
+<div class="line"><span class="lineno">   87</span>            }</div>
+<div class="line"><span class="lineno">   88</span>        }</div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a0e8ab8646ad905e42be497f5b672f2fd"><div class="ttname"><a href="#a0e8ab8646ad905e42be497f5b672f2fd">NAsset::CFactory::Release</a></div><div class="ttdeci">virtual void Release(SPAsset &amp;_src, const Key &amp;_key)</div><div class="ttdoc">アセットの解放処理</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:159</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0e8ab8646ad905e42be497f5b672f2fd" name="a0e8ab8646ad905e42be497f5b672f2fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e8ab8646ad905e42be497f5b672f2fd">&#9670;&#160;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::Release </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a42a8f39a038c716e5e95b31ea67b8ece">SPAsset</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_src</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a4a6509d6bcd7f624a19f44a25380671e">Key</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_key</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アセットの解放処理 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>明示的に解放処理が必要な場合のみ、オーバーライドする。 </dd></dl>
+
+<p><a class="el" href="class_n_asset_1_1_c_shader_factory.html#a93e31dd12ad55d62a6760cc2cb9c1f12">NAsset::CShaderFactory</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>                              { }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">フレンドと関連関数の詳解</h2>
+<a id="aabd2c6805408875ff5fbcb7777e7d0f9" name="aabd2c6805408875ff5fbcb7777e7d0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd2c6805408875ff5fbcb7777e7d0f9">&#9670;&#160;</a></span>NUtil::CSingleton&lt; CFactory&lt; TAsset, TInherit &gt; &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="class_n_util_1_1_c_singleton.html">NUtil::CSingleton</a>&lt; <a class="el" href="#a7f3ec46065a1a50c36fa49847be52d04">CFactory</a>&lt; TAsset, TInherit &gt; &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a0086aaf30891dcfbda39b6011c17ae28" name="a0086aaf30891dcfbda39b6011c17ae28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0086aaf30891dcfbda39b6011c17ae28">&#9670;&#160;</a></span>m_assetArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="#a4a6509d6bcd7f624a19f44a25380671e">Key</a>, <a class="el" href="#a42a8f39a038c716e5e95b31ea67b8ece">SPAsset</a>&gt; <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::m_assetArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb12fcdca0be7b9a30b4731c98f259c6" name="acb12fcdca0be7b9a30b4731c98f259c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb12fcdca0be7b9a30b4731c98f259c6">&#9670;&#160;</a></span>m_bindDirectory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::m_bindDirectory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b6803216a38b83d31245fe2a5a53d20" name="a4b6803216a38b83d31245fe2a5a53d20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6803216a38b83d31245fe2a5a53d20">&#9670;&#160;</a></span>m_dumpFileExtension</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TAsset, class TInherit&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="class_n_asset_1_1_c_factory.html">NAsset::CFactory</a>&lt; TAsset, TInherit &gt;::m_dumpFileExtension</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Asset/Factory/<a class="el" href="_asset___factory_8h_source.html">Asset_Factory.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_asset.html">NAsset</a></li><li class="navelem"><a href="class_n_asset_1_1_c_factory.html">CFactory</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

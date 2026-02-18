@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Collision/Collision_Common.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_collision___common_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Collision_Common.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_collision___common_8h_source.html">Collision_Common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_math___common_8h_source.html">Math\Math_Common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_math___util_8h_source.html">Math\Math_Util.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_debug___message_8h_source.html">Debug\Debug_Message.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:NCollision" id="r_NCollision"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_collision.html">NCollision</a></td></tr>
+<tr class="memdesc:namespace_n_collision"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定に使用する定義 <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:afa09af18e342dc4fd78faa32173b46b7" id="r_afa09af18e342dc4fd78faa32173b46b7"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_collision.html#afa09af18e342dc4fd78faa32173b46b7">NCollision::CheckPointAndTriangle</a> (const float3 &amp;_rP0, const float3 &amp;_rP1, const float3 &amp;_rP2, const float3 &amp;_rPoint)</td></tr>
+<tr class="memdesc:afa09af18e342dc4fd78faa32173b46b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">点と、三角形の判定  <br /></td></tr>
+<tr class="memitem:a979e2216f17014600cd67ef7eb7c2aba" id="r_a979e2216f17014600cd67ef7eb7c2aba"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_collision.html#a979e2216f17014600cd67ef7eb7c2aba">NCollision::CheckPointAndFlatRectangle</a> (const float3 &amp;_rP0, const float3 &amp;_rP1, const float3 &amp;_rP2, const float3 &amp;_rP3, const float3 &amp;_rPoint)</td></tr>
+<tr class="memdesc:a979e2216f17014600cd67ef7eb7c2aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">点と、平行の四角形の判定  <br /></td></tr>
+<tr class="memitem:ad9ecc0bd37a5584939a6593e900ac1f4" id="r_ad9ecc0bd37a5584939a6593e900ac1f4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_collision.html#ad9ecc0bd37a5584939a6593e900ac1f4">NCollision::CheckLineAndSphere</a> (const <a class="el" href="struct_n_collision_1_1_s_sphere.html">SSphere</a> &amp;_rSphere, const float3 &amp;_rLineStart, const <a class="el" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> &amp;_rDir, float3 *_pDestCrossNear=nullptr, float3 *_pDestCrossFar=nullptr)</td></tr>
+<tr class="memdesc:ad9ecc0bd37a5584939a6593e900ac1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">直線と球の交差判定  <br /></td></tr>
+<tr class="memitem:adc69a677fe933b7409e3cf97466e0cc4" id="r_adc69a677fe933b7409e3cf97466e0cc4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_collision.html#adc69a677fe933b7409e3cf97466e0cc4">NCollision::CheckPlaneAndSphere</a> (const <a class="el" href="struct_n_collision_1_1_s_plane_info.html">SPlaneInfo</a> &amp;_rPlane, const <a class="el" href="struct_n_collision_1_1_s_sphere.html">SSphere</a> &amp;_rSphere, <a class="el" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> *_pVecPushBack=nullptr, <a class="el" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> *_pNearPos=nullptr, bool *_pIsCollideEdge=nullptr)</td></tr>
+<tr class="memdesc:adc69a677fe933b7409e3cf97466e0cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">球と面のあたり判定  <br /></td></tr>
+<tr class="memitem:a981b33bbde5a765571bbd9b8acf4de49" id="r_a981b33bbde5a765571bbd9b8acf4de49"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_collision.html#a981b33bbde5a765571bbd9b8acf4de49">NCollision::CheckSphereAndMeshWall</a> (const <a class="el" href="struct_n_collision_1_1_s_sphere.html">SSphere</a> &amp;_rSphere, const <a class="el" href="class_n_collision_1_1_c_mesh.html">CMesh</a> &amp;_rMeshWall, <a class="el" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> &amp;_rDestPushBack)</td></tr>
+<tr class="memdesc:a981b33bbde5a765571bbd9b8acf4de49"><td class="mdescLeft">&#160;</td><td class="mdescRight">球と壁メッシュの当たり判定  <br /></td></tr>
+<tr class="memitem:adb671df8443770574edc8d834047003c" id="r_adb671df8443770574edc8d834047003c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_collision.html#adb671df8443770574edc8d834047003c">NCollision::CheckOBBAndOBB</a> (const <a class="el" href="struct_n_collision_1_1_s_o_b_box.html">SOBBox</a> &amp;_rOBB1, const <a class="el" href="struct_n_collision_1_1_s_o_b_box.html">SOBBox</a> &amp;_rOBB2)</td></tr>
+<tr class="memdesc:adb671df8443770574edc8d834047003c"><td class="mdescLeft">&#160;</td><td class="mdescRight">OBBox同士の当たり判定  <br /></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_baf2b31ccd126124fcc2e83a79db7ec3.html">Collision</a></li><li class="navelem"><a href="_collision___common_8cpp.html">Collision_Common.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

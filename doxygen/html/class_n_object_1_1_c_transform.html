@@ -1,0 +1,1435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NObject::CTransform クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_object_1_1_c_transform.html','','class_n_object_1_1_c_transform-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NObject::CTransform クラス<span class="mlabels"><span class="mlabel final">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>オブジェクトの位置や姿勢など、基本的な情報を保持するクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_object___transform_8h_source.html">Object_Transform.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af909ea5c6d9fcf92b5bc823eb6fbd72a" id="r_af909ea5c6d9fcf92b5bc823eb6fbd72a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af909ea5c6d9fcf92b5bc823eb6fbd72a">SetParent</a> (<a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> *_pParent=nullptr)</td></tr>
+<tr class="memdesc:af909ea5c6d9fcf92b5bc823eb6fbd72a"><td class="mdescLeft">&#160;</td><td class="mdescRight">親を設定する  <br /></td></tr>
+<tr class="memitem:ad19fcd47f525abddf32252f23e24edbe" id="r_ad19fcd47f525abddf32252f23e24edbe"><td class="memItemLeft"><a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ad19fcd47f525abddf32252f23e24edbe">GetParent</a> ()</td></tr>
+<tr class="memdesc:ad19fcd47f525abddf32252f23e24edbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">親を取得する  <br /></td></tr>
+<tr class="memitem:a82ac38e42161f435a8b86271b154690c" id="r_a82ac38e42161f435a8b86271b154690c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a82ac38e42161f435a8b86271b154690c">SetPos</a> (const float3 &amp;_rPos)</td></tr>
+<tr class="memdesc:a82ac38e42161f435a8b86271b154690c"><td class="mdescLeft">&#160;</td><td class="mdescRight">座標を設定  <br /></td></tr>
+<tr class="memitem:a9c7d0c12088afbf31376a42b3322a64d" id="r_a9c7d0c12088afbf31376a42b3322a64d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9c7d0c12088afbf31376a42b3322a64d">SetPos</a> (const float _x, const float _y, const float _z)</td></tr>
+<tr class="memitem:a1a00782d4a4a7bfe041c51c898a54c92" id="r_a1a00782d4a4a7bfe041c51c898a54c92"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1a00782d4a4a7bfe041c51c898a54c92">SetPos</a> (const float2 &amp;_rPos)</td></tr>
+<tr class="memdesc:a1a00782d4a4a7bfe041c51c898a54c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">スクリーン座標系での座標設定  <br /></td></tr>
+<tr class="memitem:a1e6dcbb34189013905922e614e0be224" id="r_a1e6dcbb34189013905922e614e0be224"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1e6dcbb34189013905922e614e0be224">SetPos</a> (const float _x, const float _y)</td></tr>
+<tr class="memitem:a93c6b03152a1e913608dc4941e42d0e8" id="r_a93c6b03152a1e913608dc4941e42d0e8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a93c6b03152a1e913608dc4941e42d0e8">SetRot</a> (const <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rMatRot)</td></tr>
+<tr class="memdesc:a93c6b03152a1e913608dc4941e42d0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">姿勢を設定  <br /></td></tr>
+<tr class="memitem:a879384f95a9c9219ccbd61c0a2bc3b5c" id="r_a879384f95a9c9219ccbd61c0a2bc3b5c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a879384f95a9c9219ccbd61c0a2bc3b5c">SetRot</a> (const float _degZ)</td></tr>
+<tr class="memdesc:a879384f95a9c9219ccbd61c0a2bc3b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">スクリーン座標系で頻繁に使用するZ軸回りの回転の設定  <br /></td></tr>
+<tr class="memitem:a6176393ba57f9da7f54a186f9b1d1d03" id="r_a6176393ba57f9da7f54a186f9b1d1d03"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6176393ba57f9da7f54a186f9b1d1d03">SetScale</a> (const float3 &amp;_rScale)</td></tr>
+<tr class="memdesc:a6176393ba57f9da7f54a186f9b1d1d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">スケールを設定する  <br /></td></tr>
+<tr class="memitem:a0fbd7f4f81b626795e9549267b48cc2b" id="r_a0fbd7f4f81b626795e9549267b48cc2b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0fbd7f4f81b626795e9549267b48cc2b">SetScale</a> (const float _x, const float _y, const float _z)</td></tr>
+<tr class="memitem:a8417fd10d317e89e391ba00da51082ad" id="r_a8417fd10d317e89e391ba00da51082ad"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8417fd10d317e89e391ba00da51082ad">SetScale</a> (const float _scale)</td></tr>
+<tr class="memitem:ab98c87c5a7ddc1e847b479c16fe680da" id="r_ab98c87c5a7ddc1e847b479c16fe680da"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab98c87c5a7ddc1e847b479c16fe680da">Move</a> (const float3 &amp;_rVel)</td></tr>
+<tr class="memdesc:ab98c87c5a7ddc1e847b479c16fe680da"><td class="mdescLeft">&#160;</td><td class="mdescRight">座標を移動(加算)  <br /></td></tr>
+<tr class="memitem:af62dc7e123a49e1e5eeb34ba7d028399" id="r_af62dc7e123a49e1e5eeb34ba7d028399"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af62dc7e123a49e1e5eeb34ba7d028399">Move</a> (const float _x, const float _y, const float _z)</td></tr>
+<tr class="memitem:a2a28f3e42c5bac27647685ab1700d097" id="r_a2a28f3e42c5bac27647685ab1700d097"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2a28f3e42c5bac27647685ab1700d097">Move</a> (const float2 &amp;_rVel)</td></tr>
+<tr class="memdesc:a2a28f3e42c5bac27647685ab1700d097"><td class="mdescLeft">&#160;</td><td class="mdescRight">スクリーン座標系での移動  <br /></td></tr>
+<tr class="memitem:a16ad7d0771f4c5b152caaa9fbcda4c09" id="r_a16ad7d0771f4c5b152caaa9fbcda4c09"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a16ad7d0771f4c5b152caaa9fbcda4c09">Move</a> (const float _x, const float _y)</td></tr>
+<tr class="memitem:a61e1afb854fbafcda3716d6fa21924db" id="r_a61e1afb854fbafcda3716d6fa21924db"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a61e1afb854fbafcda3716d6fa21924db">Rotate</a> (const float3 &amp;_deg)</td></tr>
+<tr class="memdesc:a61e1afb854fbafcda3716d6fa21924db"><td class="mdescLeft">&#160;</td><td class="mdescRight">回転させる  <br /></td></tr>
+<tr class="memitem:a00fc6a492965664090b18cd70c4d5aa4" id="r_a00fc6a492965664090b18cd70c4d5aa4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a00fc6a492965664090b18cd70c4d5aa4">Rotate</a> (const float _degX, const float _degY, const float _degZ)</td></tr>
+<tr class="memitem:aa5c14aa91a7e73a13c285d61ef63ac30" id="r_aa5c14aa91a7e73a13c285d61ef63ac30"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa5c14aa91a7e73a13c285d61ef63ac30">Rotate</a> (const float _degZ)</td></tr>
+<tr class="memdesc:aa5c14aa91a7e73a13c285d61ef63ac30"><td class="mdescLeft">&#160;</td><td class="mdescRight">スクリーン座標系用のZ軸のみを指定した回転  <br /></td></tr>
+<tr class="memitem:a2029c79e6a9fd54dcc2fd03d10d56173" id="r_a2029c79e6a9fd54dcc2fd03d10d56173"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2029c79e6a9fd54dcc2fd03d10d56173">SetLocalMatrix</a> (const <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rSec)</td></tr>
+<tr class="memdesc:a2029c79e6a9fd54dcc2fd03d10d56173"><td class="mdescLeft">&#160;</td><td class="mdescRight">ローカル変換行列を設定する  <br /></td></tr>
+<tr class="memitem:a0d82e501437707d0b20665999f9f5f77" id="r_a0d82e501437707d0b20665999f9f5f77"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_game_object.html">CGameObject</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a0d82e501437707d0b20665999f9f5f77">GetGameObject</a> ()</td></tr>
+<tr class="memdesc:a0d82e501437707d0b20665999f9f5f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">所有者のゲームオブジェクトを取得  <br /></td></tr>
+<tr class="memitem:afb14226e20d91524f62af5a8ca349ff4" id="r_afb14226e20d91524f62af5a8ca349ff4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afb14226e20d91524f62af5a8ca349ff4">GetPos</a> (float3 &amp;_rDest) const</td></tr>
+<tr class="memdesc:afb14226e20d91524f62af5a8ca349ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ワールド座標を取得  <br /></td></tr>
+<tr class="memitem:a615bf6cf5a9e8661fc770e1ee2f8d512" id="r_a615bf6cf5a9e8661fc770e1ee2f8d512"><td class="memItemLeft">const float3 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a615bf6cf5a9e8661fc770e1ee2f8d512">GetLocalPos</a> () const</td></tr>
+<tr class="memdesc:a615bf6cf5a9e8661fc770e1ee2f8d512"><td class="mdescLeft">&#160;</td><td class="mdescRight">ローカル座標を取得  <br /></td></tr>
+<tr class="memitem:a23b612f3949108034dc8d8fd4e6fb577" id="r_a23b612f3949108034dc8d8fd4e6fb577"><td class="memItemLeft">const float3 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a23b612f3949108034dc8d8fd4e6fb577">GetScale</a> () const</td></tr>
+<tr class="memdesc:a23b612f3949108034dc8d8fd4e6fb577"><td class="mdescLeft">&#160;</td><td class="mdescRight">スケールを取得  <br /></td></tr>
+<tr class="memitem:a5ffdc7b81390dcb529f4f332714bedbd" id="r_a5ffdc7b81390dcb529f4f332714bedbd"><td class="memItemLeft">const float3 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a5ffdc7b81390dcb529f4f332714bedbd">GetRight</a> () const</td></tr>
+<tr class="memdesc:a5ffdc7b81390dcb529f4f332714bedbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">右方向ベクトルを取得する  <br /></td></tr>
+<tr class="memitem:a3f535e7808777f12de28572b003a473c" id="r_a3f535e7808777f12de28572b003a473c"><td class="memItemLeft">const float3 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a3f535e7808777f12de28572b003a473c">GetUp</a> () const</td></tr>
+<tr class="memdesc:a3f535e7808777f12de28572b003a473c"><td class="mdescLeft">&#160;</td><td class="mdescRight">上方向ベクトルを取得する  <br /></td></tr>
+<tr class="memitem:abb41dacbbdd96dd557a9531e94a69f04" id="r_abb41dacbbdd96dd557a9531e94a69f04"><td class="memItemLeft">const float3 &amp;&#160;</td><td class="memItemRight"><a class="el" href="#abb41dacbbdd96dd557a9531e94a69f04">GetForward</a> () const</td></tr>
+<tr class="memdesc:abb41dacbbdd96dd557a9531e94a69f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">前方向ベクトルを取得する  <br /></td></tr>
+<tr class="memitem:a0badb88745adaa98124e3690dfe9af2d" id="r_a0badb88745adaa98124e3690dfe9af2d"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0badb88745adaa98124e3690dfe9af2d">GetLocalMatrix</a> () const</td></tr>
+<tr class="memdesc:a0badb88745adaa98124e3690dfe9af2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ローカル行列を取得する  <br /></td></tr>
+<tr class="memitem:a7b41b987cededc34eff425c70aed895c" id="r_a7b41b987cededc34eff425c70aed895c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7b41b987cededc34eff425c70aed895c">GetScaledLocalMatrix</a> (<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rDest) const</td></tr>
+<tr class="memdesc:a7b41b987cededc34eff425c70aed895c"><td class="mdescLeft">&#160;</td><td class="mdescRight">スケール情報を適用したローカル変換行列を取得する  <br /></td></tr>
+<tr class="memitem:ab2a3fa0c33dee0bf2645048370458484" id="r_ab2a3fa0c33dee0bf2645048370458484"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab2a3fa0c33dee0bf2645048370458484">CalcWorldMatrix</a> (<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rDest) const</td></tr>
+<tr class="memdesc:ab2a3fa0c33dee0bf2645048370458484"><td class="mdescLeft">&#160;</td><td class="mdescRight">ワールド行列を計算する  <br /></td></tr>
+<tr class="memitem:ac3b3b67b7135925fa5d89e5c275c94c7" id="r_ac3b3b67b7135925fa5d89e5c275c94c7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac3b3b67b7135925fa5d89e5c275c94c7">CalcWorldMatrixNoScale</a> (<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rDest) const</td></tr>
+<tr class="memdesc:ac3b3b67b7135925fa5d89e5c275c94c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">スケールを適用しない状態のワールド変換行列を取得する  <br /></td></tr>
+<tr class="memitem:ac4216c2a776504661c250111e3a1eca7" id="r_ac4216c2a776504661c250111e3a1eca7"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> (<a class="el" href="class_n_object_1_1_c_game_object.html">CGameObject</a> &amp;_rOwner)</td></tr>
+<tr class="memdesc:ac4216c2a776504661c250111e3a1eca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">所有者を設定するconstructor  <br /></td></tr>
+<tr class="memitem:aca6bf2c1a71677659074ea218d310195" id="r_aca6bf2c1a71677659074ea218d310195"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aca6bf2c1a71677659074ea218d310195">~CTransform</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4b4faa5837c7856f52c802249d730702" id="r_a4b4faa5837c7856f52c802249d730702"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4b4faa5837c7856f52c802249d730702">CTransform</a> (const CTransform &amp;)</td></tr>
+<tr class="memitem:ab86dc40268c747fe91b3bcc4cc838b4a" id="r_ab86dc40268c747fe91b3bcc4cc838b4a"><td class="memItemLeft">const <a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ab86dc40268c747fe91b3bcc4cc838b4a">operator=</a> (const <a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> &amp;)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a9cb8b8ceee67c4c518c29bf6b3dcff19" id="r_a9cb8b8ceee67c4c518c29bf6b3dcff19"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9cb8b8ceee67c4c518c29bf6b3dcff19">SetChild</a> (<a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> *_pChild)</td></tr>
+<tr class="memdesc:a9cb8b8ceee67c4c518c29bf6b3dcff19"><td class="mdescLeft">&#160;</td><td class="mdescRight">子供を設定する  <br /></td></tr>
+<tr class="memitem:a2c51e88f8d143c8ee51b5df6b99e7eae" id="r_a2c51e88f8d143c8ee51b5df6b99e7eae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2c51e88f8d143c8ee51b5df6b99e7eae">UnsetChild</a> (<a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> *_pChild)</td></tr>
+<tr class="memdesc:a2c51e88f8d143c8ee51b5df6b99e7eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した子供を解除する  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ad6bcc63d4404069009e3b4061cec02f8" id="r_ad6bcc63d4404069009e3b4061cec02f8"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_game_object.html">CGameObject</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ad6bcc63d4404069009e3b4061cec02f8">m_pOwner</a></td></tr>
+<tr class="memitem:aed2d35e31e41bff69ea4dfb3a140e07e" id="r_aed2d35e31e41bff69ea4dfb3a140e07e"><td class="memItemLeft"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&#160;</td><td class="memItemRight"><a class="el" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a></td></tr>
+<tr class="memitem:ab0509147c0b329d0f9157d9f8b733965" id="r_ab0509147c0b329d0f9157d9f8b733965"><td class="memItemLeft">float3&#160;</td><td class="memItemRight"><a class="el" href="#ab0509147c0b329d0f9157d9f8b733965">m_scale</a></td></tr>
+<tr class="memitem:aaea4495e91e5846376f6c3746b3d3e97" id="r_aaea4495e91e5846376f6c3746b3d3e97"><td class="memItemLeft"><a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> *&#160;</td><td class="memItemRight"><a class="el" href="#aaea4495e91e5846376f6c3746b3d3e97">m_pParent</a></td></tr>
+<tr class="memitem:a75aeb9684d2b4aff3e771c8c8ef2f759" id="r_a75aeb9684d2b4aff3e771c8c8ef2f759"><td class="memItemLeft">std::vector&lt; <a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> * &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a75aeb9684d2b4aff3e771c8c8ef2f759">m_pChildArray</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>オブジェクトの位置や姿勢など、基本的な情報を保持するクラス </p>
+<p>行列を管理し、親子関係を保持する。 </p><dl class="section note"><dt>覚え書き</dt><dd>親子関係などの情報の整合性をとるため、コピーを禁止する。 </dd>
+<dd>
+スケールは行列と別に管理する </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">todo</a></b></dt><dd>行列の計算回数が多いので、速度面の改善が必要 </dd></dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="ac4216c2a776504661c250111e3a1eca7" name="ac4216c2a776504661c250111e3a1eca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4216c2a776504661c250111e3a1eca7">&#9670;&#160;</a></span>CTransform() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CTransform::CTransform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_object_1_1_c_game_object.html">CGameObject</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rOwner</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>所有者を設定するconstructor </p>
+<div class="fragment"><div class="line"><span class="lineno">    8</span>                                                 :</div>
+<div class="line"><span class="lineno">    9</span>        <a class="code hl_variable" href="#ad6bcc63d4404069009e3b4061cec02f8">m_pOwner</a>(&amp;_rOwner),</div>
+<div class="line"><span class="lineno">   10</span>        <a class="code hl_variable" href="#aaea4495e91e5846376f6c3746b3d3e97">m_pParent</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   11</span>        <a class="code hl_variable" href="#ab0509147c0b329d0f9157d9f8b733965">m_scale</a>(1, 1, 1)</div>
+<div class="line"><span class="lineno">   12</span>    {</div>
+<div class="line"><span class="lineno">   13</span> </div>
+<div class="line"><span class="lineno">   14</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_aaea4495e91e5846376f6c3746b3d3e97"><div class="ttname"><a href="#aaea4495e91e5846376f6c3746b3d3e97">NObject::CTransform::m_pParent</a></div><div class="ttdeci">CTransform * m_pParent</div><div class="ttdef"><b>Definition</b> Object_Transform.h:137</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_ab0509147c0b329d0f9157d9f8b733965"><div class="ttname"><a href="#ab0509147c0b329d0f9157d9f8b733965">NObject::CTransform::m_scale</a></div><div class="ttdeci">float3 m_scale</div><div class="ttdef"><b>Definition</b> Object_Transform.h:134</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_ad6bcc63d4404069009e3b4061cec02f8"><div class="ttname"><a href="#ad6bcc63d4404069009e3b4061cec02f8">NObject::CTransform::m_pOwner</a></div><div class="ttdeci">CGameObject * m_pOwner</div><div class="ttdef"><b>Definition</b> Object_Transform.h:130</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aca6bf2c1a71677659074ea218d310195" name="aca6bf2c1a71677659074ea218d310195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6bf2c1a71677659074ea218d310195">&#9670;&#160;</a></span>~CTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CTransform::~CTransform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   17</span>    {</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4b4faa5837c7856f52c802249d730702" name="a4b4faa5837c7856f52c802249d730702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4faa5837c7856f52c802249d730702">&#9670;&#160;</a></span>CTransform() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CTransform::CTransform </td>
+          <td>(</td>
+          <td class="paramtype">const CTransform &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  153</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="ab2a3fa0c33dee0bf2645048370458484" name="ab2a3fa0c33dee0bf2645048370458484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2a3fa0c33dee0bf2645048370458484">&#9670;&#160;</a></span>CalcWorldMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::CalcWorldMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDest</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ワールド行列を計算する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>スケールを適用したローカル変換行列で計算する </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>親子関係の階層に比例して行列計算量が増える </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  103</span>    {</div>
+<div class="line"><span class="lineno">  104</span>        NMath::SMatrix44    matWorld;</div>
+<div class="line"><span class="lineno">  105</span>        <a class="code hl_function" href="#a7b41b987cededc34eff425c70aed895c">GetScaledLocalMatrix</a>(matWorld);</div>
+<div class="line"><span class="lineno">  106</span>        <a class="code hl_function" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a>*         pParent = <a class="code hl_variable" href="#aaea4495e91e5846376f6c3746b3d3e97">m_pParent</a>;</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">while</span> (pParent != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  109</span>            NMath::SMatrix44    matParentWorld;</div>
+<div class="line"><span class="lineno">  110</span>            pParent-&gt;GetScaledLocalMatrix(matParentWorld);</div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>            <span class="comment">// 親の行列を合成</span></div>
+<div class="line"><span class="lineno">  113</span>            matWorld = matWorld * matParentWorld;</div>
+<div class="line"><span class="lineno">  114</span> </div>
+<div class="line"><span class="lineno">  115</span>            <span class="comment">// 親をたどる</span></div>
+<div class="line"><span class="lineno">  116</span>            pParent = pParent-&gt;m_pParent;</div>
+<div class="line"><span class="lineno">  117</span>        }</div>
+<div class="line"><span class="lineno">  118</span>        _rDest = matWorld;</div>
+<div class="line"><span class="lineno">  119</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_a7b41b987cededc34eff425c70aed895c"><div class="ttname"><a href="#a7b41b987cededc34eff425c70aed895c">NObject::CTransform::GetScaledLocalMatrix</a></div><div class="ttdeci">void GetScaledLocalMatrix(NMath::SMatrix44 &amp;_rDest) const</div><div class="ttdoc">スケール情報を適用したローカル変換行列を取得する</div><div class="ttdef"><b>Definition</b> Object_Transform.cpp:94</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_ac4216c2a776504661c250111e3a1eca7"><div class="ttname"><a href="#ac4216c2a776504661c250111e3a1eca7">NObject::CTransform::CTransform</a></div><div class="ttdeci">CTransform(CGameObject &amp;_rOwner)</div><div class="ttdoc">所有者を設定するconstructor</div><div class="ttdef"><b>Definition</b> Object_Transform.cpp:8</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac3b3b67b7135925fa5d89e5c275c94c7" name="ac3b3b67b7135925fa5d89e5c275c94c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3b3b67b7135925fa5d89e5c275c94c7">&#9670;&#160;</a></span>CalcWorldMatrixNoScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::CalcWorldMatrixNoScale </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDest</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>スケールを適用しない状態のワールド変換行列を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  122</span>    {</div>
+<div class="line"><span class="lineno">  123</span>        NMath::SMatrix44    matWorld = <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>;</div>
+<div class="line"><span class="lineno">  124</span>        <a class="code hl_function" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a>*         pParent = <a class="code hl_variable" href="#aaea4495e91e5846376f6c3746b3d3e97">m_pParent</a>;</div>
+<div class="line"><span class="lineno">  125</span> </div>
+<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">while</span> (pParent != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  127</span>            <span class="comment">// 親の行列を合成</span></div>
+<div class="line"><span class="lineno">  128</span>            matWorld = matWorld * pParent-&gt;m_matLocal;</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>            <span class="comment">// 親をたどる</span></div>
+<div class="line"><span class="lineno">  131</span>            pParent = pParent-&gt;m_pParent;</div>
+<div class="line"><span class="lineno">  132</span>        }</div>
+<div class="line"><span class="lineno">  133</span>        _rDest = matWorld;</div>
+<div class="line"><span class="lineno">  134</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_aed2d35e31e41bff69ea4dfb3a140e07e"><div class="ttname"><a href="#aed2d35e31e41bff69ea4dfb3a140e07e">NObject::CTransform::m_matLocal</a></div><div class="ttdeci">NMath::SMatrix44 m_matLocal</div><div class="ttdef"><b>Definition</b> Object_Transform.h:133</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abb41dacbbdd96dd557a9531e94a69f04" name="abb41dacbbdd96dd557a9531e94a69f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb41dacbbdd96dd557a9531e94a69f04">&#9670;&#160;</a></span>GetForward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float3 &amp; NObject::CTransform::GetForward </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>前方向ベクトルを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>.GetRow(2).vec3; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0d82e501437707d0b20665999f9f5f77" name="a0d82e501437707d0b20665999f9f5f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d82e501437707d0b20665999f9f5f77">&#9670;&#160;</a></span>GetGameObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_game_object.html">CGameObject</a> * NObject::CTransform::GetGameObject </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>所有者のゲームオブジェクトを取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad6bcc63d4404069009e3b4061cec02f8">m_pOwner</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0badb88745adaa98124e3690dfe9af2d" name="a0badb88745adaa98124e3690dfe9af2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0badb88745adaa98124e3690dfe9af2d">&#9670;&#160;</a></span>GetLocalMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp; NObject::CTransform::GetLocalMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ローカル行列を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  114</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a615bf6cf5a9e8661fc770e1ee2f8d512" name="a615bf6cf5a9e8661fc770e1ee2f8d512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a615bf6cf5a9e8661fc770e1ee2f8d512">&#9670;&#160;</a></span>GetLocalPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float3 &amp; NObject::CTransform::GetLocalPos </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ローカル座標を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>.GetRow(3).vec3; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad19fcd47f525abddf32252f23e24edbe" name="ad19fcd47f525abddf32252f23e24edbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad19fcd47f525abddf32252f23e24edbe">&#9670;&#160;</a></span>GetParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> * NObject::CTransform::GetParent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>親を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aaea4495e91e5846376f6c3746b3d3e97">m_pParent</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afb14226e20d91524f62af5a8ca349ff4" name="afb14226e20d91524f62af5a8ca349ff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb14226e20d91524f62af5a8ca349ff4">&#9670;&#160;</a></span>GetPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::GetPos </td>
+          <td>(</td>
+          <td class="paramtype">float3 &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDest</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ワールド座標を取得 </p>
+<dl class="section warning"><dt>警告</dt><dd>親子関係の階層に比例して行列計算量が増える </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>    {</div>
+<div class="line"><span class="lineno">   89</span>        NMath::SMatrix44    mat;</div>
+<div class="line"><span class="lineno">   90</span>        <a class="code hl_function" href="#ab2a3fa0c33dee0bf2645048370458484">CalcWorldMatrix</a>(mat);</div>
+<div class="line"><span class="lineno">   91</span>        _rDest = mat.<a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#abf568d61df87c96899190f4ade451a83">GetRow</a>(3).<a class="code hl_variable" href="struct_n_math_1_1_s_vector4.html#a334a4d58fd95b35243a2fe616adc3d12">vec3</a>;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_ab2a3fa0c33dee0bf2645048370458484"><div class="ttname"><a href="#ab2a3fa0c33dee0bf2645048370458484">NObject::CTransform::CalcWorldMatrix</a></div><div class="ttdeci">void CalcWorldMatrix(NMath::SMatrix44 &amp;_rDest) const</div><div class="ttdoc">ワールド行列を計算する</div><div class="ttdef"><b>Definition</b> Object_Transform.cpp:102</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_abf568d61df87c96899190f4ade451a83"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#abf568d61df87c96899190f4ade451a83">NMath::SMatrix44::GetRow</a></div><div class="ttdeci">const SVector4 &amp; GetRow(const unsigned int _row) const</div><div class="ttdoc">行を取得</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:89</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector4_html_a334a4d58fd95b35243a2fe616adc3d12"><div class="ttname"><a href="struct_n_math_1_1_s_vector4.html#a334a4d58fd95b35243a2fe616adc3d12">NMath::SVector4::vec3</a></div><div class="ttdeci">SVector3 vec3</div><div class="ttdef"><b>Definition</b> Math_Vector4.h:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5ffdc7b81390dcb529f4f332714bedbd" name="a5ffdc7b81390dcb529f4f332714bedbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ffdc7b81390dcb529f4f332714bedbd">&#9670;&#160;</a></span>GetRight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float3 &amp; NObject::CTransform::GetRight </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>右方向ベクトルを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>.GetRow(0).vec3; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a23b612f3949108034dc8d8fd4e6fb577" name="a23b612f3949108034dc8d8fd4e6fb577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b612f3949108034dc8d8fd4e6fb577">&#9670;&#160;</a></span>GetScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float3 &amp; NObject::CTransform::GetScale </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スケールを取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ab0509147c0b329d0f9157d9f8b733965">m_scale</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7b41b987cededc34eff425c70aed895c" name="a7b41b987cededc34eff425c70aed895c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b41b987cededc34eff425c70aed895c">&#9670;&#160;</a></span>GetScaledLocalMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::GetScaledLocalMatrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDest</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>スケール情報を適用したローカル変換行列を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   95</span>    {</div>
+<div class="line"><span class="lineno">   96</span>        NMath::SMatrix44    matScale;</div>
+<div class="line"><span class="lineno">   97</span>        <a class="code hl_function" href="namespace_n_math.html#a73737de7c62701832bc92244dc6b87e9">NMath::MakeMatrixScaling</a>(matScale, <a class="code hl_variable" href="#ab0509147c0b329d0f9157d9f8b733965">m_scale</a>);</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>        _rDest = matScale * <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>;</div>
+<div class="line"><span class="lineno">  100</span>    }</div>
+<div class="ttc" id="anamespace_n_math_html_a73737de7c62701832bc92244dc6b87e9"><div class="ttname"><a href="namespace_n_math.html#a73737de7c62701832bc92244dc6b87e9">NMath::MakeMatrixScaling</a></div><div class="ttdeci">void MakeMatrixScaling(SMatrix44 &amp;_rDest, const SVector3 &amp;_scale)</div><div class="ttdoc">スケーリング行列を作成する</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:57</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3f535e7808777f12de28572b003a473c" name="a3f535e7808777f12de28572b003a473c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f535e7808777f12de28572b003a473c">&#9670;&#160;</a></span>GetUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float3 &amp; NObject::CTransform::GetUp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>上方向ベクトルを取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>.GetRow(1).vec3; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a16ad7d0771f4c5b152caaa9fbcda4c09" name="a16ad7d0771f4c5b152caaa9fbcda4c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ad7d0771f4c5b152caaa9fbcda4c09">&#9670;&#160;</a></span>Move() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::Move </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   72</span>{ <a class="code hl_function" href="#ab98c87c5a7ddc1e847b479c16fe680da">Move</a>(_x, _y, 0); }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_ab98c87c5a7ddc1e847b479c16fe680da"><div class="ttname"><a href="#ab98c87c5a7ddc1e847b479c16fe680da">NObject::CTransform::Move</a></div><div class="ttdeci">void Move(const float3 &amp;_rVel)</div><div class="ttdoc">座標を移動(加算)</div><div class="ttdef"><b>Definition</b> Object_Transform.h:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af62dc7e123a49e1e5eeb34ba7d028399" name="af62dc7e123a49e1e5eeb34ba7d028399"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62dc7e123a49e1e5eeb34ba7d028399">&#9670;&#160;</a></span>Move() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::Move </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{ <a class="code hl_function" href="#ab98c87c5a7ddc1e847b479c16fe680da">Move</a>(<a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>(_x, _y, _z)); }</div>
+<div class="ttc" id="anamespace_n_common_html_ad01ce78d871cd1e3b54d317b707787bf"><div class="ttname"><a href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">NCommon::float3</a></div><div class="ttdeci">NMath::SVector3 float3</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:20</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2a28f3e42c5bac27647685ab1700d097" name="a2a28f3e42c5bac27647685ab1700d097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a28f3e42c5bac27647685ab1700d097">&#9670;&#160;</a></span>Move() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::Move </td>
+          <td>(</td>
+          <td class="paramtype">const float2 &amp;</td>          <td class="paramname"><span class="paramname"><em>_rVel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スクリーン座標系での移動 </p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>{ <a class="code hl_function" href="#ab98c87c5a7ddc1e847b479c16fe680da">Move</a>(_rVel.x, _rVel.y, 0); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab98c87c5a7ddc1e847b479c16fe680da" name="ab98c87c5a7ddc1e847b479c16fe680da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98c87c5a7ddc1e847b479c16fe680da">&#9670;&#160;</a></span>Move() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::Move </td>
+          <td>(</td>
+          <td class="paramtype">const float3 &amp;</td>          <td class="paramname"><span class="paramname"><em>_rVel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>座標を移動(加算) </p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>{ <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>.vec[3].vec3 += _rVel; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab86dc40268c747fe91b3bcc4cc838b4a" name="ab86dc40268c747fe91b3bcc4cc838b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86dc40268c747fe91b3bcc4cc838b4a">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> &amp; NObject::CTransform::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  154</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a00fc6a492965664090b18cd70c4d5aa4" name="a00fc6a492965664090b18cd70c4d5aa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00fc6a492965664090b18cd70c4d5aa4">&#9670;&#160;</a></span>Rotate() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_degX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_degY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_degZ</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   77</span>{ <a class="code hl_function" href="#a61e1afb854fbafcda3716d6fa21924db">Rotate</a>(<a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>(_degX, _degY, _degZ)); }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_a61e1afb854fbafcda3716d6fa21924db"><div class="ttname"><a href="#a61e1afb854fbafcda3716d6fa21924db">NObject::CTransform::Rotate</a></div><div class="ttdeci">void Rotate(const float3 &amp;_deg)</div><div class="ttdoc">回転させる</div><div class="ttdef"><b>Definition</b> Object_Transform.cpp:80</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa5c14aa91a7e73a13c285d61ef63ac30" name="aa5c14aa91a7e73a13c285d61ef63ac30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c14aa91a7e73a13c285d61ef63ac30">&#9670;&#160;</a></span>Rotate() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_degZ</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スクリーン座標系用のZ軸のみを指定した回転 </p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{ <a class="code hl_function" href="#a61e1afb854fbafcda3716d6fa21924db">Rotate</a>(0, 0, _degZ); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a61e1afb854fbafcda3716d6fa21924db" name="a61e1afb854fbafcda3716d6fa21924db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e1afb854fbafcda3716d6fa21924db">&#9670;&#160;</a></span>Rotate() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::Rotate </td>
+          <td>(</td>
+          <td class="paramtype">const float3 &amp;</td>          <td class="paramname"><span class="paramname"><em>_deg</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>回転させる </p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>    {</div>
+<div class="line"><span class="lineno">   82</span>        NMath::SMatrix44    mat;</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_function" href="namespace_n_math.html#a61ea2c2fdc2dea762c936e2809cf89c7">NMath::MakeMatrixRotation</a>(mat, _deg.x, _deg.y, _deg.z);</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a> = mat * <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>;</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="ttc" id="anamespace_n_math_html_a61ea2c2fdc2dea762c936e2809cf89c7"><div class="ttname"><a href="namespace_n_math.html#a61ea2c2fdc2dea762c936e2809cf89c7">NMath::MakeMatrixRotation</a></div><div class="ttdeci">void MakeMatrixRotation(SMatrix44 &amp;_rDest, const float _degX, const float _degY, const float _degZ)</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:48</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9cb8b8ceee67c4c518c29bf6b3dcff19" name="a9cb8b8ceee67c4c518c29bf6b3dcff19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cb8b8ceee67c4c518c29bf6b3dcff19">&#9670;&#160;</a></span>SetChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> *</td>          <td class="paramname"><span class="paramname"><em>_pChild</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>子供を設定する </p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>    {</div>
+<div class="line"><span class="lineno">  140</span>        <a class="code hl_define" href="_debug___assert_8h.html#a73fdb60411ae5c7145be5bffb2f7c240">AssertNotNull</a>(_pChild);</div>
+<div class="line"><span class="lineno">  141</span>        <a class="code hl_variable" href="#a75aeb9684d2b4aff3e771c8c8ef2f759">m_pChildArray</a>.push_back(_pChild);</div>
+<div class="line"><span class="lineno">  142</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_a73fdb60411ae5c7145be5bffb2f7c240"><div class="ttname"><a href="_debug___assert_8h.html#a73fdb60411ae5c7145be5bffb2f7c240">AssertNotNull</a></div><div class="ttdeci">#define AssertNotNull(var)</div><div class="ttdoc">Nullでないことを検証する</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:35</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_a75aeb9684d2b4aff3e771c8c8ef2f759"><div class="ttname"><a href="#a75aeb9684d2b4aff3e771c8c8ef2f759">NObject::CTransform::m_pChildArray</a></div><div class="ttdeci">std::vector&lt; CTransform * &gt; m_pChildArray</div><div class="ttdef"><b>Definition</b> Object_Transform.h:138</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2029c79e6a9fd54dcc2fd03d10d56173" name="a2029c79e6a9fd54dcc2fd03d10d56173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2029c79e6a9fd54dcc2fd03d10d56173">&#9670;&#160;</a></span>SetLocalMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetLocalMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rSec</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ローカル変換行列を設定する </p>
+<dl class="section warning"><dt>警告</dt><dd>設定する行列次第では不具合が起こるので注意して使うこと </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>{ <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a> = _rSec; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af909ea5c6d9fcf92b5bc823eb6fbd72a" name="af909ea5c6d9fcf92b5bc823eb6fbd72a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af909ea5c6d9fcf92b5bc823eb6fbd72a">&#9670;&#160;</a></span>SetParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> *</td>          <td class="paramname"><span class="paramname"><em>_pParent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>親を設定する </p>
+<dl class="section warning"><dt>警告</dt><dd>階層を深くすると、行列計算が増えるので、注意が必要<ul>
+<li>特に、ワールド変換行列や座標を取得する関数は呼び出し時に行列を計算するため、 座標の取得のコストが増える </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pParent</td><td>親へのポインタ(nullptrを設定すると親を解除する) 子オブジェクトの動作<ul>
+<li>親子関係を設定した時 : 　親の位置にあわされる(ローカル変換行列が単位行列になる) ※ できれば見た目が変わらないようにしたい。</li>
+<li>親子関係を解除した時の動作 : 　ワールド空間での座標と姿勢を保持したまま親子関係を解除する(見た目が変わらない) </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">todo</a></b></dt><dd>親子関係を設定した時の動作を、絶対座標を保持したまま関係を設定するようにする。 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">todo</a></b></dt><dd>ここで、親子関係を設定した時の処理を行う </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>    {</div>
+<div class="line"><span class="lineno">   23</span>        <span class="comment">// 登録操作</span></div>
+<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">if</span> (_pParent != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   25</span>            <span class="comment">// すでに同じ親が登録されている場合は何もしない</span></div>
+<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">if</span> (_pParent == <a class="code hl_function" href="#ad19fcd47f525abddf32252f23e24edbe">GetParent</a>()) {</div>
+<div class="line"><span class="lineno">   27</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   28</span>            }</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>            <span class="comment">// 親を登録</span></div>
+<div class="line"><span class="lineno">   31</span>            <a class="code hl_variable" href="#aaea4495e91e5846376f6c3746b3d3e97">m_pParent</a> = _pParent;</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>            <span class="comment">// 親に登録</span></div>
+<div class="line"><span class="lineno">   34</span>            _pParent-&gt;SetChild(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   35</span></div>
+<div class="line"><span class="lineno">   37</span>            <span class="comment">// 親から見た相対位置に変換</span></div>
+<div class="line"><span class="lineno">   38</span>            NMath::SMatrix44 matWorld;</div>
+<div class="line"><span class="lineno">   39</span>            _pParent-&gt;CalcWorldMatrix(matWorld);</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>            NMath::SMatrix44 matInv;</div>
+<div class="line"><span class="lineno">   42</span>            matWorld.<a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#a4da3a990c812902e04d4d3f037763e6b">GetTranspose</a>(matInv);</div>
+<div class="line"><span class="lineno">   43</span>            NMath::SMatrix44 matIdentity;</div>
+<div class="line"><span class="lineno">   44</span>            <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a> = matInv * matIdentity;</div>
+<div class="line"><span class="lineno">   45</span>        }</div>
+<div class="line"><span class="lineno">   46</span>        <span class="comment">// 解除操作</span></div>
+<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   48</span>            <span class="comment">// もともと登録されていなければ何もしない</span></div>
+<div class="line"><span class="lineno">   49</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aaea4495e91e5846376f6c3746b3d3e97">m_pParent</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   50</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   51</span>            }</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>            <span class="comment">// 親からの相対座標をワールド座標に変換</span></div>
+<div class="line"><span class="lineno">   54</span>            NMath::SMatrix44 mat;</div>
+<div class="line"><span class="lineno">   55</span>            <a class="code hl_variable" href="#aaea4495e91e5846376f6c3746b3d3e97">m_pParent</a>-&gt;CalcWorldMatrix(mat);</div>
+<div class="line"><span class="lineno">   56</span>            <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a> *= mat;</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>            <span class="comment">// 親から登録を解除</span></div>
+<div class="line"><span class="lineno">   59</span>            <a class="code hl_variable" href="#aaea4495e91e5846376f6c3746b3d3e97">m_pParent</a>-&gt;UnsetChild(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>            <span class="comment">// 親にnullptrを設定</span></div>
+<div class="line"><span class="lineno">   62</span>            <a class="code hl_variable" href="#aaea4495e91e5846376f6c3746b3d3e97">m_pParent</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   63</span>        }</div>
+<div class="line"><span class="lineno">   64</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_ad19fcd47f525abddf32252f23e24edbe"><div class="ttname"><a href="#ad19fcd47f525abddf32252f23e24edbe">NObject::CTransform::GetParent</a></div><div class="ttdeci">CTransform * GetParent()</div><div class="ttdoc">親を取得する</div><div class="ttdef"><b>Definition</b> Object_Transform.h:39</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a4da3a990c812902e04d4d3f037763e6b"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a4da3a990c812902e04d4d3f037763e6b">NMath::SMatrix44::GetTranspose</a></div><div class="ttdeci">void GetTranspose(SMatrix44 &amp;_dest) const</div><div class="ttdoc">要素を転置行列にする</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:140</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1e6dcbb34189013905922e614e0be224" name="a1e6dcbb34189013905922e614e0be224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6dcbb34189013905922e614e0be224">&#9670;&#160;</a></span>SetPos() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetPos </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{ <a class="code hl_function" href="#a82ac38e42161f435a8b86271b154690c">SetPos</a>(_x, _y, 0); }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_a82ac38e42161f435a8b86271b154690c"><div class="ttname"><a href="#a82ac38e42161f435a8b86271b154690c">NObject::CTransform::SetPos</a></div><div class="ttdeci">void SetPos(const float3 &amp;_rPos)</div><div class="ttdoc">座標を設定</div><div class="ttdef"><b>Definition</b> Object_Transform.h:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9c7d0c12088afbf31376a42b3322a64d" name="a9c7d0c12088afbf31376a42b3322a64d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c7d0c12088afbf31376a42b3322a64d">&#9670;&#160;</a></span>SetPos() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetPos </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{ <a class="code hl_function" href="#a82ac38e42161f435a8b86271b154690c">SetPos</a>(NMath::SVector3(_x, _y, _z)); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1a00782d4a4a7bfe041c51c898a54c92" name="a1a00782d4a4a7bfe041c51c898a54c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a00782d4a4a7bfe041c51c898a54c92">&#9670;&#160;</a></span>SetPos() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetPos </td>
+          <td>(</td>
+          <td class="paramtype">const float2 &amp;</td>          <td class="paramname"><span class="paramname"><em>_rPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スクリーン座標系での座標設定 </p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>{ <a class="code hl_function" href="#a82ac38e42161f435a8b86271b154690c">SetPos</a>(_rPos.x, _rPos.y, 0); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a82ac38e42161f435a8b86271b154690c" name="a82ac38e42161f435a8b86271b154690c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ac38e42161f435a8b86271b154690c">&#9670;&#160;</a></span>SetPos() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetPos </td>
+          <td>(</td>
+          <td class="paramtype">const float3 &amp;</td>          <td class="paramname"><span class="paramname"><em>_rPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>座標を設定 </p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{ <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>.SetRow(3, _rPos); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a879384f95a9c9219ccbd61c0a2bc3b5c" name="a879384f95a9c9219ccbd61c0a2bc3b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a879384f95a9c9219ccbd61c0a2bc3b5c">&#9670;&#160;</a></span>SetRot() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetRot </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_degZ</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>スクリーン座標系で頻繁に使用するZ軸回りの回転の設定 </p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>    {</div>
+<div class="line"><span class="lineno">   75</span>        NMath::SMatrix44    matRot;</div>
+<div class="line"><span class="lineno">   76</span>        <a class="code hl_function" href="namespace_n_math.html#a9cc2e0947145d4efeeb29471e5fe95b3">NMath::MakeMatrixRotationZ</a>(matRot, _degZ);</div>
+<div class="line"><span class="lineno">   77</span>        <a class="code hl_function" href="#a93c6b03152a1e913608dc4941e42d0e8">SetRot</a>(matRot);</div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_a93c6b03152a1e913608dc4941e42d0e8"><div class="ttname"><a href="#a93c6b03152a1e913608dc4941e42d0e8">NObject::CTransform::SetRot</a></div><div class="ttdeci">void SetRot(const NMath::SMatrix44 &amp;_rMatRot)</div><div class="ttdoc">姿勢を設定</div><div class="ttdef"><b>Definition</b> Object_Transform.cpp:66</div></div>
+<div class="ttc" id="anamespace_n_math_html_a9cc2e0947145d4efeeb29471e5fe95b3"><div class="ttname"><a href="namespace_n_math.html#a9cc2e0947145d4efeeb29471e5fe95b3">NMath::MakeMatrixRotationZ</a></div><div class="ttdeci">void MakeMatrixRotationZ(SMatrix44 &amp;_rDest, const float _deg)</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:42</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a93c6b03152a1e913608dc4941e42d0e8" name="a93c6b03152a1e913608dc4941e42d0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c6b03152a1e913608dc4941e42d0e8">&#9670;&#160;</a></span>SetRot() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetRot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rMatRot</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>姿勢を設定 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>引数の行列を3x3行列として扱う </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>    {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 3; ++i) {</div>
+<div class="line"><span class="lineno">   69</span>            <a class="code hl_variable" href="#aed2d35e31e41bff69ea4dfb3a140e07e">m_matLocal</a>.vec[i].vec3 = _rMatRot.<a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#aacdf92892b936f02ac86f60c498e0f69">vec</a>[i].vec3;</div>
+<div class="line"><span class="lineno">   70</span>        }</div>
+<div class="line"><span class="lineno">   71</span>    }</div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_aacdf92892b936f02ac86f60c498e0f69"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#aacdf92892b936f02ac86f60c498e0f69">NMath::SMatrix44::vec</a></div><div class="ttdeci">std::array&lt; SVector4, 4 &gt; vec</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:33</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8417fd10d317e89e391ba00da51082ad" name="a8417fd10d317e89e391ba00da51082ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8417fd10d317e89e391ba00da51082ad">&#9670;&#160;</a></span>SetScale() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetScale </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_scale</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   64</span>{ <a class="code hl_function" href="#a6176393ba57f9da7f54a186f9b1d1d03">SetScale</a>(_scale, _scale, _scale); }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_a6176393ba57f9da7f54a186f9b1d1d03"><div class="ttname"><a href="#a6176393ba57f9da7f54a186f9b1d1d03">NObject::CTransform::SetScale</a></div><div class="ttdeci">void SetScale(const float3 &amp;_rScale)</div><div class="ttdoc">スケールを設定する</div><div class="ttdef"><b>Definition</b> Object_Transform.h:62</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0fbd7f4f81b626795e9549267b48cc2b" name="a0fbd7f4f81b626795e9549267b48cc2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fbd7f4f81b626795e9549267b48cc2b">&#9670;&#160;</a></span>SetScale() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetScale </td>
+          <td>(</td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_y</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>_z</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   63</span>{ <a class="code hl_function" href="#a6176393ba57f9da7f54a186f9b1d1d03">SetScale</a>(<a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a>(_x, _y, _z)); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6176393ba57f9da7f54a186f9b1d1d03" name="a6176393ba57f9da7f54a186f9b1d1d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6176393ba57f9da7f54a186f9b1d1d03">&#9670;&#160;</a></span>SetScale() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::SetScale </td>
+          <td>(</td>
+          <td class="paramtype">const float3 &amp;</td>          <td class="paramname"><span class="paramname"><em>_rScale</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スケールを設定する </p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{ <a class="code hl_variable" href="#ab0509147c0b329d0f9157d9f8b733965">m_scale</a> = _rScale; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2c51e88f8d143c8ee51b5df6b99e7eae" name="a2c51e88f8d143c8ee51b5df6b99e7eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c51e88f8d143c8ee51b5df6b99e7eae">&#9670;&#160;</a></span>UnsetChild()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CTransform::UnsetChild </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a> *</td>          <td class="paramname"><span class="paramname"><em>_pChild</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定した子供を解除する </p>
+<div class="fragment"><div class="line"><span class="lineno">  145</span>    {</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordtype">bool</span> isFind = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  147</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#a75aeb9684d2b4aff3e771c8c8ef2f759">m_pChildArray</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  148</span>            <a class="code hl_function" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a>* pTransform = <a class="code hl_variable" href="#a75aeb9684d2b4aff3e771c8c8ef2f759">m_pChildArray</a>[i];</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>            <span class="comment">// 探索成功時</span></div>
+<div class="line"><span class="lineno">  151</span>            <span class="keywordflow">if</span> (pTransform == _pChild) {</div>
+<div class="line"><span class="lineno">  152</span>                <span class="comment">// コンテナから削除</span></div>
+<div class="line"><span class="lineno">  153</span>                <a class="code hl_variable" href="#a75aeb9684d2b4aff3e771c8c8ef2f759">m_pChildArray</a>.erase(<a class="code hl_variable" href="#a75aeb9684d2b4aff3e771c8c8ef2f759">m_pChildArray</a>.begin() + i);</div>
+<div class="line"><span class="lineno">  154</span>                isFind = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  155</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  156</span>            }</div>
+<div class="line"><span class="lineno">  157</span>        }</div>
+<div class="line"><span class="lineno">  158</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(isFind);</div>
+<div class="line"><span class="lineno">  159</span> </div>
+<div class="line"><span class="lineno">  160</span>        <span class="comment">// 親を解除する</span></div>
+<div class="line"><span class="lineno">  161</span>        _pChild-&gt;m_pParent = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  162</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="aed2d35e31e41bff69ea4dfb3a140e07e" name="aed2d35e31e41bff69ea4dfb3a140e07e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed2d35e31e41bff69ea4dfb3a140e07e">&#9670;&#160;</a></span>m_matLocal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> NObject::CTransform::m_matLocal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75aeb9684d2b4aff3e771c8c8ef2f759" name="a75aeb9684d2b4aff3e771c8c8ef2f759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75aeb9684d2b4aff3e771c8c8ef2f759">&#9670;&#160;</a></span>m_pChildArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a>*&gt; NObject::CTransform::m_pChildArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6bcc63d4404069009e3b4061cec02f8" name="ad6bcc63d4404069009e3b4061cec02f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bcc63d4404069009e3b4061cec02f8">&#9670;&#160;</a></span>m_pOwner</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_game_object.html">CGameObject</a>* NObject::CTransform::m_pOwner</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaea4495e91e5846376f6c3746b3d3e97" name="aaea4495e91e5846376f6c3746b3d3e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea4495e91e5846376f6c3746b3d3e97">&#9670;&#160;</a></span>m_pParent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ac4216c2a776504661c250111e3a1eca7">CTransform</a>* NObject::CTransform::m_pParent</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0509147c0b329d0f9157d9f8b733965" name="ab0509147c0b329d0f9157d9f8b733965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0509147c0b329d0f9157d9f8b733965">&#9670;&#160;</a></span>m_scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float3 NObject::CTransform::m_scale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Object/<a class="el" href="_object___transform_8h_source.html">Object_Transform.h</a></li>
+<li>Sources/Framework/Object/<a class="el" href="_object___transform_8cpp.html">Object_Transform.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_object.html">NObject</a></li><li class="navelem"><a href="class_n_object_1_1_c_transform.html">CTransform</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

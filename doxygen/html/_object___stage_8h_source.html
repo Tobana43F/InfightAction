@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameApp/Object/Stage/Object_Stage.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_object___stage_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Object_Stage.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_object___stage_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___game_object_8h.html">Object\Object_GameObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___sky_dome_8h.html">Object\SkyDome\Object_SkyDome.h</a>&quot;</span>   <span class="comment">// 内包するオブジェクト</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_model___object_8h.html">Model\Model_Object.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include    &quot;<a class="code" href="_collision___mesh_8h.html">Collision\Collision_Mesh.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include    &quot;<a class="code" href="_sound___common_8h.html">Sound\Sound_Common.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_object.html">NObject</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_stage.html">   17</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_object_1_1_c_stage.html#a577e597878222265982f87d30e9327c0">CStage</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ad728b6ed026185583ce27041d2b7b08f">CGameObject</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_stage.html#a93e5f9cc960dec2b96b4e79f49a2f16c">SetStageCollision</a>();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_stage.html#abd5643726dfc73c5a3b2e949194cb005">LoadProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_stage.html#abbd520613dee25875ab7c5e6602fc15e">ReleaseProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_stage.html#a791e9ff750b0e0897e6c330df7dd41e2">InitProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_stage.html#a3e0968a7227d9760e79e6e455c47369e">DestroyProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_stage.html#a8a8a080aba83fde3d5c00fe9a227335e">UpdateProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_stage.html#a432449165caf5b780aee420cba804c06">RenderProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="comment">// 描画用オブジェクト</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_stage.html#a0aa2e737c86bcd2138bd2a5bda67da6f">   33</a></span>        <a class="code hl_class" href="class_n_model_1_1_c_object.html">NModel::CObject</a>         <a class="code hl_variable" href="class_n_object_1_1_c_stage.html#a0aa2e737c86bcd2138bd2a5bda67da6f">m_modelGround</a>;  <span class="comment">// 地面描画用モデル</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_stage.html#a1bb36c20df8905ecafa300bd1c8b8c41">   34</a></span>        <a class="code hl_class" href="class_n_object_1_1_c_sky_dome.html">NObject::CSkyDome</a>       <a class="code hl_variable" href="class_n_object_1_1_c_stage.html#a1bb36c20df8905ecafa300bd1c8b8c41">m_skyDome</a>;      <span class="comment">// スカイドーム</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="comment">// 地形とのあたり判定用メッシュ</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_stage.html#a2bca5dd153bbf44e9a6cc244f785a08d">   37</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_mesh.html">NCollision::CMesh</a>       <a class="code hl_variable" href="class_n_object_1_1_c_stage.html#a2bca5dd153bbf44e9a6cc244f785a08d">m_colGround</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_stage.html#aa6b4048db510f6774cbb5141091b9e14">   38</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_mesh.html">NCollision::CMesh</a>       <a class="code hl_variable" href="class_n_object_1_1_c_stage.html#aa6b4048db510f6774cbb5141091b9e14">m_colWall</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="comment">// 使用するBGM</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_stage.html#a15d006b88c76f9bf5d807adb8e9a1436">   41</a></span>        <a class="code hl_enumeration" href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597">NSound::ELabel</a>          <a class="code hl_variable" href="class_n_object_1_1_c_stage.html#a15d006b88c76f9bf5d807adb8e9a1436">m_sndBGMLabel</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_function" href="class_n_object_1_1_c_stage.html#a577e597878222265982f87d30e9327c0">CStage</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_n_object_1_1_c_stage.html#a960a074638f4cac71af4a3dc731ced3f">~CStage</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    };</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="ttc" id="a_collision___mesh_8h_html"><div class="ttname"><a href="_collision___mesh_8h.html">Collision_Mesh.h</a></div></div>
+<div class="ttc" id="a_model___object_8h_html"><div class="ttname"><a href="_model___object_8h.html">Model_Object.h</a></div></div>
+<div class="ttc" id="a_object___game_object_8h_html"><div class="ttname"><a href="_object___game_object_8h.html">Object_GameObject.h</a></div></div>
+<div class="ttc" id="a_object___sky_dome_8h_html"><div class="ttname"><a href="_object___sky_dome_8h.html">Object_SkyDome.h</a></div></div>
+<div class="ttc" id="a_sound___common_8h_html"><div class="ttname"><a href="_sound___common_8h.html">Sound_Common.h</a></div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_mesh_html"><div class="ttname"><a href="class_n_collision_1_1_c_mesh.html">NCollision::CMesh</a></div><div class="ttdoc">メッシュの当たり判定を管理するクラス</div><div class="ttdef"><b>Definition</b> Collision_Mesh.h:12</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html"><div class="ttname"><a href="class_n_model_1_1_c_object.html">NModel::CObject</a></div><div class="ttdoc">描画する数だけ生成するモデルを扱うオブジェクト</div><div class="ttdef"><b>Definition</b> Model_Object.h:15</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ad728b6ed026185583ce27041d2b7b08f"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#ad728b6ed026185583ce27041d2b7b08f">NObject::CGameObject::CGameObject</a></div><div class="ttdeci">CGameObject()</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:7</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sky_dome_html"><div class="ttname"><a href="class_n_object_1_1_c_sky_dome.html">NObject::CSkyDome</a></div><div class="ttdoc">スカイドームを管理するクラス</div><div class="ttdef"><b>Definition</b> Object_SkyDome.h:9</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a0aa2e737c86bcd2138bd2a5bda67da6f"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a0aa2e737c86bcd2138bd2a5bda67da6f">NObject::CStage::m_modelGround</a></div><div class="ttdeci">NModel::CObject m_modelGround</div><div class="ttdef"><b>Definition</b> Object_Stage.h:33</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a15d006b88c76f9bf5d807adb8e9a1436"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a15d006b88c76f9bf5d807adb8e9a1436">NObject::CStage::m_sndBGMLabel</a></div><div class="ttdeci">NSound::ELabel m_sndBGMLabel</div><div class="ttdef"><b>Definition</b> Object_Stage.h:41</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a1bb36c20df8905ecafa300bd1c8b8c41"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a1bb36c20df8905ecafa300bd1c8b8c41">NObject::CStage::m_skyDome</a></div><div class="ttdeci">NObject::CSkyDome m_skyDome</div><div class="ttdef"><b>Definition</b> Object_Stage.h:34</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a2bca5dd153bbf44e9a6cc244f785a08d"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a2bca5dd153bbf44e9a6cc244f785a08d">NObject::CStage::m_colGround</a></div><div class="ttdeci">NCollision::CMesh m_colGround</div><div class="ttdef"><b>Definition</b> Object_Stage.h:37</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a3e0968a7227d9760e79e6e455c47369e"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a3e0968a7227d9760e79e6e455c47369e">NObject::CStage::DestroyProc</a></div><div class="ttdeci">virtual void DestroyProc() override</div><div class="ttdoc">終了処理を行う(何度も実行できること)</div><div class="ttdef"><b>Definition</b> Object_Stage.cpp:65</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a432449165caf5b780aee420cba804c06"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a432449165caf5b780aee420cba804c06">NObject::CStage::RenderProc</a></div><div class="ttdeci">virtual void RenderProc() override</div><div class="ttdoc">継承後の描画処理</div><div class="ttdef"><b>Definition</b> Object_Stage.cpp:80</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a577e597878222265982f87d30e9327c0"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a577e597878222265982f87d30e9327c0">NObject::CStage::CStage</a></div><div class="ttdeci">CStage()</div><div class="ttdef"><b>Definition</b> Object_Stage.cpp:7</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a791e9ff750b0e0897e6c330df7dd41e2"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a791e9ff750b0e0897e6c330df7dd41e2">NObject::CStage::InitProc</a></div><div class="ttdeci">virtual void InitProc() override</div><div class="ttdoc">初期化を行う(何度も実行できること)</div><div class="ttdef"><b>Definition</b> Object_Stage.cpp:56</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a8a8a080aba83fde3d5c00fe9a227335e"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a8a8a080aba83fde3d5c00fe9a227335e">NObject::CStage::UpdateProc</a></div><div class="ttdeci">virtual void UpdateProc() override</div><div class="ttdoc">継承後の更新処理</div><div class="ttdef"><b>Definition</b> Object_Stage.cpp:74</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a93e5f9cc960dec2b96b4e79f49a2f16c"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a93e5f9cc960dec2b96b4e79f49a2f16c">NObject::CStage::SetStageCollision</a></div><div class="ttdeci">void SetStageCollision()</div><div class="ttdoc">当たり判定の設定タイミングをはっきりさせるために、 初期化とは別の処理で行う</div><div class="ttdef"><b>Definition</b> Object_Stage.cpp:21</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_a960a074638f4cac71af4a3dc731ced3f"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#a960a074638f4cac71af4a3dc731ced3f">NObject::CStage::~CStage</a></div><div class="ttdeci">virtual ~CStage()</div><div class="ttdef"><b>Definition</b> Object_Stage.cpp:14</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_aa6b4048db510f6774cbb5141091b9e14"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#aa6b4048db510f6774cbb5141091b9e14">NObject::CStage::m_colWall</a></div><div class="ttdeci">NCollision::CMesh m_colWall</div><div class="ttdef"><b>Definition</b> Object_Stage.h:38</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_abbd520613dee25875ab7c5e6602fc15e"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#abbd520613dee25875ab7c5e6602fc15e">NObject::CStage::ReleaseProc</a></div><div class="ttdeci">virtual void ReleaseProc() override</div><div class="ttdoc">解放を行う(1度だけ実行する)</div><div class="ttdef"><b>Definition</b> Object_Stage.cpp:47</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_stage_html_abd5643726dfc73c5a3b2e949194cb005"><div class="ttname"><a href="class_n_object_1_1_c_stage.html#abd5643726dfc73c5a3b2e949194cb005">NObject::CStage::LoadProc</a></div><div class="ttdeci">virtual void LoadProc() override</div><div class="ttdoc">ロードをマルチスレッドで行うための</div><div class="ttdef"><b>Definition</b> Object_Stage.cpp:34</div></div>
+<div class="ttc" id="anamespace_n_object_html"><div class="ttname"><a href="namespace_n_object.html">NObject</a></div><div class="ttdoc">プレイヤークラスの内部クラスの実装</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:5</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a3736bd25d9408ba6dcd72eef505af597"><div class="ttname"><a href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597">NSound::ELabel</a></div><div class="ttdeci">ELabel</div><div class="ttdef"><b>Definition</b> Sound_AssetInfo.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_f694c4fbc4aebbaf0d8c111126161e66.html">GameApp</a></li><li class="navelem"><a href="dir_2e64269c7e4a0767292f746f51bb2b62.html">Object</a></li><li class="navelem"><a href="dir_7a25eff9904c2da4f4ea5fa7d640d636.html">Stage</a></li><li class="navelem"><a href="_object___stage_8h.html">Object_Stage.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

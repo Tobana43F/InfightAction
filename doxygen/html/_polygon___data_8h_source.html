@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Polygon/Polygon_Data.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_polygon___data_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Polygon_Data.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_polygon___data_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;array&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &quot;<a class="code" href="_asset___texture_factory_8h.html">Asset\Factory\Asset_TextureFactory.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_polygon___def_8h.html">Polygon_Def.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_graphic___def_8h.html">Graphic\Graphic_Def.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include    &quot;<a class="code" href="_shader___def_8h.html">Shader\Shader_Def.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_polygon.html">NPolygon</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html">   14</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="struct_n_polygon_1_1_s_data.html#a845eda3ac98f4c35924740a6f9c44c97">SData</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="comment">// 基本的な情報</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#ac9a5f274dce577eff2a03c2c50c23bb7">   17</a></span>        <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>    <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#ac9a5f274dce577eff2a03c2c50c23bb7">matWorld</a>;   <span class="comment">// 描画時のワールド変換行列</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a67fcd79969be23f0a25846ca780ff7ca">   18</a></span>        float2              <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a67fcd79969be23f0a25846ca780ff7ca">size</a>;       <span class="comment">// 大きさ</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a52571dfb165199aca7f9c23568ca66c9">   20</a></span>        std::array&lt;float4, EVertexID::MAX&gt;      <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a52571dfb165199aca7f9c23568ca66c9">colors</a>; <span class="comment">// 頂点カラー</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="comment">// 使用するテクスチャの参照</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a6c08330c0b3b7b40a31b6aa3538f4613">   23</a></span>        <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CTextureFactory::SPAsset</a>        <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a6c08330c0b3b7b40a31b6aa3538f4613">pRefTexture</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="comment">// アニメーションの制御情報</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a79ee4313f816851a2b352816f8f22430">   26</a></span>        uint                    <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a79ee4313f816851a2b352816f8f22430">anmStackNo</a>;     <span class="comment">// 使用するアニメーション番号</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a3d8d307119fa846baa8fb4b420c92d89">   27</a></span>        uint                    <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a3d8d307119fa846baa8fb4b420c92d89">anmFrame</a>;       <span class="comment">// アニメーションのフレーム</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a5fb79214b20bba5185e084b7550cc0fc">   28</a></span>        <span class="keywordtype">bool</span>                    <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a5fb79214b20bba5185e084b7550cc0fc">isAnmEnd</a>;       <span class="comment">// アニメーション終了フラグ</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a21b0a327a8a01da7c010b7fd72ec9763">   29</a></span>        <span class="keywordtype">bool</span>                    <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a21b0a327a8a01da7c010b7fd72ec9763">isIgnoreAnm</a>;    <span class="comment">// アニメーションを無視するフラグ(手動で、連番テクスチャの番号を指定する場合)</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="comment">// 描画の制御情報</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#aae9a79c21b5641251b067e38741f4ce9">   32</a></span>        <span class="keywordtype">bool</span>                    <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#aae9a79c21b5641251b067e38741f4ce9">isReverseX</a>; <span class="comment">// X反転描画(true : 反転)</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a94e7194d70494c93292ad1d821c44222">   33</a></span>        <span class="keywordtype">bool</span>                    <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a94e7194d70494c93292ad1d821c44222">isReverseY</a>; <span class="comment">// Y反転描画(true : 反転)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#adcb52cb62ed8ebe0b601d74eabd212e6">   34</a></span>        <a class="code hl_enumeration" href="namespace_n_graphic.html#a7406ca96246ed5185cae81761e1d949f">NGraphic::EBlendState</a>   <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#adcb52cb62ed8ebe0b601d74eabd212e6">blendState</a>; <span class="comment">// ブレンドステート</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a4cff2ea30351a86c2cb67c651606ebd0">   35</a></span>        <a class="code hl_enumeration" href="namespace_n_shader.html#a2ed08154853683f0a813221ce49e2ced">NShader::ECullMode</a>      <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a4cff2ea30351a86c2cb67c651606ebd0">cullModel</a>;  <span class="comment">// カリングモード</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a3165ea56fbd17881cc005174e940fe6c">   36</a></span>        <a class="code hl_enumeration" href="namespace_n_polygon.html#a19ecb49d8cacb366c71874e32480b056">EAlignX</a>                 <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a3165ea56fbd17881cc005174e940fe6c">alignX</a>;     <span class="comment">// X軸のアライメント</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_n_polygon_1_1_s_data.html#a24cb587d2fd299fa96dd4eb639f2ebf6">   37</a></span>        <a class="code hl_enumeration" href="namespace_n_polygon.html#af50c637fab510ea94eb499dd33bcd612">EAlignY</a>                 <a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a24cb587d2fd299fa96dd4eb639f2ebf6">alignY</a>;     <span class="comment">// Y軸のアライメント</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_function" href="struct_n_polygon_1_1_s_data.html#a845eda3ac98f4c35924740a6f9c44c97">SData</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    };</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="ttc" id="a_asset___texture_factory_8h_html"><div class="ttname"><a href="_asset___texture_factory_8h.html">Asset_TextureFactory.h</a></div></div>
+<div class="ttc" id="a_graphic___def_8h_html"><div class="ttname"><a href="_graphic___def_8h.html">Graphic_Def.h</a></div></div>
+<div class="ttc" id="a_polygon___def_8h_html"><div class="ttname"><a href="_polygon___def_8h.html">Polygon_Def.h</a></div></div>
+<div class="ttc" id="a_shader___def_8h_html"><div class="ttname"><a href="_shader___def_8h.html">Shader_Def.h</a></div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a42a8f39a038c716e5e95b31ea67b8ece"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CFactory&lt; NTexture::CManager, CTextureFactory &gt;::SPAsset</a></div><div class="ttdeci">std::shared_ptr&lt; NTexture::CManager &gt; SPAsset</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:30</div></div>
+<div class="ttc" id="anamespace_n_graphic_html_a7406ca96246ed5185cae81761e1d949f"><div class="ttname"><a href="namespace_n_graphic.html#a7406ca96246ed5185cae81761e1d949f">NGraphic::EBlendState</a></div><div class="ttdeci">EBlendState</div><div class="ttdoc">合成方法を指定する定数</div><div class="ttdef"><b>Definition</b> Graphic_Def.h:6</div></div>
+<div class="ttc" id="anamespace_n_polygon_html"><div class="ttname"><a href="namespace_n_polygon.html">NPolygon</a></div><div class="ttdoc">ポリゴン(矩形ポリゴン)の定義</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:8</div></div>
+<div class="ttc" id="anamespace_n_polygon_html_a19ecb49d8cacb366c71874e32480b056"><div class="ttname"><a href="namespace_n_polygon.html#a19ecb49d8cacb366c71874e32480b056">NPolygon::EAlignX</a></div><div class="ttdeci">EAlignX</div><div class="ttdoc">X軸方向のアライメント位置</div><div class="ttdef"><b>Definition</b> Polygon_Def.h:36</div></div>
+<div class="ttc" id="anamespace_n_polygon_html_af50c637fab510ea94eb499dd33bcd612"><div class="ttname"><a href="namespace_n_polygon.html#af50c637fab510ea94eb499dd33bcd612">NPolygon::EAlignY</a></div><div class="ttdeci">EAlignY</div><div class="ttdoc">Y軸方向のアライメント位置</div><div class="ttdef"><b>Definition</b> Polygon_Def.h:43</div></div>
+<div class="ttc" id="anamespace_n_shader_html_a2ed08154853683f0a813221ce49e2ced"><div class="ttname"><a href="namespace_n_shader.html#a2ed08154853683f0a813221ce49e2ced">NShader::ECullMode</a></div><div class="ttdeci">ECullMode</div><div class="ttdoc">カリングモードを指定する定数</div><div class="ttdef"><b>Definition</b> Shader_Def.h:7</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a></div><div class="ttdoc">4x4行列構造体</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:13</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a21b0a327a8a01da7c010b7fd72ec9763"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a21b0a327a8a01da7c010b7fd72ec9763">NPolygon::SData::isIgnoreAnm</a></div><div class="ttdeci">bool isIgnoreAnm</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:29</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a24cb587d2fd299fa96dd4eb639f2ebf6"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a24cb587d2fd299fa96dd4eb639f2ebf6">NPolygon::SData::alignY</a></div><div class="ttdeci">EAlignY alignY</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:37</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a3165ea56fbd17881cc005174e940fe6c"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a3165ea56fbd17881cc005174e940fe6c">NPolygon::SData::alignX</a></div><div class="ttdeci">EAlignX alignX</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:36</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a3d8d307119fa846baa8fb4b420c92d89"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a3d8d307119fa846baa8fb4b420c92d89">NPolygon::SData::anmFrame</a></div><div class="ttdeci">uint anmFrame</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:27</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a4cff2ea30351a86c2cb67c651606ebd0"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a4cff2ea30351a86c2cb67c651606ebd0">NPolygon::SData::cullModel</a></div><div class="ttdeci">NShader::ECullMode cullModel</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:35</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a52571dfb165199aca7f9c23568ca66c9"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a52571dfb165199aca7f9c23568ca66c9">NPolygon::SData::colors</a></div><div class="ttdeci">std::array&lt; float4, EVertexID::MAX &gt; colors</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:20</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a5fb79214b20bba5185e084b7550cc0fc"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a5fb79214b20bba5185e084b7550cc0fc">NPolygon::SData::isAnmEnd</a></div><div class="ttdeci">bool isAnmEnd</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:28</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a67fcd79969be23f0a25846ca780ff7ca"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a67fcd79969be23f0a25846ca780ff7ca">NPolygon::SData::size</a></div><div class="ttdeci">float2 size</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:18</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a6c08330c0b3b7b40a31b6aa3538f4613"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a6c08330c0b3b7b40a31b6aa3538f4613">NPolygon::SData::pRefTexture</a></div><div class="ttdeci">NAsset::CTextureFactory::SPAsset pRefTexture</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:23</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a79ee4313f816851a2b352816f8f22430"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a79ee4313f816851a2b352816f8f22430">NPolygon::SData::anmStackNo</a></div><div class="ttdeci">uint anmStackNo</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:26</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a845eda3ac98f4c35924740a6f9c44c97"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a845eda3ac98f4c35924740a6f9c44c97">NPolygon::SData::SData</a></div><div class="ttdeci">SData()</div><div class="ttdoc">初期化用コンストラクタ</div><div class="ttdef"><b>Definition</b> Polygon_Data.cpp:5</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a94e7194d70494c93292ad1d821c44222"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a94e7194d70494c93292ad1d821c44222">NPolygon::SData::isReverseY</a></div><div class="ttdeci">bool isReverseY</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:33</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_aae9a79c21b5641251b067e38741f4ce9"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#aae9a79c21b5641251b067e38741f4ce9">NPolygon::SData::isReverseX</a></div><div class="ttdeci">bool isReverseX</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:32</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_ac9a5f274dce577eff2a03c2c50c23bb7"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#ac9a5f274dce577eff2a03c2c50c23bb7">NPolygon::SData::matWorld</a></div><div class="ttdeci">NMath::SMatrix44 matWorld</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:17</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_adcb52cb62ed8ebe0b601d74eabd212e6"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#adcb52cb62ed8ebe0b601d74eabd212e6">NPolygon::SData::blendState</a></div><div class="ttdeci">NGraphic::EBlendState blendState</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_613fcd1b86d2c5330714a80fbcd816c2.html">Polygon</a></li><li class="navelem"><a href="_polygon___data_8h.html">Polygon_Data.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

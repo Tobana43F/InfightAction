@@ -1,0 +1,1329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NCollision::CGame クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_collision_1_1_c_game.html','','class_n_collision_1_1_c_game-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NCollision::CGame クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ゲーム内で使用する当たり判定(1つのOBBを管理)  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_collision___game_8h_source.html">Collision_Game.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a89a68e853c53722ecfb4cac6ba8c95c5" id="r_a89a68e853c53722ecfb4cac6ba8c95c5"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a89a68e853c53722ecfb4cac6ba8c95c5">ModelData</a> = <a class="el" href="class_n_model_1_1_c_object.html">NModel::CObject</a></td></tr>
+<tr class="memdesc:a89a68e853c53722ecfb4cac6ba8c95c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">参照するモデルデータの型  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab8c1ebb28b647b11c31414b0213ab675" id="r_ab8c1ebb28b647b11c31414b0213ab675"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab8c1ebb28b647b11c31414b0213ab675">Load</a> (<a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> *_pRefOwner, const uint _groupID, const uint _colGameID, const char *_pCollisionInfoFilePath, const <a class="el" href="#a89a68e853c53722ecfb4cac6ba8c95c5">ModelData</a> *_pRefModelData)</td></tr>
+<tr class="memdesc:ab8c1ebb28b647b11c31414b0213ab675"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用可能状態へのセットアップ  <br /></td></tr>
+<tr class="memitem:a3e1c0b9bf58928c17df149fbb3eedfbe" id="r_a3e1c0b9bf58928c17df149fbb3eedfbe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3e1c0b9bf58928c17df149fbb3eedfbe">Release</a> ()</td></tr>
+<tr class="memdesc:a3e1c0b9bf58928c17df149fbb3eedfbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバッグ描画用のメッシュの解放を行う  <br /></td></tr>
+<tr class="memitem:aac2a72a59964be7e49523fd207f6e492" id="r_aac2a72a59964be7e49523fd207f6e492"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aac2a72a59964be7e49523fd207f6e492">Init</a> ()</td></tr>
+<tr class="memdesc:aac2a72a59964be7e49523fd207f6e492"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <br /></td></tr>
+<tr class="memitem:a6ffd840309b4d181e0677213127f3dd1" id="r_a6ffd840309b4d181e0677213127f3dd1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6ffd840309b4d181e0677213127f3dd1">Update</a> ()</td></tr>
+<tr class="memdesc:a6ffd840309b4d181e0677213127f3dd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定情報の更新  <br /></td></tr>
+<tr class="memitem:ac463a3e8824822eea8d99b2cffd81d9b" id="r_ac463a3e8824822eea8d99b2cffd81d9b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac463a3e8824822eea8d99b2cffd81d9b">RenderDebug</a> ()</td></tr>
+<tr class="memdesc:ac463a3e8824822eea8d99b2cffd81d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">デバッグ用の描画  <br /></td></tr>
+<tr class="memitem:ada9a5baa819ead28e1169a0d512566d7" id="r_ada9a5baa819ead28e1169a0d512566d7"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ada9a5baa819ead28e1169a0d512566d7">GetOwner</a> ()</td></tr>
+<tr class="memitem:a2c7d56b6a7a7da2347996787d18ceaa3" id="r_a2c7d56b6a7a7da2347996787d18ceaa3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2c7d56b6a7a7da2347996787d18ceaa3">GetIsEnable</a> () const</td></tr>
+<tr class="memitem:a531f52ac2d3276751a6d4b337c7bb385" id="r_a531f52ac2d3276751a6d4b337c7bb385"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a531f52ac2d3276751a6d4b337c7bb385">GetCollisionID</a> () const</td></tr>
+<tr class="memitem:a64c6b9fd234eb0c3475092d8f740cf97" id="r_a64c6b9fd234eb0c3475092d8f740cf97"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a64c6b9fd234eb0c3475092d8f740cf97">GetIsHit</a> () const</td></tr>
+<tr class="memitem:a46324fccc8a59e9d91a28c255c23997a" id="r_a46324fccc8a59e9d91a28c255c23997a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a46324fccc8a59e9d91a28c255c23997a">GetIsGroupHit</a> () const</td></tr>
+<tr class="memitem:a8118cd836e27fc0b1764841e5ae4cbb2" id="r_a8118cd836e27fc0b1764841e5ae4cbb2"><td class="memItemLeft">const <a class="el" href="class_n_collision_1_1_c_transform_o_b_box.html">CTransformOBBox</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a8118cd836e27fc0b1764841e5ae4cbb2">GetOBB</a> () const</td></tr>
+<tr class="memitem:ac38fe84ec9325dda28ec76eea94df8a0" id="r_ac38fe84ec9325dda28ec76eea94df8a0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac38fe84ec9325dda28ec76eea94df8a0">GetIsRefBone</a> () const</td></tr>
+<tr class="memitem:ad05112088d60bf94c4414965bbe49d34" id="r_ad05112088d60bf94c4414965bbe49d34"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#ad05112088d60bf94c4414965bbe49d34">GetRefBoneIndex</a> () const</td></tr>
+<tr class="memitem:a6e203a6cecb5608f6e93e392a0c51b1e" id="r_a6e203a6cecb5608f6e93e392a0c51b1e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a6e203a6cecb5608f6e93e392a0c51b1e">GetIsRefOwnerTransform</a> () const</td></tr>
+<tr class="memitem:a2adeee1503f83e28babc612b19699aac" id="r_a2adeee1503f83e28babc612b19699aac"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2adeee1503f83e28babc612b19699aac">SetIsEnable</a> (const bool _state)</td></tr>
+<tr class="memitem:ab887e34ad8403b280ac1e8665c987425" id="r_ab887e34ad8403b280ac1e8665c987425"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab887e34ad8403b280ac1e8665c987425">SetIsHit</a> ()</td></tr>
+<tr class="memitem:a57faa9e2765d239fcaef8e5a7bed5e85" id="r_a57faa9e2765d239fcaef8e5a7bed5e85"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a57faa9e2765d239fcaef8e5a7bed5e85">SetIsGroupHit</a> ()</td></tr>
+<tr class="memitem:ac98162fb003ccedb4aeb6d73cad241e4" id="r_ac98162fb003ccedb4aeb6d73cad241e4"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac98162fb003ccedb4aeb6d73cad241e4">CGame</a> ()</td></tr>
+<tr class="memitem:a25f0e87a04423953d344f87b445e4aa8" id="r_a25f0e87a04423953d344f87b445e4aa8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a25f0e87a04423953d344f87b445e4aa8">~CGame</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad848718f557c3378c934194e1457cce1" id="r_ad848718f557c3378c934194e1457cce1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad848718f557c3378c934194e1457cce1">LoadCollisionInfo</a> (const uint _groupID, const uint _colGameID, const char *_pCollisionInfoFilePath)</td></tr>
+<tr class="memdesc:ad848718f557c3378c934194e1457cce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定に共通で必要なデータを読み込む  <br /></td></tr>
+<tr class="memitem:a187bab7b695f2b5798496ea413779fc6" id="r_a187bab7b695f2b5798496ea413779fc6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a187bab7b695f2b5798496ea413779fc6">LoadOBBData</a> (const uint _groupID, const uint _colGameID)</td></tr>
+<tr class="memdesc:a187bab7b695f2b5798496ea413779fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">OBB情報を読み込む  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a4c0d893ab178b1ee673ca9a6cfff934f" id="r_a4c0d893ab178b1ee673ca9a6cfff934f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4c0d893ab178b1ee673ca9a6cfff934f">m_isEnable</a></td></tr>
+<tr class="memitem:a45f87e5613b2d2f2bfb1dd658b11a8b0" id="r_a45f87e5613b2d2f2bfb1dd658b11a8b0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a45f87e5613b2d2f2bfb1dd658b11a8b0">m_isHit</a></td></tr>
+<tr class="memitem:abcbd677754a0f2426fc6574594458275" id="r_abcbd677754a0f2426fc6574594458275"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#abcbd677754a0f2426fc6574594458275">m_isGroupHit</a></td></tr>
+<tr class="memitem:a0b22ed46283b4a2b42ec7355d1e4ca27" id="r_a0b22ed46283b4a2b42ec7355d1e4ca27"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a0b22ed46283b4a2b42ec7355d1e4ca27">m_collisionID</a></td></tr>
+<tr class="memitem:a2912a652ff232f7b8dbdad2fb201c454" id="r_a2912a652ff232f7b8dbdad2fb201c454"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a2912a652ff232f7b8dbdad2fb201c454">m_pRefOwner</a></td></tr>
+<tr class="memitem:a2c28cc1d8b7b88ee5c0afb12577109c8" id="r_a2c28cc1d8b7b88ee5c0afb12577109c8"><td class="memItemLeft">const <a class="el" href="#a89a68e853c53722ecfb4cac6ba8c95c5">ModelData</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a2c28cc1d8b7b88ee5c0afb12577109c8">m_pRefModel</a></td></tr>
+<tr class="memitem:a42fb0a8a5f000ccc0b4bfda842758f10" id="r_a42fb0a8a5f000ccc0b4bfda842758f10"><td class="memItemLeft"><a class="el" href="class_n_collision_1_1_c_transform_o_b_box.html">CTransformOBBox</a>&#160;</td><td class="memItemRight"><a class="el" href="#a42fb0a8a5f000ccc0b4bfda842758f10">m_obb</a></td></tr>
+<tr class="memitem:a29c11b9276f23668e1f39f1b2aceeaff" id="r_a29c11b9276f23668e1f39f1b2aceeaff"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a29c11b9276f23668e1f39f1b2aceeaff">m_isRefBone</a></td></tr>
+<tr class="memitem:aab6bb5a584095bb3e1dad496d33d7a2a" id="r_aab6bb5a584095bb3e1dad496d33d7a2a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aab6bb5a584095bb3e1dad496d33d7a2a">m_isCreateOBBByBone</a></td></tr>
+<tr class="memitem:ae0267046d44af96f1ef2c0bdb7d0b5b0" id="r_ae0267046d44af96f1ef2c0bdb7d0b5b0"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#ae0267046d44af96f1ef2c0bdb7d0b5b0">m_refBoneIndex</a></td></tr>
+<tr class="memitem:adc14845d4b5498570a3ba430827be505" id="r_adc14845d4b5498570a3ba430827be505"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#adc14845d4b5498570a3ba430827be505">m_isRefOwnerTransform</a></td></tr>
+<tr class="memitem:a0e924f079242b37891b5a47e659d8f45" id="r_a0e924f079242b37891b5a47e659d8f45"><td class="memItemLeft">LPD3DXMESH&#160;</td><td class="memItemRight"><a class="el" href="#a0e924f079242b37891b5a47e659d8f45">m_boxMesh</a></td></tr>
+<tr class="memitem:a0a5a71363a88b1773bdfd39e3cff6fdb" id="r_a0a5a71363a88b1773bdfd39e3cff6fdb"><td class="memItemLeft">D3DMATERIAL9&#160;</td><td class="memItemRight"><a class="el" href="#a0a5a71363a88b1773bdfd39e3cff6fdb">m_materialEnable</a></td></tr>
+<tr class="memitem:aa69828a6d4ffae47804c21fba88a5c36" id="r_aa69828a6d4ffae47804c21fba88a5c36"><td class="memItemLeft">D3DMATERIAL9&#160;</td><td class="memItemRight"><a class="el" href="#aa69828a6d4ffae47804c21fba88a5c36">m_materialHit</a></td></tr>
+<tr class="memitem:ae21713c720847eae2e4d677049a94fc4" id="r_ae21713c720847eae2e4d677049a94fc4"><td class="memItemLeft">D3DMATERIAL9&#160;</td><td class="memItemRight"><a class="el" href="#ae21713c720847eae2e4d677049a94fc4">m_materialGroupHit</a></td></tr>
+<tr class="memitem:a360807fca02ac816ddce8d374d791273" id="r_a360807fca02ac816ddce8d374d791273"><td class="memItemLeft">D3DMATERIAL9&#160;</td><td class="memItemRight"><a class="el" href="#a360807fca02ac816ddce8d374d791273">m_materialDisable</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>ゲーム内で使用する当たり判定(1つのOBBを管理) </p>
+<p>継承してに当たり判定に情報を追加する </p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a89a68e853c53722ecfb4cac6ba8c95c5" name="a89a68e853c53722ecfb4cac6ba8c95c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a68e853c53722ecfb4cac6ba8c95c5">&#9670;&#160;</a></span>ModelData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a89a68e853c53722ecfb4cac6ba8c95c5">NCollision::CGame::ModelData</a> = <a class="el" href="class_n_model_1_1_c_object.html">NModel::CObject</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>参照するモデルデータの型 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>変更する予定があるので、対応しやすいように別名をつける </dd></dl>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="ac98162fb003ccedb4aeb6d73cad241e4" name="ac98162fb003ccedb4aeb6d73cad241e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98162fb003ccedb4aeb6d73cad241e4">&#9670;&#160;</a></span>CGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NCollision::CGame::CGame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   41</span>                 :</div>
+<div class="line"><span class="lineno">   42</span>        <a class="code hl_variable" href="#a4c0d893ab178b1ee673ca9a6cfff934f">m_isEnable</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   43</span>        <a class="code hl_variable" href="#a45f87e5613b2d2f2bfb1dd658b11a8b0">m_isHit</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="#abcbd677754a0f2426fc6574594458275">m_isGroupHit</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   45</span>        <a class="code hl_variable" href="#a2912a652ff232f7b8dbdad2fb201c454">m_pRefOwner</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">   46</span>        <a class="code hl_variable" href="#a29c11b9276f23668e1f39f1b2aceeaff">m_isRefBone</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="#aab6bb5a584095bb3e1dad496d33d7a2a">m_isCreateOBBByBone</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   48</span>        <a class="code hl_variable" href="#ae0267046d44af96f1ef2c0bdb7d0b5b0">m_refBoneIndex</a>(UINT_MAX),       <span class="comment">// 不正な値を設定しておく</span></div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_variable" href="#adc14845d4b5498570a3ba430827be505">m_isRefOwnerTransform</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_variable" href="#a0e924f079242b37891b5a47e659d8f45">m_boxMesh</a>(<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   51</span>    {</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a0e924f079242b37891b5a47e659d8f45"><div class="ttname"><a href="#a0e924f079242b37891b5a47e659d8f45">NCollision::CGame::m_boxMesh</a></div><div class="ttdeci">LPD3DXMESH m_boxMesh</div><div class="ttdef"><b>Definition</b> Collision_Game.h:82</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a2912a652ff232f7b8dbdad2fb201c454"><div class="ttname"><a href="#a2912a652ff232f7b8dbdad2fb201c454">NCollision::CGame::m_pRefOwner</a></div><div class="ttdeci">NObject::CGameObject * m_pRefOwner</div><div class="ttdef"><b>Definition</b> Collision_Game.h:68</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a29c11b9276f23668e1f39f1b2aceeaff"><div class="ttname"><a href="#a29c11b9276f23668e1f39f1b2aceeaff">NCollision::CGame::m_isRefBone</a></div><div class="ttdeci">bool m_isRefBone</div><div class="ttdef"><b>Definition</b> Collision_Game.h:74</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a45f87e5613b2d2f2bfb1dd658b11a8b0"><div class="ttname"><a href="#a45f87e5613b2d2f2bfb1dd658b11a8b0">NCollision::CGame::m_isHit</a></div><div class="ttdeci">bool m_isHit</div><div class="ttdef"><b>Definition</b> Collision_Game.h:65</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a4c0d893ab178b1ee673ca9a6cfff934f"><div class="ttname"><a href="#a4c0d893ab178b1ee673ca9a6cfff934f">NCollision::CGame::m_isEnable</a></div><div class="ttdeci">bool m_isEnable</div><div class="ttdef"><b>Definition</b> Collision_Game.h:64</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_aab6bb5a584095bb3e1dad496d33d7a2a"><div class="ttname"><a href="#aab6bb5a584095bb3e1dad496d33d7a2a">NCollision::CGame::m_isCreateOBBByBone</a></div><div class="ttdeci">bool m_isCreateOBBByBone</div><div class="ttdef"><b>Definition</b> Collision_Game.h:75</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_abcbd677754a0f2426fc6574594458275"><div class="ttname"><a href="#abcbd677754a0f2426fc6574594458275">NCollision::CGame::m_isGroupHit</a></div><div class="ttdeci">bool m_isGroupHit</div><div class="ttdef"><b>Definition</b> Collision_Game.h:66</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_adc14845d4b5498570a3ba430827be505"><div class="ttname"><a href="#adc14845d4b5498570a3ba430827be505">NCollision::CGame::m_isRefOwnerTransform</a></div><div class="ttdeci">bool m_isRefOwnerTransform</div><div class="ttdef"><b>Definition</b> Collision_Game.h:78</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_ae0267046d44af96f1ef2c0bdb7d0b5b0"><div class="ttname"><a href="#ae0267046d44af96f1ef2c0bdb7d0b5b0">NCollision::CGame::m_refBoneIndex</a></div><div class="ttdeci">uint m_refBoneIndex</div><div class="ttdef"><b>Definition</b> Collision_Game.h:76</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a25f0e87a04423953d344f87b445e4aa8" name="a25f0e87a04423953d344f87b445e4aa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f0e87a04423953d344f87b445e4aa8">&#9670;&#160;</a></span>~CGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NCollision::CGame::~CGame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   56</span>    {</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a531f52ac2d3276751a6d4b337c7bb385" name="a531f52ac2d3276751a6d4b337c7bb385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a531f52ac2d3276751a6d4b337c7bb385">&#9670;&#160;</a></span>GetCollisionID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NCollision::CGame::GetCollisionID </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   45</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a0b22ed46283b4a2b42ec7355d1e4ca27">m_collisionID</a>; }</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a0b22ed46283b4a2b42ec7355d1e4ca27"><div class="ttname"><a href="#a0b22ed46283b4a2b42ec7355d1e4ca27">NCollision::CGame::m_collisionID</a></div><div class="ttdeci">uint m_collisionID</div><div class="ttdef"><b>Definition</b> Collision_Game.h:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2c7d56b6a7a7da2347996787d18ceaa3" name="a2c7d56b6a7a7da2347996787d18ceaa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c7d56b6a7a7da2347996787d18ceaa3">&#9670;&#160;</a></span>GetIsEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::GetIsEnable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   44</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a4c0d893ab178b1ee673ca9a6cfff934f">m_isEnable</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a46324fccc8a59e9d91a28c255c23997a" name="a46324fccc8a59e9d91a28c255c23997a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46324fccc8a59e9d91a28c255c23997a">&#9670;&#160;</a></span>GetIsGroupHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::GetIsGroupHit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#abcbd677754a0f2426fc6574594458275">m_isGroupHit</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a64c6b9fd234eb0c3475092d8f740cf97" name="a64c6b9fd234eb0c3475092d8f740cf97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c6b9fd234eb0c3475092d8f740cf97">&#9670;&#160;</a></span>GetIsHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::GetIsHit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a45f87e5613b2d2f2bfb1dd658b11a8b0">m_isHit</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac38fe84ec9325dda28ec76eea94df8a0" name="ac38fe84ec9325dda28ec76eea94df8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38fe84ec9325dda28ec76eea94df8a0">&#9670;&#160;</a></span>GetIsRefBone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::GetIsRefBone </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   51</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a29c11b9276f23668e1f39f1b2aceeaff">m_isRefBone</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6e203a6cecb5608f6e93e392a0c51b1e" name="a6e203a6cecb5608f6e93e392a0c51b1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e203a6cecb5608f6e93e392a0c51b1e">&#9670;&#160;</a></span>GetIsRefOwnerTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::GetIsRefOwnerTransform </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   54</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#adc14845d4b5498570a3ba430827be505">m_isRefOwnerTransform</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8118cd836e27fc0b1764841e5ae4cbb2" name="a8118cd836e27fc0b1764841e5ae4cbb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8118cd836e27fc0b1764841e5ae4cbb2">&#9670;&#160;</a></span>GetOBB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_n_collision_1_1_c_transform_o_b_box.html">CTransformOBBox</a> &amp; NCollision::CGame::GetOBB </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   49</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a42fb0a8a5f000ccc0b4bfda842758f10">m_obb</a>; }</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a42fb0a8a5f000ccc0b4bfda842758f10"><div class="ttname"><a href="#a42fb0a8a5f000ccc0b4bfda842758f10">NCollision::CGame::m_obb</a></div><div class="ttdeci">CTransformOBBox m_obb</div><div class="ttdef"><b>Definition</b> Collision_Game.h:72</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ada9a5baa819ead28e1169a0d512566d7" name="ada9a5baa819ead28e1169a0d512566d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9a5baa819ead28e1169a0d512566d7">&#9670;&#160;</a></span>GetOwner()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> * NCollision::CGame::GetOwner </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   43</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a2912a652ff232f7b8dbdad2fb201c454">m_pRefOwner</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad05112088d60bf94c4414965bbe49d34" name="ad05112088d60bf94c4414965bbe49d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05112088d60bf94c4414965bbe49d34">&#9670;&#160;</a></span>GetRefBoneIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NCollision::CGame::GetRefBoneIndex </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{ <span class="keywordflow">return</span>  <a class="code hl_variable" href="#ae0267046d44af96f1ef2c0bdb7d0b5b0">m_refBoneIndex</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aac2a72a59964be7e49523fd207f6e492" name="aac2a72a59964be7e49523fd207f6e492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac2a72a59964be7e49523fd207f6e492">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CGame::Init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期化 </p>
+<div class="fragment"><div class="line"><span class="lineno">  113</span>    {</div>
+<div class="line"><span class="lineno">  114</span>        <a class="code hl_variable" href="#a4c0d893ab178b1ee673ca9a6cfff934f">m_isEnable</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  115</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab8c1ebb28b647b11c31414b0213ab675" name="ab8c1ebb28b647b11c31414b0213ab675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c1ebb28b647b11c31414b0213ab675">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CGame::Load </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> *</td>          <td class="paramname"><span class="paramname"><em>_pRefOwner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_groupID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_colGameID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_pCollisionInfoFilePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a89a68e853c53722ecfb4cac6ba8c95c5">ModelData</a> *</td>          <td class="paramname"><span class="paramname"><em>_pRefModelData</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用可能状態へのセットアップ </p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>    {</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   68</span>            <span class="comment">// ファイルオープン</span></div>
+<div class="line"><span class="lineno">   69</span>            std::fstream file(_pCollisionInfoFilePath);</div>
+<div class="line"><span class="lineno">   70</span>            <span class="keywordflow">if</span> (file.fail()) {</div>
+<div class="line"><span class="lineno">   71</span>                <span class="keywordflow">throw</span>(<span class="stringliteral">&quot;ファイル読み込み失敗&quot;</span>);</div>
+<div class="line"><span class="lineno">   72</span>            }</div>
+<div class="line"><span class="lineno">   73</span>            std::istreambuf_iterator&lt;char&gt;  begin(file);</div>
+<div class="line"><span class="lineno">   74</span>            std::istreambuf_iterator&lt;char&gt;  end;</div>
+<div class="line"><span class="lineno">   75</span>            std::string fileContent(begin, end);</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>            std::string err;</div>
+<div class="line"><span class="lineno">   78</span>            g_data = <a class="code hl_function" href="classjson11_1_1_json.html#a328337347162b928d9575bc57b3d20da">json11::Json::parse</a>(fileContent, err);</div>
+<div class="line"><span class="lineno">   79</span>            <span class="keywordflow">if</span> (!err.empty()) {</div>
+<div class="line"><span class="lineno">   80</span>                <span class="keywordflow">throw</span>(err.data());</div>
+<div class="line"><span class="lineno">   81</span>            }</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>            <span class="comment">// 当たり判定IDを設定</span></div>
+<div class="line"><span class="lineno">   84</span>            <a class="code hl_variable" href="#a0b22ed46283b4a2b42ec7355d1e4ca27">m_collisionID</a> = _colGameID;</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>            <span class="comment">// 所有者を設定</span></div>
+<div class="line"><span class="lineno">   87</span>            <a class="code hl_variable" href="#a2912a652ff232f7b8dbdad2fb201c454">m_pRefOwner</a> = _pRefOwner;</div>
+<div class="line"><span class="lineno">   88</span>            <a class="code hl_variable" href="#a2c28cc1d8b7b88ee5c0afb12577109c8">m_pRefModel</a> = _pRefModelData;</div>
+<div class="line"><span class="lineno">   89</span> </div>
+<div class="line"><span class="lineno">   90</span>            <span class="comment">// 基本的な情報を読み込む</span></div>
+<div class="line"><span class="lineno">   91</span>            <a class="code hl_function" href="#ad848718f557c3378c934194e1457cce1">LoadCollisionInfo</a>(</div>
+<div class="line"><span class="lineno">   92</span>                _groupID,</div>
+<div class="line"><span class="lineno">   93</span>                _colGameID,</div>
+<div class="line"><span class="lineno">   94</span>                _pCollisionInfoFilePath);</div>
+<div class="line"><span class="lineno">   95</span>        }</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> <span class="keywordtype">char</span>* _pErr) {</div>
+<div class="line"><span class="lineno">   97</span>            std::string err = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">   98</span>            err += <span class="stringliteral">&quot;当たり判定の読み込みでエラーが発生しました。\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   99</span>            err += _pErr;</div>
+<div class="line"><span class="lineno">  100</span>            err += <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  101</span>            err += <span class="stringliteral">&quot;FileName : &quot;</span>;</div>
+<div class="line"><span class="lineno">  102</span>            err += _pCollisionInfoFilePath;</div>
+<div class="line"><span class="lineno">  103</span>            <a class="code hl_define" href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a>(err.data());</div>
+<div class="line"><span class="lineno">  104</span>        }</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="ttc" id="a_system___error_8h_html_a1ef9aee6b1a8c442c300a378918a4d5f"><div class="ttname"><a href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a></div><div class="ttdeci">#define ErrorEx(_pMessage)</div><div class="ttdoc">ファイル名と行の情報を付加するマクロ</div><div class="ttdef"><b>Definition</b> System_Error.h:5</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a2c28cc1d8b7b88ee5c0afb12577109c8"><div class="ttname"><a href="#a2c28cc1d8b7b88ee5c0afb12577109c8">NCollision::CGame::m_pRefModel</a></div><div class="ttdeci">const ModelData * m_pRefModel</div><div class="ttdef"><b>Definition</b> Collision_Game.h:69</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_ad848718f557c3378c934194e1457cce1"><div class="ttname"><a href="#ad848718f557c3378c934194e1457cce1">NCollision::CGame::LoadCollisionInfo</a></div><div class="ttdeci">void LoadCollisionInfo(const uint _groupID, const uint _colGameID, const char *_pCollisionInfoFilePath)</div><div class="ttdoc">当たり判定に共通で必要なデータを読み込む</div><div class="ttdef"><b>Definition</b> Collision_Game.cpp:175</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a328337347162b928d9575bc57b3d20da"><div class="ttname"><a href="classjson11_1_1_json.html#a328337347162b928d9575bc57b3d20da">json11::Json::parse</a></div><div class="ttdeci">static Json parse(const std::string &amp;in, std::string &amp;err, JsonParse strategy=JsonParse::STANDARD)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad848718f557c3378c934194e1457cce1" name="ad848718f557c3378c934194e1457cce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad848718f557c3378c934194e1457cce1">&#9670;&#160;</a></span>LoadCollisionInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CGame::LoadCollisionInfo </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_groupID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_colGameID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_pCollisionInfoFilePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当たり判定に共通で必要なデータを読み込む </p>
+<div class="fragment"><div class="line"><span class="lineno">  179</span>    {</div>
+<div class="line"><span class="lineno">  180</span>        <span class="comment">// Gameの値(ゲーム配列をループし、自分の情報を探す)</span></div>
+<div class="line"><span class="lineno">  181</span>        json11::Json jsonGroup = g_data[<span class="stringliteral">&quot;Group&quot;</span>][_groupID];</div>
+<div class="line"><span class="lineno">  182</span>        json11::Json jsonCollision = jsonGroup[<span class="stringliteral">&quot;Collision&quot;</span>].<a class="code hl_function" href="classjson11_1_1_json.html#aee966f000b422ae22f33d70dab73f524">array_items</a>()[_colGameID];</div>
+<div class="line"><span class="lineno">  183</span> </div>
+<div class="line"><span class="lineno">  184</span>        <span class="comment">// 所有者の変換行列の参照をするかどうか</span></div>
+<div class="line"><span class="lineno">  185</span>        <span class="keywordflow">if</span> (jsonCollision[<span class="stringliteral">&quot;IsRefOwnerTransform&quot;</span>].bool_value()) {</div>
+<div class="line"><span class="lineno">  186</span>            <a class="code hl_variable" href="#adc14845d4b5498570a3ba430827be505">m_isRefOwnerTransform</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  187</span>        }</div>
+<div class="line"><span class="lineno">  188</span> </div>
+<div class="line"><span class="lineno">  189</span>        <span class="comment">// 参照ボーン</span></div>
+<div class="line"><span class="lineno">  190</span>        <a class="code hl_variable" href="#aab6bb5a584095bb3e1dad496d33d7a2a">m_isCreateOBBByBone</a> = jsonCollision[<span class="stringliteral">&quot;IsCreateByBone&quot;</span>].<a class="code hl_function" href="classjson11_1_1_json.html#a23ccdd948ff1738a61d416d89d3a80b0">bool_value</a>();</div>
+<div class="line"><span class="lineno">  191</span>        <span class="keywordflow">if</span> (!jsonCollision[<span class="stringliteral">&quot;RefBoneID&quot;</span>].is_null()) {</div>
+<div class="line"><span class="lineno">  192</span>            <a class="code hl_define" href="_debug___assert_8h.html#a73fdb60411ae5c7145be5bffb2f7c240">AssertNotNull</a>(<a class="code hl_variable" href="#a2c28cc1d8b7b88ee5c0afb12577109c8">m_pRefModel</a> &amp;&amp; <span class="stringliteral">&quot;ボーンを参照する設定ですが、参照するモデルデータが設定されていません。&quot;</span>);</div>
+<div class="line"><span class="lineno">  193</span>            <a class="code hl_variable" href="#a29c11b9276f23668e1f39f1b2aceeaff">m_isRefBone</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  194</span>            <a class="code hl_variable" href="#ae0267046d44af96f1ef2c0bdb7d0b5b0">m_refBoneIndex</a> = jsonCollision[<span class="stringliteral">&quot;RefBoneID&quot;</span>].<a class="code hl_function" href="classjson11_1_1_json.html#af7093e5034daa0e138be9013440292c9">int_value</a>();</div>
+<div class="line"><span class="lineno">  195</span>        }</div>
+<div class="line"><span class="lineno">  196</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  197</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aab6bb5a584095bb3e1dad496d33d7a2a">m_isCreateOBBByBone</a>) {</div>
+<div class="line"><span class="lineno">  198</span>                <span class="keywordflow">throw</span>(<span class="stringliteral">&quot;ボーン情報をもとにあたり判定を作成する設定ですが、参照するボーンが設定されていません。&quot;</span>);</div>
+<div class="line"><span class="lineno">  199</span>            }</div>
+<div class="line"><span class="lineno">  200</span>        }</div>
+<div class="line"><span class="lineno">  201</span> </div>
+<div class="line"><span class="lineno">  202</span>        <span class="comment">// OBB情報</span></div>
+<div class="line"><span class="lineno">  203</span>        <a class="code hl_function" href="#a187bab7b695f2b5798496ea413779fc6">LoadOBBData</a>(_groupID, _colGameID);</div>
+<div class="line"><span class="lineno">  204</span> </div>
+<div class="line"><span class="lineno">  205</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a13154a8af75f07c4d7f490898788b499">NDirectX::MakeMaterialData</a>(<a class="code hl_variable" href="#a0a5a71363a88b1773bdfd39e3cff6fdb">m_materialEnable</a>, <a class="code hl_typedef" href="namespace_n_common.html#a6dcf0aa38ee7ea0e0719e8fc6cee738e">float4</a>(0, 0, 1, 0.25f));</div>
+<div class="line"><span class="lineno">  206</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a13154a8af75f07c4d7f490898788b499">NDirectX::MakeMaterialData</a>(<a class="code hl_variable" href="#aa69828a6d4ffae47804c21fba88a5c36">m_materialHit</a>, <a class="code hl_typedef" href="namespace_n_common.html#a6dcf0aa38ee7ea0e0719e8fc6cee738e">float4</a>(1, 0, 0, 0.25f));</div>
+<div class="line"><span class="lineno">  207</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a13154a8af75f07c4d7f490898788b499">NDirectX::MakeMaterialData</a>(<a class="code hl_variable" href="#ae21713c720847eae2e4d677049a94fc4">m_materialGroupHit</a>, <a class="code hl_typedef" href="namespace_n_common.html#a6dcf0aa38ee7ea0e0719e8fc6cee738e">float4</a>(1, 0.125f, 0, 0.25f));</div>
+<div class="line"><span class="lineno">  208</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a13154a8af75f07c4d7f490898788b499">NDirectX::MakeMaterialData</a>(<a class="code hl_variable" href="#a360807fca02ac816ddce8d374d791273">m_materialDisable</a>, <a class="code hl_typedef" href="namespace_n_common.html#a6dcf0aa38ee7ea0e0719e8fc6cee738e">float4</a>(0, 0, 0, 0.25f));</div>
+<div class="line"><span class="lineno">  209</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_a73fdb60411ae5c7145be5bffb2f7c240"><div class="ttname"><a href="_debug___assert_8h.html#a73fdb60411ae5c7145be5bffb2f7c240">AssertNotNull</a></div><div class="ttdeci">#define AssertNotNull(var)</div><div class="ttdoc">Nullでないことを検証する</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:35</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a0a5a71363a88b1773bdfd39e3cff6fdb"><div class="ttname"><a href="#a0a5a71363a88b1773bdfd39e3cff6fdb">NCollision::CGame::m_materialEnable</a></div><div class="ttdeci">D3DMATERIAL9 m_materialEnable</div><div class="ttdef"><b>Definition</b> Collision_Game.h:83</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a187bab7b695f2b5798496ea413779fc6"><div class="ttname"><a href="#a187bab7b695f2b5798496ea413779fc6">NCollision::CGame::LoadOBBData</a></div><div class="ttdeci">void LoadOBBData(const uint _groupID, const uint _colGameID)</div><div class="ttdoc">OBB情報を読み込む</div><div class="ttdef"><b>Definition</b> Collision_Game.cpp:211</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_a360807fca02ac816ddce8d374d791273"><div class="ttname"><a href="#a360807fca02ac816ddce8d374d791273">NCollision::CGame::m_materialDisable</a></div><div class="ttdeci">D3DMATERIAL9 m_materialDisable</div><div class="ttdef"><b>Definition</b> Collision_Game.h:86</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_aa69828a6d4ffae47804c21fba88a5c36"><div class="ttname"><a href="#aa69828a6d4ffae47804c21fba88a5c36">NCollision::CGame::m_materialHit</a></div><div class="ttdeci">D3DMATERIAL9 m_materialHit</div><div class="ttdef"><b>Definition</b> Collision_Game.h:84</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html_ae21713c720847eae2e4d677049a94fc4"><div class="ttname"><a href="#ae21713c720847eae2e4d677049a94fc4">NCollision::CGame::m_materialGroupHit</a></div><div class="ttdeci">D3DMATERIAL9 m_materialGroupHit</div><div class="ttdef"><b>Definition</b> Collision_Game.h:85</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html_a23ccdd948ff1738a61d416d89d3a80b0"><div class="ttname"><a href="classjson11_1_1_json.html#a23ccdd948ff1738a61d416d89d3a80b0">json11::Json::bool_value</a></div><div class="ttdeci">bool bool_value() const</div><div class="ttdef"><b>Definition</b> json11.cpp:273</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html_aee966f000b422ae22f33d70dab73f524"><div class="ttname"><a href="classjson11_1_1_json.html#aee966f000b422ae22f33d70dab73f524">json11::Json::array_items</a></div><div class="ttdeci">const array &amp; array_items() const</div><div class="ttdef"><b>Definition</b> json11.cpp:275</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html_af7093e5034daa0e138be9013440292c9"><div class="ttname"><a href="classjson11_1_1_json.html#af7093e5034daa0e138be9013440292c9">json11::Json::int_value</a></div><div class="ttdeci">int int_value() const</div><div class="ttdef"><b>Definition</b> json11.cpp:272</div></div>
+<div class="ttc" id="anamespace_n_common_html_a6dcf0aa38ee7ea0e0719e8fc6cee738e"><div class="ttname"><a href="namespace_n_common.html#a6dcf0aa38ee7ea0e0719e8fc6cee738e">NCommon::float4</a></div><div class="ttdeci">NMath::SVector4 float4</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:21</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_a13154a8af75f07c4d7f490898788b499"><div class="ttname"><a href="namespace_n_direct_x.html#a13154a8af75f07c4d7f490898788b499">NDirectX::MakeMaterialData</a></div><div class="ttdeci">void MakeMaterialData(D3DMATERIAL9 &amp;_rMaterial, const float4 &amp;_color)</div><div class="ttdoc">マテリアルデータを作成</div><div class="ttdef"><b>Definition</b> DirectX_Util.cpp:205</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a187bab7b695f2b5798496ea413779fc6" name="a187bab7b695f2b5798496ea413779fc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187bab7b695f2b5798496ea413779fc6">&#9670;&#160;</a></span>LoadOBBData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CGame::LoadOBBData </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_groupID</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_colGameID</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>OBB情報を読み込む </p>
+<div class="fragment"><div class="line"><span class="lineno">  214</span>    {</div>
+<div class="line"><span class="lineno">  215</span>        json11::Json jsonGroup = g_data[<span class="stringliteral">&quot;Group&quot;</span>][_groupID];</div>
+<div class="line"><span class="lineno">  216</span>        json11::Json jsonCollision = jsonGroup[<span class="stringliteral">&quot;Collision&quot;</span>].<a class="code hl_function" href="classjson11_1_1_json.html#aee966f000b422ae22f33d70dab73f524">array_items</a>()[_colGameID];</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> pos;</div>
+<div class="line"><span class="lineno">  219</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> size;</div>
+<div class="line"><span class="lineno">  220</span>        <a class="code hl_typedef" href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">float3</a> posture;</div>
+<div class="line"><span class="lineno">  221</span> </div>
+<div class="line"><span class="lineno">  222</span>        <span class="comment">// 各軸の要素を取得</span></div>
+<div class="line"><span class="lineno">  223</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i) {</div>
+<div class="line"><span class="lineno">  224</span>            pos.array[i]        = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(jsonCollision[<span class="stringliteral">&quot;Pos&quot;</span>][i].number_value());</div>
+<div class="line"><span class="lineno">  225</span>            size.array[i]       = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(jsonCollision[<span class="stringliteral">&quot;Size&quot;</span>][i].number_value());</div>
+<div class="line"><span class="lineno">  226</span>            posture.array[i]    = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(jsonCollision[<span class="stringliteral">&quot;Posture&quot;</span>][i].number_value());</div>
+<div class="line"><span class="lineno">  227</span>        }</div>
+<div class="line"><span class="lineno">  228</span>        <span class="comment">// 回転要素から、姿勢を表す行列を作成</span></div>
+<div class="line"><span class="lineno">  229</span>        NMath::SMatrix44    matRot;</div>
+<div class="line"><span class="lineno">  230</span>        <a class="code hl_function" href="namespace_n_math.html#a61ea2c2fdc2dea762c936e2809cf89c7">NMath::MakeMatrixRotation</a>(matRot, posture.x, posture.y, posture.z);</div>
+<div class="line"><span class="lineno">  231</span> </div>
+<div class="line"><span class="lineno">  232</span>        <span class="comment">// データファイル内の情報をもとに、OBB情報を読み込む場合</span></div>
+<div class="line"><span class="lineno">  233</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#aab6bb5a584095bb3e1dad496d33d7a2a">m_isCreateOBBByBone</a>) {</div>
+<div class="line"><span class="lineno">  234</span>            <span class="comment">// OBBデータとして設定する</span></div>
+<div class="line"><span class="lineno">  235</span>            <a class="code hl_variable" href="#a42fb0a8a5f000ccc0b4bfda842758f10">m_obb</a>.SetData(</div>
+<div class="line"><span class="lineno">  236</span>                pos,</div>
+<div class="line"><span class="lineno">  237</span>                size,</div>
+<div class="line"><span class="lineno">  238</span>                matRot);</div>
+<div class="line"><span class="lineno">  239</span>        }</div>
+<div class="line"><span class="lineno">  240</span>        <span class="comment">// ボーンに影響する頂点情報から、OBB情報を作成する場合</span></div>
+<div class="line"><span class="lineno">  241</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  242</span>            <a class="code hl_define" href="_debug___assert_8h.html#a73fdb60411ae5c7145be5bffb2f7c240">AssertNotNull</a>(<a class="code hl_variable" href="#a2c28cc1d8b7b88ee5c0afb12577109c8">m_pRefModel</a>-&gt;GetModelManager() &amp;&amp; <span class="stringliteral">&quot;モデルマネージャがNullです。&quot;</span>);</div>
+<div class="line"><span class="lineno">  243</span> </div>
+<div class="line"><span class="lineno">  244</span>            <span class="comment">// 警告表示</span></div>
+<div class="line"><span class="lineno">  245</span><span class="preprocessor">        #ifdef _GAME_DEBUG</span></div>
+<div class="line"><span class="lineno">  246</span>            std::string str = <span class="stringliteral">&quot;ボーンに影響する頂点情報からあたり判定を作成する設定の場合、&quot;</span>;</div>
+<div class="line"><span class="lineno">  247</span>            <span class="keywordflow">if</span> (posture.GetLengthSquare() &gt; FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  248</span>                str += <span class="stringliteral">&quot;postureの情報は無視されます。&quot;</span>;</div>
+<div class="line"><span class="lineno">  249</span>                <a class="code hl_define" href="_system___error_8h.html#a7237f644657926eb3196ac84172fb8b4">OutWarningMessageEx</a>(str.data());</div>
+<div class="line"><span class="lineno">  250</span>            }</div>
+<div class="line"><span class="lineno">  251</span><span class="preprocessor">        #endif</span></div>
+<div class="line"><span class="lineno">  252</span> </div>
+<div class="line"><span class="lineno">  253</span>            <span class="comment">// 指定されたボーンに影響する頂点から、当たり判定情報を作成する</span></div>
+<div class="line"><span class="lineno">  254</span>            NCollision::SOBBox obb;</div>
+<div class="line"><span class="lineno">  255</span>            <a class="code hl_function" href="namespace_n_collision.html#a1a0158fd09fa90c7f29a1e8e9edf559f">NCollision::CreateBoneOBB</a>(</div>
+<div class="line"><span class="lineno">  256</span>                obb,</div>
+<div class="line"><span class="lineno">  257</span>                *<a class="code hl_variable" href="#a2c28cc1d8b7b88ee5c0afb12577109c8">m_pRefModel</a>,</div>
+<div class="line"><span class="lineno">  258</span>                <a class="code hl_variable" href="#ae0267046d44af96f1ef2c0bdb7d0b5b0">m_refBoneIndex</a>);</div>
+<div class="line"><span class="lineno">  259</span> </div>
+<div class="line"><span class="lineno">  260</span>            <span class="comment">// sizeの情報は、倍率として使用する</span></div>
+<div class="line"><span class="lineno">  261</span>            obb.<a class="code hl_variable" href="struct_n_collision_1_1_s_o_b_box.html#a275f7af3f01dc4665e6d4dc0b7a68618">size</a> *= size;</div>
+<div class="line"><span class="lineno">  262</span> </div>
+<div class="line"><span class="lineno">  263</span>            <span class="comment">// ボーンに追従させるため、座標はボーンの原点、姿勢もボーンに従うため、</span></div>
+<div class="line"><span class="lineno">  264</span>            <span class="comment">// サイズ以外のデータは無視する</span></div>
+<div class="line"><span class="lineno">  265</span>            <a class="code hl_variable" href="#a42fb0a8a5f000ccc0b4bfda842758f10">m_obb</a>.SetData(</div>
+<div class="line"><span class="lineno">  266</span>                obb.<a class="code hl_variable" href="struct_n_collision_1_1_s_o_b_box.html#ae4fb6963d0022242833d0680af1d8e9b">centerPos</a>,</div>
+<div class="line"><span class="lineno">  267</span>                obb.<a class="code hl_variable" href="struct_n_collision_1_1_s_o_b_box.html#a275f7af3f01dc4665e6d4dc0b7a68618">size</a>,</div>
+<div class="line"><span class="lineno">  268</span>                obb.<a class="code hl_variable" href="struct_n_collision_1_1_s_o_b_box.html#a515fa0bfdd30f4e76113a0bbe29dbbc5">axisDir</a>);</div>
+<div class="line"><span class="lineno">  269</span> </div>
+<div class="line"><span class="lineno">  270</span>            <span class="comment">// デバッグ用の見た目を作成するために設定</span></div>
+<div class="line"><span class="lineno">  271</span>            size = obb.<a class="code hl_variable" href="struct_n_collision_1_1_s_o_b_box.html#a275f7af3f01dc4665e6d4dc0b7a68618">size</a>;</div>
+<div class="line"><span class="lineno">  272</span>        }</div>
+<div class="line"><span class="lineno">  273</span> </div>
+<div class="line"><span class="lineno">  274</span>        <span class="comment">// デバッグ用</span></div>
+<div class="line"><span class="lineno">  275</span>        CreateMeshBox(</div>
+<div class="line"><span class="lineno">  276</span>            <a class="code hl_variable" href="#a0e924f079242b37891b5a47e659d8f45">m_boxMesh</a>,</div>
+<div class="line"><span class="lineno">  277</span>            size);</div>
+<div class="line"><span class="lineno">  278</span>    }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_a099b6a85136760ed980079095fc9afe4"><div class="ttname"><a href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast</a></div><div class="ttdeci">#define StaticCast</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:88</div></div>
+<div class="ttc" id="a_system___error_8h_html_a7237f644657926eb3196ac84172fb8b4"><div class="ttname"><a href="_system___error_8h.html#a7237f644657926eb3196ac84172fb8b4">OutWarningMessageEx</a></div><div class="ttdeci">#define OutWarningMessageEx(_pMessage)</div><div class="ttdef"><b>Definition</b> System_Error.h:7</div></div>
+<div class="ttc" id="anamespace_n_collision_html_a1a0158fd09fa90c7f29a1e8e9edf559f"><div class="ttname"><a href="namespace_n_collision.html#a1a0158fd09fa90c7f29a1e8e9edf559f">NCollision::CreateBoneOBB</a></div><div class="ttdeci">void CreateBoneOBB(NCollision::SOBBox &amp;_rDestOBB, const NModel::CObject &amp;_rRefModel, const uint _boneIndex)</div><div class="ttdoc">ボーンに影響する頂点からOBBを作成する。</div><div class="ttdef"><b>Definition</b> Collision_Util.cpp:70</div></div>
+<div class="ttc" id="anamespace_n_common_html_ad01ce78d871cd1e3b54d317b707787bf"><div class="ttname"><a href="namespace_n_common.html#ad01ce78d871cd1e3b54d317b707787bf">NCommon::float3</a></div><div class="ttdeci">NMath::SVector3 float3</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:20</div></div>
+<div class="ttc" id="anamespace_n_math_html_a61ea2c2fdc2dea762c936e2809cf89c7"><div class="ttname"><a href="namespace_n_math.html#a61ea2c2fdc2dea762c936e2809cf89c7">NMath::MakeMatrixRotation</a></div><div class="ttdeci">void MakeMatrixRotation(SMatrix44 &amp;_rDest, const float _degX, const float _degY, const float _degZ)</div><div class="ttdef"><b>Definition</b> Math_Common.cpp:48</div></div>
+<div class="ttc" id="astruct_n_collision_1_1_s_o_b_box_html_a275f7af3f01dc4665e6d4dc0b7a68618"><div class="ttname"><a href="struct_n_collision_1_1_s_o_b_box.html#a275f7af3f01dc4665e6d4dc0b7a68618">NCollision::SOBBox::size</a></div><div class="ttdeci">float3 size</div><div class="ttdef"><b>Definition</b> Collision_Def.h:35</div></div>
+<div class="ttc" id="astruct_n_collision_1_1_s_o_b_box_html_a515fa0bfdd30f4e76113a0bbe29dbbc5"><div class="ttname"><a href="struct_n_collision_1_1_s_o_b_box.html#a515fa0bfdd30f4e76113a0bbe29dbbc5">NCollision::SOBBox::axisDir</a></div><div class="ttdeci">NMath::SMatrix44 axisDir</div><div class="ttdef"><b>Definition</b> Collision_Def.h:36</div></div>
+<div class="ttc" id="astruct_n_collision_1_1_s_o_b_box_html_ae4fb6963d0022242833d0680af1d8e9b"><div class="ttname"><a href="struct_n_collision_1_1_s_o_b_box.html#ae4fb6963d0022242833d0680af1d8e9b">NCollision::SOBBox::centerPos</a></div><div class="ttdeci">float3 centerPos</div><div class="ttdef"><b>Definition</b> Collision_Def.h:34</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3e1c0b9bf58928c17df149fbb3eedfbe" name="a3e1c0b9bf58928c17df149fbb3eedfbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1c0b9bf58928c17df149fbb3eedfbe">&#9670;&#160;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CGame::Release </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デバッグ描画用のメッシュの解放を行う </p>
+<div class="fragment"><div class="line"><span class="lineno">  108</span>    {</div>
+<div class="line"><span class="lineno">  109</span>        <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(<a class="code hl_variable" href="#a0e924f079242b37891b5a47e659d8f45">m_boxMesh</a>);</div>
+<div class="line"><span class="lineno">  110</span>    }</div>
+<div class="ttc" id="a_direct_x___util_8h_html_afe4096368a51bd6079184745ddec2b6b"><div class="ttname"><a href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a></div><div class="ttdeci">#define ReleaseSafe(p)</div><div class="ttdoc">安全な解放処理</div><div class="ttdef"><b>Definition</b> DirectX_Util.h:8</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac463a3e8824822eea8d99b2cffd81d9b" name="ac463a3e8824822eea8d99b2cffd81d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac463a3e8824822eea8d99b2cffd81d9b">&#9670;&#160;</a></span>RenderDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CGame::RenderDebug </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>デバッグ用の描画 </p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>        NMath::SMatrix44    matWorld;</div>
+<div class="line"><span class="lineno">  144</span>        matWorld = <a class="code hl_variable" href="#a42fb0a8a5f000ccc0b4bfda842758f10">m_obb</a>.GetOBBox().axisDir;</div>
+<div class="line"><span class="lineno">  145</span>        matWorld.<a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#aacdf92892b936f02ac86f60c498e0f69">vec</a>[3].vec3 = <a class="code hl_variable" href="#a42fb0a8a5f000ccc0b4bfda842758f10">m_obb</a>.GetOBBox().centerPos;</div>
+<div class="line"><span class="lineno">  146</span>        matWorld.<a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#aacdf92892b936f02ac86f60c498e0f69">vec</a>[3].w = 1.0f;</div>
+<div class="line"><span class="lineno">  147</span> </div>
+<div class="line"><span class="lineno">  148</span>        D3DXMATRIX  d3dMatWorld;</div>
+<div class="line"><span class="lineno">  149</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(d3dMatWorld, matWorld);</div>
+<div class="line"><span class="lineno">  150</span> </div>
+<div class="line"><span class="lineno">  151</span>        <span class="comment">// マテリアルを設定</span></div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a4c0d893ab178b1ee673ca9a6cfff934f">m_isEnable</a>) {</div>
+<div class="line"><span class="lineno">  153</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetMaterial(&amp;<a class="code hl_variable" href="#a0a5a71363a88b1773bdfd39e3cff6fdb">m_materialEnable</a>);</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a45f87e5613b2d2f2bfb1dd658b11a8b0">m_isHit</a>) {</div>
+<div class="line"><span class="lineno">  156</span>                <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetMaterial(&amp;<a class="code hl_variable" href="#aa69828a6d4ffae47804c21fba88a5c36">m_materialHit</a>);</div>
+<div class="line"><span class="lineno">  157</span>            }</div>
+<div class="line"><span class="lineno">  158</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#abcbd677754a0f2426fc6574594458275">m_isGroupHit</a>) {</div>
+<div class="line"><span class="lineno">  159</span>                <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetMaterial(&amp;<a class="code hl_variable" href="#ae21713c720847eae2e4d677049a94fc4">m_materialGroupHit</a>);</div>
+<div class="line"><span class="lineno">  160</span>            }</div>
+<div class="line"><span class="lineno">  161</span>        }</div>
+<div class="line"><span class="lineno">  162</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  163</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetMaterial(&amp;<a class="code hl_variable" href="#a360807fca02ac816ddce8d374d791273">m_materialDisable</a>);</div>
+<div class="line"><span class="lineno">  164</span>        }</div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>        <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTexture(0, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  167</span>        <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTransform(D3DTS_WORLD, &amp;d3dMatWorld);</div>
+<div class="line"><span class="lineno">  168</span>        <a class="code hl_variable" href="#a0e924f079242b37891b5a47e659d8f45">m_boxMesh</a>-&gt;DrawSubset(0);</div>
+<div class="line"><span class="lineno">  169</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a6ace719c3abbc964180a4fb4584ff8a8"><div class="ttname"><a href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a></div><div class="ttdeci">void ToD3DMatrix(D3DXMATRIX &amp;_dest, const NMath::SMatrix44 &amp;_src)</div><div class="ttdoc">DirectXの定義に変換</div><div class="ttdef"><b>Definition</b> DirectX_Util.cpp:18</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab213af265d85f773a3fb450ca43e3650"><div class="ttname"><a href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 GetD3DDevice()</div><div class="ttdoc">デバイスを取得</div><div class="ttdef"><b>Definition</b> DirectX_Manager.cpp:95</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_aacdf92892b936f02ac86f60c498e0f69"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#aacdf92892b936f02ac86f60c498e0f69">NMath::SMatrix44::vec</a></div><div class="ttdeci">std::array&lt; SVector4, 4 &gt; vec</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:33</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2adeee1503f83e28babc612b19699aac" name="a2adeee1503f83e28babc612b19699aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2adeee1503f83e28babc612b19699aac">&#9670;&#160;</a></span>SetIsEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CGame::SetIsEnable </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   57</span>{ <a class="code hl_variable" href="#a4c0d893ab178b1ee673ca9a6cfff934f">m_isEnable</a> = _state; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a57faa9e2765d239fcaef8e5a7bed5e85" name="a57faa9e2765d239fcaef8e5a7bed5e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57faa9e2765d239fcaef8e5a7bed5e85">&#9670;&#160;</a></span>SetIsGroupHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CGame::SetIsGroupHit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   59</span>{ <a class="code hl_variable" href="#abcbd677754a0f2426fc6574594458275">m_isGroupHit</a> = <span class="keyword">true</span>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab887e34ad8403b280ac1e8665c987425" name="ab887e34ad8403b280ac1e8665c987425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab887e34ad8403b280ac1e8665c987425">&#9670;&#160;</a></span>SetIsHit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CGame::SetIsHit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   58</span>{ <a class="code hl_variable" href="#a45f87e5613b2d2f2bfb1dd658b11a8b0">m_isHit</a> = <span class="keyword">true</span>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6ffd840309b4d181e0677213127f3dd1" name="a6ffd840309b4d181e0677213127f3dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ffd840309b4d181e0677213127f3dd1">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CGame::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当たり判定情報の更新 </p>
+<div class="fragment"><div class="line"><span class="lineno">  118</span>    {</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="#a45f87e5613b2d2f2bfb1dd658b11a8b0">m_isHit</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_variable" href="#abcbd677754a0f2426fc6574594458275">m_isGroupHit</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>        NMath::SMatrix44    matOwnerTransform;</div>
+<div class="line"><span class="lineno">  123</span>        NMath::SMatrix44    matBone;</div>
+<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a29c11b9276f23668e1f39f1b2aceeaff">m_isRefBone</a>) {  </div>
+<div class="line"><span class="lineno">  125</span>            <span class="comment">// ボーン行列を設定</span></div>
+<div class="line"><span class="lineno">  126</span>            <a class="code hl_variable" href="#a2c28cc1d8b7b88ee5c0afb12577109c8">m_pRefModel</a>-&gt;GetClusterMatrix(matBone, <a class="code hl_variable" href="#ae0267046d44af96f1ef2c0bdb7d0b5b0">m_refBoneIndex</a>);</div>
+<div class="line"><span class="lineno">  127</span>        }</div>
+<div class="line"><span class="lineno">  128</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#adc14845d4b5498570a3ba430827be505">m_isRefOwnerTransform</a>) {</div>
+<div class="line"><span class="lineno">  129</span>            <span class="comment">// 親の行列を設定</span></div>
+<div class="line"><span class="lineno">  130</span>            <a class="code hl_variable" href="#a2912a652ff232f7b8dbdad2fb201c454">m_pRefOwner</a>-&gt;GetTransform().CalcWorldMatrix(matOwnerTransform);</div>
+<div class="line"><span class="lineno">  131</span>        }</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>        <span class="comment">// 最終的な行列を計算する</span></div>
+<div class="line"><span class="lineno">  134</span>        NMath::SMatrix44    matFinal;</div>
+<div class="line"><span class="lineno">  135</span>        matFinal = matBone * matOwnerTransform;</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>        <span class="comment">// OBB更新</span></div>
+<div class="line"><span class="lineno">  138</span>        <a class="code hl_variable" href="#a42fb0a8a5f000ccc0b4bfda842758f10">m_obb</a>.Update(matFinal);</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a0e924f079242b37891b5a47e659d8f45" name="a0e924f079242b37891b5a47e659d8f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e924f079242b37891b5a47e659d8f45">&#9670;&#160;</a></span>m_boxMesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXMESH NCollision::CGame::m_boxMesh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b22ed46283b4a2b42ec7355d1e4ca27" name="a0b22ed46283b4a2b42ec7355d1e4ca27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b22ed46283b4a2b42ec7355d1e4ca27">&#9670;&#160;</a></span>m_collisionID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NCollision::CGame::m_collisionID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab6bb5a584095bb3e1dad496d33d7a2a" name="aab6bb5a584095bb3e1dad496d33d7a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab6bb5a584095bb3e1dad496d33d7a2a">&#9670;&#160;</a></span>m_isCreateOBBByBone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::m_isCreateOBBByBone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c0d893ab178b1ee673ca9a6cfff934f" name="a4c0d893ab178b1ee673ca9a6cfff934f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0d893ab178b1ee673ca9a6cfff934f">&#9670;&#160;</a></span>m_isEnable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::m_isEnable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcbd677754a0f2426fc6574594458275" name="abcbd677754a0f2426fc6574594458275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcbd677754a0f2426fc6574594458275">&#9670;&#160;</a></span>m_isGroupHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::m_isGroupHit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45f87e5613b2d2f2bfb1dd658b11a8b0" name="a45f87e5613b2d2f2bfb1dd658b11a8b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f87e5613b2d2f2bfb1dd658b11a8b0">&#9670;&#160;</a></span>m_isHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::m_isHit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29c11b9276f23668e1f39f1b2aceeaff" name="a29c11b9276f23668e1f39f1b2aceeaff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c11b9276f23668e1f39f1b2aceeaff">&#9670;&#160;</a></span>m_isRefBone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::m_isRefBone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc14845d4b5498570a3ba430827be505" name="adc14845d4b5498570a3ba430827be505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc14845d4b5498570a3ba430827be505">&#9670;&#160;</a></span>m_isRefOwnerTransform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CGame::m_isRefOwnerTransform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a360807fca02ac816ddce8d374d791273" name="a360807fca02ac816ddce8d374d791273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360807fca02ac816ddce8d374d791273">&#9670;&#160;</a></span>m_materialDisable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DMATERIAL9 NCollision::CGame::m_materialDisable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a5a71363a88b1773bdfd39e3cff6fdb" name="a0a5a71363a88b1773bdfd39e3cff6fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a5a71363a88b1773bdfd39e3cff6fdb">&#9670;&#160;</a></span>m_materialEnable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DMATERIAL9 NCollision::CGame::m_materialEnable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae21713c720847eae2e4d677049a94fc4" name="ae21713c720847eae2e4d677049a94fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae21713c720847eae2e4d677049a94fc4">&#9670;&#160;</a></span>m_materialGroupHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DMATERIAL9 NCollision::CGame::m_materialGroupHit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa69828a6d4ffae47804c21fba88a5c36" name="aa69828a6d4ffae47804c21fba88a5c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa69828a6d4ffae47804c21fba88a5c36">&#9670;&#160;</a></span>m_materialHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DMATERIAL9 NCollision::CGame::m_materialHit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42fb0a8a5f000ccc0b4bfda842758f10" name="a42fb0a8a5f000ccc0b4bfda842758f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42fb0a8a5f000ccc0b4bfda842758f10">&#9670;&#160;</a></span>m_obb</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_collision_1_1_c_transform_o_b_box.html">CTransformOBBox</a> NCollision::CGame::m_obb</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c28cc1d8b7b88ee5c0afb12577109c8" name="a2c28cc1d8b7b88ee5c0afb12577109c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c28cc1d8b7b88ee5c0afb12577109c8">&#9670;&#160;</a></span>m_pRefModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="#a89a68e853c53722ecfb4cac6ba8c95c5">ModelData</a>* NCollision::CGame::m_pRefModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2912a652ff232f7b8dbdad2fb201c454" name="a2912a652ff232f7b8dbdad2fb201c454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2912a652ff232f7b8dbdad2fb201c454">&#9670;&#160;</a></span>m_pRefOwner</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a>* NCollision::CGame::m_pRefOwner</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0267046d44af96f1ef2c0bdb7d0b5b0" name="ae0267046d44af96f1ef2c0bdb7d0b5b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0267046d44af96f1ef2c0bdb7d0b5b0">&#9670;&#160;</a></span>m_refBoneIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NCollision::CGame::m_refBoneIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/GameFramework/Collision/Holder/<a class="el" href="_collision___game_8h_source.html">Collision_Game.h</a></li>
+<li>Sources/GameFramework/Collision/Holder/<a class="el" href="_collision___game_8cpp.html">Collision_Game.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_collision.html">NCollision</a></li><li class="navelem"><a href="class_n_collision_1_1_c_game.html">CGame</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

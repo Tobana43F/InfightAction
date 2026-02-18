@@ -1,0 +1,46 @@
+var namespace_n_collision =
+[
+    [ "SPlane", "struct_n_collision_1_1_s_plane.html", "struct_n_collision_1_1_s_plane" ],
+    [ "SPlaneInfo", "struct_n_collision_1_1_s_plane_info.html", "struct_n_collision_1_1_s_plane_info" ],
+    [ "SSphere", "struct_n_collision_1_1_s_sphere.html", "struct_n_collision_1_1_s_sphere" ],
+    [ "SOBBox", "struct_n_collision_1_1_s_o_b_box.html", "struct_n_collision_1_1_s_o_b_box" ],
+    [ "CMesh", "class_n_collision_1_1_c_mesh.html", "class_n_collision_1_1_c_mesh" ],
+    [ "CTransformOBBox", "class_n_collision_1_1_c_transform_o_b_box.html", "class_n_collision_1_1_c_transform_o_b_box" ],
+    [ "CReceiveAttackInfo", "class_n_collision_1_1_c_receive_attack_info.html", "class_n_collision_1_1_c_receive_attack_info" ],
+    [ "CProcHitTest", "class_n_collision_1_1_c_proc_hit_test.html", "class_n_collision_1_1_c_proc_hit_test" ],
+    [ "CProc", "class_n_collision_1_1_c_proc.html", "class_n_collision_1_1_c_proc" ],
+    [ "CGame", "class_n_collision_1_1_c_game.html", "class_n_collision_1_1_c_game" ],
+    [ "CGroup", "class_n_collision_1_1_c_group.html", "class_n_collision_1_1_c_group" ],
+    [ "CHolder", "class_n_collision_1_1_c_holder.html", "class_n_collision_1_1_c_holder" ],
+    [ "CSequence", "class_n_collision_1_1_c_sequence.html", "class_n_collision_1_1_c_sequence" ],
+    [ "CAttackTypeData", "class_n_collision_1_1_c_attack_type_data.html", "class_n_collision_1_1_c_attack_type_data" ],
+    [ "CDamageTypeData", "class_n_collision_1_1_c_damage_type_data.html", "class_n_collision_1_1_c_damage_type_data" ],
+    [ "CNoneTypeData", "class_n_collision_1_1_c_none_type_data.html", "class_n_collision_1_1_c_none_type_data" ],
+    [ "EHitTestProcManagerIndex", "namespace_n_collision.html#afb38b993f637aed28b82feb071dae150", [
+      [ "PLAYER_ATK_ENEMY_DEF", "namespace_n_collision.html#afb38b993f637aed28b82feb071dae150a12c6dfe5f3f76d0bf66ffed64cf875d7", null ],
+      [ "PLAYER_DEF_ENEMY_ATK", "namespace_n_collision.html#afb38b993f637aed28b82feb071dae150a0033662f5ee0b3b24a740cc38087e4ef", null ],
+      [ "MAX", "namespace_n_collision.html#afb38b993f637aed28b82feb071dae150a26a4b44a837bf97b972628509912b4a5", null ]
+    ] ],
+    [ "EStageCollisionIndex", "namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b", [
+      [ "GROUND_MAIN", "namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba535bb0ca9f07f199f69fe84a37d1f85c", null ],
+      [ "WALL_MAIN", "namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba8142329bd79633cc855dac9e1d8e3875", null ],
+      [ "GROUND_SUB1", "namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba699ce0def8cdd14413da0c1a9f1a664e", null ],
+      [ "WALL_SUB1", "namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba3579571dbc30225c7e8ec690ec387429", null ],
+      [ "MAX", "namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3ba26a4b44a837bf97b972628509912b4a5", null ]
+    ] ],
+    [ "CheckLineAndSphere", "namespace_n_collision.html#ad9ecc0bd37a5584939a6593e900ac1f4", null ],
+    [ "CheckOBBAndOBB", "namespace_n_collision.html#adb671df8443770574edc8d834047003c", null ],
+    [ "CheckPlaneAndSphere", "namespace_n_collision.html#adc69a677fe933b7409e3cf97466e0cc4", null ],
+    [ "CheckPointAndFlatRectangle", "namespace_n_collision.html#a979e2216f17014600cd67ef7eb7c2aba", null ],
+    [ "CheckPointAndTriangle", "namespace_n_collision.html#afa09af18e342dc4fd78faa32173b46b7", null ],
+    [ "CheckSphereAndMeshWall", "namespace_n_collision.html#a981b33bbde5a765571bbd9b8acf4de49", null ],
+    [ "CreateBoneOBB", "namespace_n_collision.html#a1a0158fd09fa90c7f29a1e8e9edf559f", null ],
+    [ "CreatePlaneInfo", "namespace_n_collision.html#a3f048471ff067395f26af51523d03ae7", null ],
+    [ "GetHitTestProc", "namespace_n_collision.html#a978978a8fd8c16ea0c460bc3e12451c0", null ],
+    [ "GetStageCollision", "namespace_n_collision.html#a12c78b0fce7212d2d268e356dbfb22b6", null ],
+    [ "RegisterHitTestProc", "namespace_n_collision.html#a026095223b63948110b8dc91ebc3ea03", null ],
+    [ "RegisterStageCollision", "namespace_n_collision.html#a4d0fa495ac6b23078a9e1453f6c3a317", null ],
+    [ "Setup", "namespace_n_collision.html#a9795756871976761857964a7d6c09334", null ],
+    [ "UnregisterHitTestProc", "namespace_n_collision.html#aabed48951e286f77ac581b07dacc572a", null ],
+    [ "UnregisterStageCollision", "namespace_n_collision.html#a189e0c86b54530c75f2ea0e3147779ab", null ]
+];

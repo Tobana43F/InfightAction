@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Debug/Debug_Assert.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_debug___assert_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Debug_Assert.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="_debug___assert_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:NDebug" id="r_NDebug"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_debug.html">NDebug</a></td></tr>
+<tr class="memdesc:namespace_n_debug"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームのメイン処理をデバッグする機能を含む関数群 <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a30be2a488d37b42d4b9c776626e3c26c" id="r_a30be2a488d37b42d4b9c776626e3c26c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a30be2a488d37b42d4b9c776626e3c26c">myAssert</a>(expr)</td></tr>
+<tr class="memdesc:a30be2a488d37b42d4b9c776626e3c26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">独自定義のアサーションを定義  <br /></td></tr>
+<tr class="memitem:aab1e54dcc40192f9704e8b252635450f" id="r_aab1e54dcc40192f9704e8b252635450f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aab1e54dcc40192f9704e8b252635450f">Assert</a>(expr)</td></tr>
+<tr class="memdesc:aab1e54dcc40192f9704e8b252635450f"><td class="mdescLeft">&#160;</td><td class="mdescRight">基本のAssert関数  <br /></td></tr>
+<tr class="memitem:a3625d9b06051125a4b00f7f264fc276f" id="r_a3625d9b06051125a4b00f7f264fc276f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3625d9b06051125a4b00f7f264fc276f">AssertNull</a>(var)</td></tr>
+<tr class="memdesc:a3625d9b06051125a4b00f7f264fc276f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nullであることを検証する  <br /></td></tr>
+<tr class="memitem:a73fdb60411ae5c7145be5bffb2f7c240" id="r_a73fdb60411ae5c7145be5bffb2f7c240"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a73fdb60411ae5c7145be5bffb2f7c240">AssertNotNull</a>(var)</td></tr>
+<tr class="memdesc:a73fdb60411ae5c7145be5bffb2f7c240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nullでないことを検証する  <br /></td></tr>
+<tr class="memitem:ad7c42ee53403d76904988502c7454163" id="r_ad7c42ee53403d76904988502c7454163"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad7c42ee53403d76904988502c7454163">AssertPlus</a>(var)</td></tr>
+<tr class="memdesc:ad7c42ee53403d76904988502c7454163"><td class="mdescLeft">&#160;</td><td class="mdescRight">値を検証する  <br /></td></tr>
+<tr class="memitem:a81a88ca27f6053bce09519f6fb5df66c" id="r_a81a88ca27f6053bce09519f6fb5df66c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a81a88ca27f6053bce09519f6fb5df66c">AssertMinus</a>(var)</td></tr>
+<tr class="memitem:a2d2edebe6c2a124bddc95d5b91a1fea6" id="r_a2d2edebe6c2a124bddc95d5b91a1fea6"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2d2edebe6c2a124bddc95d5b91a1fea6">AssertZero</a>(var)</td></tr>
+<tr class="memitem:a5351e132eb4665ac0e9e49b037177933" id="r_a5351e132eb4665ac0e9e49b037177933"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5351e132eb4665ac0e9e49b037177933">AssertNotMinus</a>(var)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ae78d5ad2c2f049751e6789ebb25337f4" id="r_ae78d5ad2c2f049751e6789ebb25337f4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_debug.html#ae78d5ad2c2f049751e6789ebb25337f4">NDebug::OutAssertMessage</a> (const char *_pMessage, const char *_pFile, unsigned int _line)</td></tr>
+<tr class="memdesc:ae78d5ad2c2f049751e6789ebb25337f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">アサートメッセージの表示を行う  <br /></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="aab1e54dcc40192f9704e8b252635450f" name="aab1e54dcc40192f9704e8b252635450f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab1e54dcc40192f9704e8b252635450f">&#9670;&#160;</a></span>Assert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Assert</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a30be2a488d37b42d4b9c776626e3c26c">myAssert</a>(expr)</div>
+<div class="ttc" id="a_debug___assert_8h_html_a30be2a488d37b42d4b9c776626e3c26c"><div class="ttname"><a href="#a30be2a488d37b42d4b9c776626e3c26c">myAssert</a></div><div class="ttdeci">#define myAssert(expr)</div><div class="ttdoc">独自定義のアサーションを定義</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:25</div></div>
+</div><!-- fragment -->
+<p>基本のAssert関数 </p>
+
+</div>
+</div>
+<a id="a81a88ca27f6053bce09519f6fb5df66c" name="a81a88ca27f6053bce09519f6fb5df66c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a88ca27f6053bce09519f6fb5df66c">&#9670;&#160;</a></span>AssertMinus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AssertMinus</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#aab1e54dcc40192f9704e8b252635450f">Assert</a>(var &lt; 0)</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5351e132eb4665ac0e9e49b037177933" name="a5351e132eb4665ac0e9e49b037177933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5351e132eb4665ac0e9e49b037177933">&#9670;&#160;</a></span>AssertNotMinus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AssertNotMinus</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#aab1e54dcc40192f9704e8b252635450f">Assert</a>(var &gt;= 0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a73fdb60411ae5c7145be5bffb2f7c240" name="a73fdb60411ae5c7145be5bffb2f7c240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fdb60411ae5c7145be5bffb2f7c240">&#9670;&#160;</a></span>AssertNotNull</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AssertNotNull</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#aab1e54dcc40192f9704e8b252635450f">Assert</a>(var != <span class="keyword">nullptr</span>)</div>
+</div><!-- fragment -->
+<p>Nullでないことを検証する </p>
+
+</div>
+</div>
+<a id="a3625d9b06051125a4b00f7f264fc276f" name="a3625d9b06051125a4b00f7f264fc276f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3625d9b06051125a4b00f7f264fc276f">&#9670;&#160;</a></span>AssertNull</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AssertNull</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#aab1e54dcc40192f9704e8b252635450f">Assert</a>(var == <span class="keyword">nullptr</span>)</div>
+</div><!-- fragment -->
+<p>Nullであることを検証する </p>
+
+</div>
+</div>
+<a id="ad7c42ee53403d76904988502c7454163" name="ad7c42ee53403d76904988502c7454163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c42ee53403d76904988502c7454163">&#9670;&#160;</a></span>AssertPlus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AssertPlus</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#aab1e54dcc40192f9704e8b252635450f">Assert</a>(var &gt; 0)</div>
+</div><!-- fragment -->
+<p>値を検証する </p>
+
+</div>
+</div>
+<a id="a2d2edebe6c2a124bddc95d5b91a1fea6" name="a2d2edebe6c2a124bddc95d5b91a1fea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d2edebe6c2a124bddc95d5b91a1fea6">&#9670;&#160;</a></span>AssertZero</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AssertZero</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>var</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#aab1e54dcc40192f9704e8b252635450f">Assert</a>(var == 0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a30be2a488d37b42d4b9c776626e3c26c" name="a30be2a488d37b42d4b9c776626e3c26c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30be2a488d37b42d4b9c776626e3c26c">&#9670;&#160;</a></span>myAssert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define myAssert</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>expr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">((void)0)</div>
+</div><!-- fragment -->
+<p>独自定義のアサーションを定義 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>リリース時にも機能させるため </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_d4e3952b8559ec070d722ace030e3ae7.html">Debug</a></li><li class="navelem"><a href="_debug___assert_8h.html">Debug_Assert.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

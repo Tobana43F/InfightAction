@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Mesh/Mesh_Base.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_mesh___base_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Mesh_Base.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_mesh___base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &lt;d3dx9.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &lt;d3d9.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_graphic___def_8h.html">Graphic\Graphic_Def.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_mesh.html">NMesh</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_n_mesh_1_1_c_base.html">   12</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_mesh_1_1_c_base.html#a03b4fe7d2791daa60bf62bb0b160a073">CBase</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_n_mesh_1_1_c_base.html#a4477b82c74ccf438414f5c421b9199e3">   14</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_mesh_1_1_c_base.html#a4477b82c74ccf438414f5c421b9199e3">Load</a>()     <a class="code hl_define" href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        virtual <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_mesh_1_1_c_base.html#ac60efbeac6d77acf92306db4e15dccae">Release</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        virtual <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_mesh_1_1_c_base.html#aadcea2b36308eebef52e315bb00a75cf">Render</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    protected:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_n_mesh_1_1_c_base.html#a39469f157e115cd47750d2070932f8a1">   19</a></span>        std::vector&lt;<a class="code hl_namespace" href="namespace_n_graphic.html">NGraphic</a>::SDefaultVertex&gt;   <a class="code hl_variable" href="class_n_mesh_1_1_c_base.html#a39469f157e115cd47750d2070932f8a1">m_vertex</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    private:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    public:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_function" href="class_n_mesh_1_1_c_base.html#a03b4fe7d2791daa60bf62bb0b160a073">CBase</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        virtual ~<a class="code hl_function" href="class_n_mesh_1_1_c_base.html#a03b4fe7d2791daa60bf62bb0b160a073">CBase</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    };</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="ttc" id="a_common___def_8h_html_aa002ee00ccafaf338340b22748fc8c9c"><div class="ttname"><a href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a></div><div class="ttdeci">#define PURE_FUNC</div><div class="ttdoc">純粋仮想関数の定義時にわかりやすいように</div><div class="ttdef"><b>Definition</b> Common_Def.h:4</div></div>
+<div class="ttc" id="a_graphic___def_8h_html"><div class="ttname"><a href="_graphic___def_8h.html">Graphic_Def.h</a></div></div>
+<div class="ttc" id="aclass_n_mesh_1_1_c_base_html_a03b4fe7d2791daa60bf62bb0b160a073"><div class="ttname"><a href="class_n_mesh_1_1_c_base.html#a03b4fe7d2791daa60bf62bb0b160a073">NMesh::CBase::CBase</a></div><div class="ttdeci">CBase()</div><div class="ttdef"><b>Definition</b> Mesh_Base.cpp:5</div></div>
+<div class="ttc" id="aclass_n_mesh_1_1_c_base_html_a39469f157e115cd47750d2070932f8a1"><div class="ttname"><a href="class_n_mesh_1_1_c_base.html#a39469f157e115cd47750d2070932f8a1">NMesh::CBase::m_vertex</a></div><div class="ttdeci">std::vector&lt; NGraphic::SDefaultVertex &gt; m_vertex</div><div class="ttdef"><b>Definition</b> Mesh_Base.h:19</div></div>
+<div class="ttc" id="aclass_n_mesh_1_1_c_base_html_a4477b82c74ccf438414f5c421b9199e3"><div class="ttname"><a href="class_n_mesh_1_1_c_base.html#a4477b82c74ccf438414f5c421b9199e3">NMesh::CBase::Load</a></div><div class="ttdeci">virtual void Load() PURE_FUNC</div></div>
+<div class="ttc" id="aclass_n_mesh_1_1_c_base_html_aadcea2b36308eebef52e315bb00a75cf"><div class="ttname"><a href="class_n_mesh_1_1_c_base.html#aadcea2b36308eebef52e315bb00a75cf">NMesh::CBase::Render</a></div><div class="ttdeci">virtual void Render()</div><div class="ttdef"><b>Definition</b> Mesh_Base.cpp:20</div></div>
+<div class="ttc" id="aclass_n_mesh_1_1_c_base_html_ac60efbeac6d77acf92306db4e15dccae"><div class="ttname"><a href="class_n_mesh_1_1_c_base.html#ac60efbeac6d77acf92306db4e15dccae">NMesh::CBase::Release</a></div><div class="ttdeci">virtual void Release()</div><div class="ttdef"><b>Definition</b> Mesh_Base.cpp:15</div></div>
+<div class="ttc" id="anamespace_n_graphic_html"><div class="ttname"><a href="namespace_n_graphic.html">NGraphic</a></div><div class="ttdef"><b>Definition</b> Graphic_Def.h:3</div></div>
+<div class="ttc" id="anamespace_n_mesh_html"><div class="ttname"><a href="namespace_n_mesh.html">NMesh</a></div><div class="ttdef"><b>Definition</b> Mesh_Base.cpp:3</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_a1f35c0b66c1db7978e08065c1651665.html">Mesh</a></li><li class="navelem"><a href="_mesh___base_8h.html">Mesh_Base.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameApp/Object/Actor/Enemy/Object_Baby.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_object___baby_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Object_Baby.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_object___baby_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___enemy_8h.html">Object_Enemy.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_model___object_8h.html">Model\Model_Object.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_util___state_manager_8h.html">Util\Util_StateManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_object.html">NObject</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html">   14</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_object_1_1_c_baby.html#ad668d3c25783e5868746f146240a40c5">CBaby</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_n_object_1_1_c_enemy.html#a3530964cebd705a5799b69edcd9a405e">CEnemy</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781e">   18</a></span>        <span class="keyword">enum class</span> <a class="code hl_enumeration" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781e">EState</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781eaa5daf7f2ebbba4975d61dab1c40188c7">   19</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781eaa5daf7f2ebbba4975d61dab1c40188c7">IDLE</a>,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea578d83c6d15737d0c46bd80f0a19263f">   20</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea578d83c6d15737d0c46bd80f0a19263f">FOLLOW</a>,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781eac6ddd0f72ff2fd344693b9ca8d483871">   21</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781eac6ddd0f72ff2fd344693b9ca8d483871">ATTACK</a>,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea921f12fb434baa503290960b98e0a5f0">   23</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea921f12fb434baa503290960b98e0a5f0">DAMAGE_LOW</a>,     </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea484cb7a71883d553a5f3c00475fcb7bc">   24</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea484cb7a71883d553a5f3c00475fcb7bc">DAMAGE_HIGH</a>,    </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781eabf31f0276cfbcaa49bbb38c32191b961">   26</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781eabf31f0276cfbcaa49bbb38c32191b961">DAMAGE_RECOVER</a>, <span class="comment">// ダメージ後の復帰処理</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea34f64e106a900f58f3a9ae4638612a5f">   27</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea34f64e106a900f58f3a9ae4638612a5f">DAMAGE_DIE</a>,     <span class="comment">// 死亡</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea26a4b44a837bf97b972628509912b4a5">   29</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89daf316404610decb670e14f2c08a1d517a">MAX</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        };</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89d">   33</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89d">EAnmIndex</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89dae3dcabc380034804405cd7a2b8c19aa4">   34</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89dae3dcabc380034804405cd7a2b8c19aa4">ATTACK_HEAD_BAT</a>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89da2fc55bdd41f6cf2c8c500a1fec44d715">   35</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89da2fc55bdd41f6cf2c8c500a1fec44d715">DAMAGE_L_BODY</a>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89da36ce78c0027faa2ff14c8385c324aa11">   36</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89da36ce78c0027faa2ff14c8385c324aa11">DAMAGE_H_BLOW_BACK</a>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89dac5d930b37cecc3c284e3a82a70279969">   37</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89dac5d930b37cecc3c284e3a82a70279969">DAMAGE_L_HEAD</a>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89da46409af2e7447a124aed991413e22a10">   38</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89da46409af2e7447a124aed991413e22a10">DAMAGE_L_FOOT</a>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89daa129bcec6b3ab0de6c1a454565ead2a1">   39</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89daa129bcec6b3ab0de6c1a454565ead2a1">NORMAL_IDLE</a>,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89daf316404610decb670e14f2c08a1d517a">   40</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89daf316404610decb670e14f2c08a1d517a">MAX</a></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        };</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a61c7178946ee9b537f1564f2a441b3cb">LoadProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a7b1223a64c7e493d3795353195801185">ReleaseProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_baby.html#aaf0990059d9fff85fad07771a860c8cb">InitProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a2905ae0d60d7fc24f9a152a96188d949">DestroyProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a79f18b19770d1e0e08c5c927cb06369e">UpdateProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a0aba960950dbadea91728fee6a4aa314">UpdateLateProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a03b8d270b43fcd4df2940b299c6c92af">RenderProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a303706bffe552f087485b643c4e399c8">   68</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a>           <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a303706bffe552f087485b643c4e399c8">GetActorParamAssetKey</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;Data/Actor/Enemy/Baby/ActorParam.json&quot;</span>; }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a987dc886035d28d35a47b36518b3ee18">   71</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a987dc886035d28d35a47b36518b3ee18">GetActorMoveAssetKey</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;Data/Actor/Enemy/Baby/ActorMove.json&quot;</span>; }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a84a6a7bd97614d7037bd44c9b5f1a483">Operate</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a55bac3ea0dada3fce3dc0a2e6474b00b">ProcDamage</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a>&amp; _rDamage) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="comment">// 親クラスのエイリアス</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a6cac183bedbe278851065cb9e4522715">   82</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="class_n_object_1_1_c_baby.html#a6cac183bedbe278851065cb9e4522715">Base</a> = <a class="code hl_function" href="class_n_object_1_1_c_enemy.html#a3530964cebd705a5799b69edcd9a405e">CEnemy</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a38e3053e215657b75071e3086b6771b0">   84</a></span>        <a class="code hl_class" href="class_n_model_1_1_c_object.html">NModel::CObject</a>             <a class="code hl_variable" href="class_n_object_1_1_c_baby.html#a38e3053e215657b75071e3086b6771b0">m_model</a>;    <span class="comment">// 描画用モデル</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="comment">// あたり判定</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a85c61dcde1466a27c9b4a6bc64f07bd7">   87</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_holder.html">NCollision::CHolder</a>         <a class="code hl_variable" href="class_n_object_1_1_c_baby.html#a85c61dcde1466a27c9b4a6bc64f07bd7">m_damageHolder</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a70b7eed9684cb46eab86e11c474a1129">   88</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_holder.html">NCollision::CHolder</a>         <a class="code hl_variable" href="class_n_object_1_1_c_baby.html#a70b7eed9684cb46eab86e11c474a1129">m_attackHolder</a>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="comment">// 制御関係</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a68a46d9734ac48c3e776dca3700bc4c0">   91</a></span>        <a class="code hl_class" href="class_n_object_1_1_c_game_object.html">CGameObject</a>*                <a class="code hl_variable" href="class_n_object_1_1_c_baby.html#a68a46d9734ac48c3e776dca3700bc4c0">m_pFollowObject</a>;    <span class="comment">// このオブジェクトを追従する</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a5e90ddaa211ab55f3c3edda36024b588">   92</a></span>        <span class="keywordtype">int</span>                         <a class="code hl_variable" href="class_n_object_1_1_c_baby.html#a5e90ddaa211ab55f3c3edda36024b588">m_idleFrame</a>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="comment">// 状態遷移関係</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#af92351ad1b9b562cf3951b0de30156f0">   97</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="class_n_object_1_1_c_baby.html#af92351ad1b9b562cf3951b0de30156f0">StateParam</a> = <a class="code hl_typedef" href="class_n_util_1_1_c_state_manager.html#a9515c92a0d8f456afd3e28ffc26e3b6d">NUtil::CStateManager&lt;CBaby, EState&gt;::Param</a>;  <span class="comment">// 引数省略</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_baby.html#a47803da17cbf6160ca342020d1a47b66">   98</a></span>        <a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager&lt;CBaby, EState&gt;</a> <a class="code hl_variable" href="class_n_object_1_1_c_baby.html#a47803da17cbf6160ca342020d1a47b66">m_state</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a55ae1f1e33c60952cdf6ea1eb4111532">UpdateStateIdle</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_baby.html#af92351ad1b9b562cf3951b0de30156f0">StateParam</a> _param);            <span class="comment">// たち状態を更新</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#af0494fb81ba26252fd5adf02e46bdf8a">UpdateStateFollow</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_baby.html#af92351ad1b9b562cf3951b0de30156f0">StateParam</a> _param);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a4bcf40937f18891b8d01f67a87466616">UpdateStateAttack</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_baby.html#af92351ad1b9b562cf3951b0de30156f0">StateParam</a> _param);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a548b7c4e7a9526ecfc4f51a61c4076b0">UpdateStateDamageLow</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_baby.html#af92351ad1b9b562cf3951b0de30156f0">StateParam</a> _param);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#ad29a299e11ee6c8eda873290d39730b2">UpdateStateDamageHigh</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_baby.html#af92351ad1b9b562cf3951b0de30156f0">StateParam</a> _param);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a5959c1886efaf67197edec9aa7e98cb7">UpdateStateDamageRecover</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_baby.html#af92351ad1b9b562cf3951b0de30156f0">StateParam</a> _param);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a203681445fd36ae0f0778dcb9077e215">UpdateStateDamageDie</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_baby.html#af92351ad1b9b562cf3951b0de30156f0">StateParam</a> _param);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="comment">// 汎用操作関数</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#aa227c47e0cd68b6bd09719d6900ed01c">UpdateUtilFollowPlayer</a>();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="comment">// 状態取得</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#a9cf7d35f7a106c2b76a59bd338e77665">CheckIsAttackRange</a>();</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <a class="code hl_function" href="class_n_object_1_1_c_baby.html#ad668d3c25783e5868746f146240a40c5">CBaby</a>();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_n_object_1_1_c_baby.html#aa217ce89be21a578ffe19cb7a8451de6">~CBaby</a>();</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    };</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
+<div class="ttc" id="a_model___object_8h_html"><div class="ttname"><a href="_model___object_8h.html">Model_Object.h</a></div></div>
+<div class="ttc" id="a_object___enemy_8h_html"><div class="ttname"><a href="_object___enemy_8h.html">Object_Enemy.h</a></div></div>
+<div class="ttc" id="a_util___state_manager_8h_html"><div class="ttname"><a href="_util___state_manager_8h.html">Util_StateManager.h</a></div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a4a6509d6bcd7f624a19f44a25380671e"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CFactory&lt; json11::Json, CJsonFactory &gt;::Key</a></div><div class="ttdeci">std::string Key</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:27</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_holder_html"><div class="ttname"><a href="class_n_collision_1_1_c_holder.html">NCollision::CHolder</a></div><div class="ttdoc">1オブジェクトの1種類の当たり判定をすべて管理するクラス</div><div class="ttdef"><b>Definition</b> Collision_Holder.h:13</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html"><div class="ttname"><a href="class_n_model_1_1_c_object.html">NModel::CObject</a></div><div class="ttdoc">描画する数だけ生成するモデルを扱うオブジェクト</div><div class="ttdef"><b>Definition</b> Model_Object.h:15</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a03b8d270b43fcd4df2940b299c6c92af"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a03b8d270b43fcd4df2940b299c6c92af">NObject::CBaby::RenderProc</a></div><div class="ttdeci">virtual void RenderProc() override</div><div class="ttdoc">描画処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:142</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a0aba960950dbadea91728fee6a4aa314"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a0aba960950dbadea91728fee6a4aa314">NObject::CBaby::UpdateLateProc</a></div><div class="ttdeci">virtual void UpdateLateProc() override</div><div class="ttdoc">当たり判定の更新</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:136</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a203681445fd36ae0f0778dcb9077e215"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a203681445fd36ae0f0778dcb9077e215">NObject::CBaby::UpdateStateDamageDie</a></div><div class="ttdeci">void UpdateStateDamageDie(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:359</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a2905ae0d60d7fc24f9a152a96188d949"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a2905ae0d60d7fc24f9a152a96188d949">NObject::CBaby::DestroyProc</a></div><div class="ttdeci">virtual void DestroyProc() override</div><div class="ttdoc">終了処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:120</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a303706bffe552f087485b643c4e399c8"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a303706bffe552f087485b643c4e399c8">NObject::CBaby::GetActorParamAssetKey</a></div><div class="ttdeci">virtual NAsset::CJsonFactory::Key GetActorParamAssetKey()</div><div class="ttdoc">ActorParamのデータのパス</div><div class="ttdef"><b>Definition</b> Object_Baby.h:68</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a38e3053e215657b75071e3086b6771b0"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a38e3053e215657b75071e3086b6771b0">NObject::CBaby::m_model</a></div><div class="ttdeci">NModel::CObject m_model</div><div class="ttdef"><b>Definition</b> Object_Baby.h:84</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a3b4e732001dec923b340fe005c6f781e"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781e">NObject::CBaby::EState</a></div><div class="ttdeci">EState</div><div class="ttdoc">状態遷移</div><div class="ttdef"><b>Definition</b> Object_Baby.h:18</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a3b4e732001dec923b340fe005c6f781ea34f64e106a900f58f3a9ae4638612a5f"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea34f64e106a900f58f3a9ae4638612a5f">NObject::CBaby::EState::DAMAGE_DIE</a></div><div class="ttdeci">@ DAMAGE_DIE</div><div class="ttdef"><b>Definition</b> Object_Baby.h:27</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a3b4e732001dec923b340fe005c6f781ea484cb7a71883d553a5f3c00475fcb7bc"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea484cb7a71883d553a5f3c00475fcb7bc">NObject::CBaby::EState::DAMAGE_HIGH</a></div><div class="ttdeci">@ DAMAGE_HIGH</div><div class="ttdef"><b>Definition</b> Object_Baby.h:24</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a3b4e732001dec923b340fe005c6f781ea578d83c6d15737d0c46bd80f0a19263f"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea578d83c6d15737d0c46bd80f0a19263f">NObject::CBaby::EState::FOLLOW</a></div><div class="ttdeci">@ FOLLOW</div><div class="ttdef"><b>Definition</b> Object_Baby.h:20</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a3b4e732001dec923b340fe005c6f781ea921f12fb434baa503290960b98e0a5f0"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781ea921f12fb434baa503290960b98e0a5f0">NObject::CBaby::EState::DAMAGE_LOW</a></div><div class="ttdeci">@ DAMAGE_LOW</div><div class="ttdef"><b>Definition</b> Object_Baby.h:23</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a3b4e732001dec923b340fe005c6f781eaa5daf7f2ebbba4975d61dab1c40188c7"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781eaa5daf7f2ebbba4975d61dab1c40188c7">NObject::CBaby::EState::IDLE</a></div><div class="ttdeci">@ IDLE</div><div class="ttdef"><b>Definition</b> Object_Baby.h:19</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a3b4e732001dec923b340fe005c6f781eabf31f0276cfbcaa49bbb38c32191b961"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781eabf31f0276cfbcaa49bbb38c32191b961">NObject::CBaby::EState::DAMAGE_RECOVER</a></div><div class="ttdeci">@ DAMAGE_RECOVER</div><div class="ttdef"><b>Definition</b> Object_Baby.h:26</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a3b4e732001dec923b340fe005c6f781eac6ddd0f72ff2fd344693b9ca8d483871"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a3b4e732001dec923b340fe005c6f781eac6ddd0f72ff2fd344693b9ca8d483871">NObject::CBaby::EState::ATTACK</a></div><div class="ttdeci">@ ATTACK</div><div class="ttdef"><b>Definition</b> Object_Baby.h:21</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a47803da17cbf6160ca342020d1a47b66"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a47803da17cbf6160ca342020d1a47b66">NObject::CBaby::m_state</a></div><div class="ttdeci">NUtil::CStateManager&lt; CBaby, EState &gt; m_state</div><div class="ttdef"><b>Definition</b> Object_Baby.h:98</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a4bcf40937f18891b8d01f67a87466616"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a4bcf40937f18891b8d01f67a87466616">NObject::CBaby::UpdateStateAttack</a></div><div class="ttdeci">void UpdateStateAttack(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:291</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a548b7c4e7a9526ecfc4f51a61c4076b0"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a548b7c4e7a9526ecfc4f51a61c4076b0">NObject::CBaby::UpdateStateDamageLow</a></div><div class="ttdeci">void UpdateStateDamageLow(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:326</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a55ae1f1e33c60952cdf6ea1eb4111532"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a55ae1f1e33c60952cdf6ea1eb4111532">NObject::CBaby::UpdateStateIdle</a></div><div class="ttdeci">void UpdateStateIdle(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:260</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a55bac3ea0dada3fce3dc0a2e6474b00b"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a55bac3ea0dada3fce3dc0a2e6474b00b">NObject::CBaby::ProcDamage</a></div><div class="ttdeci">virtual void ProcDamage(const NGame::SDamageParam &amp;_rDamage) override</div><div class="ttdoc">ダメージを受けた際の処理</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:199</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a5959c1886efaf67197edec9aa7e98cb7"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a5959c1886efaf67197edec9aa7e98cb7">NObject::CBaby::UpdateStateDamageRecover</a></div><div class="ttdeci">void UpdateStateDamageRecover(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:348</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a5e90ddaa211ab55f3c3edda36024b588"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a5e90ddaa211ab55f3c3edda36024b588">NObject::CBaby::m_idleFrame</a></div><div class="ttdeci">int m_idleFrame</div><div class="ttdef"><b>Definition</b> Object_Baby.h:92</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a61c7178946ee9b537f1564f2a441b3cb"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a61c7178946ee9b537f1564f2a441b3cb">NObject::CBaby::LoadProc</a></div><div class="ttdeci">virtual void LoadProc() override</div><div class="ttdoc">生成時に1度だけ行う処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:40</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a68a46d9734ac48c3e776dca3700bc4c0"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a68a46d9734ac48c3e776dca3700bc4c0">NObject::CBaby::m_pFollowObject</a></div><div class="ttdeci">CGameObject * m_pFollowObject</div><div class="ttdef"><b>Definition</b> Object_Baby.h:91</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a6cac183bedbe278851065cb9e4522715"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a6cac183bedbe278851065cb9e4522715">NObject::CBaby::Base</a></div><div class="ttdeci">CEnemy Base</div><div class="ttdef"><b>Definition</b> Object_Baby.h:82</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a70b7eed9684cb46eab86e11c474a1129"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a70b7eed9684cb46eab86e11c474a1129">NObject::CBaby::m_attackHolder</a></div><div class="ttdeci">NCollision::CHolder m_attackHolder</div><div class="ttdef"><b>Definition</b> Object_Baby.h:88</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a79f18b19770d1e0e08c5c927cb06369e"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a79f18b19770d1e0e08c5c927cb06369e">NObject::CBaby::UpdateProc</a></div><div class="ttdeci">virtual void UpdateProc() override</div><div class="ttdoc">更新処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:125</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a7b1223a64c7e493d3795353195801185"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a7b1223a64c7e493d3795353195801185">NObject::CBaby::ReleaseProc</a></div><div class="ttdeci">virtual void ReleaseProc() override</div><div class="ttdoc">終了時に1度だけ行う処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:107</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a84a6a7bd97614d7037bd44c9b5f1a483"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a84a6a7bd97614d7037bd44c9b5f1a483">NObject::CBaby::Operate</a></div><div class="ttdeci">virtual void Operate() override</div><div class="ttdoc">操作関数</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:255</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a85c61dcde1466a27c9b4a6bc64f07bd7"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a85c61dcde1466a27c9b4a6bc64f07bd7">NObject::CBaby::m_damageHolder</a></div><div class="ttdeci">NCollision::CHolder m_damageHolder</div><div class="ttdef"><b>Definition</b> Object_Baby.h:87</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a987dc886035d28d35a47b36518b3ee18"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a987dc886035d28d35a47b36518b3ee18">NObject::CBaby::GetActorMoveAssetKey</a></div><div class="ttdeci">virtual NAsset::CJsonFactory::Key GetActorMoveAssetKey()</div><div class="ttdoc">ActorMoveデータを取得する</div><div class="ttdef"><b>Definition</b> Object_Baby.h:71</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_a9cf7d35f7a106c2b76a59bd338e77665"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#a9cf7d35f7a106c2b76a59bd338e77665">NObject::CBaby::CheckIsAttackRange</a></div><div class="ttdeci">bool CheckIsAttackRange()</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:395</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_aa217ce89be21a578ffe19cb7a8451de6"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#aa217ce89be21a578ffe19cb7a8451de6">NObject::CBaby::~CBaby</a></div><div class="ttdeci">virtual ~CBaby()</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:31</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_aa227c47e0cd68b6bd09719d6900ed01c"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#aa227c47e0cd68b6bd09719d6900ed01c">NObject::CBaby::UpdateUtilFollowPlayer</a></div><div class="ttdeci">void UpdateUtilFollowPlayer()</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:375</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_aaf0990059d9fff85fad07771a860c8cb"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#aaf0990059d9fff85fad07771a860c8cb">NObject::CBaby::InitProc</a></div><div class="ttdeci">virtual void InitProc() override</div><div class="ttdoc">初期化処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:112</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_ab65584564642b2789548c3d23849a89d"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89d">NObject::CBaby::EAnmIndex</a></div><div class="ttdeci">EAnmIndex</div><div class="ttdoc">アニメーション</div><div class="ttdef"><b>Definition</b> Object_Baby.h:33</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_ab65584564642b2789548c3d23849a89da2fc55bdd41f6cf2c8c500a1fec44d715"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89da2fc55bdd41f6cf2c8c500a1fec44d715">NObject::CBaby::DAMAGE_L_BODY</a></div><div class="ttdeci">@ DAMAGE_L_BODY</div><div class="ttdef"><b>Definition</b> Object_Baby.h:35</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_ab65584564642b2789548c3d23849a89da36ce78c0027faa2ff14c8385c324aa11"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89da36ce78c0027faa2ff14c8385c324aa11">NObject::CBaby::DAMAGE_H_BLOW_BACK</a></div><div class="ttdeci">@ DAMAGE_H_BLOW_BACK</div><div class="ttdef"><b>Definition</b> Object_Baby.h:36</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_ab65584564642b2789548c3d23849a89da46409af2e7447a124aed991413e22a10"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89da46409af2e7447a124aed991413e22a10">NObject::CBaby::DAMAGE_L_FOOT</a></div><div class="ttdeci">@ DAMAGE_L_FOOT</div><div class="ttdef"><b>Definition</b> Object_Baby.h:38</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_ab65584564642b2789548c3d23849a89daa129bcec6b3ab0de6c1a454565ead2a1"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89daa129bcec6b3ab0de6c1a454565ead2a1">NObject::CBaby::NORMAL_IDLE</a></div><div class="ttdeci">@ NORMAL_IDLE</div><div class="ttdef"><b>Definition</b> Object_Baby.h:39</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_ab65584564642b2789548c3d23849a89dac5d930b37cecc3c284e3a82a70279969"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89dac5d930b37cecc3c284e3a82a70279969">NObject::CBaby::DAMAGE_L_HEAD</a></div><div class="ttdeci">@ DAMAGE_L_HEAD</div><div class="ttdef"><b>Definition</b> Object_Baby.h:37</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_ab65584564642b2789548c3d23849a89dae3dcabc380034804405cd7a2b8c19aa4"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89dae3dcabc380034804405cd7a2b8c19aa4">NObject::CBaby::ATTACK_HEAD_BAT</a></div><div class="ttdeci">@ ATTACK_HEAD_BAT</div><div class="ttdef"><b>Definition</b> Object_Baby.h:34</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_ab65584564642b2789548c3d23849a89daf316404610decb670e14f2c08a1d517a"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#ab65584564642b2789548c3d23849a89daf316404610decb670e14f2c08a1d517a">NObject::CBaby::MAX</a></div><div class="ttdeci">@ MAX</div><div class="ttdef"><b>Definition</b> Object_Baby.h:40</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_ad29a299e11ee6c8eda873290d39730b2"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#ad29a299e11ee6c8eda873290d39730b2">NObject::CBaby::UpdateStateDamageHigh</a></div><div class="ttdeci">void UpdateStateDamageHigh(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:337</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_ad668d3c25783e5868746f146240a40c5"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#ad668d3c25783e5868746f146240a40c5">NObject::CBaby::CBaby</a></div><div class="ttdeci">CBaby()</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:19</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_af0494fb81ba26252fd5adf02e46bdf8a"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#af0494fb81ba26252fd5adf02e46bdf8a">NObject::CBaby::UpdateStateFollow</a></div><div class="ttdeci">void UpdateStateFollow(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_Baby.cpp:277</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_baby_html_af92351ad1b9b562cf3951b0de30156f0"><div class="ttname"><a href="class_n_object_1_1_c_baby.html#af92351ad1b9b562cf3951b0de30156f0">NObject::CBaby::StateParam</a></div><div class="ttdeci">NUtil::CStateManager&lt; CBaby, EState &gt;::Param StateParam</div><div class="ttdef"><b>Definition</b> Object_Baby.h:97</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_enemy_html_a3530964cebd705a5799b69edcd9a405e"><div class="ttname"><a href="class_n_object_1_1_c_enemy.html#a3530964cebd705a5799b69edcd9a405e">NObject::CEnemy::CEnemy</a></div><div class="ttdeci">CEnemy()</div><div class="ttdef"><b>Definition</b> Object_Enemy.cpp:7</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a></div><div class="ttdoc">ゲーム内のすべてのオブジェクトの基底クラスとなるクラス</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:8</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html"><div class="ttname"><a href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a></div><div class="ttdoc">状態遷移を管理するクラス</div><div class="ttdef"><b>Definition</b> Util_StateManager.h:18</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html_a9515c92a0d8f456afd3e28ffc26e3b6d"><div class="ttname"><a href="class_n_util_1_1_c_state_manager.html#a9515c92a0d8f456afd3e28ffc26e3b6d">NUtil::CStateManager::Param</a></div><div class="ttdeci">SStateParam&lt; TEnumState &gt; &amp; Param</div><div class="ttdoc">メンバ関数の引数になるパラメータ</div><div class="ttdef"><b>Definition</b> Util_StateManager.h:123</div></div>
+<div class="ttc" id="anamespace_n_object_html"><div class="ttname"><a href="namespace_n_object.html">NObject</a></div><div class="ttdoc">プレイヤークラスの内部クラスの実装</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:5</div></div>
+<div class="ttc" id="astruct_n_game_1_1_s_damage_param_html"><div class="ttname"><a href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a></div><div class="ttdoc">Object_Actorが保持するダメージデータ ActorParamに実際に反映するためのダメージデータ</div><div class="ttdef"><b>Definition</b> Game_ActorParam.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_f694c4fbc4aebbaf0d8c111126161e66.html">GameApp</a></li><li class="navelem"><a href="dir_2e64269c7e4a0767292f746f51bb2b62.html">Object</a></li><li class="navelem"><a href="dir_5396966e64c3d59db4d7b9ba2a420383.html">Actor</a></li><li class="navelem"><a href="dir_86b94bb7cc76e1e61367b883ef7e7292.html">Enemy</a></li><li class="navelem"><a href="_object___baby_8h.html">Object_Baby.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Math/Int/Math_Int4.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_math___int4_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Math_Int4.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_math___int4_8h_source.html">Math_Int4.h</a>&quot;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:NMath" id="r_NMath"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_math.html">NMath</a></td></tr>
+<tr class="memdesc:namespace_n_math"><td class="mdescLeft">&#160;</td><td class="mdescRight">基本的な計算を行う関数群 <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a169f23c3801cd7acb5ec138565323973" id="r_a169f23c3801cd7acb5ec138565323973"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a169f23c3801cd7acb5ec138565323973">operator+</a> (const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_rhs)</td></tr>
+<tr class="memitem:ac88a6bd51114a62358672c623246cb24" id="r_ac88a6bd51114a62358672c623246cb24"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac88a6bd51114a62358672c623246cb24">operator-</a> (const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_rhs)</td></tr>
+<tr class="memitem:ab9d1f77c77ce24e8ca40dcb91742f3e3" id="r_ab9d1f77c77ce24e8ca40dcb91742f3e3"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab9d1f77c77ce24e8ca40dcb91742f3e3">operator*</a> (const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_rhs)</td></tr>
+<tr class="memitem:ab7f91931348838a1349fb00547c2ee0a" id="r_ab7f91931348838a1349fb00547c2ee0a"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab7f91931348838a1349fb00547c2ee0a">operator*</a> (const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_lhs, const int &amp;_rhs)</td></tr>
+<tr class="memitem:a4736d3ef697be1262f1b32e8655a850a" id="r_a4736d3ef697be1262f1b32e8655a850a"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4736d3ef697be1262f1b32e8655a850a">operator*</a> (const int &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_rhs)</td></tr>
+<tr class="memitem:af6e2c2c37d6923e2a4449b0e4d4240da" id="r_af6e2c2c37d6923e2a4449b0e4d4240da"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>&#160;</td><td class="memItemRight"><a class="el" href="#af6e2c2c37d6923e2a4449b0e4d4240da">operator/</a> (const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_rhs)</td></tr>
+<tr class="memitem:a70ff6c13ce364780682f3a9639609bd0" id="r_a70ff6c13ce364780682f3a9639609bd0"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>&#160;</td><td class="memItemRight"><a class="el" href="#a70ff6c13ce364780682f3a9639609bd0">operator/</a> (const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_lhs, const int &amp;_rhs)</td></tr>
+<tr class="memitem:abf33fdc650ff82a014946f85919a38e3" id="r_abf33fdc650ff82a014946f85919a38e3"><td class="memItemLeft">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>&#160;</td><td class="memItemRight"><a class="el" href="#abf33fdc650ff82a014946f85919a38e3">operator/</a> (const int &amp;_lhs, const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;_rhs)</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a4736d3ef697be1262f1b32e8655a850a" name="a4736d3ef697be1262f1b32e8655a850a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4736d3ef697be1262f1b32e8655a850a">&#9670;&#160;</a></span>operator*() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  130</span>{</div>
+<div class="line"><span class="lineno">  131</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>(_rhs) *= _lhs;</div>
+<div class="line"><span class="lineno">  132</span>}</div>
+<div class="ttc" id="astruct_n_math_1_1_s_int4_html"><div class="ttname"><a href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a></div><div class="ttdoc">Int構造体</div><div class="ttdef"><b>Definition</b> Math_Int4.h:12</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab7f91931348838a1349fb00547c2ee0a" name="ab7f91931348838a1349fb00547c2ee0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7f91931348838a1349fb00547c2ee0a">&#9670;&#160;</a></span>operator*() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  125</span>{</div>
+<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>(_lhs) *= _rhs;</div>
+<div class="line"><span class="lineno">  127</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab9d1f77c77ce24e8ca40dcb91742f3e3" name="ab9d1f77c77ce24e8ca40dcb91742f3e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d1f77c77ce24e8ca40dcb91742f3e3">&#9670;&#160;</a></span>operator*() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  120</span>{</div>
+<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>(_lhs) *= _rhs;</div>
+<div class="line"><span class="lineno">  122</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a169f23c3801cd7acb5ec138565323973" name="a169f23c3801cd7acb5ec138565323973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169f23c3801cd7acb5ec138565323973">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  110</span>{</div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>(_lhs) += _rhs;</div>
+<div class="line"><span class="lineno">  112</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac88a6bd51114a62358672c623246cb24" name="ac88a6bd51114a62358672c623246cb24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac88a6bd51114a62358672c623246cb24">&#9670;&#160;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  115</span>{</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>(_lhs) -= _rhs;</div>
+<div class="line"><span class="lineno">  117</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abf33fdc650ff82a014946f85919a38e3" name="abf33fdc650ff82a014946f85919a38e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf33fdc650ff82a014946f85919a38e3">&#9670;&#160;</a></span>operator/() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  145</span>{</div>
+<div class="line"><span class="lineno">  146</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>(_rhs) /= _lhs;</div>
+<div class="line"><span class="lineno">  147</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a70ff6c13ce364780682f3a9639609bd0" name="a70ff6c13ce364780682f3a9639609bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ff6c13ce364780682f3a9639609bd0">&#9670;&#160;</a></span>operator/() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  140</span>{</div>
+<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>(_lhs) /= _rhs;</div>
+<div class="line"><span class="lineno">  142</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af6e2c2c37d6923e2a4449b0e4d4240da" name="af6e2c2c37d6923e2a4449b0e4d4240da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e2c2c37d6923e2a4449b0e4d4240da">&#9670;&#160;</a></span>operator/() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_lhs</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rhs</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  135</span>{</div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_n_math_1_1_s_int4.html">NMath::SInt4</a>(_lhs) /= _rhs;</div>
+<div class="line"><span class="lineno">  137</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_bc307321e09ac76e33455da22ae3eeba.html">Math</a></li><li class="navelem"><a href="dir_cf71a3e59443f8ccecb0739ca99a23d6.html">Int</a></li><li class="navelem"><a href="_math___int4_8cpp.html">Math_Int4.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

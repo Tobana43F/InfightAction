@@ -1,0 +1,639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NModel::CXFile クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_model_1_1_c_x_file.html','','class_n_model_1_1_c_x_file-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NModel::CXFile クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Xファイルのモデルを管理するクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_model___x_file_8h_source.html">Model_XFile.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad3dde3b2541913e585abe2dbe25a4cbb" id="r_ad3dde3b2541913e585abe2dbe25a4cbb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ad3dde3b2541913e585abe2dbe25a4cbb">LoadXFile</a> (char *xfilename, LPDIRECT3DDEVICE9 lpd3ddevice)</td></tr>
+<tr class="memdesc:ad3dde3b2541913e585abe2dbe25a4cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Xファイル読み込み  <br /></td></tr>
+<tr class="memitem:aaba3a1d1f96a9ff5a147f0e781cbe559" id="r_aaba3a1d1f96a9ff5a147f0e781cbe559"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaba3a1d1f96a9ff5a147f0e781cbe559">UnLoadXFile</a> ()</td></tr>
+<tr class="memitem:afd303215fd49d98acf43fee485f7ddae" id="r_afd303215fd49d98acf43fee485f7ddae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afd303215fd49d98acf43fee485f7ddae">Render</a> (<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rMatWorld)</td></tr>
+<tr class="memitem:a436049cdca2f23f7972f326b1bfc5064" id="r_a436049cdca2f23f7972f326b1bfc5064"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a436049cdca2f23f7972f326b1bfc5064">Draw</a> (LPDIRECT3DDEVICE9 lpd3ddevice)</td></tr>
+<tr class="memitem:a35f000c50d2c243445b701a8a0ecd5ec" id="r_a35f000c50d2c243445b701a8a0ecd5ec"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a35f000c50d2c243445b701a8a0ecd5ec">DrawWithAxis</a> (LPDIRECT3DDEVICE9 lpd3ddevice)</td></tr>
+<tr class="memitem:a6fa0c4e412236d8b373114c2d949e17e" id="r_a6fa0c4e412236d8b373114c2d949e17e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6fa0c4e412236d8b373114c2d949e17e">DrawAxis</a> (LPDIRECT3DDEVICE9 lpd3ddevice)</td></tr>
+<tr class="memitem:a608bc8751726ee73a788e297f588e0b4" id="r_a608bc8751726ee73a788e297f588e0b4"><td class="memItemLeft">LPD3DXMESH&#160;</td><td class="memItemRight"><a class="el" href="#a608bc8751726ee73a788e297f588e0b4">GetMesh</a> () const</td></tr>
+<tr class="memitem:a2cf5d99a044c6ad45039eceba2c8063a" id="r_a2cf5d99a044c6ad45039eceba2c8063a"><td class="memItemLeft">DWORD&#160;</td><td class="memItemRight"><a class="el" href="#a2cf5d99a044c6ad45039eceba2c8063a">GetNumMaterial</a> () const</td></tr>
+<tr class="memitem:ac39347e9d04b4b20ad4e5708ee9f532e" id="r_ac39347e9d04b4b20ad4e5708ee9f532e"><td class="memItemLeft">D3DMATERIAL9 *&#160;</td><td class="memItemRight"><a class="el" href="#ac39347e9d04b4b20ad4e5708ee9f532e">GetPMaterial</a> (int index) const</td></tr>
+<tr class="memitem:a12dd1c08957057847a308ab5fd79ed47" id="r_a12dd1c08957057847a308ab5fd79ed47"><td class="memItemLeft">LPDIRECT3DTEXTURE9 *&#160;</td><td class="memItemRight"><a class="el" href="#a12dd1c08957057847a308ab5fd79ed47">GetPTexture</a> (int index) const</td></tr>
+<tr class="memitem:a8239a484cc8c533d88e3ea203fef3e44" id="r_a8239a484cc8c533d88e3ea203fef3e44"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a8239a484cc8c533d88e3ea203fef3e44">CXFile</a> ()</td></tr>
+<tr class="memitem:a36c65077bc48718d23d7182207665440" id="r_a36c65077bc48718d23d7182207665440"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a36c65077bc48718d23d7182207665440">~CXFile</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a8013ac2c57bc0fa5a7c5b90922c344ab" id="r_a8013ac2c57bc0fa5a7c5b90922c344ab"><td class="memItemLeft">LPD3DXMESH&#160;</td><td class="memItemRight"><a class="el" href="#a8013ac2c57bc0fa5a7c5b90922c344ab">m_lpmesh</a></td></tr>
+<tr class="memitem:a53630f756bf38477928729def1fd5a1e" id="r_a53630f756bf38477928729def1fd5a1e"><td class="memItemLeft">D3DMATERIAL9 *&#160;</td><td class="memItemRight"><a class="el" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a></td></tr>
+<tr class="memitem:aac6cc8e61b20252055936f72b8914fab" id="r_aac6cc8e61b20252055936f72b8914fab"><td class="memItemLeft">LPDIRECT3DTEXTURE9 *&#160;</td><td class="memItemRight"><a class="el" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a></td></tr>
+<tr class="memitem:a559af0ca9686d2a83a685e57fdf95362" id="r_a559af0ca9686d2a83a685e57fdf95362"><td class="memItemLeft">DWORD&#160;</td><td class="memItemRight"><a class="el" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>Xファイルのモデルを管理するクラス </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a8239a484cc8c533d88e3ea203fef3e44" name="a8239a484cc8c533d88e3ea203fef3e44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8239a484cc8c533d88e3ea203fef3e44">&#9670;&#160;</a></span>CXFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NModel::CXFile::CXFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   10</span>    {</div>
+<div class="line"><span class="lineno">   11</span>        <a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   12</span>        <a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   13</span>        <a class="code hl_variable" href="#a8013ac2c57bc0fa5a7c5b90922c344ab">m_lpmesh</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   14</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_x_file_html_a53630f756bf38477928729def1fd5a1e"><div class="ttname"><a href="#a53630f756bf38477928729def1fd5a1e">NModel::CXFile::m_lpmeshmaterials</a></div><div class="ttdeci">D3DMATERIAL9 * m_lpmeshmaterials</div><div class="ttdef"><b>Definition</b> Model_XFile.h:47</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_x_file_html_a8013ac2c57bc0fa5a7c5b90922c344ab"><div class="ttname"><a href="#a8013ac2c57bc0fa5a7c5b90922c344ab">NModel::CXFile::m_lpmesh</a></div><div class="ttdeci">LPD3DXMESH m_lpmesh</div><div class="ttdef"><b>Definition</b> Model_XFile.h:46</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_x_file_html_aac6cc8e61b20252055936f72b8914fab"><div class="ttname"><a href="#aac6cc8e61b20252055936f72b8914fab">NModel::CXFile::m_lpmeshtextures</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 * m_lpmeshtextures</div><div class="ttdef"><b>Definition</b> Model_XFile.h:48</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a36c65077bc48718d23d7182207665440" name="a36c65077bc48718d23d7182207665440"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36c65077bc48718d23d7182207665440">&#9670;&#160;</a></span>~CXFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NModel::CXFile::~CXFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   17</span>    {</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a436049cdca2f23f7972f326b1bfc5064" name="a436049cdca2f23f7972f326b1bfc5064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436049cdca2f23f7972f326b1bfc5064">&#9670;&#160;</a></span>Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CXFile::Draw </td>
+          <td>(</td>
+          <td class="paramtype">LPDIRECT3DDEVICE9</td>          <td class="paramname"><span class="paramname"><em>lpd3ddevice</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  122</span>    {</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a>; i++) {</div>
+<div class="line"><span class="lineno">  125</span>            lpd3ddevice-&gt;SetMaterial(&amp;<a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a>[i]);    <span class="comment">// マテリアルのセット</span></div>
+<div class="line"><span class="lineno">  126</span>            lpd3ddevice-&gt;SetTexture(0, <a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a>[i]);        <span class="comment">// テクスチャのセット</span></div>
+<div class="line"><span class="lineno">  127</span>            <a class="code hl_variable" href="#a8013ac2c57bc0fa5a7c5b90922c344ab">m_lpmesh</a>-&gt;DrawSubset(i);                            <span class="comment">// サブセットの描画</span></div>
+<div class="line"><span class="lineno">  128</span>        }</div>
+<div class="line"><span class="lineno">  129</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_x_file_html_a559af0ca9686d2a83a685e57fdf95362"><div class="ttname"><a href="#a559af0ca9686d2a83a685e57fdf95362">NModel::CXFile::m_nummaterial</a></div><div class="ttdeci">DWORD m_nummaterial</div><div class="ttdef"><b>Definition</b> Model_XFile.h:49</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6fa0c4e412236d8b373114c2d949e17e" name="a6fa0c4e412236d8b373114c2d949e17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa0c4e412236d8b373114c2d949e17e">&#9670;&#160;</a></span>DrawAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CXFile::DrawAxis </td>
+          <td>(</td>
+          <td class="paramtype">LPDIRECT3DDEVICE9</td>          <td class="paramname"><span class="paramname"><em>lpd3ddevice</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  159</span>    {</div>
+<div class="line"><span class="lineno">  160</span>        <span class="keyword">struct </span>VERTEXDATA {</div>
+<div class="line"><span class="lineno">  161</span>            <span class="keywordtype">float</span>       x, y, z;</div>
+<div class="line"><span class="lineno">  162</span>            D3DCOLOR    color;</div>
+<div class="line"><span class="lineno">  163</span>        };</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>        <span class="comment">// ３軸の頂点データ</span></div>
+<div class="line"><span class="lineno">  166</span>        <span class="keyword">struct  </span>VERTEXDATA  linevertices[6] = {</div>
+<div class="line"><span class="lineno">  167</span>            -400, 0, 0, D3DCOLOR_XRGB(255, 0, 0),   <span class="comment">// Ｘ軸始点 赤</span></div>
+<div class="line"><span class="lineno">  168</span>            400, 0, 0, D3DCOLOR_XRGB(255, 0, 0),    <span class="comment">// Ｘ軸終点 赤</span></div>
+<div class="line"><span class="lineno">  169</span>            0, -400, 0, D3DCOLOR_XRGB(0, 255, 0),   <span class="comment">// Ｙ軸始点 緑</span></div>
+<div class="line"><span class="lineno">  170</span>            0, 400, 0, D3DCOLOR_XRGB(0, 255, 0),    <span class="comment">// Ｙ軸終点 緑</span></div>
+<div class="line"><span class="lineno">  171</span>            0, 0, -400, D3DCOLOR_XRGB(0, 0, 255),   <span class="comment">// Ｚ軸始点 青</span></div>
+<div class="line"><span class="lineno">  172</span>            0, 0, 400, D3DCOLOR_XRGB(0, 0, 255)     <span class="comment">// Ｚ軸終点 青</span></div>
+<div class="line"><span class="lineno">  173</span>        };</div>
+<div class="line"><span class="lineno">  174</span> </div>
+<div class="line"><span class="lineno">  175</span>        lpd3ddevice-&gt;SetFVF(D3DFVF_XYZ | D3DFVF_DIFFUSE);   <span class="comment">// 頂点フォーマットをセット</span></div>
+<div class="line"><span class="lineno">  176</span>        lpd3ddevice-&gt;SetRenderState(D3DRS_LIGHTING, <span class="keyword">false</span>); <span class="comment">//   光源計算オフ（光源計算を切るとDIFFUSE色がそのままでる）</span></div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>        lpd3ddevice-&gt;DrawPrimitiveUP(D3DPT_LINELIST, 3, &amp;linevertices[0], <span class="keyword">sizeof</span>(VERTEXDATA));  <span class="comment">// ３軸を描画</span></div>
+<div class="line"><span class="lineno">  179</span>        lpd3ddevice-&gt;SetRenderState(D3DRS_LIGHTING, <span class="keyword">true</span>);  <span class="comment">//   光源計算ON</span></div>
+<div class="line"><span class="lineno">  180</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a35f000c50d2c243445b701a8a0ecd5ec" name="a35f000c50d2c243445b701a8a0ecd5ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f000c50d2c243445b701a8a0ecd5ec">&#9670;&#160;</a></span>DrawWithAxis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CXFile::DrawWithAxis </td>
+          <td>(</td>
+          <td class="paramtype">LPDIRECT3DDEVICE9</td>          <td class="paramname"><span class="paramname"><em>lpd3ddevice</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  139</span>    {</div>
+<div class="line"><span class="lineno">  140</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>        <a class="code hl_function" href="#a6fa0c4e412236d8b373114c2d949e17e">DrawAxis</a>(lpd3ddevice);  <span class="comment">// ３軸の描画</span></div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a>; i++) {   <span class="comment">// サブセットの描画</span></div>
+<div class="line"><span class="lineno">  145</span>            lpd3ddevice-&gt;SetMaterial(&amp;<a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a>[i]);    <span class="comment">// マテリアルのセット</span></div>
+<div class="line"><span class="lineno">  146</span>            lpd3ddevice-&gt;SetTexture(0, <a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a>[i]);        <span class="comment">// テクスチャのセット</span></div>
+<div class="line"><span class="lineno">  147</span>            <a class="code hl_variable" href="#a8013ac2c57bc0fa5a7c5b90922c344ab">m_lpmesh</a>-&gt;DrawSubset(i);                            <span class="comment">// サブセットの描画</span></div>
+<div class="line"><span class="lineno">  148</span>        }</div>
+<div class="line"><span class="lineno">  149</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_x_file_html_a6fa0c4e412236d8b373114c2d949e17e"><div class="ttname"><a href="#a6fa0c4e412236d8b373114c2d949e17e">NModel::CXFile::DrawAxis</a></div><div class="ttdeci">void DrawAxis(LPDIRECT3DDEVICE9 lpd3ddevice)</div><div class="ttdef"><b>Definition</b> Model_XFile.cpp:158</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a608bc8751726ee73a788e297f588e0b4" name="a608bc8751726ee73a788e297f588e0b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a608bc8751726ee73a788e297f588e0b4">&#9670;&#160;</a></span>GetMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXMESH NModel::CXFile::GetMesh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  190</span>    {</div>
+<div class="line"><span class="lineno">  191</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a8013ac2c57bc0fa5a7c5b90922c344ab">m_lpmesh</a>;</div>
+<div class="line"><span class="lineno">  192</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2cf5d99a044c6ad45039eceba2c8063a" name="a2cf5d99a044c6ad45039eceba2c8063a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cf5d99a044c6ad45039eceba2c8063a">&#9670;&#160;</a></span>GetNumMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD NModel::CXFile::GetNumMaterial </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  195</span>    {</div>
+<div class="line"><span class="lineno">  196</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a>;</div>
+<div class="line"><span class="lineno">  197</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac39347e9d04b4b20ad4e5708ee9f532e" name="ac39347e9d04b4b20ad4e5708ee9f532e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac39347e9d04b4b20ad4e5708ee9f532e">&#9670;&#160;</a></span>GetPMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DMATERIAL9 * NModel::CXFile::GetPMaterial </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  201</span>    {</div>
+<div class="line"><span class="lineno">  202</span>        <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>)index &lt; <a class="code hl_variable" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a>)</div>
+<div class="line"><span class="lineno">  203</span>            <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a>[0];<span class="comment">// 適当に返す</span></div>
+<div class="line"><span class="lineno">  204</span> </div>
+<div class="line"><span class="lineno">  205</span>        <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a>[index];</div>
+<div class="line"><span class="lineno">  206</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a12dd1c08957057847a308ab5fd79ed47" name="a12dd1c08957057847a308ab5fd79ed47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12dd1c08957057847a308ab5fd79ed47">&#9670;&#160;</a></span>GetPTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DTEXTURE9 * NModel::CXFile::GetPTexture </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  210</span>    {</div>
+<div class="line"><span class="lineno">  211</span>        <span class="keywordflow">if</span> ((<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>)index &lt; <a class="code hl_variable" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a>)</div>
+<div class="line"><span class="lineno">  212</span>            <span class="keywordflow">return</span>  &amp;<a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a>[0];</div>
+<div class="line"><span class="lineno">  213</span> </div>
+<div class="line"><span class="lineno">  214</span>        <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a>[index];</div>
+<div class="line"><span class="lineno">  215</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad3dde3b2541913e585abe2dbe25a4cbb" name="ad3dde3b2541913e585abe2dbe25a4cbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3dde3b2541913e585abe2dbe25a4cbb">&#9670;&#160;</a></span>LoadXFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CXFile::LoadXFile </td>
+          <td>(</td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>xfilename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPDIRECT3DDEVICE9</td>          <td class="paramname"><span class="paramname"><em>lpd3ddevice</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Xファイル読み込み </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Xファイル名</td><td></td></tr>
+    <tr><td class="paramname">デバイスオブジェクト</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>戻り値</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">TRUE　成功終了/FALSE　失敗終了</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>    {</div>
+<div class="line"><span class="lineno">   23</span>        LPD3DXBUFFER    pd3dxmtrlbuffer;</div>
+<div class="line"><span class="lineno">   24</span>        LPD3DXBUFFER    pd3dxmtrlbuffer2;</div>
+<div class="line"><span class="lineno">   25</span>        HRESULT         hr;</div>
+<div class="line"><span class="lineno">   26</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    i;</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>        <span class="comment">// Ｘファイルを読み込む</span></div>
+<div class="line"><span class="lineno">   29</span>        hr = D3DXLoadMeshFromX(xfilename,               <span class="comment">// Ｘファイル名</span></div>
+<div class="line"><span class="lineno">   30</span>            D3DXMESH_SYSTEMMEM,     <span class="comment">// 読み込みメモリ</span></div>
+<div class="line"><span class="lineno">   31</span>            lpd3ddevice,            <span class="comment">// デバイスオブジェクト</span></div>
+<div class="line"><span class="lineno">   32</span>            NULL,</div>
+<div class="line"><span class="lineno">   33</span>            &amp;pd3dxmtrlbuffer,       <span class="comment">// マテリアルバッファ</span></div>
+<div class="line"><span class="lineno">   34</span>            &amp;pd3dxmtrlbuffer2,      <span class="comment">// マテリアルバッファ2</span></div>
+<div class="line"><span class="lineno">   35</span>            &amp;<a class="code hl_variable" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a>,         <span class="comment">// マテリアル数</span></div>
+<div class="line"><span class="lineno">   36</span>            &amp;<a class="code hl_variable" href="#a8013ac2c57bc0fa5a7c5b90922c344ab">m_lpmesh</a>);             <span class="comment">// メッシュ</span></div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">   39</span>            std::string str;</div>
+<div class="line"><span class="lineno">   40</span>            <a class="code hl_function" href="namespace_n_util.html#a4ab668626c012bfed2b1ada075692e79">NUtil::MakeString</a>(str, <span class="stringliteral">&quot;%s\nFileName : %s&quot;</span>,</div>
+<div class="line"><span class="lineno">   41</span>                <span class="stringliteral">&quot;モデル読み込みエラー&quot;</span>,</div>
+<div class="line"><span class="lineno">   42</span>                xfilename);</div>
+<div class="line"><span class="lineno">   43</span>            <a class="code hl_define" href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a>(str.data());</div>
+<div class="line"><span class="lineno">   44</span>        }</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>        D3DXMATERIAL    *d3dxmaterials = (D3DXMATERIAL*)pd3dxmtrlbuffer-&gt;GetBufferPointer();    <span class="comment">// マテリアルのアドレスを取得</span></div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a> = <span class="keyword">new</span> D3DMATERIAL9[<a class="code hl_variable" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a>];        <span class="comment">// マテリアルコンテナの作成</span></div>
+<div class="line"><span class="lineno">   48</span>        <a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a> = <span class="keyword">new</span> LPDIRECT3DTEXTURE9[<a class="code hl_variable" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a>];   <span class="comment">// テクスチャコンテナの生成</span></div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a>; i++) {</div>
+<div class="line"><span class="lineno">   51</span>            <a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a>[i] = d3dxmaterials[i].MatD3D;</div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a>[i].Emissive = <a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a>[i].Specular = <a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a>[i].Ambient = <a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a>[i].Diffuse;</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>            <span class="comment">// モデルファイルのディレクトリを取得</span></div>
+<div class="line"><span class="lineno">   55</span>            std::string modelFilePath = xfilename;</div>
+<div class="line"><span class="lineno">   56</span>            <span class="keywordtype">int</span> dirNum;</div>
+<div class="line"><span class="lineno">   57</span>            dirNum = modelFilePath.find_last_of(<span class="charliteral">&#39;/&#39;</span>) + 1;   <span class="comment">// 最後の区切り文字までの文字数を取得する</span></div>
+<div class="line"><span class="lineno">   58</span>                                                            <span class="comment">// 区切り文字を含める</span></div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>            std::string modelFileDir;</div>
+<div class="line"><span class="lineno">   61</span>            modelFileDir = modelFilePath.substr(0, dirNum);</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>            <span class="comment">// テクスチャを実行時の相対パスに直す</span></div>
+<div class="line"><span class="lineno">   64</span>            <span class="keywordflow">if</span> (d3dxmaterials[i].pTextureFilename != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">   65</span>                std::string texPath = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">   66</span>                texPath += modelFileDir.data();</div>
+<div class="line"><span class="lineno">   67</span>                texPath += d3dxmaterials[i].pTextureFilename;</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>                hr = D3DXCreateTextureFromFile(</div>
+<div class="line"><span class="lineno">   70</span>                    lpd3ddevice,</div>
+<div class="line"><span class="lineno">   71</span>                    texPath.data(),</div>
+<div class="line"><span class="lineno">   72</span>                    &amp;<a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a>[i]);</div>
+<div class="line"><span class="lineno">   73</span>                <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">   74</span>                    <a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a>[i] = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   75</span>                }</div>
+<div class="line"><span class="lineno">   76</span>            }</div>
+<div class="line"><span class="lineno">   77</span>        }</div>
+<div class="line"><span class="lineno">   78</span>        pd3dxmtrlbuffer-&gt;Release();     <span class="comment">// マテリアルバッファのリリース</span></div>
+<div class="line"><span class="lineno">   79</span>        pd3dxmtrlbuffer2-&gt;Release();    <span class="comment">// マテリアルバッファのリリース</span></div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   82</span>    }</div>
+<div class="ttc" id="a_system___error_8h_html_a1ef9aee6b1a8c442c300a378918a4d5f"><div class="ttname"><a href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a></div><div class="ttdeci">#define ErrorEx(_pMessage)</div><div class="ttdoc">ファイル名と行の情報を付加するマクロ</div><div class="ttdef"><b>Definition</b> System_Error.h:5</div></div>
+<div class="ttc" id="anamespace_n_util_html_a4ab668626c012bfed2b1ada075692e79"><div class="ttname"><a href="namespace_n_util.html#a4ab668626c012bfed2b1ada075692e79">NUtil::MakeString</a></div><div class="ttdeci">void MakeString(std::string &amp;_rDest, cchar *_pFmt,...)</div><div class="ttdoc">フォーマットを指定して文字列を作成する</div><div class="ttdef"><b>Definition</b> Util_Common.cpp:28</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afd303215fd49d98acf43fee485f7ddae" name="afd303215fd49d98acf43fee485f7ddae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd303215fd49d98acf43fee485f7ddae">&#9670;&#160;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CXFile::Render </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rMatWorld</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   24</span>        {</div>
+<div class="line"><span class="lineno">   25</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTransform(D3DTS_WORLD, (D3DXMATRIX*)&amp;_rMatWorld);</div>
+<div class="line"><span class="lineno">   26</span>            <a class="code hl_function" href="#a436049cdca2f23f7972f326b1bfc5064">Draw</a>(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>());</div>
+<div class="line"><span class="lineno">   27</span>        }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_x_file_html_a436049cdca2f23f7972f326b1bfc5064"><div class="ttname"><a href="#a436049cdca2f23f7972f326b1bfc5064">NModel::CXFile::Draw</a></div><div class="ttdeci">void Draw(LPDIRECT3DDEVICE9 lpd3ddevice)</div><div class="ttdef"><b>Definition</b> Model_XFile.cpp:121</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab213af265d85f773a3fb450ca43e3650"><div class="ttname"><a href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 GetD3DDevice()</div><div class="ttdoc">デバイスを取得</div><div class="ttdef"><b>Definition</b> DirectX_Manager.cpp:95</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaba3a1d1f96a9ff5a147f0e781cbe559" name="aaba3a1d1f96a9ff5a147f0e781cbe559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaba3a1d1f96a9ff5a147f0e781cbe559">&#9670;&#160;</a></span>UnLoadXFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CXFile::UnLoadXFile </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   92</span>    {</div>
+<div class="line"><span class="lineno">   93</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i;</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a> != NULL) {    <span class="comment">// マテリアルオブジェクトの解放</span></div>
+<div class="line"><span class="lineno">   96</span>            <span class="keyword">delete</span>[] <a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a>;</div>
+<div class="line"><span class="lineno">   97</span>            <a class="code hl_variable" href="#a53630f756bf38477928729def1fd5a1e">m_lpmeshmaterials</a> = NULL;</div>
+<div class="line"><span class="lineno">   98</span>        }</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a> != NULL) {     <span class="comment">// テクスチャオブジェクトの解放</span></div>
+<div class="line"><span class="lineno">  101</span>            <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_variable" href="#a559af0ca9686d2a83a685e57fdf95362">m_nummaterial</a>; i++) {</div>
+<div class="line"><span class="lineno">  102</span>                <span class="keywordflow">if</span> (<a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a>[i] != NULL)    <a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a>[i]-&gt;Release();</div>
+<div class="line"><span class="lineno">  103</span>            }</div>
+<div class="line"><span class="lineno">  104</span>            <span class="keyword">delete</span>[] <a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a>;</div>
+<div class="line"><span class="lineno">  105</span>            <a class="code hl_variable" href="#aac6cc8e61b20252055936f72b8914fab">m_lpmeshtextures</a> = NULL;</div>
+<div class="line"><span class="lineno">  106</span>        }</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a8013ac2c57bc0fa5a7c5b90922c344ab">m_lpmesh</a> != NULL) {     <span class="comment">// メッシュ解放</span></div>
+<div class="line"><span class="lineno">  109</span>            <a class="code hl_variable" href="#a8013ac2c57bc0fa5a7c5b90922c344ab">m_lpmesh</a>-&gt;Release();</div>
+<div class="line"><span class="lineno">  110</span>            <a class="code hl_variable" href="#a8013ac2c57bc0fa5a7c5b90922c344ab">m_lpmesh</a> = NULL;</div>
+<div class="line"><span class="lineno">  111</span>        }</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a8013ac2c57bc0fa5a7c5b90922c344ab" name="a8013ac2c57bc0fa5a7c5b90922c344ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8013ac2c57bc0fa5a7c5b90922c344ab">&#9670;&#160;</a></span>m_lpmesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXMESH NModel::CXFile::m_lpmesh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53630f756bf38477928729def1fd5a1e" name="a53630f756bf38477928729def1fd5a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53630f756bf38477928729def1fd5a1e">&#9670;&#160;</a></span>m_lpmeshmaterials</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DMATERIAL9* NModel::CXFile::m_lpmeshmaterials</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac6cc8e61b20252055936f72b8914fab" name="aac6cc8e61b20252055936f72b8914fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac6cc8e61b20252055936f72b8914fab">&#9670;&#160;</a></span>m_lpmeshtextures</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPDIRECT3DTEXTURE9* NModel::CXFile::m_lpmeshtextures</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a559af0ca9686d2a83a685e57fdf95362" name="a559af0ca9686d2a83a685e57fdf95362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a559af0ca9686d2a83a685e57fdf95362">&#9670;&#160;</a></span>m_nummaterial</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD NModel::CXFile::m_nummaterial</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Model/XFile/<a class="el" href="_model___x_file_8h_source.html">Model_XFile.h</a></li>
+<li>Sources/Framework/Model/XFile/<a class="el" href="_model___x_file_8cpp.html">Model_XFile.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_model.html">NModel</a></li><li class="navelem"><a href="class_n_model_1_1_c_x_file.html">CXFile</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

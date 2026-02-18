@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Model/XFile/Model_Hierarchy.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_model___hierarchy_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Model_Hierarchy.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_model___hierarchy_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//========================================================</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//========================================================</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &lt;d3d9.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &lt;d3dx9.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include    &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_model.html">NModel</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">//フレーム構造体</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html">   13</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_n_model_1_1_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html">D3DXFRAME_DERIVED</a> : <span class="keyword">public</span> D3DXFRAME {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html#a50d3f6bb2e89d8ad9792d50220dbbc85">   14</a></span>        D3DXMATRIXA16   <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html#a50d3f6bb2e89d8ad9792d50220dbbc85">CombinedTransformMatrix</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    };</div>
+</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//メッシュコンテナ構造体</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html">   18</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html">D3DXMESHCONTAINER_DERIVED</a> : <span class="keyword">public</span> D3DXMESHCONTAINER {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ae48453566016835546290b8f6c1a3e5f">   19</a></span>        LPDIRECT3DTEXTURE9* <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ae48453566016835546290b8f6c1a3e5f">ppTextures</a>; <span class="comment">//テクスチャ配列</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="comment">//スキンメッシュ情報</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a427cedee2ce1458601f496c9e4920dea">   22</a></span>        LPD3DXMESH              <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a427cedee2ce1458601f496c9e4920dea">pOrigMesh</a>;  <span class="comment">//メッシュ</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a8a14f765b6ce36dd92ff1eb4419fc77d">   23</a></span>        LPD3DXATTRIBUTERANGE    <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a8a14f765b6ce36dd92ff1eb4419fc77d">pAttributeTable</a>;    <span class="comment">//属性</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a97bac8f0397844dbe39aa6fe7c201d01">   24</a></span>        DWORD                   <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a97bac8f0397844dbe39aa6fe7c201d01">NumAttributeGroups</a>; <span class="comment">//属性グループ</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#aa9496cb244e37334697fbd38f32d9a48">   25</a></span>        DWORD                   <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#aa9496cb244e37334697fbd38f32d9a48">NumInfl</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a4ccf76529e645535110182897f863dd6">   26</a></span>        LPD3DXBUFFER            <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a4ccf76529e645535110182897f863dd6">pBoneCombinationBuf</a>;    <span class="comment">//ボーンの組み合わせバッファ</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a396c7930a54460a6ca17408bd9b683c4">   27</a></span>        D3DXMATRIX**            <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a396c7930a54460a6ca17408bd9b683c4">ppBoneMatrixPtrs</a>;       <span class="comment">//ボーン行列の配列</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a50a8ef76e0f82844dbca459468b9d879">   28</a></span>        D3DXMATRIX*             <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a50a8ef76e0f82844dbca459468b9d879">pBoneOffsetMatrices</a>;    <span class="comment">//ボーンオフセット行列</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a8526d79a76712880f7d538e5e5feae90">   29</a></span>        DWORD                   <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a8526d79a76712880f7d538e5e5feae90">NumPaletteEntries</a>;      <span class="comment">//パレットエントリー</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a9fb86639164c15991100f5bcabe3d195">   30</a></span>        <span class="keywordtype">bool</span>                    <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a9fb86639164c15991100f5bcabe3d195">UserSoftwareVP</a>;         <span class="comment">//ソフトウェアVP使用フラグ</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ad30e0097b8510b5b18d6e432b70ddfc2">   31</a></span>        DWORD                   <a class="code hl_variable" href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ad30e0097b8510b5b18d6e432b70ddfc2">iAttributeSW</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    };</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span></div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_hierarchy.html">   35</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_model_1_1_c_hierarchy.html#acd69e513dd03ab4950ab371497db27e4">CHierarchy</a> : <span class="keyword">public</span> ID3DXAllocateHierarchy {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="comment">// xファイルのディレクトリ</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_hierarchy.html#ad1088eb6793edf6893f49848d81010c5">   39</a></span>        std::string <a class="code hl_variable" href="class_n_model_1_1_c_hierarchy.html#ad1088eb6793edf6893f49848d81010c5">m_fileDir</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_hierarchy.html#af54efb0d67104cc498d34e501ed8d900">   42</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_hierarchy.html#af54efb0d67104cc498d34e501ed8d900">SetFileDir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *_fileDir)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_variable" href="class_n_model_1_1_c_hierarchy.html#ad1088eb6793edf6893f49848d81010c5">m_fileDir</a> = _fileDir;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_function" href="class_n_model_1_1_c_hierarchy.html#acd69e513dd03ab4950ab371497db27e4">CHierarchy</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_function" href="class_n_model_1_1_c_hierarchy.html#afa6c3bbe3c5d46b63681bca209ee4665">~CHierarchy</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        STDMETHOD(<a class="code hl_function" href="class_n_model_1_1_c_hierarchy.html#a47646d9d02ca4f8df8c815a513a475eb">CreateFrame</a>)(THIS_ LPCSTR Name, LPD3DXFRAME *ppNewFrame); <span class="comment">//フレーム作成</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        STDMETHOD(<a class="code hl_function" href="class_n_model_1_1_c_hierarchy.html#aafd8bd7ad81f5aae773a5392d7b49601">CreateMeshContainer</a>)(THIS_            <span class="comment">//メッシュコンテナの作成</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            LPCSTR Name,                                <span class="comment">//名前</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            CONST D3DXMESHDATA *pMeshData,              <span class="comment">//メッシュデータ</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            CONST D3DXMATERIAL *pMaterials,             <span class="comment">//マテリアル</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            CONST D3DXEFFECTINSTANCE *pEffectInstances, <span class="comment">//エフェクトの実態</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            DWORD NumMaterials,                         <span class="comment">//マテリアル数</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            CONST DWORD* pAdjacency,                    <span class="comment">//隣接関係</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            LPD3DXSKININFO pSkinInfo,                   <span class="comment">//スキン情報</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            LPD3DXMESHCONTAINER* ppNewMeshContainer);   <span class="comment">//メッシュコンテナのポインタ</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        STDMETHOD(<a class="code hl_function" href="class_n_model_1_1_c_hierarchy.html#a3adf26a6e0a1e8e5bf4162bc2b4c872a">DestroyFrame</a>)(THIS_ LPD3DXFRAME pFrameToFree);    <span class="comment">//フレーム削除</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        STDMETHOD(<a class="code hl_function" href="class_n_model_1_1_c_hierarchy.html#a49f4b9a4c7dbcf79e01f5cf87b483201">DestroyMeshContainer</a>)(THIS_ LPD3DXMESHCONTAINER pMeshContainerBase);  <span class="comment">//メッシュコンテナの削除</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    };</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    HRESULT <a class="code hl_function" href="namespace_n_model.html#a381896a7a0cc0f794d68e4e182660d7e">GenerateSkinnedMesh</a>(IDirect3DDevice9* pd3dDevice, D3DXMESHCONTAINER_DERIVED* pMeshContainer);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html_a3adf26a6e0a1e8e5bf4162bc2b4c872a"><div class="ttname"><a href="class_n_model_1_1_c_hierarchy.html#a3adf26a6e0a1e8e5bf4162bc2b4c872a">NModel::CHierarchy::DestroyFrame</a></div><div class="ttdeci">STDMETHOD DestroyFrame(THIS_ LPD3DXFRAME pFrameToFree)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:229</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html_a47646d9d02ca4f8df8c815a513a475eb"><div class="ttname"><a href="class_n_model_1_1_c_hierarchy.html#a47646d9d02ca4f8df8c815a513a475eb">NModel::CHierarchy::CreateFrame</a></div><div class="ttdeci">STDMETHOD CreateFrame(THIS_ LPCSTR Name, LPD3DXFRAME *ppNewFrame)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:52</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html_a49f4b9a4c7dbcf79e01f5cf87b483201"><div class="ttname"><a href="class_n_model_1_1_c_hierarchy.html#a49f4b9a4c7dbcf79e01f5cf87b483201">NModel::CHierarchy::DestroyMeshContainer</a></div><div class="ttdeci">STDMETHOD DestroyMeshContainer(THIS_ LPD3DXMESHCONTAINER pMeshContainerBase)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:239</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html_aafd8bd7ad81f5aae773a5392d7b49601"><div class="ttname"><a href="class_n_model_1_1_c_hierarchy.html#aafd8bd7ad81f5aae773a5392d7b49601">NModel::CHierarchy::CreateMeshContainer</a></div><div class="ttdeci">STDMETHOD CreateMeshContainer(THIS_ LPCSTR Name, CONST D3DXMESHDATA *pMeshData, CONST D3DXMATERIAL *pMaterials, CONST D3DXEFFECTINSTANCE *pEffectInstances, DWORD NumMaterials, CONST DWORD *pAdjacency, LPD3DXSKININFO pSkinInfo, LPD3DXMESHCONTAINER *ppNewMeshContainer)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:86</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html_acd69e513dd03ab4950ab371497db27e4"><div class="ttname"><a href="class_n_model_1_1_c_hierarchy.html#acd69e513dd03ab4950ab371497db27e4">NModel::CHierarchy::CHierarchy</a></div><div class="ttdeci">CHierarchy(void)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:7</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html_ad1088eb6793edf6893f49848d81010c5"><div class="ttname"><a href="class_n_model_1_1_c_hierarchy.html#ad1088eb6793edf6893f49848d81010c5">NModel::CHierarchy::m_fileDir</a></div><div class="ttdeci">std::string m_fileDir</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:39</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html_af54efb0d67104cc498d34e501ed8d900"><div class="ttname"><a href="class_n_model_1_1_c_hierarchy.html#af54efb0d67104cc498d34e501ed8d900">NModel::CHierarchy::SetFileDir</a></div><div class="ttdeci">void SetFileDir(const char *_fileDir)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:42</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html_afa6c3bbe3c5d46b63681bca209ee4665"><div class="ttname"><a href="class_n_model_1_1_c_hierarchy.html#afa6c3bbe3c5d46b63681bca209ee4665">NModel::CHierarchy::~CHierarchy</a></div><div class="ttdeci">~CHierarchy(void)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:10</div></div>
+<div class="ttc" id="anamespace_n_model_html"><div class="ttname"><a href="namespace_n_model.html">NModel</a></div><div class="ttdoc">あたり判定情報の作成等の様々な関数群</div><div class="ttdef"><b>Definition</b> Collision_Util.h:11</div></div>
+<div class="ttc" id="anamespace_n_model_html_a381896a7a0cc0f794d68e4e182660d7e"><div class="ttname"><a href="namespace_n_model.html#a381896a7a0cc0f794d68e4e182660d7e">NModel::GenerateSkinnedMesh</a></div><div class="ttdeci">HRESULT GenerateSkinnedMesh(IDirect3DDevice9 *pd3dDevice, D3DXMESHCONTAINER_DERIVED *pMeshContainer)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:272</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d_html"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html">NModel::D3DXFRAME_DERIVED</a></div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:13</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d_html_a50d3f6bb2e89d8ad9792d50220dbbc85"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_f_r_a_m_e___d_e_r_i_v_e_d.html#a50d3f6bb2e89d8ad9792d50220dbbc85">NModel::D3DXFRAME_DERIVED::CombinedTransformMatrix</a></div><div class="ttdeci">D3DXMATRIXA16 CombinedTransformMatrix</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:14</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html">NModel::D3DXMESHCONTAINER_DERIVED</a></div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:18</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a396c7930a54460a6ca17408bd9b683c4"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a396c7930a54460a6ca17408bd9b683c4">NModel::D3DXMESHCONTAINER_DERIVED::ppBoneMatrixPtrs</a></div><div class="ttdeci">D3DXMATRIX ** ppBoneMatrixPtrs</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:27</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a427cedee2ce1458601f496c9e4920dea"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a427cedee2ce1458601f496c9e4920dea">NModel::D3DXMESHCONTAINER_DERIVED::pOrigMesh</a></div><div class="ttdeci">LPD3DXMESH pOrigMesh</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:22</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a4ccf76529e645535110182897f863dd6"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a4ccf76529e645535110182897f863dd6">NModel::D3DXMESHCONTAINER_DERIVED::pBoneCombinationBuf</a></div><div class="ttdeci">LPD3DXBUFFER pBoneCombinationBuf</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:26</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a50a8ef76e0f82844dbca459468b9d879"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a50a8ef76e0f82844dbca459468b9d879">NModel::D3DXMESHCONTAINER_DERIVED::pBoneOffsetMatrices</a></div><div class="ttdeci">D3DXMATRIX * pBoneOffsetMatrices</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:28</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a8526d79a76712880f7d538e5e5feae90"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a8526d79a76712880f7d538e5e5feae90">NModel::D3DXMESHCONTAINER_DERIVED::NumPaletteEntries</a></div><div class="ttdeci">DWORD NumPaletteEntries</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:29</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a8a14f765b6ce36dd92ff1eb4419fc77d"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a8a14f765b6ce36dd92ff1eb4419fc77d">NModel::D3DXMESHCONTAINER_DERIVED::pAttributeTable</a></div><div class="ttdeci">LPD3DXATTRIBUTERANGE pAttributeTable</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:23</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a97bac8f0397844dbe39aa6fe7c201d01"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a97bac8f0397844dbe39aa6fe7c201d01">NModel::D3DXMESHCONTAINER_DERIVED::NumAttributeGroups</a></div><div class="ttdeci">DWORD NumAttributeGroups</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:24</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_a9fb86639164c15991100f5bcabe3d195"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#a9fb86639164c15991100f5bcabe3d195">NModel::D3DXMESHCONTAINER_DERIVED::UserSoftwareVP</a></div><div class="ttdeci">bool UserSoftwareVP</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:30</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_aa9496cb244e37334697fbd38f32d9a48"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#aa9496cb244e37334697fbd38f32d9a48">NModel::D3DXMESHCONTAINER_DERIVED::NumInfl</a></div><div class="ttdeci">DWORD NumInfl</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:25</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_ad30e0097b8510b5b18d6e432b70ddfc2"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ad30e0097b8510b5b18d6e432b70ddfc2">NModel::D3DXMESHCONTAINER_DERIVED::iAttributeSW</a></div><div class="ttdeci">DWORD iAttributeSW</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:31</div></div>
+<div class="ttc" id="astruct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d_html_ae48453566016835546290b8f6c1a3e5f"><div class="ttname"><a href="struct_n_model_1_1_d3_d_x_m_e_s_h_c_o_n_t_a_i_n_e_r___d_e_r_i_v_e_d.html#ae48453566016835546290b8f6c1a3e5f">NModel::D3DXMESHCONTAINER_DERIVED::ppTextures</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 * ppTextures</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_29c2b75d94f06d56f2b2b0f90b4933d2.html">Model</a></li><li class="navelem"><a href="dir_049654e27c31a5409b5b693abbec997e.html">XFile</a></li><li class="navelem"><a href="_model___hierarchy_8h.html">Model_Hierarchy.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

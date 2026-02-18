@@ -1,0 +1,2149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NModel::CSkinnedMesh クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_model_1_1_c_skinned_mesh.html','','class_n_model_1_1_c_skinned_mesh-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NModel::CSkinnedMesh クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ワンスキンモデルの管理・描画を行うためのクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_model___skinned_mesh_8h_source.html">Model_SkinnedMesh.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a93529d3cc77688321bc2a162d39a88a4" id="r_a93529d3cc77688321bc2a162d39a88a4"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a93529d3cc77688321bc2a162d39a88a4">CSkinnedMesh</a> (void)</td></tr>
+<tr class="memitem:aa62091ef1a60a20b2d3a432c68f8cdf3" id="r_aa62091ef1a60a20b2d3a432c68f8cdf3"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#aa62091ef1a60a20b2d3a432c68f8cdf3">~CSkinnedMesh</a> (void)</td></tr>
+<tr class="memitem:a7f03e7eb324b593e6e04b93145444753" id="r_a7f03e7eb324b593e6e04b93145444753"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7f03e7eb324b593e6e04b93145444753">SetExternalAnmFrame</a> (std::vector&lt; float &gt; &amp;_frameInfo)</td></tr>
+<tr class="memitem:a743150a4153694d55fdedcdc69056e48" id="r_a743150a4153694d55fdedcdc69056e48"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a743150a4153694d55fdedcdc69056e48">Update</a> (<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rMatWorld)</td></tr>
+<tr class="memitem:a69aa1c4f30f8d1388b538c858629fa0b" id="r_a69aa1c4f30f8d1388b538c858629fa0b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a69aa1c4f30f8d1388b538c858629fa0b">Render</a> (<a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rMatWorld)</td></tr>
+<tr class="memitem:aa68f138d890fc7234eca72e9d620a0af" id="r_aa68f138d890fc7234eca72e9d620a0af"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa68f138d890fc7234eca72e9d620a0af">LoadXFile</a> (const char *xfilename, LPDIRECT3DDEVICE9 lpd3ddevice)</td></tr>
+<tr class="memitem:a54b94ea97b253ca698ee76238a15e3cc" id="r_a54b94ea97b253ca698ee76238a15e3cc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a54b94ea97b253ca698ee76238a15e3cc">DrawMeshContainer</a> (LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXMESHCONTAINER pMeshContainerBase, LPD3DXFRAME pFrameBase)</td></tr>
+<tr class="memitem:a93d1b2398c4e598a675a8133864a9cd8" id="r_a93d1b2398c4e598a675a8133864a9cd8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a93d1b2398c4e598a675a8133864a9cd8">DrawFrame</a> (LPDIRECT3DDEVICE9 pd3ddevice, LPD3DXFRAME pFrame)</td></tr>
+<tr class="memitem:a4ed1999d7f36e23dfe43a89f2fc30cb9" id="r_a4ed1999d7f36e23dfe43a89f2fc30cb9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4ed1999d7f36e23dfe43a89f2fc30cb9">UpdateFrameMatrices</a> (LPD3DXFRAME pFrameBase, LPD3DXMATRIX pParentMatrix)</td></tr>
+<tr class="memitem:a085c522d76283254bf4362f32c4a8689" id="r_a085c522d76283254bf4362f32c4a8689"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a085c522d76283254bf4362f32c4a8689">ReleaseAttributeTable</a> (LPD3DXFRAME pFrameBase)</td></tr>
+<tr class="memitem:a17e8593363be9dc0a63a77d21a706e5a" id="r_a17e8593363be9dc0a63a77d21a706e5a"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a17e8593363be9dc0a63a77d21a706e5a">ChangeAnimation</a> (int AnimID)</td></tr>
+<tr class="memitem:a12613c66a4c9d6f10896da61b972b7ec" id="r_a12613c66a4c9d6f10896da61b972b7ec"><td class="memItemLeft">HRESULT&#160;</td><td class="memItemRight"><a class="el" href="#a12613c66a4c9d6f10896da61b972b7ec">SetupBoneMatrixPointersOnMesh</a> (LPD3DXMESHCONTAINER pMeshContainerBase)</td></tr>
+<tr class="memitem:a6cbe342cfdb601c556f6ba8d0637a0b2" id="r_a6cbe342cfdb601c556f6ba8d0637a0b2"><td class="memItemLeft">HRESULT&#160;</td><td class="memItemRight"><a class="el" href="#a6cbe342cfdb601c556f6ba8d0637a0b2">SetupBoneMatrixPointers</a> (LPD3DXFRAME pFrame)</td></tr>
+<tr class="memitem:aa8aaad611732ddd61c0eb9b31fa6407e" id="r_aa8aaad611732ddd61c0eb9b31fa6407e"><td class="memItemLeft">HRESULT&#160;</td><td class="memItemRight"><a class="el" href="#aa8aaad611732ddd61c0eb9b31fa6407e">CreateSkinnedBBox</a> (LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXMESHCONTAINER pMeshContainerParameter)</td></tr>
+<tr class="memitem:a33337874c89d825682b86ca4731036e4" id="r_a33337874c89d825682b86ca4731036e4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a33337874c89d825682b86ca4731036e4">InitBBox</a> (LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXFRAME pFrame)</td></tr>
+<tr class="memitem:a2e84583419296630baa7b63e9e4cc6ef" id="r_a2e84583419296630baa7b63e9e4cc6ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2e84583419296630baa7b63e9e4cc6ef">UpdateBBox</a> (LPD3DXFRAME pFrameBase)</td></tr>
+<tr class="memitem:a33e1d2b21e0977181a354f22228a4592" id="r_a33e1d2b21e0977181a354f22228a4592"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a33e1d2b21e0977181a354f22228a4592">DrawBBox</a> (LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXFRAME pFrame)</td></tr>
+<tr class="memitem:adabf9578ccaacbecd0a964aaa1483f3c" id="r_adabf9578ccaacbecd0a964aaa1483f3c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adabf9578ccaacbecd0a964aaa1483f3c">ExitBBox</a> (LPD3DXFRAME pFrameBase)</td></tr>
+<tr class="memitem:acbca42f2f395c1d46c2bca109fbabbf2" id="r_acbca42f2f395c1d46c2bca109fbabbf2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acbca42f2f395c1d46c2bca109fbabbf2">GetBoneMatrix</a> (const int _idx, <a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;_rDest) const</td></tr>
+<tr class="memitem:a6ffecdfea2940d1cbe6b3c44d4730cda" id="r_a6ffecdfea2940d1cbe6b3c44d4730cda"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6ffecdfea2940d1cbe6b3c44d4730cda">SetIsCollisionActive</a> (bool _state)</td></tr>
+<tr class="memitem:ab286c735e45d69aab52366447350c43f" id="r_ab286c735e45d69aab52366447350c43f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab286c735e45d69aab52366447350c43f">SetIsCollisionActive</a> (int _idx, bool _state)</td></tr>
+<tr class="memitem:a7afa84a12397f4677c963c551e30adca" id="r_a7afa84a12397f4677c963c551e30adca"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a7afa84a12397f4677c963c551e30adca">GetAnmID</a> ()</td></tr>
+<tr class="memitem:a600b3f028b8ca69ddd48510b25eee924" id="r_a600b3f028b8ca69ddd48510b25eee924"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a600b3f028b8ca69ddd48510b25eee924">GetTime</a> ()</td></tr>
+<tr class="memitem:aee5f116d0f47326b72279c31dab9664a" id="r_aee5f116d0f47326b72279c31dab9664a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aee5f116d0f47326b72279c31dab9664a">GetBoneNum</a> () const</td></tr>
+<tr class="memitem:ab09281a129a49cf2a1c0b905728a1e12" id="r_ab09281a129a49cf2a1c0b905728a1e12"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab09281a129a49cf2a1c0b905728a1e12">GetAllFrame</a> (LPD3DXFRAME pFrame)</td></tr>
+<tr class="memitem:ad509c37dbba8387662d58e273ab7fc90" id="r_ad509c37dbba8387662d58e273ab7fc90"><td class="memItemLeft">LPD3DXFRAME&#160;</td><td class="memItemRight"><a class="el" href="#ad509c37dbba8387662d58e273ab7fc90">GetFrameRoot</a> ()</td></tr>
+<tr class="memitem:a69fe587ff2cdfb3287c3ddabe7e5b2ee" id="r_a69fe587ff2cdfb3287c3ddabe7e5b2ee"><td class="memItemLeft">LPD3DXANIMATIONCONTROLLER&#160;</td><td class="memItemRight"><a class="el" href="#a69fe587ff2cdfb3287c3ddabe7e5b2ee">GetAnimationController</a> ()</td></tr>
+<tr class="memitem:aaebbabd930c41b658af593c5845147c5" id="r_aaebbabd930c41b658af593c5845147c5"><td class="memItemLeft">LPD3DXANIMATIONSET&#160;</td><td class="memItemRight"><a class="el" href="#aaebbabd930c41b658af593c5845147c5">GetAnimationSet</a> (int idx)</td></tr>
+<tr class="memitem:a9d377360f8b9a0b3fff22ce6b5880cf6" id="r_a9d377360f8b9a0b3fff22ce6b5880cf6"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a9d377360f8b9a0b3fff22ce6b5880cf6">GetAnimationSetCount</a> ()</td></tr>
+<tr class="memitem:ae21a9511d41e8160f4dbc1605dd38e52" id="r_ae21a9511d41e8160f4dbc1605dd38e52"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae21a9511d41e8160f4dbc1605dd38e52">SetTimeDelta</a> (double TimeDelta)</td></tr>
+<tr class="memitem:a4478416d74d228be4258024edca323b5" id="r_a4478416d74d228be4258024edca323b5"><td class="memItemLeft">std::vector&lt; LPD3DXFRAME &gt; *&#160;</td><td class="memItemRight"><a class="el" href="#a4478416d74d228be4258024edca323b5">GetFrameContainer</a> ()</td></tr>
+<tr class="memitem:afa6ff8f2fc4df535340b194d58d8182b" id="r_afa6ff8f2fc4df535340b194d58d8182b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#afa6ff8f2fc4df535340b194d58d8182b">isMotionEnd</a> ()</td></tr>
+<tr class="memitem:a52c881048aa86ac9441f195c7eab0baa" id="r_a52c881048aa86ac9441f195c7eab0baa"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a52c881048aa86ac9441f195c7eab0baa">GetEndTime</a> ()</td></tr>
+<tr class="memitem:a7753fa5b5b03960820ef54b2e3f8b89b" id="r_a7753fa5b5b03960820ef54b2e3f8b89b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7753fa5b5b03960820ef54b2e3f8b89b">GetOBBNum</a> ()</td></tr>
+<tr class="memitem:acbe3b0d7f5b3fb2b00e8bfcc5da725b4" id="r_acbe3b0d7f5b3fb2b00e8bfcc5da725b4"><td class="memItemLeft"><a class="el" href="class_c_o_b_b.html">COBB</a> *&#160;</td><td class="memItemRight"><a class="el" href="#acbe3b0d7f5b3fb2b00e8bfcc5da725b4">GetOBB</a> (int _idx)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a774c8e47119ead813029962602808729" id="r_a774c8e47119ead813029962602808729"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a774c8e47119ead813029962602808729">m_fileDir</a></td></tr>
+<tr class="memitem:a2a46455ac077eb59bf87c586e7ede8ad" id="r_a2a46455ac077eb59bf87c586e7ede8ad"><td class="memItemLeft">LPD3DXFRAME&#160;</td><td class="memItemRight"><a class="el" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a></td></tr>
+<tr class="memitem:a1c90c9892384d85572b0c1afa48e5294" id="r_a1c90c9892384d85572b0c1afa48e5294"><td class="memItemLeft">LPD3DXANIMATIONCONTROLLER&#160;</td><td class="memItemRight"><a class="el" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a></td></tr>
+<tr class="memitem:af4e05fc2a8c4c073d9003f881995a1fc" id="r_af4e05fc2a8c4c073d9003f881995a1fc"><td class="memItemLeft">D3DXVECTOR3&#160;</td><td class="memItemRight"><a class="el" href="#af4e05fc2a8c4c073d9003f881995a1fc">m_vObjectCenter</a></td></tr>
+<tr class="memitem:a60e80c5c819f515bce66390d3aa9c443" id="r_a60e80c5c819f515bce66390d3aa9c443"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a60e80c5c819f515bce66390d3aa9c443">m_fObjectRadius</a></td></tr>
+<tr class="memitem:a52bb973150ac3e0b9409605c4f2393ba" id="r_a52bb973150ac3e0b9409605c4f2393ba"><td class="memItemLeft">LPD3DXANIMATIONSET&#160;</td><td class="memItemRight"><a class="el" href="#a52bb973150ac3e0b9409605c4f2393ba">m_AnimationSet</a></td></tr>
+<tr class="memitem:a78f6d0d108c2511cb9cbedb5d5329a79" id="r_a78f6d0d108c2511cb9cbedb5d5329a79"><td class="memItemLeft"><a class="el" href="class_n_model_1_1_c_hierarchy.html">CHierarchy</a>&#160;</td><td class="memItemRight"><a class="el" href="#a78f6d0d108c2511cb9cbedb5d5329a79">m_cHierarchy</a></td></tr>
+<tr class="memitem:a9d3a65ac2a7121bce15218093a15cd79" id="r_a9d3a65ac2a7121bce15218093a15cd79"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a9d3a65ac2a7121bce15218093a15cd79">m_iAnimSetCount</a></td></tr>
+<tr class="memitem:a80af6333dbf0d54990dadde0f3ddd62e" id="r_a80af6333dbf0d54990dadde0f3ddd62e"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#a80af6333dbf0d54990dadde0f3ddd62e">m_uiAnimID</a></td></tr>
+<tr class="memitem:adf5d1622262db90e07d4a55e7e0821f5" id="r_adf5d1622262db90e07d4a55e7e0821f5"><td class="memItemLeft">LPD3DXANIMATIONSET *&#160;</td><td class="memItemRight"><a class="el" href="#adf5d1622262db90e07d4a55e7e0821f5">m_ppAnimSet</a></td></tr>
+<tr class="memitem:accea8d7adbe65a5dcbad94c1fd59c03c" id="r_accea8d7adbe65a5dcbad94c1fd59c03c"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#accea8d7adbe65a5dcbad94c1fd59c03c">m_TimeDelta</a></td></tr>
+<tr class="memitem:a8da761291226da987c13eedbf7b83a0a" id="r_a8da761291226da987c13eedbf7b83a0a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a8da761291226da987c13eedbf7b83a0a">m_BoneNum</a></td></tr>
+<tr class="memitem:a606fdafb3417555f45c6f75b140806b1" id="r_a606fdafb3417555f45c6f75b140806b1"><td class="memItemLeft">std::vector&lt; LPD3DXFRAME &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a606fdafb3417555f45c6f75b140806b1">m_AllFrameContainer</a></td></tr>
+<tr class="memitem:aa4c7b972c99c9870e10273828c1e5ca7" id="r_aa4c7b972c99c9870e10273828c1e5ca7"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#aa4c7b972c99c9870e10273828c1e5ca7">m_endtime</a></td></tr>
+<tr class="memitem:a2d1709e28c078d6c8b4aa31c7afc185e" id="r_a2d1709e28c078d6c8b4aa31c7afc185e"><td class="memItemLeft"><a class="el" href="class_c_o_b_b.html">COBB</a> *&#160;</td><td class="memItemRight"><a class="el" href="#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a></td></tr>
+<tr class="memitem:ab15c82b9014cbf9de4ea25ee19ddb95a" id="r_ab15c82b9014cbf9de4ea25ee19ddb95a"><td class="memItemLeft"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> *&#160;</td><td class="memItemRight"><a class="el" href="#ab15c82b9014cbf9de4ea25ee19ddb95a">m_matBone</a></td></tr>
+<tr class="memitem:aea2141ab226e440ca119b8bdd1b93869" id="r_aea2141ab226e440ca119b8bdd1b93869"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aea2141ab226e440ca119b8bdd1b93869">m_BBOXnum</a></td></tr>
+<tr class="memitem:a1472d4dd73818d7b083178625640e6e5" id="r_a1472d4dd73818d7b083178625640e6e5"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1472d4dd73818d7b083178625640e6e5">m_hasExternalAnmFrame</a></td></tr>
+<tr class="memitem:afaea34e28dcfa248c37c5243f03c89d7" id="r_afaea34e28dcfa248c37c5243f03c89d7"><td class="memItemLeft">std::vector&lt; float &gt;&#160;</td><td class="memItemRight"><a class="el" href="#afaea34e28dcfa248c37c5243f03c89d7">m_anmFrame</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>ワンスキンモデルの管理・描画を行うためのクラス </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a93529d3cc77688321bc2a162d39a88a4" name="a93529d3cc77688321bc2a162d39a88a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93529d3cc77688321bc2a162d39a88a4">&#9670;&#160;</a></span>CSkinnedMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NModel::CSkinnedMesh::CSkinnedMesh </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   12</span>                                   :<a class="code hl_variable" href="#adf5d1622262db90e07d4a55e7e0821f5">m_ppAnimSet</a>(NULL)</div>
+<div class="line"><span class="lineno">   13</span>    {}</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_adf5d1622262db90e07d4a55e7e0821f5"><div class="ttname"><a href="#adf5d1622262db90e07d4a55e7e0821f5">NModel::CSkinnedMesh::m_ppAnimSet</a></div><div class="ttdeci">LPD3DXANIMATIONSET * m_ppAnimSet</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:33</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa62091ef1a60a20b2d3a432c68f8cdf3" name="aa62091ef1a60a20b2d3a432c68f8cdf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa62091ef1a60a20b2d3a432c68f8cdf3">&#9670;&#160;</a></span>~CSkinnedMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual NModel::CSkinnedMesh::~CSkinnedMesh </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   51</span>        {</div>
+<div class="line"><span class="lineno">   52</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>) {</div>
+<div class="line"><span class="lineno">   53</span>                <a class="code hl_function" href="#a085c522d76283254bf4362f32c4a8689">ReleaseAttributeTable</a>(<a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>);</div>
+<div class="line"><span class="lineno">   54</span>                <a class="code hl_function" href="#adabf9578ccaacbecd0a964aaa1483f3c">ExitBBox</a>(<a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>);</div>
+<div class="line"><span class="lineno">   55</span>                D3DXFrameDestroy(<a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>, &amp;<a class="code hl_variable" href="#a78f6d0d108c2511cb9cbedb5d5329a79">m_cHierarchy</a>);</div>
+<div class="line"><span class="lineno">   56</span>            }</div>
+<div class="line"><span class="lineno">   57</span>            <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(<a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>);</div>
+<div class="line"><span class="lineno">   58</span>            <a class="code hl_define" href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a>(<a class="code hl_variable" href="#adf5d1622262db90e07d4a55e7e0821f5">m_ppAnimSet</a>);</div>
+<div class="line"><span class="lineno">   59</span>        }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_aeea0f5b85aab2e60bef98c0943312d67"><div class="ttname"><a href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a></div><div class="ttdeci">#define DeleteArraySafe(_pTarget)</div><div class="ttdoc">配列を開放</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:75</div></div>
+<div class="ttc" id="a_direct_x___util_8h_html_afe4096368a51bd6079184745ddec2b6b"><div class="ttname"><a href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a></div><div class="ttdeci">#define ReleaseSafe(p)</div><div class="ttdoc">安全な解放処理</div><div class="ttdef"><b>Definition</b> DirectX_Util.h:8</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a085c522d76283254bf4362f32c4a8689"><div class="ttname"><a href="#a085c522d76283254bf4362f32c4a8689">NModel::CSkinnedMesh::ReleaseAttributeTable</a></div><div class="ttdeci">void ReleaseAttributeTable(LPD3DXFRAME pFrameBase)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:432</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a1c90c9892384d85572b0c1afa48e5294"><div class="ttname"><a href="#a1c90c9892384d85572b0c1afa48e5294">NModel::CSkinnedMesh::m_pAnimController</a></div><div class="ttdeci">LPD3DXANIMATIONCONTROLLER m_pAnimController</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:26</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a2a46455ac077eb59bf87c586e7ede8ad"><div class="ttname"><a href="#a2a46455ac077eb59bf87c586e7ede8ad">NModel::CSkinnedMesh::m_pFrameRoot</a></div><div class="ttdeci">LPD3DXFRAME m_pFrameRoot</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:25</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a78f6d0d108c2511cb9cbedb5d5329a79"><div class="ttname"><a href="#a78f6d0d108c2511cb9cbedb5d5329a79">NModel::CSkinnedMesh::m_cHierarchy</a></div><div class="ttdeci">CHierarchy m_cHierarchy</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:30</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_adabf9578ccaacbecd0a964aaa1483f3c"><div class="ttname"><a href="#adabf9578ccaacbecd0a964aaa1483f3c">NModel::CSkinnedMesh::ExitBBox</a></div><div class="ttdeci">void ExitBBox(LPD3DXFRAME pFrameBase)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:673</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a17e8593363be9dc0a63a77d21a706e5a" name="a17e8593363be9dc0a63a77d21a706e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17e8593363be9dc0a63a77d21a706e5a">&#9670;&#160;</a></span>ChangeAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CSkinnedMesh::ChangeAnimation </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>AnimID</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  273</span>    {</div>
+<div class="line"><span class="lineno">  274</span>        LPD3DXANIMATIONSET AnimSet;</div>
+<div class="line"><span class="lineno">  275</span>        D3DXTRACK_DESC  TrackDesc;</div>
+<div class="line"><span class="lineno">  276</span> </div>
+<div class="line"><span class="lineno">  277</span>        <span class="comment">// トラック情報の初期化</span></div>
+<div class="line"><span class="lineno">  278</span>        ZeroMemory(&amp;TrackDesc, <span class="keyword">sizeof</span>(TrackDesc));</div>
+<div class="line"><span class="lineno">  279</span>        TrackDesc.Weight = 1;</div>
+<div class="line"><span class="lineno">  280</span>        TrackDesc.Speed = 1;</div>
+<div class="line"><span class="lineno">  281</span>        TrackDesc.Enable = 1;</div>
+<div class="line"><span class="lineno">  282</span> </div>
+<div class="line"><span class="lineno">  283</span>        AnimSet = <a class="code hl_function" href="#aaebbabd930c41b658af593c5845147c5">GetAnimationSet</a>(AnimID);</div>
+<div class="line"><span class="lineno">  284</span>        <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;SetTrackDesc(0, &amp;TrackDesc);</div>
+<div class="line"><span class="lineno">  285</span>        <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;SetTrackAnimationSet(0, AnimSet);</div>
+<div class="line"><span class="lineno">  286</span> </div>
+<div class="line"><span class="lineno">  287</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a1472d4dd73818d7b083178625640e6e5">m_hasExternalAnmFrame</a>) {</div>
+<div class="line"><span class="lineno">  288</span>            <a class="code hl_variable" href="#aa4c7b972c99c9870e10273828c1e5ca7">m_endtime</a> = <a class="code hl_variable" href="#afaea34e28dcfa248c37c5243f03c89d7">m_anmFrame</a>[AnimID];</div>
+<div class="line"><span class="lineno">  289</span>        }</div>
+<div class="line"><span class="lineno">  290</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  291</span>            <a class="code hl_variable" href="#aa4c7b972c99c9870e10273828c1e5ca7">m_endtime</a> = AnimSet-&gt;GetPeriod();</div>
+<div class="line"><span class="lineno">  292</span>        }</div>
+<div class="line"><span class="lineno">  293</span> </div>
+<div class="line"><span class="lineno">  294</span>        <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;SetTrackEnable(0, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  295</span>        <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;SetTrackEnable(1, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  296</span>        <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;ResetTime();</div>
+<div class="line"><span class="lineno">  297</span>        <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;SetTrackPosition(0, 0.0);</div>
+<div class="line"><span class="lineno">  298</span>        <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;AdvanceTime(0.0f, NULL);</div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  301</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a1472d4dd73818d7b083178625640e6e5"><div class="ttname"><a href="#a1472d4dd73818d7b083178625640e6e5">NModel::CSkinnedMesh::m_hasExternalAnmFrame</a></div><div class="ttdeci">bool m_hasExternalAnmFrame</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:45</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aa4c7b972c99c9870e10273828c1e5ca7"><div class="ttname"><a href="#aa4c7b972c99c9870e10273828c1e5ca7">NModel::CSkinnedMesh::m_endtime</a></div><div class="ttdeci">double m_endtime</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:37</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aaebbabd930c41b658af593c5845147c5"><div class="ttname"><a href="#aaebbabd930c41b658af593c5845147c5">NModel::CSkinnedMesh::GetAnimationSet</a></div><div class="ttdeci">LPD3DXANIMATIONSET GetAnimationSet(int idx)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:157</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_afaea34e28dcfa248c37c5243f03c89d7"><div class="ttname"><a href="#afaea34e28dcfa248c37c5243f03c89d7">NModel::CSkinnedMesh::m_anmFrame</a></div><div class="ttdeci">std::vector&lt; float &gt; m_anmFrame</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa8aaad611732ddd61c0eb9b31fa6407e" name="aa8aaad611732ddd61c0eb9b31fa6407e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8aaad611732ddd61c0eb9b31fa6407e">&#9670;&#160;</a></span>CreateSkinnedBBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT NModel::CSkinnedMesh::CreateSkinnedBBox </td>
+          <td>(</td>
+          <td class="paramtype">LPDIRECT3DDEVICE9</td>          <td class="paramname"><span class="paramname"><em>lpd3ddevice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPD3DXMESHCONTAINER</td>          <td class="paramname"><span class="paramname"><em>pMeshContainerParameter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  458</span>    {</div>
+<div class="line"><span class="lineno">  459</span>        LPD3DXSKININFO pSkinInfo = pMeshContainerParameter-&gt;pSkinInfo;</div>
+<div class="line"><span class="lineno">  460</span>        D3DXMESHCONTAINER_DERIVED* pMeshContainer;</div>
+<div class="line"><span class="lineno">  461</span>        DWORD   BoneNum;</div>
+<div class="line"><span class="lineno">  462</span>        DWORD   numVertices;</div>
+<div class="line"><span class="lineno">  463</span>        D3DXVECTOR3* vertices;</div>
+<div class="line"><span class="lineno">  464</span>        DWORD*  vindex;</div>
+<div class="line"><span class="lineno">  465</span>        <span class="keywordtype">float</span>*   weigths;</div>
+<div class="line"><span class="lineno">  466</span>        D3DXMATRIX mat, eigenmat;</div>
+<div class="line"><span class="lineno">  467</span>        D3DXVECTOR3* work;</div>
+<div class="line"><span class="lineno">  468</span>        CBBoxGenerater Generater;</div>
+<div class="line"><span class="lineno">  469</span> </div>
+<div class="line"><span class="lineno">  470</span>        <span class="comment">//スキン情報があればワンスキン用のBBOXを作成する。</span></div>
+<div class="line"><span class="lineno">  471</span>        LPDIRECT3DVERTEXBUFFER9 pVB = NULL;</div>
+<div class="line"><span class="lineno">  472</span>        D3DXVECTOR3* pdata = NULL;</div>
+<div class="line"><span class="lineno">  473</span>        WORD* pindex = NULL;</div>
+<div class="line"><span class="lineno">  474</span>        LPD3DXMESH pcloneMesh;</div>
+<div class="line"><span class="lineno">  475</span> </div>
+<div class="line"><span class="lineno">  476</span>        <span class="comment">//頂点座標のみのクローンメッシュを生成</span></div>
+<div class="line"><span class="lineno">  477</span>        pMeshContainer = (D3DXMESHCONTAINER_DERIVED*)pMeshContainerParameter;</div>
+<div class="line"><span class="lineno">  478</span>        pMeshContainer-&gt;pOrigMesh-&gt;CloneMeshFVF(</div>
+<div class="line"><span class="lineno">  479</span>            pMeshContainer-&gt;pOrigMesh-&gt;GetOptions(),        <span class="comment">//元の頂点フォーマット</span></div>
+<div class="line"><span class="lineno">  480</span>            D3DFVF_XYZ,                                     <span class="comment">// 指定頂点フォーマット</span></div>
+<div class="line"><span class="lineno">  481</span>            lpd3ddevice,</div>
+<div class="line"><span class="lineno">  482</span>            &amp;pcloneMesh);</div>
+<div class="line"><span class="lineno">  483</span>        <span class="comment">//頂点情報を取得</span></div>
+<div class="line"><span class="lineno">  484</span>        <span class="keywordflow">if</span> (FAILED(pcloneMesh-&gt;GetVertexBuffer(&amp;pVB))) {</div>
+<div class="line"><span class="lineno">  485</span>            <span class="keywordflow">return</span> E_FAIL;</div>
+<div class="line"><span class="lineno">  486</span>        }</div>
+<div class="line"><span class="lineno">  487</span>        <span class="keywordflow">if</span> (FAILED(pVB-&gt;Lock(0, <span class="keyword">sizeof</span>(D3DXVECTOR3), (VOID**)&amp;pdata, 0))) {</div>
+<div class="line"><span class="lineno">  488</span>            <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(pVB);</div>
+<div class="line"><span class="lineno">  489</span>            <span class="keywordflow">return</span> E_FAIL;</div>
+<div class="line"><span class="lineno">  490</span>        }</div>
+<div class="line"><span class="lineno">  491</span>        vertices = (D3DXVECTOR3*)pdata;</div>
+<div class="line"><span class="lineno">  492</span> </div>
+<div class="line"><span class="lineno">  493</span>        <span class="comment">//ワークに頂点情報を格納</span></div>
+<div class="line"><span class="lineno">  494</span>        numVertices = pcloneMesh-&gt;GetNumVertices();     <span class="comment">// 頂点数を取得</span></div>
+<div class="line"><span class="lineno">  495</span>        work = <span class="keyword">new</span> D3DXVECTOR3[numVertices];            <span class="comment">// 頂点数分メモリを確保</span></div>
+<div class="line"><span class="lineno">  496</span> </div>
+<div class="line"><span class="lineno">  497</span>                                                        <span class="comment">//  memcpy(work,vertices,sizeof(D3DXVECTOR3)*numVertices);</span></div>
+<div class="line"><span class="lineno">  498</span> </div>
+<div class="line"><span class="lineno">  499</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> jj = 0; jj &lt; numVertices; jj++) {</div>
+<div class="line"><span class="lineno">  500</span>            work[jj].x = vertices[jj].x;</div>
+<div class="line"><span class="lineno">  501</span>            work[jj].y = vertices[jj].y;</div>
+<div class="line"><span class="lineno">  502</span>            work[jj].z = vertices[jj].z;</div>
+<div class="line"><span class="lineno">  503</span>        }</div>
+<div class="line"><span class="lineno">  504</span> </div>
+<div class="line"><span class="lineno">  505</span>        pVB-&gt;Unlock();</div>
+<div class="line"><span class="lineno">  506</span>        <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(pVB);</div>
+<div class="line"><span class="lineno">  507</span> </div>
+<div class="line"><span class="lineno">  508</span>        <span class="comment">//ボーン数取得</span></div>
+<div class="line"><span class="lineno">  509</span>        BoneNum = <a class="code hl_variable" href="#aea2141ab226e440ca119b8bdd1b93869">m_BBOXnum</a> = pSkinInfo-&gt;GetNumBones();</div>
+<div class="line"><span class="lineno">  510</span> </div>
+<div class="line"><span class="lineno">  511</span>        <a class="code hl_variable" href="#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a> = <span class="keyword">new</span> COBB[BoneNum];</div>
+<div class="line"><span class="lineno">  512</span>        <a class="code hl_variable" href="#ab15c82b9014cbf9de4ea25ee19ddb95a">m_matBone</a> = <a class="code hl_define" href="_common___base_operator_8h.html#ad5b697eb28f5de277b589057170792a9">New</a> NMath::SMatrix44[BoneNum];</div>
+<div class="line"><span class="lineno">  513</span> </div>
+<div class="line"><span class="lineno">  514</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; pSkinInfo-&gt;GetNumBones(); i++) {</div>
+<div class="line"><span class="lineno">  515</span>            <a class="code hl_variable" href="#ab15c82b9014cbf9de4ea25ee19ddb95a">m_matBone</a>[i].SetZero();</div>
+<div class="line"><span class="lineno">  516</span>        }</div>
+<div class="line"><span class="lineno">  517</span> </div>
+<div class="line"><span class="lineno">  518</span>    <span class="comment">//#ifdef _DEBUG</span></div>
+<div class="line"><span class="lineno">  519</span>    <span class="comment">//  FILE* fp;</span></div>
+<div class="line"><span class="lineno">  520</span>    <span class="comment">//  fopen_s(&amp;fp, &quot;bone.txt&quot;, &quot;w&quot;);</span></div>
+<div class="line"><span class="lineno">  521</span>    <span class="comment">//  fprintf(fp, &quot;ボーン数 %d \n&quot;, BoneNum);</span></div>
+<div class="line"><span class="lineno">  522</span>    <span class="comment">//  fprintf(fp, &quot;\n\n&quot;);</span></div>
+<div class="line"><span class="lineno">  523</span>    <span class="comment">//  fclose(fp);</span></div>
+<div class="line"><span class="lineno">  524</span>    <span class="comment">//#endif</span></div>
+<div class="line"><span class="lineno">  525</span> </div>
+<div class="line"><span class="lineno">  526</span>        <span class="comment">//ボーン毎にBBOXを生成(ボーン数分ループ)</span></div>
+<div class="line"><span class="lineno">  527</span>        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; BoneNum; i++) {</div>
+<div class="line"><span class="lineno">  528</span>            numVertices = pSkinInfo-&gt;GetNumBoneInfluences(i);</div>
+<div class="line"><span class="lineno">  529</span>            vindex = <span class="keyword">new</span> DWORD[numVertices];</div>
+<div class="line"><span class="lineno">  530</span>            weigths = <span class="keyword">new</span> <span class="keywordtype">float</span>[numVertices];</div>
+<div class="line"><span class="lineno">  531</span>            <span class="comment">// ボーンの影響を受ける頂点インデックスを取得する</span></div>
+<div class="line"><span class="lineno">  532</span>            pSkinInfo-&gt;GetBoneInfluence(</div>
+<div class="line"><span class="lineno">  533</span>                i,                  <span class="comment">// ボーン番号</span></div>
+<div class="line"><span class="lineno">  534</span>                vindex,             <span class="comment">// 指定のボーンに影響をうける頂点番号</span></div>
+<div class="line"><span class="lineno">  535</span>                weigths);           <span class="comment">// 指定のボーンに影響を受ける重みデータ</span></div>
+<div class="line"><span class="lineno">  536</span> </div>
+<div class="line"><span class="lineno">  537</span>        <span class="comment">//#ifdef _DEBUG</span></div>
+<div class="line"><span class="lineno">  538</span>        <span class="comment">//                          // デバッグ用にボーン情報を出力</span></div>
+<div class="line"><span class="lineno">  539</span>        <span class="comment">//  FILE* fp;</span></div>
+<div class="line"><span class="lineno">  540</span>        <span class="comment">//  fopen_s(&amp;fp, &quot;bone.txt&quot;, &quot;a&quot;);</span></div>
+<div class="line"><span class="lineno">  541</span>        <span class="comment">//  for (unsigned int jj = 0; jj &lt; numVertices; jj++) {</span></div>
+<div class="line"><span class="lineno">  542</span>        <span class="comment">//      fprintf(fp, &quot;(%d) 座標(%f %f %f) ウエイト(%f) \n&quot;, vindex[jj], work[vindex[jj]].x, work[vindex[jj]].y, work[vindex[jj]].z, weigths[jj]);</span></div>
+<div class="line"><span class="lineno">  543</span>        <span class="comment">//  }</span></div>
+<div class="line"><span class="lineno">  544</span>        <span class="comment">//  fprintf(fp, &quot;\n\n&quot;);</span></div>
+<div class="line"><span class="lineno">  545</span>        <span class="comment">//  fclose(fp);</span></div>
+<div class="line"><span class="lineno">  546</span>        <span class="comment">//#endif</span></div>
+<div class="line"><span class="lineno">  547</span>            <a class="code hl_variable" href="#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>[i].PCA(work, vindex, numVertices);</div>
+<div class="line"><span class="lineno">  548</span>            <a class="code hl_variable" href="#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>[i].CreateBoxMesh(lpd3ddevice);</div>
+<div class="line"><span class="lineno">  549</span> </div>
+<div class="line"><span class="lineno">  550</span>            <span class="keyword">delete</span>[] vindex;</div>
+<div class="line"><span class="lineno">  551</span>            <span class="keyword">delete</span>[] weigths;</div>
+<div class="line"><span class="lineno">  552</span>        }</div>
+<div class="line"><span class="lineno">  553</span> </div>
+<div class="line"><span class="lineno">  554</span>        <span class="comment">//確保したメモリ解放</span></div>
+<div class="line"><span class="lineno">  555</span>        <span class="keyword">delete</span>[] work;</div>
+<div class="line"><span class="lineno">  556</span> </div>
+<div class="line"><span class="lineno">  557</span>        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><span class="lineno">  558</span>    }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_ad5b697eb28f5de277b589057170792a9"><div class="ttname"><a href="_common___base_operator_8h.html#ad5b697eb28f5de277b589057170792a9">New</a></div><div class="ttdeci">#define New</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:16</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a2d1709e28c078d6c8b4aa31c7afc185e"><div class="ttname"><a href="#a2d1709e28c078d6c8b4aa31c7afc185e">NModel::CSkinnedMesh::m_OBBSkin</a></div><div class="ttdeci">COBB * m_OBBSkin</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:39</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_ab15c82b9014cbf9de4ea25ee19ddb95a"><div class="ttname"><a href="#ab15c82b9014cbf9de4ea25ee19ddb95a">NModel::CSkinnedMesh::m_matBone</a></div><div class="ttdeci">NMath::SMatrix44 * m_matBone</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:40</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aea2141ab226e440ca119b8bdd1b93869"><div class="ttname"><a href="#aea2141ab226e440ca119b8bdd1b93869">NModel::CSkinnedMesh::m_BBOXnum</a></div><div class="ttdeci">int m_BBOXnum</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:42</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a33e1d2b21e0977181a354f22228a4592" name="a33e1d2b21e0977181a354f22228a4592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e1d2b21e0977181a354f22228a4592">&#9670;&#160;</a></span>DrawBBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::DrawBBox </td>
+          <td>(</td>
+          <td class="paramtype">LPDIRECT3DDEVICE9</td>          <td class="paramname"><span class="paramname"><em>lpd3ddevice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  639</span>    {</div>
+<div class="line"><span class="lineno">  640</span>        LPD3DXMESHCONTAINER pMeshContainer;</div>
+<div class="line"><span class="lineno">  641</span> </div>
+<div class="line"><span class="lineno">  642</span>        pMeshContainer = pFrame-&gt;pMeshContainer;</div>
+<div class="line"><span class="lineno">  643</span> </div>
+<div class="line"><span class="lineno">  644</span>        D3DXFRAME_DERIVED* pf = (D3DXFRAME_DERIVED*)pFrame;</div>
+<div class="line"><span class="lineno">  645</span> </div>
+<div class="line"><span class="lineno">  646</span>        <span class="comment">// メッシュコンテナがある限りループする</span></div>
+<div class="line"><span class="lineno">  647</span>        <span class="keywordflow">while</span> (pMeshContainer != NULL) {</div>
+<div class="line"><span class="lineno">  648</span>            <span class="keywordflow">if</span> (pMeshContainer-&gt;pSkinInfo != NULL) {                            <span class="comment">// ワンスキンフレームか？</span></div>
+<div class="line"><span class="lineno">  649</span> </div>
+<div class="line"><span class="lineno">  650</span>                <span class="keywordtype">int</span> loop = pMeshContainer-&gt;pSkinInfo-&gt;GetNumBones();        <span class="comment">// ボーン数取得</span></div>
+<div class="line"><span class="lineno">  651</span> </div>
+<div class="line"><span class="lineno">  652</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; loop; i++) {</div>
+<div class="line"><span class="lineno">  653</span>                    <a class="code hl_variable" href="#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>[i].Draw(lpd3ddevice);</div>
+<div class="line"><span class="lineno">  654</span>                }</div>
+<div class="line"><span class="lineno">  655</span>            }</div>
+<div class="line"><span class="lineno">  656</span>            pMeshContainer = pMeshContainer-&gt;pNextMeshContainer;</div>
+<div class="line"><span class="lineno">  657</span>        }</div>
+<div class="line"><span class="lineno">  658</span> </div>
+<div class="line"><span class="lineno">  659</span>        <span class="comment">//兄弟がいるなら再帰的にフレーム描画</span></div>
+<div class="line"><span class="lineno">  660</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameSibling != NULL) {</div>
+<div class="line"><span class="lineno">  661</span>            <a class="code hl_function" href="#a33e1d2b21e0977181a354f22228a4592">DrawBBox</a>(lpd3ddevice, pFrame-&gt;pFrameSibling);</div>
+<div class="line"><span class="lineno">  662</span>        }</div>
+<div class="line"><span class="lineno">  663</span> </div>
+<div class="line"><span class="lineno">  664</span>        <span class="comment">//子がいるなら再帰的にフレーム描画</span></div>
+<div class="line"><span class="lineno">  665</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameFirstChild != NULL) {</div>
+<div class="line"><span class="lineno">  666</span>            <a class="code hl_function" href="#a33e1d2b21e0977181a354f22228a4592">DrawBBox</a>(lpd3ddevice, pFrame-&gt;pFrameFirstChild);</div>
+<div class="line"><span class="lineno">  667</span>        }</div>
+<div class="line"><span class="lineno">  668</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a33e1d2b21e0977181a354f22228a4592"><div class="ttname"><a href="#a33e1d2b21e0977181a354f22228a4592">NModel::CSkinnedMesh::DrawBBox</a></div><div class="ttdeci">void DrawBBox(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:638</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a93d1b2398c4e598a675a8133864a9cd8" name="a93d1b2398c4e598a675a8133864a9cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93d1b2398c4e598a675a8133864a9cd8">&#9670;&#160;</a></span>DrawFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::DrawFrame </td>
+          <td>(</td>
+          <td class="paramtype">LPDIRECT3DDEVICE9</td>          <td class="paramname"><span class="paramname"><em>pd3ddevice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  247</span>    {</div>
+<div class="line"><span class="lineno">  248</span>        LPD3DXMESHCONTAINER pMeshContainer;</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>        pMeshContainer = pFrame-&gt;pMeshContainer;</div>
+<div class="line"><span class="lineno">  251</span>        <span class="keywordflow">while</span> (pMeshContainer != NULL) {</div>
+<div class="line"><span class="lineno">  252</span>            <a class="code hl_function" href="#a54b94ea97b253ca698ee76238a15e3cc">DrawMeshContainer</a>(pd3ddevice, pMeshContainer, pFrame);</div>
+<div class="line"><span class="lineno">  253</span> </div>
+<div class="line"><span class="lineno">  254</span>            pMeshContainer = pMeshContainer-&gt;pNextMeshContainer;</div>
+<div class="line"><span class="lineno">  255</span>        }</div>
+<div class="line"><span class="lineno">  256</span> </div>
+<div class="line"><span class="lineno">  257</span>        <span class="comment">//兄弟がいるなら再帰的にフレーム描画</span></div>
+<div class="line"><span class="lineno">  258</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameSibling != NULL) {</div>
+<div class="line"><span class="lineno">  259</span>            <a class="code hl_function" href="#a93d1b2398c4e598a675a8133864a9cd8">DrawFrame</a>(pd3ddevice, pFrame-&gt;pFrameSibling);</div>
+<div class="line"><span class="lineno">  260</span>        }</div>
+<div class="line"><span class="lineno">  261</span> </div>
+<div class="line"><span class="lineno">  262</span>        <span class="comment">//子がいるなら再帰的にフレーム描画</span></div>
+<div class="line"><span class="lineno">  263</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameFirstChild != NULL) {</div>
+<div class="line"><span class="lineno">  264</span>            <a class="code hl_function" href="#a93d1b2398c4e598a675a8133864a9cd8">DrawFrame</a>(pd3ddevice, pFrame-&gt;pFrameFirstChild);</div>
+<div class="line"><span class="lineno">  265</span>        }</div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a54b94ea97b253ca698ee76238a15e3cc"><div class="ttname"><a href="#a54b94ea97b253ca698ee76238a15e3cc">NModel::CSkinnedMesh::DrawMeshContainer</a></div><div class="ttdeci">void DrawMeshContainer(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXMESHCONTAINER pMeshContainerBase, LPD3DXFRAME pFrameBase)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:82</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a93d1b2398c4e598a675a8133864a9cd8"><div class="ttname"><a href="#a93d1b2398c4e598a675a8133864a9cd8">NModel::CSkinnedMesh::DrawFrame</a></div><div class="ttdeci">void DrawFrame(LPDIRECT3DDEVICE9 pd3ddevice, LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:246</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a54b94ea97b253ca698ee76238a15e3cc" name="a54b94ea97b253ca698ee76238a15e3cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b94ea97b253ca698ee76238a15e3cc">&#9670;&#160;</a></span>DrawMeshContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::DrawMeshContainer </td>
+          <td>(</td>
+          <td class="paramtype">LPDIRECT3DDEVICE9</td>          <td class="paramname"><span class="paramname"><em>lpd3ddevice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPD3DXMESHCONTAINER</td>          <td class="paramname"><span class="paramname"><em>pMeshContainerBase</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrameBase</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   83</span>    {</div>
+<div class="line"><span class="lineno">   84</span>        HRESULT hr;</div>
+<div class="line"><span class="lineno">   85</span>        D3DXMESHCONTAINER_DERIVED* pMeshContainer = (D3DXMESHCONTAINER_DERIVED*)pMeshContainerBase;</div>
+<div class="line"><span class="lineno">   86</span>        D3DXFRAME_DERIVED* pFrame = (D3DXFRAME_DERIVED*)pFrameBase;</div>
+<div class="line"><span class="lineno">   87</span>        UINT iMaterial;</div>
+<div class="line"><span class="lineno">   88</span>        UINT NumBlend;</div>
+<div class="line"><span class="lineno">   89</span>        UINT iAttrib;</div>
+<div class="line"><span class="lineno">   90</span>        DWORD AttribIdPrev;</div>
+<div class="line"><span class="lineno">   91</span>        LPD3DXBONECOMBINATION pBoneComb;</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>        UINT iMatrixIndex;</div>
+<div class="line"><span class="lineno">   94</span>        D3DXMATRIXA16 matTemp;</div>
+<div class="line"><span class="lineno">   95</span>        D3DCAPS9 d3dCaps;</div>
+<div class="line"><span class="lineno">   96</span>        pd3ddevice-&gt;GetDeviceCaps(&amp;d3dCaps);            <span class="comment">// グラフィックカードの性能を取得する</span></div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>                                                        <span class="comment">//ワンスキンの情報があるか？</span></div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">if</span> (pMeshContainer-&gt;pSkinInfo != NULL) {</div>
+<div class="line"><span class="lineno">  100</span>            AttribIdPrev = UNUSED32;</div>
+<div class="line"><span class="lineno">  101</span>            pBoneComb = <span class="keyword">reinterpret_cast&lt;</span>LPD3DXBONECOMBINATION<span class="keyword">&gt;</span>(pMeshContainer-&gt;pBoneCombinationBuf-&gt;GetBufferPointer());</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>            <span class="comment">//HW処理で描画</span></div>
+<div class="line"><span class="lineno">  104</span>            <span class="comment">// このメッシュコンテナのアトリビュートグループ数分ループ（ボーン数）</span></div>
+<div class="line"><span class="lineno">  105</span>            <span class="keywordflow">for</span> (iAttrib = 0; iAttrib &lt; pMeshContainer-&gt;NumAttributeGroups; iAttrib++) {</div>
+<div class="line"><span class="lineno">  106</span>                NumBlend = 0;</div>
+<div class="line"><span class="lineno">  107</span>                <span class="comment">// 影響を受けるボーン数</span></div>
+<div class="line"><span class="lineno">  108</span>                <span class="keywordflow">for</span> (DWORD i = 0; i &lt; pMeshContainer-&gt;NumInfl; i++) {</div>
+<div class="line"><span class="lineno">  109</span>                    <span class="keywordflow">if</span> (pBoneComb[iAttrib].BoneId[i] != UINT_MAX) {</div>
+<div class="line"><span class="lineno">  110</span>                        NumBlend = i;</div>
+<div class="line"><span class="lineno">  111</span>                    }</div>
+<div class="line"><span class="lineno">  112</span>                }</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>                <span class="comment">// グラフィックカードの頂点ブレンディングのＭＡＸ数を超えていないか</span></div>
+<div class="line"><span class="lineno">  115</span>                <span class="keywordflow">if</span> (d3dCaps.MaxVertexBlendMatrices &gt;= NumBlend) {</div>
+<div class="line"><span class="lineno">  116</span>                    <span class="comment">//ブレンドウェイト用ワールドマトリクスを計算</span></div>
+<div class="line"><span class="lineno">  117</span>                    <span class="keywordflow">for</span> (DWORD i = 0; i &lt; pMeshContainer-&gt;NumInfl; i++) {</div>
+<div class="line"><span class="lineno">  118</span>                        iMatrixIndex = pBoneComb[iAttrib].BoneId[i];</div>
+<div class="line"><span class="lineno">  119</span>                        <span class="keywordflow">if</span> (iMatrixIndex != UINT_MAX) {</div>
+<div class="line"><span class="lineno">  120</span>                            D3DXMatrixMultiply(&amp;matTemp,</div>
+<div class="line"><span class="lineno">  121</span>                                &amp;pMeshContainer-&gt;pBoneOffsetMatrices[iMatrixIndex],     <span class="comment">// ボーンオフセット行列 </span></div>
+<div class="line"><span class="lineno">  122</span>                                pMeshContainer-&gt;ppBoneMatrixPtrs[iMatrixIndex]);        <span class="comment">// ボーン行列</span></div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>                            hr = pd3ddevice-&gt;SetTransform(D3DTS_WORLDMATRIX(i), &amp;matTemp);  <span class="comment">// 頂点ブレンド用行列をセットする</span></div>
+<div class="line"><span class="lineno">  125</span>                            <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  126</span>                                MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetTransform error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  127</span>                            }</div>
+<div class="line"><span class="lineno">  128</span>                        }</div>
+<div class="line"><span class="lineno">  129</span>                    }</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>                    hr = pd3ddevice-&gt;SetRenderState(D3DRS_VERTEXBLEND, NumBlend);</div>
+<div class="line"><span class="lineno">  132</span>                    <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  133</span>                        MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;pd3ddevice-&gt;SetRenderState error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  134</span>                    }</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>                    <span class="comment">//マテリアル面がサブセットに使用したルックアップ</span></div>
+<div class="line"><span class="lineno">  137</span>                    <span class="keywordflow">if</span> ((AttribIdPrev != pBoneComb[iAttrib].AttribId) || (AttribIdPrev == UNUSED32)) {</div>
+<div class="line"><span class="lineno">  138</span>                        hr = pd3ddevice-&gt;SetMaterial(&amp;pMeshContainer-&gt;pMaterials[pBoneComb[iAttrib].AttribId].MatD3D);</div>
+<div class="line"><span class="lineno">  139</span>                        <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  140</span>                            MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;pd3ddevice-&gt;SetMaterial error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  141</span>                        }</div>
+<div class="line"><span class="lineno">  142</span>                        hr = pd3ddevice-&gt;SetTexture(0, pMeshContainer-&gt;ppTextures[pBoneComb[iAttrib].AttribId]);</div>
+<div class="line"><span class="lineno">  143</span>                        <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  144</span>                            MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;pd3ddevice-&gt;SetTextre error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  145</span>                        }</div>
+<div class="line"><span class="lineno">  146</span>                        AttribIdPrev = pBoneComb[iAttrib].AttribId;</div>
+<div class="line"><span class="lineno">  147</span>                    }</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>                    <span class="comment">//メッシュ描画</span></div>
+<div class="line"><span class="lineno">  150</span>                    hr = pMeshContainer-&gt;MeshData.pMesh-&gt;DrawSubset(iAttrib);</div>
+<div class="line"><span class="lineno">  151</span>                    <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  152</span>                        MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;DrawSubset error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  153</span>                    }</div>
+<div class="line"><span class="lineno">  154</span>                }</div>
+<div class="line"><span class="lineno">  155</span>            }</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>            <span class="comment">//HWが扱うことが出来なかったサブセットの描画</span></div>
+<div class="line"><span class="lineno">  158</span>            <span class="keywordflow">if</span> (pMeshContainer-&gt;iAttributeSW &lt; pMeshContainer-&gt;NumAttributeGroups) {</div>
+<div class="line"><span class="lineno">  159</span>                AttribIdPrev = UNUSED32;</div>
+<div class="line"><span class="lineno">  160</span>                hr = pd3ddevice-&gt;SetSoftwareVertexProcessing(TRUE);</div>
+<div class="line"><span class="lineno">  161</span>                <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  162</span>                    MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetSoftwareVertexProcessing error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  163</span>                }</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>                <span class="keywordflow">for</span> (iAttrib = pMeshContainer-&gt;iAttributeSW; iAttrib &lt; pMeshContainer-&gt;NumAttributeGroups; iAttrib++) {</div>
+<div class="line"><span class="lineno">  166</span>                    NumBlend = 0;</div>
+<div class="line"><span class="lineno">  167</span>                    <span class="keywordflow">for</span> (DWORD i = 0; i &lt; pMeshContainer-&gt;NumInfl; i++) {</div>
+<div class="line"><span class="lineno">  168</span>                        <span class="keywordflow">if</span> (pBoneComb[iAttrib].BoneId[i] != UINT_MAX)</div>
+<div class="line"><span class="lineno">  169</span>                            NumBlend = i;</div>
+<div class="line"><span class="lineno">  170</span>                    }</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>                    <span class="keywordflow">if</span> (d3dCaps.MaxVertexBlendMatrices &gt;= NumBlend + 1) {</div>
+<div class="line"><span class="lineno">  173</span>                        <span class="comment">//ブレンドウェイト用ワールドマトリクスを計算</span></div>
+<div class="line"><span class="lineno">  174</span>                        <span class="keywordflow">for</span> (DWORD i = 0; i &lt; pMeshContainer-&gt;NumInfl; i++) {</div>
+<div class="line"><span class="lineno">  175</span>                            iMatrixIndex = pBoneComb[iAttrib].BoneId[i];</div>
+<div class="line"><span class="lineno">  176</span>                            <span class="keywordflow">if</span> (iMatrixIndex != UINT_MAX) {</div>
+<div class="line"><span class="lineno">  177</span>                                D3DXMatrixMultiply(&amp;matTemp, &amp;pMeshContainer-&gt;pBoneOffsetMatrices[iMatrixIndex], pMeshContainer-&gt;ppBoneMatrixPtrs[iMatrixIndex]);</div>
+<div class="line"><span class="lineno">  178</span>                                hr = pd3ddevice-&gt;SetTransform(D3DTS_WORLDMATRIX(i), &amp;matTemp);</div>
+<div class="line"><span class="lineno">  179</span>                                <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  180</span>                                    MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetTransform error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  181</span>                                }</div>
+<div class="line"><span class="lineno">  182</span>                            }</div>
+<div class="line"><span class="lineno">  183</span>                        }</div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>                        hr = pd3ddevice-&gt;SetRenderState(D3DRS_VERTEXBLEND, NumBlend);</div>
+<div class="line"><span class="lineno">  186</span>                        <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  187</span>                            MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetRenderSrarte error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  188</span>                        }</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span> </div>
+<div class="line"><span class="lineno">  191</span>                        <span class="comment">//マテリアル面がサブセットに使用したルックアップ</span></div>
+<div class="line"><span class="lineno">  192</span>                        <span class="keywordflow">if</span> ((AttribIdPrev != pBoneComb[iAttrib].AttribId) || (AttribIdPrev == UNUSED32)) {</div>
+<div class="line"><span class="lineno">  193</span>                            hr = pd3ddevice-&gt;SetMaterial(&amp;pMeshContainer-&gt;pMaterials[pBoneComb[iAttrib].AttribId].MatD3D);</div>
+<div class="line"><span class="lineno">  194</span>                            <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  195</span>                                MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetMaterial error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  196</span>                            }</div>
+<div class="line"><span class="lineno">  197</span>                            hr = pd3ddevice-&gt;SetTexture(0, pMeshContainer-&gt;ppTextures[pBoneComb[iAttrib].AttribId]);</div>
+<div class="line"><span class="lineno">  198</span>                            <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  199</span>                                MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetTexture error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  200</span>                            }</div>
+<div class="line"><span class="lineno">  201</span>                            AttribIdPrev = pBoneComb[iAttrib].AttribId;</div>
+<div class="line"><span class="lineno">  202</span>                        }</div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>                        <span class="comment">//メッシュ描画</span></div>
+<div class="line"><span class="lineno">  205</span>                        hr = pMeshContainer-&gt;MeshData.pMesh-&gt;DrawSubset(iAttrib);</div>
+<div class="line"><span class="lineno">  206</span>                    }</div>
+<div class="line"><span class="lineno">  207</span>                }</div>
+<div class="line"><span class="lineno">  208</span>                <span class="comment">//頂点計算の設定を元に戻す</span></div>
+<div class="line"><span class="lineno">  209</span>                hr = pd3ddevice-&gt;SetSoftwareVertexProcessing(FALSE);</div>
+<div class="line"><span class="lineno">  210</span>                <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  211</span>                    MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetSoftwareVertexProcessing&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  212</span>                }</div>
+<div class="line"><span class="lineno">  213</span>            }</div>
+<div class="line"><span class="lineno">  214</span> </div>
+<div class="line"><span class="lineno">  215</span>            hr = pd3ddevice-&gt;SetRenderState(D3DRS_VERTEXBLEND, 0);</div>
+<div class="line"><span class="lineno">  216</span>            <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  217</span>                MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetRenderState error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  218</span>            }</div>
+<div class="line"><span class="lineno">  219</span>        }</div>
+<div class="line"><span class="lineno">  220</span>        <span class="keywordflow">else</span> { <span class="comment">//マルチメッシュ描画</span></div>
+<div class="line"><span class="lineno">  221</span>            hr = pd3ddevice-&gt;SetTransform(D3DTS_WORLD, &amp;pFrame-&gt;CombinedTransformMatrix);</div>
+<div class="line"><span class="lineno">  222</span>            <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  223</span>                MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetTransform error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  224</span>            }</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>            <span class="keywordflow">for</span> (iMaterial = 0; iMaterial &lt; pMeshContainer-&gt;NumMaterials; iMaterial++) {</div>
+<div class="line"><span class="lineno">  227</span>                hr = pd3ddevice-&gt;SetMaterial(&amp;pMeshContainer-&gt;pMaterials[iMaterial].MatD3D);</div>
+<div class="line"><span class="lineno">  228</span>                <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  229</span>                    MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetMaterial error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  230</span>                }</div>
+<div class="line"><span class="lineno">  231</span>                hr = pd3ddevice-&gt;SetTexture(0, pMeshContainer-&gt;ppTextures[iMaterial]);</div>
+<div class="line"><span class="lineno">  232</span>                <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  233</span>                    MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;SetTexture error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  234</span>                }</div>
+<div class="line"><span class="lineno">  235</span>                hr = pMeshContainer-&gt;MeshData.pMesh-&gt;DrawSubset(iMaterial);</div>
+<div class="line"><span class="lineno">  236</span>                <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  237</span>                    MessageBox(NULL, <span class="stringliteral">&quot;error&quot;</span>, <span class="stringliteral">&quot;DrawSubset error&quot;</span>, MB_OK);</div>
+<div class="line"><span class="lineno">  238</span>                }</div>
+<div class="line"><span class="lineno">  239</span>            }</div>
+<div class="line"><span class="lineno">  240</span>        }</div>
+<div class="line"><span class="lineno">  241</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adabf9578ccaacbecd0a964aaa1483f3c" name="adabf9578ccaacbecd0a964aaa1483f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adabf9578ccaacbecd0a964aaa1483f3c">&#9670;&#160;</a></span>ExitBBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::ExitBBox </td>
+          <td>(</td>
+          <td class="paramtype">LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrameBase</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  674</span>    {</div>
+<div class="line"><span class="lineno">  675</span>        D3DXFRAME_DERIVED* pf = (D3DXFRAME_DERIVED*)pFrameBase;</div>
+<div class="line"><span class="lineno">  676</span>        LPD3DXMESHCONTAINER pMeshContainer;</div>
+<div class="line"><span class="lineno">  677</span> </div>
+<div class="line"><span class="lineno">  678</span>        pMeshContainer = pf-&gt;pMeshContainer;</div>
+<div class="line"><span class="lineno">  679</span> </div>
+<div class="line"><span class="lineno">  680</span>        <span class="comment">// メッシュコンテナがある限りループする</span></div>
+<div class="line"><span class="lineno">  681</span>        <span class="keywordflow">while</span> (pMeshContainer != NULL) {</div>
+<div class="line"><span class="lineno">  682</span>            <span class="keywordflow">if</span> (pMeshContainer-&gt;pSkinInfo != NULL) {                            <span class="comment">// ワンスキンフレームか？</span></div>
+<div class="line"><span class="lineno">  683</span>                <span class="keywordtype">int</span> loop = pMeshContainer-&gt;pSkinInfo-&gt;GetNumBones();        <span class="comment">// ボーン数取得</span></div>
+<div class="line"><span class="lineno">  684</span> </div>
+<div class="line"><span class="lineno">  685</span>                <span class="keyword">delete</span>[] <a class="code hl_variable" href="#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>;</div>
+<div class="line"><span class="lineno">  686</span>                <span class="keyword">delete</span>[] <a class="code hl_variable" href="#ab15c82b9014cbf9de4ea25ee19ddb95a">m_matBone</a>;</div>
+<div class="line"><span class="lineno">  687</span> </div>
+<div class="line"><span class="lineno">  688</span>            }</div>
+<div class="line"><span class="lineno">  689</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  690</span>                <span class="comment">//if (pf-&gt;BBoxMesh != NULL) {</span></div>
+<div class="line"><span class="lineno">  691</span>                <span class="comment">//  ReleaseSafe(pf-&gt;BBoxMesh);                              // メッシュを解放</span></div>
+<div class="line"><span class="lineno">  692</span>                <span class="comment">//}</span></div>
+<div class="line"><span class="lineno">  693</span>            }</div>
+<div class="line"><span class="lineno">  694</span>            pMeshContainer = pMeshContainer-&gt;pNextMeshContainer;</div>
+<div class="line"><span class="lineno">  695</span>        }</div>
+<div class="line"><span class="lineno">  696</span> </div>
+<div class="line"><span class="lineno">  697</span>        <span class="comment">//兄弟がいるなら再帰的にBBOX削除</span></div>
+<div class="line"><span class="lineno">  698</span>        <span class="keywordflow">if</span> (pf-&gt;pFrameSibling != NULL) {</div>
+<div class="line"><span class="lineno">  699</span>            <a class="code hl_function" href="#adabf9578ccaacbecd0a964aaa1483f3c">ExitBBox</a>(pf-&gt;pFrameSibling);</div>
+<div class="line"><span class="lineno">  700</span>        }</div>
+<div class="line"><span class="lineno">  701</span> </div>
+<div class="line"><span class="lineno">  702</span>        <span class="comment">//子がいるなら再帰的にBBOX削除</span></div>
+<div class="line"><span class="lineno">  703</span>        <span class="keywordflow">if</span> (pf-&gt;pFrameFirstChild != NULL) {</div>
+<div class="line"><span class="lineno">  704</span>            <a class="code hl_function" href="#adabf9578ccaacbecd0a964aaa1483f3c">ExitBBox</a>(pf-&gt;pFrameFirstChild);</div>
+<div class="line"><span class="lineno">  705</span>        }</div>
+<div class="line"><span class="lineno">  706</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab09281a129a49cf2a1c0b905728a1e12" name="ab09281a129a49cf2a1c0b905728a1e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab09281a129a49cf2a1c0b905728a1e12">&#9670;&#160;</a></span>GetAllFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::GetAllFrame </td>
+          <td>(</td>
+          <td class="paramtype">LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  307</span>    {</div>
+<div class="line"><span class="lineno">  308</span> </div>
+<div class="line"><span class="lineno">  309</span>        <span class="comment">// フレームをコンテナにセット</span></div>
+<div class="line"><span class="lineno">  310</span>        <a class="code hl_variable" href="#a606fdafb3417555f45c6f75b140806b1">m_AllFrameContainer</a>.push_back(pFrame);</div>
+<div class="line"><span class="lineno">  311</span> </div>
+<div class="line"><span class="lineno">  312</span>        <span class="comment">//兄弟がいるなら再帰的にフレーム描画</span></div>
+<div class="line"><span class="lineno">  313</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameSibling != NULL) {</div>
+<div class="line"><span class="lineno">  314</span>            <a class="code hl_function" href="#ab09281a129a49cf2a1c0b905728a1e12">GetAllFrame</a>(pFrame-&gt;pFrameSibling);</div>
+<div class="line"><span class="lineno">  315</span>        }</div>
+<div class="line"><span class="lineno">  316</span> </div>
+<div class="line"><span class="lineno">  317</span>        <span class="comment">//子がいるなら再帰的にフレーム描画</span></div>
+<div class="line"><span class="lineno">  318</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameFirstChild != NULL) {</div>
+<div class="line"><span class="lineno">  319</span>            <a class="code hl_function" href="#ab09281a129a49cf2a1c0b905728a1e12">GetAllFrame</a>(pFrame-&gt;pFrameFirstChild);</div>
+<div class="line"><span class="lineno">  320</span>        }</div>
+<div class="line"><span class="lineno">  321</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a606fdafb3417555f45c6f75b140806b1"><div class="ttname"><a href="#a606fdafb3417555f45c6f75b140806b1">NModel::CSkinnedMesh::m_AllFrameContainer</a></div><div class="ttdeci">std::vector&lt; LPD3DXFRAME &gt; m_AllFrameContainer</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:36</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_ab09281a129a49cf2a1c0b905728a1e12"><div class="ttname"><a href="#ab09281a129a49cf2a1c0b905728a1e12">NModel::CSkinnedMesh::GetAllFrame</a></div><div class="ttdeci">void GetAllFrame(LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:306</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a69fe587ff2cdfb3287c3ddabe7e5b2ee" name="a69fe587ff2cdfb3287c3ddabe7e5b2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69fe587ff2cdfb3287c3ddabe7e5b2ee">&#9670;&#160;</a></span>GetAnimationController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXANIMATIONCONTROLLER NModel::CSkinnedMesh::GetAnimationController </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  152</span>        {</div>
+<div class="line"><span class="lineno">  153</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>;</div>
+<div class="line"><span class="lineno">  154</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaebbabd930c41b658af593c5845147c5" name="aaebbabd930c41b658af593c5845147c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaebbabd930c41b658af593c5845147c5">&#9670;&#160;</a></span>GetAnimationSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXANIMATIONSET NModel::CSkinnedMesh::GetAnimationSet </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idx</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  158</span>        {</div>
+<div class="line"><span class="lineno">  159</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#adf5d1622262db90e07d4a55e7e0821f5">m_ppAnimSet</a>[idx];</div>
+<div class="line"><span class="lineno">  160</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9d377360f8b9a0b3fff22ce6b5880cf6" name="a9d377360f8b9a0b3fff22ce6b5880cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d377360f8b9a0b3fff22ce6b5880cf6">&#9670;&#160;</a></span>GetAnimationSetCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NModel::CSkinnedMesh::GetAnimationSetCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  164</span>        {</div>
+<div class="line"><span class="lineno">  165</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a9d3a65ac2a7121bce15218093a15cd79">m_iAnimSetCount</a>;</div>
+<div class="line"><span class="lineno">  166</span>        }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a9d3a65ac2a7121bce15218093a15cd79"><div class="ttname"><a href="#a9d3a65ac2a7121bce15218093a15cd79">NModel::CSkinnedMesh::m_iAnimSetCount</a></div><div class="ttdeci">int m_iAnimSetCount</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7afa84a12397f4677c963c551e30adca" name="a7afa84a12397f4677c963c551e30adca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7afa84a12397f4677c963c551e30adca">&#9670;&#160;</a></span>GetAnmID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NModel::CSkinnedMesh::GetAnmID </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  125</span>        {</div>
+<div class="line"><span class="lineno">  126</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a80af6333dbf0d54990dadde0f3ddd62e">m_uiAnimID</a>;</div>
+<div class="line"><span class="lineno">  127</span>        }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a80af6333dbf0d54990dadde0f3ddd62e"><div class="ttname"><a href="#a80af6333dbf0d54990dadde0f3ddd62e">NModel::CSkinnedMesh::m_uiAnimID</a></div><div class="ttdeci">unsigned int m_uiAnimID</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:32</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acbca42f2f395c1d46c2bca109fbabbf2" name="acbca42f2f395c1d46c2bca109fbabbf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbca42f2f395c1d46c2bca109fbabbf2">&#9670;&#160;</a></span>GetBoneMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::GetBoneMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDest</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  105</span>        {</div>
+<div class="line"><span class="lineno">  106</span>            assert(_idx &lt; <a class="code hl_variable" href="#a8da761291226da987c13eedbf7b83a0a">m_BoneNum</a>);</div>
+<div class="line"><span class="lineno">  107</span>            assert(_idx &gt;= 0);</div>
+<div class="line"><span class="lineno">  108</span>            _rDest = <a class="code hl_variable" href="#ab15c82b9014cbf9de4ea25ee19ddb95a">m_matBone</a>[_idx];</div>
+<div class="line"><span class="lineno">  109</span>        }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a8da761291226da987c13eedbf7b83a0a"><div class="ttname"><a href="#a8da761291226da987c13eedbf7b83a0a">NModel::CSkinnedMesh::m_BoneNum</a></div><div class="ttdeci">int m_BoneNum</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:35</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aee5f116d0f47326b72279c31dab9664a" name="aee5f116d0f47326b72279c31dab9664a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee5f116d0f47326b72279c31dab9664a">&#9670;&#160;</a></span>GetBoneNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NModel::CSkinnedMesh::GetBoneNum </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  137</span>        {</div>
+<div class="line"><span class="lineno">  138</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a8da761291226da987c13eedbf7b83a0a">m_BoneNum</a>;</div>
+<div class="line"><span class="lineno">  139</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a52c881048aa86ac9441f195c7eab0baa" name="a52c881048aa86ac9441f195c7eab0baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52c881048aa86ac9441f195c7eab0baa">&#9670;&#160;</a></span>GetEndTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NModel::CSkinnedMesh::GetEndTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  192</span>        {</div>
+<div class="line"><span class="lineno">  193</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#aa4c7b972c99c9870e10273828c1e5ca7">m_endtime</a>;</div>
+<div class="line"><span class="lineno">  194</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4478416d74d228be4258024edca323b5" name="a4478416d74d228be4258024edca323b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4478416d74d228be4258024edca323b5">&#9670;&#160;</a></span>GetFrameContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; LPD3DXFRAME &gt; * NModel::CSkinnedMesh::GetFrameContainer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  176</span>        {</div>
+<div class="line"><span class="lineno">  177</span>            <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="#a606fdafb3417555f45c6f75b140806b1">m_AllFrameContainer</a>;</div>
+<div class="line"><span class="lineno">  178</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad509c37dbba8387662d58e273ab7fc90" name="ad509c37dbba8387662d58e273ab7fc90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad509c37dbba8387662d58e273ab7fc90">&#9670;&#160;</a></span>GetFrameRoot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXFRAME NModel::CSkinnedMesh::GetFrameRoot </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  146</span>        {</div>
+<div class="line"><span class="lineno">  147</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>;</div>
+<div class="line"><span class="lineno">  148</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acbe3b0d7f5b3fb2b00e8bfcc5da725b4" name="acbe3b0d7f5b3fb2b00e8bfcc5da725b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe3b0d7f5b3fb2b00e8bfcc5da725b4">&#9670;&#160;</a></span>GetOBB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_o_b_b.html">COBB</a> * NModel::CSkinnedMesh::GetOBB </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_idx</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  197</span>{ <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>[_idx]; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7753fa5b5b03960820ef54b2e3f8b89b" name="a7753fa5b5b03960820ef54b2e3f8b89b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7753fa5b5b03960820ef54b2e3f8b89b">&#9670;&#160;</a></span>GetOBBNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NModel::CSkinnedMesh::GetOBBNum </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  196</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aea2141ab226e440ca119b8bdd1b93869">m_BBOXnum</a>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a600b3f028b8ca69ddd48510b25eee924" name="a600b3f028b8ca69ddd48510b25eee924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a600b3f028b8ca69ddd48510b25eee924">&#9670;&#160;</a></span>GetTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NModel::CSkinnedMesh::GetTime </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  130</span>        {</div>
+<div class="line"><span class="lineno">  131</span>            <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)<a class="code hl_variable" href="#accea8d7adbe65a5dcbad94c1fd59c03c">m_TimeDelta</a>;</div>
+<div class="line"><span class="lineno">  132</span>        }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_accea8d7adbe65a5dcbad94c1fd59c03c"><div class="ttname"><a href="#accea8d7adbe65a5dcbad94c1fd59c03c">NModel::CSkinnedMesh::m_TimeDelta</a></div><div class="ttdeci">double m_TimeDelta</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:34</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a33337874c89d825682b86ca4731036e4" name="a33337874c89d825682b86ca4731036e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33337874c89d825682b86ca4731036e4">&#9670;&#160;</a></span>InitBBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::InitBBox </td>
+          <td>(</td>
+          <td class="paramtype">LPDIRECT3DDEVICE9</td>          <td class="paramname"><span class="paramname"><em>lpd3ddevice</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  564</span>    {</div>
+<div class="line"><span class="lineno">  565</span>        LPD3DXMESHCONTAINER pMeshContainer;</div>
+<div class="line"><span class="lineno">  566</span> </div>
+<div class="line"><span class="lineno">  567</span>        pMeshContainer = pFrame-&gt;pMeshContainer;</div>
+<div class="line"><span class="lineno">  568</span>        HRESULT hr;</div>
+<div class="line"><span class="lineno">  569</span> </div>
+<div class="line"><span class="lineno">  570</span>        <span class="comment">// メッシュコンテナがある限りループする</span></div>
+<div class="line"><span class="lineno">  571</span>        <span class="keywordflow">while</span> (pMeshContainer != NULL) {</div>
+<div class="line"><span class="lineno">  572</span>            <span class="keywordflow">if</span> (pMeshContainer-&gt;pSkinInfo != NULL) {        <span class="comment">// ワンスキンフレームか？</span></div>
+<div class="line"><span class="lineno">  573</span>                hr = <a class="code hl_function" href="#aa8aaad611732ddd61c0eb9b31fa6407e">CreateSkinnedBBox</a>(lpd3ddevice, pMeshContainer);</div>
+<div class="line"><span class="lineno">  574</span>            }</div>
+<div class="line"><span class="lineno">  575</span>            pMeshContainer = pMeshContainer-&gt;pNextMeshContainer;</div>
+<div class="line"><span class="lineno">  576</span>        }</div>
+<div class="line"><span class="lineno">  577</span> </div>
+<div class="line"><span class="lineno">  578</span>        <span class="comment">//兄弟がいるなら再帰的にＢＢＯＸを作成</span></div>
+<div class="line"><span class="lineno">  579</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameSibling != NULL) {</div>
+<div class="line"><span class="lineno">  580</span>            <a class="code hl_function" href="#a33337874c89d825682b86ca4731036e4">InitBBox</a>(lpd3ddevice, pFrame-&gt;pFrameSibling);</div>
+<div class="line"><span class="lineno">  581</span>        }</div>
+<div class="line"><span class="lineno">  582</span> </div>
+<div class="line"><span class="lineno">  583</span>        <span class="comment">//子がいるなら再帰的にＢＢＯＸを作成</span></div>
+<div class="line"><span class="lineno">  584</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameFirstChild != NULL) {</div>
+<div class="line"><span class="lineno">  585</span>            <a class="code hl_function" href="#a33337874c89d825682b86ca4731036e4">InitBBox</a>(lpd3ddevice, pFrame-&gt;pFrameFirstChild);</div>
+<div class="line"><span class="lineno">  586</span>        }</div>
+<div class="line"><span class="lineno">  587</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a33337874c89d825682b86ca4731036e4"><div class="ttname"><a href="#a33337874c89d825682b86ca4731036e4">NModel::CSkinnedMesh::InitBBox</a></div><div class="ttdeci">void InitBBox(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:563</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aa8aaad611732ddd61c0eb9b31fa6407e"><div class="ttname"><a href="#aa8aaad611732ddd61c0eb9b31fa6407e">NModel::CSkinnedMesh::CreateSkinnedBBox</a></div><div class="ttdeci">HRESULT CreateSkinnedBBox(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXMESHCONTAINER pMeshContainerParameter)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:457</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afa6ff8f2fc4df535340b194d58d8182b" name="afa6ff8f2fc4df535340b194d58d8182b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa6ff8f2fc4df535340b194d58d8182b">&#9670;&#160;</a></span>isMotionEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CSkinnedMesh::isMotionEnd </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  181</span>        {</div>
+<div class="line"><span class="lineno">  182</span>            <span class="keywordtype">double</span> NowAnimTime = <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;GetTime();</div>
+<div class="line"><span class="lineno">  183</span>            <span class="keywordflow">if</span> (NowAnimTime &gt; <a class="code hl_variable" href="#aa4c7b972c99c9870e10273828c1e5ca7">m_endtime</a>) {</div>
+<div class="line"><span class="lineno">  184</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  185</span>            }</div>
+<div class="line"><span class="lineno">  186</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  187</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  188</span>            }</div>
+<div class="line"><span class="lineno">  189</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa68f138d890fc7234eca72e9d620a0af" name="aa68f138d890fc7234eca72e9d620a0af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68f138d890fc7234eca72e9d620a0af">&#9670;&#160;</a></span>LoadXFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CSkinnedMesh::LoadXFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>xfilename</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPDIRECT3DDEVICE9</td>          <td class="paramname"><span class="paramname"><em>lpd3ddevice</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   19</span>    {</div>
+<div class="line"><span class="lineno">   20</span>        HRESULT hr;</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>        <span class="comment">//　階層構造を持つＸファイルを読み込む</span></div>
+<div class="line"><span class="lineno">   23</span>        std::string modelFilePath = xfilename;</div>
+<div class="line"><span class="lineno">   24</span>        <span class="keywordtype">int</span> dirNum;</div>
+<div class="line"><span class="lineno">   25</span>        dirNum = modelFilePath.find_last_of(<span class="charliteral">&#39;/&#39;</span>) + 1;   <span class="comment">// 最後の区切り文字までの文字数を取得する</span></div>
+<div class="line"><span class="lineno">   26</span>                                                        <span class="comment">// 区切り文字を含める</span></div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>        std::string modelFileDir;</div>
+<div class="line"><span class="lineno">   29</span>        modelFileDir = modelFilePath.substr(0, dirNum);</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>        <a class="code hl_variable" href="#a774c8e47119ead813029962602808729">m_fileDir</a> = modelFileDir.data();</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>        <a class="code hl_variable" href="#a78f6d0d108c2511cb9cbedb5d5329a79">m_cHierarchy</a>.SetFileDir(modelFileDir.data());   <span class="comment">// ファイルのディレクトリを教える</span></div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span> </div>
+<div class="line"><span class="lineno">   36</span>        <span class="comment">//　階層構造を持つＸファイルを読み込む</span></div>
+<div class="line"><span class="lineno">   37</span>        hr = D3DXLoadMeshHierarchyFromX(xfilename,                  <span class="comment">// ファイル名</span></div>
+<div class="line"><span class="lineno">   38</span>            D3DXMESH_MANAGED,</div>
+<div class="line"><span class="lineno">   39</span>            lpd3ddevice,                <span class="comment">// デバイスオブジェクト</span></div>
+<div class="line"><span class="lineno">   40</span>            &amp;<a class="code hl_variable" href="#a78f6d0d108c2511cb9cbedb5d5329a79">m_cHierarchy</a>,              <span class="comment">// 階層構造を読み込むためのクラス</span></div>
+<div class="line"><span class="lineno">   41</span>            NULL,</div>
+<div class="line"><span class="lineno">   42</span>            &amp;<a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>,              <span class="comment">// 最上位のフレーム</span></div>
+<div class="line"><span class="lineno">   43</span>            &amp;<a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>);        <span class="comment">// アニメ―ションコントローラ</span></div>
+<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">   45</span>            <a class="code hl_define" href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a>(<span class="stringliteral">&quot;モデル読み込み失敗&quot;</span>);</div>
+<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   47</span>        }</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>        <span class="comment">// ボーン数分のボーン行列を格納するエリアを確保し、合成行列のポインタをセットする</span></div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_function" href="#a6cbe342cfdb601c556f6ba8d0637a0b2">SetupBoneMatrixPointers</a>(<a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>);</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>        <span class="comment">//　境界球を求める</span></div>
+<div class="line"><span class="lineno">   53</span>        D3DXFrameCalculateBoundingSphere(<a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>, &amp;<a class="code hl_variable" href="#af4e05fc2a8c4c073d9003f881995a1fc">m_vObjectCenter</a>, &amp;<a class="code hl_variable" href="#a60e80c5c819f515bce66390d3aa9c443">m_fObjectRadius</a>);</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>        <span class="comment">// すべてのフレームをＶＥＣＴＯＲコンテナにセットする</span></div>
+<div class="line"><span class="lineno">   56</span>        <a class="code hl_function" href="#ab09281a129a49cf2a1c0b905728a1e12">GetAllFrame</a>(<a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>);</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>        <span class="comment">//アニメーショントラックを取得</span></div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a> != NULL) {</div>
+<div class="line"><span class="lineno">   60</span>            <a class="code hl_variable" href="#a9d3a65ac2a7121bce15218093a15cd79">m_iAnimSetCount</a> = <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;GetNumAnimationSets();     <span class="comment">// アニメーションセット数を取得</span></div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a9d3a65ac2a7121bce15218093a15cd79">m_iAnimSetCount</a> &gt; 0) {</div>
+<div class="line"><span class="lineno">   63</span>                <span class="comment">//アニメーションセット保存エリアを確保</span></div>
+<div class="line"><span class="lineno">   64</span>                <a class="code hl_variable" href="#adf5d1622262db90e07d4a55e7e0821f5">m_ppAnimSet</a> = <span class="keyword">new</span> LPD3DXANIMATIONSET[<a class="code hl_variable" href="#a9d3a65ac2a7121bce15218093a15cd79">m_iAnimSetCount</a>];</div>
+<div class="line"><span class="lineno">   65</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="#a9d3a65ac2a7121bce15218093a15cd79">m_iAnimSetCount</a>; i++) {</div>
+<div class="line"><span class="lineno">   66</span>                    <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;GetAnimationSet(i, &amp;<a class="code hl_variable" href="#adf5d1622262db90e07d4a55e7e0821f5">m_ppAnimSet</a>[i]);         <span class="comment">// アニメーションセットを取得</span></div>
+<div class="line"><span class="lineno">   67</span>                }   </div>
+<div class="line"><span class="lineno">   68</span>            }</div>
+<div class="line"><span class="lineno">   69</span>        }</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_function" href="#a33337874c89d825682b86ca4731036e4">InitBBox</a>(lpd3ddevice, <a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>        <span class="comment">// 初期化</span></div>
+<div class="line"><span class="lineno">   74</span>        <a class="code hl_variable" href="#a1472d4dd73818d7b083178625640e6e5">m_hasExternalAnmFrame</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   75</span>        <a class="code hl_variable" href="#afaea34e28dcfa248c37c5243f03c89d7">m_anmFrame</a>.clear();</div>
+<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="ttc" id="a_system___error_8h_html_a1ef9aee6b1a8c442c300a378918a4d5f"><div class="ttname"><a href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a></div><div class="ttdeci">#define ErrorEx(_pMessage)</div><div class="ttdoc">ファイル名と行の情報を付加するマクロ</div><div class="ttdef"><b>Definition</b> System_Error.h:5</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a60e80c5c819f515bce66390d3aa9c443"><div class="ttname"><a href="#a60e80c5c819f515bce66390d3aa9c443">NModel::CSkinnedMesh::m_fObjectRadius</a></div><div class="ttdeci">float m_fObjectRadius</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:28</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a6cbe342cfdb601c556f6ba8d0637a0b2"><div class="ttname"><a href="#a6cbe342cfdb601c556f6ba8d0637a0b2">NModel::CSkinnedMesh::SetupBoneMatrixPointers</a></div><div class="ttdeci">HRESULT SetupBoneMatrixPointers(LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:372</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a774c8e47119ead813029962602808729"><div class="ttname"><a href="#a774c8e47119ead813029962602808729">NModel::CSkinnedMesh::m_fileDir</a></div><div class="ttdeci">std::string m_fileDir</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:23</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_af4e05fc2a8c4c073d9003f881995a1fc"><div class="ttname"><a href="#af4e05fc2a8c4c073d9003f881995a1fc">NModel::CSkinnedMesh::m_vObjectCenter</a></div><div class="ttdeci">D3DXVECTOR3 m_vObjectCenter</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:27</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a085c522d76283254bf4362f32c4a8689" name="a085c522d76283254bf4362f32c4a8689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a085c522d76283254bf4362f32c4a8689">&#9670;&#160;</a></span>ReleaseAttributeTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::ReleaseAttributeTable </td>
+          <td>(</td>
+          <td class="paramtype">LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrameBase</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  433</span>    {</div>
+<div class="line"><span class="lineno">  434</span>        D3DXFRAME_DERIVED* pFrame = (D3DXFRAME_DERIVED*)pFrameBase;</div>
+<div class="line"><span class="lineno">  435</span>        D3DXMESHCONTAINER_DERIVED* pMeshContainer;</div>
+<div class="line"><span class="lineno">  436</span> </div>
+<div class="line"><span class="lineno">  437</span>        pMeshContainer = (D3DXMESHCONTAINER_DERIVED*)pFrame-&gt;pMeshContainer;</div>
+<div class="line"><span class="lineno">  438</span> </div>
+<div class="line"><span class="lineno">  439</span>        <span class="keywordflow">while</span> (pMeshContainer != NULL) {</div>
+<div class="line"><span class="lineno">  440</span>            <span class="keyword">delete</span>[] pMeshContainer-&gt;pAttributeTable;</div>
+<div class="line"><span class="lineno">  441</span> </div>
+<div class="line"><span class="lineno">  442</span>            pMeshContainer = (D3DXMESHCONTAINER_DERIVED*)pMeshContainer-&gt;pNextMeshContainer;</div>
+<div class="line"><span class="lineno">  443</span>        }</div>
+<div class="line"><span class="lineno">  444</span> </div>
+<div class="line"><span class="lineno">  445</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameSibling != NULL) {</div>
+<div class="line"><span class="lineno">  446</span>            <a class="code hl_function" href="#a085c522d76283254bf4362f32c4a8689">ReleaseAttributeTable</a>(pFrame-&gt;pFrameSibling);</div>
+<div class="line"><span class="lineno">  447</span>        }</div>
+<div class="line"><span class="lineno">  448</span> </div>
+<div class="line"><span class="lineno">  449</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameFirstChild != NULL) {</div>
+<div class="line"><span class="lineno">  450</span>            <a class="code hl_function" href="#a085c522d76283254bf4362f32c4a8689">ReleaseAttributeTable</a>(pFrame-&gt;pFrameFirstChild);</div>
+<div class="line"><span class="lineno">  451</span>        }</div>
+<div class="line"><span class="lineno">  452</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a69aa1c4f30f8d1388b538c858629fa0b" name="a69aa1c4f30f8d1388b538c858629fa0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69aa1c4f30f8d1388b538c858629fa0b">&#9670;&#160;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::Render </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rMatWorld</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   82</span>        {</div>
+<div class="line"><span class="lineno">   83</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTransform(D3DTS_WORLD, (D3DXMATRIX*)&amp;_rMatWorld);</div>
+<div class="line"><span class="lineno">   84</span>            <a class="code hl_function" href="#a93d1b2398c4e598a675a8133864a9cd8">DrawFrame</a>(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(), <a class="code hl_function" href="#ad509c37dbba8387662d58e273ab7fc90">GetFrameRoot</a>());</div>
+<div class="line"><span class="lineno">   85</span>        }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_ad509c37dbba8387662d58e273ab7fc90"><div class="ttname"><a href="#ad509c37dbba8387662d58e273ab7fc90">NModel::CSkinnedMesh::GetFrameRoot</a></div><div class="ttdeci">LPD3DXFRAME GetFrameRoot()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:145</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab213af265d85f773a3fb450ca43e3650"><div class="ttname"><a href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 GetD3DDevice()</div><div class="ttdoc">デバイスを取得</div><div class="ttdef"><b>Definition</b> DirectX_Manager.cpp:95</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7f03e7eb324b593e6e04b93145444753" name="a7f03e7eb324b593e6e04b93145444753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f03e7eb324b593e6e04b93145444753">&#9670;&#160;</a></span>SetExternalAnmFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::SetExternalAnmFrame </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; float &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>_frameInfo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   62</span>        {</div>
+<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">if</span> (_frameInfo.size() != <a class="code hl_variable" href="#a9d3a65ac2a7121bce15218093a15cd79">m_iAnimSetCount</a>) {</div>
+<div class="line"><span class="lineno">   64</span>                assert(<span class="keyword">false</span> &amp;&amp; <span class="stringliteral">&quot;アニメーション数が等しくない&quot;</span>);</div>
+<div class="line"><span class="lineno">   65</span>            }</div>
+<div class="line"><span class="lineno">   66</span>            <a class="code hl_variable" href="#afaea34e28dcfa248c37c5243f03c89d7">m_anmFrame</a>.swap(_frameInfo);</div>
+<div class="line"><span class="lineno">   67</span>            <a class="code hl_variable" href="#a1472d4dd73818d7b083178625640e6e5">m_hasExternalAnmFrame</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   68</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6ffecdfea2940d1cbe6b3c44d4730cda" name="a6ffecdfea2940d1cbe6b3c44d4730cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ffecdfea2940d1cbe6b3c44d4730cda">&#9670;&#160;</a></span>SetIsCollisionActive() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::SetIsCollisionActive </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  113</span>        {</div>
+<div class="line"><span class="lineno">  114</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="#aea2141ab226e440ca119b8bdd1b93869">m_BBOXnum</a>; ++i) {</div>
+<div class="line"><span class="lineno">  115</span>                <a class="code hl_variable" href="#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>[i].SetIsActive(_state);</div>
+<div class="line"><span class="lineno">  116</span>            }</div>
+<div class="line"><span class="lineno">  117</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab286c735e45d69aab52366447350c43f" name="ab286c735e45d69aab52366447350c43f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab286c735e45d69aab52366447350c43f">&#9670;&#160;</a></span>SetIsCollisionActive() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::SetIsCollisionActive </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>_state</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  119</span>        {</div>
+<div class="line"><span class="lineno">  120</span>            <span class="comment">// obbを指定して設定する</span></div>
+<div class="line"><span class="lineno">  121</span>            <a class="code hl_variable" href="#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>[_idx].SetIsActive(_state);</div>
+<div class="line"><span class="lineno">  122</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae21a9511d41e8160f4dbc1605dd38e52" name="ae21a9511d41e8160f4dbc1605dd38e52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae21a9511d41e8160f4dbc1605dd38e52">&#9670;&#160;</a></span>SetTimeDelta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::SetTimeDelta </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>TimeDelta</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  170</span>        {</div>
+<div class="line"><span class="lineno">  171</span>            <a class="code hl_variable" href="#accea8d7adbe65a5dcbad94c1fd59c03c">m_TimeDelta</a> = TimeDelta;</div>
+<div class="line"><span class="lineno">  172</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6cbe342cfdb601c556f6ba8d0637a0b2" name="a6cbe342cfdb601c556f6ba8d0637a0b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cbe342cfdb601c556f6ba8d0637a0b2">&#9670;&#160;</a></span>SetupBoneMatrixPointers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT NModel::CSkinnedMesh::SetupBoneMatrixPointers </td>
+          <td>(</td>
+          <td class="paramtype">LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrame</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  373</span>    {</div>
+<div class="line"><span class="lineno">  374</span>        HRESULT hr;</div>
+<div class="line"><span class="lineno">  375</span> </div>
+<div class="line"><span class="lineno">  376</span>        <span class="comment">// メッシュコンテナが存在するか？</span></div>
+<div class="line"><span class="lineno">  377</span>        <span class="keywordflow">if</span> (pFrame-&gt;pMeshContainer != NULL) {</div>
+<div class="line"><span class="lineno">  378</span>            hr = <a class="code hl_function" href="#a12613c66a4c9d6f10896da61b972b7ec">SetupBoneMatrixPointersOnMesh</a>(pFrame-&gt;pMeshContainer);</div>
+<div class="line"><span class="lineno">  379</span>            <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  380</span>                <span class="keywordflow">return</span> hr;</div>
+<div class="line"><span class="lineno">  381</span>            }</div>
+<div class="line"><span class="lineno">  382</span>        }</div>
+<div class="line"><span class="lineno">  383</span> </div>
+<div class="line"><span class="lineno">  384</span>        <span class="comment">// 兄弟がいるか？</span></div>
+<div class="line"><span class="lineno">  385</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameSibling != NULL) {</div>
+<div class="line"><span class="lineno">  386</span>            hr = <a class="code hl_function" href="#a6cbe342cfdb601c556f6ba8d0637a0b2">SetupBoneMatrixPointers</a>(pFrame-&gt;pFrameSibling);</div>
+<div class="line"><span class="lineno">  387</span>            <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  388</span>                <span class="keywordflow">return</span> hr;</div>
+<div class="line"><span class="lineno">  389</span>            }</div>
+<div class="line"><span class="lineno">  390</span>        }</div>
+<div class="line"><span class="lineno">  391</span> </div>
+<div class="line"><span class="lineno">  392</span>        <span class="comment">// 子供がいるか</span></div>
+<div class="line"><span class="lineno">  393</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameFirstChild != NULL) {</div>
+<div class="line"><span class="lineno">  394</span>            hr = <a class="code hl_function" href="#a6cbe342cfdb601c556f6ba8d0637a0b2">SetupBoneMatrixPointers</a>(pFrame-&gt;pFrameFirstChild);</div>
+<div class="line"><span class="lineno">  395</span>            <span class="keywordflow">if</span> (FAILED(hr)) {</div>
+<div class="line"><span class="lineno">  396</span>                <span class="keywordflow">return</span> hr;</div>
+<div class="line"><span class="lineno">  397</span>            }</div>
+<div class="line"><span class="lineno">  398</span>        }</div>
+<div class="line"><span class="lineno">  399</span> </div>
+<div class="line"><span class="lineno">  400</span>        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><span class="lineno">  401</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a12613c66a4c9d6f10896da61b972b7ec"><div class="ttname"><a href="#a12613c66a4c9d6f10896da61b972b7ec">NModel::CSkinnedMesh::SetupBoneMatrixPointersOnMesh</a></div><div class="ttdeci">HRESULT SetupBoneMatrixPointersOnMesh(LPD3DXMESHCONTAINER pMeshContainerBase)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:326</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a12613c66a4c9d6f10896da61b972b7ec" name="a12613c66a4c9d6f10896da61b972b7ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12613c66a4c9d6f10896da61b972b7ec">&#9670;&#160;</a></span>SetupBoneMatrixPointersOnMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT NModel::CSkinnedMesh::SetupBoneMatrixPointersOnMesh </td>
+          <td>(</td>
+          <td class="paramtype">LPD3DXMESHCONTAINER</td>          <td class="paramname"><span class="paramname"><em>pMeshContainerBase</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  327</span>    {</div>
+<div class="line"><span class="lineno">  328</span>        UINT iBone, cBones;</div>
+<div class="line"><span class="lineno">  329</span>        D3DXFRAME_DERIVED* pFrame;</div>
+<div class="line"><span class="lineno">  330</span> </div>
+<div class="line"><span class="lineno">  331</span>        D3DXMESHCONTAINER_DERIVED* pMeshContainer = (D3DXMESHCONTAINER_DERIVED*)pMeshContainerBase;</div>
+<div class="line"><span class="lineno">  332</span> </div>
+<div class="line"><span class="lineno">  333</span>    <span class="comment">//#ifdef _DEBUG</span></div>
+<div class="line"><span class="lineno">  334</span>    <span class="comment">//  FILE* fp;</span></div>
+<div class="line"><span class="lineno">  335</span>    <span class="comment">//  fopen_s(&amp;fp, &quot;bonename.txt&quot;, &quot;a&quot;);</span></div>
+<div class="line"><span class="lineno">  336</span>    <span class="comment">//#endif</span></div>
+<div class="line"><span class="lineno">  337</span> </div>
+<div class="line"><span class="lineno">  338</span>        <span class="comment">//スキンメッシュがあればボーン行列をセット</span></div>
+<div class="line"><span class="lineno">  339</span>        <span class="keywordflow">if</span> (pMeshContainer-&gt;pSkinInfo != NULL) {</div>
+<div class="line"><span class="lineno">  340</span>            <span class="comment">// ボーン数取得</span></div>
+<div class="line"><span class="lineno">  341</span>            <a class="code hl_variable" href="#a8da761291226da987c13eedbf7b83a0a">m_BoneNum</a> = cBones = pMeshContainer-&gt;pSkinInfo-&gt;GetNumBones();</div>
+<div class="line"><span class="lineno">  342</span> </div>
+<div class="line"><span class="lineno">  343</span>            <span class="comment">// ボーン数分　行列エリアを確保</span></div>
+<div class="line"><span class="lineno">  344</span>            pMeshContainer-&gt;ppBoneMatrixPtrs = <span class="keyword">new</span> D3DXMATRIX*[cBones];</div>
+<div class="line"><span class="lineno">  345</span>            <span class="keywordflow">if</span> (pMeshContainer-&gt;ppBoneMatrixPtrs == NULL) {                 <span class="comment">// メモリの取得エラー</span></div>
+<div class="line"><span class="lineno">  346</span>                <span class="keywordflow">return</span> E_OUTOFMEMORY;</div>
+<div class="line"><span class="lineno">  347</span>            }</div>
+<div class="line"><span class="lineno">  348</span> </div>
+<div class="line"><span class="lineno">  349</span>            <span class="comment">// ボーン数分ループ</span></div>
+<div class="line"><span class="lineno">  350</span>            <span class="keywordflow">for</span> (iBone = 0; iBone &lt; cBones; iBone++) {</div>
+<div class="line"><span class="lineno">  351</span>            <span class="comment">//#ifdef _DEBUG</span></div>
+<div class="line"><span class="lineno">  352</span>            <span class="comment">//  fprintf(fp, &quot; (%d) %s \n&quot;, iBone, pMeshContainer-&gt;pSkinInfo-&gt;GetBoneName(iBone));</span></div>
+<div class="line"><span class="lineno">  353</span>            <span class="comment">//#endif</span></div>
+<div class="line"><span class="lineno">  354</span>                <span class="comment">// 指定番号のボーンを持つフレームを探す</span></div>
+<div class="line"><span class="lineno">  355</span>                pFrame = (D3DXFRAME_DERIVED*)D3DXFrameFind(<a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>, pMeshContainer-&gt;pSkinInfo-&gt;GetBoneName(iBone));</div>
+<div class="line"><span class="lineno">  356</span>                <span class="keywordflow">if</span> (pFrame == NULL) {       <span class="comment">// 見つからなかった場合</span></div>
+<div class="line"><span class="lineno">  357</span>                    <span class="keywordflow">return</span> E_FAIL;</div>
+<div class="line"><span class="lineno">  358</span>                }</div>
+<div class="line"><span class="lineno">  359</span>                <span class="comment">// 親子関係を考慮した行列（ボーン行列をすべてかけたもの）のポインタをメッシュコンテナにセット</span></div>
+<div class="line"><span class="lineno">  360</span>                pMeshContainer-&gt;ppBoneMatrixPtrs[iBone] = &amp;pFrame-&gt;CombinedTransformMatrix;</div>
+<div class="line"><span class="lineno">  361</span>            }</div>
+<div class="line"><span class="lineno">  362</span>        }</div>
+<div class="line"><span class="lineno">  363</span>    <span class="comment">//#ifdef _DEBUG</span></div>
+<div class="line"><span class="lineno">  364</span>    <span class="comment">//  fclose(fp);</span></div>
+<div class="line"><span class="lineno">  365</span>    <span class="comment">//#endif</span></div>
+<div class="line"><span class="lineno">  366</span>        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><span class="lineno">  367</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a743150a4153694d55fdedcdc69056e48" name="a743150a4153694d55fdedcdc69056e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743150a4153694d55fdedcdc69056e48">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::Update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rMatWorld</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   71</span>        {</div>
+<div class="line"><span class="lineno">   72</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="#afa6ff8f2fc4df535340b194d58d8182b">isMotionEnd</a>() &amp;&amp; <span class="keyword">false</span>) {</div>
+<div class="line"><span class="lineno">   73</span>                <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;ResetTime();</div>
+<div class="line"><span class="lineno">   74</span>                <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;SetTrackPosition(0, 0.0);</div>
+<div class="line"><span class="lineno">   75</span>                <a class="code hl_variable" href="#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;AdvanceTime(0.0f, NULL);</div>
+<div class="line"><span class="lineno">   76</span>            }</div>
+<div class="line"><span class="lineno">   77</span>            <a class="code hl_function" href="#a4ed1999d7f36e23dfe43a89f2fc30cb9">UpdateFrameMatrices</a>(<a class="code hl_function" href="#ad509c37dbba8387662d58e273ab7fc90">GetFrameRoot</a>(), (LPD3DXMATRIX)&amp;_rMatWorld);</div>
+<div class="line"><span class="lineno">   78</span>            <a class="code hl_function" href="#a69fe587ff2cdfb3287c3ddabe7e5b2ee">GetAnimationController</a>()-&gt;AdvanceTime(NSystem::MILL_SECOND_PER_FRAME * 0.001, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   79</span>        }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a4ed1999d7f36e23dfe43a89f2fc30cb9"><div class="ttname"><a href="#a4ed1999d7f36e23dfe43a89f2fc30cb9">NModel::CSkinnedMesh::UpdateFrameMatrices</a></div><div class="ttdeci">void UpdateFrameMatrices(LPD3DXFRAME pFrameBase, LPD3DXMATRIX pParentMatrix)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:406</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a69fe587ff2cdfb3287c3ddabe7e5b2ee"><div class="ttname"><a href="#a69fe587ff2cdfb3287c3ddabe7e5b2ee">NModel::CSkinnedMesh::GetAnimationController</a></div><div class="ttdeci">LPD3DXANIMATIONCONTROLLER GetAnimationController()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:151</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_afa6ff8f2fc4df535340b194d58d8182b"><div class="ttname"><a href="#afa6ff8f2fc4df535340b194d58d8182b">NModel::CSkinnedMesh::isMotionEnd</a></div><div class="ttdeci">bool isMotionEnd()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:180</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2e84583419296630baa7b63e9e4cc6ef" name="a2e84583419296630baa7b63e9e4cc6ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e84583419296630baa7b63e9e4cc6ef">&#9670;&#160;</a></span>UpdateBBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::UpdateBBox </td>
+          <td>(</td>
+          <td class="paramtype">LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrameBase</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  593</span>    {</div>
+<div class="line"><span class="lineno">  594</span>        D3DXFRAME_DERIVED* pFrame = (D3DXFRAME_DERIVED*)pFrameBase;</div>
+<div class="line"><span class="lineno">  595</span>        D3DXMESHCONTAINER_DERIVED* pMeshContainer;</div>
+<div class="line"><span class="lineno">  596</span> </div>
+<div class="line"><span class="lineno">  597</span>        <span class="keywordtype">int</span>     bonenum;</div>
+<div class="line"><span class="lineno">  598</span>        D3DXMATRIX matwork;</div>
+<div class="line"><span class="lineno">  599</span> </div>
+<div class="line"><span class="lineno">  600</span>        <span class="keywordflow">if</span> (pFrame-&gt;pMeshContainer != NULL) {</div>
+<div class="line"><span class="lineno">  601</span>            <span class="keywordflow">if</span> (pFrame-&gt;pMeshContainer-&gt;pSkinInfo != NULL) {</div>
+<div class="line"><span class="lineno">  602</span>                <span class="comment">// メッシュコンテナ取得</span></div>
+<div class="line"><span class="lineno">  603</span>                pMeshContainer = (D3DXMESHCONTAINER_DERIVED*)pFrame-&gt;pMeshContainer;</div>
+<div class="line"><span class="lineno">  604</span>                <span class="comment">// ボーン数取得</span></div>
+<div class="line"><span class="lineno">  605</span>                bonenum = pMeshContainer-&gt;pSkinInfo-&gt;GetNumBones();</div>
+<div class="line"><span class="lineno">  606</span>                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; bonenum; i++) {</div>
+<div class="line"><span class="lineno">  607</span>                    <span class="comment">// ボーンオフセット行列×ボーン行列（親子関係を考慮したものに仕上がってる）</span></div>
+<div class="line"><span class="lineno">  608</span>                    matwork = pMeshContainer-&gt;pBoneOffsetMatrices[i] * *pMeshContainer-&gt;ppBoneMatrixPtrs[i];</div>
+<div class="line"><span class="lineno">  609</span>                    <a class="code hl_variable" href="#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>[i].Update(matwork);</div>
+<div class="line"><span class="lineno">  610</span> </div>
+<div class="line"><span class="lineno">  611</span>                    NMath::SMatrix44    matWork44;</div>
+<div class="line"><span class="lineno">  612</span>                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; 4; ++y) {</div>
+<div class="line"><span class="lineno">  613</span>                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; 4; ++x) {</div>
+<div class="line"><span class="lineno">  614</span>                            <span class="comment">//matWork44.flt[y][x] = matwork.m[y][x];</span></div>
+<div class="line"><span class="lineno">  615</span>                            matWork44.<a class="code hl_variable" href="struct_n_math_1_1_s_matrix44.html#a48297fae222d41c03a9c04ccb6e41bf3">flt</a>[y][x] = pMeshContainer-&gt;ppBoneMatrixPtrs[i]-&gt;m[y][x];</div>
+<div class="line"><span class="lineno">  616</span>                        }</div>
+<div class="line"><span class="lineno">  617</span>                    }</div>
+<div class="line"><span class="lineno">  618</span> </div>
+<div class="line"><span class="lineno">  619</span>                    <a class="code hl_variable" href="#ab15c82b9014cbf9de4ea25ee19ddb95a">m_matBone</a>[i] = matWork44;</div>
+<div class="line"><span class="lineno">  620</span>                }</div>
+<div class="line"><span class="lineno">  621</span>            }</div>
+<div class="line"><span class="lineno">  622</span>        }</div>
+<div class="line"><span class="lineno">  623</span> </div>
+<div class="line"><span class="lineno">  624</span>        <span class="comment">//兄弟がいるなら再帰的にフレーム描画</span></div>
+<div class="line"><span class="lineno">  625</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameSibling != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  626</span>            <a class="code hl_function" href="#a2e84583419296630baa7b63e9e4cc6ef">UpdateBBox</a>(pFrame-&gt;pFrameSibling);</div>
+<div class="line"><span class="lineno">  627</span>        }</div>
+<div class="line"><span class="lineno">  628</span> </div>
+<div class="line"><span class="lineno">  629</span>        <span class="comment">//子がいるなら再帰的にフレーム描画</span></div>
+<div class="line"><span class="lineno">  630</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameFirstChild != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  631</span>            <a class="code hl_function" href="#a2e84583419296630baa7b63e9e4cc6ef">UpdateBBox</a>(pFrame-&gt;pFrameFirstChild);</div>
+<div class="line"><span class="lineno">  632</span>        }</div>
+<div class="line"><span class="lineno">  633</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a2e84583419296630baa7b63e9e4cc6ef"><div class="ttname"><a href="#a2e84583419296630baa7b63e9e4cc6ef">NModel::CSkinnedMesh::UpdateBBox</a></div><div class="ttdeci">void UpdateBBox(LPD3DXFRAME pFrameBase)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:592</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_a48297fae222d41c03a9c04ccb6e41bf3"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#a48297fae222d41c03a9c04ccb6e41bf3">NMath::SMatrix44::flt</a></div><div class="ttdeci">std::array&lt; std::array&lt; float, 4 &gt;, 4 &gt; flt</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:28</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4ed1999d7f36e23dfe43a89f2fc30cb9" name="a4ed1999d7f36e23dfe43a89f2fc30cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed1999d7f36e23dfe43a89f2fc30cb9">&#9670;&#160;</a></span>UpdateFrameMatrices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CSkinnedMesh::UpdateFrameMatrices </td>
+          <td>(</td>
+          <td class="paramtype">LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrameBase</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPD3DXMATRIX</td>          <td class="paramname"><span class="paramname"><em>pParentMatrix</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  407</span>    {</div>
+<div class="line"><span class="lineno">  408</span>        D3DXFRAME_DERIVED* pFrame = (D3DXFRAME_DERIVED*)pFrameBase;</div>
+<div class="line"><span class="lineno">  409</span> </div>
+<div class="line"><span class="lineno">  410</span>        <span class="keywordflow">if</span> (pParentMatrix != NULL) {</div>
+<div class="line"><span class="lineno">  411</span>            D3DXMatrixMultiply(&amp;pFrame-&gt;CombinedTransformMatrix, &amp;pFrame-&gt;TransformationMatrix, pParentMatrix);</div>
+<div class="line"><span class="lineno">  412</span>        }</div>
+<div class="line"><span class="lineno">  413</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  414</span>            pFrame-&gt;CombinedTransformMatrix = pFrame-&gt;TransformationMatrix;</div>
+<div class="line"><span class="lineno">  415</span> </div>
+<div class="line"><span class="lineno">  416</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameSibling != NULL)</div>
+<div class="line"><span class="lineno">  417</span>            <a class="code hl_function" href="#a4ed1999d7f36e23dfe43a89f2fc30cb9">UpdateFrameMatrices</a>(pFrame-&gt;pFrameSibling, pParentMatrix);</div>
+<div class="line"><span class="lineno">  418</span> </div>
+<div class="line"><span class="lineno">  419</span>        <span class="keywordflow">if</span> (pFrame-&gt;pFrameFirstChild != NULL)</div>
+<div class="line"><span class="lineno">  420</span>            <a class="code hl_function" href="#a4ed1999d7f36e23dfe43a89f2fc30cb9">UpdateFrameMatrices</a>(pFrame-&gt;pFrameFirstChild, &amp;pFrame-&gt;CombinedTransformMatrix);</div>
+<div class="line"><span class="lineno">  421</span> </div>
+<div class="line"><span class="lineno">  422</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="#a8da761291226da987c13eedbf7b83a0a">m_BoneNum</a>; i++) {</div>
+<div class="line"><span class="lineno">  423</span>            <a class="code hl_variable" href="#ab15c82b9014cbf9de4ea25ee19ddb95a">m_matBone</a>[i].SetIdentity();</div>
+<div class="line"><span class="lineno">  424</span>        }</div>
+<div class="line"><span class="lineno">  425</span>        <a class="code hl_function" href="#a2e84583419296630baa7b63e9e4cc6ef">UpdateBBox</a>(<a class="code hl_variable" href="#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>);</div>
+<div class="line"><span class="lineno">  426</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a606fdafb3417555f45c6f75b140806b1" name="a606fdafb3417555f45c6f75b140806b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a606fdafb3417555f45c6f75b140806b1">&#9670;&#160;</a></span>m_AllFrameContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;LPD3DXFRAME&gt; NModel::CSkinnedMesh::m_AllFrameContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52bb973150ac3e0b9409605c4f2393ba" name="a52bb973150ac3e0b9409605c4f2393ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52bb973150ac3e0b9409605c4f2393ba">&#9670;&#160;</a></span>m_AnimationSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXANIMATIONSET NModel::CSkinnedMesh::m_AnimationSet</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaea34e28dcfa248c37c5243f03c89d7" name="afaea34e28dcfa248c37c5243f03c89d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaea34e28dcfa248c37c5243f03c89d7">&#9670;&#160;</a></span>m_anmFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;float&gt; NModel::CSkinnedMesh::m_anmFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea2141ab226e440ca119b8bdd1b93869" name="aea2141ab226e440ca119b8bdd1b93869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2141ab226e440ca119b8bdd1b93869">&#9670;&#160;</a></span>m_BBOXnum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NModel::CSkinnedMesh::m_BBOXnum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8da761291226da987c13eedbf7b83a0a" name="a8da761291226da987c13eedbf7b83a0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da761291226da987c13eedbf7b83a0a">&#9670;&#160;</a></span>m_BoneNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NModel::CSkinnedMesh::m_BoneNum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78f6d0d108c2511cb9cbedb5d5329a79" name="a78f6d0d108c2511cb9cbedb5d5329a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78f6d0d108c2511cb9cbedb5d5329a79">&#9670;&#160;</a></span>m_cHierarchy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_model_1_1_c_hierarchy.html">CHierarchy</a> NModel::CSkinnedMesh::m_cHierarchy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4c7b972c99c9870e10273828c1e5ca7" name="aa4c7b972c99c9870e10273828c1e5ca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4c7b972c99c9870e10273828c1e5ca7">&#9670;&#160;</a></span>m_endtime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NModel::CSkinnedMesh::m_endtime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a774c8e47119ead813029962602808729" name="a774c8e47119ead813029962602808729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774c8e47119ead813029962602808729">&#9670;&#160;</a></span>m_fileDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NModel::CSkinnedMesh::m_fileDir</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60e80c5c819f515bce66390d3aa9c443" name="a60e80c5c819f515bce66390d3aa9c443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60e80c5c819f515bce66390d3aa9c443">&#9670;&#160;</a></span>m_fObjectRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NModel::CSkinnedMesh::m_fObjectRadius</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1472d4dd73818d7b083178625640e6e5" name="a1472d4dd73818d7b083178625640e6e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1472d4dd73818d7b083178625640e6e5">&#9670;&#160;</a></span>m_hasExternalAnmFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CSkinnedMesh::m_hasExternalAnmFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d3a65ac2a7121bce15218093a15cd79" name="a9d3a65ac2a7121bce15218093a15cd79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d3a65ac2a7121bce15218093a15cd79">&#9670;&#160;</a></span>m_iAnimSetCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NModel::CSkinnedMesh::m_iAnimSetCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab15c82b9014cbf9de4ea25ee19ddb95a" name="ab15c82b9014cbf9de4ea25ee19ddb95a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15c82b9014cbf9de4ea25ee19ddb95a">&#9670;&#160;</a></span>m_matBone</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>* NModel::CSkinnedMesh::m_matBone</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d1709e28c078d6c8b4aa31c7afc185e" name="a2d1709e28c078d6c8b4aa31c7afc185e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d1709e28c078d6c8b4aa31c7afc185e">&#9670;&#160;</a></span>m_OBBSkin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_o_b_b.html">COBB</a>* NModel::CSkinnedMesh::m_OBBSkin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c90c9892384d85572b0c1afa48e5294" name="a1c90c9892384d85572b0c1afa48e5294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c90c9892384d85572b0c1afa48e5294">&#9670;&#160;</a></span>m_pAnimController</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXANIMATIONCONTROLLER NModel::CSkinnedMesh::m_pAnimController</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a46455ac077eb59bf87c586e7ede8ad" name="a2a46455ac077eb59bf87c586e7ede8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a46455ac077eb59bf87c586e7ede8ad">&#9670;&#160;</a></span>m_pFrameRoot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXFRAME NModel::CSkinnedMesh::m_pFrameRoot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf5d1622262db90e07d4a55e7e0821f5" name="adf5d1622262db90e07d4a55e7e0821f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5d1622262db90e07d4a55e7e0821f5">&#9670;&#160;</a></span>m_ppAnimSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXANIMATIONSET* NModel::CSkinnedMesh::m_ppAnimSet</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accea8d7adbe65a5dcbad94c1fd59c03c" name="accea8d7adbe65a5dcbad94c1fd59c03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accea8d7adbe65a5dcbad94c1fd59c03c">&#9670;&#160;</a></span>m_TimeDelta</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double NModel::CSkinnedMesh::m_TimeDelta</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80af6333dbf0d54990dadde0f3ddd62e" name="a80af6333dbf0d54990dadde0f3ddd62e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80af6333dbf0d54990dadde0f3ddd62e">&#9670;&#160;</a></span>m_uiAnimID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int NModel::CSkinnedMesh::m_uiAnimID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4e05fc2a8c4c073d9003f881995a1fc" name="af4e05fc2a8c4c073d9003f881995a1fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e05fc2a8c4c073d9003f881995a1fc">&#9670;&#160;</a></span>m_vObjectCenter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 NModel::CSkinnedMesh::m_vObjectCenter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Model/XFile/<a class="el" href="_model___skinned_mesh_8h_source.html">Model_SkinnedMesh.h</a></li>
+<li>Sources/Framework/Model/XFile/<a class="el" href="_model___skinned_mesh_8cpp.html">Model_SkinnedMesh.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_model.html">NModel</a></li><li class="navelem"><a href="class_n_model_1_1_c_skinned_mesh.html">CSkinnedMesh</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

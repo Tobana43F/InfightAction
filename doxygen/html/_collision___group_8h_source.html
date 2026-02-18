@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameFramework/Collision/Holder/Collision_Group.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_collision___group_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Collision_Group.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_collision___group_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="json11_8hpp.html">_External\json11\json11.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_collision___game_8h.html">Collision_Game.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include    &quot;<a class="code" href="_model___object_8h.html">Model\Model_Object.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include    &quot;<a class="code" href="_collision___type_data_include_8h.html">TypeData\Collision_TypeDataInclude.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_collision.html">NCollision</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html">   16</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_collision_1_1_c_group.html#ace8b3d18b6308fdf15ad803aec2e6744">CGroup</a> final {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a87dd5fbf1abb912f5df522fad2d434f3">   20</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="class_n_collision_1_1_c_group.html#a87dd5fbf1abb912f5df522fad2d434f3">ModelData</a> = <a class="code hl_class" href="class_n_model_1_1_c_object.html">NModel::CObject</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2f">   24</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2f">EType</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fae94aa94d0651860a41c293634ade7756">   25</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fae94aa94d0651860a41c293634ade7756">NONE</a>,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fa667a5894a6e9f3cb91038f7c9b9ad3ce">   26</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fa667a5894a6e9f3cb91038f7c9b9ad3ce">ATTACK</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fab5f7b8efe35afc411cb4c6e710762439">   27</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fab5f7b8efe35afc411cb4c6e710762439">DAMAGE</a>,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fae3c5519319ea6705baec64402b7073ea">   28</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fae3c5519319ea6705baec64402b7073ea">MAX</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        };</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_group.html#ab443a6a1bcd40884cb419a461f4e8354">Load</a>(</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <a class="code hl_class" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a>*   _pRefOwner,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keyword">const</span> uint              _groupID,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>*             _pCollisionInfoFilePath,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="class_n_collision_1_1_c_group.html#a87dd5fbf1abb912f5df522fad2d434f3">ModelData</a>*        _pRefModelData);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a25d0ba99240859038c5c65d5990793cb">Init</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_group.html#afc8b9e5bc4a43fd9ef6edf5fa4ca45f9">Update</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_group.html#ac8cd0331334d57acf477cef9d78238cb">RenderDebug</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="comment">// アクセッサ</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a5a59eb223ac27f485155460fd21132cb">   48</a></span>        <span class="keywordtype">bool</span>            <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a5a59eb223ac27f485155460fd21132cb">GetIsEnable</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a4516b68efa6ff61b4085ce5823290680">m_isEnable</a>; }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a3e5de72d5e34a7045bd39ce2682f731d">   49</a></span>        <span class="keywordtype">bool</span>            <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a3e5de72d5e34a7045bd39ce2682f731d">GetIsHit</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#aa487f1393e46a3ced364955f021dff17">m_isHit</a>; }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#acc1d023beaf88885d2bcb06f5a875cf5">   50</a></span>        uint            <a class="code hl_function" href="class_n_collision_1_1_c_group.html#acc1d023beaf88885d2bcb06f5a875cf5">GetGroupID</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#acdc422772bdea34d9510f6338c1bc9ef">m_groupID</a>; }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a9b1a2ff8225f1dc2bee5767762ab1e70">   51</a></span>        uint            <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a9b1a2ff8225f1dc2bee5767762ab1e70">GetEventFrame</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a02c3e0728e2c9043c216a35fdfebfc38">m_eventFrame</a>; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a3ae4a8facbf380fff9aff9cfcc514633">   52</a></span>        <a class="code hl_enumeration" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2f">EType</a>           <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a3ae4a8facbf380fff9aff9cfcc514633">GetType</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a1432784ffc02981df4e70f4308037550">m_colType</a>; }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#af1205fa740df2b2c4b377f820c568ab1">   53</a></span>        uint            <a class="code hl_function" href="class_n_collision_1_1_c_group.html#af1205fa740df2b2c4b377f820c568ab1">GetCollisionCount</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a5aa318234f64399401929d6f744b39cd">m_colGameCount</a>; }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_n_collision_1_1_c_attack_type_data.html">CAttackTypeData</a>&amp;  <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a9286f08330fb5210effe850fa53aee81">GetAttackTypeData</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">const</span> <a class="code hl_class" href="class_n_collision_1_1_c_damage_type_data.html">CDamageTypeData</a>&amp;  <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a17f8c481284caf2fcf419497bf55facc">GetDamageTypeData</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">void</span>            <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a074d39c2410a85b7953f37b81ed468cb">SetIsEnable</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a6437dea717b8da23600b84b5e33df1d8">   60</a></span>        <span class="keywordtype">void</span>            <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a6437dea717b8da23600b84b5e33df1d8">SetIsHit</a>() { <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#aa487f1393e46a3ced364955f021dff17">m_isHit</a> = <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a79549f395991a877bc9b135e238686c6">   63</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_game.html">CGame</a>&amp;          <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a79549f395991a877bc9b135e238686c6">GetCollision</a>(uint _idx) { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a9a21ab3e75850594f123943e96df0097">m_colGames</a>[_idx]; }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="comment">// プログラム依存データ</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a4516b68efa6ff61b4085ce5823290680">   67</a></span>        <span class="keywordtype">bool</span>                    <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a4516b68efa6ff61b4085ce5823290680">m_isEnable</a>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#aa487f1393e46a3ced364955f021dff17">   68</a></span>        <span class="keywordtype">bool</span>                    <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#aa487f1393e46a3ced364955f021dff17">m_isHit</a>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#acdc422772bdea34d9510f6338c1bc9ef">   69</a></span>        uint                    <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#acdc422772bdea34d9510f6338c1bc9ef">m_groupID</a>;          <span class="comment">// シーケンス内のグループを特定する識別子</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a8c705ea8af5ba0bb319e09c079a6800b">   70</a></span>        <span class="keywordtype">bool</span>                    <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a8c705ea8af5ba0bb319e09c079a6800b">m_isPermanent</a>;      <span class="comment">// 永続的有効有効フラグ</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a48d4fe9844808d37036a6b4bdd8fe374">   71</a></span>        uint                    <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a48d4fe9844808d37036a6b4bdd8fe374">m_curEnableFrame</a>;   <span class="comment">// 現在の有効フレーム(有効フレーム残り時間)</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="comment">// プログラム非依存データ</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="comment">// Groupクラスの基本的な情報</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a02c3e0728e2c9043c216a35fdfebfc38">   75</a></span>        uint                    <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a02c3e0728e2c9043c216a35fdfebfc38">m_eventFrame</a>;       <span class="comment">// 当たり判定が有効になるまでの時間</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a52cdf8a2fc65b50c3ba3a0beddfecaef">   76</a></span>        uint                    <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a52cdf8a2fc65b50c3ba3a0beddfecaef">m_enableFrame</a>;      <span class="comment">// 有効時間(EventFrameからの有効時間)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a1432784ffc02981df4e70f4308037550">   77</a></span>        <a class="code hl_enumeration" href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2f">EType</a>                   <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a1432784ffc02981df4e70f4308037550">m_colType</a>;          <span class="comment">// 当たり判定情報</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="comment">// タイプによる情報(m_colTypeに対応した情報のみ有効)</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#ac3152b49ed89fdf4daee0c86d186aea9">   80</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_none_type_data.html">CNoneTypeData</a>           <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#ac3152b49ed89fdf4daee0c86d186aea9">m_typeDataNone</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a9aa6aa678ccf1b89d7b481f09525f530">   81</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_attack_type_data.html">CAttackTypeData</a>         <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a9aa6aa678ccf1b89d7b481f09525f530">m_typeDataAttack</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#ad9ccf5e7f0a376ff70be04f81daa35a2">   82</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_damage_type_data.html">CDamageTypeData</a>         <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#ad9ccf5e7f0a376ff70be04f81daa35a2">m_typeDataDamage</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="comment">// あたり判定情報群</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a5aa318234f64399401929d6f744b39cd">   85</a></span>        uint                    <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a5aa318234f64399401929d6f744b39cd">m_colGameCount</a>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_group.html#a9a21ab3e75850594f123943e96df0097">   86</a></span>        std::vector&lt;CGame&gt;      <a class="code hl_variable" href="class_n_collision_1_1_c_group.html#a9a21ab3e75850594f123943e96df0097">m_colGames</a>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_group.html#afcfbd40aa5848b1ef3e34be4413b4f92">LoadBaseData</a>(</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_class" href="classjson11_1_1_json.html">json11::Json</a>&amp;   _groupData,</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            uint            _groupID);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a3d3d96dafa1143d3dc51fc9f5117da4c">LoadAddData</a>(<a class="code hl_class" href="classjson11_1_1_json.html">json11::Json</a>&amp;   _groupData);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a6ff8492caf97bf57b1416686991ede04">SetCollisionGameEnable</a>(<span class="keywordtype">bool</span> _state);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <a class="code hl_function" href="class_n_collision_1_1_c_group.html#ace8b3d18b6308fdf15ad803aec2e6744">CGroup</a>();</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <a class="code hl_function" href="class_n_collision_1_1_c_group.html#a2279fd6fdac8bdad83c48d882d623184">~CGroup</a>();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    };</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+<div class="ttc" id="a_collision___game_8h_html"><div class="ttname"><a href="_collision___game_8h.html">Collision_Game.h</a></div></div>
+<div class="ttc" id="a_collision___type_data_include_8h_html"><div class="ttname"><a href="_collision___type_data_include_8h.html">Collision_TypeDataInclude.h</a></div></div>
+<div class="ttc" id="a_model___object_8h_html"><div class="ttname"><a href="_model___object_8h.html">Model_Object.h</a></div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html">NCollision::CAttackTypeData</a></div><div class="ttdoc">Attackタイプのあたり判定データ</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:9</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_damage_type_data_html"><div class="ttname"><a href="class_n_collision_1_1_c_damage_type_data.html">NCollision::CDamageTypeData</a></div><div class="ttdoc">Damageタイプのあたり判定データ</div><div class="ttdef"><b>Definition</b> Collision_TypeDataDamage.h:13</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_game_html"><div class="ttname"><a href="class_n_collision_1_1_c_game.html">NCollision::CGame</a></div><div class="ttdoc">ゲーム内で使用する当たり判定(1つのOBBを管理)</div><div class="ttdef"><b>Definition</b> Collision_Game.h:13</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a02c3e0728e2c9043c216a35fdfebfc38"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a02c3e0728e2c9043c216a35fdfebfc38">NCollision::CGroup::m_eventFrame</a></div><div class="ttdeci">uint m_eventFrame</div><div class="ttdef"><b>Definition</b> Collision_Group.h:75</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a074d39c2410a85b7953f37b81ed468cb"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a074d39c2410a85b7953f37b81ed468cb">NCollision::CGroup::SetIsEnable</a></div><div class="ttdeci">void SetIsEnable()</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:189</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a1432784ffc02981df4e70f4308037550"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a1432784ffc02981df4e70f4308037550">NCollision::CGroup::m_colType</a></div><div class="ttdeci">EType m_colType</div><div class="ttdef"><b>Definition</b> Collision_Group.h:77</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a17f8c481284caf2fcf419497bf55facc"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a17f8c481284caf2fcf419497bf55facc">NCollision::CGroup::GetDamageTypeData</a></div><div class="ttdeci">const CDamageTypeData &amp; GetDamageTypeData() const</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:183</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a2279fd6fdac8bdad83c48d882d623184"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a2279fd6fdac8bdad83c48d882d623184">NCollision::CGroup::~CGroup</a></div><div class="ttdeci">~CGroup()</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:63</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a25d0ba99240859038c5c65d5990793cb"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a25d0ba99240859038c5c65d5990793cb">NCollision::CGroup::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">初期化</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:123</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a3ae4a8facbf380fff9aff9cfcc514633"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a3ae4a8facbf380fff9aff9cfcc514633">NCollision::CGroup::GetType</a></div><div class="ttdeci">EType GetType() const</div><div class="ttdef"><b>Definition</b> Collision_Group.h:52</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a3d3d96dafa1143d3dc51fc9f5117da4c"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a3d3d96dafa1143d3dc51fc9f5117da4c">NCollision::CGroup::LoadAddData</a></div><div class="ttdeci">void LoadAddData(json11::Json &amp;_groupData)</div><div class="ttdoc">継承後の追加情報を読み込む</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:240</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a3e5de72d5e34a7045bd39ce2682f731d"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a3e5de72d5e34a7045bd39ce2682f731d">NCollision::CGroup::GetIsHit</a></div><div class="ttdeci">bool GetIsHit() const</div><div class="ttdef"><b>Definition</b> Collision_Group.h:49</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a4516b68efa6ff61b4085ce5823290680"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a4516b68efa6ff61b4085ce5823290680">NCollision::CGroup::m_isEnable</a></div><div class="ttdeci">bool m_isEnable</div><div class="ttdef"><b>Definition</b> Collision_Group.h:67</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a48d4fe9844808d37036a6b4bdd8fe374"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a48d4fe9844808d37036a6b4bdd8fe374">NCollision::CGroup::m_curEnableFrame</a></div><div class="ttdeci">uint m_curEnableFrame</div><div class="ttdef"><b>Definition</b> Collision_Group.h:71</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a52cdf8a2fc65b50c3ba3a0beddfecaef"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a52cdf8a2fc65b50c3ba3a0beddfecaef">NCollision::CGroup::m_enableFrame</a></div><div class="ttdeci">uint m_enableFrame</div><div class="ttdef"><b>Definition</b> Collision_Group.h:76</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a5a59eb223ac27f485155460fd21132cb"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a5a59eb223ac27f485155460fd21132cb">NCollision::CGroup::GetIsEnable</a></div><div class="ttdeci">bool GetIsEnable() const</div><div class="ttdef"><b>Definition</b> Collision_Group.h:48</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a5aa318234f64399401929d6f744b39cd"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a5aa318234f64399401929d6f744b39cd">NCollision::CGroup::m_colGameCount</a></div><div class="ttdeci">uint m_colGameCount</div><div class="ttdef"><b>Definition</b> Collision_Group.h:85</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a6437dea717b8da23600b84b5e33df1d8"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a6437dea717b8da23600b84b5e33df1d8">NCollision::CGroup::SetIsHit</a></div><div class="ttdeci">void SetIsHit()</div><div class="ttdef"><b>Definition</b> Collision_Group.h:60</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a6ff8492caf97bf57b1416686991ede04"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a6ff8492caf97bf57b1416686991ede04">NCollision::CGroup::SetCollisionGameEnable</a></div><div class="ttdeci">void SetCollisionGameEnable(bool _state)</div><div class="ttdoc">グループに属するあたり判定をすべての有効状態を変更する</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:262</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a79549f395991a877bc9b135e238686c6"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a79549f395991a877bc9b135e238686c6">NCollision::CGroup::GetCollision</a></div><div class="ttdeci">CGame &amp; GetCollision(uint _idx)</div><div class="ttdoc">当たり判定データを取得する</div><div class="ttdef"><b>Definition</b> Collision_Group.h:63</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a87dd5fbf1abb912f5df522fad2d434f3"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a87dd5fbf1abb912f5df522fad2d434f3">NCollision::CGroup::ModelData</a></div><div class="ttdeci">NModel::CObject ModelData</div><div class="ttdoc">参照するモデルデータの型</div><div class="ttdef"><b>Definition</b> Collision_Group.h:20</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a8c705ea8af5ba0bb319e09c079a6800b"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a8c705ea8af5ba0bb319e09c079a6800b">NCollision::CGroup::m_isPermanent</a></div><div class="ttdeci">bool m_isPermanent</div><div class="ttdef"><b>Definition</b> Collision_Group.h:70</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a9286f08330fb5210effe850fa53aee81"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a9286f08330fb5210effe850fa53aee81">NCollision::CGroup::GetAttackTypeData</a></div><div class="ttdeci">const CAttackTypeData &amp; GetAttackTypeData() const</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:177</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a9a21ab3e75850594f123943e96df0097"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a9a21ab3e75850594f123943e96df0097">NCollision::CGroup::m_colGames</a></div><div class="ttdeci">std::vector&lt; CGame &gt; m_colGames</div><div class="ttdef"><b>Definition</b> Collision_Group.h:86</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a9aa6aa678ccf1b89d7b481f09525f530"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a9aa6aa678ccf1b89d7b481f09525f530">NCollision::CGroup::m_typeDataAttack</a></div><div class="ttdeci">CAttackTypeData m_typeDataAttack</div><div class="ttdef"><b>Definition</b> Collision_Group.h:81</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_a9b1a2ff8225f1dc2bee5767762ab1e70"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#a9b1a2ff8225f1dc2bee5767762ab1e70">NCollision::CGroup::GetEventFrame</a></div><div class="ttdeci">uint GetEventFrame() const</div><div class="ttdef"><b>Definition</b> Collision_Group.h:51</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_aa487f1393e46a3ced364955f021dff17"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#aa487f1393e46a3ced364955f021dff17">NCollision::CGroup::m_isHit</a></div><div class="ttdeci">bool m_isHit</div><div class="ttdef"><b>Definition</b> Collision_Group.h:68</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_ab443a6a1bcd40884cb419a461f4e8354"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#ab443a6a1bcd40884cb419a461f4e8354">NCollision::CGroup::Load</a></div><div class="ttdeci">void Load(NObject::CGameObject *_pRefOwner, const uint _groupID, const char *_pCollisionInfoFilePath, const ModelData *_pRefModelData)</div><div class="ttdoc">読み込み</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:71</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_ac3152b49ed89fdf4daee0c86d186aea9"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#ac3152b49ed89fdf4daee0c86d186aea9">NCollision::CGroup::m_typeDataNone</a></div><div class="ttdeci">CNoneTypeData m_typeDataNone</div><div class="ttdef"><b>Definition</b> Collision_Group.h:80</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_ac8cd0331334d57acf477cef9d78238cb"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#ac8cd0331334d57acf477cef9d78238cb">NCollision::CGroup::RenderDebug</a></div><div class="ttdeci">void RenderDebug()</div><div class="ttdoc">デバッグ用の描画</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:170</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_acc1d023beaf88885d2bcb06f5a875cf5"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#acc1d023beaf88885d2bcb06f5a875cf5">NCollision::CGroup::GetGroupID</a></div><div class="ttdeci">uint GetGroupID() const</div><div class="ttdef"><b>Definition</b> Collision_Group.h:50</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_acdc422772bdea34d9510f6338c1bc9ef"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#acdc422772bdea34d9510f6338c1bc9ef">NCollision::CGroup::m_groupID</a></div><div class="ttdeci">uint m_groupID</div><div class="ttdef"><b>Definition</b> Collision_Group.h:69</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_ace8b3d18b6308fdf15ad803aec2e6744"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#ace8b3d18b6308fdf15ad803aec2e6744">NCollision::CGroup::CGroup</a></div><div class="ttdeci">CGroup()</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:49</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_ad9ccf5e7f0a376ff70be04f81daa35a2"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#ad9ccf5e7f0a376ff70be04f81daa35a2">NCollision::CGroup::m_typeDataDamage</a></div><div class="ttdeci">CDamageTypeData m_typeDataDamage</div><div class="ttdef"><b>Definition</b> Collision_Group.h:82</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_af1205fa740df2b2c4b377f820c568ab1"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#af1205fa740df2b2c4b377f820c568ab1">NCollision::CGroup::GetCollisionCount</a></div><div class="ttdeci">uint GetCollisionCount() const</div><div class="ttdef"><b>Definition</b> Collision_Group.h:53</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_af3d503e263815867d2c4c0e03c0e8b2f"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2f">NCollision::CGroup::EType</a></div><div class="ttdeci">EType</div><div class="ttdoc">判定属性をあらわすID</div><div class="ttdef"><b>Definition</b> Collision_Group.h:24</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_af3d503e263815867d2c4c0e03c0e8b2fa667a5894a6e9f3cb91038f7c9b9ad3ce"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fa667a5894a6e9f3cb91038f7c9b9ad3ce">NCollision::CGroup::ATTACK</a></div><div class="ttdeci">@ ATTACK</div><div class="ttdef"><b>Definition</b> Collision_Group.h:26</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_af3d503e263815867d2c4c0e03c0e8b2fab5f7b8efe35afc411cb4c6e710762439"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fab5f7b8efe35afc411cb4c6e710762439">NCollision::CGroup::DAMAGE</a></div><div class="ttdeci">@ DAMAGE</div><div class="ttdef"><b>Definition</b> Collision_Group.h:27</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_af3d503e263815867d2c4c0e03c0e8b2fae3c5519319ea6705baec64402b7073ea"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fae3c5519319ea6705baec64402b7073ea">NCollision::CGroup::MAX</a></div><div class="ttdeci">@ MAX</div><div class="ttdef"><b>Definition</b> Collision_Group.h:28</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_af3d503e263815867d2c4c0e03c0e8b2fae94aa94d0651860a41c293634ade7756"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#af3d503e263815867d2c4c0e03c0e8b2fae94aa94d0651860a41c293634ade7756">NCollision::CGroup::NONE</a></div><div class="ttdeci">@ NONE</div><div class="ttdef"><b>Definition</b> Collision_Group.h:25</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_afc8b9e5bc4a43fd9ef6edf5fa4ca45f9"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#afc8b9e5bc4a43fd9ef6edf5fa4ca45f9">NCollision::CGroup::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:141</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_group_html_afcfbd40aa5848b1ef3e34be4413b4f92"><div class="ttname"><a href="class_n_collision_1_1_c_group.html#afcfbd40aa5848b1ef3e34be4413b4f92">NCollision::CGroup::LoadBaseData</a></div><div class="ttdeci">void LoadBaseData(json11::Json &amp;_groupData, uint _groupID)</div><div class="ttdoc">このクラスの判定情報を読み込む</div><div class="ttdef"><b>Definition</b> Collision_Group.cpp:199</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_none_type_data_html"><div class="ttname"><a href="class_n_collision_1_1_c_none_type_data.html">NCollision::CNoneTypeData</a></div><div class="ttdoc">Noneタイプのあたり判定データ</div><div class="ttdef"><b>Definition</b> Collision_TypeDataNone.h:11</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html"><div class="ttname"><a href="class_n_model_1_1_c_object.html">NModel::CObject</a></div><div class="ttdoc">描画する数だけ生成するモデルを扱うオブジェクト</div><div class="ttdef"><b>Definition</b> Model_Object.h:15</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a></div><div class="ttdoc">ゲーム内のすべてのオブジェクトの基底クラスとなるクラス</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:8</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html"><div class="ttname"><a href="classjson11_1_1_json.html">json11::Json</a></div><div class="ttdef"><b>Definition</b> json11.hpp:79</div></div>
+<div class="ttc" id="ajson11_8hpp_html"><div class="ttname"><a href="json11_8hpp.html">json11.hpp</a></div></div>
+<div class="ttc" id="anamespace_n_collision_html"><div class="ttname"><a href="namespace_n_collision.html">NCollision</a></div><div class="ttdoc">当たり判定に使用する定義</div><div class="ttdef"><b>Definition</b> Collision_Common.cpp:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_73b2b7c7692df5153c734ea07eeabb57.html">GameFramework</a></li><li class="navelem"><a href="dir_f0b42bc1344eca253e9e5e11898520d1.html">Collision</a></li><li class="navelem"><a href="dir_27f72761b4f547497f2bbb0e0fa81d2b.html">Holder</a></li><li class="navelem"><a href="_collision___group_8h.html">Collision_Group.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

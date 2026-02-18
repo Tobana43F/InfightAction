@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Model/Model_Object.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_model___object_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Model_Object.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_model___object_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;array&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_asset___model_factory_8h.html">Asset\Factory\Asset_ModelFactory.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_model___def_8h.html">Model_Def.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include    &quot;<a class="code" href="_math___type_8h.html">Math\Math_Type.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include    &quot;<a class="code" href="_model___manager_8h.html">Model_Manager.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_model.html">NModel</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html">   15</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_model_1_1_c_object.html#a4a1962f1c1a52234d5d6d2c0f39eff4b">CObject</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#ae6bef07bdcc60bf840e84d64ac42987e">Load</a>(<a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CModelFactory::Key</a> _key);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#ac2bd5826664fcea1458d08a4ee4779db">Release</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a9a106e5861be671c65b70b2aa38a6673">Update</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#aaec31eb56ec85712832728f64c02f356">RenderDebug</a>(<a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _matWorld);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#ae0a16edc9f150947af181adf57e66422">RenderDebugAlpha</a>(<a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _matWorld);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#abe6dadf1585d01358cd44f0c2f27474a">RenderNode</a>(<span class="keyword">const</span> uint _nodeIndex);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#aa860d0ea4d8746170d9d4688159ca2c8">ChangeAnimation</a>(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keyword">const</span> uint      _anmStackIdx,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keyword">const</span> <span class="keywordtype">bool</span>      _isLoop,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">const</span> uint      _interpoleFrame, </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keyword">const</span> <span class="keywordtype">float</span>     _speedFramePerFrame = FLT_MAX);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a3ce56db4c50d34a76a3f83dba4247349">   58</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a3ce56db4c50d34a76a3f83dba4247349">SetAnimationSpeed</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _speedFramePerFrame = 1.0f) { <a class="code hl_variable" href="class_n_model_1_1_c_object.html#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a> = _speedFramePerFrame; }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a70a03eb96f99732d4b1c3b5fe369d8c5">SetAnimationFrame</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _frame);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        DWORD   <a class="code hl_function" href="class_n_model_1_1_c_object.html#a566eea423fdbdd25ae4e656120af5955">GetFVF</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a338a193db0f3f8f21e33fdaf8067a95b">   68</a></span>        <span class="keyword">const</span> <a class="code hl_class" href="class_n_model_1_1_c_manager.html">NModel::CManager</a>* <a class="code hl_function" href="class_n_model_1_1_c_object.html#a338a193db0f3f8f21e33fdaf8067a95b">GetModelManager</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_object.html#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>.get(); }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#abafe3dda6aba3a0f2d97eee345c52185">   71</a></span>        <span class="keyword">const</span> uint <a class="code hl_function" href="class_n_model_1_1_c_object.html#abafe3dda6aba3a0f2d97eee345c52185">GetMeshNodeCount</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_object.html#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>.size(); }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_model_1_1_s_mesh_node.html">SMeshNode</a>&amp;    <a class="code hl_function" href="class_n_model_1_1_c_object.html#a6e0d9ff487be5b63cc2b461381005b62">GetMeshNode</a>(<span class="keyword">const</span> uint _nodeIndex) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#abed9f190601721df77ccdf7070bb5596">GetMeshNodeMatrix</a>(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp;       _rDest,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keyword">const</span> uint              _nodeIndex,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _worldMatrix) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a3a58433eb3305a480f936b2dfa19144d">   86</a></span>        uint    <a class="code hl_function" href="class_n_model_1_1_c_object.html#a3a58433eb3305a480f936b2dfa19144d">GetAnimationIndex</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a>; }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#ad1d061de452a329e577833773d2683f2">   90</a></span>        <span class="keywordtype">float</span>   <a class="code hl_function" href="class_n_model_1_1_c_object.html#ad1d061de452a329e577833773d2683f2">GetAnimationFrame</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a> - <a class="code hl_function" href="class_n_model_1_1_c_object.html#a324a6444f86a7733e553961b6b2a6037">GetAnimationStartFrame</a>(); }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a1c6cec09459fc7b50a6c2154ec1f65ad">   94</a></span>        <span class="keywordtype">float</span>   <a class="code hl_function" href="class_n_model_1_1_c_object.html#a1c6cec09459fc7b50a6c2154ec1f65ad">GetAnimationFrameLoop</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_object.html#ac9800a2ae5ad1219e8e53a7641fa1b37">m_anmFrameLoop</a>; }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordtype">float</span>   <a class="code hl_function" href="class_n_model_1_1_c_object.html#aaeb87a9b961e51b9e1cc58c87fb9b963">GetAnimationFrameLength</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _anmStackIdx = UINT_MAX) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        uint    <a class="code hl_function" href="class_n_model_1_1_c_object.html#a324a6444f86a7733e553961b6b2a6037">GetAnimationStartFrame</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _anmStackIdx = UINT_MAX) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        uint    <a class="code hl_function" href="class_n_model_1_1_c_object.html#aafc79025741899b743fbd5c6d4d211cb">GetAnimationStopFrame</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _anmStackIdx = UINT_MAX) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#af248a451fca7a9dc05673aeb320a4419">  112</a></span>        <span class="keywordtype">bool</span>    <a class="code hl_function" href="class_n_model_1_1_c_object.html#af248a451fca7a9dc05673aeb320a4419">GetIsAnimationEnd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a8efac6479cd0b2e2dc1a78f41d3d8a6b">m_isAnmEnd</a>; }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_model_1_1_c_object.html#ae7a155a73fd57e0c7eba5ad16bc30b20">GetClusterMatrix</a>(</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp;   _rDest,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="keyword">const</span> uint          _clusterIndex) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a47aa737ad7406951f1d04491d30f025e">  121</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> uint   <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a47aa737ad7406951f1d04491d30f025e">CLUSTER_MAX</a> = 255;      <span class="comment">// 対応するボーンの数</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#abb9020ad4363144864a9724bd07032d4">  123</a></span>        <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CModelFactory::SPAsset</a>              <a class="code hl_variable" href="class_n_model_1_1_c_object.html#abb9020ad4363144864a9724bd07032d4">m_pModelManager</a>;        <span class="comment">// モデルファイルの情報</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#ac20dda842453722b1bd3c592b45a7d7f">  124</a></span>        std::vector&lt;SMeshNode&gt;                      <a class="code hl_variable" href="class_n_model_1_1_c_object.html#ac20dda842453722b1bd3c592b45a7d7f">m_meshNodes</a>;            <span class="comment">// 使用したり加工したりするためのモデル情報</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a29fd8d1794a7a21f0fbace397a9baf5e">  126</a></span>        <span class="keywordtype">bool</span>                                        <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a29fd8d1794a7a21f0fbace397a9baf5e">m_hasAnimation</a>;         <span class="comment">// アニメーションがあるフラグ</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a27a439f7a0c0b28611d435b409c9197e">  127</a></span>        uint                                        <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a27a439f7a0c0b28611d435b409c9197e">m_clusterCount</a>;         <span class="comment">// クラスター数</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a0c8816abbade57141f7f1eaa9bc88d67">  128</a></span>        std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;   <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a0c8816abbade57141f7f1eaa9bc88d67">m_matCluster</a>;           <span class="comment">// クラスターの変換行列情報を保持する</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a20a045c914fef024994075f5cf48590d">  129</a></span>        std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;   <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a20a045c914fef024994075f5cf48590d">m_matClusterNode</a>;       <span class="comment">// クラスターの変換行列情報を保持する</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a979d23e45f678532a40f102947b7fc3b">  131</a></span>        std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;   <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a979d23e45f678532a40f102947b7fc3b">m_matInterpoleClusterStart</a>;         <span class="comment">// クラスターの補完開始時の行列を保持する</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a70b5aef9021f088645af24d096428b42">  132</a></span>        std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;   <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a70b5aef9021f088645af24d096428b42">m_matInterpoleClusterEnd</a>;           <span class="comment">// クラスターの補間完了時の行列を保持する</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a6cc6938d4e043bbaa9402508a29bd558">  133</a></span>        std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;   <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a6cc6938d4e043bbaa9402508a29bd558">m_matInterpoleClusterNodeStart</a>;     <span class="comment">// クラスターノードの補完開始時の行列を保持する</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#ada39c4d2f2759f9ea383d793fb2e2d33">  134</a></span>        std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;   <a class="code hl_variable" href="class_n_model_1_1_c_object.html#ada39c4d2f2759f9ea383d793fb2e2d33">m_matInterpoleClusterNodeEnd</a>;       <span class="comment">// クラスターノードの補間完了時の行列を保持する</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a2d906e5795b249dd5b4f4efe543a9eda">  137</a></span>        uint        <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a2d906e5795b249dd5b4f4efe543a9eda">m_anmStackIndex</a>;    <span class="comment">// 現在再生中のアニメーション</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a74d5c4e282fe4c208400ed7eb7b7bfd7">  138</a></span>        FbxLongLong <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a74d5c4e282fe4c208400ed7eb7b7bfd7">m_fbxTimePerFrame</a>;  <span class="comment">// Fbxの1フレームの時間単位</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a7a3ad3c62db2e753d906111ed7737806">  139</a></span>        <span class="keywordtype">float</span>       <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a7a3ad3c62db2e753d906111ed7737806">m_anmFrame</a>;         <span class="comment">// 現在のアニメーションフレーム</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                                        <span class="comment">// ※フレーム数だが小数点を許容する</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#ac9800a2ae5ad1219e8e53a7641fa1b37">  141</a></span>        <span class="keywordtype">float</span>       <a class="code hl_variable" href="class_n_model_1_1_c_object.html#ac9800a2ae5ad1219e8e53a7641fa1b37">m_anmFrameLoop</a>;     <span class="comment">// アニメーションが開始してからの経過時間</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                                        <span class="comment">// ※ 0 始まり、abs(m_anmSpeedFrame)ずつ増える</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                                        <span class="comment">//    必ず 0 以上の値になる。</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#aa674b24b5da4ba37d55df9b22a0020d9">  144</a></span>        <span class="keywordtype">float</span>       <a class="code hl_variable" href="class_n_model_1_1_c_object.html#aa674b24b5da4ba37d55df9b22a0020d9">m_anmSpeedFrame</a>;    <span class="comment">// アニメーションスピード(1フレームで進行するフレーム数)</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                                        <span class="comment">// ※デフォルトは１</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#ac2f4ab48a495cfee70247840678a5b28">  146</a></span>        <span class="keywordtype">bool</span>        <a class="code hl_variable" href="class_n_model_1_1_c_object.html#ac2f4ab48a495cfee70247840678a5b28">m_isLoop</a>;           <span class="comment">// ループするかどうか</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a8efac6479cd0b2e2dc1a78f41d3d8a6b">  147</a></span>        <span class="keywordtype">bool</span>        <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a8efac6479cd0b2e2dc1a78f41d3d8a6b">m_isAnmEnd</a>;         <span class="comment">// アニメーション終了フラグ(ループ時は必ずfalse)</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a6a7a8a3e740cd512ade1729b36407352">  148</a></span>        uint        <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a6a7a8a3e740cd512ade1729b36407352">m_interpoleFrame</a>;           <span class="comment">// 補完時間</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#ac60d8be0899204968b00b890f1099fd6">  149</a></span>        uint        <a class="code hl_variable" href="class_n_model_1_1_c_object.html#ac60d8be0899204968b00b890f1099fd6">m_interpoleFrameCnt</a>;        <span class="comment">// フレームカウンタ</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a984511a1707770703b54a307322ac70c">  150</a></span>        <span class="keywordtype">bool</span>        <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a984511a1707770703b54a307322ac70c">m_isInterpole</a>;              <span class="comment">// アニメーション補完フラグ</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a9157024932882a0fc943b77399e36b18">  151</a></span>        <span class="keywordtype">bool</span>        <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a9157024932882a0fc943b77399e36b18">m_isInterpoleMatrixReady</a>;   <span class="comment">// 補完完了後行列の取得完了フラグ</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a4673e4beff4ef281efc4e63f06fad66a">  152</a></span>        <span class="keywordtype">float</span>       <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a4673e4beff4ef281efc4e63f06fad66a">m_interpoleCompleteFrame</a>;       <span class="comment">// 補間完了後のフレーム</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_object.html#a1b314f3ba02362b930a5f38d69211f20">  153</a></span>        <span class="keywordtype">bool</span>        <a class="code hl_variable" href="class_n_model_1_1_c_object.html#a1b314f3ba02362b930a5f38d69211f20">m_isSetupMatrix</a>;                <span class="comment">// クラスター行列が設定されているフラグ(※生成時の最初のフレームで補間が行われてしまうのを防止するため)</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a88510059c90ad0a04b64927924f40d2a">SetupMeshNode</a>();</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a57bfc9c9f0b4258c8177e7a5f41eac7b">UpdateAnimation</a>();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a1de42a4ab6513b976c1f9bffcc812604">UpdateAnimationFrame</a>();</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a949189ff5d60a7718ec9f95af926e953">UpdateNodeMatrix</a>(</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <a class="code hl_class" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a>&amp;                         _rFbxLoader,</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            <span class="keyword">const</span> <span class="keywordtype">float</span>                                 _rCurFrame);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a4ddab732a363af8d8eb8c076dc4d83ca">UpdateClusterMatrix</a>(</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;&amp;  _rDestClusterMatrix,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;&amp;  _rDestNodeMatrix,</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <a class="code hl_class" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a>&amp;                         _rFbxLoader,</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            <span class="keyword">const</span> uint                                  _clusterCount,</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <span class="keyword">const</span> <span class="keywordtype">float</span>                                 _rCurFrame);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a2b36c7bf77b6a7478d233c4a79eb8ebf">UpdateVertex</a>(</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;&amp;  _rSrc,</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <a class="code hl_class" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a>&amp;                         _rFbxLoader);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a3bacb3963d70956ae7c66008cc9c17a8">CalcInterpoleMatrix</a>(</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;&amp;  _rDestClusterMatrix,</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;&amp;  _rDestNodeMatrix,</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            <a class="code hl_class" href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a>&amp;                         _rFbxLoader,</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            <span class="keyword">const</span> uint                                  _clusterCount,</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>            <span class="keyword">const</span> uint                                  _interpoleFrame);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_object.html#a716c3193161fb64daa0685fe3317ad76">InterpoleMatrix</a>(</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            <span class="keyword">const</span> uint                                  _clusterCount,</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            <span class="keyword">const</span> <span class="keywordtype">float</span>                                 _ratio,</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;&amp;  _destMatrix,</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;&amp;  _startMatrix,</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            std::array&lt;NMath::SMatrix44, CLUSTER_MAX&gt;&amp;  _endMatrix);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <a class="code hl_function" href="class_n_model_1_1_c_object.html#a4a1962f1c1a52234d5d6d2c0f39eff4b">CObject</a>();</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <a class="code hl_function" href="class_n_model_1_1_c_object.html#a5f8ca8071fc8787bee7c13568c816cba">~CObject</a>();</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    };</div>
+</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>}</div>
+<div class="ttc" id="a_asset___model_factory_8h_html"><div class="ttname"><a href="_asset___model_factory_8h.html">Asset_ModelFactory.h</a></div></div>
+<div class="ttc" id="a_math___type_8h_html"><div class="ttname"><a href="_math___type_8h.html">Math_Type.h</a></div></div>
+<div class="ttc" id="a_model___def_8h_html"><div class="ttname"><a href="_model___def_8h.html">Model_Def.h</a></div></div>
+<div class="ttc" id="a_model___manager_8h_html"><div class="ttname"><a href="_model___manager_8h.html">Model_Manager.h</a></div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a42a8f39a038c716e5e95b31ea67b8ece"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CFactory&lt; NModel::CManager, CModelFactory &gt;::SPAsset</a></div><div class="ttdeci">std::shared_ptr&lt; NModel::CManager &gt; SPAsset</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:30</div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a4a6509d6bcd7f624a19f44a25380671e"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CFactory&lt; NModel::CManager, CModelFactory &gt;::Key</a></div><div class="ttdeci">std::string Key</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:27</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html"><div class="ttname"><a href="class_n_model_1_1_c_fbx_loader.html">NModel::CFbxLoader</a></div><div class="ttdoc">FBXの読み込みを行うクラス</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:12</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_manager_html"><div class="ttname"><a href="class_n_model_1_1_c_manager.html">NModel::CManager</a></div><div class="ttdoc">アセットとして保持するモデルクラス</div><div class="ttdef"><b>Definition</b> Model_Manager.h:9</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a0c8816abbade57141f7f1eaa9bc88d67"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a0c8816abbade57141f7f1eaa9bc88d67">NModel::CObject::m_matCluster</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matCluster</div><div class="ttdef"><b>Definition</b> Model_Object.h:128</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a1b314f3ba02362b930a5f38d69211f20"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a1b314f3ba02362b930a5f38d69211f20">NModel::CObject::m_isSetupMatrix</a></div><div class="ttdeci">bool m_isSetupMatrix</div><div class="ttdef"><b>Definition</b> Model_Object.h:153</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a1c6cec09459fc7b50a6c2154ec1f65ad"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a1c6cec09459fc7b50a6c2154ec1f65ad">NModel::CObject::GetAnimationFrameLoop</a></div><div class="ttdeci">float GetAnimationFrameLoop() const</div><div class="ttdoc">同じアニメーションを再生した時間を取得する</div><div class="ttdef"><b>Definition</b> Model_Object.h:94</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a1de42a4ab6513b976c1f9bffcc812604"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a1de42a4ab6513b976c1f9bffcc812604">NModel::CObject::UpdateAnimationFrame</a></div><div class="ttdeci">void UpdateAnimationFrame()</div><div class="ttdoc">アニメーションの再生フレームを更新</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:926</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a20a045c914fef024994075f5cf48590d"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a20a045c914fef024994075f5cf48590d">NModel::CObject::m_matClusterNode</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matClusterNode</div><div class="ttdef"><b>Definition</b> Model_Object.h:129</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a27a439f7a0c0b28611d435b409c9197e"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a27a439f7a0c0b28611d435b409c9197e">NModel::CObject::m_clusterCount</a></div><div class="ttdeci">uint m_clusterCount</div><div class="ttdef"><b>Definition</b> Model_Object.h:127</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a29fd8d1794a7a21f0fbace397a9baf5e"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a29fd8d1794a7a21f0fbace397a9baf5e">NModel::CObject::m_hasAnimation</a></div><div class="ttdeci">bool m_hasAnimation</div><div class="ttdef"><b>Definition</b> Model_Object.h:126</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a2b36c7bf77b6a7478d233c4a79eb8ebf"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a2b36c7bf77b6a7478d233c4a79eb8ebf">NModel::CObject::UpdateVertex</a></div><div class="ttdeci">void UpdateVertex(std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_rSrc, NModel::CFbxLoader &amp;_rFbxLoader)</div><div class="ttdoc">頂点を変換する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:1031</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a2d906e5795b249dd5b4f4efe543a9eda"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a2d906e5795b249dd5b4f4efe543a9eda">NModel::CObject::m_anmStackIndex</a></div><div class="ttdeci">uint m_anmStackIndex</div><div class="ttdef"><b>Definition</b> Model_Object.h:137</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a324a6444f86a7733e553961b6b2a6037"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a324a6444f86a7733e553961b6b2a6037">NModel::CObject::GetAnimationStartFrame</a></div><div class="ttdeci">uint GetAnimationStartFrame(unsigned int _anmStackIdx=UINT_MAX) const</div><div class="ttdoc">アニメーションの開始フレームを取得する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:747</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a338a193db0f3f8f21e33fdaf8067a95b"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a338a193db0f3f8f21e33fdaf8067a95b">NModel::CObject::GetModelManager</a></div><div class="ttdeci">const NModel::CManager * GetModelManager() const</div><div class="ttdoc">モデルの元データを取得する</div><div class="ttdef"><b>Definition</b> Model_Object.h:68</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a3a58433eb3305a480f936b2dfa19144d"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a3a58433eb3305a480f936b2dfa19144d">NModel::CObject::GetAnimationIndex</a></div><div class="ttdeci">uint GetAnimationIndex() const</div><div class="ttdoc">現在のアニメーションインデックスを取得する</div><div class="ttdef"><b>Definition</b> Model_Object.h:86</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a3bacb3963d70956ae7c66008cc9c17a8"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a3bacb3963d70956ae7c66008cc9c17a8">NModel::CObject::CalcInterpoleMatrix</a></div><div class="ttdeci">void CalcInterpoleMatrix(std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_rDestClusterMatrix, std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_rDestNodeMatrix, NModel::CFbxLoader &amp;_rFbxLoader, const uint _clusterCount, const uint _interpoleFrame)</div><div class="ttdoc">補完時の、補完完了後のクラスター行列を計算する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:1066</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a3ce56db4c50d34a76a3f83dba4247349"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a3ce56db4c50d34a76a3f83dba4247349">NModel::CObject::SetAnimationSpeed</a></div><div class="ttdeci">void SetAnimationSpeed(const float _speedFramePerFrame=1.0f)</div><div class="ttdoc">アニメーションの速度を設定</div><div class="ttdef"><b>Definition</b> Model_Object.h:58</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a4673e4beff4ef281efc4e63f06fad66a"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a4673e4beff4ef281efc4e63f06fad66a">NModel::CObject::m_interpoleCompleteFrame</a></div><div class="ttdeci">float m_interpoleCompleteFrame</div><div class="ttdef"><b>Definition</b> Model_Object.h:152</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a47aa737ad7406951f1d04491d30f025e"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a47aa737ad7406951f1d04491d30f025e">NModel::CObject::CLUSTER_MAX</a></div><div class="ttdeci">static constexpr uint CLUSTER_MAX</div><div class="ttdef"><b>Definition</b> Model_Object.h:121</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a4a1962f1c1a52234d5d6d2c0f39eff4b"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a4a1962f1c1a52234d5d6d2c0f39eff4b">NModel::CObject::CObject</a></div><div class="ttdeci">CObject()</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:385</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a4ddab732a363af8d8eb8c076dc4d83ca"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a4ddab732a363af8d8eb8c076dc4d83ca">NModel::CObject::UpdateClusterMatrix</a></div><div class="ttdeci">void UpdateClusterMatrix(std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_rDestClusterMatrix, std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_rDestNodeMatrix, NModel::CFbxLoader &amp;_rFbxLoader, const uint _clusterCount, const float _rCurFrame)</div><div class="ttdoc">頂点変換を行うため、それぞれのクラスターの行列を作成する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:997</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a566eea423fdbdd25ae4e656120af5955"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a566eea423fdbdd25ae4e656120af5955">NModel::CObject::GetFVF</a></div><div class="ttdeci">DWORD GetFVF() const</div><div class="ttdoc">モデルデータのフォーマットを取得する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:709</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a57bfc9c9f0b4258c8177e7a5f41eac7b"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a57bfc9c9f0b4258c8177e7a5f41eac7b">NModel::CObject::UpdateAnimation</a></div><div class="ttdeci">void UpdateAnimation()</div><div class="ttdoc">アニメーションの更新をまとめた関数</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:839</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a5f8ca8071fc8787bee7c13568c816cba"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a5f8ca8071fc8787bee7c13568c816cba">NModel::CObject::~CObject</a></div><div class="ttdeci">~CObject()</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:404</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a6a7a8a3e740cd512ade1729b36407352"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a6a7a8a3e740cd512ade1729b36407352">NModel::CObject::m_interpoleFrame</a></div><div class="ttdeci">uint m_interpoleFrame</div><div class="ttdef"><b>Definition</b> Model_Object.h:148</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a6cc6938d4e043bbaa9402508a29bd558"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a6cc6938d4e043bbaa9402508a29bd558">NModel::CObject::m_matInterpoleClusterNodeStart</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matInterpoleClusterNodeStart</div><div class="ttdef"><b>Definition</b> Model_Object.h:133</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a6e0d9ff487be5b63cc2b461381005b62"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a6e0d9ff487be5b63cc2b461381005b62">NModel::CObject::GetMeshNode</a></div><div class="ttdeci">const SMeshNode &amp; GetMeshNode(const uint _nodeIndex) const</div><div class="ttdoc">メッシュノードを取得する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:714</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a70a03eb96f99732d4b1c3b5fe369d8c5"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a70a03eb96f99732d4b1c3b5fe369d8c5">NModel::CObject::SetAnimationFrame</a></div><div class="ttdeci">void SetAnimationFrame(const float _frame)</div><div class="ttdoc">アニメーションのフレームを指定する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:702</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a70b5aef9021f088645af24d096428b42"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a70b5aef9021f088645af24d096428b42">NModel::CObject::m_matInterpoleClusterEnd</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matInterpoleClusterEnd</div><div class="ttdef"><b>Definition</b> Model_Object.h:132</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a716c3193161fb64daa0685fe3317ad76"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a716c3193161fb64daa0685fe3317ad76">NModel::CObject::InterpoleMatrix</a></div><div class="ttdeci">void InterpoleMatrix(const uint _clusterCount, const float _ratio, std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_destMatrix, std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_startMatrix, std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; &amp;_endMatrix)</div><div class="ttdoc">二つの行列間を補完する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:1111</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a74d5c4e282fe4c208400ed7eb7b7bfd7"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a74d5c4e282fe4c208400ed7eb7b7bfd7">NModel::CObject::m_fbxTimePerFrame</a></div><div class="ttdeci">FbxLongLong m_fbxTimePerFrame</div><div class="ttdef"><b>Definition</b> Model_Object.h:138</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a7a3ad3c62db2e753d906111ed7737806"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a7a3ad3c62db2e753d906111ed7737806">NModel::CObject::m_anmFrame</a></div><div class="ttdeci">float m_anmFrame</div><div class="ttdef"><b>Definition</b> Model_Object.h:139</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a88510059c90ad0a04b64927924f40d2a"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a88510059c90ad0a04b64927924f40d2a">NModel::CObject::SetupMeshNode</a></div><div class="ttdeci">void SetupMeshNode()</div><div class="ttdoc">モデル情報から必要情報を抽出し、使用可能状態にする</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:785</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a8efac6479cd0b2e2dc1a78f41d3d8a6b"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a8efac6479cd0b2e2dc1a78f41d3d8a6b">NModel::CObject::m_isAnmEnd</a></div><div class="ttdeci">bool m_isAnmEnd</div><div class="ttdef"><b>Definition</b> Model_Object.h:147</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a9157024932882a0fc943b77399e36b18"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a9157024932882a0fc943b77399e36b18">NModel::CObject::m_isInterpoleMatrixReady</a></div><div class="ttdeci">bool m_isInterpoleMatrixReady</div><div class="ttdef"><b>Definition</b> Model_Object.h:151</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a949189ff5d60a7718ec9f95af926e953"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a949189ff5d60a7718ec9f95af926e953">NModel::CObject::UpdateNodeMatrix</a></div><div class="ttdeci">void UpdateNodeMatrix(NModel::CFbxLoader &amp;_rFbxLoader, const float _rCurFrame)</div><div class="ttdoc">ノードの変換行列を更新する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:974</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a979d23e45f678532a40f102947b7fc3b"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a979d23e45f678532a40f102947b7fc3b">NModel::CObject::m_matInterpoleClusterStart</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matInterpoleClusterStart</div><div class="ttdef"><b>Definition</b> Model_Object.h:131</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a984511a1707770703b54a307322ac70c"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a984511a1707770703b54a307322ac70c">NModel::CObject::m_isInterpole</a></div><div class="ttdeci">bool m_isInterpole</div><div class="ttdef"><b>Definition</b> Model_Object.h:150</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_a9a106e5861be671c65b70b2aa38a6673"><div class="ttname"><a href="class_n_model_1_1_c_object.html#a9a106e5861be671c65b70b2aa38a6673">NModel::CObject::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">アニメーションを更新</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:441</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_aa674b24b5da4ba37d55df9b22a0020d9"><div class="ttname"><a href="class_n_model_1_1_c_object.html#aa674b24b5da4ba37d55df9b22a0020d9">NModel::CObject::m_anmSpeedFrame</a></div><div class="ttdeci">float m_anmSpeedFrame</div><div class="ttdef"><b>Definition</b> Model_Object.h:144</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_aa860d0ea4d8746170d9d4688159ca2c8"><div class="ttname"><a href="class_n_model_1_1_c_object.html#aa860d0ea4d8746170d9d4688159ca2c8">NModel::CObject::ChangeAnimation</a></div><div class="ttdeci">void ChangeAnimation(const uint _anmStackIdx, const bool _isLoop, const uint _interpoleFrame, const float _speedFramePerFrame=FLT_MAX)</div><div class="ttdoc">アニメーションの変更完全版</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:651</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_aaeb87a9b961e51b9e1cc58c87fb9b963"><div class="ttname"><a href="class_n_model_1_1_c_object.html#aaeb87a9b961e51b9e1cc58c87fb9b963">NModel::CObject::GetAnimationFrameLength</a></div><div class="ttdeci">float GetAnimationFrameLength(unsigned int _anmStackIdx=UINT_MAX) const</div><div class="ttdoc">アニメーションフレームの長さを取得</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:729</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_aaec31eb56ec85712832728f64c02f356"><div class="ttname"><a href="class_n_model_1_1_c_object.html#aaec31eb56ec85712832728f64c02f356">NModel::CObject::RenderDebug</a></div><div class="ttdeci">void RenderDebug(NMath::SMatrix44 &amp;_matWorld)</div><div class="ttdoc">デバッグ用シェーダーで描画</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:446</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_aafc79025741899b743fbd5c6d4d211cb"><div class="ttname"><a href="class_n_model_1_1_c_object.html#aafc79025741899b743fbd5c6d4d211cb">NModel::CObject::GetAnimationStopFrame</a></div><div class="ttdeci">uint GetAnimationStopFrame(unsigned int _anmStackIdx=UINT_MAX) const</div><div class="ttdoc">アニメーションの終了フレームを取得する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:761</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_abafe3dda6aba3a0f2d97eee345c52185"><div class="ttname"><a href="class_n_model_1_1_c_object.html#abafe3dda6aba3a0f2d97eee345c52185">NModel::CObject::GetMeshNodeCount</a></div><div class="ttdeci">const uint GetMeshNodeCount() const</div><div class="ttdoc">メッシュノードの数を取得する</div><div class="ttdef"><b>Definition</b> Model_Object.h:71</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_abb9020ad4363144864a9724bd07032d4"><div class="ttname"><a href="class_n_model_1_1_c_object.html#abb9020ad4363144864a9724bd07032d4">NModel::CObject::m_pModelManager</a></div><div class="ttdeci">NAsset::CModelFactory::SPAsset m_pModelManager</div><div class="ttdef"><b>Definition</b> Model_Object.h:123</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_abe6dadf1585d01358cd44f0c2f27474a"><div class="ttname"><a href="class_n_model_1_1_c_object.html#abe6dadf1585d01358cd44f0c2f27474a">NModel::CObject::RenderNode</a></div><div class="ttdeci">void RenderNode(const uint _nodeIndex)</div><div class="ttdoc">ノードを描画</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:615</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_abed9f190601721df77ccdf7070bb5596"><div class="ttname"><a href="class_n_model_1_1_c_object.html#abed9f190601721df77ccdf7070bb5596">NModel::CObject::GetMeshNodeMatrix</a></div><div class="ttdeci">void GetMeshNodeMatrix(NMath::SMatrix44 &amp;_rDest, const uint _nodeIndex, const NMath::SMatrix44 &amp;_worldMatrix) const</div><div class="ttdoc">ノードを描画する行列を取得する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:720</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ac20dda842453722b1bd3c592b45a7d7f"><div class="ttname"><a href="class_n_model_1_1_c_object.html#ac20dda842453722b1bd3c592b45a7d7f">NModel::CObject::m_meshNodes</a></div><div class="ttdeci">std::vector&lt; SMeshNode &gt; m_meshNodes</div><div class="ttdef"><b>Definition</b> Model_Object.h:124</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ac2bd5826664fcea1458d08a4ee4779db"><div class="ttname"><a href="class_n_model_1_1_c_object.html#ac2bd5826664fcea1458d08a4ee4779db">NModel::CObject::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdoc">読み込んだ情報を開放する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:433</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ac2f4ab48a495cfee70247840678a5b28"><div class="ttname"><a href="class_n_model_1_1_c_object.html#ac2f4ab48a495cfee70247840678a5b28">NModel::CObject::m_isLoop</a></div><div class="ttdeci">bool m_isLoop</div><div class="ttdef"><b>Definition</b> Model_Object.h:146</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ac60d8be0899204968b00b890f1099fd6"><div class="ttname"><a href="class_n_model_1_1_c_object.html#ac60d8be0899204968b00b890f1099fd6">NModel::CObject::m_interpoleFrameCnt</a></div><div class="ttdeci">uint m_interpoleFrameCnt</div><div class="ttdef"><b>Definition</b> Model_Object.h:149</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ac9800a2ae5ad1219e8e53a7641fa1b37"><div class="ttname"><a href="class_n_model_1_1_c_object.html#ac9800a2ae5ad1219e8e53a7641fa1b37">NModel::CObject::m_anmFrameLoop</a></div><div class="ttdeci">float m_anmFrameLoop</div><div class="ttdef"><b>Definition</b> Model_Object.h:141</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ad1d061de452a329e577833773d2683f2"><div class="ttname"><a href="class_n_model_1_1_c_object.html#ad1d061de452a329e577833773d2683f2">NModel::CObject::GetAnimationFrame</a></div><div class="ttdeci">float GetAnimationFrame() const</div><div class="ttdoc">現在のアニメーションフレームを取得する</div><div class="ttdef"><b>Definition</b> Model_Object.h:90</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ada39c4d2f2759f9ea383d793fb2e2d33"><div class="ttname"><a href="class_n_model_1_1_c_object.html#ada39c4d2f2759f9ea383d793fb2e2d33">NModel::CObject::m_matInterpoleClusterNodeEnd</a></div><div class="ttdeci">std::array&lt; NMath::SMatrix44, CLUSTER_MAX &gt; m_matInterpoleClusterNodeEnd</div><div class="ttdef"><b>Definition</b> Model_Object.h:134</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ae0a16edc9f150947af181adf57e66422"><div class="ttname"><a href="class_n_model_1_1_c_object.html#ae0a16edc9f150947af181adf57e66422">NModel::CObject::RenderDebugAlpha</a></div><div class="ttdeci">void RenderDebugAlpha(NMath::SMatrix44 &amp;_matWorld)</div><div class="ttdoc">デバッグ用シェーダ―で描画</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:530</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ae6bef07bdcc60bf840e84d64ac42987e"><div class="ttname"><a href="class_n_model_1_1_c_object.html#ae6bef07bdcc60bf840e84d64ac42987e">NModel::CObject::Load</a></div><div class="ttdeci">void Load(NAsset::CModelFactory::Key _key)</div><div class="ttdoc">使用するモデルを設定する</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:409</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_ae7a155a73fd57e0c7eba5ad16bc30b20"><div class="ttname"><a href="class_n_model_1_1_c_object.html#ae7a155a73fd57e0c7eba5ad16bc30b20">NModel::CObject::GetClusterMatrix</a></div><div class="ttdeci">void GetClusterMatrix(NMath::SMatrix44 &amp;_rDest, const uint _clusterIndex) const</div><div class="ttdoc">クラスターの行列を取得</div><div class="ttdef"><b>Definition</b> Model_Object.cpp:775</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html_af248a451fca7a9dc05673aeb320a4419"><div class="ttname"><a href="class_n_model_1_1_c_object.html#af248a451fca7a9dc05673aeb320a4419">NModel::CObject::GetIsAnimationEnd</a></div><div class="ttdeci">bool GetIsAnimationEnd() const</div><div class="ttdoc">アニメーションの終了フラグを取得する</div><div class="ttdef"><b>Definition</b> Model_Object.h:112</div></div>
+<div class="ttc" id="anamespace_n_model_html"><div class="ttname"><a href="namespace_n_model.html">NModel</a></div><div class="ttdoc">あたり判定情報の作成等の様々な関数群</div><div class="ttdef"><b>Definition</b> Collision_Util.h:11</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a></div><div class="ttdoc">4x4行列構造体</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:13</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html">NModel::SMeshNode</a></div><div class="ttdoc">メッシュノード</div><div class="ttdef"><b>Definition</b> Model_Def.h:53</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_29c2b75d94f06d56f2b2b0f90b4933d2.html">Model</a></li><li class="navelem"><a href="_model___object_8h.html">Model_Object.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

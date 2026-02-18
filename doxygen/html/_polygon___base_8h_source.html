@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Polygon/Polygon_Base.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_polygon___base_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Polygon_Base.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_polygon___base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;array&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &quot;<a class="code" href="_polygon___data_8h.html">Polygon_Data.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_math___type_8h.html">Math\Math_Type.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_polygon.html">NPolygon</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html">   10</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa14a8a081e1c120c94065cd7ed4f32d9">CBase</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a2879dd6812246582fe8f789a84c41a15">   13</a></span>        <span class="keyword">static</span> <span class="keyword">const</span> uint   <a class="code hl_variable" href="class_n_polygon_1_1_c_base.html#a2879dd6812246582fe8f789a84c41a15">DATA_BUFFER_SIZE</a> = 64;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="comment">// 基本的な関数</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a876f2285ee68d37db45cd20c8ee4f2a9">Setup</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#ac01ea6742235575ef7616058d2904a27">Update</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a687170e07b17b9f382888a6ec55ed5d5">Render</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _rMatWorld);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a687170e07b17b9f382888a6ec55ed5d5">Render</a>(uint _frame);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">// セッター</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#ab6422eda2f8bd9910ebb38a5d3b6512b">   40</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#ab6422eda2f8bd9910ebb38a5d3b6512b">SetTexture</a>(<a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CTextureFactory::SPAsset</a> _pRefTexture = <span class="keyword">nullptr</span>) { <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a6c08330c0b3b7b40a31b6aa3538f4613">pRefTexture</a> = _pRefTexture; }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#acaecaa8e2edeb8c82fd260cb7a30f0aa">ChangeAnimation</a>(<span class="keyword">const</span> uint _anmStackNo);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#ade59e500f72038e0f09a4144c370dda1">   46</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#ade59e500f72038e0f09a4144c370dda1">SetSize</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _size) { <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a67fcd79969be23f0a25846ca780ff7ca">size</a>.x = _size; <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a67fcd79969be23f0a25846ca780ff7ca">size</a>.y = _size; }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a3d417d387d2ff2773b7fafc907bb8ed1">   49</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a3d417d387d2ff2773b7fafc907bb8ed1">SetSize</a>(<span class="keyword">const</span> float2&amp; _size) { <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a67fcd79969be23f0a25846ca780ff7ca">size</a> = _size; }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a205f49cc032bf39bc089998877fd6e89">   50</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a205f49cc032bf39bc089998877fd6e89">SetSize</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> _x, <span class="keyword">const</span> <span class="keywordtype">float</span> _y) { <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a205f49cc032bf39bc089998877fd6e89">SetSize</a>(float2(_x, _y)); }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a8c4cce0c62b9a654a9f68dc0c28b32cd">SetColor</a>(<span class="keyword">const</span> float4&amp; _color);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a8c4cce0c62b9a654a9f68dc0c28b32cd">SetColor</a>(<span class="keyword">const</span> float4&amp; _color, <a class="code hl_enumeration" href="namespace_n_polygon.html#ae5951f8c0da33ba8aaddf6c86b5dc091">EVertexID</a> _vertexID);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a74e688367d78fb52a89f3f998c7c2f5d">   61</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a74e688367d78fb52a89f3f998c7c2f5d">SetIsReverseX</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> _state) { <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#aae9a79c21b5641251b067e38741f4ce9">isReverseX</a> = _state; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a7b29b1b7a6c38eee315c08ead6dd2f2d">   65</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a7b29b1b7a6c38eee315c08ead6dd2f2d">SetIsReverseY</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> _state) { <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a94e7194d70494c93292ad1d821c44222">isReverseY</a> = _state; }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#ac012074b482271fd71ef4e65f5d3312a">   68</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#ac012074b482271fd71ef4e65f5d3312a">SetBlendState</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_graphic.html#a7406ca96246ed5185cae81761e1d949f">NGraphic::EBlendState</a>  _state) { <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#adcb52cb62ed8ebe0b601d74eabd212e6">blendState</a> = _state; }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a9246211a38a4670ec1f4bf347121d3db">   71</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a9246211a38a4670ec1f4bf347121d3db">SetCullMode</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_shader.html#a2ed08154853683f0a813221ce49e2ced">NShader::ECullMode</a>   _cullMode) { <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a4cff2ea30351a86c2cb67c651606ebd0">cullModel</a> = _cullMode; }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a86f2912bf5217cc993b24d732f330a20">   74</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a86f2912bf5217cc993b24d732f330a20">SetAlignX</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_polygon.html#a19ecb49d8cacb366c71874e32480b056">EAlignX</a> _alignX) { <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a3165ea56fbd17881cc005174e940fe6c">alignX</a> = _alignX; }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a4b01c16d33d7434ddd94d19c58e729b9">   77</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a4b01c16d33d7434ddd94d19c58e729b9">SetAlignY</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_polygon.html#af50c637fab510ea94eb499dd33bcd612">EAlignY</a> _alignY) { <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a24cb587d2fd299fa96dd4eb639f2ebf6">alignY</a> = _alignY; }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a5f2e81e47abbf72f19cd1306224a19cf">SetFrame</a>(<span class="keyword">const</span> uint _frame);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="comment">// 汎用ゲッター</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">   90</a></span>        <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp;          <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_polygon_1_1_c_base.html#ab8b0b8bb1d63994c45d3a3f7d254d60c">m_dataBuf</a>[0]; }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a97b862b2f555a2007c6926abc02d3a11">   91</a></span>        <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp;    <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a97b862b2f555a2007c6926abc02d3a11">GetCurData</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_polygon_1_1_c_base.html#ab8b0b8bb1d63994c45d3a3f7d254d60c">m_dataBuf</a>[0]; }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp;          <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a1227fddfecd8b2868ef85f48c616881b">GetPrevData</a>(<span class="keyword">const</span> uint _frame);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp;    <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a1227fddfecd8b2868ef85f48c616881b">GetPrevData</a>(<span class="keyword">const</span> uint _frame) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp;    <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aec82dc07209542c314b6248299256154">GetConstPrevData</a>(<span class="keyword">const</span> uint _frame) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="comment">// 現在のデータのゲッター</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#aa9091eeedbef976a534413ed42978089">  111</a></span>        <span class="keyword">const</span> float2&amp;   <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa9091eeedbef976a534413ed42978089">GetSize</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a67fcd79969be23f0a25846ca780ff7ca">size</a>; }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#ab09cf9244952e1ba1a80f61a04392d69">  114</a></span>        <span class="keywordtype">bool</span>            <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#ab09cf9244952e1ba1a80f61a04392d69">GetIsReverseX</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#aae9a79c21b5641251b067e38741f4ce9">isReverseX</a>; }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a96db7cffa9b21800915a56780b01f34c">  117</a></span>        <span class="keywordtype">bool</span>            <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a96db7cffa9b21800915a56780b01f34c">GetIsReverseY</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">GetCurData</a>().<a class="code hl_variable" href="struct_n_polygon_1_1_s_data.html#a94e7194d70494c93292ad1d821c44222">isReverseY</a>; }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a91b8e059f68cbf2e74bae4195545fe68">  124</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a91b8e059f68cbf2e74bae4195545fe68">RenderPolygon</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp; _data) <a class="code hl_define" href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="comment">// ゲッター</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#a7f49488960057e57950e7f1b15c89980">  132</a></span>        <span class="keyword">virtual</span> DWORD   <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a7f49488960057e57950e7f1b15c89980">GetVertexFormat</a>() <a class="code hl_define" href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="comment">// ユーティリティ関係</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a66c8c9a6f82a7e590deeb14eb565dc46">ApplyAlign2D</a>(</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="keywordtype">float</span>&amp;          _rInOutX,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="keywordtype">float</span>&amp;          _rInOutY,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            const <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp;    _data);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#af3fa1a31c74366398d6dc7f9f70f3176">ApplyAlign3D</a>(</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordtype">float</span>&amp;          _rInOutX,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="keywordtype">float</span>&amp;          _rInOutY,</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            const <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp;    _data);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a2c4bf46887266bed9322bf2854d1e319">GetTextureNo</a>(</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            int2&amp;           _dest,</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            const <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp;    _data) const;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#adcb026aed4720496bfbe00b08cd3ef12">GetReverseOffset</a>(</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            int2&amp;           _dest,</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            const <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp;    _data) const;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a5de15ff0bc4e6f6071fb8ea4b9936986">GetDivLength</a>(</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            float2&amp;         _dest,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            const <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp;    _data) const;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    private:</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="comment">// 使用するテクスチャ</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="comment">// 描画するポリゴンの情報</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#ab8b0b8bb1d63994c45d3a3f7d254d60c">  179</a></span>        std::array&lt;<a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>, <a class="code hl_variable" href="class_n_polygon_1_1_c_base.html#a2879dd6812246582fe8f789a84c41a15">DATA_BUFFER_SIZE</a>&gt; <a class="code hl_variable" href="class_n_polygon_1_1_c_base.html#ab8b0b8bb1d63994c45d3a3f7d254d60c">m_dataBuf</a>;      <span class="comment">// ポリゴン情報のデータ</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                                                            <span class="comment">// 0:最新 DATA_BUFFER_MAX-1:最古</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                                                            <span class="comment">// 過去データの内容を変更して描画することが可能</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="class_n_polygon_1_1_c_base.html#adf1155d46d55addaec3c776127a34011">  183</a></span>        std::array&lt;<a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>, <a class="code hl_variable" href="class_n_polygon_1_1_c_base.html#a2879dd6812246582fe8f789a84c41a15">DATA_BUFFER_SIZE</a>&gt; <a class="code hl_variable" href="class_n_polygon_1_1_c_base.html#adf1155d46d55addaec3c776127a34011">m_constDataBuf</a>; <span class="comment">// 変更する前の元データ</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a9ddf7d12534f00b947d45d8dcb43d2b2">UpdateBuffer</a>();</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#a0d7271cefa357c84ee74d3c6b2b95c2e">UpdateAnimation</a>();</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#ab6422eda2f8bd9910ebb38a5d3b6512b">SetTexture</a>(const <a class="code hl_struct" href="struct_n_polygon_1_1_s_data.html">SData</a>&amp; _data);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    public:</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa14a8a081e1c120c94065cd7ed4f32d9">CBase</a>();</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        virtual ~<a class="code hl_function" href="class_n_polygon_1_1_c_base.html#aa14a8a081e1c120c94065cd7ed4f32d9">CBase</a>();</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    };</div>
+</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}</div>
+<div class="ttc" id="a_common___def_8h_html_aa002ee00ccafaf338340b22748fc8c9c"><div class="ttname"><a href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a></div><div class="ttdeci">#define PURE_FUNC</div><div class="ttdoc">純粋仮想関数の定義時にわかりやすいように</div><div class="ttdef"><b>Definition</b> Common_Def.h:4</div></div>
+<div class="ttc" id="a_math___type_8h_html"><div class="ttname"><a href="_math___type_8h.html">Math_Type.h</a></div></div>
+<div class="ttc" id="a_polygon___data_8h_html"><div class="ttname"><a href="_polygon___data_8h.html">Polygon_Data.h</a></div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a42a8f39a038c716e5e95b31ea67b8ece"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CFactory&lt; NTexture::CManager, CTextureFactory &gt;::SPAsset</a></div><div class="ttdeci">std::shared_ptr&lt; NTexture::CManager &gt; SPAsset</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:30</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a0d7271cefa357c84ee74d3c6b2b95c2e"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a0d7271cefa357c84ee74d3c6b2b95c2e">NPolygon::CBase::UpdateAnimation</a></div><div class="ttdeci">void UpdateAnimation()</div><div class="ttdoc">アニメーションの更新</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:174</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a1227fddfecd8b2868ef85f48c616881b"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a1227fddfecd8b2868ef85f48c616881b">NPolygon::CBase::GetPrevData</a></div><div class="ttdeci">SData &amp; GetPrevData(const uint _frame)</div><div class="ttdoc">変更可能な過去データの取得する</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:146</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a205f49cc032bf39bc089998877fd6e89"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a205f49cc032bf39bc089998877fd6e89">NPolygon::CBase::SetSize</a></div><div class="ttdeci">void SetSize(const float _x, const float _y)</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:50</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a2879dd6812246582fe8f789a84c41a15"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a2879dd6812246582fe8f789a84c41a15">NPolygon::CBase::DATA_BUFFER_SIZE</a></div><div class="ttdeci">static const uint DATA_BUFFER_SIZE</div><div class="ttdoc">ポリゴンのデータのバッファ数</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:13</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a2c4bf46887266bed9322bf2854d1e319"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a2c4bf46887266bed9322bf2854d1e319">NPolygon::CBase::GetTextureNo</a></div><div class="ttdeci">void GetTextureNo(int2 &amp;_dest, const SData &amp;_data) const</div><div class="ttdoc">指定されたデータの情報を基に、連番テクスチャの番号を返す</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:283</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a3d417d387d2ff2773b7fafc907bb8ed1"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a3d417d387d2ff2773b7fafc907bb8ed1">NPolygon::CBase::SetSize</a></div><div class="ttdeci">void SetSize(const float2 &amp;_size)</div><div class="ttdoc">サイズを設定(X,Yを個別に設定)</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:49</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a4b01c16d33d7434ddd94d19c58e729b9"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a4b01c16d33d7434ddd94d19c58e729b9">NPolygon::CBase::SetAlignY</a></div><div class="ttdeci">void SetAlignY(const EAlignY _alignY)</div><div class="ttdoc">Y軸方向のアライメントを設定</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:77</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a5de15ff0bc4e6f6071fb8ea4b9936986"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a5de15ff0bc4e6f6071fb8ea4b9936986">NPolygon::CBase::GetDivLength</a></div><div class="ttdeci">void GetDivLength(float2 &amp;_dest, const SData &amp;_data) const</div><div class="ttdoc">分割後の1辺のUVの長さを取得する @nte テクスチャの存在を確認することが主な目的</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:317</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a5f2e81e47abbf72f19cd1306224a19cf"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a5f2e81e47abbf72f19cd1306224a19cf">NPolygon::CBase::SetFrame</a></div><div class="ttdeci">void SetFrame(const uint _frame)</div><div class="ttdoc">手動で連番テクスチャの位置を制定</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:128</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a66c8c9a6f82a7e590deeb14eb565dc46"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a66c8c9a6f82a7e590deeb14eb565dc46">NPolygon::CBase::ApplyAlign2D</a></div><div class="ttdeci">void ApplyAlign2D(float &amp;_rInOutX, float &amp;_rInOutY, const SData &amp;_data)</div><div class="ttdoc">座標にアライメントを適用する</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:215</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a687170e07b17b9f382888a6ec55ed5d5"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a687170e07b17b9f382888a6ec55ed5d5">NPolygon::CBase::Render</a></div><div class="ttdeci">void Render(const NMath::SMatrix44 &amp;_rMatWorld)</div><div class="ttdoc">描画</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:35</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a74e688367d78fb52a89f3f998c7c2f5d"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a74e688367d78fb52a89f3f998c7c2f5d">NPolygon::CBase::SetIsReverseX</a></div><div class="ttdeci">void SetIsReverseX(const bool _state)</div><div class="ttdoc">テクスチャをX軸反転させる</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:61</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a7b29b1b7a6c38eee315c08ead6dd2f2d"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a7b29b1b7a6c38eee315c08ead6dd2f2d">NPolygon::CBase::SetIsReverseY</a></div><div class="ttdeci">void SetIsReverseY(const bool _state)</div><div class="ttdoc">テクスチャをY軸反転</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:65</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a7f49488960057e57950e7f1b15c89980"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a7f49488960057e57950e7f1b15c89980">NPolygon::CBase::GetVertexFormat</a></div><div class="ttdeci">virtual DWORD GetVertexFormat() PURE_FUNC</div><div class="ttdoc">頂点フォーマットを取得 @nonte 継承後に使用するフォーマットを返す関数を定義する</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a86f2912bf5217cc993b24d732f330a20"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a86f2912bf5217cc993b24d732f330a20">NPolygon::CBase::SetAlignX</a></div><div class="ttdeci">void SetAlignX(const EAlignX _alignX)</div><div class="ttdoc">X軸方向のアライメントを設定</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:74</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a876f2285ee68d37db45cd20c8ee4f2a9"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a876f2285ee68d37db45cd20c8ee4f2a9">NPolygon::CBase::Setup</a></div><div class="ttdeci">void Setup()</div><div class="ttdoc">使用できる状態にする</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:21</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a8c4cce0c62b9a654a9f68dc0c28b32cd"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a8c4cce0c62b9a654a9f68dc0c28b32cd">NPolygon::CBase::SetColor</a></div><div class="ttdeci">void SetColor(const float4 &amp;_color)</div><div class="ttdoc">色を設定</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:103</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a91b8e059f68cbf2e74bae4195545fe68"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a91b8e059f68cbf2e74bae4195545fe68">NPolygon::CBase::RenderPolygon</a></div><div class="ttdeci">virtual void RenderPolygon(const SData &amp;_data) PURE_FUNC</div><div class="ttdoc">データを指定して描画</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a9246211a38a4670ec1f4bf347121d3db"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a9246211a38a4670ec1f4bf347121d3db">NPolygon::CBase::SetCullMode</a></div><div class="ttdeci">void SetCullMode(const NShader::ECullMode _cullMode)</div><div class="ttdoc">カリングモードを設定</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:71</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a96db7cffa9b21800915a56780b01f34c"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a96db7cffa9b21800915a56780b01f34c">NPolygon::CBase::GetIsReverseY</a></div><div class="ttdeci">bool GetIsReverseY() const</div><div class="ttdoc">Y軸の反転フラグを取得する</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:117</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a97b862b2f555a2007c6926abc02d3a11"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a97b862b2f555a2007c6926abc02d3a11">NPolygon::CBase::GetCurData</a></div><div class="ttdeci">const SData &amp; GetCurData() const</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:91</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_a9ddf7d12534f00b947d45d8dcb43d2b2"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#a9ddf7d12534f00b947d45d8dcb43d2b2">NPolygon::CBase::UpdateBuffer</a></div><div class="ttdeci">void UpdateBuffer()</div><div class="ttdoc">バッファの更新</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:166</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_aa14a8a081e1c120c94065cd7ed4f32d9"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#aa14a8a081e1c120c94065cd7ed4f32d9">NPolygon::CBase::CBase</a></div><div class="ttdeci">CBase()</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:10</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_aa502e88f26077eef2bc79c5cc5e4b823"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#aa502e88f26077eef2bc79c5cc5e4b823">NPolygon::CBase::GetCurData</a></div><div class="ttdeci">SData &amp; GetCurData()</div><div class="ttdoc">最新データへの参照を取得する</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:90</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_aa9091eeedbef976a534413ed42978089"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#aa9091eeedbef976a534413ed42978089">NPolygon::CBase::GetSize</a></div><div class="ttdeci">const float2 &amp; GetSize() const</div><div class="ttdoc">サイズを取得する</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:111</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_ab09cf9244952e1ba1a80f61a04392d69"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#ab09cf9244952e1ba1a80f61a04392d69">NPolygon::CBase::GetIsReverseX</a></div><div class="ttdeci">bool GetIsReverseX() const</div><div class="ttdoc">X軸の反転フラグを取得する</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:114</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_ab6422eda2f8bd9910ebb38a5d3b6512b"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#ab6422eda2f8bd9910ebb38a5d3b6512b">NPolygon::CBase::SetTexture</a></div><div class="ttdeci">void SetTexture(NAsset::CTextureFactory::SPAsset _pRefTexture=nullptr)</div><div class="ttdoc">使用するテクスチャを設定する</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:40</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_ab8b0b8bb1d63994c45d3a3f7d254d60c"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#ab8b0b8bb1d63994c45d3a3f7d254d60c">NPolygon::CBase::m_dataBuf</a></div><div class="ttdeci">std::array&lt; SData, DATA_BUFFER_SIZE &gt; m_dataBuf</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:179</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_ac012074b482271fd71ef4e65f5d3312a"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#ac012074b482271fd71ef4e65f5d3312a">NPolygon::CBase::SetBlendState</a></div><div class="ttdeci">void SetBlendState(const NGraphic::EBlendState _state)</div><div class="ttdoc">ブレンドステートを設定</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:68</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_ac01ea6742235575ef7616058d2904a27"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#ac01ea6742235575ef7616058d2904a27">NPolygon::CBase::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:26</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_acaecaa8e2edeb8c82fd260cb7a30f0aa"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#acaecaa8e2edeb8c82fd260cb7a30f0aa">NPolygon::CBase::ChangeAnimation</a></div><div class="ttdeci">void ChangeAnimation(const uint _anmStackNo)</div><div class="ttdoc">アニメーションの変更</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:86</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_adcb026aed4720496bfbe00b08cd3ef12"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#adcb026aed4720496bfbe00b08cd3ef12">NPolygon::CBase::GetReverseOffset</a></div><div class="ttdeci">void GetReverseOffset(int2 &amp;_dest, const SData &amp;_data) const</div><div class="ttdoc">テクスチャ反転時のオフセットを取得する</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:303</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_ade59e500f72038e0f09a4144c370dda1"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#ade59e500f72038e0f09a4144c370dda1">NPolygon::CBase::SetSize</a></div><div class="ttdeci">void SetSize(const float _size)</div><div class="ttdoc">サイズを設定(X,Yを同時に設定)</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:46</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_adf1155d46d55addaec3c776127a34011"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#adf1155d46d55addaec3c776127a34011">NPolygon::CBase::m_constDataBuf</a></div><div class="ttdeci">std::array&lt; SData, DATA_BUFFER_SIZE &gt; m_constDataBuf</div><div class="ttdef"><b>Definition</b> Polygon_Base.h:183</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_aec82dc07209542c314b6248299256154"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#aec82dc07209542c314b6248299256154">NPolygon::CBase::GetConstPrevData</a></div><div class="ttdeci">const SData &amp; GetConstPrevData(const uint _frame) const</div><div class="ttdoc">過去データを取得する</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:158</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_base_html_af3fa1a31c74366398d6dc7f9f70f3176"><div class="ttname"><a href="class_n_polygon_1_1_c_base.html#af3fa1a31c74366398d6dc7f9f70f3176">NPolygon::CBase::ApplyAlign3D</a></div><div class="ttdeci">void ApplyAlign3D(float &amp;_rInOutX, float &amp;_rInOutY, const SData &amp;_data)</div><div class="ttdoc">座標にアライメントを適用する</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:249</div></div>
+<div class="ttc" id="anamespace_n_graphic_html_a7406ca96246ed5185cae81761e1d949f"><div class="ttname"><a href="namespace_n_graphic.html#a7406ca96246ed5185cae81761e1d949f">NGraphic::EBlendState</a></div><div class="ttdeci">EBlendState</div><div class="ttdoc">合成方法を指定する定数</div><div class="ttdef"><b>Definition</b> Graphic_Def.h:6</div></div>
+<div class="ttc" id="anamespace_n_polygon_html"><div class="ttname"><a href="namespace_n_polygon.html">NPolygon</a></div><div class="ttdoc">ポリゴン(矩形ポリゴン)の定義</div><div class="ttdef"><b>Definition</b> Polygon_Base.cpp:8</div></div>
+<div class="ttc" id="anamespace_n_polygon_html_a19ecb49d8cacb366c71874e32480b056"><div class="ttname"><a href="namespace_n_polygon.html#a19ecb49d8cacb366c71874e32480b056">NPolygon::EAlignX</a></div><div class="ttdeci">EAlignX</div><div class="ttdoc">X軸方向のアライメント位置</div><div class="ttdef"><b>Definition</b> Polygon_Def.h:36</div></div>
+<div class="ttc" id="anamespace_n_polygon_html_ae5951f8c0da33ba8aaddf6c86b5dc091"><div class="ttname"><a href="namespace_n_polygon.html#ae5951f8c0da33ba8aaddf6c86b5dc091">NPolygon::EVertexID</a></div><div class="ttdeci">EVertexID</div><div class="ttdoc">矩形ポリゴンの頂点を特定する識別子</div><div class="ttdef"><b>Definition</b> Polygon_Def.h:27</div></div>
+<div class="ttc" id="anamespace_n_polygon_html_af50c637fab510ea94eb499dd33bcd612"><div class="ttname"><a href="namespace_n_polygon.html#af50c637fab510ea94eb499dd33bcd612">NPolygon::EAlignY</a></div><div class="ttdeci">EAlignY</div><div class="ttdoc">Y軸方向のアライメント位置</div><div class="ttdef"><b>Definition</b> Polygon_Def.h:43</div></div>
+<div class="ttc" id="anamespace_n_shader_html_a2ed08154853683f0a813221ce49e2ced"><div class="ttname"><a href="namespace_n_shader.html#a2ed08154853683f0a813221ce49e2ced">NShader::ECullMode</a></div><div class="ttdeci">ECullMode</div><div class="ttdoc">カリングモードを指定する定数</div><div class="ttdef"><b>Definition</b> Shader_Def.h:7</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a></div><div class="ttdoc">4x4行列構造体</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:13</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html">NPolygon::SData</a></div><div class="ttdoc">矩形ポリゴンの基底クラス</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:14</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a24cb587d2fd299fa96dd4eb639f2ebf6"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a24cb587d2fd299fa96dd4eb639f2ebf6">NPolygon::SData::alignY</a></div><div class="ttdeci">EAlignY alignY</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:37</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a3165ea56fbd17881cc005174e940fe6c"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a3165ea56fbd17881cc005174e940fe6c">NPolygon::SData::alignX</a></div><div class="ttdeci">EAlignX alignX</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:36</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a4cff2ea30351a86c2cb67c651606ebd0"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a4cff2ea30351a86c2cb67c651606ebd0">NPolygon::SData::cullModel</a></div><div class="ttdeci">NShader::ECullMode cullModel</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:35</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a67fcd79969be23f0a25846ca780ff7ca"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a67fcd79969be23f0a25846ca780ff7ca">NPolygon::SData::size</a></div><div class="ttdeci">float2 size</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:18</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a6c08330c0b3b7b40a31b6aa3538f4613"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a6c08330c0b3b7b40a31b6aa3538f4613">NPolygon::SData::pRefTexture</a></div><div class="ttdeci">NAsset::CTextureFactory::SPAsset pRefTexture</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:23</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_a94e7194d70494c93292ad1d821c44222"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#a94e7194d70494c93292ad1d821c44222">NPolygon::SData::isReverseY</a></div><div class="ttdeci">bool isReverseY</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:33</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_aae9a79c21b5641251b067e38741f4ce9"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#aae9a79c21b5641251b067e38741f4ce9">NPolygon::SData::isReverseX</a></div><div class="ttdeci">bool isReverseX</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:32</div></div>
+<div class="ttc" id="astruct_n_polygon_1_1_s_data_html_adcb52cb62ed8ebe0b601d74eabd212e6"><div class="ttname"><a href="struct_n_polygon_1_1_s_data.html#adcb52cb62ed8ebe0b601d74eabd212e6">NPolygon::SData::blendState</a></div><div class="ttdeci">NGraphic::EBlendState blendState</div><div class="ttdef"><b>Definition</b> Polygon_Data.h:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_613fcd1b86d2c5330714a80fbcd816c2.html">Polygon</a></li><li class="navelem"><a href="_polygon___base_8h.html">Polygon_Base.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

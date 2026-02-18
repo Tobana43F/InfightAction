@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NUtil::CStateManager&lt; TOwner, TEnumState &gt; クラステンプレート</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_util_1_1_c_state_manager.html','','class_n_util_1_1_c_state_manager-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NUtil::CStateManager&lt; TOwner, TEnumState &gt; クラステンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>状態遷移を管理するクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_util___state_manager_8h_source.html">Util_StateManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:SStateParam" id="r_SStateParam"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_n_util_1_1_c_state_manager_1_1_s_state_param.html">SStateParam</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">状態管理クラスに必要ならパラメータを管理するクラス  <a href="class_n_util_1_1_c_state_manager_1_1_s_state_param.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a9515c92a0d8f456afd3e28ffc26e3b6d" id="r_a9515c92a0d8f456afd3e28ffc26e3b6d"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a9515c92a0d8f456afd3e28ffc26e3b6d">Param</a> = <a class="el" href="class_n_util_1_1_c_state_manager_1_1_s_state_param.html">SStateParam</a>&lt;TEnumState&gt;&amp;</td></tr>
+<tr class="memdesc:a9515c92a0d8f456afd3e28ffc26e3b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ関数の引数になるパラメータ  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8ac766ea2c48cdadd3369cb57a830c33" id="r_a8ac766ea2c48cdadd3369cb57a830c33"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8ac766ea2c48cdadd3369cb57a830c33">Register</a> (const TEnumState _index, const <a class="el" href="#a012dd6034d71e1a1cc7edf06d2488a4c">FPExecMember</a> _fpFunc)</td></tr>
+<tr class="memdesc:a8ac766ea2c48cdadd3369cb57a830c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ関数ポインタ登録関数  <br /></td></tr>
+<tr class="memitem:a4f6f112e2a3b25893241413db61facd7" id="r_a4f6f112e2a3b25893241413db61facd7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4f6f112e2a3b25893241413db61facd7">Update</a> ()</td></tr>
+<tr class="memdesc:a4f6f112e2a3b25893241413db61facd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">実行関数  <br /></td></tr>
+<tr class="memitem:aad24c17031f1288faaaa4123885f2978" id="r_aad24c17031f1288faaaa4123885f2978"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aad24c17031f1288faaaa4123885f2978">Reset</a> ()</td></tr>
+<tr class="memdesc:aad24c17031f1288faaaa4123885f2978"><td class="mdescLeft">&#160;</td><td class="mdescRight">状態を初期状態に戻す  <br /></td></tr>
+<tr class="memitem:aa14c3b4dd1f5fd8bee7c70c8971af30b" id="r_aa14c3b4dd1f5fd8bee7c70c8971af30b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa14c3b4dd1f5fd8bee7c70c8971af30b">ChangeState</a> (const TEnumState _nextState)</td></tr>
+<tr class="memdesc:aa14c3b4dd1f5fd8bee7c70c8971af30b"><td class="mdescLeft">&#160;</td><td class="mdescRight">外部から割り込み的に状態を変化させる  <br /></td></tr>
+<tr class="memitem:a245b6c7c80d894ac05232263b625da24" id="r_a245b6c7c80d894ac05232263b625da24"><td class="memItemLeft">TEnumState&#160;</td><td class="memItemRight"><a class="el" href="#a245b6c7c80d894ac05232263b625da24">GetState</a> () const</td></tr>
+<tr class="memdesc:a245b6c7c80d894ac05232263b625da24"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の状態を取得  <br /></td></tr>
+<tr class="memitem:a7dec39e5f4eb54fc3bb51ab88593c1d1" id="r_a7dec39e5f4eb54fc3bb51ab88593c1d1"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#a7dec39e5f4eb54fc3bb51ab88593c1d1">GetStateNumber</a> () const</td></tr>
+<tr class="memdesc:a7dec39e5f4eb54fc3bb51ab88593c1d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の状態をuintに変換して取得する  <br /></td></tr>
+<tr class="memitem:af3a5e91d3f61a86e5050b716e728af96" id="r_af3a5e91d3f61a86e5050b716e728af96"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af3a5e91d3f61a86e5050b716e728af96">CStateManager</a> (TOwner *_pOwner)</td></tr>
+<tr class="memdesc:af3a5e91d3f61a86e5050b716e728af96"><td class="mdescLeft">&#160;</td><td class="mdescRight">バインドするインスタンスのみを指定する  <br /></td></tr>
+<tr class="memitem:a72528569f894261f197bf13b97f9e7ba" id="r_a72528569f894261f197bf13b97f9e7ba"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a72528569f894261f197bf13b97f9e7ba">CStateManager</a> (TOwner *_pOwner, const TEnumState _entry)</td></tr>
+<tr class="memdesc:a72528569f894261f197bf13b97f9e7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">バインドするインスタンスと、初期状態を指定する  <br /></td></tr>
+<tr class="memitem:a79fbc7d0ab9505c23b04f7d264f2ec05" id="r_a79fbc7d0ab9505c23b04f7d264f2ec05"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a79fbc7d0ab9505c23b04f7d264f2ec05">~CStateManager</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-types" class="groupheader"><a id="pri-types" name="pri-types"></a>
+非公開型</h2></td></tr>
+<tr class="memitem:a012dd6034d71e1a1cc7edf06d2488a4c" id="r_a012dd6034d71e1a1cc7edf06d2488a4c"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a012dd6034d71e1a1cc7edf06d2488a4c">FPExecMember</a> = void (TOwner::*)(<a class="el" href="class_n_util_1_1_c_state_manager_1_1_s_state_param.html">SStateParam</a>&lt;TEnumState&gt;&amp; _param)</td></tr>
+<tr class="memdesc:a012dd6034d71e1a1cc7edf06d2488a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ関数ポインタ型  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:aeafc2be9201fa8257c99c534cb19193b" id="r_aeafc2be9201fa8257c99c534cb19193b"><td class="memItemLeft">TOwner *&#160;</td><td class="memItemRight"><a class="el" href="#aeafc2be9201fa8257c99c534cb19193b">m_pBindInst</a></td></tr>
+<tr class="memitem:a770e2adc5529ea78481adee5540102a4" id="r_a770e2adc5529ea78481adee5540102a4"><td class="memItemLeft">std::unordered_map&lt; TEnumState, <a class="el" href="#a012dd6034d71e1a1cc7edf06d2488a4c">FPExecMember</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a770e2adc5529ea78481adee5540102a4">m_stateFuncArray</a></td></tr>
+<tr class="memitem:aea99ee938eb44b613ffbdfe89ec99410" id="r_aea99ee938eb44b613ffbdfe89ec99410"><td class="memItemLeft"><a class="el" href="class_n_util_1_1_c_state_manager_1_1_s_state_param.html">SStateParam</a>&lt; TEnumState &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aea99ee938eb44b613ffbdfe89ec99410">m_stateParam</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class TOwner, typename TEnumState&gt;<br />
+class NUtil::CStateManager&lt; TOwner, TEnumState &gt;</div><p>状態遷移を管理するクラス </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TOwner</td><td>このクラスを使用するクラス </td></tr>
+    <tr><td class="paramname">TEnumState</td><td>ステート定数に使用するEnum型 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>覚え書き</dt><dd>使い方<ul>
+<li>コンストラクタでインスタンスをバインドする。</li>
+<li>インデックス(ステート定数)と対応する関数の関数ポインタを登録する。</li>
+<li>このクラスの更新関数でで指定されたインデックスに登録された関数が実行される。 </li>
+</ul>
+</dd></dl>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a012dd6034d71e1a1cc7edf06d2488a4c" name="a012dd6034d71e1a1cc7edf06d2488a4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a012dd6034d71e1a1cc7edf06d2488a4c">&#9670;&#160;</a></span>FPExecMember</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::FPExecMember = void (TOwner::*)(<a class="el" href="class_n_util_1_1_c_state_manager_1_1_s_state_param.html">SStateParam</a>&lt;TEnumState&gt;&amp; _param)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>メンバ関数ポインタ型 </p>
+
+</div>
+</div>
+<a id="a9515c92a0d8f456afd3e28ffc26e3b6d" name="a9515c92a0d8f456afd3e28ffc26e3b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9515c92a0d8f456afd3e28ffc26e3b6d">&#9670;&#160;</a></span>Param</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::Param = <a class="el" href="class_n_util_1_1_c_state_manager_1_1_s_state_param.html">SStateParam</a>&lt;TEnumState&gt;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>メンバ関数の引数になるパラメータ </p>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="af3a5e91d3f61a86e5050b716e728af96" name="af3a5e91d3f61a86e5050b716e728af96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a5e91d3f61a86e5050b716e728af96">&#9670;&#160;</a></span>CStateManager() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::CStateManager </td>
+          <td>(</td>
+          <td class="paramtype">TOwner *</td>          <td class="paramname"><span class="paramname"><em>_pOwner</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>バインドするインスタンスのみを指定する </p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>                                     :</div>
+<div class="line"><span class="lineno">   12</span>        <a class="code hl_function" href="#af3a5e91d3f61a86e5050b716e728af96">CStateManager</a>(<a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">_pOwner</a>, (<a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">TEnumState</a>)0)</div>
+<div class="line"><span class="lineno">   13</span>    {</div>
+<div class="line"><span class="lineno">   14</span> </div>
+<div class="line"><span class="lineno">   15</span>    }</div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html"><div class="ttname"><a href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a></div><div class="ttdoc">状態遷移を管理するクラス</div><div class="ttdef"><b>Definition</b> Util_StateManager.h:18</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html_af3a5e91d3f61a86e5050b716e728af96"><div class="ttname"><a href="#af3a5e91d3f61a86e5050b716e728af96">NUtil::CStateManager::CStateManager</a></div><div class="ttdeci">CStateManager(TOwner *_pOwner)</div><div class="ttdoc">バインドするインスタンスのみを指定する</div><div class="ttdef"><b>Definition</b> Util_StateManager.inl:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a72528569f894261f197bf13b97f9e7ba" name="a72528569f894261f197bf13b97f9e7ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72528569f894261f197bf13b97f9e7ba">&#9670;&#160;</a></span>CStateManager() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::CStateManager </td>
+          <td>(</td>
+          <td class="paramtype">TOwner *</td>          <td class="paramname"><span class="paramname"><em>_pOwner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TEnumState</td>          <td class="paramname"><span class="paramname"><em>_entry</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>バインドするインスタンスと、初期状態を指定する </p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>                                    :</div>
+<div class="line"><span class="lineno">   21</span>        <a class="code hl_variable" href="#aeafc2be9201fa8257c99c534cb19193b">m_pBindInst</a>(<a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">_pOwner</a>),</div>
+<div class="line"><span class="lineno">   22</span>        <a class="code hl_variable" href="#aea99ee938eb44b613ffbdfe89ec99410">m_stateParam</a>(<a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">_entry</a>)</div>
+<div class="line"><span class="lineno">   23</span>    {</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>    }</div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html_aea99ee938eb44b613ffbdfe89ec99410"><div class="ttname"><a href="#aea99ee938eb44b613ffbdfe89ec99410">NUtil::CStateManager::m_stateParam</a></div><div class="ttdeci">SStateParam&lt; TEnumState &gt; m_stateParam</div><div class="ttdef"><b>Definition</b> Util_StateManager.h:155</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html_aeafc2be9201fa8257c99c534cb19193b"><div class="ttname"><a href="#aeafc2be9201fa8257c99c534cb19193b">NUtil::CStateManager::m_pBindInst</a></div><div class="ttdeci">TOwner * m_pBindInst</div><div class="ttdef"><b>Definition</b> Util_StateManager.h:151</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a79fbc7d0ab9505c23b04f7d264f2ec05" name="a79fbc7d0ab9505c23b04f7d264f2ec05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79fbc7d0ab9505c23b04f7d264f2ec05">&#9670;&#160;</a></span>~CStateManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::~<a class="el" href="#af3a5e91d3f61a86e5050b716e728af96">CStateManager</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  164</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="aa14c3b4dd1f5fd8bee7c70c8971af30b" name="aa14c3b4dd1f5fd8bee7c70c8971af30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14c3b4dd1f5fd8bee7c70c8971af30b">&#9670;&#160;</a></span>ChangeState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::ChangeState </td>
+          <td>(</td>
+          <td class="paramtype">const TEnumState</td>          <td class="paramname"><span class="paramname"><em>_nextState</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>外部から割り込み的に状態を変化させる </p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>{ <a class="code hl_variable" href="#aea99ee938eb44b613ffbdfe89ec99410">m_stateParam</a>.ChangeState(<a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">_nextState</a>); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a245b6c7c80d894ac05232263b625da24" name="a245b6c7c80d894ac05232263b625da24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a245b6c7c80d894ac05232263b625da24">&#9670;&#160;</a></span>GetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEnumState <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::GetState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の状態を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#aea99ee938eb44b613ffbdfe89ec99410">m_stateParam</a>.m_curState; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7dec39e5f4eb54fc3bb51ab88593c1d1" name="a7dec39e5f4eb54fc3bb51ab88593c1d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dec39e5f4eb54fc3bb51ab88593c1d1">&#9670;&#160;</a></span>GetStateNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::GetStateNumber </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の状態をuintに変換して取得する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>Key値にENUMを使用していない場合は使用することができない。 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  146</span>{ <span class="keywordflow">return</span> <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;uint&gt;</a>(<a class="code hl_variable" href="#aea99ee938eb44b613ffbdfe89ec99410">m_stateParam</a>.m_curState); }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_a099b6a85136760ed980079095fc9afe4"><div class="ttname"><a href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast</a></div><div class="ttdeci">#define StaticCast</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:88</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8ac766ea2c48cdadd3369cb57a830c33" name="a8ac766ea2c48cdadd3369cb57a830c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ac766ea2c48cdadd3369cb57a830c33">&#9670;&#160;</a></span>Register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::Register </td>
+          <td>(</td>
+          <td class="paramtype">const TEnumState</td>          <td class="paramname"><span class="paramname"><em>_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#a012dd6034d71e1a1cc7edf06d2488a4c">FPExecMember</a></td>          <td class="paramname"><span class="paramname"><em>_fpFunc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>メンバ関数ポインタ登録関数 </p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>    {</div>
+<div class="line"><span class="lineno">   34</span>        <a class="code hl_define" href="_debug___assert_8h.html#a2d2edebe6c2a124bddc95d5b91a1fea6">AssertZero</a>(<a class="code hl_variable" href="#a770e2adc5529ea78481adee5540102a4">m_stateFuncArray</a>.count(<a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">_index</a>));</div>
+<div class="line"><span class="lineno">   35</span>        <a class="code hl_variable" href="#a770e2adc5529ea78481adee5540102a4">m_stateFuncArray</a>.emplace(<a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">_index</a>, <a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">_fpFunc</a>);</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_a2d2edebe6c2a124bddc95d5b91a1fea6"><div class="ttname"><a href="_debug___assert_8h.html#a2d2edebe6c2a124bddc95d5b91a1fea6">AssertZero</a></div><div class="ttdeci">#define AssertZero(var)</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:40</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html_a770e2adc5529ea78481adee5540102a4"><div class="ttname"><a href="#a770e2adc5529ea78481adee5540102a4">NUtil::CStateManager::m_stateFuncArray</a></div><div class="ttdeci">std::unordered_map&lt; TEnumState, FPExecMember &gt; m_stateFuncArray</div><div class="ttdef"><b>Definition</b> Util_StateManager.h:152</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aad24c17031f1288faaaa4123885f2978" name="aad24c17031f1288faaaa4123885f2978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad24c17031f1288faaaa4123885f2978">&#9670;&#160;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>状態を初期状態に戻す </p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>    {</div>
+<div class="line"><span class="lineno">   54</span>        <a class="code hl_variable" href="#aea99ee938eb44b613ffbdfe89ec99410">m_stateParam</a>.InitState();</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4f6f112e2a3b25893241413db61facd7" name="a4f6f112e2a3b25893241413db61facd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f6f112e2a3b25893241413db61facd7">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>実行関数 </p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>    {</div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">TEnumState</a>  <a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">curState</a> = <a class="code hl_variable" href="#aea99ee938eb44b613ffbdfe89ec99410">m_stateParam</a>.GetCurState();</div>
+<div class="line"><span class="lineno">   42</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#a770e2adc5529ea78481adee5540102a4">m_stateFuncArray</a>.count(<a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">curState</a>) == 1 &amp;&amp; <span class="stringliteral">&quot;ステートに関数が設定されていません。&quot;</span>);</div>
+<div class="line"><span class="lineno">   43</span>        </div>
+<div class="line"><span class="lineno">   44</span>        <span class="comment">// メンバ関数の場合はバインドされたインスタンスから実行</span></div>
+<div class="line"><span class="lineno">   45</span>        (<a class="code hl_variable" href="#aeafc2be9201fa8257c99c534cb19193b">m_pBindInst</a>-&gt;*<a class="code hl_variable" href="#a770e2adc5529ea78481adee5540102a4">m_stateFuncArray</a>[<a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">curState</a>])(<a class="code hl_variable" href="#aea99ee938eb44b613ffbdfe89ec99410">m_stateParam</a>);</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>        <span class="comment">// 使用されなかったフラグをリセット</span></div>
+<div class="line"><span class="lineno">   48</span>        <a class="code hl_variable" href="#aea99ee938eb44b613ffbdfe89ec99410">m_stateParam</a>.UpdateFlagReset();</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="aeafc2be9201fa8257c99c534cb19193b" name="aeafc2be9201fa8257c99c534cb19193b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeafc2be9201fa8257c99c534cb19193b">&#9670;&#160;</a></span>m_pBindInst</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TOwner* <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::m_pBindInst</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a770e2adc5529ea78481adee5540102a4" name="a770e2adc5529ea78481adee5540102a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770e2adc5529ea78481adee5540102a4">&#9670;&#160;</a></span>m_stateFuncArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unordered_map&lt;TEnumState, <a class="el" href="#a012dd6034d71e1a1cc7edf06d2488a4c">FPExecMember</a>&gt; <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::m_stateFuncArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea99ee938eb44b613ffbdfe89ec99410" name="aea99ee938eb44b613ffbdfe89ec99410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea99ee938eb44b613ffbdfe89ec99410">&#9670;&#160;</a></span>m_stateParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TOwner, typename TEnumState&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_util_1_1_c_state_manager_1_1_s_state_param.html">SStateParam</a>&lt;TEnumState&gt; <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; TOwner, TEnumState &gt;::m_stateParam</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Util/<a class="el" href="_util___state_manager_8h_source.html">Util_StateManager.h</a></li>
+<li>Sources/Framework/Util/<a class="el" href="_util___state_manager_8inl_source.html">Util_StateManager.inl</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_util.html">NUtil</a></li><li class="navelem"><a href="class_n_util_1_1_c_state_manager.html">CStateManager</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

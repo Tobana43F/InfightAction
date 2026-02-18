@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Model/XFile/Model_SkinnedMesh.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_model___skinned_mesh_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Model_SkinnedMesh.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_model___skinned_mesh_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//========================================================</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//CSkinnedMeshクラス</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//========================================================</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &lt;d3d9.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &lt;d3dx9.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include    &lt;vector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include    &lt;string&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include    &quot;<a class="code" href="_model___hierarchy_8h.html">Model_Hierarchy.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include    &quot;<a class="code" href="_direct_x___util_8h.html">DirectX\DirectX_Util.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include    &quot;<a class="code" href="_o_b_b_8h.html">OBB\OBB.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include    &quot;<a class="code" href="_math___type_8h.html">Math\Math_Type.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include    &quot;<a class="code" href="_system___def_8h.html">System\System_Def.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include    &quot;<a class="code" href="_direct_x___manager_8h.html">DirectX\DirectX_Manager.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_model.html">NModel</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html">   21</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a93529d3cc77688321bc2a162d39a88a4">CSkinnedMesh</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a774c8e47119ead813029962602808729">   23</a></span>        std::string                 <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a774c8e47119ead813029962602808729">m_fileDir</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a2a46455ac077eb59bf87c586e7ede8ad">   25</a></span>        LPD3DXFRAME                 <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>;           <span class="comment">//フレームルート</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a1c90c9892384d85572b0c1afa48e5294">   26</a></span>        LPD3DXANIMATIONCONTROLLER   <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>;      <span class="comment">//アニメーションコントローラー</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#af4e05fc2a8c4c073d9003f881995a1fc">   27</a></span>        D3DXVECTOR3                 <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#af4e05fc2a8c4c073d9003f881995a1fc">m_vObjectCenter</a>;        <span class="comment">//オブジェクトのバウンディングスフィアの中心</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a60e80c5c819f515bce66390d3aa9c443">   28</a></span>        <span class="keywordtype">float</span>                       <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a60e80c5c819f515bce66390d3aa9c443">m_fObjectRadius</a>;        <span class="comment">//オブジェクトのバウンディングスフィアの半径</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a52bb973150ac3e0b9409605c4f2393ba">   29</a></span>        LPD3DXANIMATIONSET          <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a52bb973150ac3e0b9409605c4f2393ba">m_AnimationSet</a>;         <span class="comment">//アニメーションセット</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a78f6d0d108c2511cb9cbedb5d5329a79">   30</a></span>        <a class="code hl_class" href="class_n_model_1_1_c_hierarchy.html">CHierarchy</a>                  <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a78f6d0d108c2511cb9cbedb5d5329a79">m_cHierarchy</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a9d3a65ac2a7121bce15218093a15cd79">   31</a></span>        <span class="keywordtype">int</span>                         <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a9d3a65ac2a7121bce15218093a15cd79">m_iAnimSetCount</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a80af6333dbf0d54990dadde0f3ddd62e">   32</a></span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a80af6333dbf0d54990dadde0f3ddd62e">m_uiAnimID</a>;             <span class="comment">//アニメーションID</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#adf5d1622262db90e07d4a55e7e0821f5">   33</a></span>        LPD3DXANIMATIONSET*         <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#adf5d1622262db90e07d4a55e7e0821f5">m_ppAnimSet</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#accea8d7adbe65a5dcbad94c1fd59c03c">   34</a></span>        <span class="keywordtype">double</span>                      <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#accea8d7adbe65a5dcbad94c1fd59c03c">m_TimeDelta</a>;            <span class="comment">//アニメーション再生タイマー</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a8da761291226da987c13eedbf7b83a0a">   35</a></span>        <span class="keywordtype">int</span>                         <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a8da761291226da987c13eedbf7b83a0a">m_BoneNum</a>;              <span class="comment">//ボーンの数</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a606fdafb3417555f45c6f75b140806b1">   36</a></span>        std::vector&lt;LPD3DXFRAME&gt;    <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a606fdafb3417555f45c6f75b140806b1">m_AllFrameContainer</a>;    <span class="comment">//すべてのフレームを格納したベクター</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#aa4c7b972c99c9870e10273828c1e5ca7">   37</a></span>        <span class="keywordtype">double</span>                      <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#aa4c7b972c99c9870e10273828c1e5ca7">m_endtime</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a2d1709e28c078d6c8b4aa31c7afc185e">   39</a></span>        <a class="code hl_class" href="class_c_o_b_b.html">COBB</a>*                       <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>;              <span class="comment">// ワンスキン用OBBオブジェクト                  </span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#ab15c82b9014cbf9de4ea25ee19ddb95a">   40</a></span>        <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>*           <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#ab15c82b9014cbf9de4ea25ee19ddb95a">m_matBone</a>;              <span class="comment">// ボーン行列</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#aea2141ab226e440ca119b8bdd1b93869">   42</a></span>        <span class="keywordtype">int</span>                         <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#aea2141ab226e440ca119b8bdd1b93869">m_BBOXnum</a>;              <span class="comment">//BBOXの個数</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="comment">// 外部から、アニメーションの再生フレーム情報を格納する先</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a1472d4dd73818d7b083178625640e6e5">   45</a></span>        <span class="keywordtype">bool</span>                        <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a1472d4dd73818d7b083178625640e6e5">m_hasExternalAnmFrame</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#afaea34e28dcfa248c37c5243f03c89d7">   46</a></span>        std::vector&lt;float&gt;          <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#afaea34e28dcfa248c37c5243f03c89d7">m_anmFrame</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a93529d3cc77688321bc2a162d39a88a4">CSkinnedMesh</a>(<span class="keywordtype">void</span>);</div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#aa62091ef1a60a20b2d3a432c68f8cdf3">   50</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#aa62091ef1a60a20b2d3a432c68f8cdf3">~CSkinnedMesh</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a085c522d76283254bf4362f32c4a8689">ReleaseAttributeTable</a>(<a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#adabf9578ccaacbecd0a964aaa1483f3c">ExitBBox</a>(<a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                D3DXFrameDestroy(<a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>, &amp;<a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a78f6d0d108c2511cb9cbedb5d5329a79">m_cHierarchy</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(<a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <a class="code hl_define" href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a>(<a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#adf5d1622262db90e07d4a55e7e0821f5">m_ppAnimSet</a>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a7f03e7eb324b593e6e04b93145444753">   61</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a7f03e7eb324b593e6e04b93145444753">SetExternalAnmFrame</a>(std::vector&lt;float&gt;&amp; _frameInfo)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">if</span> (_frameInfo.size() != <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a9d3a65ac2a7121bce15218093a15cd79">m_iAnimSetCount</a>) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                assert(<span class="keyword">false</span> &amp;&amp; <span class="stringliteral">&quot;アニメーション数が等しくない&quot;</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#afaea34e28dcfa248c37c5243f03c89d7">m_anmFrame</a>.swap(_frameInfo);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a1472d4dd73818d7b083178625640e6e5">m_hasExternalAnmFrame</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a743150a4153694d55fdedcdc69056e48">   70</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a743150a4153694d55fdedcdc69056e48">Update</a>(<a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _rMatWorld)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <span class="keywordflow">if</span> (<a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#afa6ff8f2fc4df535340b194d58d8182b">isMotionEnd</a>() &amp;&amp; <span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;ResetTime();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;SetTrackPosition(0, 0.0);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;AdvanceTime(0.0f, NULL);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a4ed1999d7f36e23dfe43a89f2fc30cb9">UpdateFrameMatrices</a>(<a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#ad509c37dbba8387662d58e273ab7fc90">GetFrameRoot</a>(), (LPD3DXMATRIX)&amp;_rMatWorld);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a69fe587ff2cdfb3287c3ddabe7e5b2ee">GetAnimationController</a>()-&gt;AdvanceTime(NSystem::MILL_SECOND_PER_FRAME * 0.001, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a69aa1c4f30f8d1388b538c858629fa0b">   81</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a69aa1c4f30f8d1388b538c858629fa0b">Render</a>(<a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _rMatWorld)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTransform(D3DTS_WORLD, (D3DXMATRIX*)&amp;_rMatWorld);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a93d1b2398c4e598a675a8133864a9cd8">DrawFrame</a>(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(), <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#ad509c37dbba8387662d58e273ab7fc90">GetFrameRoot</a>());</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        }</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#aa68f138d890fc7234eca72e9d620a0af">LoadXFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* xfilename, LPDIRECT3DDEVICE9 lpd3ddevice);                                                           <span class="comment">//ファイル読み込み</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a54b94ea97b253ca698ee76238a15e3cc">DrawMeshContainer</a>(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXMESHCONTAINER pMeshContainerBase, LPD3DXFRAME pFrameBase);  <span class="comment">//メッシュコンテナ読み込み</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a93d1b2398c4e598a675a8133864a9cd8">DrawFrame</a>(LPDIRECT3DDEVICE9 pd3ddevice, LPD3DXFRAME pFrame);                                                       <span class="comment">//フレーム描画</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a4ed1999d7f36e23dfe43a89f2fc30cb9">UpdateFrameMatrices</a>(LPD3DXFRAME pFrameBase, LPD3DXMATRIX pParentMatrix);                                           <span class="comment">//フレームマトリクスの更新</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a085c522d76283254bf4362f32c4a8689">ReleaseAttributeTable</a>(LPD3DXFRAME pFrameBase);                                                                     <span class="comment">//アトリビュートテーブルの解放</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a17e8593363be9dc0a63a77d21a706e5a">ChangeAnimation</a>(<span class="keywordtype">int</span> AnimID);                                                                                       <span class="comment">//アニメーションを変更                                                                                //アニメーション更新</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        HRESULT <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a12613c66a4c9d6f10896da61b972b7ec">SetupBoneMatrixPointersOnMesh</a>(LPD3DXMESHCONTAINER pMeshContainerBase);                                          <span class="comment">//メッシュコンテナのボーンマトリックスポインター設定</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        HRESULT <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a6cbe342cfdb601c556f6ba8d0637a0b2">SetupBoneMatrixPointers</a>(LPD3DXFRAME pFrame);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        HRESULT <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#aa8aaad611732ddd61c0eb9b31fa6407e">CreateSkinnedBBox</a>(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXMESHCONTAINER pMeshContainerParameter);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a33337874c89d825682b86ca4731036e4">InitBBox</a>(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXFRAME pFrame);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a2e84583419296630baa7b63e9e4cc6ef">UpdateBBox</a>(LPD3DXFRAME pFrameBase);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a33e1d2b21e0977181a354f22228a4592">DrawBBox</a>(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXFRAME pFrame);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#adabf9578ccaacbecd0a964aaa1483f3c">ExitBBox</a>(LPD3DXFRAME pFrameBase);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#acbca42f2f395c1d46c2bca109fbabbf2">  104</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#acbca42f2f395c1d46c2bca109fbabbf2">GetBoneMatrix</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> _idx, <a class="code hl_struct" href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a>&amp; _rDest)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">        </span>{</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            assert(_idx &lt; <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a8da761291226da987c13eedbf7b83a0a">m_BoneNum</a>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            assert(_idx &gt;= 0);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            _rDest = <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#ab15c82b9014cbf9de4ea25ee19ddb95a">m_matBone</a>[_idx];</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="comment">// 全てのあたり判定;を無効にする</span></div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="}">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a6ffecdfea2940d1cbe6b3c44d4730cda">  112</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a6ffecdfea2940d1cbe6b3c44d4730cda">SetIsCollisionActive</a>(<span class="keywordtype">bool</span> _state)</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#aea2141ab226e440ca119b8bdd1b93869">m_BBOXnum</a>; ++i) {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>[i].SetIsActive(_state);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        }</div>
+</div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#ab286c735e45d69aab52366447350c43f">  118</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#ab286c735e45d69aab52366447350c43f">SetIsCollisionActive</a>(<span class="keywordtype">int</span> _idx, <span class="keywordtype">bool</span> _state)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <span class="comment">// obbを指定して設定する</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>[_idx].SetIsActive(_state);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a7afa84a12397f4677c963c551e30adca">  124</a></span>        uint <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a7afa84a12397f4677c963c551e30adca">GetAnmID</a>()</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a80af6333dbf0d54990dadde0f3ddd62e">m_uiAnimID</a>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }</div>
+</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="foldopen" id="foldopen00129" data-start="{" data-end="}">
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a600b3f028b8ca69ddd48510b25eee924">  129</a></span>        <span class="keywordtype">float</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a600b3f028b8ca69ddd48510b25eee924">GetTime</a>()</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)<a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#accea8d7adbe65a5dcbad94c1fd59c03c">m_TimeDelta</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        }</div>
+</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="comment">//フレームのボーンマトリックスポインターの設定</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="comment">// ボーン数を取得する</span></div>
+<div class="foldopen" id="foldopen00136" data-start="{" data-end="}">
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#aee5f116d0f47326b72279c31dab9664a">  136</a></span>        <span class="keywordtype">int</span>  <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#aee5f116d0f47326b72279c31dab9664a">GetBoneNum</a>()<span class="keyword"> const</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">        </span>{</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a8da761291226da987c13eedbf7b83a0a">m_BoneNum</a>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        }</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="comment">//全フレームの先頭アドレスをベクターコンテナに格納する</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#ab09281a129a49cf2a1c0b905728a1e12">GetAllFrame</a>(LPD3DXFRAME pFrame);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="comment">//フレームルート取得</span></div>
+<div class="foldopen" id="foldopen00145" data-start="{" data-end="}">
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#ad509c37dbba8387662d58e273ab7fc90">  145</a></span>        LPD3DXFRAME <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#ad509c37dbba8387662d58e273ab7fc90">GetFrameRoot</a>()</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a2a46455ac077eb59bf87c586e7ede8ad">m_pFrameRoot</a>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        }</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="comment">//アニメーションコントローラー取得</span></div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a69fe587ff2cdfb3287c3ddabe7e5b2ee">  151</a></span>        LPD3DXANIMATIONCONTROLLER <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a69fe587ff2cdfb3287c3ddabe7e5b2ee">GetAnimationController</a>()</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        }</div>
+</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="comment">//アニメーションセットを取得</span></div>
+<div class="foldopen" id="foldopen00157" data-start="{" data-end="}">
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#aaebbabd930c41b658af593c5845147c5">  157</a></span>        LPD3DXANIMATIONSET <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#aaebbabd930c41b658af593c5845147c5">GetAnimationSet</a>(<span class="keywordtype">int</span> idx)</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#adf5d1622262db90e07d4a55e7e0821f5">m_ppAnimSet</a>[idx];</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
+</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="comment">//アニメーションセット数を取得</span></div>
+<div class="foldopen" id="foldopen00163" data-start="{" data-end="}">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a9d377360f8b9a0b3fff22ce6b5880cf6">  163</a></span>        <span class="keywordtype">int</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a9d377360f8b9a0b3fff22ce6b5880cf6">GetAnimationSetCount</a>()</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a9d3a65ac2a7121bce15218093a15cd79">m_iAnimSetCount</a>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        }</div>
+</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <span class="comment">//アニメーション再生タイマーをセット</span></div>
+<div class="foldopen" id="foldopen00169" data-start="{" data-end="}">
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#ae21a9511d41e8160f4dbc1605dd38e52">  169</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#ae21a9511d41e8160f4dbc1605dd38e52">SetTimeDelta</a>(<span class="keywordtype">double</span> TimeDelta)</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#accea8d7adbe65a5dcbad94c1fd59c03c">m_TimeDelta</a> = TimeDelta;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        }</div>
+</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="comment">// フレームコンテナを返す</span></div>
+<div class="foldopen" id="foldopen00175" data-start="{" data-end="}">
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a4478416d74d228be4258024edca323b5">  175</a></span>        std::vector&lt;LPD3DXFRAME&gt;* <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a4478416d74d228be4258024edca323b5">GetFrameContainer</a>()</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a606fdafb3417555f45c6f75b140806b1">m_AllFrameContainer</a>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        }</div>
+</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="foldopen" id="foldopen00180" data-start="{" data-end="}">
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#afa6ff8f2fc4df535340b194d58d8182b">  180</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#afa6ff8f2fc4df535340b194d58d8182b">isMotionEnd</a>()</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        {</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <span class="keywordtype">double</span> NowAnimTime = <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a1c90c9892384d85572b0c1afa48e5294">m_pAnimController</a>-&gt;GetTime();</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            <span class="keywordflow">if</span> (NowAnimTime &gt; <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#aa4c7b972c99c9870e10273828c1e5ca7">m_endtime</a>) {</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            }</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            }</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        }</div>
+</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a52c881048aa86ac9441f195c7eab0baa">  191</a></span>        <span class="keywordtype">double</span> <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a52c881048aa86ac9441f195c7eab0baa">GetEndTime</a>()</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        {</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#aa4c7b972c99c9870e10273828c1e5ca7">m_endtime</a>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        }</div>
+</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#a7753fa5b5b03960820ef54b2e3f8b89b">  196</a></span>        <span class="keywordtype">int</span>     <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#a7753fa5b5b03960820ef54b2e3f8b89b">GetOBBNum</a>() { <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#aea2141ab226e440ca119b8bdd1b93869">m_BBOXnum</a>; }</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="class_n_model_1_1_c_skinned_mesh.html#acbe3b0d7f5b3fb2b00e8bfcc5da725b4">  197</a></span>        <a class="code hl_class" href="class_c_o_b_b.html">COBB</a>*   <a class="code hl_function" href="class_n_model_1_1_c_skinned_mesh.html#acbe3b0d7f5b3fb2b00e8bfcc5da725b4">GetOBB</a>(<span class="keywordtype">int</span> _idx) { <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="class_n_model_1_1_c_skinned_mesh.html#a2d1709e28c078d6c8b4aa31c7afc185e">m_OBBSkin</a>[_idx]; }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    };</div>
+</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}</div>
+<div class="ttc" id="a_common___base_operator_8h_html_aeea0f5b85aab2e60bef98c0943312d67"><div class="ttname"><a href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a></div><div class="ttdeci">#define DeleteArraySafe(_pTarget)</div><div class="ttdoc">配列を開放</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:75</div></div>
+<div class="ttc" id="a_direct_x___manager_8h_html"><div class="ttname"><a href="_direct_x___manager_8h.html">DirectX_Manager.h</a></div></div>
+<div class="ttc" id="a_direct_x___util_8h_html"><div class="ttname"><a href="_direct_x___util_8h.html">DirectX_Util.h</a></div></div>
+<div class="ttc" id="a_direct_x___util_8h_html_afe4096368a51bd6079184745ddec2b6b"><div class="ttname"><a href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a></div><div class="ttdeci">#define ReleaseSafe(p)</div><div class="ttdoc">安全な解放処理</div><div class="ttdef"><b>Definition</b> DirectX_Util.h:8</div></div>
+<div class="ttc" id="a_math___type_8h_html"><div class="ttname"><a href="_math___type_8h.html">Math_Type.h</a></div></div>
+<div class="ttc" id="a_model___hierarchy_8h_html"><div class="ttname"><a href="_model___hierarchy_8h.html">Model_Hierarchy.h</a></div></div>
+<div class="ttc" id="a_o_b_b_8h_html"><div class="ttname"><a href="_o_b_b_8h.html">OBB.h</a></div></div>
+<div class="ttc" id="a_system___def_8h_html"><div class="ttname"><a href="_system___def_8h.html">System_Def.h</a></div></div>
+<div class="ttc" id="aclass_c_o_b_b_html"><div class="ttname"><a href="class_c_o_b_b.html">COBB</a></div><div class="ttdef"><b>Definition</b> OBB.h:93</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html"><div class="ttname"><a href="class_n_model_1_1_c_hierarchy.html">NModel::CHierarchy</a></div><div class="ttdoc">スキンメッシュの階層構造を解析するためのクラス</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:35</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a085c522d76283254bf4362f32c4a8689"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a085c522d76283254bf4362f32c4a8689">NModel::CSkinnedMesh::ReleaseAttributeTable</a></div><div class="ttdeci">void ReleaseAttributeTable(LPD3DXFRAME pFrameBase)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:432</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a12613c66a4c9d6f10896da61b972b7ec"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a12613c66a4c9d6f10896da61b972b7ec">NModel::CSkinnedMesh::SetupBoneMatrixPointersOnMesh</a></div><div class="ttdeci">HRESULT SetupBoneMatrixPointersOnMesh(LPD3DXMESHCONTAINER pMeshContainerBase)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:326</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a1472d4dd73818d7b083178625640e6e5"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a1472d4dd73818d7b083178625640e6e5">NModel::CSkinnedMesh::m_hasExternalAnmFrame</a></div><div class="ttdeci">bool m_hasExternalAnmFrame</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:45</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a17e8593363be9dc0a63a77d21a706e5a"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a17e8593363be9dc0a63a77d21a706e5a">NModel::CSkinnedMesh::ChangeAnimation</a></div><div class="ttdeci">bool ChangeAnimation(int AnimID)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:272</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a1c90c9892384d85572b0c1afa48e5294"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a1c90c9892384d85572b0c1afa48e5294">NModel::CSkinnedMesh::m_pAnimController</a></div><div class="ttdeci">LPD3DXANIMATIONCONTROLLER m_pAnimController</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:26</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a2a46455ac077eb59bf87c586e7ede8ad"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a2a46455ac077eb59bf87c586e7ede8ad">NModel::CSkinnedMesh::m_pFrameRoot</a></div><div class="ttdeci">LPD3DXFRAME m_pFrameRoot</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:25</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a2d1709e28c078d6c8b4aa31c7afc185e"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a2d1709e28c078d6c8b4aa31c7afc185e">NModel::CSkinnedMesh::m_OBBSkin</a></div><div class="ttdeci">COBB * m_OBBSkin</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:39</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a2e84583419296630baa7b63e9e4cc6ef"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a2e84583419296630baa7b63e9e4cc6ef">NModel::CSkinnedMesh::UpdateBBox</a></div><div class="ttdeci">void UpdateBBox(LPD3DXFRAME pFrameBase)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:592</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a33337874c89d825682b86ca4731036e4"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a33337874c89d825682b86ca4731036e4">NModel::CSkinnedMesh::InitBBox</a></div><div class="ttdeci">void InitBBox(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:563</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a33e1d2b21e0977181a354f22228a4592"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a33e1d2b21e0977181a354f22228a4592">NModel::CSkinnedMesh::DrawBBox</a></div><div class="ttdeci">void DrawBBox(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:638</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a4478416d74d228be4258024edca323b5"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a4478416d74d228be4258024edca323b5">NModel::CSkinnedMesh::GetFrameContainer</a></div><div class="ttdeci">std::vector&lt; LPD3DXFRAME &gt; * GetFrameContainer()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:175</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a4ed1999d7f36e23dfe43a89f2fc30cb9"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a4ed1999d7f36e23dfe43a89f2fc30cb9">NModel::CSkinnedMesh::UpdateFrameMatrices</a></div><div class="ttdeci">void UpdateFrameMatrices(LPD3DXFRAME pFrameBase, LPD3DXMATRIX pParentMatrix)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:406</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a52bb973150ac3e0b9409605c4f2393ba"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a52bb973150ac3e0b9409605c4f2393ba">NModel::CSkinnedMesh::m_AnimationSet</a></div><div class="ttdeci">LPD3DXANIMATIONSET m_AnimationSet</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:29</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a52c881048aa86ac9441f195c7eab0baa"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a52c881048aa86ac9441f195c7eab0baa">NModel::CSkinnedMesh::GetEndTime</a></div><div class="ttdeci">double GetEndTime()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:191</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a54b94ea97b253ca698ee76238a15e3cc"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a54b94ea97b253ca698ee76238a15e3cc">NModel::CSkinnedMesh::DrawMeshContainer</a></div><div class="ttdeci">void DrawMeshContainer(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXMESHCONTAINER pMeshContainerBase, LPD3DXFRAME pFrameBase)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:82</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a600b3f028b8ca69ddd48510b25eee924"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a600b3f028b8ca69ddd48510b25eee924">NModel::CSkinnedMesh::GetTime</a></div><div class="ttdeci">float GetTime()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:129</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a606fdafb3417555f45c6f75b140806b1"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a606fdafb3417555f45c6f75b140806b1">NModel::CSkinnedMesh::m_AllFrameContainer</a></div><div class="ttdeci">std::vector&lt; LPD3DXFRAME &gt; m_AllFrameContainer</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:36</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a60e80c5c819f515bce66390d3aa9c443"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a60e80c5c819f515bce66390d3aa9c443">NModel::CSkinnedMesh::m_fObjectRadius</a></div><div class="ttdeci">float m_fObjectRadius</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:28</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a69aa1c4f30f8d1388b538c858629fa0b"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a69aa1c4f30f8d1388b538c858629fa0b">NModel::CSkinnedMesh::Render</a></div><div class="ttdeci">void Render(NMath::SMatrix44 &amp;_rMatWorld)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:81</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a69fe587ff2cdfb3287c3ddabe7e5b2ee"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a69fe587ff2cdfb3287c3ddabe7e5b2ee">NModel::CSkinnedMesh::GetAnimationController</a></div><div class="ttdeci">LPD3DXANIMATIONCONTROLLER GetAnimationController()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:151</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a6cbe342cfdb601c556f6ba8d0637a0b2"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a6cbe342cfdb601c556f6ba8d0637a0b2">NModel::CSkinnedMesh::SetupBoneMatrixPointers</a></div><div class="ttdeci">HRESULT SetupBoneMatrixPointers(LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:372</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a6ffecdfea2940d1cbe6b3c44d4730cda"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a6ffecdfea2940d1cbe6b3c44d4730cda">NModel::CSkinnedMesh::SetIsCollisionActive</a></div><div class="ttdeci">void SetIsCollisionActive(bool _state)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:112</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a743150a4153694d55fdedcdc69056e48"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a743150a4153694d55fdedcdc69056e48">NModel::CSkinnedMesh::Update</a></div><div class="ttdeci">void Update(NMath::SMatrix44 &amp;_rMatWorld)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:70</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a774c8e47119ead813029962602808729"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a774c8e47119ead813029962602808729">NModel::CSkinnedMesh::m_fileDir</a></div><div class="ttdeci">std::string m_fileDir</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:23</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a7753fa5b5b03960820ef54b2e3f8b89b"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a7753fa5b5b03960820ef54b2e3f8b89b">NModel::CSkinnedMesh::GetOBBNum</a></div><div class="ttdeci">int GetOBBNum()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:196</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a78f6d0d108c2511cb9cbedb5d5329a79"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a78f6d0d108c2511cb9cbedb5d5329a79">NModel::CSkinnedMesh::m_cHierarchy</a></div><div class="ttdeci">CHierarchy m_cHierarchy</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:30</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a7afa84a12397f4677c963c551e30adca"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a7afa84a12397f4677c963c551e30adca">NModel::CSkinnedMesh::GetAnmID</a></div><div class="ttdeci">uint GetAnmID()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:124</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a7f03e7eb324b593e6e04b93145444753"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a7f03e7eb324b593e6e04b93145444753">NModel::CSkinnedMesh::SetExternalAnmFrame</a></div><div class="ttdeci">void SetExternalAnmFrame(std::vector&lt; float &gt; &amp;_frameInfo)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:61</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a80af6333dbf0d54990dadde0f3ddd62e"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a80af6333dbf0d54990dadde0f3ddd62e">NModel::CSkinnedMesh::m_uiAnimID</a></div><div class="ttdeci">unsigned int m_uiAnimID</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:32</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a8da761291226da987c13eedbf7b83a0a"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a8da761291226da987c13eedbf7b83a0a">NModel::CSkinnedMesh::m_BoneNum</a></div><div class="ttdeci">int m_BoneNum</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:35</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a93529d3cc77688321bc2a162d39a88a4"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a93529d3cc77688321bc2a162d39a88a4">NModel::CSkinnedMesh::CSkinnedMesh</a></div><div class="ttdeci">CSkinnedMesh(void)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:12</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a93d1b2398c4e598a675a8133864a9cd8"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a93d1b2398c4e598a675a8133864a9cd8">NModel::CSkinnedMesh::DrawFrame</a></div><div class="ttdeci">void DrawFrame(LPDIRECT3DDEVICE9 pd3ddevice, LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:246</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a9d377360f8b9a0b3fff22ce6b5880cf6"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a9d377360f8b9a0b3fff22ce6b5880cf6">NModel::CSkinnedMesh::GetAnimationSetCount</a></div><div class="ttdeci">int GetAnimationSetCount()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:163</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_a9d3a65ac2a7121bce15218093a15cd79"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#a9d3a65ac2a7121bce15218093a15cd79">NModel::CSkinnedMesh::m_iAnimSetCount</a></div><div class="ttdeci">int m_iAnimSetCount</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:31</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aa4c7b972c99c9870e10273828c1e5ca7"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#aa4c7b972c99c9870e10273828c1e5ca7">NModel::CSkinnedMesh::m_endtime</a></div><div class="ttdeci">double m_endtime</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:37</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aa62091ef1a60a20b2d3a432c68f8cdf3"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#aa62091ef1a60a20b2d3a432c68f8cdf3">NModel::CSkinnedMesh::~CSkinnedMesh</a></div><div class="ttdeci">virtual ~CSkinnedMesh(void)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:50</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aa68f138d890fc7234eca72e9d620a0af"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#aa68f138d890fc7234eca72e9d620a0af">NModel::CSkinnedMesh::LoadXFile</a></div><div class="ttdeci">bool LoadXFile(const char *xfilename, LPDIRECT3DDEVICE9 lpd3ddevice)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:18</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aa8aaad611732ddd61c0eb9b31fa6407e"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#aa8aaad611732ddd61c0eb9b31fa6407e">NModel::CSkinnedMesh::CreateSkinnedBBox</a></div><div class="ttdeci">HRESULT CreateSkinnedBBox(LPDIRECT3DDEVICE9 lpd3ddevice, LPD3DXMESHCONTAINER pMeshContainerParameter)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:457</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aaebbabd930c41b658af593c5845147c5"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#aaebbabd930c41b658af593c5845147c5">NModel::CSkinnedMesh::GetAnimationSet</a></div><div class="ttdeci">LPD3DXANIMATIONSET GetAnimationSet(int idx)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:157</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_ab09281a129a49cf2a1c0b905728a1e12"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#ab09281a129a49cf2a1c0b905728a1e12">NModel::CSkinnedMesh::GetAllFrame</a></div><div class="ttdeci">void GetAllFrame(LPD3DXFRAME pFrame)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:306</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_ab15c82b9014cbf9de4ea25ee19ddb95a"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#ab15c82b9014cbf9de4ea25ee19ddb95a">NModel::CSkinnedMesh::m_matBone</a></div><div class="ttdeci">NMath::SMatrix44 * m_matBone</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:40</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_ab286c735e45d69aab52366447350c43f"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#ab286c735e45d69aab52366447350c43f">NModel::CSkinnedMesh::SetIsCollisionActive</a></div><div class="ttdeci">void SetIsCollisionActive(int _idx, bool _state)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:118</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_acbca42f2f395c1d46c2bca109fbabbf2"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#acbca42f2f395c1d46c2bca109fbabbf2">NModel::CSkinnedMesh::GetBoneMatrix</a></div><div class="ttdeci">void GetBoneMatrix(const int _idx, NMath::SMatrix44 &amp;_rDest) const</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:104</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_acbe3b0d7f5b3fb2b00e8bfcc5da725b4"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#acbe3b0d7f5b3fb2b00e8bfcc5da725b4">NModel::CSkinnedMesh::GetOBB</a></div><div class="ttdeci">COBB * GetOBB(int _idx)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:197</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_accea8d7adbe65a5dcbad94c1fd59c03c"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#accea8d7adbe65a5dcbad94c1fd59c03c">NModel::CSkinnedMesh::m_TimeDelta</a></div><div class="ttdeci">double m_TimeDelta</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:34</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_ad509c37dbba8387662d58e273ab7fc90"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#ad509c37dbba8387662d58e273ab7fc90">NModel::CSkinnedMesh::GetFrameRoot</a></div><div class="ttdeci">LPD3DXFRAME GetFrameRoot()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:145</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_adabf9578ccaacbecd0a964aaa1483f3c"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#adabf9578ccaacbecd0a964aaa1483f3c">NModel::CSkinnedMesh::ExitBBox</a></div><div class="ttdeci">void ExitBBox(LPD3DXFRAME pFrameBase)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.cpp:673</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_adf5d1622262db90e07d4a55e7e0821f5"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#adf5d1622262db90e07d4a55e7e0821f5">NModel::CSkinnedMesh::m_ppAnimSet</a></div><div class="ttdeci">LPD3DXANIMATIONSET * m_ppAnimSet</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:33</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_ae21a9511d41e8160f4dbc1605dd38e52"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#ae21a9511d41e8160f4dbc1605dd38e52">NModel::CSkinnedMesh::SetTimeDelta</a></div><div class="ttdeci">void SetTimeDelta(double TimeDelta)</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:169</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aea2141ab226e440ca119b8bdd1b93869"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#aea2141ab226e440ca119b8bdd1b93869">NModel::CSkinnedMesh::m_BBOXnum</a></div><div class="ttdeci">int m_BBOXnum</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:42</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_aee5f116d0f47326b72279c31dab9664a"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#aee5f116d0f47326b72279c31dab9664a">NModel::CSkinnedMesh::GetBoneNum</a></div><div class="ttdeci">int GetBoneNum() const</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:136</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_af4e05fc2a8c4c073d9003f881995a1fc"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#af4e05fc2a8c4c073d9003f881995a1fc">NModel::CSkinnedMesh::m_vObjectCenter</a></div><div class="ttdeci">D3DXVECTOR3 m_vObjectCenter</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:27</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_afa6ff8f2fc4df535340b194d58d8182b"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#afa6ff8f2fc4df535340b194d58d8182b">NModel::CSkinnedMesh::isMotionEnd</a></div><div class="ttdeci">bool isMotionEnd()</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:180</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_skinned_mesh_html_afaea34e28dcfa248c37c5243f03c89d7"><div class="ttname"><a href="class_n_model_1_1_c_skinned_mesh.html#afaea34e28dcfa248c37c5243f03c89d7">NModel::CSkinnedMesh::m_anmFrame</a></div><div class="ttdeci">std::vector&lt; float &gt; m_anmFrame</div><div class="ttdef"><b>Definition</b> Model_SkinnedMesh.h:46</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab213af265d85f773a3fb450ca43e3650"><div class="ttname"><a href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 GetD3DDevice()</div><div class="ttdoc">デバイスを取得</div><div class="ttdef"><b>Definition</b> DirectX_Manager.cpp:95</div></div>
+<div class="ttc" id="anamespace_n_model_html"><div class="ttname"><a href="namespace_n_model.html">NModel</a></div><div class="ttdoc">あたり判定情報の作成等の様々な関数群</div><div class="ttdef"><b>Definition</b> Collision_Util.h:11</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html">NMath::SMatrix44</a></div><div class="ttdoc">4x4行列構造体</div><div class="ttdef"><b>Definition</b> Math_Matrix44.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_29c2b75d94f06d56f2b2b0f90b4933d2.html">Model</a></li><li class="navelem"><a href="dir_049654e27c31a5409b5b693abbec997e.html">XFile</a></li><li class="navelem"><a href="_model___skinned_mesh_8h.html">Model_SkinnedMesh.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

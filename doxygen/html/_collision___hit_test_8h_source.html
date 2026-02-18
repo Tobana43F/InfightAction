@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameFramework/Collision/CollisionProc/Collision_HitTest.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_collision___hit_test_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Collision_HitTest.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_collision___hit_test_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_collision___proc_8h.html">Collision_Proc.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_collision.html">NCollision</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_proc_hit_test.html">   14</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_collision_1_1_c_proc_hit_test.html#aba75975664c59c6dc0c306019506be14">CProcHitTest</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_n_collision_1_1_c_proc.html#a042c088a6df87ea9c98be5a637df738d">CProc</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2">   18</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2">EType</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ac49db30384ad7ec8929449d0a14829d2">   19</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ac49db30384ad7ec8929449d0a14829d2">ATTACKER</a>,   <span class="comment">// 攻撃側</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ae9dd74edf28cfccd7568201f4935836f">   20</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ae9dd74edf28cfccd7568201f4935836f">DEFENDER</a>,   <span class="comment">// 被攻撃側</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ad62d1164c46335afefaff645ef38b7ca">   22</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ad62d1164c46335afefaff645ef38b7ca">TYPE_MAX</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        };</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_proc_hit_test.html#a2748a704dd03d68b2ff1387d92d84bb1">Register</a>(<a class="code hl_class" href="class_n_collision_1_1_c_holder.html">CHolder</a>&amp; _rHolder, <span class="keyword">const</span> <a class="code hl_enumeration" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2">EType</a> _type);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_proc_hit_test.html#a6cc5a94f9c52d38c57c40b5babb645fc">   30</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_collision_1_1_c_proc_hit_test.html#a6cc5a94f9c52d38c57c40b5babb645fc">SetupTypeCount</a>()<span class="keyword"> override </span>{ <a class="code hl_variable" href="class_n_collision_1_1_c_proc.html#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a> = <a class="code hl_enumvalue" href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ad62d1164c46335afefaff645ef38b7ca">TYPE_MAX</a>; }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_collision_1_1_c_proc_hit_test.html#a50256e3e2d4d78484d5520b6dba2811f">SetupCollisionMatrix</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_collision_1_1_c_proc_hit_test.html#ad673595a18921036681d47e2d8c076e8">ProcCollide</a>(SCollideData&amp; _rColA, SCollideData&amp; _rColB) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_collision_1_1_c_proc_hit_test.html#a00a5913d1301e858499e8314a43bc9f3">ProcBeforeCollide</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_collision_1_1_c_proc_hit_test.html#a3b7d6e929ed01bf25f15257f2cf3b685">ProcAfterCollide</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_proc_hit_test.html#aecedda8fba276d26cf6f2927ec755ac0">ProcCollideAttack</a>(SCollideData&amp; _rColAttacker, SCollideData&amp; _rColDefender);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_proc_hit_test.html#aba75975664c59c6dc0c306019506be14">   42</a></span>        <a class="code hl_function" href="class_n_collision_1_1_c_proc_hit_test.html#aba75975664c59c6dc0c306019506be14">CProcHitTest</a>() { }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_proc_hit_test.html#a3269b6bba8d973a79bdf792821e97d8e">   43</a></span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_n_collision_1_1_c_proc_hit_test.html#a3269b6bba8d973a79bdf792821e97d8e">~CProcHitTest</a>() { }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    };</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="ttc" id="a_collision___proc_8h_html"><div class="ttname"><a href="_collision___proc_8h.html">Collision_Proc.h</a></div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_holder_html"><div class="ttname"><a href="class_n_collision_1_1_c_holder.html">NCollision::CHolder</a></div><div class="ttdoc">1オブジェクトの1種類の当たり判定をすべて管理するクラス</div><div class="ttdef"><b>Definition</b> Collision_Holder.h:13</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a00a5913d1301e858499e8314a43bc9f3"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a00a5913d1301e858499e8314a43bc9f3">NCollision::CProcHitTest::ProcBeforeCollide</a></div><div class="ttdeci">virtual void ProcBeforeCollide() override</div><div class="ttdoc">衝突判定の前後での処理(関数の入り口と出口での処理)</div><div class="ttdef"><b>Definition</b> Collision_HitTest.cpp:28</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a2748a704dd03d68b2ff1387d92d84bb1"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a2748a704dd03d68b2ff1387d92d84bb1">NCollision::CProcHitTest::Register</a></div><div class="ttdeci">void Register(CHolder &amp;_rHolder, const EType _type)</div><div class="ttdoc">当たり判定を登録する</div><div class="ttdef"><b>Definition</b> Collision_HitTest.cpp:12</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a3269b6bba8d973a79bdf792821e97d8e"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a3269b6bba8d973a79bdf792821e97d8e">NCollision::CProcHitTest::~CProcHitTest</a></div><div class="ttdeci">virtual ~CProcHitTest()</div><div class="ttdef"><b>Definition</b> Collision_HitTest.h:43</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a3b7d6e929ed01bf25f15257f2cf3b685"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a3b7d6e929ed01bf25f15257f2cf3b685">NCollision::CProcHitTest::ProcAfterCollide</a></div><div class="ttdeci">virtual void ProcAfterCollide() override</div><div class="ttdef"><b>Definition</b> Collision_HitTest.cpp:46</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a50256e3e2d4d78484d5520b6dba2811f"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a50256e3e2d4d78484d5520b6dba2811f">NCollision::CProcHitTest::SetupCollisionMatrix</a></div><div class="ttdeci">virtual void SetupCollisionMatrix() override</div><div class="ttdoc">どの種類同士の当たり判定を行うかを設定</div><div class="ttdef"><b>Definition</b> Collision_HitTest.cpp:23</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a6cc5a94f9c52d38c57c40b5babb645fc"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a6cc5a94f9c52d38c57c40b5babb645fc">NCollision::CProcHitTest::SetupTypeCount</a></div><div class="ttdeci">virtual void SetupTypeCount() override</div><div class="ttdoc">当たり判定を行う判定の種類を設定</div><div class="ttdef"><b>Definition</b> Collision_HitTest.h:30</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a7066370bd6447f68ba8b542fce9313e2"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2">NCollision::CProcHitTest::EType</a></div><div class="ttdeci">EType</div><div class="ttdoc">判定の種類</div><div class="ttdef"><b>Definition</b> Collision_HitTest.h:18</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a7066370bd6447f68ba8b542fce9313e2ac49db30384ad7ec8929449d0a14829d2"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ac49db30384ad7ec8929449d0a14829d2">NCollision::CProcHitTest::ATTACKER</a></div><div class="ttdeci">@ ATTACKER</div><div class="ttdef"><b>Definition</b> Collision_HitTest.h:19</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a7066370bd6447f68ba8b542fce9313e2ad62d1164c46335afefaff645ef38b7ca"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ad62d1164c46335afefaff645ef38b7ca">NCollision::CProcHitTest::TYPE_MAX</a></div><div class="ttdeci">@ TYPE_MAX</div><div class="ttdef"><b>Definition</b> Collision_HitTest.h:22</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_a7066370bd6447f68ba8b542fce9313e2ae9dd74edf28cfccd7568201f4935836f"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#a7066370bd6447f68ba8b542fce9313e2ae9dd74edf28cfccd7568201f4935836f">NCollision::CProcHitTest::DEFENDER</a></div><div class="ttdeci">@ DEFENDER</div><div class="ttdef"><b>Definition</b> Collision_HitTest.h:20</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_aba75975664c59c6dc0c306019506be14"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#aba75975664c59c6dc0c306019506be14">NCollision::CProcHitTest::CProcHitTest</a></div><div class="ttdeci">CProcHitTest()</div><div class="ttdef"><b>Definition</b> Collision_HitTest.h:42</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_ad673595a18921036681d47e2d8c076e8"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#ad673595a18921036681d47e2d8c076e8">NCollision::CProcHitTest::ProcCollide</a></div><div class="ttdeci">virtual void ProcCollide(SCollideData &amp;_rColA, SCollideData &amp;_rColB) override</div><div class="ttdoc">グループ内の1つの当たり判定が衝突時に行う処理</div><div class="ttdef"><b>Definition</b> Collision_HitTest.cpp:33</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_hit_test_html_aecedda8fba276d26cf6f2927ec755ac0"><div class="ttname"><a href="class_n_collision_1_1_c_proc_hit_test.html#aecedda8fba276d26cf6f2927ec755ac0">NCollision::CProcHitTest::ProcCollideAttack</a></div><div class="ttdeci">void ProcCollideAttack(SCollideData &amp;_rColAttacker, SCollideData &amp;_rColDefender)</div><div class="ttdoc">ATTACKER側とDEFENDER側を特定したうえでの処理</div><div class="ttdef"><b>Definition</b> Collision_HitTest.cpp:52</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a042c088a6df87ea9c98be5a637df738d"><div class="ttname"><a href="class_n_collision_1_1_c_proc.html#a042c088a6df87ea9c98be5a637df738d">NCollision::CProc::CProc</a></div><div class="ttdeci">CProc()</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:123</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_aff5536e17c615a3fb7b56402a11550d3"><div class="ttname"><a href="class_n_collision_1_1_c_proc.html#aff5536e17c615a3fb7b56402a11550d3">NCollision::CProc::m_typeCount</a></div><div class="ttdeci">uint m_typeCount</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:57</div></div>
+<div class="ttc" id="anamespace_n_collision_html"><div class="ttname"><a href="namespace_n_collision.html">NCollision</a></div><div class="ttdoc">当たり判定に使用する定義</div><div class="ttdef"><b>Definition</b> Collision_Common.cpp:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_73b2b7c7692df5153c734ea07eeabb57.html">GameFramework</a></li><li class="navelem"><a href="dir_f0b42bc1344eca253e9e5e11898520d1.html">Collision</a></li><li class="navelem"><a href="dir_2dd847e3dacf76f798aae21574d8b337.html">CollisionProc</a></li><li class="navelem"><a href="_collision___hit_test_8h.html">Collision_HitTest.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

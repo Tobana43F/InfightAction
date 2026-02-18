@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Game/Game_Main.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_game___main_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Game_Main.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game___main_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main.html#a8c15c3934f54b329a29790497bb1b65e">    1</a></span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include    &lt;thread&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="_windows___include_8h.html">Windows/Windows_Include.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &quot;<a class="code" href="_util___singleton_template_8h.html">Util/Util_SingletonTemplate.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_game.html">NGame</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span></div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main.html">    9</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_game_1_1_c_main.html#a61a9f2d4948023410660fe7b57991b99">CMain</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_n_util_1_1_c_singleton.html">NUtil::CSingleton</a>&lt;CMain&gt; {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="class_n_util_1_1_c_singleton.html">NUtil::CSingleton</a>&lt;<a class="code hl_function" href="class_n_game_1_1_c_main.html#a61a9f2d4948023410660fe7b57991b99">CMain</a>&gt;;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_n_game_1_1_c_main.html#a8e686678db823fb6578072b8f2293df6">Setup</a>(HINSTANCE _hInstance, HWND _hWnd);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main.html#a1ad94bc561dbf58b606a43a561a3f237">TearDown</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main.html#a2d921e214c7ae8f1c0e15652b10a44c4">SetEvent</a>();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main.html#a9b19a9bb46c5187e5162d0d593f23796">   27</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="class_n_game_1_1_c_main.html#a9b19a9bb46c5187e5162d0d593f23796">GetIsThreadEnd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="class_n_game_1_1_c_main.html#a4ef4a7b29da0465b6bde963d3fbbdeeb">mIsThreadEnd</a>; }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main.html#ac0ad9db2b65193711fc5ef670a496762">   31</a></span>        std::thread     <a class="code hl_variable" href="class_n_game_1_1_c_main.html#ac0ad9db2b65193711fc5ef670a496762">mThread</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main.html#a4ef4a7b29da0465b6bde963d3fbbdeeb">   32</a></span>        <span class="keywordtype">bool</span>            <a class="code hl_variable" href="class_n_game_1_1_c_main.html#a4ef4a7b29da0465b6bde963d3fbbdeeb">mIsThreadEnd</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main.html#a2861fafed2d90f6707f04efb4ed8a7e6">   34</a></span>        HANDLE          <a class="code hl_variable" href="class_n_game_1_1_c_main.html#a2861fafed2d90f6707f04efb4ed8a7e6">mHEvent</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_n_game_1_1_c_main.html#abd122188af9778ef08d1fe355796ae6a">   35</a></span>        <span class="keywordtype">int</span>             <a class="code hl_variable" href="class_n_game_1_1_c_main.html#abd122188af9778ef08d1fe355796ae6a">mTimerID</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main.html#a096fa02d240378cf591b0449cea43dcd">MainLoop</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main.html#a4e224ec65157ca29d3d810980e927fa0">Init</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main.html#aabe946d5475f598760cfc22326467e0e">Destroy</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_game_1_1_c_main.html#a058e195d905665de9007469ffeefb945">Run</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_function" href="class_n_game_1_1_c_main.html#a61a9f2d4948023410660fe7b57991b99">CMain</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_n_game_1_1_c_main.html#a04098208189d6438cb45a832b2b8bcd0">~CMain</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    };</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="ttc" id="a_util___singleton_template_8h_html"><div class="ttname"><a href="_util___singleton_template_8h.html">Util_SingletonTemplate.h</a></div></div>
+<div class="ttc" id="a_windows___include_8h_html"><div class="ttname"><a href="_windows___include_8h.html">Windows_Include.h</a></div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a04098208189d6438cb45a832b2b8bcd0"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a04098208189d6438cb45a832b2b8bcd0">NGame::CMain::~CMain</a></div><div class="ttdeci">virtual ~CMain()</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:52</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a058e195d905665de9007469ffeefb945"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a058e195d905665de9007469ffeefb945">NGame::CMain::Run</a></div><div class="ttdeci">void Run()</div><div class="ttdoc">ゲームの実行</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:174</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a096fa02d240378cf591b0449cea43dcd"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a096fa02d240378cf591b0449cea43dcd">NGame::CMain::MainLoop</a></div><div class="ttdeci">void MainLoop()</div><div class="ttdoc">メインループ</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:133</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a1ad94bc561dbf58b606a43a561a3f237"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a1ad94bc561dbf58b606a43a561a3f237">NGame::CMain::TearDown</a></div><div class="ttdeci">void TearDown()</div><div class="ttdoc">終了処理</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:102</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a2861fafed2d90f6707f04efb4ed8a7e6"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a2861fafed2d90f6707f04efb4ed8a7e6">NGame::CMain::mHEvent</a></div><div class="ttdeci">HANDLE mHEvent</div><div class="ttdef"><b>Definition</b> Game_Main.h:34</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a2d921e214c7ae8f1c0e15652b10a44c4"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a2d921e214c7ae8f1c0e15652b10a44c4">NGame::CMain::SetEvent</a></div><div class="ttdeci">void SetEvent()</div><div class="ttdoc">更新イベントのセット</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:126</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a4e224ec65157ca29d3d810980e927fa0"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a4e224ec65157ca29d3d810980e927fa0">NGame::CMain::Init</a></div><div class="ttdeci">void Init()</div><div class="ttdoc">ゲームの初期化</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:164</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a4ef4a7b29da0465b6bde963d3fbbdeeb"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a4ef4a7b29da0465b6bde963d3fbbdeeb">NGame::CMain::mIsThreadEnd</a></div><div class="ttdeci">bool mIsThreadEnd</div><div class="ttdef"><b>Definition</b> Game_Main.h:32</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a61a9f2d4948023410660fe7b57991b99"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a61a9f2d4948023410660fe7b57991b99">NGame::CMain::CMain</a></div><div class="ttdeci">CMain()</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:47</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a8e686678db823fb6578072b8f2293df6"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a8e686678db823fb6578072b8f2293df6">NGame::CMain::Setup</a></div><div class="ttdeci">bool Setup(HINSTANCE _hInstance, HWND _hWnd)</div><div class="ttdoc">初期化</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:57</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_a9b19a9bb46c5187e5162d0d593f23796"><div class="ttname"><a href="class_n_game_1_1_c_main.html#a9b19a9bb46c5187e5162d0d593f23796">NGame::CMain::GetIsThreadEnd</a></div><div class="ttdeci">bool GetIsThreadEnd() const</div><div class="ttdoc">終了フラグを取得</div><div class="ttdef"><b>Definition</b> Game_Main.h:27</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_aabe946d5475f598760cfc22326467e0e"><div class="ttname"><a href="class_n_game_1_1_c_main.html#aabe946d5475f598760cfc22326467e0e">NGame::CMain::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdoc">ゲームの終了処理</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:169</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_abd122188af9778ef08d1fe355796ae6a"><div class="ttname"><a href="class_n_game_1_1_c_main.html#abd122188af9778ef08d1fe355796ae6a">NGame::CMain::mTimerID</a></div><div class="ttdeci">int mTimerID</div><div class="ttdef"><b>Definition</b> Game_Main.h:35</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_main_html_ac0ad9db2b65193711fc5ef670a496762"><div class="ttname"><a href="class_n_game_1_1_c_main.html#ac0ad9db2b65193711fc5ef670a496762">NGame::CMain::mThread</a></div><div class="ttdeci">std::thread mThread</div><div class="ttdef"><b>Definition</b> Game_Main.h:31</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_singleton_html"><div class="ttname"><a href="class_n_util_1_1_c_singleton.html">NUtil::CSingleton</a></div><div class="ttdoc">シングルトンテンプレートクラス</div><div class="ttdef"><b>Definition</b> Util_SingletonTemplate.h:7</div></div>
+<div class="ttc" id="anamespace_n_game_html"><div class="ttname"><a href="namespace_n_game.html">NGame</a></div><div class="ttdoc">プレイヤーへのアクセス、敵へのアクセス、ステージ情報へのアクセスなど、 様々な場所で参照される情報にアクセスするための仲介を行う関数群</div><div class="ttdef"><b>Definition</b> Game_Main.cpp:45</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_22331d25763afb6cd9bf74ada691216b.html">Game</a></li><li class="navelem"><a href="_game___main_8h.html">Game_Main.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

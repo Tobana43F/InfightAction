@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameApp/Scene/Scene_Result.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_scene___result_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Scene_Result.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_scene___result_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="_scene___base_8h.html">Scene\Scene_Base.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_asset___texture_factory_8h.html">Asset\Factory\Asset_TextureFactory.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___game_object_8h.html">Object\Object_GameObject.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include    &quot;<a class="code" href="_polygon___object2_d_8h.html">Polygon\Polygon_Object2D.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___stage_8h.html">Object\Stage\Object_Stage.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include    &quot;<a class="code" href="_sound___common_8h.html">Sound\Sound_Common.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___screen_fade_8h.html">Object\UI\Object_ScreenFade.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_scene.html">NScene</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html">   16</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_scene_1_1_c_result.html#ad29a57d2e11140bea95884fce62e9243">CResult</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_n_scene_1_1_c_base.html#afcd64f57849910e02f743ba5bb8d2d64">CBase</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_result.html#a7f1566d39093ec535bff25d7992e8cab">Load</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_result.html#ab1403314c36c439e1c953e2a44d90a06">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_result.html#a3733266a5dc6a5ef05e0d570e26b0bce">Destroy</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_result.html#ae92c9fd5bd5e06587fe84a855390ceeb">Release</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_result.html#af46965d5fccbb45e699f37f2b4934a96">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_scene_1_1_c_result.html#a668a11c6d3aea388d643c2ee7b1c7391">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#a377cf60b95e78f8bca4f27a5c36cf2ea">   29</a></span>        <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CTextureFactory::SPAsset</a>    <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#a377cf60b95e78f8bca4f27a5c36cf2ea">m_pTexText</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#aab2d2885d3a208ccf27d978ff982a03c">   30</a></span>        <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CTextureFactory::SPAsset</a>    <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#aab2d2885d3a208ccf27d978ff982a03c">m_pTexBackClear</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#a98d9b00bab9e6e46d2135a67aebb76cf">   31</a></span>        <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CTextureFactory::SPAsset</a>    <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#a98d9b00bab9e6e46d2135a67aebb76cf">m_pTexBackGameOver</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#a345c0aca78c88a5023733461b29569a9">   33</a></span>        <a class="code hl_class" href="class_n_polygon_1_1_c_object2_d.html">NPolygon::CObject2D</a>                 <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#a345c0aca78c88a5023733461b29569a9">m_polyText</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#aa60d220afe04da9eab5f7b72c75a9a98">   34</a></span>        <a class="code hl_class" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a>                <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#aa60d220afe04da9eab5f7b72c75a9a98">m_objText</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#ae7973dd8b7313e59adef22729419ca71">   36</a></span>        <a class="code hl_class" href="class_n_polygon_1_1_c_object2_d.html">NPolygon::CObject2D</a>                 <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#ae7973dd8b7313e59adef22729419ca71">m_polyBack</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#adef0610b9506a3b82378b1e439c67352">   37</a></span>        <a class="code hl_class" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a>                <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#adef0610b9506a3b82378b1e439c67352">m_objBack</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#aa928a881d72fb593b183405949846578">   39</a></span>        <a class="code hl_enumeration" href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597">NSound::ELabel</a>                      <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#aa928a881d72fb593b183405949846578">m_sndBGMLabel</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#a84eb397d908b5227bed72349b523c963">   41</a></span>        <span class="keywordtype">bool</span>                                <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#a84eb397d908b5227bed72349b523c963">m_isSceneReady</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#a3e8141236952693b51837b4e9fce1c41">   42</a></span>        <span class="keywordtype">bool</span>                                <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#a3e8141236952693b51837b4e9fce1c41">m_isSceneChangeReady</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_n_scene_1_1_c_result.html#a6e14a0f90fcf0ac33bb1d66dbbfeb376">   43</a></span>        <a class="code hl_class" href="class_n_object_1_1_c_screen_fade.html">NObject::CScreenFade</a>                <a class="code hl_variable" href="class_n_scene_1_1_c_result.html#a6e14a0f90fcf0ac33bb1d66dbbfeb376">m_fade</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_function" href="class_n_scene_1_1_c_result.html#ad29a57d2e11140bea95884fce62e9243">CResult</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_n_scene_1_1_c_result.html#a382166ec6f2c0e11edf0eeba561fbcd5">~CResult</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    };</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="ttc" id="a_asset___texture_factory_8h_html"><div class="ttname"><a href="_asset___texture_factory_8h.html">Asset_TextureFactory.h</a></div></div>
+<div class="ttc" id="a_object___game_object_8h_html"><div class="ttname"><a href="_object___game_object_8h.html">Object_GameObject.h</a></div></div>
+<div class="ttc" id="a_object___screen_fade_8h_html"><div class="ttname"><a href="_object___screen_fade_8h.html">Object_ScreenFade.h</a></div></div>
+<div class="ttc" id="a_object___stage_8h_html"><div class="ttname"><a href="_object___stage_8h.html">Object_Stage.h</a></div></div>
+<div class="ttc" id="a_polygon___object2_d_8h_html"><div class="ttname"><a href="_polygon___object2_d_8h.html">Polygon_Object2D.h</a></div></div>
+<div class="ttc" id="a_scene___base_8h_html"><div class="ttname"><a href="_scene___base_8h.html">Scene_Base.h</a></div></div>
+<div class="ttc" id="a_sound___common_8h_html"><div class="ttname"><a href="_sound___common_8h.html">Sound_Common.h</a></div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a42a8f39a038c716e5e95b31ea67b8ece"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CFactory&lt; NTexture::CManager, CTextureFactory &gt;::SPAsset</a></div><div class="ttdeci">std::shared_ptr&lt; NTexture::CManager &gt; SPAsset</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:30</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a></div><div class="ttdoc">ゲーム内のすべてのオブジェクトの基底クラスとなるクラス</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:8</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_screen_fade_html"><div class="ttname"><a href="class_n_object_1_1_c_screen_fade.html">NObject::CScreenFade</a></div><div class="ttdef"><b>Definition</b> Object_ScreenFade.h:10</div></div>
+<div class="ttc" id="aclass_n_polygon_1_1_c_object2_d_html"><div class="ttname"><a href="class_n_polygon_1_1_c_object2_d.html">NPolygon::CObject2D</a></div><div class="ttdoc">ポリゴンクラスの基底クラス</div><div class="ttdef"><b>Definition</b> Polygon_Object2D.h:8</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_base_html_afcd64f57849910e02f743ba5bb8d2d64"><div class="ttname"><a href="class_n_scene_1_1_c_base.html#afcd64f57849910e02f743ba5bb8d2d64">NScene::CBase::CBase</a></div><div class="ttdeci">CBase()</div><div class="ttdef"><b>Definition</b> Scene_Base.cpp:11</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_a345c0aca78c88a5023733461b29569a9"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#a345c0aca78c88a5023733461b29569a9">NScene::CResult::m_polyText</a></div><div class="ttdeci">NPolygon::CObject2D m_polyText</div><div class="ttdef"><b>Definition</b> Scene_Result.h:33</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_a3733266a5dc6a5ef05e0d570e26b0bce"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#a3733266a5dc6a5ef05e0d570e26b0bce">NScene::CResult::Destroy</a></div><div class="ttdeci">virtual void Destroy() override</div><div class="ttdoc">終了処理</div><div class="ttdef"><b>Definition</b> Scene_Result.cpp:82</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_a377cf60b95e78f8bca4f27a5c36cf2ea"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#a377cf60b95e78f8bca4f27a5c36cf2ea">NScene::CResult::m_pTexText</a></div><div class="ttdeci">NAsset::CTextureFactory::SPAsset m_pTexText</div><div class="ttdef"><b>Definition</b> Scene_Result.h:29</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_a382166ec6f2c0e11edf0eeba561fbcd5"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#a382166ec6f2c0e11edf0eeba561fbcd5">NScene::CResult::~CResult</a></div><div class="ttdeci">virtual ~CResult()</div><div class="ttdef"><b>Definition</b> Scene_Result.cpp:19</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_a3e8141236952693b51837b4e9fce1c41"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#a3e8141236952693b51837b4e9fce1c41">NScene::CResult::m_isSceneChangeReady</a></div><div class="ttdeci">bool m_isSceneChangeReady</div><div class="ttdef"><b>Definition</b> Scene_Result.h:42</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_a668a11c6d3aea388d643c2ee7b1c7391"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#a668a11c6d3aea388d643c2ee7b1c7391">NScene::CResult::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdoc">描画関数</div><div class="ttdef"><b>Definition</b> Scene_Result.cpp:120</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_a6e14a0f90fcf0ac33bb1d66dbbfeb376"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#a6e14a0f90fcf0ac33bb1d66dbbfeb376">NScene::CResult::m_fade</a></div><div class="ttdeci">NObject::CScreenFade m_fade</div><div class="ttdef"><b>Definition</b> Scene_Result.h:43</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_a7f1566d39093ec535bff25d7992e8cab"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#a7f1566d39093ec535bff25d7992e8cab">NScene::CResult::Load</a></div><div class="ttdeci">virtual void Load() override</div><div class="ttdoc">リソースなどのロード</div><div class="ttdef"><b>Definition</b> Scene_Result.cpp:24</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_a84eb397d908b5227bed72349b523c963"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#a84eb397d908b5227bed72349b523c963">NScene::CResult::m_isSceneReady</a></div><div class="ttdeci">bool m_isSceneReady</div><div class="ttdef"><b>Definition</b> Scene_Result.h:41</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_a98d9b00bab9e6e46d2135a67aebb76cf"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#a98d9b00bab9e6e46d2135a67aebb76cf">NScene::CResult::m_pTexBackGameOver</a></div><div class="ttdeci">NAsset::CTextureFactory::SPAsset m_pTexBackGameOver</div><div class="ttdef"><b>Definition</b> Scene_Result.h:31</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_aa60d220afe04da9eab5f7b72c75a9a98"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#aa60d220afe04da9eab5f7b72c75a9a98">NScene::CResult::m_objText</a></div><div class="ttdeci">NObject::CGameObject m_objText</div><div class="ttdef"><b>Definition</b> Scene_Result.h:34</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_aa928a881d72fb593b183405949846578"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#aa928a881d72fb593b183405949846578">NScene::CResult::m_sndBGMLabel</a></div><div class="ttdeci">NSound::ELabel m_sndBGMLabel</div><div class="ttdef"><b>Definition</b> Scene_Result.h:39</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_aab2d2885d3a208ccf27d978ff982a03c"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#aab2d2885d3a208ccf27d978ff982a03c">NScene::CResult::m_pTexBackClear</a></div><div class="ttdeci">NAsset::CTextureFactory::SPAsset m_pTexBackClear</div><div class="ttdef"><b>Definition</b> Scene_Result.h:30</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_ab1403314c36c439e1c953e2a44d90a06"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#ab1403314c36c439e1c953e2a44d90a06">NScene::CResult::Init</a></div><div class="ttdeci">virtual void Init() override</div><div class="ttdoc">初期化</div><div class="ttdef"><b>Definition</b> Scene_Result.cpp:36</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_ad29a57d2e11140bea95884fce62e9243"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#ad29a57d2e11140bea95884fce62e9243">NScene::CResult::CResult</a></div><div class="ttdeci">CResult()</div><div class="ttdef"><b>Definition</b> Scene_Result.cpp:10</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_adef0610b9506a3b82378b1e439c67352"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#adef0610b9506a3b82378b1e439c67352">NScene::CResult::m_objBack</a></div><div class="ttdeci">NObject::CGameObject m_objBack</div><div class="ttdef"><b>Definition</b> Scene_Result.h:37</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_ae7973dd8b7313e59adef22729419ca71"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#ae7973dd8b7313e59adef22729419ca71">NScene::CResult::m_polyBack</a></div><div class="ttdeci">NPolygon::CObject2D m_polyBack</div><div class="ttdef"><b>Definition</b> Scene_Result.h:36</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_ae92c9fd5bd5e06587fe84a855390ceeb"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#ae92c9fd5bd5e06587fe84a855390ceeb">NScene::CResult::Release</a></div><div class="ttdeci">virtual void Release() override</div><div class="ttdoc">解放処理</div><div class="ttdef"><b>Definition</b> Scene_Result.cpp:87</div></div>
+<div class="ttc" id="aclass_n_scene_1_1_c_result_html_af46965d5fccbb45e699f37f2b4934a96"><div class="ttname"><a href="class_n_scene_1_1_c_result.html#af46965d5fccbb45e699f37f2b4934a96">NScene::CResult::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdoc">更新関数</div><div class="ttdef"><b>Definition</b> Scene_Result.cpp:93</div></div>
+<div class="ttc" id="anamespace_n_scene_html"><div class="ttname"><a href="namespace_n_scene.html">NScene</a></div><div class="ttdef"><b>Definition</b> Scene_Base.cpp:10</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a3736bd25d9408ba6dcd72eef505af597"><div class="ttname"><a href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597">NSound::ELabel</a></div><div class="ttdeci">ELabel</div><div class="ttdef"><b>Definition</b> Sound_AssetInfo.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_f694c4fbc4aebbaf0d8c111126161e66.html">GameApp</a></li><li class="navelem"><a href="dir_96bd87366014c1e3a0b64b8a47b1e045.html">Scene</a></li><li class="navelem"><a href="_scene___result_8h.html">Scene_Result.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

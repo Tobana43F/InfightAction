@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameFramework/Camera/Camera_Def.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_camera___def_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Camera_Def.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_camera___def_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="_math___type_8h.html">Math\Math_Type.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_camera.html">NCamera</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_view_data.html">    8</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_n_camera_1_1_s_view_data.html">SViewData</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_view_data.html#a3fb2d82c2c219b84133f41ace254abaf">    9</a></span>        float3 <a class="code hl_variable" href="struct_n_camera_1_1_s_view_data.html#a3fb2d82c2c219b84133f41ace254abaf">pos</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_view_data.html#aa9fda39e4625e13669be033f84218785">   10</a></span>        float3 <a class="code hl_variable" href="struct_n_camera_1_1_s_view_data.html#aa9fda39e4625e13669be033f84218785">foc</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_view_data.html#ac0c5d350e7567cbceed234fd4771a266">   11</a></span>        float3 <a class="code hl_variable" href="struct_n_camera_1_1_s_view_data.html#ac0c5d350e7567cbceed234fd4771a266">up</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    };</div>
+</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_proj_data.html">   15</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_n_camera_1_1_s_proj_data.html">SProjData</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_proj_data.html#ac868893ea3f2002b3335641e7b466f9a">   16</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_n_camera_1_1_s_proj_data.html#ac868893ea3f2002b3335641e7b466f9a">viewAngleRad</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_proj_data.html#a4d172586eb3cf0a769beca5b23f35325">   17</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_n_camera_1_1_s_proj_data.html#a4d172586eb3cf0a769beca5b23f35325">aspectRatio</a>;  <span class="comment">// w / h</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_proj_data.html#aa383a7f9c0b219431a9ef7922d1a5c24">   18</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_n_camera_1_1_s_proj_data.html#aa383a7f9c0b219431a9ef7922d1a5c24">nearClip</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_proj_data.html#aceb94d8b03ae4b531fb9c95571c6d44e">   19</a></span>        <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_n_camera_1_1_s_proj_data.html#aceb94d8b03ae4b531fb9c95571c6d44e">farClip</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    };</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_viewport.html">   23</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_n_camera_1_1_s_viewport.html">SViewport</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_viewport.html#a25ea7d281f2c329e61f6a1e3c41d52d2">   24</a></span>        float2  <a class="code hl_variable" href="struct_n_camera_1_1_s_viewport.html#a25ea7d281f2c329e61f6a1e3c41d52d2">topLeftPos</a>;     <span class="comment">// スクリーン上の左上座標</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_viewport.html#a7e350606b0fa11b10d3ceca2c025f49c">   25</a></span>        float2  <a class="code hl_variable" href="struct_n_camera_1_1_s_viewport.html#a7e350606b0fa11b10d3ceca2c025f49c">size</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_viewport.html#ab88f188875dcf5a86f532913dc1ea450">   26</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="struct_n_camera_1_1_s_viewport.html#ab88f188875dcf5a86f532913dc1ea450">maxDepth</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_n_camera_1_1_s_viewport.html#a6111b33732f98619a4016aadc8a407a0">   27</a></span>        <span class="keywordtype">float</span>   <a class="code hl_variable" href="struct_n_camera_1_1_s_viewport.html#a6111b33732f98619a4016aadc8a407a0">minDepth</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    };</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">   33</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a> {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">   34</a></span>        <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">MAIN</a>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a4ba6fcb4e20cc4f7c3c7cb07d6de2135">   35</a></span>        <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a4ba6fcb4e20cc4f7c3c7cb07d6de2135">SUB_1</a>,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719aeda5f0c61b8fb63d1870ed89432a3c33">   36</a></span>        <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719aeda5f0c61b8fb63d1870ed89432a3c33">SUB_2</a>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a82d3b4597e8d35dd4086de25eb73baa0">   37</a></span>        <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a82d3b4597e8d35dd4086de25eb73baa0">SUB_3</a>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719adc30ec20708ef7b0f641ef78b7880a15">   38</a></span>        <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719adc30ec20708ef7b0f641ef78b7880a15">DEBUG</a>,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a26a4b44a837bf97b972628509912b4a5">   39</a></span>        <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a26a4b44a837bf97b972628509912b4a5">MAX</a></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    };</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="ttc" id="a_math___type_8h_html"><div class="ttname"><a href="_math___type_8h.html">Math_Type.h</a></div></div>
+<div class="ttc" id="anamespace_n_camera_html"><div class="ttname"><a href="namespace_n_camera.html">NCamera</a></div><div class="ttdoc">カメラ行列を統括管理する</div><div class="ttdef"><b>Definition</b> Camera_OperatorBase.cpp:6</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">NCamera::EManagerIndex</a></div><div class="ttdeci">EManagerIndex</div><div class="ttdoc">カメラ情報をマネージャーに登録するインデックス</div><div class="ttdef"><b>Definition</b> Camera_Def.h:33</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">NCamera::EManagerIndex::MAIN</a></div><div class="ttdeci">@ MAIN</div><div class="ttdef"><b>Definition</b> Camera_Def.h:34</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719a26a4b44a837bf97b972628509912b4a5"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a26a4b44a837bf97b972628509912b4a5">NCamera::EManagerIndex::MAX</a></div><div class="ttdeci">@ MAX</div><div class="ttdef"><b>Definition</b> Camera_Def.h:39</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719a4ba6fcb4e20cc4f7c3c7cb07d6de2135"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a4ba6fcb4e20cc4f7c3c7cb07d6de2135">NCamera::EManagerIndex::SUB_1</a></div><div class="ttdeci">@ SUB_1</div><div class="ttdef"><b>Definition</b> Camera_Def.h:35</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719a82d3b4597e8d35dd4086de25eb73baa0"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a82d3b4597e8d35dd4086de25eb73baa0">NCamera::EManagerIndex::SUB_3</a></div><div class="ttdeci">@ SUB_3</div><div class="ttdef"><b>Definition</b> Camera_Def.h:37</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719adc30ec20708ef7b0f641ef78b7880a15"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719adc30ec20708ef7b0f641ef78b7880a15">NCamera::EManagerIndex::DEBUG</a></div><div class="ttdeci">@ DEBUG</div><div class="ttdef"><b>Definition</b> Camera_Def.h:38</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719aeda5f0c61b8fb63d1870ed89432a3c33"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719aeda5f0c61b8fb63d1870ed89432a3c33">NCamera::EManagerIndex::SUB_2</a></div><div class="ttdeci">@ SUB_2</div><div class="ttdef"><b>Definition</b> Camera_Def.h:36</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_proj_data_html"><div class="ttname"><a href="struct_n_camera_1_1_s_proj_data.html">NCamera::SProjData</a></div><div class="ttdoc">プロジェクション行列に必要な情報</div><div class="ttdef"><b>Definition</b> Camera_Def.h:15</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_proj_data_html_a4d172586eb3cf0a769beca5b23f35325"><div class="ttname"><a href="struct_n_camera_1_1_s_proj_data.html#a4d172586eb3cf0a769beca5b23f35325">NCamera::SProjData::aspectRatio</a></div><div class="ttdeci">float aspectRatio</div><div class="ttdef"><b>Definition</b> Camera_Def.h:17</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_proj_data_html_aa383a7f9c0b219431a9ef7922d1a5c24"><div class="ttname"><a href="struct_n_camera_1_1_s_proj_data.html#aa383a7f9c0b219431a9ef7922d1a5c24">NCamera::SProjData::nearClip</a></div><div class="ttdeci">float nearClip</div><div class="ttdef"><b>Definition</b> Camera_Def.h:18</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_proj_data_html_ac868893ea3f2002b3335641e7b466f9a"><div class="ttname"><a href="struct_n_camera_1_1_s_proj_data.html#ac868893ea3f2002b3335641e7b466f9a">NCamera::SProjData::viewAngleRad</a></div><div class="ttdeci">float viewAngleRad</div><div class="ttdef"><b>Definition</b> Camera_Def.h:16</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_proj_data_html_aceb94d8b03ae4b531fb9c95571c6d44e"><div class="ttname"><a href="struct_n_camera_1_1_s_proj_data.html#aceb94d8b03ae4b531fb9c95571c6d44e">NCamera::SProjData::farClip</a></div><div class="ttdeci">float farClip</div><div class="ttdef"><b>Definition</b> Camera_Def.h:19</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_view_data_html"><div class="ttname"><a href="struct_n_camera_1_1_s_view_data.html">NCamera::SViewData</a></div><div class="ttdoc">ビュー行列作成に必要な上方</div><div class="ttdef"><b>Definition</b> Camera_Def.h:8</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_view_data_html_a3fb2d82c2c219b84133f41ace254abaf"><div class="ttname"><a href="struct_n_camera_1_1_s_view_data.html#a3fb2d82c2c219b84133f41ace254abaf">NCamera::SViewData::pos</a></div><div class="ttdeci">float3 pos</div><div class="ttdef"><b>Definition</b> Camera_Def.h:9</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_view_data_html_aa9fda39e4625e13669be033f84218785"><div class="ttname"><a href="struct_n_camera_1_1_s_view_data.html#aa9fda39e4625e13669be033f84218785">NCamera::SViewData::foc</a></div><div class="ttdeci">float3 foc</div><div class="ttdef"><b>Definition</b> Camera_Def.h:10</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_view_data_html_ac0c5d350e7567cbceed234fd4771a266"><div class="ttname"><a href="struct_n_camera_1_1_s_view_data.html#ac0c5d350e7567cbceed234fd4771a266">NCamera::SViewData::up</a></div><div class="ttdeci">float3 up</div><div class="ttdef"><b>Definition</b> Camera_Def.h:11</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_viewport_html"><div class="ttname"><a href="struct_n_camera_1_1_s_viewport.html">NCamera::SViewport</a></div><div class="ttdoc">ビューポート情報を持つ構造体</div><div class="ttdef"><b>Definition</b> Camera_Def.h:23</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_viewport_html_a25ea7d281f2c329e61f6a1e3c41d52d2"><div class="ttname"><a href="struct_n_camera_1_1_s_viewport.html#a25ea7d281f2c329e61f6a1e3c41d52d2">NCamera::SViewport::topLeftPos</a></div><div class="ttdeci">float2 topLeftPos</div><div class="ttdef"><b>Definition</b> Camera_Def.h:24</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_viewport_html_a6111b33732f98619a4016aadc8a407a0"><div class="ttname"><a href="struct_n_camera_1_1_s_viewport.html#a6111b33732f98619a4016aadc8a407a0">NCamera::SViewport::minDepth</a></div><div class="ttdeci">float minDepth</div><div class="ttdef"><b>Definition</b> Camera_Def.h:27</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_viewport_html_a7e350606b0fa11b10d3ceca2c025f49c"><div class="ttname"><a href="struct_n_camera_1_1_s_viewport.html#a7e350606b0fa11b10d3ceca2c025f49c">NCamera::SViewport::size</a></div><div class="ttdeci">float2 size</div><div class="ttdef"><b>Definition</b> Camera_Def.h:25</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_viewport_html_ab88f188875dcf5a86f532913dc1ea450"><div class="ttname"><a href="struct_n_camera_1_1_s_viewport.html#ab88f188875dcf5a86f532913dc1ea450">NCamera::SViewport::maxDepth</a></div><div class="ttdeci">float maxDepth</div><div class="ttdef"><b>Definition</b> Camera_Def.h:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_73b2b7c7692df5153c734ea07eeabb57.html">GameFramework</a></li><li class="navelem"><a href="dir_119bfdf84d9b59981a95d295d9c250bd.html">Camera</a></li><li class="navelem"><a href="_camera___def_8h.html">Camera_Def.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

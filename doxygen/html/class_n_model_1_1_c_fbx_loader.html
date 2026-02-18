@@ -1,0 +1,1414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NModel::CFbxLoader クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_model_1_1_c_fbx_loader.html','','class_n_model_1_1_c_fbx_loader-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NModel::CFbxLoader クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>FBXの読み込みを行うクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_model___fbx_loader_8h_source.html">Model_FbxLoader.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8a7572ff4ca2c9b0e8c69315a5ed57f8" id="r_a8a7572ff4ca2c9b0e8c69315a5ed57f8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a8a7572ff4ca2c9b0e8c69315a5ed57f8">Load</a> (const char *_filePath, <a class="el" href="namespace_n_model.html#a7956003237dc2e14c56f0987495abfec">EFbxAxisSystem</a> _axis=<a class="el" href="namespace_n_model.html#a7956003237dc2e14c56f0987495abfecac0ad831a34c4633bee584066cfcc5040">EFbxAxisSystem::OPENGL</a>)</td></tr>
+<tr class="memdesc:a8a7572ff4ca2c9b0e8c69315a5ed57f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">FBXファイルの読み込み  <br /></td></tr>
+<tr class="memitem:a748c075ff0a4b80903e828ef1bd6bff6" id="r_a748c075ff0a4b80903e828ef1bd6bff6"><td class="memItemLeft">FbxNode &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a748c075ff0a4b80903e828ef1bd6bff6">GetFbxRootNode</a> ()</td></tr>
+<tr class="memdesc:a748c075ff0a4b80903e828ef1bd6bff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">FBXのノードを取得  <br /></td></tr>
+<tr class="memitem:ab4202178ed862304c4e44df7c164810e" id="r_ab4202178ed862304c4e44df7c164810e"><td class="memItemLeft">size_t&#160;</td><td class="memItemRight"><a class="el" href="#ab4202178ed862304c4e44df7c164810e">GetMeshNodeCount</a> () const</td></tr>
+<tr class="memdesc:ab4202178ed862304c4e44df7c164810e"><td class="mdescLeft">&#160;</td><td class="mdescRight">メッシュノードの数を取得  <br /></td></tr>
+<tr class="memitem:ae6b617b4f9de43da80c4062daafc69ec" id="r_ae6b617b4f9de43da80c4062daafc69ec"><td class="memItemLeft"><a class="el" href="struct_n_model_1_1_s_fbx_mesh_node.html">SFbxMeshNode</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ae6b617b4f9de43da80c4062daafc69ec">GetMeshNode</a> (const unsigned int _idx)</td></tr>
+<tr class="memdesc:ae6b617b4f9de43da80c4062daafc69ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">メッシュノードを取得  <br /></td></tr>
+<tr class="memitem:a255a1a052bd5705ed5f77b20049dc5f5" id="r_a255a1a052bd5705ed5f77b20049dc5f5"><td class="memItemLeft">const <a class="el" href="struct_n_model_1_1_s_fbx_mesh_node.html">SFbxMeshNode</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a255a1a052bd5705ed5f77b20049dc5f5">GetMeshNode</a> (const unsigned int _idx) const</td></tr>
+<tr class="memitem:afe20d528b5841224f12363d195291e4a" id="r_afe20d528b5841224f12363d195291e4a"><td class="memItemLeft">unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#afe20d528b5841224f12363d195291e4a">GetAnimationCount</a> () const</td></tr>
+<tr class="memdesc:afe20d528b5841224f12363d195291e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーション数を取得する  <br /></td></tr>
+<tr class="memitem:ae4d72799f56120080e89d208be84bcff" id="r_ae4d72799f56120080e89d208be84bcff"><td class="memItemLeft">const <a class="el" href="struct_n_model_1_1_s_fbx_animation_stack.html">SFbxAnimationStack</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ae4d72799f56120080e89d208be84bcff">GetAnmStack</a> (const unsigned int _idx) const</td></tr>
+<tr class="memdesc:ae4d72799f56120080e89d208be84bcff"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーション情報を取得する  <br /></td></tr>
+<tr class="memitem:aa75f70772f3aa58734cd85baa5e46e94" id="r_aa75f70772f3aa58734cd85baa5e46e94"><td class="memItemLeft">FbxLongLong&#160;</td><td class="memItemRight"><a class="el" href="#aa75f70772f3aa58734cd85baa5e46e94">GetFbxTimePerFrame</a> () const</td></tr>
+<tr class="memdesc:aa75f70772f3aa58734cd85baa5e46e94"><td class="mdescLeft">&#160;</td><td class="mdescRight">1フレームFBX時間を取得する  <br /></td></tr>
+<tr class="memitem:a980c6d0692cc6815c7f956443b883259" id="r_a980c6d0692cc6815c7f956443b883259"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a980c6d0692cc6815c7f956443b883259">SetAnmStack</a> (const unsigned int _idxAnmStack)</td></tr>
+<tr class="memdesc:a980c6d0692cc6815c7f956443b883259"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用するアニメーションスタックをセットする  <br /></td></tr>
+<tr class="memitem:a72fc40d262166f6a4df20a4b39f98bba" id="r_a72fc40d262166f6a4df20a4b39f98bba"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a72fc40d262166f6a4df20a4b39f98bba">CFbxLoader</a> ()</td></tr>
+<tr class="memitem:aa73cc7c7ccf509dc6172a76576a9b451" id="r_aa73cc7c7ccf509dc6172a76576a9b451"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa73cc7c7ccf509dc6172a76576a9b451">~CFbxLoader</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2dd28a8ec8cbc2f20a1a37144d62d844" id="r_a2dd28a8ec8cbc2f20a1a37144d62d844"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2dd28a8ec8cbc2f20a1a37144d62d844">SetupNode</a> ()</td></tr>
+<tr class="memdesc:a2dd28a8ec8cbc2f20a1a37144d62d844"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードを読み込む  <br /></td></tr>
+<tr class="memitem:a7738c907280e244d06a66369e3cb2504" id="r_a7738c907280e244d06a66369e3cb2504"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7738c907280e244d06a66369e3cb2504">LoadNodeRecursively</a> (FbxNode *_pNode, std::string _parentNodeName, const std::string &amp;_rFilePath)</td></tr>
+<tr class="memdesc:a7738c907280e244d06a66369e3cb2504"><td class="mdescLeft">&#160;</td><td class="mdescRight">ノードを再帰的に読み込む  <br /></td></tr>
+<tr class="memitem:a6e86abe4c3648896f041bfb2b4b1d2a9" id="r_a6e86abe4c3648896f041bfb2b4b1d2a9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6e86abe4c3648896f041bfb2b4b1d2a9">OptimizeMesh</a> ()</td></tr>
+<tr class="memdesc:a6e86abe4c3648896f041bfb2b4b1d2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">メッシュを最適化する  <br /></td></tr>
+<tr class="memitem:a1619d3526cb1f33c5af2d17714148320" id="r_a1619d3526cb1f33c5af2d17714148320"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1619d3526cb1f33c5af2d17714148320">SetupAnimation</a> ()</td></tr>
+<tr class="memdesc:a1619d3526cb1f33c5af2d17714148320"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーション情報を読み込む  <br /></td></tr>
+<tr class="memitem:aebfcb99aadbd3d3de8cf3cd480cb97b7" id="r_aebfcb99aadbd3d3de8cf3cd480cb97b7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aebfcb99aadbd3d3de8cf3cd480cb97b7">DumpNode</a> (const char *_fileName)</td></tr>
+<tr class="memdesc:aebfcb99aadbd3d3de8cf3cd480cb97b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">FBXのノードをダンプする  <br /></td></tr>
+<tr class="memitem:ad17f8dc39745dfd04c66aed7d1374217" id="r_ad17f8dc39745dfd04c66aed7d1374217"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad17f8dc39745dfd04c66aed7d1374217">DumpAnimation</a> (const char *_fileName)</td></tr>
+<tr class="memdesc:ad17f8dc39745dfd04c66aed7d1374217"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーション情報をダンプする  <br /></td></tr>
+<tr class="memitem:a2a813d6095bff191527d78dda4755c27" id="r_a2a813d6095bff191527d78dda4755c27"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2a813d6095bff191527d78dda4755c27">DumpModelInfo</a> (const char *_fileName)</td></tr>
+<tr class="memdesc:a2a813d6095bff191527d78dda4755c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">頂点情報などのモデル情報をダンプする  <br /></td></tr>
+<tr class="memitem:a9e378d9687fc3b6671e96d18dfbdb364" id="r_a9e378d9687fc3b6671e96d18dfbdb364"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9e378d9687fc3b6671e96d18dfbdb364">DumpClusterInfo</a> (const char *_fileName)</td></tr>
+<tr class="memdesc:a9e378d9687fc3b6671e96d18dfbdb364"><td class="mdescLeft">&#160;</td><td class="mdescRight">クラスター名とクラスターインデックスをダンプする  <br /></td></tr>
+<tr class="memitem:a7aad28bb6ffb03025d96975627ca2a30" id="r_a7aad28bb6ffb03025d96975627ca2a30"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7aad28bb6ffb03025d96975627ca2a30">CFbxLoader</a> (CFbxLoader &amp;)</td></tr>
+<tr class="memitem:a265949257e0f9f3d108c9eba46751f79" id="r_a265949257e0f9f3d108c9eba46751f79"><td class="memItemLeft"><a class="el" href="#a72fc40d262166f6a4df20a4b39f98bba">CFbxLoader</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a265949257e0f9f3d108c9eba46751f79">operator=</a> (<a class="el" href="#a72fc40d262166f6a4df20a4b39f98bba">CFbxLoader</a> &amp;)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ae5bde2338780d7ec189699d406533ff9" id="r_ae5bde2338780d7ec189699d406533ff9"><td class="memItemLeft">FbxManager *&#160;</td><td class="memItemRight"><a class="el" href="#ae5bde2338780d7ec189699d406533ff9">m_pFbxManager</a></td></tr>
+<tr class="memitem:a2aa3faaa77a1dfe0c1eaef8964564f92" id="r_a2aa3faaa77a1dfe0c1eaef8964564f92"><td class="memItemLeft">FbxScene *&#160;</td><td class="memItemRight"><a class="el" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a></td></tr>
+<tr class="memitem:a783934f0732300f26693f947c3d0928c" id="r_a783934f0732300f26693f947c3d0928c"><td class="memItemLeft">FbxImporter *&#160;</td><td class="memItemRight"><a class="el" href="#a783934f0732300f26693f947c3d0928c">m_pFbxImporter</a></td></tr>
+<tr class="memitem:ad21e53ebc277b27e23b91cad5cf52cd4" id="r_ad21e53ebc277b27e23b91cad5cf52cd4"><td class="memItemLeft">std::vector&lt; <a class="el" href="struct_n_model_1_1_s_fbx_mesh_node.html">SFbxMeshNode</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a></td></tr>
+<tr class="memitem:a03333624edff623cc3983df92af46a64" id="r_a03333624edff623cc3983df92af46a64"><td class="memItemLeft">std::vector&lt; <a class="el" href="struct_n_model_1_1_s_fbx_animation_stack.html">SFbxAnimationStack</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a03333624edff623cc3983df92af46a64">m_anmStack</a></td></tr>
+<tr class="memitem:a67dac380463c1821fc3ba7b42de1bf82" id="r_a67dac380463c1821fc3ba7b42de1bf82"><td class="memItemLeft">FbxLongLong&#160;</td><td class="memItemRight"><a class="el" href="#a67dac380463c1821fc3ba7b42de1bf82">m_timePerFrame</a></td></tr>
+<tr class="memitem:ac72fdc704f45add0a34dc81309e1b6c6" id="r_ac72fdc704f45add0a34dc81309e1b6c6"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ac72fdc704f45add0a34dc81309e1b6c6">m_filePath</a></td></tr>
+<tr class="memitem:a67bc403451329436fbe8344e33ad2dc2" id="r_a67bc403451329436fbe8344e33ad2dc2"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a67bc403451329436fbe8344e33ad2dc2">m_fileDirPath</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>FBXの読み込みを行うクラス </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">todo</a></b></dt><dd>ボーンノードの情報も必要 </dd></dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a72fc40d262166f6a4df20a4b39f98bba" name="a72fc40d262166f6a4df20a4b39f98bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72fc40d262166f6a4df20a4b39f98bba">&#9670;&#160;</a></span>CFbxLoader() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NModel::CFbxLoader::CFbxLoader </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  553</span>                           :</div>
+<div class="line"><span class="lineno">  554</span>        <a class="code hl_variable" href="#ae5bde2338780d7ec189699d406533ff9">m_pFbxManager</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  555</span>        <a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>(<span class="keyword">nullptr</span>),</div>
+<div class="line"><span class="lineno">  556</span>        <a class="code hl_variable" href="#a783934f0732300f26693f947c3d0928c">m_pFbxImporter</a>(<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">  557</span>    {</div>
+<div class="line"><span class="lineno">  558</span> </div>
+<div class="line"><span class="lineno">  559</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a2aa3faaa77a1dfe0c1eaef8964564f92"><div class="ttname"><a href="#a2aa3faaa77a1dfe0c1eaef8964564f92">NModel::CFbxLoader::m_pFbxScene</a></div><div class="ttdeci">FbxScene * m_pFbxScene</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:47</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a783934f0732300f26693f947c3d0928c"><div class="ttname"><a href="#a783934f0732300f26693f947c3d0928c">NModel::CFbxLoader::m_pFbxImporter</a></div><div class="ttdeci">FbxImporter * m_pFbxImporter</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:48</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_ae5bde2338780d7ec189699d406533ff9"><div class="ttname"><a href="#ae5bde2338780d7ec189699d406533ff9">NModel::CFbxLoader::m_pFbxManager</a></div><div class="ttdeci">FbxManager * m_pFbxManager</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:46</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa73cc7c7ccf509dc6172a76576a9b451" name="aa73cc7c7ccf509dc6172a76576a9b451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa73cc7c7ccf509dc6172a76576a9b451">&#9670;&#160;</a></span>~CFbxLoader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NModel::CFbxLoader::~CFbxLoader </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  562</span>    {</div>
+<div class="line"><span class="lineno">  563</span>        <a class="code hl_define" href="_model___fbx_loader_8cpp.html#a2c10226fb23e07f84f1fe641473ada74">SafeDestroyFbxObj</a>(<a class="code hl_variable" href="#a783934f0732300f26693f947c3d0928c">m_pFbxImporter</a>);</div>
+<div class="line"><span class="lineno">  564</span>        <a class="code hl_define" href="_model___fbx_loader_8cpp.html#a2c10226fb23e07f84f1fe641473ada74">SafeDestroyFbxObj</a>(<a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>);</div>
+<div class="line"><span class="lineno">  565</span>        <a class="code hl_define" href="_model___fbx_loader_8cpp.html#a2c10226fb23e07f84f1fe641473ada74">SafeDestroyFbxObj</a>(<a class="code hl_variable" href="#ae5bde2338780d7ec189699d406533ff9">m_pFbxManager</a>);</div>
+<div class="line"><span class="lineno">  566</span> </div>
+<div class="line"><span class="lineno">  567</span>        <span class="comment">// テクスチャの解放を行う</span></div>
+<div class="line"><span class="lineno">  568</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  569</span>            <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>[i].Release();</div>
+<div class="line"><span class="lineno">  570</span>        }</div>
+<div class="line"><span class="lineno">  571</span>    }</div>
+<div class="ttc" id="a_model___fbx_loader_8cpp_html_a2c10226fb23e07f84f1fe641473ada74"><div class="ttname"><a href="_model___fbx_loader_8cpp.html#a2c10226fb23e07f84f1fe641473ada74">SafeDestroyFbxObj</a></div><div class="ttdeci">#define SafeDestroyFbxObj(pFbxObj)</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.cpp:13</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_ad21e53ebc277b27e23b91cad5cf52cd4"><div class="ttname"><a href="#ad21e53ebc277b27e23b91cad5cf52cd4">NModel::CFbxLoader::m_meshNodes</a></div><div class="ttdeci">std::vector&lt; SFbxMeshNode &gt; m_meshNodes</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7aad28bb6ffb03025d96975627ca2a30" name="a7aad28bb6ffb03025d96975627ca2a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aad28bb6ffb03025d96975627ca2a30">&#9670;&#160;</a></span>CFbxLoader() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NModel::CFbxLoader::CFbxLoader </td>
+          <td>(</td>
+          <td class="paramtype">CFbxLoader &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  103</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="ad17f8dc39745dfd04c66aed7d1374217" name="ad17f8dc39745dfd04c66aed7d1374217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad17f8dc39745dfd04c66aed7d1374217">&#9670;&#160;</a></span>DumpAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CFbxLoader::DumpAnimation </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーション情報をダンプする </p>
+<div class="fragment"><div class="line"><span class="lineno"> 1022</span>    {</div>
+<div class="line"><span class="lineno"> 1023</span>        <span class="comment">// 出力先ディレクトリに移動</span></div>
+<div class="line"><span class="lineno"> 1024</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> BUF_SIZE = 256;</div>
+<div class="line"><span class="lineno"> 1025</span>        <span class="keywordtype">char</span> prevDirectory[BUF_SIZE];</div>
+<div class="line"><span class="lineno"> 1026</span>        GetCurrentDirectory(BUF_SIZE, prevDirectory);</div>
+<div class="line"><span class="lineno"> 1027</span>        SetCurrentDirectory(<span class="stringliteral">&quot;Output/Dump/Fbx/Animation/&quot;</span>);</div>
+<div class="line"><span class="lineno"> 1028</span> </div>
+<div class="line"><span class="lineno"> 1029</span>        <span class="comment">// 出力ファイル名を設定</span></div>
+<div class="line"><span class="lineno"> 1030</span>        std::string fileName = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno"> 1031</span>        fileName += _fileName;</div>
+<div class="line"><span class="lineno"> 1032</span>        fileName += <span class="stringliteral">&quot;.FbxAnimationDump&quot;</span>;</div>
+<div class="line"><span class="lineno"> 1033</span>        <a class="code hl_function" href="namespace_n_util.html#a80aca243366b20f3351eaa4f76fb7887">NUtil::ReplaceString</a>(fileName, <span class="stringliteral">&quot;/&quot;</span>, <span class="stringliteral">&quot;_&quot;</span>);</div>
+<div class="line"><span class="lineno"> 1034</span> </div>
+<div class="line"><span class="lineno"> 1035</span>        <span class="comment">// ファイルオープン</span></div>
+<div class="line"><span class="lineno"> 1036</span>        std::ofstream   file;</div>
+<div class="line"><span class="lineno"> 1037</span>        file.open(fileName.data(), file.out | file.trunc);</div>
+<div class="line"><span class="lineno"> 1038</span> </div>
+<div class="line"><span class="lineno"> 1039</span>        <span class="comment">// アニメーションスタックの情報をダンプ</span></div>
+<div class="line"><span class="lineno"> 1040</span>        file &lt;&lt; <span class="stringliteral">&quot;AnimationStack数 : &quot;</span> &lt;&lt; <a class="code hl_variable" href="#a03333624edff623cc3983df92af46a64">m_anmStack</a>.size() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno"> 1041</span>        file &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno"> 1042</span> </div>
+<div class="line"><span class="lineno"> 1043</span>        <span class="comment">// 全ての情報を書き込む</span></div>
+<div class="line"><span class="lineno"> 1044</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#a03333624edff623cc3983df92af46a64">m_anmStack</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno"> 1045</span>            SFbxAnimationStack&amp; anmStack = <a class="code hl_variable" href="#a03333624edff623cc3983df92af46a64">m_anmStack</a>[i];</div>
+<div class="line"><span class="lineno"> 1046</span> </div>
+<div class="line"><span class="lineno"> 1047</span>            file&lt;&lt;  anmStack.anmName &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><span class="lineno"> 1048</span>                    <span class="stringliteral">&quot;Frame [&quot;</span> &lt;&lt; anmStack.startFrame &lt;&lt; <span class="stringliteral">&quot; - &quot;</span> &lt;&lt; anmStack.stopFrame &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt;</div>
+<div class="line"><span class="lineno"> 1049</span>                    std::endl;</div>
+<div class="line"><span class="lineno"> 1050</span>        }</div>
+<div class="line"><span class="lineno"> 1051</span>        file &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno"> 1052</span> </div>
+<div class="line"><span class="lineno"> 1053</span>        file.close();</div>
+<div class="line"><span class="lineno"> 1054</span> </div>
+<div class="line"><span class="lineno"> 1055</span>        <span class="comment">// カレントディレクトリを戻す</span></div>
+<div class="line"><span class="lineno"> 1056</span>        SetCurrentDirectory(prevDirectory);</div>
+<div class="line"><span class="lineno"> 1057</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a03333624edff623cc3983df92af46a64"><div class="ttname"><a href="#a03333624edff623cc3983df92af46a64">NModel::CFbxLoader::m_anmStack</a></div><div class="ttdeci">std::vector&lt; SFbxAnimationStack &gt; m_anmStack</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:54</div></div>
+<div class="ttc" id="anamespace_n_util_html_a80aca243366b20f3351eaa4f76fb7887"><div class="ttname"><a href="namespace_n_util.html#a80aca243366b20f3351eaa4f76fb7887">NUtil::ReplaceString</a></div><div class="ttdeci">void ReplaceString(std::string &amp;_rDest, const std::string &amp;_rTarget, const std::string &amp;_rReplace)</div><div class="ttdoc">文字列内の特定文字列を指定した文字列で置き換える</div><div class="ttdef"><b>Definition</b> Util_Common.cpp:40</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9e378d9687fc3b6671e96d18dfbdb364" name="a9e378d9687fc3b6671e96d18dfbdb364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e378d9687fc3b6671e96d18dfbdb364">&#9670;&#160;</a></span>DumpClusterInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CFbxLoader::DumpClusterInfo </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>クラスター名とクラスターインデックスをダンプする </p>
+<div class="fragment"><div class="line"><span class="lineno">  949</span>    {   </div>
+<div class="line"><span class="lineno">  950</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>.size() &gt; 0);</div>
+<div class="line"><span class="lineno">  951</span> </div>
+<div class="line"><span class="lineno">  952</span>        <span class="comment">// 出力先ディレクトリに移動</span></div>
+<div class="line"><span class="lineno">  953</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> BUF_SIZE = 256;</div>
+<div class="line"><span class="lineno">  954</span>        <span class="keywordtype">char</span> prevDirectory[BUF_SIZE];</div>
+<div class="line"><span class="lineno">  955</span>        GetCurrentDirectory(BUF_SIZE, prevDirectory);</div>
+<div class="line"><span class="lineno">  956</span>        SetCurrentDirectory(<span class="stringliteral">&quot;Output/Dump/Fbx/Cluster/&quot;</span>);</div>
+<div class="line"><span class="lineno">  957</span> </div>
+<div class="line"><span class="lineno">  958</span>        <span class="comment">// 出力ファイル名を設定</span></div>
+<div class="line"><span class="lineno">  959</span>        std::string fileName = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  960</span>        fileName += _fileName;</div>
+<div class="line"><span class="lineno">  961</span>        fileName += <span class="stringliteral">&quot;.FbxClusterDump&quot;</span>;</div>
+<div class="line"><span class="lineno">  962</span>        <a class="code hl_function" href="namespace_n_util.html#a80aca243366b20f3351eaa4f76fb7887">NUtil::ReplaceString</a>(fileName, <span class="stringliteral">&quot;/&quot;</span>, <span class="stringliteral">&quot;_&quot;</span>);</div>
+<div class="line"><span class="lineno">  963</span> </div>
+<div class="line"><span class="lineno">  964</span>        <span class="comment">// ファイルオープン</span></div>
+<div class="line"><span class="lineno">  965</span>        std::ofstream   file;</div>
+<div class="line"><span class="lineno">  966</span>        file.open(fileName.data(), file.out | file.trunc);</div>
+<div class="line"><span class="lineno">  967</span> </div>
+<div class="line"><span class="lineno">  968</span>        file &lt;&lt; <span class="stringliteral">&quot;モデル内のクラスター情報&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  969</span>        file &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  970</span> </div>
+<div class="line"><span class="lineno">  971</span>        <span class="keyword">const</span> FbxSkin*  pFbxSkin = <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>[0].pFbxSkin;</div>
+<div class="line"><span class="lineno">  972</span> </div>
+<div class="line"><span class="lineno">  973</span>        <span class="comment">// クラスターがない場合</span></div>
+<div class="line"><span class="lineno">  974</span>        <span class="keywordflow">if</span> (pFbxSkin == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  975</span>            file &lt;&lt; <span class="stringliteral">&quot;クラスターは存在しません。&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  976</span>        }</div>
+<div class="line"><span class="lineno">  977</span>        <span class="comment">// クラスターがある場合</span></div>
+<div class="line"><span class="lineno">  978</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  979</span>            <span class="keyword">const</span> <span class="keywordtype">int</span>           clusterCount = pFbxSkin-&gt;GetClusterCount();</div>
+<div class="line"><span class="lineno">  980</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; clusterCount; ++i) {</div>
+<div class="line"><span class="lineno">  981</span>                <span class="keyword">const</span> FbxCluster*   pFbxCluster = pFbxSkin-&gt;GetCluster(i);</div>
+<div class="line"><span class="lineno">  982</span>                <span class="keyword">const</span> <span class="keywordtype">char</span>*         pClusterName = pFbxCluster-&gt;GetName();</div>
+<div class="line"><span class="lineno">  983</span>                <span class="keywordtype">char</span>*               pClusterNameAscii = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">  984</span> </div>
+<div class="line"><span class="lineno">  985</span>                FbxUTF8ToAnsi(pClusterName, pClusterNameAscii);</div>
+<div class="line"><span class="lineno">  986</span> </div>
+<div class="line"><span class="lineno">  987</span>                file &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;]  &quot;</span> &lt;&lt;</div>
+<div class="line"><span class="lineno">  988</span>                    pClusterNameAscii &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  989</span> </div>
+<div class="line"><span class="lineno">  990</span>                FbxFree(pClusterNameAscii);</div>
+<div class="line"><span class="lineno">  991</span>            }</div>
+<div class="line"><span class="lineno">  992</span>        }</div>
+<div class="line"><span class="lineno">  993</span> </div>
+<div class="line"><span class="lineno">  994</span>        file.close();</div>
+<div class="line"><span class="lineno">  995</span> </div>
+<div class="line"><span class="lineno">  996</span>        <span class="comment">// カレントディレクトリを戻す</span></div>
+<div class="line"><span class="lineno">  997</span>        SetCurrentDirectory(prevDirectory);</div>
+<div class="line"><span class="lineno">  998</span> </div>
+<div class="line"><span class="lineno">  999</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2a813d6095bff191527d78dda4755c27" name="a2a813d6095bff191527d78dda4755c27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a813d6095bff191527d78dda4755c27">&#9670;&#160;</a></span>DumpModelInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CFbxLoader::DumpModelInfo </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>頂点情報などのモデル情報をダンプする </p>
+<div class="fragment"><div class="line"><span class="lineno">  884</span>    {</div>
+<div class="line"><span class="lineno">  885</span>        <span class="comment">// 出力先ディレクトリに移動</span></div>
+<div class="line"><span class="lineno">  886</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> BUF_SIZE = 256;</div>
+<div class="line"><span class="lineno">  887</span>        <span class="keywordtype">char</span> prevDirectory[BUF_SIZE];</div>
+<div class="line"><span class="lineno">  888</span>        GetCurrentDirectory(BUF_SIZE, prevDirectory);</div>
+<div class="line"><span class="lineno">  889</span>        SetCurrentDirectory(<span class="stringliteral">&quot;Output/Dump/Fbx/Info/&quot;</span>);</div>
+<div class="line"><span class="lineno">  890</span> </div>
+<div class="line"><span class="lineno">  891</span>        <span class="comment">// 出力ファイル名を設定</span></div>
+<div class="line"><span class="lineno">  892</span>        std::string fileName = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  893</span>        fileName += _fileName;</div>
+<div class="line"><span class="lineno">  894</span>        fileName += <span class="stringliteral">&quot;.FbxModelInfoDump&quot;</span>;</div>
+<div class="line"><span class="lineno">  895</span>        <a class="code hl_function" href="namespace_n_util.html#a80aca243366b20f3351eaa4f76fb7887">NUtil::ReplaceString</a>(fileName, <span class="stringliteral">&quot;/&quot;</span>, <span class="stringliteral">&quot;_&quot;</span>);</div>
+<div class="line"><span class="lineno">  896</span> </div>
+<div class="line"><span class="lineno">  897</span>        <span class="comment">// ファイルオープン</span></div>
+<div class="line"><span class="lineno">  898</span>        std::ofstream   file;</div>
+<div class="line"><span class="lineno">  899</span>        file.open(fileName.data(), file.out | file.trunc);</div>
+<div class="line"><span class="lineno">  900</span> </div>
+<div class="line"><span class="lineno">  901</span>        file &lt;&lt; <span class="stringliteral">&quot;モデル内情報&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  902</span>        file &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  903</span> </div>
+<div class="line"><span class="lineno">  904</span>        <span class="comment">// メッシュノードの頂点数、インデックス数を出力</span></div>
+<div class="line"><span class="lineno">  905</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> vertexCountSum = 0;</div>
+<div class="line"><span class="lineno">  906</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> indexCountSum = 0;</div>
+<div class="line"><span class="lineno">  907</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> optVertexCountSum = 0;</div>
+<div class="line"><span class="lineno">  908</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> optIndexCountSum = 0;</div>
+<div class="line"><span class="lineno">  909</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  910</span>            SFbxMeshNode&amp; meshNode = <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>[i];</div>
+<div class="line"><span class="lineno">  911</span>            vertexCountSum += meshNode.vertexCount;</div>
+<div class="line"><span class="lineno">  912</span>            indexCountSum += meshNode.indexCount;</div>
+<div class="line"><span class="lineno">  913</span>            optVertexCountSum += meshNode.optimizedVertex.size();</div>
+<div class="line"><span class="lineno">  914</span>            optIndexCountSum += meshNode.optimizedIndex.size();</div>
+<div class="line"><span class="lineno">  915</span>        }</div>
+<div class="line"><span class="lineno">  916</span> </div>
+<div class="line"><span class="lineno">  917</span>        file &lt;&lt; <span class="stringliteral">&quot;全メッシュの頂点数　　　　　　　　　　　&quot;</span> &lt;&lt; vertexCountSum &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  918</span>        file &lt;&lt; <span class="stringliteral">&quot;全メッシュのインデックス数　　　　　　　&quot;</span> &lt;&lt; indexCountSum &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  919</span>        file &lt;&lt; <span class="stringliteral">&quot;ポリゴン数(インデックス数 / 3)　　　 　&quot;</span> &lt;&lt; <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;uint&gt;</a>(indexCountSum / 3) &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  920</span>        file &lt;&lt; <span class="stringliteral">&quot;最適化後の全メッシュの頂点数　　　　　　&quot;</span> &lt;&lt; optVertexCountSum &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  921</span>        file &lt;&lt; <span class="stringliteral">&quot;最適化後の全メッシュのインデックス数 　 &quot;</span> &lt;&lt; optIndexCountSum &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  922</span> </div>
+<div class="line"><span class="lineno">  923</span>        file &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  924</span> </div>
+<div class="line"><span class="lineno">  925</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>.size(); ++i) {</div>
+<div class="line"><span class="lineno">  926</span>            SFbxMeshNode&amp; meshNode = <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>[i];</div>
+<div class="line"><span class="lineno">  927</span> </div>
+<div class="line"><span class="lineno">  928</span>            <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> vertexCount = meshNode.vertexCount;</div>
+<div class="line"><span class="lineno">  929</span>            <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> indexCount = meshNode.indexCount;</div>
+<div class="line"><span class="lineno">  930</span> </div>
+<div class="line"><span class="lineno">  931</span>            <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> optVertexCount = meshNode.optimizedVertex.size();</div>
+<div class="line"><span class="lineno">  932</span>            <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> optIndexCount = meshNode.optimizedIndex.size();</div>
+<div class="line"><span class="lineno">  933</span> </div>
+<div class="line"><span class="lineno">  934</span>            file &lt;&lt; meshNode.nodeName &lt;&lt; std::endl; <span class="comment">// メッシュ名</span></div>
+<div class="line"><span class="lineno">  935</span>            file &lt;&lt; <span class="stringliteral">&quot;    vertexCount    : &quot;</span> &lt;&lt; vertexCount &lt;&lt;  std::endl;</div>
+<div class="line"><span class="lineno">  936</span>            file &lt;&lt; <span class="stringliteral">&quot;    IndexCount     : &quot;</span> &lt;&lt; indexCount &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  937</span> </div>
+<div class="line"><span class="lineno">  938</span>            file &lt;&lt; <span class="stringliteral">&quot;    optVertexCount : &quot;</span> &lt;&lt; optVertexCount &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  939</span>            file &lt;&lt; <span class="stringliteral">&quot;    optIndexCount  : &quot;</span> &lt;&lt; optIndexCount &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  940</span>        }</div>
+<div class="line"><span class="lineno">  941</span> </div>
+<div class="line"><span class="lineno">  942</span>        file.close();</div>
+<div class="line"><span class="lineno">  943</span> </div>
+<div class="line"><span class="lineno">  944</span>        <span class="comment">// カレントディレクトリを戻す</span></div>
+<div class="line"><span class="lineno">  945</span>        SetCurrentDirectory(prevDirectory);</div>
+<div class="line"><span class="lineno">  946</span>    }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_a099b6a85136760ed980079095fc9afe4"><div class="ttname"><a href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast</a></div><div class="ttdeci">#define StaticCast</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:88</div></div>
+<div class="ttc" id="anamespace_n_common_html_a8094a1e0c0e75a57e0924da7c4c894c3"><div class="ttname"><a href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">NCommon::uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:9</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aebfcb99aadbd3d3de8cf3cd480cb97b7" name="aebfcb99aadbd3d3de8cf3cd480cb97b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebfcb99aadbd3d3de8cf3cd480cb97b7">&#9670;&#160;</a></span>DumpNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CFbxLoader::DumpNode </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fileName</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>FBXのノードをダンプする </p>
+<div class="fragment"><div class="line"><span class="lineno">  851</span>    {</div>
+<div class="line"><span class="lineno">  852</span>        <span class="comment">// 出力先ディレクトリに移動</span></div>
+<div class="line"><span class="lineno">  853</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> BUF_SIZE = 256;</div>
+<div class="line"><span class="lineno">  854</span>        <span class="keywordtype">char</span> prevDirectory[BUF_SIZE];</div>
+<div class="line"><span class="lineno">  855</span>        GetCurrentDirectory(BUF_SIZE, prevDirectory);</div>
+<div class="line"><span class="lineno">  856</span>        SetCurrentDirectory(<span class="stringliteral">&quot;Output/Dump/Fbx/Node/&quot;</span>);</div>
+<div class="line"><span class="lineno">  857</span> </div>
+<div class="line"><span class="lineno">  858</span>        <span class="comment">// 出力ファイル名を設定</span></div>
+<div class="line"><span class="lineno">  859</span>        std::string fileName = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  860</span>        fileName += _fileName;</div>
+<div class="line"><span class="lineno">  861</span>        fileName += <span class="stringliteral">&quot;.FbxNodeDump&quot;</span>;</div>
+<div class="line"><span class="lineno">  862</span>        <a class="code hl_function" href="namespace_n_util.html#a80aca243366b20f3351eaa4f76fb7887">NUtil::ReplaceString</a>(fileName, <span class="stringliteral">&quot;/&quot;</span>, <span class="stringliteral">&quot;_&quot;</span>);</div>
+<div class="line"><span class="lineno">  863</span> </div>
+<div class="line"><span class="lineno">  864</span>        <span class="comment">// ファイルオープン</span></div>
+<div class="line"><span class="lineno">  865</span>        std::ofstream   file;</div>
+<div class="line"><span class="lineno">  866</span>        file.open(fileName.data(), file.out | file.trunc);</div>
+<div class="line"><span class="lineno">  867</span> </div>
+<div class="line"><span class="lineno">  868</span>        file &lt;&lt; <span class="stringliteral">&quot;ファイル名 : &quot;</span> &lt;&lt; _fileName &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  869</span>        file &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  870</span> </div>
+<div class="line"><span class="lineno">  871</span>        <span class="comment">// 再帰的にノードをたどりダンプする</span></div>
+<div class="line"><span class="lineno">  872</span>        DumpFbxNodeRecursively(</div>
+<div class="line"><span class="lineno">  873</span>            file,</div>
+<div class="line"><span class="lineno">  874</span>            <a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>-&gt;GetRootNode());</div>
+<div class="line"><span class="lineno">  875</span> </div>
+<div class="line"><span class="lineno">  876</span>        <span class="comment">// ファイルクローズ</span></div>
+<div class="line"><span class="lineno">  877</span>        file.close();</div>
+<div class="line"><span class="lineno">  878</span> </div>
+<div class="line"><span class="lineno">  879</span>        <span class="comment">// カレントディレクトリを戻す</span></div>
+<div class="line"><span class="lineno">  880</span>        SetCurrentDirectory(prevDirectory);</div>
+<div class="line"><span class="lineno">  881</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afe20d528b5841224f12363d195291e4a" name="afe20d528b5841224f12363d195291e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe20d528b5841224f12363d195291e4a">&#9670;&#160;</a></span>GetAnimationCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int NModel::CFbxLoader::GetAnimationCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーション数を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a03333624edff623cc3983df92af46a64">m_anmStack</a>.size(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae4d72799f56120080e89d208be84bcff" name="ae4d72799f56120080e89d208be84bcff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d72799f56120080e89d208be84bcff">&#9670;&#160;</a></span>GetAnmStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_model_1_1_s_fbx_animation_stack.html">SFbxAnimationStack</a> &amp; NModel::CFbxLoader::GetAnmStack </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int</td>          <td class="paramname"><span class="paramname"><em>_idx</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーション情報を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a03333624edff623cc3983df92af46a64">m_anmStack</a>[_idx]; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a748c075ff0a4b80903e828ef1bd6bff6" name="a748c075ff0a4b80903e828ef1bd6bff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a748c075ff0a4b80903e828ef1bd6bff6">&#9670;&#160;</a></span>GetFbxRootNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FbxNode &amp; NModel::CFbxLoader::GetFbxRootNode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>FBXのノードを取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>{ <span class="keywordflow">return</span> *<a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>-&gt;GetRootNode(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa75f70772f3aa58734cd85baa5e46e94" name="aa75f70772f3aa58734cd85baa5e46e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75f70772f3aa58734cd85baa5e46e94">&#9670;&#160;</a></span>GetFbxTimePerFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FbxLongLong NModel::CFbxLoader::GetFbxTimePerFrame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1フレームFBX時間を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a67dac380463c1821fc3ba7b42de1bf82">m_timePerFrame</a>; }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a67dac380463c1821fc3ba7b42de1bf82"><div class="ttname"><a href="#a67dac380463c1821fc3ba7b42de1bf82">NModel::CFbxLoader::m_timePerFrame</a></div><div class="ttdeci">FbxLongLong m_timePerFrame</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:55</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae6b617b4f9de43da80c4062daafc69ec" name="ae6b617b4f9de43da80c4062daafc69ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b617b4f9de43da80c4062daafc69ec">&#9670;&#160;</a></span>GetMeshNode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_n_model_1_1_s_fbx_mesh_node.html">SFbxMeshNode</a> &amp; NModel::CFbxLoader::GetMeshNode </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int</td>          <td class="paramname"><span class="paramname"><em>_idx</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>メッシュノードを取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>[_idx]; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a255a1a052bd5705ed5f77b20049dc5f5" name="a255a1a052bd5705ed5f77b20049dc5f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255a1a052bd5705ed5f77b20049dc5f5">&#9670;&#160;</a></span>GetMeshNode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_n_model_1_1_s_fbx_mesh_node.html">SFbxMeshNode</a> &amp; NModel::CFbxLoader::GetMeshNode </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int</td>          <td class="paramname"><span class="paramname"><em>_idx</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   28</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>[_idx]; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab4202178ed862304c4e44df7c164810e" name="ab4202178ed862304c4e44df7c164810e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4202178ed862304c4e44df7c164810e">&#9670;&#160;</a></span>GetMeshNodeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t NModel::CFbxLoader::GetMeshNodeCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>メッシュノードの数を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>.size(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8a7572ff4ca2c9b0e8c69315a5ed57f8" name="a8a7572ff4ca2c9b0e8c69315a5ed57f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7572ff4ca2c9b0e8c69315a5ed57f8">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NModel::CFbxLoader::Load </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_filePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_n_model.html#a7956003237dc2e14c56f0987495abfec">EFbxAxisSystem</a></td>          <td class="paramname"><span class="paramname"><em>_axis</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="namespace_n_model.html#a7956003237dc2e14c56f0987495abfecac0ad831a34c4633bee584066cfcc5040">EFbxAxisSystem::OPENGL</a></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>FBXファイルの読み込み </p>
+<div class="fragment"><div class="line"><span class="lineno">  574</span>    {</div>
+<div class="line"><span class="lineno">  575</span>        <span class="keywordtype">bool</span> sts = <span class="keyword">false</span>;   <span class="comment">// 汎用フラグ変数</span></div>
+<div class="line"><span class="lineno">  576</span> </div>
+<div class="line"><span class="lineno">  577</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  578</span>            <span class="comment">// FBXオブジェクトを初期化</span></div>
+<div class="line"><span class="lineno">  579</span>            sts = SetupFbxObject(<a class="code hl_variable" href="#ae5bde2338780d7ec189699d406533ff9">m_pFbxManager</a>, <a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>);</div>
+<div class="line"><span class="lineno">  580</span>            <span class="keywordflow">if</span> (!sts) { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><span class="lineno">  581</span> </div>
+<div class="line"><span class="lineno">  582</span>            <span class="comment">// インポータ作成</span></div>
+<div class="line"><span class="lineno">  583</span>            <span class="keywordtype">int</span> fileFmt = -1;</div>
+<div class="line"><span class="lineno">  584</span>            <a class="code hl_variable" href="#a783934f0732300f26693f947c3d0928c">m_pFbxImporter</a> = FbxImporter::Create(<a class="code hl_variable" href="#ae5bde2338780d7ec189699d406533ff9">m_pFbxManager</a>, <span class="stringliteral">&quot;Importer&quot;</span>);</div>
+<div class="line"><span class="lineno">  585</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a783934f0732300f26693f947c3d0928c">m_pFbxImporter</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  586</span>                <a class="code hl_define" href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a>(<span class="stringliteral">&quot;FbxImporterの作成に失敗。&quot;</span>);</div>
+<div class="line"><span class="lineno">  587</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  588</span>            }</div>
+<div class="line"><span class="lineno">  589</span> </div>
+<div class="line"><span class="lineno">  590</span>            <span class="comment">// ファイルのフォーマットを確認</span></div>
+<div class="line"><span class="lineno">  591</span>            <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#ae5bde2338780d7ec189699d406533ff9">m_pFbxManager</a>-&gt;GetIOPluginRegistry()-&gt;DetectReaderFileFormat(_filePath, fileFmt)) {</div>
+<div class="line"><span class="lineno">  592</span>                <span class="comment">// 認識されないファイルフォーマット。バイナリ形式で読み込む。</span></div>
+<div class="line"><span class="lineno">  593</span>                fileFmt = <a class="code hl_variable" href="#ae5bde2338780d7ec189699d406533ff9">m_pFbxManager</a>-&gt;GetIOPluginRegistry()-&gt;FindReaderIDByDescription(<span class="stringliteral">&quot;FBX binary (*.fbx)&quot;</span>);;</div>
+<div class="line"><span class="lineno">  594</span>            }</div>
+<div class="line"><span class="lineno">  595</span> </div>
+<div class="line"><span class="lineno">  596</span>            <span class="comment">// インポータ初期化</span></div>
+<div class="line"><span class="lineno">  597</span>            sts = <a class="code hl_variable" href="#a783934f0732300f26693f947c3d0928c">m_pFbxImporter</a>-&gt;Initialize(_filePath, fileFmt);</div>
+<div class="line"><span class="lineno">  598</span>            <span class="keywordflow">if</span> (!sts) {</div>
+<div class="line"><span class="lineno">  599</span>                <a class="code hl_define" href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a>(<span class="stringliteral">&quot;FbxImporterの初期化に失敗。&quot;</span>);</div>
+<div class="line"><span class="lineno">  600</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  601</span>            }</div>
+<div class="line"><span class="lineno">  602</span> </div>
+<div class="line"><span class="lineno">  603</span>            <span class="comment">// シーン(モデルデータ)の読み込み</span></div>
+<div class="line"><span class="lineno">  604</span>            sts = <a class="code hl_variable" href="#a783934f0732300f26693f947c3d0928c">m_pFbxImporter</a>-&gt;Import(<a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>);</div>
+<div class="line"><span class="lineno">  605</span>            <span class="keywordflow">if</span> (!sts) {</div>
+<div class="line"><span class="lineno">  606</span>                <a class="code hl_define" href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a>(<span class="stringliteral">&quot;FbxSceneの読み込みに失敗。&quot;</span>);</div>
+<div class="line"><span class="lineno">  607</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  608</span>            }</div>
+<div class="line"><span class="lineno">  609</span> </div>
+<div class="line"><span class="lineno">  610</span>            <span class="comment">// 座標系を変換</span></div>
+<div class="line"><span class="lineno">  611</span>            FbxAxisSystem myAxisSystem = FbxAxisSystem::DirectX;</div>
+<div class="line"><span class="lineno">  612</span>            <span class="keywordflow">if</span> (_axis == <a class="code hl_enumvalue" href="namespace_n_model.html#a7956003237dc2e14c56f0987495abfecac0ad831a34c4633bee584066cfcc5040">EFbxAxisSystem::OPENGL</a>) {</div>
+<div class="line"><span class="lineno">  613</span>                myAxisSystem = FbxAxisSystem::OpenGL;</div>
+<div class="line"><span class="lineno">  614</span>            }</div>
+<div class="line"><span class="lineno">  615</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (_axis == <a class="code hl_enumvalue" href="namespace_n_model.html#a7956003237dc2e14c56f0987495abfeca21272e04570d61e1061267eb4e742d8e">EFbxAxisSystem::MAYA_Y_UP</a>) {</div>
+<div class="line"><span class="lineno">  616</span>                myAxisSystem = FbxAxisSystem::MayaYUp;</div>
+<div class="line"><span class="lineno">  617</span>            }</div>
+<div class="line"><span class="lineno">  618</span> </div>
+<div class="line"><span class="lineno">  619</span>            <span class="comment">// DirectX系に変換</span></div>
+<div class="line"><span class="lineno">  620</span>            FbxAxisSystem sceneAxisSystem = <a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>-&gt;GetGlobalSettings().GetAxisSystem();</div>
+<div class="line"><span class="lineno">  621</span>            <span class="keywordflow">if</span> (sceneAxisSystem != myAxisSystem) {</div>
+<div class="line"><span class="lineno">  622</span>                <span class="comment">//myAxisSystem.ConvertScene(m_pFbxScene);</span></div>
+<div class="line"><span class="lineno">  623</span>            }</div>
+<div class="line"><span class="lineno">  624</span>            myAxisSystem.ConvertScene(<a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>);</div>
+<div class="line"><span class="lineno">  625</span> </div>
+<div class="line"><span class="lineno">  626</span>            <span class="comment">// 単位系の統一(メートル単位にコンバート)</span></div>
+<div class="line"><span class="lineno">  627</span>            FbxSystemUnit sceneSystemUnit = <a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>-&gt;GetGlobalSettings().GetSystemUnit();</div>
+<div class="line"><span class="lineno">  628</span>            <span class="keywordflow">if</span> (sceneSystemUnit != FbxSystemUnit::m) {</div>
+<div class="line"><span class="lineno">  629</span>                FbxSystemUnit::m.ConvertScene(<a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>);</div>
+<div class="line"><span class="lineno">  630</span>            }</div>
+<div class="line"><span class="lineno">  631</span> </div>
+<div class="line"><span class="lineno">  632</span>            <span class="comment">// 三角形化</span></div>
+<div class="line"><span class="lineno">  633</span>            <span class="comment">// コンバーターを作成</span></div>
+<div class="line"><span class="lineno">  634</span>            FbxGeometryConverter geometryConverter(<a class="code hl_variable" href="#ae5bde2338780d7ec189699d406533ff9">m_pFbxManager</a>);</div>
+<div class="line"><span class="lineno">  635</span>            sts = geometryConverter.Triangulate(<a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>, <span class="keyword">true</span>); <span class="comment">// シーン内の全てのノードを三角形化する。</span></div>
+<div class="line"><span class="lineno">  636</span>            <span class="keywordflow">if</span> (!sts) {</div>
+<div class="line"><span class="lineno">  637</span>                <a class="code hl_define" href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a>(<span class="stringliteral">&quot;三角形化に失敗。&quot;</span>);</div>
+<div class="line"><span class="lineno">  638</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  639</span>            }</div>
+<div class="line"><span class="lineno">  640</span>        }</div>
+<div class="line"><span class="lineno">  641</span>        <span class="keywordflow">catch</span> (NSystem::CException _exception) {</div>
+<div class="line"><span class="lineno">  642</span>            <span class="comment">// エラーが起きたファイル情報を表示する</span></div>
+<div class="line"><span class="lineno">  643</span>            std::string str = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  644</span>            str += _filePath;</div>
+<div class="line"><span class="lineno">  645</span>            str += <span class="stringliteral">&quot; の読み込み時に次の例外が発生しました。&quot;</span>;</div>
+<div class="line"><span class="lineno">  646</span>            <a class="code hl_define" href="_system___error_8h.html#a3633f4271a8d0653bf3840262366bb98">OutErrorMessageEx</a>(str.data());</div>
+<div class="line"><span class="lineno">  647</span>            <span class="keywordflow">throw</span>;  <span class="comment">// アプリケーションに例外を投げる</span></div>
+<div class="line"><span class="lineno">  648</span>        }</div>
+<div class="line"><span class="lineno">  649</span> </div>
+<div class="line"><span class="lineno">  650</span>        <span class="comment">// モデルファイルのパスを保持しておく</span></div>
+<div class="line"><span class="lineno">  651</span>        <a class="code hl_variable" href="#ac72fdc704f45add0a34dc81309e1b6c6">m_filePath</a> = _filePath;</div>
+<div class="line"><span class="lineno">  652</span> </div>
+<div class="line"><span class="lineno">  653</span>        <span class="comment">// ファイルのルートパス名のみ取得する</span></div>
+<div class="line"><span class="lineno">  654</span>        <span class="keywordtype">size_t</span> size = <a class="code hl_variable" href="#ac72fdc704f45add0a34dc81309e1b6c6">m_filePath</a>.find_last_of(<span class="stringliteral">&quot;/&quot;</span>) + 1; <span class="comment">// + 1　で/を含める</span></div>
+<div class="line"><span class="lineno">  655</span>        <span class="keywordflow">if</span> (size != std::string::npos) {</div>
+<div class="line"><span class="lineno">  656</span>            <a class="code hl_variable" href="#a67bc403451329436fbe8344e33ad2dc2">m_fileDirPath</a> = <a class="code hl_variable" href="#ac72fdc704f45add0a34dc81309e1b6c6">m_filePath</a>.substr(0, size);</div>
+<div class="line"><span class="lineno">  657</span>        }</div>
+<div class="line"><span class="lineno">  658</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  659</span>            std::string str = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  660</span>            str += <span class="stringliteral">&quot;テクスチャのパスが不正な可能性があります。\nPath : &quot;</span>;</div>
+<div class="line"><span class="lineno">  661</span>            str += <a class="code hl_variable" href="#a67bc403451329436fbe8344e33ad2dc2">m_fileDirPath</a>.data();</div>
+<div class="line"><span class="lineno">  662</span>            <a class="code hl_define" href="_system___error_8h.html#a7237f644657926eb3196ac84172fb8b4">OutWarningMessageEx</a>(str.data());</div>
+<div class="line"><span class="lineno">  663</span>            <a class="code hl_variable" href="#a67bc403451329436fbe8344e33ad2dc2">m_fileDirPath</a> = <a class="code hl_variable" href="#ac72fdc704f45add0a34dc81309e1b6c6">m_filePath</a>;</div>
+<div class="line"><span class="lineno">  664</span>        }</div>
+<div class="line"><span class="lineno">  665</span> </div>
+<div class="line"><span class="lineno">  666</span><span class="preprocessor">    #ifdef  _GAME_DEBUG</span></div>
+<div class="line"><span class="lineno">  667</span>        <a class="code hl_function" href="#aebfcb99aadbd3d3de8cf3cd480cb97b7">DumpNode</a>(_filePath);</div>
+<div class="line"><span class="lineno">  668</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  669</span> </div>
+<div class="line"><span class="lineno">  670</span>        <span class="comment">// データの読み込み</span></div>
+<div class="line"><span class="lineno">  671</span>        <a class="code hl_function" href="#a2dd28a8ec8cbc2f20a1a37144d62d844">SetupNode</a>();</div>
+<div class="line"><span class="lineno">  672</span> </div>
+<div class="line"><span class="lineno">  673</span>        <span class="comment">// アニメーションの読み込み</span></div>
+<div class="line"><span class="lineno">  674</span>        <a class="code hl_function" href="#a1619d3526cb1f33c5af2d17714148320">SetupAnimation</a>();</div>
+<div class="line"><span class="lineno">  675</span> </div>
+<div class="line"><span class="lineno">  676</span><span class="preprocessor">    #ifdef _GAME_DEBUG</span></div>
+<div class="line"><span class="lineno">  677</span>        <a class="code hl_function" href="#a9e378d9687fc3b6671e96d18dfbdb364">DumpClusterInfo</a>(_filePath);</div>
+<div class="line"><span class="lineno">  678</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  679</span> </div>
+<div class="line"><span class="lineno">  680</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  681</span>    }</div>
+<div class="ttc" id="a_system___error_8h_html_a1ef9aee6b1a8c442c300a378918a4d5f"><div class="ttname"><a href="_system___error_8h.html#a1ef9aee6b1a8c442c300a378918a4d5f">ErrorEx</a></div><div class="ttdeci">#define ErrorEx(_pMessage)</div><div class="ttdoc">ファイル名と行の情報を付加するマクロ</div><div class="ttdef"><b>Definition</b> System_Error.h:5</div></div>
+<div class="ttc" id="a_system___error_8h_html_a3633f4271a8d0653bf3840262366bb98"><div class="ttname"><a href="_system___error_8h.html#a3633f4271a8d0653bf3840262366bb98">OutErrorMessageEx</a></div><div class="ttdeci">#define OutErrorMessageEx(_pMessage)</div><div class="ttdef"><b>Definition</b> System_Error.h:6</div></div>
+<div class="ttc" id="a_system___error_8h_html_a7237f644657926eb3196ac84172fb8b4"><div class="ttname"><a href="_system___error_8h.html#a7237f644657926eb3196ac84172fb8b4">OutWarningMessageEx</a></div><div class="ttdeci">#define OutWarningMessageEx(_pMessage)</div><div class="ttdef"><b>Definition</b> System_Error.h:7</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a1619d3526cb1f33c5af2d17714148320"><div class="ttname"><a href="#a1619d3526cb1f33c5af2d17714148320">NModel::CFbxLoader::SetupAnimation</a></div><div class="ttdeci">void SetupAnimation()</div><div class="ttdoc">アニメーション情報を読み込む</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.cpp:1003</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a2dd28a8ec8cbc2f20a1a37144d62d844"><div class="ttname"><a href="#a2dd28a8ec8cbc2f20a1a37144d62d844">NModel::CFbxLoader::SetupNode</a></div><div class="ttdeci">void SetupNode()</div><div class="ttdoc">ノードを読み込む</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.cpp:695</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a67bc403451329436fbe8344e33ad2dc2"><div class="ttname"><a href="#a67bc403451329436fbe8344e33ad2dc2">NModel::CFbxLoader::m_fileDirPath</a></div><div class="ttdeci">std::string m_fileDirPath</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:59</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a9e378d9687fc3b6671e96d18dfbdb364"><div class="ttname"><a href="#a9e378d9687fc3b6671e96d18dfbdb364">NModel::CFbxLoader::DumpClusterInfo</a></div><div class="ttdeci">void DumpClusterInfo(const char *_fileName)</div><div class="ttdoc">クラスター名とクラスターインデックスをダンプする</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.cpp:948</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_ac72fdc704f45add0a34dc81309e1b6c6"><div class="ttname"><a href="#ac72fdc704f45add0a34dc81309e1b6c6">NModel::CFbxLoader::m_filePath</a></div><div class="ttdeci">std::string m_filePath</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:58</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_aebfcb99aadbd3d3de8cf3cd480cb97b7"><div class="ttname"><a href="#aebfcb99aadbd3d3de8cf3cd480cb97b7">NModel::CFbxLoader::DumpNode</a></div><div class="ttdeci">void DumpNode(const char *_fileName)</div><div class="ttdoc">FBXのノードをダンプする</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.cpp:850</div></div>
+<div class="ttc" id="anamespace_n_model_html_a7956003237dc2e14c56f0987495abfeca21272e04570d61e1061267eb4e742d8e"><div class="ttname"><a href="namespace_n_model.html#a7956003237dc2e14c56f0987495abfeca21272e04570d61e1061267eb4e742d8e">NModel::EFbxAxisSystem::MAYA_Y_UP</a></div><div class="ttdeci">@ MAYA_Y_UP</div><div class="ttdef"><b>Definition</b> Model_FbxDef.h:20</div></div>
+<div class="ttc" id="anamespace_n_model_html_a7956003237dc2e14c56f0987495abfecac0ad831a34c4633bee584066cfcc5040"><div class="ttname"><a href="namespace_n_model.html#a7956003237dc2e14c56f0987495abfecac0ad831a34c4633bee584066cfcc5040">NModel::EFbxAxisSystem::OPENGL</a></div><div class="ttdeci">@ OPENGL</div><div class="ttdef"><b>Definition</b> Model_FbxDef.h:19</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7738c907280e244d06a66369e3cb2504" name="a7738c907280e244d06a66369e3cb2504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7738c907280e244d06a66369e3cb2504">&#9670;&#160;</a></span>LoadNodeRecursively()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CFbxLoader::LoadNodeRecursively </td>
+          <td>(</td>
+          <td class="paramtype">FbxNode *</td>          <td class="paramname"><span class="paramname"><em>_pNode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>_parentNodeName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>_rFilePath</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ノードを再帰的に読み込む </p>
+<p>rootノードの親にはnullを設定 </p>
+<div class="fragment"><div class="line"><span class="lineno">  713</span>    {</div>
+<div class="line"><span class="lineno">  714</span>        <span class="keywordflow">if</span> (_pNode == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  715</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  716</span>        }</div>
+<div class="line"><span class="lineno">  717</span> </div>
+<div class="line"><span class="lineno">  718</span>        <span class="keywordtype">bool</span> isMeshNode = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  719</span> </div>
+<div class="line"><span class="lineno">  720</span>        <span class="comment">// メッシュノードデータを作成</span></div>
+<div class="line"><span class="lineno">  721</span>        SFbxMeshNode    meshNode;</div>
+<div class="line"><span class="lineno">  722</span>        </div>
+<div class="line"><span class="lineno">  723</span>        <span class="comment">// 名前を変換</span></div>
+<div class="line"><span class="lineno">  724</span>        <span class="keywordtype">char</span>* pNodeNameAscii;</div>
+<div class="line"><span class="lineno">  725</span>        FbxUTF8ToAnsi(_pNode-&gt;GetName(), pNodeNameAscii);</div>
+<div class="line"><span class="lineno">  726</span> </div>
+<div class="line"><span class="lineno">  727</span>        meshNode.nodeName = pNodeNameAscii;</div>
+<div class="line"><span class="lineno">  728</span>        FbxFree(pNodeNameAscii);</div>
+<div class="line"><span class="lineno">  729</span> </div>
+<div class="line"><span class="lineno">  730</span>        meshNode.parentNodeName = _parentNodeName;</div>
+<div class="line"><span class="lineno">  731</span> </div>
+<div class="line"><span class="lineno">  732</span>        <span class="comment">// メッシュデータを取得</span></div>
+<div class="line"><span class="lineno">  733</span>        FbxMesh* pFbxMesh = _pNode-&gt;GetMesh();</div>
+<div class="line"><span class="lineno">  734</span> </div>
+<div class="line"><span class="lineno">  735</span>        <span class="keywordflow">if</span> (pFbxMesh != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  736</span>            <span class="comment">// メッシュへのポインタを保持</span></div>
+<div class="line"><span class="lineno">  737</span>            meshNode.pFbxMesh = pFbxMesh;</div>
+<div class="line"><span class="lineno">  738</span> </div>
+<div class="line"><span class="lineno">  739</span>            <span class="comment">// 頂点数を取得</span></div>
+<div class="line"><span class="lineno">  740</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> vertexCount = pFbxMesh-&gt;GetControlPointsCount();</div>
+<div class="line"><span class="lineno">  741</span> </div>
+<div class="line"><span class="lineno">  742</span>            <span class="keywordflow">if</span> (vertexCount &gt; 0) {</div>
+<div class="line"><span class="lineno">  743</span>                <span class="comment">// 頂点が存在する場合はノードにコピー</span></div>
+<div class="line"><span class="lineno">  744</span>                CopyVertices(pFbxMesh, meshNode);</div>
+<div class="line"><span class="lineno">  745</span>                 </div>
+<div class="line"><span class="lineno">  746</span>                isMeshNode = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  747</span>            }</div>
+<div class="line"><span class="lineno">  748</span>        }</div>
+<div class="line"><span class="lineno">  749</span> </div>
+<div class="line"><span class="lineno">  750</span>        <span class="keywordflow">if</span> (isMeshNode) {</div>
+<div class="line"><span class="lineno">  751</span>            <span class="comment">// マテリアルデータを取得</span></div>
+<div class="line"><span class="lineno">  752</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> materialCount = _pNode-&gt;GetMaterialCount();</div>
+<div class="line"><span class="lineno">  753</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; materialCount; ++i) {</div>
+<div class="line"><span class="lineno">  754</span>                FbxSurfaceMaterial* pMaterial = _pNode-&gt;GetMaterial(i);</div>
+<div class="line"><span class="lineno">  755</span> </div>
+<div class="line"><span class="lineno">  756</span>                <span class="comment">// マテリアルが存在しない場合は無視する(そんな場合はある？)</span></div>
+<div class="line"><span class="lineno">  757</span>                <span class="keywordflow">if</span> (pMaterial == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  758</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  759</span>                }</div>
+<div class="line"><span class="lineno">  760</span> </div>
+<div class="line"><span class="lineno">  761</span>                <span class="comment">// マテリアルデータを取得</span></div>
+<div class="line"><span class="lineno">  762</span>                SFbxMaterialNode    materialNode;</div>
+<div class="line"><span class="lineno">  763</span>                CopyMaterials(pMaterial, materialNode, _rFilePath);</div>
+<div class="line"><span class="lineno">  764</span>                materialNode.Load();</div>
+<div class="line"><span class="lineno">  765</span> </div>
+<div class="line"><span class="lineno">  766</span>                <span class="comment">// 取得したマテリアルを格納</span></div>
+<div class="line"><span class="lineno">  767</span>                meshNode.materials.emplace_back(materialNode);</div>
+<div class="line"><span class="lineno">  768</span> </div>
+<div class="line"><span class="lineno">  769</span>                <span class="comment">// マテリアル情報からテクスチャを読み込む</span></div>
+<div class="line"><span class="lineno">  770</span>                <span class="comment">//meshNode.materials.back().Load();</span></div>
+<div class="line"><span class="lineno">  771</span>            }</div>
+<div class="line"><span class="lineno">  772</span> </div>
+<div class="line"><span class="lineno">  773</span>            <span class="comment">// ノードの変換行列を取得</span></div>
+<div class="line"><span class="lineno">  774</span>            SetNodeMatrix(_pNode, meshNode);</div>
+<div class="line"><span class="lineno">  775</span> </div>
+<div class="line"><span class="lineno">  776</span>            <span class="comment">// デフォーマー情報を取得(スキンアニメーション情報のみ)</span></div>
+<div class="line"><span class="lineno">  777</span>            SetSkinDeformer(pFbxMesh, meshNode);</div>
+<div class="line"><span class="lineno">  778</span> </div>
+<div class="line"><span class="lineno">  779</span>            <span class="comment">// 最適化するための構造体に値をコピー</span></div>
+<div class="line"><span class="lineno">  780</span>            meshNode.optimizedIndex.resize(meshNode.indexes.size());</div>
+<div class="line"><span class="lineno">  781</span>            memcpy(&amp;meshNode.optimizedIndex[0], &amp;meshNode.indexes[0], meshNode.indexes.size() * <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>));</div>
+<div class="line"><span class="lineno">  782</span>            meshNode.optimizedVertex.resize(meshNode.vertexCount);</div>
+<div class="line"><span class="lineno">  783</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; meshNode.vertexCount; ++i) {</div>
+<div class="line"><span class="lineno">  784</span>                meshNode.optimizedVertex[i].pos = meshNode.positions[i];</div>
+<div class="line"><span class="lineno">  785</span>                meshNode.optimizedVertex[i].normal = meshNode.normals[i];</div>
+<div class="line"><span class="lineno">  786</span>                meshNode.optimizedVertex[i].rawIndex = meshNode.rawIndexes[i];</div>
+<div class="line"><span class="lineno">  787</span> </div>
+<div class="line"><span class="lineno">  788</span>                <span class="keywordflow">if</span> (meshNode.texcoords.size() &gt; 0) {</div>
+<div class="line"><span class="lineno">  789</span>                    meshNode.optimizedVertex[i].texCoord = meshNode.texcoords[i];</div>
+<div class="line"><span class="lineno">  790</span>                }</div>
+<div class="line"><span class="lineno">  791</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  792</span>                    meshNode.optimizedVertex[i].texCoord = FbxVector2(0, 0);</div>
+<div class="line"><span class="lineno">  793</span>                }</div>
+<div class="line"><span class="lineno">  794</span> </div>
+<div class="line"><span class="lineno">  795</span>                <span class="keywordflow">if</span> (meshNode.weights.size() &gt; 0) {</div>
+<div class="line"><span class="lineno">  796</span>                    meshNode.optimizedVertex[i].weights.resize(meshNode.weights[i].size());</div>
+<div class="line"><span class="lineno">  797</span>                    memcpy(&amp;meshNode.optimizedVertex[i].weights[0], &amp;meshNode.weights[i][0], meshNode.weights[i].size() * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><span class="lineno">  798</span>                }</div>
+<div class="line"><span class="lineno">  799</span>            }</div>
+<div class="line"><span class="lineno">  800</span> </div>
+<div class="line"><span class="lineno">  801</span>            <span class="comment">// 作成したメッシュデータを格納</span></div>
+<div class="line"><span class="lineno">  802</span>            <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>.emplace_back(meshNode);</div>
+<div class="line"><span class="lineno">  803</span>        }</div>
+<div class="line"><span class="lineno">  804</span> </div>
+<div class="line"><span class="lineno">  805</span>        <span class="comment">// 再帰的に読み込む</span></div>
+<div class="line"><span class="lineno">  806</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> childCount = _pNode-&gt;GetChildCount();</div>
+<div class="line"><span class="lineno">  807</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; childCount; ++i) {</div>
+<div class="line"><span class="lineno">  808</span>            <a class="code hl_function" href="#a7738c907280e244d06a66369e3cb2504">LoadNodeRecursively</a>(_pNode-&gt;GetChild(i), meshNode.nodeName, _rFilePath);</div>
+<div class="line"><span class="lineno">  809</span>        }</div>
+<div class="line"><span class="lineno">  810</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a7738c907280e244d06a66369e3cb2504"><div class="ttname"><a href="#a7738c907280e244d06a66369e3cb2504">NModel::CFbxLoader::LoadNodeRecursively</a></div><div class="ttdeci">void LoadNodeRecursively(FbxNode *_pNode, std::string _parentNodeName, const std::string &amp;_rFilePath)</div><div class="ttdoc">ノードを再帰的に読み込む</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.cpp:709</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a265949257e0f9f3d108c9eba46751f79" name="a265949257e0f9f3d108c9eba46751f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a265949257e0f9f3d108c9eba46751f79">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a72fc40d262166f6a4df20a4b39f98bba">CFbxLoader</a> &amp; NModel::CFbxLoader::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a72fc40d262166f6a4df20a4b39f98bba">CFbxLoader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  104</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6e86abe4c3648896f041bfb2b4b1d2a9" name="a6e86abe4c3648896f041bfb2b4b1d2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e86abe4c3648896f041bfb2b4b1d2a9">&#9670;&#160;</a></span>OptimizeMesh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CFbxLoader::OptimizeMesh </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>メッシュを最適化する </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">todo</a></b></dt><dd></dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  813</span>    {</div>
+<div class="line"><span class="lineno">  814</span>        <span class="comment">// 全メッシュノードを解析</span></div>
+<div class="line"><span class="lineno">  815</span>        <span class="keywordflow">for</span> (uint iMesh = 0; iMesh &lt; <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>.size(); ++iMesh) {</div>
+<div class="line"><span class="lineno">  816</span>            SFbxMeshNode&amp; meshNode = <a class="code hl_variable" href="#ad21e53ebc277b27e23b91cad5cf52cd4">m_meshNodes</a>[iMesh];</div>
+<div class="line"><span class="lineno">  817</span></div>
+<div class="line"><span class="lineno">  819</span>            <span class="comment">// 重複頂点削除</span></div>
+<div class="line"><span class="lineno">  820</span>            std::vector&lt;SFbxVertex&gt;     optimizedVertex;</div>
+<div class="line"><span class="lineno">  821</span>            std::vector&lt;unsigned int&gt;   optimizedIndex;</div>
+<div class="line"><span class="lineno">  822</span> </div>
+<div class="line"><span class="lineno">  823</span>            optimizedIndex.clear();</div>
+<div class="line"><span class="lineno">  824</span>            optimizedVertex.clear();</div>
+<div class="line"><span class="lineno">  825</span> </div>
+<div class="line"><span class="lineno">  826</span>            <span class="comment">// 頂点数分ループ</span></div>
+<div class="line"><span class="lineno">  827</span>            <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; meshNode.vertexCount; ++i) {</div>
+<div class="line"><span class="lineno">  828</span>                SFbxVertex&amp; vertex = meshNode.optimizedVertex[i];</div>
+<div class="line"><span class="lineno">  829</span> </div>
+<div class="line"><span class="lineno">  830</span>                <span class="keyword">auto</span> itr = std::find(optimizedVertex.begin(), optimizedVertex.end(), vertex);</div>
+<div class="line"><span class="lineno">  831</span> </div>
+<div class="line"><span class="lineno">  832</span>                <span class="comment">// 重複していない場合は追加</span></div>
+<div class="line"><span class="lineno">  833</span>                <span class="keywordflow">if</span> (itr == optimizedVertex.end()) {</div>
+<div class="line"><span class="lineno">  834</span>                    optimizedIndex.emplace_back(optimizedVertex.size());</div>
+<div class="line"><span class="lineno">  835</span>                    optimizedVertex.emplace_back(vertex);</div>
+<div class="line"><span class="lineno">  836</span>                }</div>
+<div class="line"><span class="lineno">  837</span>                <span class="comment">// 存在する場合</span></div>
+<div class="line"><span class="lineno">  838</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  839</span>                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> index = std::distance(optimizedVertex.begin(), itr);   <span class="comment">// 現イテレータの位置を添え字とする</span></div>
+<div class="line"><span class="lineno">  840</span>                    optimizedIndex.emplace_back(index);</div>
+<div class="line"><span class="lineno">  841</span>                }</div>
+<div class="line"><span class="lineno">  842</span>            }</div>
+<div class="line"><span class="lineno">  843</span> </div>
+<div class="line"><span class="lineno">  844</span>            <span class="comment">// 全て置き換えたら最適化したメッシュを保持する</span></div>
+<div class="line"><span class="lineno">  845</span>            meshNode.optimizedIndex.swap(optimizedIndex);</div>
+<div class="line"><span class="lineno">  846</span>            meshNode.optimizedVertex.swap(optimizedVertex);</div>
+<div class="line"><span class="lineno">  847</span>        }</div>
+<div class="line"><span class="lineno">  848</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a980c6d0692cc6815c7f956443b883259" name="a980c6d0692cc6815c7f956443b883259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980c6d0692cc6815c7f956443b883259">&#9670;&#160;</a></span>SetAnmStack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CFbxLoader::SetAnmStack </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int</td>          <td class="paramname"><span class="paramname"><em>_idxAnmStack</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用するアニメーションスタックをセットする </p>
+<dl class="section note"><dt>覚え書き</dt><dd>モデルのアニメーション情報を取得するときは必ず呼び出す<ul>
+<li>クラスターから行列を取得するときは必ず呼び出す。 </li>
+</ul>
+</dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  684</span>    {</div>
+<div class="line"><span class="lineno">  685</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_idxAnmStack &lt; <a class="code hl_function" href="#afe20d528b5841224f12363d195291e4a">GetAnimationCount</a>());</div>
+<div class="line"><span class="lineno">  686</span> </div>
+<div class="line"><span class="lineno">  687</span>        <span class="comment">// シーン内のアニメーション情報を切り替える</span></div>
+<div class="line"><span class="lineno">  688</span>        FbxAnimStack* pAnmStack = <a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>-&gt;GetSrcObject&lt;FbxAnimStack&gt;(_idxAnmStack);</div>
+<div class="line"><span class="lineno">  689</span>        <a class="code hl_define" href="_debug___assert_8h.html#a73fdb60411ae5c7145be5bffb2f7c240">AssertNotNull</a>(pAnmStack);</div>
+<div class="line"><span class="lineno">  690</span>        <a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>-&gt;SetCurrentAnimationStack(pAnmStack);</div>
+<div class="line"><span class="lineno">  691</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_a73fdb60411ae5c7145be5bffb2f7c240"><div class="ttname"><a href="_debug___assert_8h.html#a73fdb60411ae5c7145be5bffb2f7c240">AssertNotNull</a></div><div class="ttdeci">#define AssertNotNull(var)</div><div class="ttdoc">Nullでないことを検証する</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:35</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_afe20d528b5841224f12363d195291e4a"><div class="ttname"><a href="#afe20d528b5841224f12363d195291e4a">NModel::CFbxLoader::GetAnimationCount</a></div><div class="ttdeci">unsigned int GetAnimationCount() const</div><div class="ttdoc">アニメーション数を取得する</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.h:31</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1619d3526cb1f33c5af2d17714148320" name="a1619d3526cb1f33c5af2d17714148320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1619d3526cb1f33c5af2d17714148320">&#9670;&#160;</a></span>SetupAnimation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CFbxLoader::SetupAnimation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーション情報を読み込む </p>
+<div class="fragment"><div class="line"><span class="lineno"> 1004</span>    {</div>
+<div class="line"><span class="lineno"> 1005</span>        <span class="comment">// 時間の情報を取得</span></div>
+<div class="line"><span class="lineno"> 1006</span>        FbxGlobalSettings* pGlobalSettings = &amp;<a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>-&gt;GetGlobalSettings();</div>
+<div class="line"><span class="lineno"> 1007</span> </div>
+<div class="line"><span class="lineno"> 1008</span>        <span class="comment">// 1フレームの時間を取得</span></div>
+<div class="line"><span class="lineno"> 1009</span>        <span class="keyword">const</span> FbxTime::EMode    timeMode = pGlobalSettings-&gt;GetTimeMode();</div>
+<div class="line"><span class="lineno"> 1010</span>        <span class="keyword">const</span> FbxLongLong       timePerFrame = FbxTime::GetOneFrameValue(timeMode);</div>
+<div class="line"><span class="lineno"> 1011</span>        <a class="code hl_variable" href="#a67dac380463c1821fc3ba7b42de1bf82">m_timePerFrame</a> = timePerFrame;</div>
+<div class="line"><span class="lineno"> 1012</span> </div>
+<div class="line"><span class="lineno"> 1013</span>        <span class="comment">// アニメーションスタック情報を取得する</span></div>
+<div class="line"><span class="lineno"> 1014</span>        SetupAnimationStack(<a class="code hl_variable" href="#a03333624edff623cc3983df92af46a64">m_anmStack</a>, <a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>, timePerFrame);</div>
+<div class="line"><span class="lineno"> 1015</span> </div>
+<div class="line"><span class="lineno"> 1016</span><span class="preprocessor">    #ifdef _GAME_DEBUG</span></div>
+<div class="line"><span class="lineno"> 1017</span>        <a class="code hl_function" href="#ad17f8dc39745dfd04c66aed7d1374217">DumpAnimation</a>(<a class="code hl_variable" href="#ac72fdc704f45add0a34dc81309e1b6c6">m_filePath</a>.data());</div>
+<div class="line"><span class="lineno"> 1018</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno"> 1019</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_ad17f8dc39745dfd04c66aed7d1374217"><div class="ttname"><a href="#ad17f8dc39745dfd04c66aed7d1374217">NModel::CFbxLoader::DumpAnimation</a></div><div class="ttdeci">void DumpAnimation(const char *_fileName)</div><div class="ttdoc">アニメーション情報をダンプする</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.cpp:1021</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2dd28a8ec8cbc2f20a1a37144d62d844" name="a2dd28a8ec8cbc2f20a1a37144d62d844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd28a8ec8cbc2f20a1a37144d62d844">&#9670;&#160;</a></span>SetupNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CFbxLoader::SetupNode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ノードを読み込む </p>
+<div class="fragment"><div class="line"><span class="lineno">  696</span>    {</div>
+<div class="line"><span class="lineno">  697</span>        FbxNode* pRootNode = <a class="code hl_variable" href="#a2aa3faaa77a1dfe0c1eaef8964564f92">m_pFbxScene</a>-&gt;GetRootNode();</div>
+<div class="line"><span class="lineno">  698</span>        <span class="keywordflow">if</span> (pRootNode != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  699</span>            <a class="code hl_function" href="#a7738c907280e244d06a66369e3cb2504">LoadNodeRecursively</a>(pRootNode, <span class="stringliteral">&quot;null&quot;</span>, <a class="code hl_variable" href="#a67bc403451329436fbe8344e33ad2dc2">m_fileDirPath</a>);</div>
+<div class="line"><span class="lineno">  700</span>        }</div>
+<div class="line"><span class="lineno">  701</span> </div>
+<div class="line"><span class="lineno">  702</span>        <a class="code hl_function" href="#a6e86abe4c3648896f041bfb2b4b1d2a9">OptimizeMesh</a>();</div>
+<div class="line"><span class="lineno">  703</span> </div>
+<div class="line"><span class="lineno">  704</span><span class="preprocessor">    #ifdef _GAME_DEBUG</span></div>
+<div class="line"><span class="lineno">  705</span>        <a class="code hl_function" href="#a2a813d6095bff191527d78dda4755c27">DumpModelInfo</a>(<a class="code hl_variable" href="#ac72fdc704f45add0a34dc81309e1b6c6">m_filePath</a>.data());</div>
+<div class="line"><span class="lineno">  706</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">  707</span>    }</div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a2a813d6095bff191527d78dda4755c27"><div class="ttname"><a href="#a2a813d6095bff191527d78dda4755c27">NModel::CFbxLoader::DumpModelInfo</a></div><div class="ttdeci">void DumpModelInfo(const char *_fileName)</div><div class="ttdoc">頂点情報などのモデル情報をダンプする</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.cpp:883</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_fbx_loader_html_a6e86abe4c3648896f041bfb2b4b1d2a9"><div class="ttname"><a href="#a6e86abe4c3648896f041bfb2b4b1d2a9">NModel::CFbxLoader::OptimizeMesh</a></div><div class="ttdeci">void OptimizeMesh()</div><div class="ttdoc">メッシュを最適化する</div><div class="ttdef"><b>Definition</b> Model_FbxLoader.cpp:812</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a03333624edff623cc3983df92af46a64" name="a03333624edff623cc3983df92af46a64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03333624edff623cc3983df92af46a64">&#9670;&#160;</a></span>m_anmStack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_n_model_1_1_s_fbx_animation_stack.html">SFbxAnimationStack</a>&gt; NModel::CFbxLoader::m_anmStack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67bc403451329436fbe8344e33ad2dc2" name="a67bc403451329436fbe8344e33ad2dc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67bc403451329436fbe8344e33ad2dc2">&#9670;&#160;</a></span>m_fileDirPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NModel::CFbxLoader::m_fileDirPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac72fdc704f45add0a34dc81309e1b6c6" name="ac72fdc704f45add0a34dc81309e1b6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac72fdc704f45add0a34dc81309e1b6c6">&#9670;&#160;</a></span>m_filePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NModel::CFbxLoader::m_filePath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad21e53ebc277b27e23b91cad5cf52cd4" name="ad21e53ebc277b27e23b91cad5cf52cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21e53ebc277b27e23b91cad5cf52cd4">&#9670;&#160;</a></span>m_meshNodes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_n_model_1_1_s_fbx_mesh_node.html">SFbxMeshNode</a>&gt; NModel::CFbxLoader::m_meshNodes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a783934f0732300f26693f947c3d0928c" name="a783934f0732300f26693f947c3d0928c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a783934f0732300f26693f947c3d0928c">&#9670;&#160;</a></span>m_pFbxImporter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FbxImporter* NModel::CFbxLoader::m_pFbxImporter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5bde2338780d7ec189699d406533ff9" name="ae5bde2338780d7ec189699d406533ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5bde2338780d7ec189699d406533ff9">&#9670;&#160;</a></span>m_pFbxManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FbxManager* NModel::CFbxLoader::m_pFbxManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2aa3faaa77a1dfe0c1eaef8964564f92" name="a2aa3faaa77a1dfe0c1eaef8964564f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa3faaa77a1dfe0c1eaef8964564f92">&#9670;&#160;</a></span>m_pFbxScene</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FbxScene* NModel::CFbxLoader::m_pFbxScene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67dac380463c1821fc3ba7b42de1bf82" name="a67dac380463c1821fc3ba7b42de1bf82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67dac380463c1821fc3ba7b42de1bf82">&#9670;&#160;</a></span>m_timePerFrame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FbxLongLong NModel::CFbxLoader::m_timePerFrame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Model/Fbx/<a class="el" href="_model___fbx_loader_8h_source.html">Model_FbxLoader.h</a></li>
+<li>Sources/Framework/Model/Fbx/<a class="el" href="_model___fbx_loader_8cpp.html">Model_FbxLoader.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_model.html">NModel</a></li><li class="navelem"><a href="class_n_model_1_1_c_fbx_loader.html">CFbxLoader</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

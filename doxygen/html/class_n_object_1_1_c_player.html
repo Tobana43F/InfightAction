@@ -1,0 +1,1917 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NObject::CPlayer クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_object_1_1_c_player.html','','class_n_object_1_1_c_player-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NObject::CPlayer クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>テスト用のキャラクター  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_object___player_8h_source.html">Object_Player.h</a>&gt;</code></p>
+<div class="dynheader">
+NObject::CPlayer の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_object_1_1_c_player.png" usemap="#NObject_3A_3ACPlayer_map" alt=""/>
+  <map id="NObject_3A_3ACPlayer_map" name="NObject_3A_3ACPlayer_map">
+<area href="class_n_object_1_1_c_actor.html" title="ゲーム内のキャラクターや敵の基底クラス" alt="NObject::CActor" shape="rect" coords="0,56,142,80"/>
+<area href="class_n_object_1_1_c_game_object.html" title="ゲーム内のすべてのオブジェクトの基底クラスとなるクラス" alt="NObject::CGameObject" shape="rect" coords="0,0,142,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:CNormalState" id="r_CNormalState"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_player_1_1_c_normal_state.html">CNormalState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常状態を管理するクラス  <a href="class_n_object_1_1_c_player_1_1_c_normal_state.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:CDamageState" id="r_CDamageState"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_player_1_1_c_damage_state.html">CDamageState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージ状態を管理するクラス  <a href="class_n_object_1_1_c_player_1_1_c_damage_state.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:CAttackState" id="r_CAttackState"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_player_1_1_c_attack_state.html">CAttackState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃状態を管理するクラス  <a href="class_n_object_1_1_c_player_1_1_c_attack_state.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:afc7bea2da94675ea5e3d179acfacc016" id="r_afc7bea2da94675ea5e3d179acfacc016"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#afc7bea2da94675ea5e3d179acfacc016">EBoneIndex</a> { <a class="el" href="#afc7bea2da94675ea5e3d179acfacc016a21b367d89b66d5119363c9bc833c7d74">BONE_SWORD_HOLDER</a> = 64
+, <a class="el" href="#afc7bea2da94675ea5e3d179acfacc016abebf46441038a16909d099212d1f06f6">BONE_RIGHT_HAND_WEAPON</a> = 42
+ }</td></tr>
+<tr class="memitem:aea4f9be162781d81620822eb9425592a" id="r_aea4f9be162781d81620822eb9425592a"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="#aea4f9be162781d81620822eb9425592a">EBigState</a> { <a class="el" href="#aea4f9be162781d81620822eb9425592aa1e23852820b9154316c7c06e2b7ba051">NORMAL</a>
+, <a class="el" href="#aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34">DAMAGE</a>
+, <a class="el" href="#aea4f9be162781d81620822eb9425592aac6ddd0f72ff2fd344693b9ca8d483871">ATTACK</a>
+ }</td></tr>
+<tr class="memdesc:aea4f9be162781d81620822eb9425592a"><td class="mdescLeft">&#160;</td><td class="mdescRight">このクラスが管理する状態  <a href="#aea4f9be162781d81620822eb9425592a">[詳解]</a><br /></td></tr>
+<tr class="memitem:a9ee68d9af6818604bf632e5144cfbf6b" id="r_a9ee68d9af6818604bf632e5144cfbf6b"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6b">EAnmIndex</a> { <br />
+&#160;&#160;<a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6bad3334cce9b34f347cb0a54783d949547">ANM_ATTACK_AIR1</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6baa87b37cc212df0bafb4c51de862d65eb">ANM_ATTACK_AIR2</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba198f2e4660589c36976be3397e75865e">ANM_ATTACK_AIR3</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba9b34acfcb93eb657837b53c1b125dc2d">ANM_ATTACK_AIR_FINISH_START</a>
+, <br />
+&#160;&#160;<a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba8b3646c78c89da13e0d8d3d2179cf3e3">ANM_ATTACK_AIR_FINISH_FALL</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6baea7bb51b3d7b78945170fb3bc5a9d6a8">ANM_ATTACK_AIR_FINISH_END</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6bab54f105c122d08f35fabe27df72d25e7">ANM_ATTACK_PUNCH</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6bac284ac265d451a8f87b418908a018481">ANM_ATTACK_SWORD_DOUBLE_UPPER</a>
+, <br />
+&#160;&#160;<a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba161f45162ed1c003db9456c540320f77">ANM_ATTACK_SWORD_ENTRY1</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6bad8cce414dc748efc5632b34051e7dc12">ANM_ATTACK_SWORD_GROUND_SMASH</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba4b9dbe5987478ce151d9f144462e741d">ANM_ATTACK_SWORD_HORIZONTAL1</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6bad5a1c5e2cadf2dca3bcfbb1a52c495c1">ANM_DAMAGE_DIE</a>
+, <br />
+&#160;&#160;<a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba776afab9e24ac73cfa9dfe804a1be106">ANM_DAMAGE_HEAVY</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba8d261fa31f2b458d623f1d11686c2d5d">ANM_DAMAGE_LIGHT</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba284eaaf91efd60ca14276350785f3588">ANM_NORMAL_DASH</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba9ff35e9714fc5bd281e8a464fd2e5d5a">ANM_NORMAL_GRAB_SWORD_SET</a>
+, <br />
+&#160;&#160;<a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba43361c558ae033fbe6a2deaaf10ed736">ANM_NORMAL_GRAB_SWORD_START</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba497afab8676c7937cb1f5736707d9a26">ANM_NORMAL_GROUNDED</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba632329aee19649927551d46fddf9bb8f">ANM_NORMAL_IDLE</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba8003370b32ae63fea9191cfd7dba2c0c">ANM_NORMAL_JUMP_DOWN</a>
+, <br />
+&#160;&#160;<a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6badd6666d5452f44a3f43c493e516fb1ee">ANM_NORMAL_JUMP_START</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6bae3f173d94e7d2c0791d5ff63e110e647">ANM_NORMAL_JUMP_UP</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba2c286d5ef227fcfa8b7c8ff1f24f8fa3">ANM_NORMAL_SWORD_DASH</a>
+, <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6ba63b5fe5d9db162b9cb160ac701b7087a">ANM_NORMAL_SWORD_SET</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a9ee68d9af6818604bf632e5144cfbf6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">モデルのアニメーションインデックス  <a href="#a9ee68d9af6818604bf632e5144cfbf6b">[詳解]</a><br /></td></tr>
+<tr class="inherit_header pub_types_class_n_object_1_1_c_actor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_class_n_object_1_1_c_actor')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_object_1_1_c_actor.html">NObject::CActor</a> に属する継承公開型</td></tr>
+<tr class="memitem:a2522acee65a0f5542fbdeb8c0858b6b0 inherit pub_types_class_n_object_1_1_c_actor" id="r_a2522acee65a0f5542fbdeb8c0858b6b0"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a2522acee65a0f5542fbdeb8c0858b6b0">ReceiveAttackInfos</a> = std::array&lt;<a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a>, <a class="el" href="class_n_object_1_1_c_actor.html#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a>&gt;</td></tr>
+<tr class="inherit_header pub_types_class_n_object_1_1_c_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_class_n_object_1_1_c_game_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> に属する継承公開型</td></tr>
+<tr class="memitem:ac868ed3d84ef01884da62a5104c55966 inherit pub_types_class_n_object_1_1_c_game_object" id="r_ac868ed3d84ef01884da62a5104c55966"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966">EObjectState</a> { <a class="el" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a615d2885ef7576cedd9aafbb2578f028">LOAD</a>
+, <a class="el" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966afaee4ca3c30ee18148ce3ada37466498">INIT</a>
+, <a class="el" href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966a15a8022d0ed9cd9c2a2e756822703eb4">UPDATE</a>
+ }</td></tr>
+<tr class="memdesc:ac868ed3d84ef01884da62a5104c55966"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新の制御状態を表す定数  <a href="class_n_object_1_1_c_game_object.html#ac868ed3d84ef01884da62a5104c55966">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3172864f25b7bc405471286267bd051a" id="r_a3172864f25b7bc405471286267bd051a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3172864f25b7bc405471286267bd051a">SetIsResetLife</a> (const bool _state)</td></tr>
+<tr class="memitem:a1204b4ae7985fd4e3ce27504f02022ef" id="r_a1204b4ae7985fd4e3ce27504f02022ef"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a1204b4ae7985fd4e3ce27504f02022ef">CPlayer</a> ()</td></tr>
+<tr class="memitem:a4164fe25c25e0da70789d4b0f730abc8" id="r_a4164fe25c25e0da70789d4b0f730abc8"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a4164fe25c25e0da70789d4b0f730abc8">~CPlayer</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_n_object_1_1_c_actor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_object_1_1_c_actor')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_object_1_1_c_actor.html">NObject::CActor</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:adf61f10bb2fa1a1423973ae4fcd2b7cc inherit pub_methods_class_n_object_1_1_c_actor" id="r_adf61f10bb2fa1a1423973ae4fcd2b7cc"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#adf61f10bb2fa1a1423973ae4fcd2b7cc">GetLife</a> () const</td></tr>
+<tr class="memdesc:adf61f10bb2fa1a1423973ae4fcd2b7cc inherit pub_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">残りライフを取得する  <br /></td></tr>
+<tr class="memitem:a1aeb051d8d3c6268a6148e54448b062a inherit pub_methods_class_n_object_1_1_c_actor" id="r_a1aeb051d8d3c6268a6148e54448b062a"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a1aeb051d8d3c6268a6148e54448b062a">GetLifeMax</a> () const</td></tr>
+<tr class="memdesc:a1aeb051d8d3c6268a6148e54448b062a inherit pub_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大ライフを取得する  <br /></td></tr>
+<tr class="memitem:a609e839283f3bbedd4142ff8454f6279 inherit pub_methods_class_n_object_1_1_c_actor" id="r_a609e839283f3bbedd4142ff8454f6279"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a609e839283f3bbedd4142ff8454f6279">GetIsAlive</a> () const</td></tr>
+<tr class="memdesc:a609e839283f3bbedd4142ff8454f6279 inherit pub_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actorの生存状態を取得  <br /></td></tr>
+<tr class="memitem:ac02414e3b6261fe2a0237e5253deb2e0 inherit pub_methods_class_n_object_1_1_c_actor" id="r_ac02414e3b6261fe2a0237e5253deb2e0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#ac02414e3b6261fe2a0237e5253deb2e0">GetIsEliminated</a> () const</td></tr>
+<tr class="memdesc:ac02414e3b6261fe2a0237e5253deb2e0 inherit pub_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actorの消滅状態を取得(主にEnemy)  <br /></td></tr>
+<tr class="memitem:aa0bbdd7b8197c18b46fa2c0ccf785dcb inherit pub_methods_class_n_object_1_1_c_actor" id="r_aa0bbdd7b8197c18b46fa2c0ccf785dcb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#aa0bbdd7b8197c18b46fa2c0ccf785dcb">AddReceiveAttackInfo</a> (<a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a> &amp;_rSrc)</td></tr>
+<tr class="memdesc:aa0bbdd7b8197c18b46fa2c0ccf785dcb inherit pub_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">受けた当たり判定情報を追加する  <br /></td></tr>
+<tr class="memitem:ae66c876104bb2da622a50e3c1971827f inherit pub_methods_class_n_object_1_1_c_actor" id="r_ae66c876104bb2da622a50e3c1971827f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#ae66c876104bb2da622a50e3c1971827f">CActor</a> ()</td></tr>
+<tr class="memitem:a9dd70b72b18f1d236152496ee079c525 inherit pub_methods_class_n_object_1_1_c_actor" id="r_a9dd70b72b18f1d236152496ee079c525"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a9dd70b72b18f1d236152496ee079c525">~CActor</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_n_object_1_1_c_game_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_n_object_1_1_c_game_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a7caf845184ced68122960133aa6b969a inherit pub_methods_class_n_object_1_1_c_game_object" id="r_a7caf845184ced68122960133aa6b969a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#a7caf845184ced68122960133aa6b969a">Init</a> ()</td></tr>
+<tr class="memdesc:a7caf845184ced68122960133aa6b969a inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化する  <br /></td></tr>
+<tr class="memitem:ae972af9c0b739cf9e802df174efe092a inherit pub_methods_class_n_object_1_1_c_game_object" id="r_ae972af9c0b739cf9e802df174efe092a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#ae972af9c0b739cf9e802df174efe092a">Update</a> ()</td></tr>
+<tr class="memdesc:ae972af9c0b739cf9e802df174efe092a inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理  <br /></td></tr>
+<tr class="memitem:aafa2ee04d4a01cfd0b2d875f9fb1f99d inherit pub_methods_class_n_object_1_1_c_game_object" id="r_aafa2ee04d4a01cfd0b2d875f9fb1f99d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#aafa2ee04d4a01cfd0b2d875f9fb1f99d">Render</a> ()</td></tr>
+<tr class="memdesc:aafa2ee04d4a01cfd0b2d875f9fb1f99d inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画処理  <br /></td></tr>
+<tr class="memitem:aa34046adb0698a3533064c7b3f9cbc22 inherit pub_methods_class_n_object_1_1_c_game_object" id="r_aa34046adb0698a3533064c7b3f9cbc22"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#aa34046adb0698a3533064c7b3f9cbc22">Destroy</a> ()</td></tr>
+<tr class="memdesc:aa34046adb0698a3533064c7b3f9cbc22 inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了処理を行う(何度も実行できること)  <br /></td></tr>
+<tr class="memitem:aef389ac261cbf5e5898093a9ac06db66 inherit pub_methods_class_n_object_1_1_c_game_object" id="r_aef389ac261cbf5e5898093a9ac06db66"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#aef389ac261cbf5e5898093a9ac06db66">SetIsActive</a> (const bool _state)</td></tr>
+<tr class="memdesc:aef389ac261cbf5e5898093a9ac06db66 inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">有効状態を設定  <br /></td></tr>
+<tr class="memitem:a575707b1063df76e98c3aab335b2ce2f inherit pub_methods_class_n_object_1_1_c_game_object" id="r_a575707b1063df76e98c3aab335b2ce2f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#a575707b1063df76e98c3aab335b2ce2f">GetIsActive</a> () const</td></tr>
+<tr class="memdesc:a575707b1063df76e98c3aab335b2ce2f inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">有効状態を取得  <br /></td></tr>
+<tr class="memitem:ad886ead881768ecf2df0ea072a85ba8c inherit pub_methods_class_n_object_1_1_c_game_object" id="r_ad886ead881768ecf2df0ea072a85ba8c"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_transform.html">CTransform</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a> ()</td></tr>
+<tr class="memdesc:ad886ead881768ecf2df0ea072a85ba8c inherit pub_methods_class_n_object_1_1_c_game_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transformを取得  <br /></td></tr>
+<tr class="memitem:a73af1188d97ef39ca6fe57ad32c3323f inherit pub_methods_class_n_object_1_1_c_game_object" id="r_a73af1188d97ef39ca6fe57ad32c3323f"><td class="memItemLeft">const <a class="el" href="class_n_object_1_1_c_transform.html">CTransform</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#a73af1188d97ef39ca6fe57ad32c3323f">GetTransform</a> () const</td></tr>
+<tr class="memitem:ad728b6ed026185583ce27041d2b7b08f inherit pub_methods_class_n_object_1_1_c_game_object" id="r_ad728b6ed026185583ce27041d2b7b08f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#ad728b6ed026185583ce27041d2b7b08f">CGameObject</a> ()</td></tr>
+<tr class="memitem:a6093be13fcbfbd54e4b4176434c5cad3 inherit pub_methods_class_n_object_1_1_c_game_object" id="r_a6093be13fcbfbd54e4b4176434c5cad3"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_game_object.html#a6093be13fcbfbd54e4b4176434c5cad3">~CGameObject</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2244413c71a89f3481bb06d8ccc2c3fb" id="r_a2244413c71a89f3481bb06d8ccc2c3fb"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a2244413c71a89f3481bb06d8ccc2c3fb">LoadProc</a> () override</td></tr>
+<tr class="memdesc:a2244413c71a89f3481bb06d8ccc2c3fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">生成時に1度だけ行う処理を記述する  <br /></td></tr>
+<tr class="memitem:a643d389942f1d7f01606724daac7a5e6" id="r_a643d389942f1d7f01606724daac7a5e6"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a643d389942f1d7f01606724daac7a5e6">ReleaseProc</a> () override</td></tr>
+<tr class="memdesc:a643d389942f1d7f01606724daac7a5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了時に1度だけ行う処理を記述する  <br /></td></tr>
+<tr class="memitem:a2ebd64f87333b1dfd5eb4ee2eb0d9e73" id="r_a2ebd64f87333b1dfd5eb4ee2eb0d9e73"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a2ebd64f87333b1dfd5eb4ee2eb0d9e73">InitProc</a> () override</td></tr>
+<tr class="memdesc:a2ebd64f87333b1dfd5eb4ee2eb0d9e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化処理を記述する  <br /></td></tr>
+<tr class="memitem:a1572c5b31e10cc8758634be5d54a4a20" id="r_a1572c5b31e10cc8758634be5d54a4a20"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a1572c5b31e10cc8758634be5d54a4a20">DestroyProc</a> () override</td></tr>
+<tr class="memdesc:a1572c5b31e10cc8758634be5d54a4a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了処理を記述する  <br /></td></tr>
+<tr class="memitem:aa3e6e924c56d23bf27f0baee8472d19d" id="r_aa3e6e924c56d23bf27f0baee8472d19d"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aa3e6e924c56d23bf27f0baee8472d19d">UpdateProc</a> () override</td></tr>
+<tr class="memdesc:aa3e6e924c56d23bf27f0baee8472d19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理を記述する  <br /></td></tr>
+<tr class="memitem:a3d9988f7a1e8d946e6375ef69f7cee85" id="r_a3d9988f7a1e8d946e6375ef69f7cee85"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3d9988f7a1e8d946e6375ef69f7cee85">UpdateLateProc</a> () override</td></tr>
+<tr class="memdesc:a3d9988f7a1e8d946e6375ef69f7cee85"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定を更新する  <br /></td></tr>
+<tr class="memitem:a5525eb0f01a67ba0e7034f285a9bed61" id="r_a5525eb0f01a67ba0e7034f285a9bed61"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a5525eb0f01a67ba0e7034f285a9bed61">RenderProc</a> () override</td></tr>
+<tr class="memdesc:a5525eb0f01a67ba0e7034f285a9bed61"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画処理を記述する  <br /></td></tr>
+<tr class="memitem:ab76f25e9f66580f43bf900a19896d1a9" id="r_ab76f25e9f66580f43bf900a19896d1a9"><td class="memItemLeft">virtual <a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab76f25e9f66580f43bf900a19896d1a9">GetActorParamAssetKey</a> ()</td></tr>
+<tr class="memdesc:ab76f25e9f66580f43bf900a19896d1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ActorParamのデータへのパス  <br /></td></tr>
+<tr class="memitem:a3e3d775bfa0d942f3ad733d3a861b0fc" id="r_a3e3d775bfa0d942f3ad733d3a861b0fc"><td class="memItemLeft">virtual <a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3e3d775bfa0d942f3ad733d3a861b0fc">GetActorMoveAssetKey</a> ()</td></tr>
+<tr class="memdesc:a3e3d775bfa0d942f3ad733d3a861b0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">ActorMoveのファイルを読み込む  <br /></td></tr>
+<tr class="memitem:a68922f994cb28b2e53d2436b59bb5b14" id="r_a68922f994cb28b2e53d2436b59bb5b14"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a68922f994cb28b2e53d2436b59bb5b14">Operate</a> ()</td></tr>
+<tr class="memdesc:a68922f994cb28b2e53d2436b59bb5b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">操作関数  <br /></td></tr>
+<tr class="memitem:a3bfdfce419937f9e7418fbaed3d754cd" id="r_a3bfdfce419937f9e7418fbaed3d754cd"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3bfdfce419937f9e7418fbaed3d754cd">ProcDamage</a> (const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;_rDamage)</td></tr>
+<tr class="memdesc:a3bfdfce419937f9e7418fbaed3d754cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージ処理  <br /></td></tr>
+<tr class="inherit_header pro_methods_class_n_object_1_1_c_actor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_n_object_1_1_c_actor')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_object_1_1_c_actor.html">NObject::CActor</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:aae1df8321bb51d12789de0d58a74f659 inherit pro_methods_class_n_object_1_1_c_actor" id="r_aae1df8321bb51d12789de0d58a74f659"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#aae1df8321bb51d12789de0d58a74f659">UpdateFastProc</a> () override</td></tr>
+<tr class="memdesc:aae1df8321bb51d12789de0d58a74f659 inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動前の座標を取得する  <br /></td></tr>
+<tr class="memitem:aeaf6c5cbda74c554d865125e22402dd5 inherit pro_methods_class_n_object_1_1_c_actor" id="r_aeaf6c5cbda74c554d865125e22402dd5"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#aeaf6c5cbda74c554d865125e22402dd5">RenderLateProc</a> () override</td></tr>
+<tr class="memdesc:aeaf6c5cbda74c554d865125e22402dd5 inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定のデバッグ描画  <br /></td></tr>
+<tr class="memitem:a90f0a2a97d90d56060048e81eb29ca82 inherit pro_methods_class_n_object_1_1_c_actor" id="r_a90f0a2a97d90d56060048e81eb29ca82"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a90f0a2a97d90d56060048e81eb29ca82">SetIsEliminated</a> ()</td></tr>
+<tr class="memdesc:a90f0a2a97d90d56060048e81eb29ca82 inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵の削除状態を設定  <br /></td></tr>
+<tr class="memitem:a1ad5fa53e5e4f81b10eda00c56994c5a inherit pro_methods_class_n_object_1_1_c_actor" id="r_a1ad5fa53e5e4f81b10eda00c56994c5a"><td class="memItemLeft">virtual <a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a>&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a1ad5fa53e5e4f81b10eda00c56994c5a">GetStageGroundIndex</a> ()</td></tr>
+<tr class="memdesc:a1ad5fa53e5e4f81b10eda00c56994c5a inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">地面として使用するステージ用あたり判定マネージャのインデックスを返す  <br /></td></tr>
+<tr class="memitem:af2dea5cd7578c83521caf3bde8943193 inherit pro_methods_class_n_object_1_1_c_actor" id="r_af2dea5cd7578c83521caf3bde8943193"><td class="memItemLeft">virtual <a class="el" href="namespace_n_collision.html#a51ad698afc6db73a5076a4d31706ad3b">NCollision::EStageCollisionIndex</a>&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#af2dea5cd7578c83521caf3bde8943193">GetStageWallIndex</a> ()</td></tr>
+<tr class="memdesc:af2dea5cd7578c83521caf3bde8943193 inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">壁として使用するステージ用あたり判定マネージャのインデックスを返す  <br /></td></tr>
+<tr class="memitem:af695f5d94e66e29de434e6a6e34d8078 inherit pro_methods_class_n_object_1_1_c_actor" id="r_af695f5d94e66e29de434e6a6e34d8078"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#af695f5d94e66e29de434e6a6e34d8078">GetReceiveAttackInfoCount</a> () const</td></tr>
+<tr class="memdesc:af695f5d94e66e29de434e6a6e34d8078 inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在フレームで受けた当たり判定情報の数を取得  <br /></td></tr>
+<tr class="memitem:a83b4bcce3745f1016c599ae13b44990c inherit pro_methods_class_n_object_1_1_c_actor" id="r_a83b4bcce3745f1016c599ae13b44990c"><td class="memItemLeft">const <a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a83b4bcce3745f1016c599ae13b44990c">GetCurReceiveAttackInfo</a> (uint _idx) const</td></tr>
+<tr class="memdesc:a83b4bcce3745f1016c599ae13b44990c inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在フレームで受けた当たり判定情報を取得  <br /></td></tr>
+<tr class="memitem:a7ffde0f5d5e2e6454a6da4fcee6cbde3 inherit pro_methods_class_n_object_1_1_c_actor" id="r_a7ffde0f5d5e2e6454a6da4fcee6cbde3"><td class="memItemLeft">const <a class="el" href="class_n_collision_1_1_c_receive_attack_info.html">NCollision::CReceiveAttackInfo</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a7ffde0f5d5e2e6454a6da4fcee6cbde3">GetPrevReceiveAttackInfo</a> (uint _prevFrame, uint _infoIdx) const</td></tr>
+<tr class="memdesc:a7ffde0f5d5e2e6454a6da4fcee6cbde3 inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">過去フレームで受けた当たり判定情報を取得する  <br /></td></tr>
+<tr class="memitem:a27d65e6fd6eaf919473f316ec016fe72 inherit pro_methods_class_n_object_1_1_c_actor" id="r_a27d65e6fd6eaf919473f316ec016fe72"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a27d65e6fd6eaf919473f316ec016fe72">SetDamageActorMoveParam</a> ()</td></tr>
+<tr class="memdesc:a27d65e6fd6eaf919473f316ec016fe72 inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃を受けた際のActorMoveの設定を適用  <br /></td></tr>
+<tr class="memitem:a2b4d3dfce96b17b1f936194beaa79043 inherit pro_methods_class_n_object_1_1_c_actor" id="r_a2b4d3dfce96b17b1f936194beaa79043"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a2b4d3dfce96b17b1f936194beaa79043">SetNormalActorMoveParam</a> ()</td></tr>
+<tr class="memdesc:a2b4d3dfce96b17b1f936194beaa79043 inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">通常時のActorMoveの設定を適用  <br /></td></tr>
+<tr class="memitem:a5c82a894050ba62f3a2ea0943278f6f8 inherit pro_methods_class_n_object_1_1_c_actor" id="r_a5c82a894050ba62f3a2ea0943278f6f8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a5c82a894050ba62f3a2ea0943278f6f8">ApplyKnockBack</a> (const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;_rDamage)</td></tr>
+<tr class="memdesc:a5c82a894050ba62f3a2ea0943278f6f8 inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージを受けた際のノックバックをActorMoveに適用する  <br /></td></tr>
+<tr class="memitem:af0cdf652d740f9eb8806fc2ad5ecddd4 inherit pro_methods_class_n_object_1_1_c_actor" id="r_af0cdf652d740f9eb8806fc2ad5ecddd4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#af0cdf652d740f9eb8806fc2ad5ecddd4">LookAtAttacker</a> (const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;_rDamage)</td></tr>
+<tr class="memdesc:af0cdf652d740f9eb8806fc2ad5ecddd4 inherit pro_methods_class_n_object_1_1_c_actor"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージを受けた際に攻撃者の方向を向く(補完なし)  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-types" class="groupheader"><a id="pri-types" name="pri-types"></a>
+非公開型</h2></td></tr>
+<tr class="memitem:a9e30bf9be28f86d37c07139d43eb24dd" id="r_a9e30bf9be28f86d37c07139d43eb24dd"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a9e30bf9be28f86d37c07139d43eb24dd">Base</a> = <a class="el" href="class_n_object_1_1_c_actor.html#ae66c876104bb2da622a50e3c1971827f">CActor</a></td></tr>
+<tr class="memitem:a00c6ef2c64ad078ab124d9e93a4b1ff8" id="r_a00c6ef2c64ad078ab124d9e93a4b1ff8"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a00c6ef2c64ad078ab124d9e93a4b1ff8">BigStateParam</a> = <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt;<a class="el" href="#a1204b4ae7985fd4e3ce27504f02022ef">CPlayer</a>, <a class="el" href="#aea4f9be162781d81620822eb9425592a">EBigState</a>&gt;::Param</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a19ffa2e07ad0d7694f354f675168ea95" id="r_a19ffa2e07ad0d7694f354f675168ea95"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a19ffa2e07ad0d7694f354f675168ea95">UpdateOperatorParam</a> ()</td></tr>
+<tr class="memdesc:a19ffa2e07ad0d7694f354f675168ea95"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラオペレータに渡すパラメータを更新する関数  <br /></td></tr>
+<tr class="memitem:a72831e6a0ae0515fc841ecb296a09cc0" id="r_a72831e6a0ae0515fc841ecb296a09cc0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a72831e6a0ae0515fc841ecb296a09cc0">UpdateStateNormal</a> (<a class="el" href="#a00c6ef2c64ad078ab124d9e93a4b1ff8">BigStateParam</a> _param)</td></tr>
+<tr class="memitem:ad8b3969451dcf8758e30027e8d98cb63" id="r_ad8b3969451dcf8758e30027e8d98cb63"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad8b3969451dcf8758e30027e8d98cb63">UpdateStateDamage</a> (<a class="el" href="#a00c6ef2c64ad078ab124d9e93a4b1ff8">BigStateParam</a> _param)</td></tr>
+<tr class="memitem:adda8961cc7f2b24abd62ae9fc4a3bd48" id="r_adda8961cc7f2b24abd62ae9fc4a3bd48"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adda8961cc7f2b24abd62ae9fc4a3bd48">UpdateStateAttack</a> (<a class="el" href="#a00c6ef2c64ad078ab124d9e93a4b1ff8">BigStateParam</a> _param)</td></tr>
+<tr class="memitem:a76abfef49fdc95ebe689e11ccdb6a45d" id="r_a76abfef49fdc95ebe689e11ccdb6a45d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a76abfef49fdc95ebe689e11ccdb6a45d">UpdateExcludeState</a> ()</td></tr>
+<tr class="memdesc:a76abfef49fdc95ebe689e11ccdb6a45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステートの排他制御を行う  <br /></td></tr>
+<tr class="memitem:a6be9710e3d3292e0f5dfc641573c935f" id="r_a6be9710e3d3292e0f5dfc641573c935f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6be9710e3d3292e0f5dfc641573c935f">UpdateUtilMove</a> ()</td></tr>
+<tr class="memdesc:a6be9710e3d3292e0f5dfc641573c935f"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動を実行  <br /></td></tr>
+<tr class="memitem:a133941c1d5e4c24a8e99cddeb0dc9b89" id="r_a133941c1d5e4c24a8e99cddeb0dc9b89"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a133941c1d5e4c24a8e99cddeb0dc9b89">UpdateUtilFall</a> ()</td></tr>
+<tr class="memdesc:a133941c1d5e4c24a8e99cddeb0dc9b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">落下状態へ遷移  <br /></td></tr>
+<tr class="memitem:a9e2ec1ad18d0e8726ab3dceb632af1f0" id="r_a9e2ec1ad18d0e8726ab3dceb632af1f0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9e2ec1ad18d0e8726ab3dceb632af1f0">GetIsStop</a> () const</td></tr>
+<tr class="memdesc:a9e2ec1ad18d0e8726ab3dceb632af1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動状態  <br /></td></tr>
+<tr class="memitem:afe4414cabc77460fbc82fa302f377eb3" id="r_afe4414cabc77460fbc82fa302f377eb3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#afe4414cabc77460fbc82fa302f377eb3">GetIsGrounded</a> () const</td></tr>
+<tr class="memdesc:afe4414cabc77460fbc82fa302f377eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">着地状態  <br /></td></tr>
+<tr class="memitem:aa82733e9ec18bb8681753d941eee3720" id="r_aa82733e9ec18bb8681753d941eee3720"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa82733e9ec18bb8681753d941eee3720">GetIsFalling</a> () const</td></tr>
+<tr class="memdesc:aa82733e9ec18bb8681753d941eee3720"><td class="mdescLeft">&#160;</td><td class="mdescRight">落下状態  <br /></td></tr>
+<tr class="memitem:a134406e76a10039c187374ce7f38e2a2" id="r_a134406e76a10039c187374ce7f38e2a2"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a134406e76a10039c187374ce7f38e2a2">GetMoveSpeedXZRatio</a> () const</td></tr>
+<tr class="memdesc:a134406e76a10039c187374ce7f38e2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動速度の割合を取得  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a424d95b21eae84f255937380b9f34c5c" id="r_a424d95b21eae84f255937380b9f34c5c"><td class="memItemLeft"><a class="el" href="class_n_model_1_1_c_object.html">NModel::CObject</a>&#160;</td><td class="memItemRight"><a class="el" href="#a424d95b21eae84f255937380b9f34c5c">m_model</a></td></tr>
+<tr class="memitem:a05dd6124233500dad30513329c10d2f5" id="r_a05dd6124233500dad30513329c10d2f5"><td class="memItemLeft"><a class="el" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CShaderFactory::SPAsset</a>&#160;</td><td class="memItemRight"><a class="el" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a></td></tr>
+<tr class="memitem:aeca2c42dabd98a51f305c09ca18e8b8f" id="r_aeca2c42dabd98a51f305c09ca18e8b8f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aeca2c42dabd98a51f305c09ca18e8b8f">m_isResetLife</a></td></tr>
+<tr class="memitem:ae2e525499adbd4184e4e797dd6716741" id="r_ae2e525499adbd4184e4e797dd6716741"><td class="memItemLeft"><a class="el" href="class_n_model_1_1_c_object.html">NModel::CObject</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae2e525499adbd4184e4e797dd6716741">m_swordModel</a></td></tr>
+<tr class="memitem:af6dc75dde45cfb6ea223d224d513a408" id="r_af6dc75dde45cfb6ea223d224d513a408"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a>&#160;</td><td class="memItemRight"><a class="el" href="#af6dc75dde45cfb6ea223d224d513a408">m_swordTransform</a></td></tr>
+<tr class="memitem:acd0be2d9c3d0b36ce9c59cb9467910bb" id="r_acd0be2d9c3d0b36ce9c59cb9467910bb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acd0be2d9c3d0b36ce9c59cb9467910bb">m_isSwordGrab</a></td></tr>
+<tr class="memitem:a370daac1a339615b8d53fbc10cb23b07" id="r_a370daac1a339615b8d53fbc10cb23b07"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_effect.html">NObject::CEffect</a>&#160;</td><td class="memItemRight"><a class="el" href="#a370daac1a339615b8d53fbc10cb23b07">m_effect</a></td></tr>
+<tr class="memitem:a1e18ae18d03173ee3c3782f15e8ccfdc" id="r_a1e18ae18d03173ee3c3782f15e8ccfdc"><td class="memItemLeft"><a class="el" href="class_n_camera_1_1_c_operator_player.html">NCamera::COperatorPlayer</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1e18ae18d03173ee3c3782f15e8ccfdc">m_cameraOperator</a></td></tr>
+<tr class="memitem:a05dc99f289c40401cc33de62e50d31a7" id="r_a05dc99f289c40401cc33de62e50d31a7"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a05dc99f289c40401cc33de62e50d31a7">m_moveSpeedAlias</a></td></tr>
+<tr class="memitem:a65e5ba751f613d700f4d52673458b50e" id="r_a65e5ba751f613d700f4d52673458b50e"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_player_1_1_c_normal_state.html">CNormalState</a>&#160;</td><td class="memItemRight"><a class="el" href="#a65e5ba751f613d700f4d52673458b50e">m_normalState</a></td></tr>
+<tr class="memdesc:a65e5ba751f613d700f4d52673458b50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">排他制御が必要(当たり判定Holderの排他制御)  <br /></td></tr>
+<tr class="memitem:a7e71fa4247997bc2ac23e63d33dc381e" id="r_a7e71fa4247997bc2ac23e63d33dc381e"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_player_1_1_c_damage_state.html">CDamageState</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a></td></tr>
+<tr class="memitem:af4a1f26621a0c63d4de9a47dd22ad702" id="r_af4a1f26621a0c63d4de9a47dd22ad702"><td class="memItemLeft"><a class="el" href="class_n_object_1_1_c_player_1_1_c_attack_state.html">CAttackState</a>&#160;</td><td class="memItemRight"><a class="el" href="#af4a1f26621a0c63d4de9a47dd22ad702">m_attackState</a></td></tr>
+<tr class="memitem:a02e96f8bddc137224de30f48ee6c61c7" id="r_a02e96f8bddc137224de30f48ee6c61c7"><td class="memItemLeft"><a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt; <a class="el" href="#a1204b4ae7985fd4e3ce27504f02022ef">CPlayer</a>, <a class="el" href="#aea4f9be162781d81620822eb9425592a">EBigState</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a02e96f8bddc137224de30f48ee6c61c7">m_stateBig</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_class_n_object_1_1_c_actor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_attribs_class_n_object_1_1_c_actor')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_object_1_1_c_actor.html">NObject::CActor</a> に属する継承静的公開変数類</td></tr>
+<tr class="memitem:adcf8b023e7b10110470fc43e1b77681d inherit pub_static_attribs_class_n_object_1_1_c_actor" id="r_adcf8b023e7b10110470fc43e1b77681d"><td class="memItemLeft">static const uint&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#adcf8b023e7b10110470fc43e1b77681d">RECEIVE_ATTACK_INFO_BUF_SIZE</a> = 16</td></tr>
+<tr class="memitem:a80fc9e92c59c5703c059d9e03af89b67 inherit pub_static_attribs_class_n_object_1_1_c_actor" id="r_a80fc9e92c59c5703c059d9e03af89b67"><td class="memItemLeft">static const uint&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a80fc9e92c59c5703c059d9e03af89b67">RECEIVE_ATTACK_INFO_MAX</a> = 16</td></tr>
+<tr class="inherit_header pro_attribs_class_n_object_1_1_c_actor"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_n_object_1_1_c_actor')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="class_n_object_1_1_c_actor.html">NObject::CActor</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:abd621445a67d87436d153b9ea7d50549 inherit pro_attribs_class_n_object_1_1_c_actor" id="r_abd621445a67d87436d153b9ea7d50549"><td class="memItemLeft"><a class="el" href="struct_n_game_1_1_s_actor_param.html">NGame::SActorParam</a>&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#abd621445a67d87436d153b9ea7d50549">m_actorParam</a></td></tr>
+<tr class="memitem:a9e858b93eacf30e3d8c14806dfa4c48a inherit pro_attribs_class_n_object_1_1_c_actor" id="r_a9e858b93eacf30e3d8c14806dfa4c48a"><td class="memItemLeft"><a class="el" href="class_n_game_1_1_c_actor_move.html">NGame::CActorMove</a>&#160;</td><td class="memItemRight"><a class="el" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>テスト用のキャラクター </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">todo</a></b></dt><dd>安定したら実際にプレイヤークラスにする </dd></dl>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a9e30bf9be28f86d37c07139d43eb24dd" name="a9e30bf9be28f86d37c07139d43eb24dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e30bf9be28f86d37c07139d43eb24dd">&#9670;&#160;</a></span>Base</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a9e30bf9be28f86d37c07139d43eb24dd">NObject::CPlayer::Base</a> = <a class="el" href="class_n_object_1_1_c_actor.html#ae66c876104bb2da622a50e3c1971827f">CActor</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00c6ef2c64ad078ab124d9e93a4b1ff8" name="a00c6ef2c64ad078ab124d9e93a4b1ff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00c6ef2c64ad078ab124d9e93a4b1ff8">&#9670;&#160;</a></span>BigStateParam</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a00c6ef2c64ad078ab124d9e93a4b1ff8">NObject::CPlayer::BigStateParam</a> = <a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt;<a class="el" href="#a1204b4ae7985fd4e3ce27504f02022ef">CPlayer</a>, <a class="el" href="#aea4f9be162781d81620822eb9425592a">EBigState</a>&gt;::Param</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">列挙型メンバ詳解</h2>
+<a id="a9ee68d9af6818604bf632e5144cfbf6b" name="a9ee68d9af6818604bf632e5144cfbf6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ee68d9af6818604bf632e5144cfbf6b">&#9670;&#160;</a></span>EAnmIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a9ee68d9af6818604bf632e5144cfbf6b">NObject::CPlayer::EAnmIndex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モデルのアニメーションインデックス </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6bad3334cce9b34f347cb0a54783d949547" name="a9ee68d9af6818604bf632e5144cfbf6bad3334cce9b34f347cb0a54783d949547"></a>ANM_ATTACK_AIR1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6baa87b37cc212df0bafb4c51de862d65eb" name="a9ee68d9af6818604bf632e5144cfbf6baa87b37cc212df0bafb4c51de862d65eb"></a>ANM_ATTACK_AIR2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba198f2e4660589c36976be3397e75865e" name="a9ee68d9af6818604bf632e5144cfbf6ba198f2e4660589c36976be3397e75865e"></a>ANM_ATTACK_AIR3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba9b34acfcb93eb657837b53c1b125dc2d" name="a9ee68d9af6818604bf632e5144cfbf6ba9b34acfcb93eb657837b53c1b125dc2d"></a>ANM_ATTACK_AIR_FINISH_START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba8b3646c78c89da13e0d8d3d2179cf3e3" name="a9ee68d9af6818604bf632e5144cfbf6ba8b3646c78c89da13e0d8d3d2179cf3e3"></a>ANM_ATTACK_AIR_FINISH_FALL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6baea7bb51b3d7b78945170fb3bc5a9d6a8" name="a9ee68d9af6818604bf632e5144cfbf6baea7bb51b3d7b78945170fb3bc5a9d6a8"></a>ANM_ATTACK_AIR_FINISH_END&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6bab54f105c122d08f35fabe27df72d25e7" name="a9ee68d9af6818604bf632e5144cfbf6bab54f105c122d08f35fabe27df72d25e7"></a>ANM_ATTACK_PUNCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6bac284ac265d451a8f87b418908a018481" name="a9ee68d9af6818604bf632e5144cfbf6bac284ac265d451a8f87b418908a018481"></a>ANM_ATTACK_SWORD_DOUBLE_UPPER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba161f45162ed1c003db9456c540320f77" name="a9ee68d9af6818604bf632e5144cfbf6ba161f45162ed1c003db9456c540320f77"></a>ANM_ATTACK_SWORD_ENTRY1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6bad8cce414dc748efc5632b34051e7dc12" name="a9ee68d9af6818604bf632e5144cfbf6bad8cce414dc748efc5632b34051e7dc12"></a>ANM_ATTACK_SWORD_GROUND_SMASH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba4b9dbe5987478ce151d9f144462e741d" name="a9ee68d9af6818604bf632e5144cfbf6ba4b9dbe5987478ce151d9f144462e741d"></a>ANM_ATTACK_SWORD_HORIZONTAL1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6bad5a1c5e2cadf2dca3bcfbb1a52c495c1" name="a9ee68d9af6818604bf632e5144cfbf6bad5a1c5e2cadf2dca3bcfbb1a52c495c1"></a>ANM_DAMAGE_DIE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba776afab9e24ac73cfa9dfe804a1be106" name="a9ee68d9af6818604bf632e5144cfbf6ba776afab9e24ac73cfa9dfe804a1be106"></a>ANM_DAMAGE_HEAVY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba8d261fa31f2b458d623f1d11686c2d5d" name="a9ee68d9af6818604bf632e5144cfbf6ba8d261fa31f2b458d623f1d11686c2d5d"></a>ANM_DAMAGE_LIGHT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba284eaaf91efd60ca14276350785f3588" name="a9ee68d9af6818604bf632e5144cfbf6ba284eaaf91efd60ca14276350785f3588"></a>ANM_NORMAL_DASH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba9ff35e9714fc5bd281e8a464fd2e5d5a" name="a9ee68d9af6818604bf632e5144cfbf6ba9ff35e9714fc5bd281e8a464fd2e5d5a"></a>ANM_NORMAL_GRAB_SWORD_SET&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba43361c558ae033fbe6a2deaaf10ed736" name="a9ee68d9af6818604bf632e5144cfbf6ba43361c558ae033fbe6a2deaaf10ed736"></a>ANM_NORMAL_GRAB_SWORD_START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba497afab8676c7937cb1f5736707d9a26" name="a9ee68d9af6818604bf632e5144cfbf6ba497afab8676c7937cb1f5736707d9a26"></a>ANM_NORMAL_GROUNDED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba632329aee19649927551d46fddf9bb8f" name="a9ee68d9af6818604bf632e5144cfbf6ba632329aee19649927551d46fddf9bb8f"></a>ANM_NORMAL_IDLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba8003370b32ae63fea9191cfd7dba2c0c" name="a9ee68d9af6818604bf632e5144cfbf6ba8003370b32ae63fea9191cfd7dba2c0c"></a>ANM_NORMAL_JUMP_DOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6badd6666d5452f44a3f43c493e516fb1ee" name="a9ee68d9af6818604bf632e5144cfbf6badd6666d5452f44a3f43c493e516fb1ee"></a>ANM_NORMAL_JUMP_START&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6bae3f173d94e7d2c0791d5ff63e110e647" name="a9ee68d9af6818604bf632e5144cfbf6bae3f173d94e7d2c0791d5ff63e110e647"></a>ANM_NORMAL_JUMP_UP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba2c286d5ef227fcfa8b7c8ff1f24f8fa3" name="a9ee68d9af6818604bf632e5144cfbf6ba2c286d5ef227fcfa8b7c8ff1f24f8fa3"></a>ANM_NORMAL_SWORD_DASH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9ee68d9af6818604bf632e5144cfbf6ba63b5fe5d9db162b9cb160ac701b7087a" name="a9ee68d9af6818604bf632e5144cfbf6ba63b5fe5d9db162b9cb160ac701b7087a"></a>ANM_NORMAL_SWORD_SET&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>                       {</div>
+<div class="line"><span class="lineno">   33</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6bad3334cce9b34f347cb0a54783d949547">ANM_ATTACK_AIR1</a>,</div>
+<div class="line"><span class="lineno">   34</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6baa87b37cc212df0bafb4c51de862d65eb">ANM_ATTACK_AIR2</a>,</div>
+<div class="line"><span class="lineno">   35</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba198f2e4660589c36976be3397e75865e">ANM_ATTACK_AIR3</a>,</div>
+<div class="line"><span class="lineno">   36</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba9b34acfcb93eb657837b53c1b125dc2d">ANM_ATTACK_AIR_FINISH_START</a>,</div>
+<div class="line"><span class="lineno">   37</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba8b3646c78c89da13e0d8d3d2179cf3e3">ANM_ATTACK_AIR_FINISH_FALL</a>,</div>
+<div class="line"><span class="lineno">   38</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6baea7bb51b3d7b78945170fb3bc5a9d6a8">ANM_ATTACK_AIR_FINISH_END</a>,</div>
+<div class="line"><span class="lineno">   39</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6bab54f105c122d08f35fabe27df72d25e7">ANM_ATTACK_PUNCH</a>,</div>
+<div class="line"><span class="lineno">   40</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6bac284ac265d451a8f87b418908a018481">ANM_ATTACK_SWORD_DOUBLE_UPPER</a>,</div>
+<div class="line"><span class="lineno">   41</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba161f45162ed1c003db9456c540320f77">ANM_ATTACK_SWORD_ENTRY1</a>,</div>
+<div class="line"><span class="lineno">   42</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6bad8cce414dc748efc5632b34051e7dc12">ANM_ATTACK_SWORD_GROUND_SMASH</a>,</div>
+<div class="line"><span class="lineno">   43</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba4b9dbe5987478ce151d9f144462e741d">ANM_ATTACK_SWORD_HORIZONTAL1</a>,</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6bad5a1c5e2cadf2dca3bcfbb1a52c495c1">ANM_DAMAGE_DIE</a>,</div>
+<div class="line"><span class="lineno">   46</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba776afab9e24ac73cfa9dfe804a1be106">ANM_DAMAGE_HEAVY</a>,</div>
+<div class="line"><span class="lineno">   47</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba8d261fa31f2b458d623f1d11686c2d5d">ANM_DAMAGE_LIGHT</a>,</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba284eaaf91efd60ca14276350785f3588">ANM_NORMAL_DASH</a>,</div>
+<div class="line"><span class="lineno">   50</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba9ff35e9714fc5bd281e8a464fd2e5d5a">ANM_NORMAL_GRAB_SWORD_SET</a>,</div>
+<div class="line"><span class="lineno">   51</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba43361c558ae033fbe6a2deaaf10ed736">ANM_NORMAL_GRAB_SWORD_START</a>,</div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba497afab8676c7937cb1f5736707d9a26">ANM_NORMAL_GROUNDED</a>,</div>
+<div class="line"><span class="lineno">   53</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba632329aee19649927551d46fddf9bb8f">ANM_NORMAL_IDLE</a>,</div>
+<div class="line"><span class="lineno">   54</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba8003370b32ae63fea9191cfd7dba2c0c">ANM_NORMAL_JUMP_DOWN</a>,</div>
+<div class="line"><span class="lineno">   55</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6badd6666d5452f44a3f43c493e516fb1ee">ANM_NORMAL_JUMP_START</a>,</div>
+<div class="line"><span class="lineno">   56</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6bae3f173d94e7d2c0791d5ff63e110e647">ANM_NORMAL_JUMP_UP</a>,</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba2c286d5ef227fcfa8b7c8ff1f24f8fa3">ANM_NORMAL_SWORD_DASH</a>,</div>
+<div class="line"><span class="lineno">   59</span>            <a class="code hl_enumvalue" href="#a9ee68d9af6818604bf632e5144cfbf6ba63b5fe5d9db162b9cb160ac701b7087a">ANM_NORMAL_SWORD_SET</a>,</div>
+<div class="line"><span class="lineno">   60</span>        };</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba161f45162ed1c003db9456c540320f77"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba161f45162ed1c003db9456c540320f77">NObject::CPlayer::ANM_ATTACK_SWORD_ENTRY1</a></div><div class="ttdeci">@ ANM_ATTACK_SWORD_ENTRY1</div><div class="ttdef"><b>Definition</b> Object_Player.h:41</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba198f2e4660589c36976be3397e75865e"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba198f2e4660589c36976be3397e75865e">NObject::CPlayer::ANM_ATTACK_AIR3</a></div><div class="ttdeci">@ ANM_ATTACK_AIR3</div><div class="ttdef"><b>Definition</b> Object_Player.h:35</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba284eaaf91efd60ca14276350785f3588"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba284eaaf91efd60ca14276350785f3588">NObject::CPlayer::ANM_NORMAL_DASH</a></div><div class="ttdeci">@ ANM_NORMAL_DASH</div><div class="ttdef"><b>Definition</b> Object_Player.h:49</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba2c286d5ef227fcfa8b7c8ff1f24f8fa3"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba2c286d5ef227fcfa8b7c8ff1f24f8fa3">NObject::CPlayer::ANM_NORMAL_SWORD_DASH</a></div><div class="ttdeci">@ ANM_NORMAL_SWORD_DASH</div><div class="ttdef"><b>Definition</b> Object_Player.h:58</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba43361c558ae033fbe6a2deaaf10ed736"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba43361c558ae033fbe6a2deaaf10ed736">NObject::CPlayer::ANM_NORMAL_GRAB_SWORD_START</a></div><div class="ttdeci">@ ANM_NORMAL_GRAB_SWORD_START</div><div class="ttdef"><b>Definition</b> Object_Player.h:51</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba497afab8676c7937cb1f5736707d9a26"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba497afab8676c7937cb1f5736707d9a26">NObject::CPlayer::ANM_NORMAL_GROUNDED</a></div><div class="ttdeci">@ ANM_NORMAL_GROUNDED</div><div class="ttdef"><b>Definition</b> Object_Player.h:52</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba4b9dbe5987478ce151d9f144462e741d"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba4b9dbe5987478ce151d9f144462e741d">NObject::CPlayer::ANM_ATTACK_SWORD_HORIZONTAL1</a></div><div class="ttdeci">@ ANM_ATTACK_SWORD_HORIZONTAL1</div><div class="ttdef"><b>Definition</b> Object_Player.h:43</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba632329aee19649927551d46fddf9bb8f"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba632329aee19649927551d46fddf9bb8f">NObject::CPlayer::ANM_NORMAL_IDLE</a></div><div class="ttdeci">@ ANM_NORMAL_IDLE</div><div class="ttdef"><b>Definition</b> Object_Player.h:53</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba63b5fe5d9db162b9cb160ac701b7087a"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba63b5fe5d9db162b9cb160ac701b7087a">NObject::CPlayer::ANM_NORMAL_SWORD_SET</a></div><div class="ttdeci">@ ANM_NORMAL_SWORD_SET</div><div class="ttdef"><b>Definition</b> Object_Player.h:59</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba776afab9e24ac73cfa9dfe804a1be106"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba776afab9e24ac73cfa9dfe804a1be106">NObject::CPlayer::ANM_DAMAGE_HEAVY</a></div><div class="ttdeci">@ ANM_DAMAGE_HEAVY</div><div class="ttdef"><b>Definition</b> Object_Player.h:46</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba8003370b32ae63fea9191cfd7dba2c0c"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba8003370b32ae63fea9191cfd7dba2c0c">NObject::CPlayer::ANM_NORMAL_JUMP_DOWN</a></div><div class="ttdeci">@ ANM_NORMAL_JUMP_DOWN</div><div class="ttdef"><b>Definition</b> Object_Player.h:54</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba8b3646c78c89da13e0d8d3d2179cf3e3"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba8b3646c78c89da13e0d8d3d2179cf3e3">NObject::CPlayer::ANM_ATTACK_AIR_FINISH_FALL</a></div><div class="ttdeci">@ ANM_ATTACK_AIR_FINISH_FALL</div><div class="ttdef"><b>Definition</b> Object_Player.h:37</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba8d261fa31f2b458d623f1d11686c2d5d"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba8d261fa31f2b458d623f1d11686c2d5d">NObject::CPlayer::ANM_DAMAGE_LIGHT</a></div><div class="ttdeci">@ ANM_DAMAGE_LIGHT</div><div class="ttdef"><b>Definition</b> Object_Player.h:47</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba9b34acfcb93eb657837b53c1b125dc2d"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba9b34acfcb93eb657837b53c1b125dc2d">NObject::CPlayer::ANM_ATTACK_AIR_FINISH_START</a></div><div class="ttdeci">@ ANM_ATTACK_AIR_FINISH_START</div><div class="ttdef"><b>Definition</b> Object_Player.h:36</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6ba9ff35e9714fc5bd281e8a464fd2e5d5a"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6ba9ff35e9714fc5bd281e8a464fd2e5d5a">NObject::CPlayer::ANM_NORMAL_GRAB_SWORD_SET</a></div><div class="ttdeci">@ ANM_NORMAL_GRAB_SWORD_SET</div><div class="ttdef"><b>Definition</b> Object_Player.h:50</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6baa87b37cc212df0bafb4c51de862d65eb"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6baa87b37cc212df0bafb4c51de862d65eb">NObject::CPlayer::ANM_ATTACK_AIR2</a></div><div class="ttdeci">@ ANM_ATTACK_AIR2</div><div class="ttdef"><b>Definition</b> Object_Player.h:34</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6bab54f105c122d08f35fabe27df72d25e7"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6bab54f105c122d08f35fabe27df72d25e7">NObject::CPlayer::ANM_ATTACK_PUNCH</a></div><div class="ttdeci">@ ANM_ATTACK_PUNCH</div><div class="ttdef"><b>Definition</b> Object_Player.h:39</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6bac284ac265d451a8f87b418908a018481"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6bac284ac265d451a8f87b418908a018481">NObject::CPlayer::ANM_ATTACK_SWORD_DOUBLE_UPPER</a></div><div class="ttdeci">@ ANM_ATTACK_SWORD_DOUBLE_UPPER</div><div class="ttdef"><b>Definition</b> Object_Player.h:40</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6bad3334cce9b34f347cb0a54783d949547"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6bad3334cce9b34f347cb0a54783d949547">NObject::CPlayer::ANM_ATTACK_AIR1</a></div><div class="ttdeci">@ ANM_ATTACK_AIR1</div><div class="ttdef"><b>Definition</b> Object_Player.h:33</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6bad5a1c5e2cadf2dca3bcfbb1a52c495c1"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6bad5a1c5e2cadf2dca3bcfbb1a52c495c1">NObject::CPlayer::ANM_DAMAGE_DIE</a></div><div class="ttdeci">@ ANM_DAMAGE_DIE</div><div class="ttdef"><b>Definition</b> Object_Player.h:45</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6bad8cce414dc748efc5632b34051e7dc12"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6bad8cce414dc748efc5632b34051e7dc12">NObject::CPlayer::ANM_ATTACK_SWORD_GROUND_SMASH</a></div><div class="ttdeci">@ ANM_ATTACK_SWORD_GROUND_SMASH</div><div class="ttdef"><b>Definition</b> Object_Player.h:42</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6badd6666d5452f44a3f43c493e516fb1ee"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6badd6666d5452f44a3f43c493e516fb1ee">NObject::CPlayer::ANM_NORMAL_JUMP_START</a></div><div class="ttdeci">@ ANM_NORMAL_JUMP_START</div><div class="ttdef"><b>Definition</b> Object_Player.h:55</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6bae3f173d94e7d2c0791d5ff63e110e647"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6bae3f173d94e7d2c0791d5ff63e110e647">NObject::CPlayer::ANM_NORMAL_JUMP_UP</a></div><div class="ttdeci">@ ANM_NORMAL_JUMP_UP</div><div class="ttdef"><b>Definition</b> Object_Player.h:56</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a9ee68d9af6818604bf632e5144cfbf6baea7bb51b3d7b78945170fb3bc5a9d6a8"><div class="ttname"><a href="#a9ee68d9af6818604bf632e5144cfbf6baea7bb51b3d7b78945170fb3bc5a9d6a8">NObject::CPlayer::ANM_ATTACK_AIR_FINISH_END</a></div><div class="ttdeci">@ ANM_ATTACK_AIR_FINISH_END</div><div class="ttdef"><b>Definition</b> Object_Player.h:38</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aea4f9be162781d81620822eb9425592a" name="aea4f9be162781d81620822eb9425592a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea4f9be162781d81620822eb9425592a">&#9670;&#160;</a></span>EBigState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#aea4f9be162781d81620822eb9425592a">NObject::CPlayer::EBigState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>このクラスが管理する状態 </p>
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="aea4f9be162781d81620822eb9425592aa1e23852820b9154316c7c06e2b7ba051" name="aea4f9be162781d81620822eb9425592aa1e23852820b9154316c7c06e2b7ba051"></a>NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34" name="aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34"></a>DAMAGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aea4f9be162781d81620822eb9425592aac6ddd0f72ff2fd344693b9ca8d483871" name="aea4f9be162781d81620822eb9425592aac6ddd0f72ff2fd344693b9ca8d483871"></a>ATTACK&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><span class="lineno">   25</span>                             {</div>
+<div class="line"><span class="lineno">   26</span>            NORMAL,</div>
+<div class="line"><span class="lineno">   27</span>            DAMAGE,</div>
+<div class="line"><span class="lineno">   28</span>            ATTACK</div>
+<div class="line"><span class="lineno">   29</span>        };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afc7bea2da94675ea5e3d179acfacc016" name="afc7bea2da94675ea5e3d179acfacc016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7bea2da94675ea5e3d179acfacc016">&#9670;&#160;</a></span>EBoneIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#afc7bea2da94675ea5e3d179acfacc016">NObject::CPlayer::EBoneIndex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="afc7bea2da94675ea5e3d179acfacc016a21b367d89b66d5119363c9bc833c7d74" name="afc7bea2da94675ea5e3d179acfacc016a21b367d89b66d5119363c9bc833c7d74"></a>BONE_SWORD_HOLDER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afc7bea2da94675ea5e3d179acfacc016abebf46441038a16909d099212d1f06f6" name="afc7bea2da94675ea5e3d179acfacc016abebf46441038a16909d099212d1f06f6"></a>BONE_RIGHT_HAND_WEAPON&#160;</td><td class="fielddoc"></td></tr>
+</table>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                        {</div>
+<div class="line"><span class="lineno">   20</span>            <a class="code hl_enumvalue" href="#afc7bea2da94675ea5e3d179acfacc016a21b367d89b66d5119363c9bc833c7d74">BONE_SWORD_HOLDER</a> = 64,</div>
+<div class="line"><span class="lineno">   21</span>            <a class="code hl_enumvalue" href="#afc7bea2da94675ea5e3d179acfacc016abebf46441038a16909d099212d1f06f6">BONE_RIGHT_HAND_WEAPON</a> = 42,</div>
+<div class="line"><span class="lineno">   22</span>        };</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_afc7bea2da94675ea5e3d179acfacc016a21b367d89b66d5119363c9bc833c7d74"><div class="ttname"><a href="#afc7bea2da94675ea5e3d179acfacc016a21b367d89b66d5119363c9bc833c7d74">NObject::CPlayer::BONE_SWORD_HOLDER</a></div><div class="ttdeci">@ BONE_SWORD_HOLDER</div><div class="ttdef"><b>Definition</b> Object_Player.h:20</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_afc7bea2da94675ea5e3d179acfacc016abebf46441038a16909d099212d1f06f6"><div class="ttname"><a href="#afc7bea2da94675ea5e3d179acfacc016abebf46441038a16909d099212d1f06f6">NObject::CPlayer::BONE_RIGHT_HAND_WEAPON</a></div><div class="ttdeci">@ BONE_RIGHT_HAND_WEAPON</div><div class="ttdef"><b>Definition</b> Object_Player.h:21</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a1204b4ae7985fd4e3ce27504f02022ef" name="a1204b4ae7985fd4e3ce27504f02022ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1204b4ae7985fd4e3ce27504f02022ef">&#9670;&#160;</a></span>CPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CPlayer::CPlayer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   14</span>                     : </div>
+<div class="line"><span class="lineno">   15</span>        <a class="code hl_variable" href="#a02e96f8bddc137224de30f48ee6c61c7">m_stateBig</a>(<span class="keyword">this</span>, <a class="code hl_enumvalue" href="#aea4f9be162781d81620822eb9425592aa1e23852820b9154316c7c06e2b7ba051">EBigState::NORMAL</a>),</div>
+<div class="line"><span class="lineno">   16</span>        <a class="code hl_variable" href="#acd0be2d9c3d0b36ce9c59cb9467910bb">m_isSwordGrab</a>(<span class="keyword">false</span>),</div>
+<div class="line"><span class="lineno">   17</span>        <a class="code hl_variable" href="#a65e5ba751f613d700f4d52673458b50e">m_normalState</a>(*<span class="keyword">this</span>),</div>
+<div class="line"><span class="lineno">   18</span>        <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>(*<span class="keyword">this</span>),</div>
+<div class="line"><span class="lineno">   19</span>        <a class="code hl_variable" href="#af4a1f26621a0c63d4de9a47dd22ad702">m_attackState</a>(*<span class="keyword">this</span>),</div>
+<div class="line"><span class="lineno">   20</span>        <a class="code hl_variable" href="#aeca2c42dabd98a51f305c09ca18e8b8f">m_isResetLife</a>(<span class="keyword">true</span>)</div>
+<div class="line"><span class="lineno">   21</span>    {</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>        <a class="code hl_variable" href="#a02e96f8bddc137224de30f48ee6c61c7">m_stateBig</a>.Register(<a class="code hl_enumvalue" href="#aea4f9be162781d81620822eb9425592aa1e23852820b9154316c7c06e2b7ba051">EBigState::NORMAL</a>, &amp;<a class="code hl_function" href="#a72831e6a0ae0515fc841ecb296a09cc0">CPlayer::UpdateStateNormal</a>);</div>
+<div class="line"><span class="lineno">   24</span>        <a class="code hl_variable" href="#a02e96f8bddc137224de30f48ee6c61c7">m_stateBig</a>.Register(<a class="code hl_enumvalue" href="#aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34">EBigState::DAMAGE</a>, &amp;<a class="code hl_function" href="#ad8b3969451dcf8758e30027e8d98cb63">CPlayer::UpdateStateDamage</a>);</div>
+<div class="line"><span class="lineno">   25</span>        <a class="code hl_variable" href="#a02e96f8bddc137224de30f48ee6c61c7">m_stateBig</a>.Register(<a class="code hl_enumvalue" href="#aea4f9be162781d81620822eb9425592aac6ddd0f72ff2fd344693b9ca8d483871">EBigState::ATTACK</a>, &amp;<a class="code hl_function" href="#adda8961cc7f2b24abd62ae9fc4a3bd48">CPlayer::UpdateStateAttack</a>);</div>
+<div class="line"><span class="lineno">   26</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a02e96f8bddc137224de30f48ee6c61c7"><div class="ttname"><a href="#a02e96f8bddc137224de30f48ee6c61c7">NObject::CPlayer::m_stateBig</a></div><div class="ttdeci">NUtil::CStateManager&lt; CPlayer, EBigState &gt; m_stateBig</div><div class="ttdef"><b>Definition</b> Object_Player.h:432</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a65e5ba751f613d700f4d52673458b50e"><div class="ttname"><a href="#a65e5ba751f613d700f4d52673458b50e">NObject::CPlayer::m_normalState</a></div><div class="ttdeci">CNormalState m_normalState</div><div class="ttdoc">排他制御が必要(当たり判定Holderの排他制御)</div><div class="ttdef"><b>Definition</b> Object_Player.h:427</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a72831e6a0ae0515fc841ecb296a09cc0"><div class="ttname"><a href="#a72831e6a0ae0515fc841ecb296a09cc0">NObject::CPlayer::UpdateStateNormal</a></div><div class="ttdeci">void UpdateStateNormal(BigStateParam _param)</div><div class="ttdef"><b>Definition</b> Object_Player.h:434</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a7e71fa4247997bc2ac23e63d33dc381e"><div class="ttname"><a href="#a7e71fa4247997bc2ac23e63d33dc381e">NObject::CPlayer::m_damageState</a></div><div class="ttdeci">CDamageState m_damageState</div><div class="ttdef"><b>Definition</b> Object_Player.h:428</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_acd0be2d9c3d0b36ce9c59cb9467910bb"><div class="ttname"><a href="#acd0be2d9c3d0b36ce9c59cb9467910bb">NObject::CPlayer::m_isSwordGrab</a></div><div class="ttdeci">bool m_isSwordGrab</div><div class="ttdef"><b>Definition</b> Object_Player.h:404</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_ad8b3969451dcf8758e30027e8d98cb63"><div class="ttname"><a href="#ad8b3969451dcf8758e30027e8d98cb63">NObject::CPlayer::UpdateStateDamage</a></div><div class="ttdeci">void UpdateStateDamage(BigStateParam _param)</div><div class="ttdef"><b>Definition</b> Object_Player.h:435</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_adda8961cc7f2b24abd62ae9fc4a3bd48"><div class="ttname"><a href="#adda8961cc7f2b24abd62ae9fc4a3bd48">NObject::CPlayer::UpdateStateAttack</a></div><div class="ttdeci">void UpdateStateAttack(BigStateParam _param)</div><div class="ttdef"><b>Definition</b> Object_Player.h:436</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_aea4f9be162781d81620822eb9425592aa1e23852820b9154316c7c06e2b7ba051"><div class="ttname"><a href="#aea4f9be162781d81620822eb9425592aa1e23852820b9154316c7c06e2b7ba051">NObject::CPlayer::EBigState::NORMAL</a></div><div class="ttdeci">@ NORMAL</div><div class="ttdef"><b>Definition</b> Object_Player.h:26</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34"><div class="ttname"><a href="#aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34">NObject::CPlayer::EBigState::DAMAGE</a></div><div class="ttdeci">@ DAMAGE</div><div class="ttdef"><b>Definition</b> Object_Player.h:27</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_aea4f9be162781d81620822eb9425592aac6ddd0f72ff2fd344693b9ca8d483871"><div class="ttname"><a href="#aea4f9be162781d81620822eb9425592aac6ddd0f72ff2fd344693b9ca8d483871">NObject::CPlayer::EBigState::ATTACK</a></div><div class="ttdeci">@ ATTACK</div><div class="ttdef"><b>Definition</b> Object_Player.h:28</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_aeca2c42dabd98a51f305c09ca18e8b8f"><div class="ttname"><a href="#aeca2c42dabd98a51f305c09ca18e8b8f">NObject::CPlayer::m_isResetLife</a></div><div class="ttdeci">bool m_isResetLife</div><div class="ttdef"><b>Definition</b> Object_Player.h:399</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_af4a1f26621a0c63d4de9a47dd22ad702"><div class="ttname"><a href="#af4a1f26621a0c63d4de9a47dd22ad702">NObject::CPlayer::m_attackState</a></div><div class="ttdeci">CAttackState m_attackState</div><div class="ttdef"><b>Definition</b> Object_Player.h:429</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4164fe25c25e0da70789d4b0f730abc8" name="a4164fe25c25e0da70789d4b0f730abc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4164fe25c25e0da70789d4b0f730abc8">&#9670;&#160;</a></span>~CPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NObject::CPlayer::~CPlayer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   29</span>    {</div>
+<div class="line"><span class="lineno">   30</span>        <span class="comment">// 登録したカメラを解除       </span></div>
+<div class="line"><span class="lineno">   31</span>        <a class="code hl_function" href="namespace_n_camera.html#a9cea74ae75134a1b656f6b6d16cba8d9">NCamera::UnregisterOperator</a>(&amp;<a class="code hl_variable" href="#a1e18ae18d03173ee3c3782f15e8ccfdc">m_cameraOperator</a>);</div>
+<div class="line"><span class="lineno">   32</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a1e18ae18d03173ee3c3782f15e8ccfdc"><div class="ttname"><a href="#a1e18ae18d03173ee3c3782f15e8ccfdc">NObject::CPlayer::m_cameraOperator</a></div><div class="ttdeci">NCamera::COperatorPlayer m_cameraOperator</div><div class="ttdef"><b>Definition</b> Object_Player.h:416</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a9cea74ae75134a1b656f6b6d16cba8d9"><div class="ttname"><a href="namespace_n_camera.html#a9cea74ae75134a1b656f6b6d16cba8d9">NCamera::UnregisterOperator</a></div><div class="ttdeci">void UnregisterOperator(COperatorBase *_pOperator)</div><div class="ttdoc">登録したオペレータを無効化する</div><div class="ttdef"><b>Definition</b> Camera_OperatorManager.cpp:62</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a1572c5b31e10cc8758634be5d54a4a20" name="a1572c5b31e10cc8758634be5d54a4a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1572c5b31e10cc8758634be5d54a4a20">&#9670;&#160;</a></span>DestroyProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::DestroyProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>終了処理を記述する </p>
+<dl class="section note"><dt>覚え書き</dt><dd>あまり使うことはない </dd></dl>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#ae5cfbf16dfd6fd43f8848df415373cda">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>    {</div>
+<div class="line"><span class="lineno">  107</span>        <a class="code hl_function" href="class_n_object_1_1_c_actor.html#ae5cfbf16dfd6fd43f8848df415373cda">CActor::DestroyProc</a>();</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_ae5cfbf16dfd6fd43f8848df415373cda"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#ae5cfbf16dfd6fd43f8848df415373cda">NObject::CActor::DestroyProc</a></div><div class="ttdeci">virtual void DestroyProc() override</div><div class="ttdoc">終了処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:128</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3e3d775bfa0d942f3ad733d3a861b0fc" name="a3e3d775bfa0d942f3ad733d3a861b0fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e3d775bfa0d942f3ad733d3a861b0fc">&#9670;&#160;</a></span>GetActorMoveAssetKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a> NObject::CPlayer::GetActorMoveAssetKey </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ActorMoveのファイルを読み込む </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#ab815adb86e53bd16c00359b8282b4fa6">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  381</span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Data/Actor/Player/ActorMove.json&quot;</span>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab76f25e9f66580f43bf900a19896d1a9" name="ab76f25e9f66580f43bf900a19896d1a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab76f25e9f66580f43bf900a19896d1a9">&#9670;&#160;</a></span>GetActorParamAssetKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a> NObject::CPlayer::GetActorParamAssetKey </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ActorParamのデータへのパス </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#a3915d4ddb9a7e7dd44d57f2a66f2746e">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  378</span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Data/Actor/Player/ActorParam.json&quot;</span>; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa82733e9ec18bb8681753d941eee3720" name="aa82733e9ec18bb8681753d941eee3720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa82733e9ec18bb8681753d941eee3720">&#9670;&#160;</a></span>GetIsFalling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NObject::CPlayer::GetIsFalling </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>落下状態 </p>
+<div class="fragment"><div class="line"><span class="lineno">  368</span>    {</div>
+<div class="line"><span class="lineno">  369</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.GetMoveSpeedY() &lt; 0) {</div>
+<div class="line"><span class="lineno">  370</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  371</span>        }</div>
+<div class="line"><span class="lineno">  372</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  373</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  374</span>        }</div>
+<div class="line"><span class="lineno">  375</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a9e858b93eacf30e3d8c14806dfa4c48a"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">NObject::CActor::m_actorMove</a></div><div class="ttdeci">NGame::CActorMove m_actorMove</div><div class="ttdef"><b>Definition</b> Object_Actor.h:96</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afe4414cabc77460fbc82fa302f377eb3" name="afe4414cabc77460fbc82fa302f377eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe4414cabc77460fbc82fa302f377eb3">&#9670;&#160;</a></span>GetIsGrounded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NObject::CPlayer::GetIsGrounded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>着地状態 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>基本はActorMoveの値を使用するが、 それ以外の判定が必要になった時ように関数化 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  358</span>    {</div>
+<div class="line"><span class="lineno">  359</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.GetIsGrounded()) {</div>
+<div class="line"><span class="lineno">  360</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  361</span>        }</div>
+<div class="line"><span class="lineno">  362</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  363</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  364</span>        }</div>
+<div class="line"><span class="lineno">  365</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9e2ec1ad18d0e8726ab3dceb632af1f0" name="a9e2ec1ad18d0e8726ab3dceb632af1f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2ec1ad18d0e8726ab3dceb632af1f0">&#9670;&#160;</a></span>GetIsStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NObject::CPlayer::GetIsStop </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移動状態 </p>
+<div class="fragment"><div class="line"><span class="lineno">  348</span>    {</div>
+<div class="line"><span class="lineno">  349</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.GetMoveSpeedXZ() &lt; FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  350</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  351</span>        }</div>
+<div class="line"><span class="lineno">  352</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  353</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  354</span>        }</div>
+<div class="line"><span class="lineno">  355</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a134406e76a10039c187374ce7f38e2a2" name="a134406e76a10039c187374ce7f38e2a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134406e76a10039c187374ce7f38e2a2">&#9670;&#160;</a></span>GetMoveSpeedXZRatio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NObject::CPlayer::GetMoveSpeedXZRatio </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移動速度の割合を取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  378</span>    {</div>
+<div class="line"><span class="lineno">  379</span>        <span class="keywordtype">float</span> cur = <a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.GetMoveSpeedXZ();</div>
+<div class="line"><span class="lineno">  380</span>        <span class="keywordtype">float</span> max = <a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.GetMoveSpeedXZMax();</div>
+<div class="line"><span class="lineno">  381</span>        <span class="keywordflow">return</span> cur / max;</div>
+<div class="line"><span class="lineno">  382</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2ebd64f87333b1dfd5eb4ee2eb0d9e73" name="a2ebd64f87333b1dfd5eb4ee2eb0d9e73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ebd64f87333b1dfd5eb4ee2eb0d9e73">&#9670;&#160;</a></span>InitProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::InitProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化処理を記述する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#abfb91156fbb7ea5c2675dd536badeefa">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>    {</div>
+<div class="line"><span class="lineno">   81</span>        <span class="comment">// 初期化前のライフを取得</span></div>
+<div class="line"><span class="lineno">   82</span>        <span class="keyword">auto</span> life = <a class="code hl_variable" href="class_n_object_1_1_c_actor.html#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.life;</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_function" href="class_n_object_1_1_c_actor.html#abfb91156fbb7ea5c2675dd536badeefa">CActor::InitProc</a>();</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>        <span class="comment">// リセットしない場合は元のライフを再度設定</span></div>
+<div class="line"><span class="lineno">   87</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="#aeca2c42dabd98a51f305c09ca18e8b8f">m_isResetLife</a>) {</div>
+<div class="line"><span class="lineno">   88</span>            <a class="code hl_variable" href="class_n_object_1_1_c_actor.html#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.life = life;</div>
+<div class="line"><span class="lineno">   89</span>        }</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_variable" href="#a05dc99f289c40401cc33de62e50d31a7">m_moveSpeedAlias</a> = 0;</div>
+<div class="line"><span class="lineno">   92</span>        </div>
+<div class="line"><span class="lineno">   93</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a>().<a class="code hl_function" href="class_n_object_1_1_c_transform.html#a93c6b03152a1e913608dc4941e42d0e8">SetRot</a>(NMath::SMatrix44());  <span class="comment">// 正面</span></div>
+<div class="line"><span class="lineno">   94</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a>().<a class="code hl_function" href="class_n_object_1_1_c_transform.html#a82ac38e42161f435a8b86271b154690c">SetPos</a>(0, 10, 0);</div>
+<div class="line"><span class="lineno">   95</span>        <a class="code hl_variable" href="#a02e96f8bddc137224de30f48ee6c61c7">m_stateBig</a>.ChangeState(<a class="code hl_enumvalue" href="#aea4f9be162781d81620822eb9425592aa1e23852820b9154316c7c06e2b7ba051">EBigState::NORMAL</a>);</div>
+<div class="line"><span class="lineno">   96</span>        <a class="code hl_variable" href="#acd0be2d9c3d0b36ce9c59cb9467910bb">m_isSwordGrab</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>        <a class="code hl_variable" href="#a1e18ae18d03173ee3c3782f15e8ccfdc">m_cameraOperator</a>.Init();</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>        <a class="code hl_variable" href="#a65e5ba751f613d700f4d52673458b50e">m_normalState</a>.Init();</div>
+<div class="line"><span class="lineno">  101</span>        <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.Init();</div>
+<div class="line"><span class="lineno">  102</span>        <a class="code hl_variable" href="#af4a1f26621a0c63d4de9a47dd22ad702">m_attackState</a>.Init();</div>
+<div class="line"><span class="lineno">  103</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_abd621445a67d87436d153b9ea7d50549"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#abd621445a67d87436d153b9ea7d50549">NObject::CActor::m_actorParam</a></div><div class="ttdeci">NGame::SActorParam m_actorParam</div><div class="ttdef"><b>Definition</b> Object_Actor.h:85</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_abfb91156fbb7ea5c2675dd536badeefa"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#abfb91156fbb7ea5c2675dd536badeefa">NObject::CActor::InitProc</a></div><div class="ttdeci">virtual void InitProc() override</div><div class="ttdoc">初期化処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:108</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_game_object_html_ad886ead881768ecf2df0ea072a85ba8c"><div class="ttname"><a href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">NObject::CGameObject::GetTransform</a></div><div class="ttdeci">CTransform &amp; GetTransform()</div><div class="ttdoc">Transformを取得</div><div class="ttdef"><b>Definition</b> Object_GameObject.h:39</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a05dc99f289c40401cc33de62e50d31a7"><div class="ttname"><a href="#a05dc99f289c40401cc33de62e50d31a7">NObject::CPlayer::m_moveSpeedAlias</a></div><div class="ttdeci">float m_moveSpeedAlias</div><div class="ttdef"><b>Definition</b> Object_Player.h:417</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_a82ac38e42161f435a8b86271b154690c"><div class="ttname"><a href="class_n_object_1_1_c_transform.html#a82ac38e42161f435a8b86271b154690c">NObject::CTransform::SetPos</a></div><div class="ttdeci">void SetPos(const float3 &amp;_rPos)</div><div class="ttdoc">座標を設定</div><div class="ttdef"><b>Definition</b> Object_Transform.h:46</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_a93c6b03152a1e913608dc4941e42d0e8"><div class="ttname"><a href="class_n_object_1_1_c_transform.html#a93c6b03152a1e913608dc4941e42d0e8">NObject::CTransform::SetRot</a></div><div class="ttdeci">void SetRot(const NMath::SMatrix44 &amp;_rMatRot)</div><div class="ttdoc">姿勢を設定</div><div class="ttdef"><b>Definition</b> Object_Transform.cpp:66</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2244413c71a89f3481bb06d8ccc2c3fb" name="a2244413c71a89f3481bb06d8ccc2c3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2244413c71a89f3481bb06d8ccc2c3fb">&#9670;&#160;</a></span>LoadProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::LoadProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>生成時に1度だけ行う処理を記述する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#a00605d237d20cb04f1bc174b6d9e7a96">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>    {</div>
+<div class="line"><span class="lineno">   36</span>        <a class="code hl_function" href="class_n_object_1_1_c_actor.html#a00605d237d20cb04f1bc174b6d9e7a96">CActor::LoadProc</a>();</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>        <span class="comment">// シェーダーの読み込み</span></div>
+<div class="line"><span class="lineno">   39</span>        std::string key = <span class="stringliteral">&quot;AlphaTexture.hlsl&quot;</span>;</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CShaderFactory::GetInst</a>().SetLoadInfo(</div>
+<div class="line"><span class="lineno">   41</span>            key,</div>
+<div class="line"><span class="lineno">   42</span>            <span class="stringliteral">&quot;VS&quot;</span>,</div>
+<div class="line"><span class="lineno">   43</span>            <span class="stringliteral">&quot;PS&quot;</span>);</div>
+<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a> = <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CShaderFactory::GetInst</a>().Load(key);</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span>        <span class="comment">// モデル読み込み</span></div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="#a424d95b21eae84f255937380b9f34c5c">m_model</a>.Load(<span class="stringliteral">&quot;Player/Model.fbx&quot;</span>);</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_variable" href="#ae2e525499adbd4184e4e797dd6716741">m_swordModel</a>.Load(<span class="stringliteral">&quot;Sword/Model.fbx&quot;</span>);</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>        <span class="comment">// カメラ初期化</span></div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_variable" href="#a1e18ae18d03173ee3c3782f15e8ccfdc">m_cameraOperator</a>.Setup(</div>
+<div class="line"><span class="lineno">   53</span>            <span class="keyword">this</span>,</div>
+<div class="line"><span class="lineno">   54</span>            &amp;<a class="code hl_variable" href="#a05dc99f289c40401cc33de62e50d31a7">m_moveSpeedAlias</a>,</div>
+<div class="line"><span class="lineno">   55</span>            <a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.GetMoveSpeedXZMax());</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>        <span class="comment">// カメラ登録</span></div>
+<div class="line"><span class="lineno">   58</span>        <a class="code hl_function" href="namespace_n_camera.html#a24f206c08f3b40dbaa5e13d6f3c864fd">NCamera::RegisterOperator</a>(&amp;<a class="code hl_variable" href="#a1e18ae18d03173ee3c3782f15e8ccfdc">m_cameraOperator</a>);</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">   61</span>        <span class="comment">// 状態遷移関係</span></div>
+<div class="line"><span class="lineno">   62</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">   63</span>        <a class="code hl_variable" href="#a65e5ba751f613d700f4d52673458b50e">m_normalState</a>.Load();</div>
+<div class="line"><span class="lineno">   64</span>        <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.Load();</div>
+<div class="line"><span class="lineno">   65</span>        <a class="code hl_variable" href="#af4a1f26621a0c63d4de9a47dd22ad702">m_attackState</a>.Load();</div>
+<div class="line"><span class="lineno">   66</span> </div>
+<div class="line"><span class="lineno">   67</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">   68</span>        <span class="comment">// 内包するオブジェクトの初期化</span></div>
+<div class="line"><span class="lineno">   69</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>        <a class="code hl_variable" href="#af6dc75dde45cfb6ea223d224d513a408">m_swordTransform</a>.GetTransform().SetParent(&amp;<a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a>());</div>
+<div class="line"><span class="lineno">   72</span>    }   </div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a00605d237d20cb04f1bc174b6d9e7a96"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#a00605d237d20cb04f1bc174b6d9e7a96">NObject::CActor::LoadProc</a></div><div class="ttdeci">virtual void LoadProc() override</div><div class="ttdoc">生成時に1度だけ行う処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:89</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a05dd6124233500dad30513329c10d2f5"><div class="ttname"><a href="#a05dd6124233500dad30513329c10d2f5">NObject::CPlayer::m_shader</a></div><div class="ttdeci">NAsset::CShaderFactory::SPAsset m_shader</div><div class="ttdef"><b>Definition</b> Object_Player.h:396</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a424d95b21eae84f255937380b9f34c5c"><div class="ttname"><a href="#a424d95b21eae84f255937380b9f34c5c">NObject::CPlayer::m_model</a></div><div class="ttdeci">NModel::CObject m_model</div><div class="ttdef"><b>Definition</b> Object_Player.h:395</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_ae2e525499adbd4184e4e797dd6716741"><div class="ttname"><a href="#ae2e525499adbd4184e4e797dd6716741">NObject::CPlayer::m_swordModel</a></div><div class="ttdeci">NModel::CObject m_swordModel</div><div class="ttdef"><b>Definition</b> Object_Player.h:402</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_af6dc75dde45cfb6ea223d224d513a408"><div class="ttname"><a href="#af6dc75dde45cfb6ea223d224d513a408">NObject::CPlayer::m_swordTransform</a></div><div class="ttdeci">NObject::CGameObject m_swordTransform</div><div class="ttdef"><b>Definition</b> Object_Player.h:403</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_singleton_html_a08cc988d79fa3297df6ede328e44a770"><div class="ttname"><a href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NUtil::CSingleton&lt; CShaderFactory &gt;::GetInst</a></div><div class="ttdeci">static CShaderFactory &amp; GetInst()</div><div class="ttdef"><b>Definition</b> Util_SingletonTemplate.h:10</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a24f206c08f3b40dbaa5e13d6f3c864fd"><div class="ttname"><a href="namespace_n_camera.html#a24f206c08f3b40dbaa5e13d6f3c864fd">NCamera::RegisterOperator</a></div><div class="ttdeci">COperatorBase * RegisterOperator(COperatorBase *_pOperator, EManagerIndex _index)</div><div class="ttdoc">オペレータを登録</div><div class="ttdef"><b>Definition</b> Camera_OperatorManager.cpp:36</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a68922f994cb28b2e53d2436b59bb5b14" name="a68922f994cb28b2e53d2436b59bb5b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68922f994cb28b2e53d2436b59bb5b14">&#9670;&#160;</a></span>Operate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::Operate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>操作関数 </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#a5135c82f4947f13e8038e285565a602c">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  214</span>    {</div>
+<div class="line"><span class="lineno">  215</span>        <span class="comment">// 全ての状態に共通の処理</span></div>
+<div class="line"><span class="lineno">  216</span>        <a class="code hl_function" href="#a133941c1d5e4c24a8e99cddeb0dc9b89">UpdateUtilFall</a>();</div>
+<div class="line"><span class="lineno">  217</span>        <a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.SetMoveSpeedXZRatio(1); <span class="comment">// 他の場所で設定している値を初期化する</span></div>
+<div class="line"><span class="lineno">  218</span> </div>
+<div class="line"><span class="lineno">  219</span>        <a class="code hl_variable" href="#a02e96f8bddc137224de30f48ee6c61c7">m_stateBig</a>.Update();</div>
+<div class="line"><span class="lineno">  220</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a133941c1d5e4c24a8e99cddeb0dc9b89"><div class="ttname"><a href="#a133941c1d5e4c24a8e99cddeb0dc9b89">NObject::CPlayer::UpdateUtilFall</a></div><div class="ttdeci">void UpdateUtilFall()</div><div class="ttdoc">落下状態へ遷移</div><div class="ttdef"><b>Definition</b> Object_Player.cpp:333</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3bfdfce419937f9e7418fbaed3d754cd" name="a3bfdfce419937f9e7418fbaed3d754cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bfdfce419937f9e7418fbaed3d754cd">&#9670;&#160;</a></span>ProcDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::ProcDamage </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rDamage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ダメージ処理 </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#ace49b6dcc6915b0ea523b1caad39d276">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  223</span>    {</div>
+<div class="line"><span class="lineno">  224</span>        <a class="code hl_function" href="class_n_object_1_1_c_actor.html#ace49b6dcc6915b0ea523b1caad39d276">Base::ProcDamage</a>(_rDamage);</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span>        <a class="code hl_function" href="class_n_object_1_1_c_actor.html#a5c82a894050ba62f3a2ea0943278f6f8">ApplyKnockBack</a>(_rDamage);</div>
+<div class="line"><span class="lineno">  227</span>        <a class="code hl_function" href="class_n_object_1_1_c_actor.html#af0cdf652d740f9eb8806fc2ad5ecddd4">LookAtAttacker</a>(_rDamage);</div>
+<div class="line"><span class="lineno">  228</span> </div>
+<div class="line"><span class="lineno">  229</span>        <span class="comment">// 地上と空中で処理を分岐</span></div>
+<div class="line"><span class="lineno">  230</span>        <span class="comment">// 攻撃の強さタイプによる状態遷移と、サウンド再生</span></div>
+<div class="line"><span class="lineno">  231</span>        <span class="keywordflow">switch</span> (_rDamage.<a class="code hl_variable" href="struct_n_game_1_1_s_damage_param.html#a1f333288caa4e50d1c9e2473f1e2cf1e">receiveAttackStrengthType</a>) {</div>
+<div class="line"><span class="lineno">  232</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fa41bc94cbd8eebea13ce0491b2ac11b88">NCollision::CAttackTypeData::EStrengthType::LOW</a>:</div>
+<div class="line"><span class="lineno">  233</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="#afe4414cabc77460fbc82fa302f377eb3">GetIsGrounded</a>()) {</div>
+<div class="line"><span class="lineno">  234</span>                    <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bdac7439ca195784f97f373ba55bc25a574">CDamageState::EState::GROUND_LOW</a>);</div>
+<div class="line"><span class="lineno">  235</span>                }</div>
+<div class="line"><span class="lineno">  236</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  237</span>                    <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929">CDamageState::EState::AIR</a>);</div>
+<div class="line"><span class="lineno">  238</span>                }</div>
+<div class="line"><span class="lineno">  239</span>                <span class="comment">// 攻撃音を鳴らす</span></div>
+<div class="line"><span class="lineno">  240</span>                <a class="code hl_function" href="namespace_n_sound.html#a8a04d9b3fdd6ddb8d5b85fb224f77ffc">NSound::Play</a>(<a class="code hl_enumvalue" href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597a1c7b23b71edbdbc0a5e527aa083d51fa">NSound::ELabel::SE_ATTACK_SWORD_LOW</a>);</div>
+<div class="line"><span class="lineno">  241</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  242</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fa43eedd8685eb86592022f8da962e3474">NCollision::CAttackTypeData::EStrengthType::MIDDLE</a>:</div>
+<div class="line"><span class="lineno">  243</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="#afe4414cabc77460fbc82fa302f377eb3">GetIsGrounded</a>()) {</div>
+<div class="line"><span class="lineno">  244</span>                    <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bdac57b49a85583b306372c40a6ed2d78d4">CDamageState::EState::GROUND_MIDDLE</a>);</div>
+<div class="line"><span class="lineno">  245</span>                }</div>
+<div class="line"><span class="lineno">  246</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  247</span>                    <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929">CDamageState::EState::AIR</a>);</div>
+<div class="line"><span class="lineno">  248</span>                }</div>
+<div class="line"><span class="lineno">  249</span>                <span class="comment">// 攻撃音を鳴らす</span></div>
+<div class="line"><span class="lineno">  250</span>                <a class="code hl_function" href="namespace_n_sound.html#a8a04d9b3fdd6ddb8d5b85fb224f77ffc">NSound::Play</a>(<a class="code hl_enumvalue" href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597a23e10a7aa8733257295aea04a7945adb">NSound::ELabel::SE_ATTACK_SWORD_MIDDLE</a>);</div>
+<div class="line"><span class="lineno">  251</span> </div>
+<div class="line"><span class="lineno">  252</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  253</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fab89de3b4b81c4facfac906edf29aec8c">NCollision::CAttackTypeData::EStrengthType::HIGH</a>:</div>
+<div class="line"><span class="lineno">  254</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="#afe4414cabc77460fbc82fa302f377eb3">GetIsGrounded</a>()) {</div>
+<div class="line"><span class="lineno">  255</span>                    <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bdae34528cd9a61c2c9dd2535946b92cab3">CDamageState::EState::GROUND_HIGH</a>);</div>
+<div class="line"><span class="lineno">  256</span>                }</div>
+<div class="line"><span class="lineno">  257</span>                <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  258</span>                    <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929">CDamageState::EState::AIR</a>);</div>
+<div class="line"><span class="lineno">  259</span>                }</div>
+<div class="line"><span class="lineno">  260</span> </div>
+<div class="line"><span class="lineno">  261</span>                <span class="comment">// 攻撃音を鳴らす</span></div>
+<div class="line"><span class="lineno">  262</span>                <a class="code hl_function" href="namespace_n_sound.html#a8a04d9b3fdd6ddb8d5b85fb224f77ffc">NSound::Play</a>(<a class="code hl_enumvalue" href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597ad3469271834b892e8f3057acb077a1eb">NSound::ELabel::SE_ATTACK_SWORD_HIGH</a>);</div>
+<div class="line"><span class="lineno">  263</span> </div>
+<div class="line"><span class="lineno">  264</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  265</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fab6aca448ac7622df1b7ffe2e2e57aeac">NCollision::CAttackTypeData::EStrengthType::BLOW</a>:</div>
+<div class="line"><span class="lineno">  266</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  267</span>        }</div>
+<div class="line"><span class="lineno">  268</span> </div>
+<div class="line"><span class="lineno">  269</span>        <span class="comment">// 死亡時の状態遷移</span></div>
+<div class="line"><span class="lineno">  270</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_n_object_1_1_c_actor.html#abd621445a67d87436d153b9ea7d50549">m_actorParam</a>.GetIsAlive()) {</div>
+<div class="line"><span class="lineno">  271</span>            <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bda83ebd7c89f4cc1a85396fba7d6f7e900">CDamageState::EState::DIE</a>);</div>
+<div class="line"><span class="lineno">  272</span>        }</div>
+<div class="line"><span class="lineno">  273</span>    }</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af0e952d8da1505639104c7087028193fa41bc94cbd8eebea13ce0491b2ac11b88"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fa41bc94cbd8eebea13ce0491b2ac11b88">NCollision::CAttackTypeData::EStrengthType::LOW</a></div><div class="ttdeci">@ LOW</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:25</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af0e952d8da1505639104c7087028193fa43eedd8685eb86592022f8da962e3474"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fa43eedd8685eb86592022f8da962e3474">NCollision::CAttackTypeData::EStrengthType::MIDDLE</a></div><div class="ttdeci">@ MIDDLE</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:26</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af0e952d8da1505639104c7087028193fab6aca448ac7622df1b7ffe2e2e57aeac"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fab6aca448ac7622df1b7ffe2e2e57aeac">NCollision::CAttackTypeData::EStrengthType::BLOW</a></div><div class="ttdeci">@ BLOW</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:28</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_attack_type_data_html_af0e952d8da1505639104c7087028193fab89de3b4b81c4facfac906edf29aec8c"><div class="ttname"><a href="class_n_collision_1_1_c_attack_type_data.html#af0e952d8da1505639104c7087028193fab89de3b4b81c4facfac906edf29aec8c">NCollision::CAttackTypeData::EStrengthType::HIGH</a></div><div class="ttdeci">@ HIGH</div><div class="ttdef"><b>Definition</b> Collision_TypeDataAttack.h:27</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a5c82a894050ba62f3a2ea0943278f6f8"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#a5c82a894050ba62f3a2ea0943278f6f8">NObject::CActor::ApplyKnockBack</a></div><div class="ttdeci">void ApplyKnockBack(const NGame::SDamageParam &amp;_rDamage)</div><div class="ttdoc">ダメージを受けた際のノックバックをActorMoveに適用する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:214</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_ace49b6dcc6915b0ea523b1caad39d276"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#ace49b6dcc6915b0ea523b1caad39d276">NObject::CActor::ProcDamage</a></div><div class="ttdeci">virtual void ProcDamage(const NGame::SDamageParam &amp;_rDamage)</div><div class="ttdoc">被攻撃情報をもとにダメージ処理を実行する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:191</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_af0cdf652d740f9eb8806fc2ad5ecddd4"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#af0cdf652d740f9eb8806fc2ad5ecddd4">NObject::CActor::LookAtAttacker</a></div><div class="ttdeci">void LookAtAttacker(const NGame::SDamageParam &amp;_rDamage)</div><div class="ttdoc">ダメージを受けた際に攻撃者の方向を向く(補完なし)</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:222</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929"><div class="ttname"><a href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bda2582dd863c1c50525a267e1cbe656929">NObject::CPlayer::CDamageState::EState::AIR</a></div><div class="ttdeci">@ AIR</div><div class="ttdef"><b>Definition</b> Object_Player.h:178</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bda83ebd7c89f4cc1a85396fba7d6f7e900"><div class="ttname"><a href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bda83ebd7c89f4cc1a85396fba7d6f7e900">NObject::CPlayer::CDamageState::EState::DIE</a></div><div class="ttdeci">@ DIE</div><div class="ttdef"><b>Definition</b> Object_Player.h:184</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bdac57b49a85583b306372c40a6ed2d78d4"><div class="ttname"><a href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bdac57b49a85583b306372c40a6ed2d78d4">NObject::CPlayer::CDamageState::EState::GROUND_MIDDLE</a></div><div class="ttdeci">@ GROUND_MIDDLE</div><div class="ttdef"><b>Definition</b> Object_Player.h:174</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bdac7439ca195784f97f373ba55bc25a574"><div class="ttname"><a href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bdac7439ca195784f97f373ba55bc25a574">NObject::CPlayer::CDamageState::EState::GROUND_LOW</a></div><div class="ttdeci">@ GROUND_LOW</div><div class="ttdef"><b>Definition</b> Object_Player.h:173</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_damage_state_html_a2c3a810f72c5b7c91089daff0b5683bdae34528cd9a61c2c9dd2535946b92cab3"><div class="ttname"><a href="class_n_object_1_1_c_player_1_1_c_damage_state.html#a2c3a810f72c5b7c91089daff0b5683bdae34528cd9a61c2c9dd2535946b92cab3">NObject::CPlayer::CDamageState::EState::GROUND_HIGH</a></div><div class="ttdeci">@ GROUND_HIGH</div><div class="ttdef"><b>Definition</b> Object_Player.h:175</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_afe4414cabc77460fbc82fa302f377eb3"><div class="ttname"><a href="#afe4414cabc77460fbc82fa302f377eb3">NObject::CPlayer::GetIsGrounded</a></div><div class="ttdeci">bool GetIsGrounded() const</div><div class="ttdoc">着地状態</div><div class="ttdef"><b>Definition</b> Object_Player.cpp:357</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a3736bd25d9408ba6dcd72eef505af597a1c7b23b71edbdbc0a5e527aa083d51fa"><div class="ttname"><a href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597a1c7b23b71edbdbc0a5e527aa083d51fa">NSound::SE_ATTACK_SWORD_LOW</a></div><div class="ttdeci">@ SE_ATTACK_SWORD_LOW</div><div class="ttdef"><b>Definition</b> Sound_AssetInfo.h:18</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a3736bd25d9408ba6dcd72eef505af597a23e10a7aa8733257295aea04a7945adb"><div class="ttname"><a href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597a23e10a7aa8733257295aea04a7945adb">NSound::SE_ATTACK_SWORD_MIDDLE</a></div><div class="ttdeci">@ SE_ATTACK_SWORD_MIDDLE</div><div class="ttdef"><b>Definition</b> Sound_AssetInfo.h:19</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a3736bd25d9408ba6dcd72eef505af597ad3469271834b892e8f3057acb077a1eb"><div class="ttname"><a href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597ad3469271834b892e8f3057acb077a1eb">NSound::SE_ATTACK_SWORD_HIGH</a></div><div class="ttdeci">@ SE_ATTACK_SWORD_HIGH</div><div class="ttdef"><b>Definition</b> Sound_AssetInfo.h:20</div></div>
+<div class="ttc" id="anamespace_n_sound_html_a8a04d9b3fdd6ddb8d5b85fb224f77ffc"><div class="ttname"><a href="namespace_n_sound.html#a8a04d9b3fdd6ddb8d5b85fb224f77ffc">NSound::Play</a></div><div class="ttdeci">void Play(NSound::ELabel _label)</div><div class="ttdef"><b>Definition</b> Sound_Common.cpp:141</div></div>
+<div class="ttc" id="astruct_n_game_1_1_s_damage_param_html_a1f333288caa4e50d1c9e2473f1e2cf1e"><div class="ttname"><a href="struct_n_game_1_1_s_damage_param.html#a1f333288caa4e50d1c9e2473f1e2cf1e">NGame::SDamageParam::receiveAttackStrengthType</a></div><div class="ttdeci">NCollision::CAttackTypeData::EStrengthType receiveAttackStrengthType</div><div class="ttdef"><b>Definition</b> Game_ActorParam.h:43</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a643d389942f1d7f01606724daac7a5e6" name="a643d389942f1d7f01606724daac7a5e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a643d389942f1d7f01606724daac7a5e6">&#9670;&#160;</a></span>ReleaseProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::ReleaseProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>終了時に1度だけ行う処理を記述する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#ab7f20137067f7bc3f40de624e83f8857">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>    {</div>
+<div class="line"><span class="lineno">   76</span>        <a class="code hl_function" href="class_n_object_1_1_c_actor.html#ab7f20137067f7bc3f40de624e83f8857">CActor::ReleaseProc</a>();</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_ab7f20137067f7bc3f40de624e83f8857"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#ab7f20137067f7bc3f40de624e83f8857">NObject::CActor::ReleaseProc</a></div><div class="ttdeci">virtual void ReleaseProc() override</div><div class="ttdoc">終了時に1度だけ行う処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:103</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5525eb0f01a67ba0e7034f285a9bed61" name="a5525eb0f01a67ba0e7034f285a9bed61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5525eb0f01a67ba0e7034f285a9bed61">&#9670;&#160;</a></span>RenderProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::RenderProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>描画処理を記述する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#a3b0c38c414fe7d1db6de80d60c0179a7">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  149</span>    {</div>
+<div class="line"><span class="lineno">  150</span>        <a class="code hl_function" href="class_n_object_1_1_c_actor.html#a3b0c38c414fe7d1db6de80d60c0179a7">CActor::RenderProc</a>();</div>
+<div class="line"><span class="lineno">  151</span>        NMath::SMatrix44 matWorld;</div>
+<div class="line"><span class="lineno">  152</span>        <a class="code hl_function" href="class_n_object_1_1_c_game_object.html#ad886ead881768ecf2df0ea072a85ba8c">GetTransform</a>().<a class="code hl_function" href="class_n_object_1_1_c_transform.html#ab2a3fa0c33dee0bf2645048370458484">CalcWorldMatrix</a>(matWorld);</div>
+<div class="line"><span class="lineno">  153</span> </div>
+<div class="line"><span class="lineno">  154</span>        <span class="comment">// シェーダーをパイプラインにセット</span></div>
+<div class="line"><span class="lineno">  155</span>        <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a>-&gt;SetShaderToPipeline();</div>
+<div class="line"><span class="lineno">  156</span>        <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a>-&gt;SetCullMode(<a class="code hl_enumvalue" href="namespace_n_shader.html#a2ed08154853683f0a813221ce49e2cedabb2fe5c916efb43aab8cbb68f997d2ee">NShader::ECullMode::FRONT</a>);</div>
+<div class="line"><span class="lineno">  157</span>        <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a>-&gt;SetVertexFormat(<a class="code hl_variable" href="#a424d95b21eae84f255937380b9f34c5c">m_model</a>.GetFVF());</div>
+<div class="line"><span class="lineno">  158</span> </div>
+<div class="line"><span class="lineno">  159</span>        <span class="comment">// デバイスへアクセス</span></div>
+<div class="line"><span class="lineno">  160</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dev = <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>();</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>        <span class="comment">// 汎用行列変数</span></div>
+<div class="line"><span class="lineno">  163</span>        NMath::SMatrix44    mat;</div>
+<div class="line"><span class="lineno">  164</span>        D3DXMATRIX          matDX;</div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>        <span class="comment">// カメラ行列を設定</span></div>
+<div class="line"><span class="lineno">  167</span>        <a class="code hl_function" href="namespace_n_camera.html#ad24c0a0bd262bfcd7b0299a8804c0a48">NCamera::GetViewMatrix</a>(mat);</div>
+<div class="line"><span class="lineno">  168</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(matDX, mat);</div>
+<div class="line"><span class="lineno">  169</span>        <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a>-&gt;GetVSCT()-&gt;SetMatrix(dev, <span class="stringliteral">&quot;g_view&quot;</span>, &amp;matDX);</div>
+<div class="line"><span class="lineno">  170</span>        <a class="code hl_function" href="namespace_n_camera.html#a10d6cf4a8f5b26e13a79008e0484a3d7">NCamera::GetProjMatrix</a>(mat);</div>
+<div class="line"><span class="lineno">  171</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(matDX, mat);</div>
+<div class="line"><span class="lineno">  172</span>        <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a>-&gt;GetVSCT()-&gt;SetMatrix(dev, <span class="stringliteral">&quot;g_projection&quot;</span>, &amp;matDX);</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>        <span class="comment">// 全メッシュを描画</span></div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#a424d95b21eae84f255937380b9f34c5c">m_model</a>.GetMeshNodeCount(); ++i) {</div>
+<div class="line"><span class="lineno">  176</span>            <span class="comment">// 描画用行列を取得</span></div>
+<div class="line"><span class="lineno">  177</span>            <a class="code hl_variable" href="#a424d95b21eae84f255937380b9f34c5c">m_model</a>.GetMeshNodeMatrix(mat, i, matWorld);</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>            <span class="comment">// メッシュノードを取得</span></div>
+<div class="line"><span class="lineno">  180</span>            <span class="keyword">const</span> NModel::SMeshNode&amp; meshNode = <a class="code hl_variable" href="#a424d95b21eae84f255937380b9f34c5c">m_model</a>.GetMeshNode(i);</div>
+<div class="line"><span class="lineno">  181</span> </div>
+<div class="line"><span class="lineno">  182</span>            <span class="comment">// 描画用行列を設定</span></div>
+<div class="line"><span class="lineno">  183</span>            <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(matDX, mat);</div>
+<div class="line"><span class="lineno">  184</span>            <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a>-&gt;GetVSCT()-&gt;SetMatrix(dev, <span class="stringliteral">&quot;g_world&quot;</span>, &amp;matDX);</div>
+<div class="line"><span class="lineno">  185</span> </div>
+<div class="line"><span class="lineno">  186</span>            <span class="comment">// テクスチャをセット</span></div>
+<div class="line"><span class="lineno">  187</span>            <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> samplerIndex = <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a>-&gt;GetPSCT()-&gt;GetSamplerIndex(<span class="stringliteral">&quot;g_sampler&quot;</span>);</div>
+<div class="line"><span class="lineno">  188</span>            <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a>-&gt;SetTexture(samplerIndex, meshNode.<a class="code hl_variable" href="struct_n_model_1_1_s_mesh_node.html#aeebb53abbf1ea5787461fc70b6be9bd0">material</a>.<a class="code hl_variable" href="struct_n_model_1_1_s_material.html#a684e49752f634e783354e7f8c5299c72">texture</a>);</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>            <span class="comment">// 描画</span></div>
+<div class="line"><span class="lineno">  191</span>            <a class="code hl_variable" href="#a424d95b21eae84f255937380b9f34c5c">m_model</a>.RenderNode(i);</div>
+<div class="line"><span class="lineno">  192</span> </div>
+<div class="line"><span class="lineno">  193</span>            <span class="comment">// テクスチャをリセット</span></div>
+<div class="line"><span class="lineno">  194</span>            <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a>-&gt;SetTexture(samplerIndex, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">  195</span>        }</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>        <a class="code hl_variable" href="#a05dd6124233500dad30513329c10d2f5">m_shader</a>-&gt;UnsetShaderFromPipeline();</div>
+<div class="line"><span class="lineno">  198</span> </div>
+<div class="line"><span class="lineno">  199</span> </div>
+<div class="line"><span class="lineno">  200</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  201</span>        <span class="comment">// それ以外のオブジェクトの描画</span></div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>        <a class="code hl_variable" href="#a65e5ba751f613d700f4d52673458b50e">m_normalState</a>.RenderDebug();</div>
+<div class="line"><span class="lineno">  204</span>        <a class="code hl_variable" href="#af4a1f26621a0c63d4de9a47dd22ad702">m_attackState</a>.RenderDebug();</div>
+<div class="line"><span class="lineno">  205</span>        <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.RenderDebug();</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>        NMath::SMatrix44    matSwordWorld;</div>
+<div class="line"><span class="lineno">  208</span>        <a class="code hl_variable" href="#af6dc75dde45cfb6ea223d224d513a408">m_swordTransform</a>.GetTransform().CalcWorldMatrix(matSwordWorld);</div>
+<div class="line"><span class="lineno">  209</span>        <a class="code hl_variable" href="#ae2e525499adbd4184e4e797dd6716741">m_swordModel</a>.RenderDebug(matSwordWorld);</div>
+<div class="line"><span class="lineno">  210</span>        <a class="code hl_variable" href="#a370daac1a339615b8d53fbc10cb23b07">m_effect</a>.Render();</div>
+<div class="line"><span class="lineno">  211</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_a3b0c38c414fe7d1db6de80d60c0179a7"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#a3b0c38c414fe7d1db6de80d60c0179a7">NObject::CActor::RenderProc</a></div><div class="ttdeci">virtual void RenderProc() override</div><div class="ttdoc">描画処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:162</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a370daac1a339615b8d53fbc10cb23b07"><div class="ttname"><a href="#a370daac1a339615b8d53fbc10cb23b07">NObject::CPlayer::m_effect</a></div><div class="ttdeci">NObject::CEffect m_effect</div><div class="ttdef"><b>Definition</b> Object_Player.h:407</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_transform_html_ab2a3fa0c33dee0bf2645048370458484"><div class="ttname"><a href="class_n_object_1_1_c_transform.html#ab2a3fa0c33dee0bf2645048370458484">NObject::CTransform::CalcWorldMatrix</a></div><div class="ttdeci">void CalcWorldMatrix(NMath::SMatrix44 &amp;_rDest) const</div><div class="ttdoc">ワールド行列を計算する</div><div class="ttdef"><b>Definition</b> Object_Transform.cpp:102</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a10d6cf4a8f5b26e13a79008e0484a3d7"><div class="ttname"><a href="namespace_n_camera.html#a10d6cf4a8f5b26e13a79008e0484a3d7">NCamera::GetProjMatrix</a></div><div class="ttdeci">void GetProjMatrix(NMath::SMatrix44 &amp;_dest, const EManagerIndex _index)</div><div class="ttdoc">プロジェクション変換行列を取得</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:160</div></div>
+<div class="ttc" id="anamespace_n_camera_html_ad24c0a0bd262bfcd7b0299a8804c0a48"><div class="ttname"><a href="namespace_n_camera.html#ad24c0a0bd262bfcd7b0299a8804c0a48">NCamera::GetViewMatrix</a></div><div class="ttdeci">void GetViewMatrix(NMath::SMatrix44 &amp;_dest, const EManagerIndex _index)</div><div class="ttdoc">ビュー変換行列を取得</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:152</div></div>
+<div class="ttc" id="anamespace_n_common_html_a8094a1e0c0e75a57e0924da7c4c894c3"><div class="ttname"><a href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">NCommon::uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:9</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_a6ace719c3abbc964180a4fb4584ff8a8"><div class="ttname"><a href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a></div><div class="ttdeci">void ToD3DMatrix(D3DXMATRIX &amp;_dest, const NMath::SMatrix44 &amp;_src)</div><div class="ttdoc">DirectXの定義に変換</div><div class="ttdef"><b>Definition</b> DirectX_Util.cpp:18</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab213af265d85f773a3fb450ca43e3650"><div class="ttname"><a href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 GetD3DDevice()</div><div class="ttdoc">デバイスを取得</div><div class="ttdef"><b>Definition</b> DirectX_Manager.cpp:95</div></div>
+<div class="ttc" id="anamespace_n_shader_html_a2ed08154853683f0a813221ce49e2cedabb2fe5c916efb43aab8cbb68f997d2ee"><div class="ttname"><a href="namespace_n_shader.html#a2ed08154853683f0a813221ce49e2cedabb2fe5c916efb43aab8cbb68f997d2ee">NShader::ECullMode::FRONT</a></div><div class="ttdeci">@ FRONT</div><div class="ttdef"><b>Definition</b> Shader_Def.h:8</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_material_html_a684e49752f634e783354e7f8c5299c72"><div class="ttname"><a href="struct_n_model_1_1_s_material.html#a684e49752f634e783354e7f8c5299c72">NModel::SMaterial::texture</a></div><div class="ttdeci">LPDIRECT3DTEXTURE9 texture</div><div class="ttdef"><b>Definition</b> Model_Def.h:37</div></div>
+<div class="ttc" id="astruct_n_model_1_1_s_mesh_node_html_aeebb53abbf1ea5787461fc70b6be9bd0"><div class="ttname"><a href="struct_n_model_1_1_s_mesh_node.html#aeebb53abbf1ea5787461fc70b6be9bd0">NModel::SMeshNode::material</a></div><div class="ttdeci">SMaterial material</div><div class="ttdef"><b>Definition</b> Model_Def.h:73</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3172864f25b7bc405471286267bd051a" name="a3172864f25b7bc405471286267bd051a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3172864f25b7bc405471286267bd051a">&#9670;&#160;</a></span>SetIsResetLife()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::SetIsResetLife </td>
+          <td>(</td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>_state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{ <a class="code hl_variable" href="#aeca2c42dabd98a51f305c09ca18e8b8f">m_isResetLife</a> = _state; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a76abfef49fdc95ebe689e11ccdb6a45d" name="a76abfef49fdc95ebe689e11ccdb6a45d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76abfef49fdc95ebe689e11ccdb6a45d">&#9670;&#160;</a></span>UpdateExcludeState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::UpdateExcludeState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ステートの排他制御を行う </p>
+<dl class="section note"><dt>覚え書き</dt><dd>主にあたり判定の有効状態の制御 </dd></dl>
+<div class="fragment"><div class="line"><span class="lineno">  283</span>    {</div>
+<div class="line"><span class="lineno">  284</span>        <span class="comment">// 一度全て無効にする</span></div>
+<div class="line"><span class="lineno">  285</span>        <a class="code hl_variable" href="#a65e5ba751f613d700f4d52673458b50e">m_normalState</a>.SetIsEnable(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  286</span>        <a class="code hl_variable" href="#af4a1f26621a0c63d4de9a47dd22ad702">m_attackState</a>.SetIsEnable(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  287</span>        <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.SetIsEnable(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  288</span> </div>
+<div class="line"><span class="lineno">  289</span>        <span class="keywordflow">switch</span> (<a class="code hl_variable" href="#a02e96f8bddc137224de30f48ee6c61c7">m_stateBig</a>.GetState()) {</div>
+<div class="line"><span class="lineno">  290</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#aea4f9be162781d81620822eb9425592aa1e23852820b9154316c7c06e2b7ba051">EBigState::NORMAL</a>:</div>
+<div class="line"><span class="lineno">  291</span>                <a class="code hl_variable" href="#a65e5ba751f613d700f4d52673458b50e">m_normalState</a>.SetIsEnable(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  292</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  293</span> </div>
+<div class="line"><span class="lineno">  294</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#aea4f9be162781d81620822eb9425592aac6ddd0f72ff2fd344693b9ca8d483871">EBigState::ATTACK</a>:</div>
+<div class="line"><span class="lineno">  295</span>                <a class="code hl_variable" href="#af4a1f26621a0c63d4de9a47dd22ad702">m_attackState</a>.SetIsEnable(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  296</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  297</span> </div>
+<div class="line"><span class="lineno">  298</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34">EBigState::DAMAGE</a>:</div>
+<div class="line"><span class="lineno">  299</span>                <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.SetIsEnable(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  300</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  301</span>        }</div>
+<div class="line"><span class="lineno">  302</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3d9988f7a1e8d946e6375ef69f7cee85" name="a3d9988f7a1e8d946e6375ef69f7cee85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9988f7a1e8d946e6375ef69f7cee85">&#9670;&#160;</a></span>UpdateLateProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::UpdateLateProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当たり判定を更新する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#ac0e325ecdadbe7ed196c78cbd1f04304">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  138</span>    {</div>
+<div class="line"><span class="lineno">  139</span>        <span class="comment">// 状態の排他制御</span></div>
+<div class="line"><span class="lineno">  140</span>        <a class="code hl_function" href="#a76abfef49fdc95ebe689e11ccdb6a45d">UpdateExcludeState</a>();</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>        <span class="comment">// 当たり判定の更新</span></div>
+<div class="line"><span class="lineno">  143</span>        <a class="code hl_variable" href="#a65e5ba751f613d700f4d52673458b50e">m_normalState</a>.UpdateLate();</div>
+<div class="line"><span class="lineno">  144</span>        <a class="code hl_variable" href="#af4a1f26621a0c63d4de9a47dd22ad702">m_attackState</a>.UpdateLate();</div>
+<div class="line"><span class="lineno">  145</span>        <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.UpdateLate();</div>
+<div class="line"><span class="lineno">  146</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a76abfef49fdc95ebe689e11ccdb6a45d"><div class="ttname"><a href="#a76abfef49fdc95ebe689e11ccdb6a45d">NObject::CPlayer::UpdateExcludeState</a></div><div class="ttdeci">void UpdateExcludeState()</div><div class="ttdoc">ステートの排他制御を行う</div><div class="ttdef"><b>Definition</b> Object_Player.cpp:282</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a19ffa2e07ad0d7694f354f675168ea95" name="a19ffa2e07ad0d7694f354f675168ea95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ffa2e07ad0d7694f354f675168ea95">&#9670;&#160;</a></span>UpdateOperatorParam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::UpdateOperatorParam </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>カメラオペレータに渡すパラメータを更新する関数 </p>
+<div class="fragment"><div class="line"><span class="lineno">  278</span>    {</div>
+<div class="line"><span class="lineno">  279</span>        <a class="code hl_variable" href="#a05dc99f289c40401cc33de62e50d31a7">m_moveSpeedAlias</a> = <a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.GetMoveSpeedXZ();</div>
+<div class="line"><span class="lineno">  280</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa3e6e924c56d23bf27f0baee8472d19d" name="aa3e6e924c56d23bf27f0baee8472d19d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e6e924c56d23bf27f0baee8472d19d">&#9670;&#160;</a></span>UpdateProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::UpdateProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新処理を記述する </p>
+
+<p><a class="el" href="class_n_object_1_1_c_actor.html#aa17dd9c0f95776494fcbbeed679a9a51">NObject::CActor</a>を再実装しています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  111</span>    {</div>
+<div class="line"><span class="lineno">  112</span>        <a class="code hl_function" href="class_n_object_1_1_c_actor.html#aa17dd9c0f95776494fcbbeed679a9a51">CActor::UpdateProc</a>();</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>        <a class="code hl_function" href="#a68922f994cb28b2e53d2436b59bb5b14">Operate</a>();</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>        <a class="code hl_variable" href="#a424d95b21eae84f255937380b9f34c5c">m_model</a>.Update();</div>
+<div class="line"><span class="lineno">  117</span> </div>
+<div class="line"><span class="lineno">  118</span>        <span class="comment">// 剣の位置を表すゲームオブジェクトを作成する</span></div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="#acd0be2d9c3d0b36ce9c59cb9467910bb">m_isSwordGrab</a>) {</div>
+<div class="line"><span class="lineno">  120</span>            NMath::SMatrix44    matSwordBone;</div>
+<div class="line"><span class="lineno">  121</span>            <a class="code hl_variable" href="#a424d95b21eae84f255937380b9f34c5c">m_model</a>.GetClusterMatrix(matSwordBone, <a class="code hl_enumvalue" href="#afc7bea2da94675ea5e3d179acfacc016abebf46441038a16909d099212d1f06f6">BONE_RIGHT_HAND_WEAPON</a>);</div>
+<div class="line"><span class="lineno">  122</span>            <a class="code hl_variable" href="#af6dc75dde45cfb6ea223d224d513a408">m_swordTransform</a>.GetTransform().SetLocalMatrix(matSwordBone);</div>
+<div class="line"><span class="lineno">  123</span>        }</div>
+<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  125</span>            NMath::SMatrix44    matSwordBone;</div>
+<div class="line"><span class="lineno">  126</span>            <a class="code hl_variable" href="#a424d95b21eae84f255937380b9f34c5c">m_model</a>.GetClusterMatrix(matSwordBone, <a class="code hl_enumvalue" href="#afc7bea2da94675ea5e3d179acfacc016a21b367d89b66d5119363c9bc833c7d74">BONE_SWORD_HOLDER</a>);</div>
+<div class="line"><span class="lineno">  127</span>            <a class="code hl_variable" href="#af6dc75dde45cfb6ea223d224d513a408">m_swordTransform</a>.GetTransform().SetLocalMatrix(matSwordBone);</div>
+<div class="line"><span class="lineno">  128</span>        }</div>
+<div class="line"><span class="lineno">  129</span> </div>
+<div class="line"><span class="lineno">  130</span>        <span class="comment">// 移動の更新</span></div>
+<div class="line"><span class="lineno">  131</span>        <a class="code hl_function" href="#a19ffa2e07ad0d7694f354f675168ea95">UpdateOperatorParam</a>();</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>        <span class="comment">// あたり判定の更新</span></div>
+<div class="line"><span class="lineno">  134</span>        <a class="code hl_variable" href="#a370daac1a339615b8d53fbc10cb23b07">m_effect</a>.Update();</div>
+<div class="line"><span class="lineno">  135</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_actor_html_aa17dd9c0f95776494fcbbeed679a9a51"><div class="ttname"><a href="class_n_object_1_1_c_actor.html#aa17dd9c0f95776494fcbbeed679a9a51">NObject::CActor::UpdateProc</a></div><div class="ttdeci">virtual void UpdateProc() override</div><div class="ttdoc">更新処理を記述する</div><div class="ttdef"><b>Definition</b> Object_Actor.cpp:140</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a19ffa2e07ad0d7694f354f675168ea95"><div class="ttname"><a href="#a19ffa2e07ad0d7694f354f675168ea95">NObject::CPlayer::UpdateOperatorParam</a></div><div class="ttdeci">void UpdateOperatorParam()</div><div class="ttdoc">カメラオペレータに渡すパラメータを更新する関数</div><div class="ttdef"><b>Definition</b> Object_Player.cpp:277</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_html_a68922f994cb28b2e53d2436b59bb5b14"><div class="ttname"><a href="#a68922f994cb28b2e53d2436b59bb5b14">NObject::CPlayer::Operate</a></div><div class="ttdeci">virtual void Operate()</div><div class="ttdoc">操作関数</div><div class="ttdef"><b>Definition</b> Object_Player.cpp:213</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adda8961cc7f2b24abd62ae9fc4a3bd48" name="adda8961cc7f2b24abd62ae9fc4a3bd48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda8961cc7f2b24abd62ae9fc4a3bd48">&#9670;&#160;</a></span>UpdateStateAttack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::UpdateStateAttack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a00c6ef2c64ad078ab124d9e93a4b1ff8">BigStateParam</a></td>          <td class="paramname"><span class="paramname"><em>_param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  436</span>{ <a class="code hl_variable" href="#af4a1f26621a0c63d4de9a47dd22ad702">m_attackState</a>.Update(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad8b3969451dcf8758e30027e8d98cb63" name="ad8b3969451dcf8758e30027e8d98cb63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b3969451dcf8758e30027e8d98cb63">&#9670;&#160;</a></span>UpdateStateDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::UpdateStateDamage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a00c6ef2c64ad078ab124d9e93a4b1ff8">BigStateParam</a></td>          <td class="paramname"><span class="paramname"><em>_param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  435</span>{ <a class="code hl_variable" href="#a7e71fa4247997bc2ac23e63d33dc381e">m_damageState</a>.Update(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a72831e6a0ae0515fc841ecb296a09cc0" name="a72831e6a0ae0515fc841ecb296a09cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72831e6a0ae0515fc841ecb296a09cc0">&#9670;&#160;</a></span>UpdateStateNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::UpdateStateNormal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a00c6ef2c64ad078ab124d9e93a4b1ff8">BigStateParam</a></td>          <td class="paramname"><span class="paramname"><em>_param</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  434</span>{ <a class="code hl_variable" href="#a65e5ba751f613d700f4d52673458b50e">m_normalState</a>.Update(); }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a133941c1d5e4c24a8e99cddeb0dc9b89" name="a133941c1d5e4c24a8e99cddeb0dc9b89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133941c1d5e4c24a8e99cddeb0dc9b89">&#9670;&#160;</a></span>UpdateUtilFall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::UpdateUtilFall </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>落下状態へ遷移 </p>
+<div class="fragment"><div class="line"><span class="lineno">  334</span>    {</div>
+<div class="line"><span class="lineno">  335</span>        <span class="comment">// 落下中、空中、ダメージ処理以外、である場合、落下状態に遷移</span></div>
+<div class="line"><span class="lineno">  336</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.GetMoveSpeedY() &lt; 0 &amp;&amp; </div>
+<div class="line"><span class="lineno">  337</span>            !<a class="code hl_function" href="#afe4414cabc77460fbc82fa302f377eb3">GetIsGrounded</a>() &amp;&amp; </div>
+<div class="line"><span class="lineno">  338</span>            <a class="code hl_variable" href="#a02e96f8bddc137224de30f48ee6c61c7">m_stateBig</a>.GetState() != <a class="code hl_enumvalue" href="#aea4f9be162781d81620822eb9425592aa806bb06d54f268f1d2ce74bde5b48f34">EBigState::DAMAGE</a> &amp;&amp; </div>
+<div class="line"><span class="lineno">  339</span>            <a class="code hl_variable" href="#a02e96f8bddc137224de30f48ee6c61c7">m_stateBig</a>.GetState() != <a class="code hl_enumvalue" href="#aea4f9be162781d81620822eb9425592aac6ddd0f72ff2fd344693b9ca8d483871">EBigState::ATTACK</a>) {</div>
+<div class="line"><span class="lineno">  340</span> </div>
+<div class="line"><span class="lineno">  341</span>            <a class="code hl_variable" href="#a65e5ba751f613d700f4d52673458b50e">m_normalState</a>.Entry(<a class="code hl_enumvalue" href="class_n_object_1_1_c_player_1_1_c_normal_state.html#a8308e4d29e4f06885d3f2f0ca41737bfad6c97b47390b8ffd97443cf7eb40a99d">CNormalState::EState::JUMP_DOWN</a>);</div>
+<div class="line"><span class="lineno">  342</span>        }</div>
+<div class="line"><span class="lineno">  343</span>    }</div>
+<div class="ttc" id="aclass_n_object_1_1_c_player_1_1_c_normal_state_html_a8308e4d29e4f06885d3f2f0ca41737bfad6c97b47390b8ffd97443cf7eb40a99d"><div class="ttname"><a href="class_n_object_1_1_c_player_1_1_c_normal_state.html#a8308e4d29e4f06885d3f2f0ca41737bfad6c97b47390b8ffd97443cf7eb40a99d">NObject::CPlayer::CNormalState::EState::JUMP_DOWN</a></div><div class="ttdeci">@ JUMP_DOWN</div><div class="ttdef"><b>Definition</b> Object_Player.h:82</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6be9710e3d3292e0f5dfc641573c935f" name="a6be9710e3d3292e0f5dfc641573c935f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be9710e3d3292e0f5dfc641573c935f">&#9670;&#160;</a></span>UpdateUtilMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NObject::CPlayer::UpdateUtilMove </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>移動を実行 </p>
+<div class="fragment"><div class="line"><span class="lineno">  307</span>    {</div>
+<div class="line"><span class="lineno">  308</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8b49077ea33f612f0c58c1845ac9c89c">float2</a> analog;</div>
+<div class="line"><span class="lineno">  309</span>        analog.<a class="code hl_variable" href="struct_n_math_1_1_s_vector2.html#a1c0ba4acc059c8188519ef0709b48986">x</a> = <a class="code hl_function" href="namespace_n_input.html#a7499affb7166f7592750c51813d03324">NInput::GetLeftAnalogX</a>();</div>
+<div class="line"><span class="lineno">  310</span>        analog.y = <a class="code hl_function" href="namespace_n_input.html#ad5e27f708f1f604eaa12481acc196b41">NInput::GetLeftAnalogY</a>();</div>
+<div class="line"><span class="lineno">  311</span> </div>
+<div class="line"><span class="lineno">  312</span>        <span class="comment">// 入力方向のベクトルを取得</span></div>
+<div class="line"><span class="lineno">  313</span>        NMath::SVector3 inputDir;</div>
+<div class="line"><span class="lineno">  314</span>        inputDir.<a class="code hl_variable" href="struct_n_math_1_1_s_vector3.html#abf53fcccabd240a7175449ed8ad6d13f">x</a> = analog.x;</div>
+<div class="line"><span class="lineno">  315</span>        inputDir.<a class="code hl_variable" href="struct_n_math_1_1_s_vector3.html#a88189d14db6c3ed68e1c52a40ea07f00">y</a> = analog.y;</div>
+<div class="line"><span class="lineno">  316</span>        inputDir.<a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a618080b518a6bf55fe6dc4cba1f44751">Normalize</a>();</div>
+<div class="line"><span class="lineno">  317</span> </div>
+<div class="line"><span class="lineno">  318</span>        <span class="comment">// カメラから見たベクトルに変換</span></div>
+<div class="line"><span class="lineno">  319</span>        NMath::SVector3 inputDirFromCam;</div>
+<div class="line"><span class="lineno">  320</span>        <a class="code hl_function" href="namespace_n_util.html#afb7fa73dd1428ec3eea14c135c107e2c">NUtil::ToVectorFromCameraXZ</a>(</div>
+<div class="line"><span class="lineno">  321</span>            inputDirFromCam,</div>
+<div class="line"><span class="lineno">  322</span>            inputDir);</div>
+<div class="line"><span class="lineno">  323</span> </div>
+<div class="line"><span class="lineno">  324</span>        <span class="comment">// 適用</span></div>
+<div class="line"><span class="lineno">  325</span>        <a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.SetMoveDirXZ(inputDirFromCam);</div>
+<div class="line"><span class="lineno">  326</span> </div>
+<div class="line"><span class="lineno">  327</span>        <span class="keywordflow">if</span> (inputDir.<a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a751fce7c099a2d2427ef2e025e75049a">GetLengthSquare</a>() &gt; FLT_EPSILON) {</div>
+<div class="line"><span class="lineno">  328</span>            <a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.SetMoveSpeedXZRatio(analog.GetLength());</div>
+<div class="line"><span class="lineno">  329</span>            <a class="code hl_variable" href="class_n_object_1_1_c_actor.html#a9e858b93eacf30e3d8c14806dfa4c48a">m_actorMove</a>.AccelXZ();</div>
+<div class="line"><span class="lineno">  330</span>        }</div>
+<div class="line"><span class="lineno">  331</span>    }</div>
+<div class="ttc" id="anamespace_n_common_html_a8b49077ea33f612f0c58c1845ac9c89c"><div class="ttname"><a href="namespace_n_common.html#a8b49077ea33f612f0c58c1845ac9c89c">NCommon::float2</a></div><div class="ttdeci">NMath::SVector2 float2</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:19</div></div>
+<div class="ttc" id="anamespace_n_input_html_a7499affb7166f7592750c51813d03324"><div class="ttname"><a href="namespace_n_input.html#a7499affb7166f7592750c51813d03324">NInput::GetLeftAnalogX</a></div><div class="ttdeci">float GetLeftAnalogX()</div><div class="ttdoc">アナログ入力</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:165</div></div>
+<div class="ttc" id="anamespace_n_input_html_ad5e27f708f1f604eaa12481acc196b41"><div class="ttname"><a href="namespace_n_input.html#ad5e27f708f1f604eaa12481acc196b41">NInput::GetLeftAnalogY</a></div><div class="ttdeci">float GetLeftAnalogY()</div><div class="ttdef"><b>Definition</b> Input_Game.cpp:183</div></div>
+<div class="ttc" id="anamespace_n_util_html_afb7fa73dd1428ec3eea14c135c107e2c"><div class="ttname"><a href="namespace_n_util.html#afb7fa73dd1428ec3eea14c135c107e2c">NUtil::ToVectorFromCameraXZ</a></div><div class="ttdeci">void ToVectorFromCameraXZ(NMath::SVector3 &amp;_dest, const NMath::SVector3 &amp;_src, const NCamera::EManagerIndex camIndex)</div><div class="ttdoc">指定したベクトルを指定したカメラからの相対ベクトルにする</div><div class="ttdef"><b>Definition</b> Util_GameCommon.cpp:78</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector2_html_a1c0ba4acc059c8188519ef0709b48986"><div class="ttname"><a href="struct_n_math_1_1_s_vector2.html#a1c0ba4acc059c8188519ef0709b48986">NMath::SVector2::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> Math_Vector2.h:20</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a618080b518a6bf55fe6dc4cba1f44751"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a618080b518a6bf55fe6dc4cba1f44751">NMath::SVector3::Normalize</a></div><div class="ttdeci">void Normalize()</div><div class="ttdoc">要素を正規化する</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:100</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a751fce7c099a2d2427ef2e025e75049a"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a751fce7c099a2d2427ef2e025e75049a">NMath::SVector3::GetLengthSquare</a></div><div class="ttdeci">float GetLengthSquare() const</div><div class="ttdoc">ベクトルの長さの2乗を取得する(計算量省略用)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:110</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a88189d14db6c3ed68e1c52a40ea07f00"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a88189d14db6c3ed68e1c52a40ea07f00">NMath::SVector3::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:21</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_abf53fcccabd240a7175449ed8ad6d13f"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#abf53fcccabd240a7175449ed8ad6d13f">NMath::SVector3::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:21</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="af4a1f26621a0c63d4de9a47dd22ad702" name="af4a1f26621a0c63d4de9a47dd22ad702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a1f26621a0c63d4de9a47dd22ad702">&#9670;&#160;</a></span>m_attackState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_player_1_1_c_attack_state.html">CAttackState</a> NObject::CPlayer::m_attackState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e18ae18d03173ee3c3782f15e8ccfdc" name="a1e18ae18d03173ee3c3782f15e8ccfdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e18ae18d03173ee3c3782f15e8ccfdc">&#9670;&#160;</a></span>m_cameraOperator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_camera_1_1_c_operator_player.html">NCamera::COperatorPlayer</a> NObject::CPlayer::m_cameraOperator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">todo</a></b></dt><dd>仮実装<ul>
+<li>メンバに持つのはいいが,マネージャへの登録は、 ほかの場所で行う </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a7e71fa4247997bc2ac23e63d33dc381e" name="a7e71fa4247997bc2ac23e63d33dc381e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e71fa4247997bc2ac23e63d33dc381e">&#9670;&#160;</a></span>m_damageState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_player_1_1_c_damage_state.html">CDamageState</a> NObject::CPlayer::m_damageState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a370daac1a339615b8d53fbc10cb23b07" name="a370daac1a339615b8d53fbc10cb23b07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a370daac1a339615b8d53fbc10cb23b07">&#9670;&#160;</a></span>m_effect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_effect.html">NObject::CEffect</a> NObject::CPlayer::m_effect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeca2c42dabd98a51f305c09ca18e8b8f" name="aeca2c42dabd98a51f305c09ca18e8b8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca2c42dabd98a51f305c09ca18e8b8f">&#9670;&#160;</a></span>m_isResetLife</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NObject::CPlayer::m_isResetLife</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd0be2d9c3d0b36ce9c59cb9467910bb" name="acd0be2d9c3d0b36ce9c59cb9467910bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0be2d9c3d0b36ce9c59cb9467910bb">&#9670;&#160;</a></span>m_isSwordGrab</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NObject::CPlayer::m_isSwordGrab</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a424d95b21eae84f255937380b9f34c5c" name="a424d95b21eae84f255937380b9f34c5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a424d95b21eae84f255937380b9f34c5c">&#9670;&#160;</a></span>m_model</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_model_1_1_c_object.html">NModel::CObject</a> NObject::CPlayer::m_model</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05dc99f289c40401cc33de62e50d31a7" name="a05dc99f289c40401cc33de62e50d31a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05dc99f289c40401cc33de62e50d31a7">&#9670;&#160;</a></span>m_moveSpeedAlias</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NObject::CPlayer::m_moveSpeedAlias</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65e5ba751f613d700f4d52673458b50e" name="a65e5ba751f613d700f4d52673458b50e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e5ba751f613d700f4d52673458b50e">&#9670;&#160;</a></span>m_normalState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_player_1_1_c_normal_state.html">CNormalState</a> NObject::CPlayer::m_normalState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>排他制御が必要(当たり判定Holderの排他制御) </p>
+
+</div>
+</div>
+<a id="a05dd6124233500dad30513329c10d2f5" name="a05dd6124233500dad30513329c10d2f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05dd6124233500dad30513329c10d2f5">&#9670;&#160;</a></span>m_shader</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_asset_1_1_c_factory.html#a42a8f39a038c716e5e95b31ea67b8ece">NAsset::CShaderFactory::SPAsset</a> NObject::CPlayer::m_shader</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02e96f8bddc137224de30f48ee6c61c7" name="a02e96f8bddc137224de30f48ee6c61c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e96f8bddc137224de30f48ee6c61c7">&#9670;&#160;</a></span>m_stateBig</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a>&lt;<a class="el" href="#a1204b4ae7985fd4e3ce27504f02022ef">CPlayer</a>, <a class="el" href="#aea4f9be162781d81620822eb9425592a">EBigState</a>&gt; NObject::CPlayer::m_stateBig</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2e525499adbd4184e4e797dd6716741" name="ae2e525499adbd4184e4e797dd6716741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2e525499adbd4184e4e797dd6716741">&#9670;&#160;</a></span>m_swordModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_model_1_1_c_object.html">NModel::CObject</a> NObject::CPlayer::m_swordModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6dc75dde45cfb6ea223d224d513a408" name="af6dc75dde45cfb6ea223d224d513a408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6dc75dde45cfb6ea223d224d513a408">&#9670;&#160;</a></span>m_swordTransform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_n_object_1_1_c_game_object.html">NObject::CGameObject</a> NObject::CPlayer::m_swordTransform</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/GameApp/Object/Actor/Player/<a class="el" href="_object___player_8h_source.html">Object_Player.h</a></li>
+<li>Sources/GameApp/Object/Actor/Player/<a class="el" href="_object___player_8cpp.html">Object_Player.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_object.html">NObject</a></li><li class="navelem"><a href="class_n_object_1_1_c_player.html">CPlayer</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NScene::CBase クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_scene_1_1_c_base.html','','class_n_scene_1_1_c_base-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NScene::CBase クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>シーンの基底クラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_scene___base_8h_source.html">Scene_Base.h</a>&gt;</code></p>
+<div class="dynheader">
+NScene::CBase の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_scene_1_1_c_base.png" usemap="#NScene_3A_3ACBase_map" alt=""/>
+  <map id="NScene_3A_3ACBase_map" name="NScene_3A_3ACBase_map">
+<area href="class_n_scene_1_1_c_game.html" title="ゲームを実行するシーン" alt="NScene::CGame" shape="rect" coords="0,56,174,80"/>
+<area href="class_n_scene_1_1_c_result.html" title="プログラム中のテスト用のアセットを再読み込みするシーン" alt="NScene::CResult" shape="rect" coords="184,56,358,80"/>
+<area href="class_n_scene_1_1_c_root.html" title="常に保持されるルートとなるシーン" alt="NScene::CRoot" shape="rect" coords="368,56,542,80"/>
+<area href="class_n_scene_1_1_c_template.html" title="テンプレート" alt="NScene::CTemplate" shape="rect" coords="552,56,726,80"/>
+<area href="class_n_scene_1_1_c_test_asset_optimize.html" title="プログラム中のテスト用のアセットを再読み込みするシーン" alt="NScene::CTestAssetOptimize" shape="rect" coords="736,56,910,80"/>
+<area href="class_n_scene_1_1_c_title.html" title="プログラム中のテスト用のアセットを再読み込みするシーン" alt="NScene::CTitle" shape="rect" coords="920,56,1094,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aaa53abffce67aa629ef82034c5d7ca2b" id="r_aaa53abffce67aa629ef82034c5d7ca2b"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#aaa53abffce67aa629ef82034c5d7ca2b">Load</a> ()</td></tr>
+<tr class="memdesc:aaa53abffce67aa629ef82034c5d7ca2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">リソースなどのロード  <br /></td></tr>
+<tr class="memitem:a6a3b865b9f6a015c44acd8e976439499" id="r_a6a3b865b9f6a015c44acd8e976439499"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a6a3b865b9f6a015c44acd8e976439499">Init</a> ()</td></tr>
+<tr class="memdesc:a6a3b865b9f6a015c44acd8e976439499"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <br /></td></tr>
+<tr class="memitem:a9edb46ac2cc610b5a3171d34722e649f" id="r_a9edb46ac2cc610b5a3171d34722e649f"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9edb46ac2cc610b5a3171d34722e649f">Destroy</a> ()</td></tr>
+<tr class="memdesc:a9edb46ac2cc610b5a3171d34722e649f"><td class="mdescLeft">&#160;</td><td class="mdescRight">終了処理  <br /></td></tr>
+<tr class="memitem:abd3794ae5e88c2fad3277cf0cd1fc659" id="r_abd3794ae5e88c2fad3277cf0cd1fc659"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#abd3794ae5e88c2fad3277cf0cd1fc659">Release</a> ()</td></tr>
+<tr class="memdesc:abd3794ae5e88c2fad3277cf0cd1fc659"><td class="mdescLeft">&#160;</td><td class="mdescRight">解放処理  <br /></td></tr>
+<tr class="memitem:a9841e96e5c9b4c4f28e2bbac74ac5014" id="r_a9841e96e5c9b4c4f28e2bbac74ac5014"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a9841e96e5c9b4c4f28e2bbac74ac5014">Update</a> ()</td></tr>
+<tr class="memdesc:a9841e96e5c9b4c4f28e2bbac74ac5014"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新関数  <br /></td></tr>
+<tr class="memitem:a826484564f1321c901b501414820b657" id="r_a826484564f1321c901b501414820b657"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a826484564f1321c901b501414820b657">Render</a> ()</td></tr>
+<tr class="memdesc:a826484564f1321c901b501414820b657"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画関数  <br /></td></tr>
+<tr class="memitem:afcd64f57849910e02f743ba5bb8d2d64" id="r_afcd64f57849910e02f743ba5bb8d2d64"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afcd64f57849910e02f743ba5bb8d2d64">CBase</a> ()</td></tr>
+<tr class="memitem:ac6d07819fd5ea7ced28e94010f3e04d6" id="r_ac6d07819fd5ea7ced28e94010f3e04d6"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#ac6d07819fd5ea7ced28e94010f3e04d6">~CBase</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>シーンの基底クラス </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="afcd64f57849910e02f743ba5bb8d2d64" name="afcd64f57849910e02f743ba5bb8d2d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd64f57849910e02f743ba5bb8d2d64">&#9670;&#160;</a></span>CBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NScene::CBase::CBase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   12</span>    {</div>
+<div class="line"><span class="lineno">   13</span> </div>
+<div class="line"><span class="lineno">   14</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac6d07819fd5ea7ced28e94010f3e04d6" name="ac6d07819fd5ea7ced28e94010f3e04d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d07819fd5ea7ced28e94010f3e04d6">&#9670;&#160;</a></span>~CBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NScene::CBase::~CBase </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   17</span>    {</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a9edb46ac2cc610b5a3171d34722e649f" name="a9edb46ac2cc610b5a3171d34722e649f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9edb46ac2cc610b5a3171d34722e649f">&#9670;&#160;</a></span>Destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NScene::CBase::Destroy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>終了処理 </p>
+<p>Initに対応する終了関数 </p>
+
+<p><a class="el" href="class_n_scene_1_1_c_game.html#a7cc4e43e3c1e9611cb9eedc32f2d9af0">NScene::CGame</a>, <a class="el" href="class_n_scene_1_1_c_result.html#a3733266a5dc6a5ef05e0d570e26b0bce">NScene::CResult</a>, <a class="el" href="class_n_scene_1_1_c_root.html#a71bdd456b17747fecb4283c36fbae4e2">NScene::CRoot</a>, <a class="el" href="class_n_scene_1_1_c_template.html#a4f01dd3dee759dad71f5facc2f4ddd24">NScene::CTemplate</a>, <a class="el" href="class_n_scene_1_1_c_test_asset_optimize.html#aed2201e1114ffcc51916a30b6f050c8b">NScene::CTestAssetOptimize</a>, <a class="el" href="class_n_scene_1_1_c_title.html#a239cca505880175bd02010c0dc0b4a6f">NScene::CTitle</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{ };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6a3b865b9f6a015c44acd8e976439499" name="a6a3b865b9f6a015c44acd8e976439499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3b865b9f6a015c44acd8e976439499">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NScene::CBase::Init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化 </p>
+<p>生成後に複数回呼び出される可能性がある </p>
+
+<p><a class="el" href="class_n_scene_1_1_c_game.html#aed3feaac639d5b8bfce2611ea5aa2dd9">NScene::CGame</a>, <a class="el" href="class_n_scene_1_1_c_result.html#ab1403314c36c439e1c953e2a44d90a06">NScene::CResult</a>, <a class="el" href="class_n_scene_1_1_c_root.html#a34844a47d8922dbe12d77315e7c91414">NScene::CRoot</a>, <a class="el" href="class_n_scene_1_1_c_template.html#a55280508e8edeed2931101819ed26090">NScene::CTemplate</a>, <a class="el" href="class_n_scene_1_1_c_test_asset_optimize.html#a4f03abb67bc49f2df2548f0cd2a32cfe">NScene::CTestAssetOptimize</a>, <a class="el" href="class_n_scene_1_1_c_title.html#a8f9a33e7b974b084ba5b1748c3ccd023">NScene::CTitle</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>    { </div>
+<div class="line"><span class="lineno">   30</span>        <span class="comment">// レンダーステートを初期化</span></div>
+<div class="line"><span class="lineno">   31</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a050673b83f1f9ac4140e5cf3e92670aa">NDirectX::SetRenderStateDefault</a>(<a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>());</div>
+<div class="line"><span class="lineno">   32</span>    }</div>
+<div class="ttc" id="anamespace_n_direct_x_html_a050673b83f1f9ac4140e5cf3e92670aa"><div class="ttname"><a href="namespace_n_direct_x.html#a050673b83f1f9ac4140e5cf3e92670aa">NDirectX::SetRenderStateDefault</a></div><div class="ttdeci">void SetRenderStateDefault(LPDIRECT3DDEVICE9 _pD3DDevice)</div><div class="ttdoc">レンダーステートの基本的な初期化</div><div class="ttdef"><b>Definition</b> DirectX_Util.cpp:149</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab213af265d85f773a3fb450ca43e3650"><div class="ttname"><a href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 GetD3DDevice()</div><div class="ttdoc">デバイスを取得</div><div class="ttdef"><b>Definition</b> DirectX_Manager.cpp:95</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaa53abffce67aa629ef82034c5d7ca2b" name="aaa53abffce67aa629ef82034c5d7ca2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa53abffce67aa629ef82034c5d7ca2b">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NScene::CBase::Load </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>リソースなどのロード </p>
+<dl class="section note"><dt>覚え書き</dt><dd>生成時に1度のみ実行される </dd></dl>
+
+<p><a class="el" href="class_n_scene_1_1_c_game.html#a4bce18bdd2a6774fbca687204c11ff00">NScene::CGame</a>, <a class="el" href="class_n_scene_1_1_c_result.html#a7f1566d39093ec535bff25d7992e8cab">NScene::CResult</a>, <a class="el" href="class_n_scene_1_1_c_root.html#aee2da0e4490a4eabc6828b91aa98ebef">NScene::CRoot</a>, <a class="el" href="class_n_scene_1_1_c_template.html#a95f22fb3d766da2b68211428d10474a1">NScene::CTemplate</a>, <a class="el" href="class_n_scene_1_1_c_test_asset_optimize.html#a90b6c72981a59f4592ca9449f1b31b2d">NScene::CTestAssetOptimize</a>, <a class="el" href="class_n_scene_1_1_c_title.html#a4274c9bec089990a6af8bbd778130245">NScene::CTitle</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>    { </div>
+<div class="line"><span class="lineno">   23</span>        <span class="comment">// 軽いデータは毎回読み込む</span></div>
+<div class="line"><span class="lineno">   24</span>        <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CJsonFactory::GetInst</a>().Optimize();</div>
+<div class="line"><span class="lineno">   25</span>        <a class="code hl_function" href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NAsset::CShaderFactory::GetInst</a>().Optimize();</div>
+<div class="line"><span class="lineno">   26</span>    }</div>
+<div class="ttc" id="aclass_n_util_1_1_c_singleton_html_a08cc988d79fa3297df6ede328e44a770"><div class="ttname"><a href="class_n_util_1_1_c_singleton.html#a08cc988d79fa3297df6ede328e44a770">NUtil::CSingleton&lt; CJsonFactory &gt;::GetInst</a></div><div class="ttdeci">static CJsonFactory &amp; GetInst()</div><div class="ttdef"><b>Definition</b> Util_SingletonTemplate.h:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="abd3794ae5e88c2fad3277cf0cd1fc659" name="abd3794ae5e88c2fad3277cf0cd1fc659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3794ae5e88c2fad3277cf0cd1fc659">&#9670;&#160;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NScene::CBase::Release </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>解放処理 </p>
+<p>Loadに対応する解放関数 </p>
+
+<p><a class="el" href="class_n_scene_1_1_c_game.html#aec572475f959cf571164cea4bcc770fb">NScene::CGame</a>, <a class="el" href="class_n_scene_1_1_c_result.html#ae92c9fd5bd5e06587fe84a855390ceeb">NScene::CResult</a>, <a class="el" href="class_n_scene_1_1_c_root.html#a6729db80bb07279bc45f813259cd50eb">NScene::CRoot</a>, <a class="el" href="class_n_scene_1_1_c_template.html#a8f915ef26ed230513b09c823ab09b49b">NScene::CTemplate</a>, <a class="el" href="class_n_scene_1_1_c_test_asset_optimize.html#aaacbbfe96dfef63f26efe0256f390dd8">NScene::CTestAssetOptimize</a>, <a class="el" href="class_n_scene_1_1_c_title.html#ab8b520972a9022ef2476a680379b7f5c">NScene::CTitle</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>{ };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a826484564f1321c901b501414820b657" name="a826484564f1321c901b501414820b657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a826484564f1321c901b501414820b657">&#9670;&#160;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NScene::CBase::Render </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>描画関数 </p>
+
+<p><a class="el" href="class_n_scene_1_1_c_game.html#a9652c56ec331bd3e501f2932d89363f9">NScene::CGame</a>, <a class="el" href="class_n_scene_1_1_c_result.html#a668a11c6d3aea388d643c2ee7b1c7391">NScene::CResult</a>, <a class="el" href="class_n_scene_1_1_c_root.html#af1170c7828a526ac14c05d2861f94402">NScene::CRoot</a>, <a class="el" href="class_n_scene_1_1_c_template.html#a37575423fa1b5222019e1f3823d124e3">NScene::CTemplate</a>, <a class="el" href="class_n_scene_1_1_c_test_asset_optimize.html#a189d987873daecc42e5d5a8e8c5ca469">NScene::CTestAssetOptimize</a>, <a class="el" href="class_n_scene_1_1_c_title.html#a0f4df7bc0e54c5707c251c78a40d121e">NScene::CTitle</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>    { </div>
+<div class="line"><span class="lineno">   41</span>    </div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9841e96e5c9b4c4f28e2bbac74ac5014" name="a9841e96e5c9b4c4f28e2bbac74ac5014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9841e96e5c9b4c4f28e2bbac74ac5014">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NScene::CBase::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>更新関数 </p>
+
+<p><a class="el" href="class_n_scene_1_1_c_game.html#adda01c52f3c1bbb8f0c0b152a57d4fa5">NScene::CGame</a>, <a class="el" href="class_n_scene_1_1_c_result.html#af46965d5fccbb45e699f37f2b4934a96">NScene::CResult</a>, <a class="el" href="class_n_scene_1_1_c_root.html#af46427549096f47f5cd39903dcab06d0">NScene::CRoot</a>, <a class="el" href="class_n_scene_1_1_c_template.html#a9a4c125e764d28e0bb8874602038800f">NScene::CTemplate</a>, <a class="el" href="class_n_scene_1_1_c_test_asset_optimize.html#a1055022ee8846d49ab4202160fc2feb5">NScene::CTestAssetOptimize</a>, <a class="el" href="class_n_scene_1_1_c_title.html#a1cbc4c4f781d7a17256ce8e6ba8039bc">NScene::CTitle</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>    { </div>
+<div class="line"><span class="lineno">   36</span>    </div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Scene/<a class="el" href="_scene___base_8h_source.html">Scene_Base.h</a></li>
+<li>Sources/Framework/Scene/<a class="el" href="_scene___base_8cpp.html">Scene_Base.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_scene.html">NScene</a></li><li class="navelem"><a href="class_n_scene_1_1_c_base.html">CBase</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

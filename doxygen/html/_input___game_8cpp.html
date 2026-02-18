@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Input/Input_Game.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_input___game_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Input_Game.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_input___common_8h_source.html">Input_Common.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_input___game_8h_source.html">Input_Game.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:NInput" id="r_NInput"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html">NInput</a></td></tr>
+<tr class="memdesc:namespace_n_input"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力の初期化、更新などの基本的な関数を定義する <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a72f066a444e97d7b7e920b96a6fc3177" id="r_a72f066a444e97d7b7e920b96a6fc3177"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a72f066a444e97d7b7e920b96a6fc3177">_USE_KEYBOARD_GAME_INPUT</a></td></tr>
+<tr class="memdesc:a72f066a444e97d7b7e920b96a6fc3177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release時にキーボード入力を使用するかどうかを判断するマクロ  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a37427fa02e5fd4adfda682c592ceaf93" id="r_a37427fa02e5fd4adfda682c592ceaf93"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a37427fa02e5fd4adfda682c592ceaf93">NInput::UpdateVirtualAnalog</a> ()</td></tr>
+<tr class="memdesc:a37427fa02e5fd4adfda682c592ceaf93"><td class="mdescLeft">&#160;</td><td class="mdescRight">仮想アナログ入力を更新する  <br /></td></tr>
+<tr class="memitem:a7feb3f335716b60529b3c70834405eb3" id="r_a7feb3f335716b60529b3c70834405eb3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a7feb3f335716b60529b3c70834405eb3">NInput::GetUpHold</a> ()</td></tr>
+<tr class="memdesc:a7feb3f335716b60529b3c70834405eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">汎用方向入力  <br /></td></tr>
+<tr class="memitem:ab2873eaa103002e1c1349483cf8f30c9" id="r_ab2873eaa103002e1c1349483cf8f30c9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#ab2873eaa103002e1c1349483cf8f30c9">NInput::GetDownHold</a> ()</td></tr>
+<tr class="memitem:a1a38e352e91bb44929fc3c2688414501" id="r_a1a38e352e91bb44929fc3c2688414501"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a1a38e352e91bb44929fc3c2688414501">NInput::GetRightHold</a> ()</td></tr>
+<tr class="memitem:acc2c260494075f11b4e0ccc16e5665dd" id="r_acc2c260494075f11b4e0ccc16e5665dd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#acc2c260494075f11b4e0ccc16e5665dd">NInput::GetLeftHold</a> ()</td></tr>
+<tr class="memitem:a36ddf6769810261b4a83f0da078f8baf" id="r_a36ddf6769810261b4a83f0da078f8baf"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a36ddf6769810261b4a83f0da078f8baf">NInput::GetUpTrigger</a> ()</td></tr>
+<tr class="memitem:a88b456a71d6301173a408e2e80bc081c" id="r_a88b456a71d6301173a408e2e80bc081c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a88b456a71d6301173a408e2e80bc081c">NInput::GetDownTrigger</a> ()</td></tr>
+<tr class="memitem:afcd0dd91a7b537b12aedfaef7c0c88d8" id="r_afcd0dd91a7b537b12aedfaef7c0c88d8"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#afcd0dd91a7b537b12aedfaef7c0c88d8">NInput::GetRightTrigger</a> ()</td></tr>
+<tr class="memitem:a0cf0bd4e842222eb5276e17e63b72036" id="r_a0cf0bd4e842222eb5276e17e63b72036"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a0cf0bd4e842222eb5276e17e63b72036">NInput::GetLeftTrigger</a> ()</td></tr>
+<tr class="memitem:a7499affb7166f7592750c51813d03324" id="r_a7499affb7166f7592750c51813d03324"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a7499affb7166f7592750c51813d03324">NInput::GetLeftAnalogX</a> ()</td></tr>
+<tr class="memdesc:a7499affb7166f7592750c51813d03324"><td class="mdescLeft">&#160;</td><td class="mdescRight">アナログ入力  <br /></td></tr>
+<tr class="memitem:ad5e27f708f1f604eaa12481acc196b41" id="r_ad5e27f708f1f604eaa12481acc196b41"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#ad5e27f708f1f604eaa12481acc196b41">NInput::GetLeftAnalogY</a> ()</td></tr>
+<tr class="memitem:a1f2346d77fd9c44683532fbebc864ded" id="r_a1f2346d77fd9c44683532fbebc864ded"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a1f2346d77fd9c44683532fbebc864ded">NInput::GetRightAnalogX</a> ()</td></tr>
+<tr class="memitem:ac2ad4dd7451ee4124a08b410cdd2d607" id="r_ac2ad4dd7451ee4124a08b410cdd2d607"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#ac2ad4dd7451ee4124a08b410cdd2d607">NInput::GetRightAnalogY</a> ()</td></tr>
+<tr class="memitem:a2d61f73f6f0d0e13505a2c7b5319b6c6" id="r_a2d61f73f6f0d0e13505a2c7b5319b6c6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a2d61f73f6f0d0e13505a2c7b5319b6c6">NInput::GetStart</a> ()</td></tr>
+<tr class="memdesc:a2d61f73f6f0d0e13505a2c7b5319b6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">スタートボタンを取得  <br /></td></tr>
+<tr class="memitem:ad3f1621a24a58d24593b6433f6999e65" id="r_ad3f1621a24a58d24593b6433f6999e65"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#ad3f1621a24a58d24593b6433f6999e65">NInput::GetDecide</a> ()</td></tr>
+<tr class="memdesc:ad3f1621a24a58d24593b6433f6999e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">決定キー  <br /></td></tr>
+<tr class="memitem:abcb6b374b9decaba89e7da285fb7a072" id="r_abcb6b374b9decaba89e7da285fb7a072"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#abcb6b374b9decaba89e7da285fb7a072">NInput::GetCancel</a> ()</td></tr>
+<tr class="memdesc:abcb6b374b9decaba89e7da285fb7a072"><td class="mdescLeft">&#160;</td><td class="mdescRight">キャンセルキー  <br /></td></tr>
+<tr class="memitem:a311f8c2af980b3e94217d528b64ef24c" id="r_a311f8c2af980b3e94217d528b64ef24c"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a311f8c2af980b3e94217d528b64ef24c">NInput::GetReset</a> ()</td></tr>
+<tr class="memdesc:a311f8c2af980b3e94217d528b64ef24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">リセットボタン(システムキー)  <br /></td></tr>
+<tr class="memitem:a041f9903f4d97d5daf45a0f5c79a0489" id="r_a041f9903f4d97d5daf45a0f5c79a0489"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a041f9903f4d97d5daf45a0f5c79a0489">NInput::GetJump</a> ()</td></tr>
+<tr class="memdesc:a041f9903f4d97d5daf45a0f5c79a0489"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジャンプボタン  <br /></td></tr>
+<tr class="memitem:a268ee944b038ee199dfe80a0c3f94a9b" id="r_a268ee944b038ee199dfe80a0c3f94a9b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a268ee944b038ee199dfe80a0c3f94a9b">NInput::GetAttack1</a> ()</td></tr>
+<tr class="memdesc:a268ee944b038ee199dfe80a0c3f94a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">攻撃ボタン１  <br /></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a72f066a444e97d7b7e920b96a6fc3177" name="a72f066a444e97d7b7e920b96a6fc3177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f066a444e97d7b7e920b96a6fc3177">&#9670;&#160;</a></span>_USE_KEYBOARD_GAME_INPUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _USE_KEYBOARD_GAME_INPUT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release時にキーボード入力を使用するかどうかを判断するマクロ </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_048011b66e9b604392daca2ad2367be0.html">Input</a></li><li class="navelem"><a href="_input___game_8cpp.html">Input_Game.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

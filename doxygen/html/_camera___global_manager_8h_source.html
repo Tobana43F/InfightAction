@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameFramework/Camera/Camera_GlobalManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_camera___global_manager_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Camera_GlobalManager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_camera___global_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="_camera___def_8h.html">Camera_Def.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &quot;<a class="code" href="_math___type_8h.html">Math\Math_Type.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_camera.html">NCamera</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#ad7a46999efe3f11668c65c3359c8b83d">SetupGlobalManager</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#a2bb9601ceeb3c0d6973de71100170967">RegisterViewMatrix</a>(</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keyword">const</span> NMath::SMatrix44&amp; _view,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>     _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#ac44f7547958b8b23d4c4110251793cc2">RegisterProjMatrix</a>(</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">const</span> NMath::SMatrix44&amp; _proj,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>     _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#a5b95b343f8f4c5a77564dd6fc817244d">RegisterViewport</a>(</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_camera_1_1_s_viewport.html">SViewport</a>&amp;        _viewport,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>     _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#a037fe7edd589c3732f58353583d74ea4">RegisterOrthoMatrix</a>(</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">const</span> NMath::SMatrix44&amp; _ortho,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>     _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#a8115b26b2d21a2eda8798696cdee2003">SetViewMatrix</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>  _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#a9b631e8399b3cb50cb03a00f4d91f2e9">SetProjMatrix</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>  _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#a9940d9dd1c7e7c477336be31fd7a2b3f">SetViewport</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>    _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#aa01212d626b5f6d688819e2ee17821fe">SetOrthoMatrix</a>(<span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a> _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#ad24c0a0bd262bfcd7b0299a8804c0a48">GetViewMatrix</a>(</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        NMath::SMatrix44&amp;       _dest,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>     _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#a10d6cf4a8f5b26e13a79008e0484a3d7">GetProjMatrix</a>(</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        NMath::SMatrix44&amp;       _dest,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>     _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#afecf322a00ef1737083cae44e17c32d8">GetViewport</a>(</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_struct" href="struct_n_camera_1_1_s_viewport.html">SViewport</a>&amp;              _dest,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>     _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_n_camera.html#a0a3a0f6b53fc7a408c10a0a334227fc7">GetOrthoMatrix</a>(</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        NMath::SMatrix44&amp; _dest,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keyword">const</span> <a class="code hl_enumeration" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">EManagerIndex</a>     _index = <a class="code hl_enumvalue" href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">EManagerIndex::MAIN</a>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="ttc" id="a_camera___def_8h_html"><div class="ttname"><a href="_camera___def_8h.html">Camera_Def.h</a></div></div>
+<div class="ttc" id="a_math___type_8h_html"><div class="ttname"><a href="_math___type_8h.html">Math_Type.h</a></div></div>
+<div class="ttc" id="anamespace_n_camera_html"><div class="ttname"><a href="namespace_n_camera.html">NCamera</a></div><div class="ttdoc">カメラ行列を統括管理する</div><div class="ttdef"><b>Definition</b> Camera_OperatorBase.cpp:6</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a037fe7edd589c3732f58353583d74ea4"><div class="ttname"><a href="namespace_n_camera.html#a037fe7edd589c3732f58353583d74ea4">NCamera::RegisterOrthoMatrix</a></div><div class="ttdeci">void RegisterOrthoMatrix(const NMath::SMatrix44 &amp;_ortho, const EManagerIndex _index)</div><div class="ttdoc">正射影変換行列を登録</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:86</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a0a3a0f6b53fc7a408c10a0a334227fc7"><div class="ttname"><a href="namespace_n_camera.html#a0a3a0f6b53fc7a408c10a0a334227fc7">NCamera::GetOrthoMatrix</a></div><div class="ttdeci">void GetOrthoMatrix(NMath::SMatrix44 &amp;_dest, const EManagerIndex _index)</div><div class="ttdoc">正射影変換行列を取得する</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:176</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a10d6cf4a8f5b26e13a79008e0484a3d7"><div class="ttname"><a href="namespace_n_camera.html#a10d6cf4a8f5b26e13a79008e0484a3d7">NCamera::GetProjMatrix</a></div><div class="ttdeci">void GetProjMatrix(NMath::SMatrix44 &amp;_dest, const EManagerIndex _index)</div><div class="ttdoc">プロジェクション変換行列を取得</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:160</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a2bb9601ceeb3c0d6973de71100170967"><div class="ttname"><a href="namespace_n_camera.html#a2bb9601ceeb3c0d6973de71100170967">NCamera::RegisterViewMatrix</a></div><div class="ttdeci">void RegisterViewMatrix(const NMath::SMatrix44 &amp;_view, const EManagerIndex _index)</div><div class="ttdoc">ビュー変換行列を登録</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:42</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a5b95b343f8f4c5a77564dd6fc817244d"><div class="ttname"><a href="namespace_n_camera.html#a5b95b343f8f4c5a77564dd6fc817244d">NCamera::RegisterViewport</a></div><div class="ttdeci">void RegisterViewport(const SViewport &amp;_viewport, const EManagerIndex _index)</div><div class="ttdoc">ビューポートを登録</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:68</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719">NCamera::EManagerIndex</a></div><div class="ttdeci">EManagerIndex</div><div class="ttdoc">カメラ情報をマネージャーに登録するインデックス</div><div class="ttdef"><b>Definition</b> Camera_Def.h:33</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378"><div class="ttname"><a href="namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378">NCamera::EManagerIndex::MAIN</a></div><div class="ttdeci">@ MAIN</div><div class="ttdef"><b>Definition</b> Camera_Def.h:34</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a8115b26b2d21a2eda8798696cdee2003"><div class="ttname"><a href="namespace_n_camera.html#a8115b26b2d21a2eda8798696cdee2003">NCamera::SetViewMatrix</a></div><div class="ttdeci">void SetViewMatrix(const EManagerIndex _index)</div><div class="ttdoc">指定したインデックスのビュー変換行列を固定パイプラインに設定</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:101</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a9940d9dd1c7e7c477336be31fd7a2b3f"><div class="ttname"><a href="namespace_n_camera.html#a9940d9dd1c7e7c477336be31fd7a2b3f">NCamera::SetViewport</a></div><div class="ttdeci">void SetViewport(const EManagerIndex _index)</div><div class="ttdoc">指定したインデックスのビューポートぱイプラインに設定</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:123</div></div>
+<div class="ttc" id="anamespace_n_camera_html_a9b631e8399b3cb50cb03a00f4d91f2e9"><div class="ttname"><a href="namespace_n_camera.html#a9b631e8399b3cb50cb03a00f4d91f2e9">NCamera::SetProjMatrix</a></div><div class="ttdeci">void SetProjMatrix(const EManagerIndex _index)</div><div class="ttdoc">指定したインデックスのプロジェクション変換行列を固定パイプラインに設定</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:112</div></div>
+<div class="ttc" id="anamespace_n_camera_html_aa01212d626b5f6d688819e2ee17821fe"><div class="ttname"><a href="namespace_n_camera.html#aa01212d626b5f6d688819e2ee17821fe">NCamera::SetOrthoMatrix</a></div><div class="ttdeci">void SetOrthoMatrix(const EManagerIndex _index)</div><div class="ttdoc">指定したインデックスの正射影変換行列を固定パイプラインに設定</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:139</div></div>
+<div class="ttc" id="anamespace_n_camera_html_ac44f7547958b8b23d4c4110251793cc2"><div class="ttname"><a href="namespace_n_camera.html#ac44f7547958b8b23d4c4110251793cc2">NCamera::RegisterProjMatrix</a></div><div class="ttdeci">void RegisterProjMatrix(const NMath::SMatrix44 &amp;_proj, const EManagerIndex _index)</div><div class="ttdoc">プロジェクション変換行列を登録</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:55</div></div>
+<div class="ttc" id="anamespace_n_camera_html_ad24c0a0bd262bfcd7b0299a8804c0a48"><div class="ttname"><a href="namespace_n_camera.html#ad24c0a0bd262bfcd7b0299a8804c0a48">NCamera::GetViewMatrix</a></div><div class="ttdeci">void GetViewMatrix(NMath::SMatrix44 &amp;_dest, const EManagerIndex _index)</div><div class="ttdoc">ビュー変換行列を取得</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:152</div></div>
+<div class="ttc" id="anamespace_n_camera_html_ad7a46999efe3f11668c65c3359c8b83d"><div class="ttname"><a href="namespace_n_camera.html#ad7a46999efe3f11668c65c3359c8b83d">NCamera::SetupGlobalManager</a></div><div class="ttdeci">void SetupGlobalManager()</div><div class="ttdoc">使用可能状態にする</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:32</div></div>
+<div class="ttc" id="anamespace_n_camera_html_afecf322a00ef1737083cae44e17c32d8"><div class="ttname"><a href="namespace_n_camera.html#afecf322a00ef1737083cae44e17c32d8">NCamera::GetViewport</a></div><div class="ttdeci">void GetViewport(SViewport &amp;_dest, const EManagerIndex _index)</div><div class="ttdoc">ビューポートを取得</div><div class="ttdef"><b>Definition</b> Camera_GlobalManager.cpp:168</div></div>
+<div class="ttc" id="astruct_n_camera_1_1_s_viewport_html"><div class="ttname"><a href="struct_n_camera_1_1_s_viewport.html">NCamera::SViewport</a></div><div class="ttdoc">ビューポート情報を持つ構造体</div><div class="ttdef"><b>Definition</b> Camera_Def.h:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_73b2b7c7692df5153c734ea07eeabb57.html">GameFramework</a></li><li class="navelem"><a href="dir_119bfdf84d9b59981a95d295d9c250bd.html">Camera</a></li><li class="navelem"><a href="_camera___global_manager_8h.html">Camera_GlobalManager.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

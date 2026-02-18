@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Math/Vector/Math_Vector3.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_math___vector3_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Math_Vector3.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_math___vector3_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &lt;DirectXMath.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include    &lt;array&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_math___vector2_8h.html">Math_Vector2.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_math.html">NMath</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="comment">// 前方宣言</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_n_math_1_1_s_vector4.html">SVector4</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_vector3.html">   14</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a8e281fc6a29c9e876e877a5b7845658c">SVector3</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">union </span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_vector3.html#aa6dca75e04b2f2505eb859769bfac186">   17</a></span>            DirectX::XMVECTOR           <a class="code hl_variable" href="struct_n_math_1_1_s_vector3.html#aa6dca75e04b2f2505eb859769bfac186">simd</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_vector3.html#abf53fcccabd240a7175449ed8ad6d13f">   21</a></span>                <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_n_math_1_1_s_vector3.html#abf53fcccabd240a7175449ed8ad6d13f">x</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_vector3.html#a88189d14db6c3ed68e1c52a40ea07f00">y</a>, <a class="code hl_variable" href="struct_n_math_1_1_s_vector3.html#ad3e6d23f43985d30d97f698894df4e5a">z</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            };</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_vector3.html#ad431fb166a81c88d5c522929e27547cc">   26</a></span>                std::array&lt;float, 3&gt;    <a class="code hl_variable" href="struct_n_math_1_1_s_vector3.html#ad431fb166a81c88d5c522929e27547cc">array</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            };</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_n_math_1_1_s_vector3.html#ada94ed4c2382246b566e3c231301d47f">   30</a></span>            <a class="code hl_struct" href="struct_n_math_1_1_s_vector2.html">SVector2</a>    <a class="code hl_variable" href="struct_n_math_1_1_s_vector3.html#ada94ed4c2382246b566e3c231301d47f">vec2</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        };</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a8e281fc6a29c9e876e877a5b7845658c">SVector3</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a8e281fc6a29c9e876e877a5b7845658c">SVector3</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a8e281fc6a29c9e876e877a5b7845658c">SVector3</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector4.html">SVector4</a>&amp; _rhs);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a8e281fc6a29c9e876e877a5b7845658c">SVector3</a>(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> _x,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> _y, </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">const</span> <span class="keywordtype">float</span> _z);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp;   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#abb0930953ede1e14bcdc99684a34a84c">operator =  </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp;   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a4bb8f63bc08905dc845e9729bb33cd1f">operator += </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp;   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#ade23578937406d0c335c8e967bb41961">operator -= </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp;   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#ab7c8106c5e4138f81ada498ca9ce454f">operator *= </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp;   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#ab7c8106c5e4138f81ada498ca9ce454f">operator *= </a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _rhs);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp;   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#aaea7dc52f02f007d26006bbbbcaa9860">operator /= </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp;   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#aaea7dc52f02f007d26006bbbbcaa9860">operator /= </a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _rhs);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp;   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#abb0930953ede1e14bcdc99684a34a84c">operator =  </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector4.html">SVector4</a>&amp; _rhs);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordtype">float</span>   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#ae81cb1356eb7feaad1f55dfe44644f54">Get</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> _idx) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#adb6d14f292ff014869a9ec2da09517b1">SetZero</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a618080b518a6bf55fe6dc4cba1f44751">Normalize</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">float</span>   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a78151db83ae9df595402b828a80ecdf5">GetLength</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordtype">float</span>   <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#a751fce7c099a2d2427ef2e025e75049a">GetLengthSquare</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordtype">void</span>    <a class="code hl_function" href="struct_n_math_1_1_s_vector3.html#ad5565a16b8388667de28fdbdd464b3cf">GetNormal</a>(<a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">SVector3</a>&amp; _rDest) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    };</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">// 単項演算子の定義</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> <a class="code hl_function" href="_math___vector3_8h.html#aa47a1f090d829bc836cd6c8bd75aca41">operator + </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> <a class="code hl_function" href="_math___vector3_8h.html#a79ed221f7034cbf77441dbec906b1ea0">operator - </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> <a class="code hl_function" href="_math___vector3_8h.html#a872297ed3b612920d7f4adb16d426d72">operator * </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> <a class="code hl_function" href="_math___vector3_8h.html#a872297ed3b612920d7f4adb16d426d72">operator * </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _lhs, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _rhs);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> <a class="code hl_function" href="_math___vector3_8h.html#a872297ed3b612920d7f4adb16d426d72">operator * </a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> <a class="code hl_function" href="_math___vector3_8h.html#a3f191e49543214433452f4f5ca7d43f7">operator / </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _rhs);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> <a class="code hl_function" href="_math___vector3_8h.html#a3f191e49543214433452f4f5ca7d43f7">operator / </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _lhs, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _rhs);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a> <a class="code hl_function" href="_math___vector3_8h.html#a3f191e49543214433452f4f5ca7d43f7">operator / </a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; _lhs, <span class="keyword">const</span> <a class="code hl_struct" href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a>&amp; _rhs);</div>
+<div class="ttc" id="a_math___vector2_8h_html"><div class="ttname"><a href="_math___vector2_8h.html">Math_Vector2.h</a></div></div>
+<div class="ttc" id="a_math___vector3_8h_html_a3f191e49543214433452f4f5ca7d43f7"><div class="ttname"><a href="_math___vector3_8h.html#a3f191e49543214433452f4f5ca7d43f7">operator/</a></div><div class="ttdeci">const NMath::SVector3 operator/(const NMath::SVector3 &amp;_lhs, const NMath::SVector3 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:148</div></div>
+<div class="ttc" id="a_math___vector3_8h_html_a79ed221f7034cbf77441dbec906b1ea0"><div class="ttname"><a href="_math___vector3_8h.html#a79ed221f7034cbf77441dbec906b1ea0">operator-</a></div><div class="ttdeci">const NMath::SVector3 operator-(const NMath::SVector3 &amp;_lhs, const NMath::SVector3 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:128</div></div>
+<div class="ttc" id="a_math___vector3_8h_html_a872297ed3b612920d7f4adb16d426d72"><div class="ttname"><a href="_math___vector3_8h.html#a872297ed3b612920d7f4adb16d426d72">operator*</a></div><div class="ttdeci">const NMath::SVector3 operator*(const NMath::SVector3 &amp;_lhs, const NMath::SVector3 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:133</div></div>
+<div class="ttc" id="a_math___vector3_8h_html_aa47a1f090d829bc836cd6c8bd75aca41"><div class="ttname"><a href="_math___vector3_8h.html#aa47a1f090d829bc836cd6c8bd75aca41">operator+</a></div><div class="ttdeci">const NMath::SVector3 operator+(const NMath::SVector3 &amp;_lhs, const NMath::SVector3 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:123</div></div>
+<div class="ttc" id="anamespace_n_math_html"><div class="ttname"><a href="namespace_n_math.html">NMath</a></div><div class="ttdoc">基本的な計算を行う関数群</div><div class="ttdef"><b>Definition</b> Math_Data.cpp:6</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector2_html"><div class="ttname"><a href="struct_n_math_1_1_s_vector2.html">NMath::SVector2</a></div><div class="ttdoc">Vector構造体</div><div class="ttdef"><b>Definition</b> Math_Vector2.h:13</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html">NMath::SVector3</a></div><div class="ttdoc">Vector構造体</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:14</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a4bb8f63bc08905dc845e9729bb33cd1f"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a4bb8f63bc08905dc845e9729bb33cd1f">NMath::SVector3::operator+=</a></div><div class="ttdeci">SVector3 &amp; operator+=(const SVector3 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:45</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a618080b518a6bf55fe6dc4cba1f44751"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a618080b518a6bf55fe6dc4cba1f44751">NMath::SVector3::Normalize</a></div><div class="ttdeci">void Normalize()</div><div class="ttdoc">要素を正規化する</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:100</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a751fce7c099a2d2427ef2e025e75049a"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a751fce7c099a2d2427ef2e025e75049a">NMath::SVector3::GetLengthSquare</a></div><div class="ttdeci">float GetLengthSquare() const</div><div class="ttdoc">ベクトルの長さの2乗を取得する(計算量省略用)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:110</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a78151db83ae9df595402b828a80ecdf5"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a78151db83ae9df595402b828a80ecdf5">NMath::SVector3::GetLength</a></div><div class="ttdeci">float GetLength() const</div><div class="ttdoc">ベクトルの長さを取得する</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:105</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a88189d14db6c3ed68e1c52a40ea07f00"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a88189d14db6c3ed68e1c52a40ea07f00">NMath::SVector3::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:21</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_a8e281fc6a29c9e876e877a5b7845658c"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#a8e281fc6a29c9e876e877a5b7845658c">NMath::SVector3::SVector3</a></div><div class="ttdeci">SVector3()</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:9</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_aa6dca75e04b2f2505eb859769bfac186"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#aa6dca75e04b2f2505eb859769bfac186">NMath::SVector3::simd</a></div><div class="ttdeci">DirectX::XMVECTOR simd</div><div class="ttdoc">SIMDアクセス用</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:17</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_aaea7dc52f02f007d26006bbbbcaa9860"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#aaea7dc52f02f007d26006bbbbcaa9860">NMath::SVector3::operator/=</a></div><div class="ttdeci">SVector3 &amp; operator/=(const SVector3 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:69</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_ab7c8106c5e4138f81ada498ca9ce454f"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#ab7c8106c5e4138f81ada498ca9ce454f">NMath::SVector3::operator*=</a></div><div class="ttdeci">SVector3 &amp; operator*=(const SVector3 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:57</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_abb0930953ede1e14bcdc99684a34a84c"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#abb0930953ede1e14bcdc99684a34a84c">NMath::SVector3::operator=</a></div><div class="ttdeci">SVector3 &amp; operator=(const SVector3 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:39</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_abf53fcccabd240a7175449ed8ad6d13f"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#abf53fcccabd240a7175449ed8ad6d13f">NMath::SVector3::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:21</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_ad3e6d23f43985d30d97f698894df4e5a"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#ad3e6d23f43985d30d97f698894df4e5a">NMath::SVector3::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:21</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_ad431fb166a81c88d5c522929e27547cc"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#ad431fb166a81c88d5c522929e27547cc">NMath::SVector3::array</a></div><div class="ttdeci">std::array&lt; float, 3 &gt; array</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:26</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_ad5565a16b8388667de28fdbdd464b3cf"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#ad5565a16b8388667de28fdbdd464b3cf">NMath::SVector3::GetNormal</a></div><div class="ttdeci">void GetNormal(SVector3 &amp;_rDest) const</div><div class="ttdoc">正規化した値を取得する</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:115</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_ada94ed4c2382246b566e3c231301d47f"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#ada94ed4c2382246b566e3c231301d47f">NMath::SVector3::vec2</a></div><div class="ttdeci">SVector2 vec2</div><div class="ttdoc">キャスト代入用</div><div class="ttdef"><b>Definition</b> Math_Vector3.h:30</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_adb6d14f292ff014869a9ec2da09517b1"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#adb6d14f292ff014869a9ec2da09517b1">NMath::SVector3::SetZero</a></div><div class="ttdeci">void SetZero()</div><div class="ttdoc">全ての要素を0にする</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:95</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_ade23578937406d0c335c8e967bb41961"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#ade23578937406d0c335c8e967bb41961">NMath::SVector3::operator-=</a></div><div class="ttdeci">SVector3 &amp; operator-=(const SVector3 &amp;_rhs)</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:51</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector3_html_ae81cb1356eb7feaad1f55dfe44644f54"><div class="ttname"><a href="struct_n_math_1_1_s_vector3.html#ae81cb1356eb7feaad1f55dfe44644f54">NMath::SVector3::Get</a></div><div class="ttdeci">float Get(const unsigned int _idx) const</div><div class="ttdoc">配列アクセスで要素を取得</div><div class="ttdef"><b>Definition</b> Math_Vector3.cpp:89</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_vector4_html"><div class="ttname"><a href="struct_n_math_1_1_s_vector4.html">NMath::SVector4</a></div><div class="ttdoc">Vector構造体</div><div class="ttdef"><b>Definition</b> Math_Vector4.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_bc307321e09ac76e33455da22ae3eeba.html">Math</a></li><li class="navelem"><a href="dir_7a3047f484011033794c1a8533e644b4.html">Vector</a></li><li class="navelem"><a href="_math___vector3_8h.html">Math_Vector3.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

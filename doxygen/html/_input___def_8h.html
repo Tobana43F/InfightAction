@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Input/Input_Def.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_input___def_8h.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Input_Def.h ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_direct_x___input_8h_source.html">DirectX\DirectX_Input.h</a>&quot;</code><br />
+</div>
+<p><a href="_input___def_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:NInput" id="r_NInput"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html">NInput</a></td></tr>
+<tr class="memdesc:namespace_n_input"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力の初期化、更新などの基本的な関数を定義する <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a85f25d0cea1d42cf9e9cd8502fddf53a" id="r_a85f25d0cea1d42cf9e9cd8502fddf53a"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53a">NInput::EJoystickDef</a> { <br />
+&#160;&#160;<a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aaf5c6d4d3c1820dddc1971e041fa020cf">NInput::JOY_A</a>
+, <a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aaa7cf376a7e09e78c09fc289b4c555131">NInput::JOY_B</a>
+, <a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aa920aeba03a0887d255d09ca598fb113f">NInput::JOY_X</a>
+, <a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aa6eb364bf8102f4d1b3778dc78d99db52">NInput::JOY_Y</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aa060cbcbdbb9ec7dd4ec39d51902ab687">NInput::JOY_L</a>
+, <a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aaf7a6c25299363555e937b144f846e24c">NInput::JOY_R</a>
+, <a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aa5f44a4053f64644bf6c3de7b1d14ed0e">NInput::JOY_BACK</a>
+, <a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aad1c2d9e0c8ea06080160070c05e96f03">NInput::JOY_START</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aa8bf4aed426e25b1fd1f3acc2a47eb21a">NInput::JOY_L3</a>
+, <a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aae9ff6a97ec60b671132e6d65eda2ee28">NInput::JOY_R3</a>
+, <a class="el" href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53aa0d7068fd1e45e006e50f1ead61466dde">NInput::JOY_DEF_MAX</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a85f25d0cea1d42cf9e9cd8502fddf53a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ジョイスティックの入力に使用する定数  <a href="namespace_n_input.html#a85f25d0cea1d42cf9e9cd8502fddf53a">[詳解]</a><br /></td></tr>
+<tr class="memitem:a8baf08a2310062e3b440f02aa9f0f8a8" id="r_a8baf08a2310062e3b440f02aa9f0f8a8"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_input.html#a8baf08a2310062e3b440f02aa9f0f8a8">NInput::ESystemKeyDef</a> { <br />
+&#160;&#160;<a class="el" href="namespace_n_input.html#a8baf08a2310062e3b440f02aa9f0f8a8a6c2ff1c7900ec833a88ee356f5902b04">NInput::SYS_DEBUG_SWITCH_FREE_CAM</a> = DIK_F2
+, <a class="el" href="namespace_n_input.html#a8baf08a2310062e3b440f02aa9f0f8a8a1dc79a2aebacc9d2ec50039f604041f3">NInput::SYS_DEBUG_SWITCH_FREE_CAM_LOCK</a> = DIK_F1
+, <a class="el" href="namespace_n_input.html#a8baf08a2310062e3b440f02aa9f0f8a8a9ca44a4f137a3bb52143fe40bd66440b">NInput::SYS_DEBUG_PAUSE_SWITCH</a> = DIK_F6
+, <a class="el" href="namespace_n_input.html#a8baf08a2310062e3b440f02aa9f0f8a8a510f03377db70f6fca50266bcb0c2d16">NInput::SYS_DEBUG_PAUSE_STEP</a> = DIK_F7
+, <br />
+&#160;&#160;<a class="el" href="namespace_n_input.html#a8baf08a2310062e3b440f02aa9f0f8a8a88166d909c382368938a61dfd708c33e">NInput::SYS_DEBUG_SLOW_SWITCH</a> = DIK_F5
+, <a class="el" href="namespace_n_input.html#a8baf08a2310062e3b440f02aa9f0f8a8ae0c2e3b46c6741310686bab2b0574920">NInput::SYS_DEBUG_SLOW_SPEED_UP</a> = DIK_F4
+, <a class="el" href="namespace_n_input.html#a8baf08a2310062e3b440f02aa9f0f8a8a30ba070a721e60759d57bb52be81a41b">NInput::SYS_DEBUG_SLOW_SPEED_DOWN</a> = DIK_F3
+<br />
+ }</td></tr>
+<tr class="memdesc:a8baf08a2310062e3b440f02aa9f0f8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">システムで使用するボタンの定義  <a href="namespace_n_input.html#a8baf08a2310062e3b440f02aa9f0f8a8">[詳解]</a><br /></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_048011b66e9b604392daca2ad2367be0.html">Input</a></li><li class="navelem"><a href="_input___def_8h.html">Input_Def.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

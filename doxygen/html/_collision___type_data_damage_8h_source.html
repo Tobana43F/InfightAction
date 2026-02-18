@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameFramework/Collision/Holder/TypeData/Collision_TypeDataDamage.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_collision___type_data_damage_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Collision_TypeDataDamage.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_collision___type_data_damage_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="json11_8hpp.html">_External\json11\json11.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_collision.html">NCollision</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_damage_type_data.html">   13</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_collision_1_1_c_damage_type_data.html#a1ab15dcb8641a184bc0a1767bb650bff">CDamageTypeData</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_collision_1_1_c_damage_type_data.html#a22ac50e695b0c7293e804dd9b1c635ed">Load</a>(<a class="code hl_class" href="classjson11_1_1_json.html">json11::Json</a> _groupData);</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aa">   17</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aa">EPartType</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aaa2ad06faffa7a9edb00e6d9406955013f">   18</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aaa2ad06faffa7a9edb00e6d9406955013f">BODY</a>,   <span class="comment">// デフォルト値</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aaab8810da2b7b3396aece3b87e191613e6">   19</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aaab8810da2b7b3396aece3b87e191613e6">HEAD</a>,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aaa9bb3f224c9fbbda93ed0526aeb2bde0e">   20</a></span>            <a class="code hl_enumvalue" href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aaa9bb3f224c9fbbda93ed0526aeb2bde0e">FOOT</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        };</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_n_collision_1_1_c_damage_type_data.html#abf7fa06f08a0174f79c8b928f9c689a4">   25</a></span>        <a class="code hl_enumeration" href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aa">EPartType</a>   <a class="code hl_variable" href="class_n_collision_1_1_c_damage_type_data.html#abf7fa06f08a0174f79c8b928f9c689a4">m_partType</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_function" href="class_n_collision_1_1_c_damage_type_data.html#a1ab15dcb8641a184bc0a1767bb650bff">CDamageTypeData</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_function" href="class_n_collision_1_1_c_damage_type_data.html#a3f36f947cfcebebe1d63024666be0c11">~CDamageTypeData</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    };</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_damage_type_data_html_a1ab15dcb8641a184bc0a1767bb650bff"><div class="ttname"><a href="class_n_collision_1_1_c_damage_type_data.html#a1ab15dcb8641a184bc0a1767bb650bff">NCollision::CDamageTypeData::CDamageTypeData</a></div><div class="ttdeci">CDamageTypeData()</div><div class="ttdef"><b>Definition</b> Collision_TypeDataDamage.cpp:42</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_damage_type_data_html_a204cadbba42aee4f1f78d7c4888000aa"><div class="ttname"><a href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aa">NCollision::CDamageTypeData::EPartType</a></div><div class="ttdeci">EPartType</div><div class="ttdef"><b>Definition</b> Collision_TypeDataDamage.h:17</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_damage_type_data_html_a204cadbba42aee4f1f78d7c4888000aaa2ad06faffa7a9edb00e6d9406955013f"><div class="ttname"><a href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aaa2ad06faffa7a9edb00e6d9406955013f">NCollision::CDamageTypeData::BODY</a></div><div class="ttdeci">@ BODY</div><div class="ttdef"><b>Definition</b> Collision_TypeDataDamage.h:18</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_damage_type_data_html_a204cadbba42aee4f1f78d7c4888000aaa9bb3f224c9fbbda93ed0526aeb2bde0e"><div class="ttname"><a href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aaa9bb3f224c9fbbda93ed0526aeb2bde0e">NCollision::CDamageTypeData::FOOT</a></div><div class="ttdeci">@ FOOT</div><div class="ttdef"><b>Definition</b> Collision_TypeDataDamage.h:20</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_damage_type_data_html_a204cadbba42aee4f1f78d7c4888000aaab8810da2b7b3396aece3b87e191613e6"><div class="ttname"><a href="class_n_collision_1_1_c_damage_type_data.html#a204cadbba42aee4f1f78d7c4888000aaab8810da2b7b3396aece3b87e191613e6">NCollision::CDamageTypeData::HEAD</a></div><div class="ttdeci">@ HEAD</div><div class="ttdef"><b>Definition</b> Collision_TypeDataDamage.h:19</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_damage_type_data_html_a22ac50e695b0c7293e804dd9b1c635ed"><div class="ttname"><a href="class_n_collision_1_1_c_damage_type_data.html#a22ac50e695b0c7293e804dd9b1c635ed">NCollision::CDamageTypeData::Load</a></div><div class="ttdeci">void Load(json11::Json _groupData)</div><div class="ttdoc">jsonからのデータ読み込み</div><div class="ttdef"><b>Definition</b> Collision_TypeDataDamage.cpp:52</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_damage_type_data_html_a3f36f947cfcebebe1d63024666be0c11"><div class="ttname"><a href="class_n_collision_1_1_c_damage_type_data.html#a3f36f947cfcebebe1d63024666be0c11">NCollision::CDamageTypeData::~CDamageTypeData</a></div><div class="ttdeci">~CDamageTypeData()</div><div class="ttdef"><b>Definition</b> Collision_TypeDataDamage.cpp:47</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_damage_type_data_html_abf7fa06f08a0174f79c8b928f9c689a4"><div class="ttname"><a href="class_n_collision_1_1_c_damage_type_data.html#abf7fa06f08a0174f79c8b928f9c689a4">NCollision::CDamageTypeData::m_partType</a></div><div class="ttdeci">EPartType m_partType</div><div class="ttdef"><b>Definition</b> Collision_TypeDataDamage.h:25</div></div>
+<div class="ttc" id="aclassjson11_1_1_json_html"><div class="ttname"><a href="classjson11_1_1_json.html">json11::Json</a></div><div class="ttdef"><b>Definition</b> json11.hpp:79</div></div>
+<div class="ttc" id="ajson11_8hpp_html"><div class="ttname"><a href="json11_8hpp.html">json11.hpp</a></div></div>
+<div class="ttc" id="anamespace_n_collision_html"><div class="ttname"><a href="namespace_n_collision.html">NCollision</a></div><div class="ttdoc">当たり判定に使用する定義</div><div class="ttdef"><b>Definition</b> Collision_Common.cpp:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_73b2b7c7692df5153c734ea07eeabb57.html">GameFramework</a></li><li class="navelem"><a href="dir_f0b42bc1344eca253e9e5e11898520d1.html">Collision</a></li><li class="navelem"><a href="dir_27f72761b4f547497f2bbb0e0fa81d2b.html">Holder</a></li><li class="navelem"><a href="dir_97d37bf5751b6a7d1ab04876d3ed99a5.html">TypeData</a></li><li class="navelem"><a href="_collision___type_data_damage_8h.html">Collision_TypeDataDamage.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

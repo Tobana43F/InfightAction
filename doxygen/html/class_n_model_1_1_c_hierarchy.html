@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NModel::CHierarchy クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_model_1_1_c_hierarchy.html','','class_n_model_1_1_c_hierarchy-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NModel::CHierarchy クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>スキンメッシュの階層構造を解析するためのクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_model___hierarchy_8h_source.html">Model_Hierarchy.h</a>&gt;</code></p>
+<div class="dynheader">
+NModel::CHierarchy の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_model_1_1_c_hierarchy.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af54efb0d67104cc498d34e501ed8d900" id="r_af54efb0d67104cc498d34e501ed8d900"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af54efb0d67104cc498d34e501ed8d900">SetFileDir</a> (const char *_fileDir)</td></tr>
+<tr class="memitem:acd69e513dd03ab4950ab371497db27e4" id="r_acd69e513dd03ab4950ab371497db27e4"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acd69e513dd03ab4950ab371497db27e4">CHierarchy</a> (void)</td></tr>
+<tr class="memitem:afa6c3bbe3c5d46b63681bca209ee4665" id="r_afa6c3bbe3c5d46b63681bca209ee4665"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afa6c3bbe3c5d46b63681bca209ee4665">~CHierarchy</a> (void)</td></tr>
+<tr class="memitem:a47646d9d02ca4f8df8c815a513a475eb" id="r_a47646d9d02ca4f8df8c815a513a475eb"><td class="memItemLeft">STDMETHOD&#160;</td><td class="memItemRight"><a class="el" href="#a47646d9d02ca4f8df8c815a513a475eb">CreateFrame</a> (THIS_ LPCSTR Name, LPD3DXFRAME *ppNewFrame)</td></tr>
+<tr class="memitem:aafd8bd7ad81f5aae773a5392d7b49601" id="r_aafd8bd7ad81f5aae773a5392d7b49601"><td class="memItemLeft">STDMETHOD&#160;</td><td class="memItemRight"><a class="el" href="#aafd8bd7ad81f5aae773a5392d7b49601">CreateMeshContainer</a> (THIS_ LPCSTR Name, CONST D3DXMESHDATA *pMeshData, CONST D3DXMATERIAL *pMaterials, CONST D3DXEFFECTINSTANCE *pEffectInstances, DWORD NumMaterials, CONST DWORD *pAdjacency, LPD3DXSKININFO pSkinInfo, LPD3DXMESHCONTAINER *ppNewMeshContainer)</td></tr>
+<tr class="memitem:a3adf26a6e0a1e8e5bf4162bc2b4c872a" id="r_a3adf26a6e0a1e8e5bf4162bc2b4c872a"><td class="memItemLeft">STDMETHOD&#160;</td><td class="memItemRight"><a class="el" href="#a3adf26a6e0a1e8e5bf4162bc2b4c872a">DestroyFrame</a> (THIS_ LPD3DXFRAME pFrameToFree)</td></tr>
+<tr class="memitem:a49f4b9a4c7dbcf79e01f5cf87b483201" id="r_a49f4b9a4c7dbcf79e01f5cf87b483201"><td class="memItemLeft">STDMETHOD&#160;</td><td class="memItemRight"><a class="el" href="#a49f4b9a4c7dbcf79e01f5cf87b483201">DestroyMeshContainer</a> (THIS_ LPD3DXMESHCONTAINER pMeshContainerBase)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ad1088eb6793edf6893f49848d81010c5" id="r_ad1088eb6793edf6893f49848d81010c5"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#ad1088eb6793edf6893f49848d81010c5">m_fileDir</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>スキンメッシュの階層構造を解析するためのクラス </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="acd69e513dd03ab4950ab371497db27e4" name="acd69e513dd03ab4950ab371497db27e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd69e513dd03ab4950ab371497db27e4">&#9670;&#160;</a></span>CHierarchy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NModel::CHierarchy::CHierarchy </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    8</span>    {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afa6c3bbe3c5d46b63681bca209ee4665" name="afa6c3bbe3c5d46b63681bca209ee4665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa6c3bbe3c5d46b63681bca209ee4665">&#9670;&#160;</a></span>~CHierarchy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NModel::CHierarchy::~CHierarchy </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   11</span>    {}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a47646d9d02ca4f8df8c815a513a475eb" name="a47646d9d02ca4f8df8c815a513a475eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47646d9d02ca4f8df8c815a513a475eb">&#9670;&#160;</a></span>CreateFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT NModel::CHierarchy::CreateFrame </td>
+          <td>(</td>
+          <td class="paramtype">THIS_ LPCSTR</td>          <td class="paramname"><span class="paramname"><em>Name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPD3DXFRAME *</td>          <td class="paramname"><span class="paramname"><em>ppNewFrame</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   53</span>    {</div>
+<div class="line"><span class="lineno">   54</span>        HRESULT hr = S_OK;</div>
+<div class="line"><span class="lineno">   55</span>        D3DXFRAME_DERIVED* pFrame;<span class="comment">//フレーム</span></div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>        *ppNewFrame = NULL;</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>        pFrame = <a class="code hl_define" href="_common___base_operator_8h.html#ad5b697eb28f5de277b589057170792a9">New</a> D3DXFRAME_DERIVED;</div>
+<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (pFrame == NULL) {</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keywordflow">return</span> E_OUTOFMEMORY;</div>
+<div class="line"><span class="lineno">   62</span>        }</div>
+<div class="line"><span class="lineno">   63</span> </div>
+<div class="line"><span class="lineno">   64</span>        <span class="comment">// フレーム名格納用のメモリを確保しフレーム名をセットする</span></div>
+<div class="line"><span class="lineno">   65</span>        hr = <a class="code hl_function" href="namespace_n_model.html#a195043fc16b7b2a81a07a1b8f606e227">AllocateName</a>(Name, &amp;pFrame-&gt;Name);</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">if</span> (FAILED(hr))</div>
+<div class="line"><span class="lineno">   67</span>            <span class="keywordflow">return</span> E_FAIL;</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>        <span class="comment">//フレーム部品を初期化</span></div>
+<div class="line"><span class="lineno">   70</span>        D3DXMatrixIdentity(&amp;pFrame-&gt;TransformationMatrix);</div>
+<div class="line"><span class="lineno">   71</span>        D3DXMatrixIdentity(&amp;pFrame-&gt;CombinedTransformMatrix);</div>
+<div class="line"><span class="lineno">   72</span> </div>
+<div class="line"><span class="lineno">   73</span>        pFrame-&gt;pMeshContainer = NULL;          <span class="comment">// メッシュコンテナなしをセット</span></div>
+<div class="line"><span class="lineno">   74</span>        pFrame-&gt;pFrameSibling = NULL;           <span class="comment">// 兄弟フレームなしをセット</span></div>
+<div class="line"><span class="lineno">   75</span>        pFrame-&gt;pFrameFirstChild = NULL;        <span class="comment">// 子供フレームなしをセット</span></div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>        *ppNewFrame = pFrame;</div>
+<div class="line"><span class="lineno">   78</span>        pFrame = NULL;</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><span class="lineno">   81</span>    }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_ad5b697eb28f5de277b589057170792a9"><div class="ttname"><a href="_common___base_operator_8h.html#ad5b697eb28f5de277b589057170792a9">New</a></div><div class="ttdeci">#define New</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:16</div></div>
+<div class="ttc" id="anamespace_n_model_html_a195043fc16b7b2a81a07a1b8f606e227"><div class="ttname"><a href="namespace_n_model.html#a195043fc16b7b2a81a07a1b8f606e227">NModel::AllocateName</a></div><div class="ttdeci">HRESULT AllocateName(LPCSTR Name, LPSTR *pNewName)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:32</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aafd8bd7ad81f5aae773a5392d7b49601" name="aafd8bd7ad81f5aae773a5392d7b49601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafd8bd7ad81f5aae773a5392d7b49601">&#9670;&#160;</a></span>CreateMeshContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT NModel::CHierarchy::CreateMeshContainer </td>
+          <td>(</td>
+          <td class="paramtype">THIS_ LPCSTR</td>          <td class="paramname"><span class="paramname"><em>Name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST D3DXMESHDATA *</td>          <td class="paramname"><span class="paramname"><em>pMeshData</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST D3DXMATERIAL *</td>          <td class="paramname"><span class="paramname"><em>pMaterials</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST D3DXEFFECTINSTANCE *</td>          <td class="paramname"><span class="paramname"><em>pEffectInstances</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD</td>          <td class="paramname"><span class="paramname"><em>NumMaterials</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CONST DWORD *</td>          <td class="paramname"><span class="paramname"><em>pAdjacency</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPD3DXSKININFO</td>          <td class="paramname"><span class="paramname"><em>pSkinInfo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPD3DXMESHCONTAINER *</td>          <td class="paramname"><span class="paramname"><em>ppNewMeshContainer</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   87</span>    {</div>
+<div class="line"><span class="lineno">   88</span>        HRESULT hr;</div>
+<div class="line"><span class="lineno">   89</span>        D3DXMESHCONTAINER_DERIVED* pMeshContainer = NULL;</div>
+<div class="line"><span class="lineno">   90</span>        UINT NumFaces;<span class="comment">//面の数</span></div>
+<div class="line"><span class="lineno">   91</span>        UINT iMaterial;<span class="comment">//マテリアル数</span></div>
+<div class="line"><span class="lineno">   92</span>        UINT iBone, cBone;<span class="comment">//ボーン数</span></div>
+<div class="line"><span class="lineno">   93</span>        LPDIRECT3DDEVICE9 pd3ddevice = NULL;</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>        LPD3DXMESH pMesh = NULL;</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>        *ppNewMeshContainer = NULL;</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>        <span class="comment">//扱えるメッシュかどうか判定</span></div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">if</span> (pMeshData-&gt;Type != D3DXMESHTYPE_MESH)</div>
+<div class="line"><span class="lineno">  101</span>            <span class="keywordflow">return</span> E_FAIL;</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>        <span class="comment">//メッシュポインタ取得</span></div>
+<div class="line"><span class="lineno">  104</span>        pMesh = pMeshData-&gt;pMesh;</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>        <span class="comment">//FVFコンパチブルメッシュではないか判定</span></div>
+<div class="line"><span class="lineno">  107</span>        <span class="keywordflow">if</span> (pMesh-&gt;GetFVF() == 0)</div>
+<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">return</span> E_FAIL;</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>        <span class="comment">//オーバーロード状態の構造体を設定</span></div>
+<div class="line"><span class="lineno">  111</span>        pMeshContainer = <span class="keyword">new</span> D3DXMESHCONTAINER_DERIVED;</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">if</span> (pMeshContainer == NULL)</div>
+<div class="line"><span class="lineno">  113</span>            <span class="keywordflow">return</span> E_OUTOFMEMORY;</div>
+<div class="line"><span class="lineno">  114</span>        memset(pMeshContainer, 0, <span class="keyword">sizeof</span>(D3DXMESHCONTAINER_DERIVED));</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>        <span class="comment">//名前を設定</span></div>
+<div class="line"><span class="lineno">  117</span>        hr = <a class="code hl_function" href="namespace_n_model.html#a195043fc16b7b2a81a07a1b8f606e227">AllocateName</a>(Name, &amp;pMeshContainer-&gt;Name);</div>
+<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">if</span> (FAILED(hr))</div>
+<div class="line"><span class="lineno">  119</span>            <span class="keywordflow">return</span> E_FAIL;</div>
+<div class="line"><span class="lineno">  120</span> </div>
+<div class="line"><span class="lineno">  121</span>        pMesh-&gt;GetDevice(&amp;pd3ddevice);          <span class="comment">// デバイスを取得する</span></div>
+<div class="line"><span class="lineno">  122</span>        NumFaces = pMesh-&gt;GetNumFaces();        <span class="comment">// 面数を取得する</span></div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>        <span class="comment">//法線情報を設定</span></div>
+<div class="line"><span class="lineno">  125</span>        <span class="keywordflow">if</span> (!(pMesh-&gt;GetFVF() &amp; D3DFVF_NORMAL)) {</div>
+<div class="line"><span class="lineno">  126</span>            pMeshContainer-&gt;MeshData.Type = D3DXMESHTYPE_MESH;</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>            <span class="comment">//メッシュのクローンを作って法線の場所を空ける</span></div>
+<div class="line"><span class="lineno">  129</span>            hr = pMesh-&gt;CloneMeshFVF(pMesh-&gt;GetOptions(), pMesh-&gt;GetFVF() | D3DFVF_NORMAL, pd3ddevice, &amp;pMeshContainer-&gt;MeshData.pMesh);</div>
+<div class="line"><span class="lineno">  130</span>            <span class="keywordflow">if</span> (FAILED(hr))</div>
+<div class="line"><span class="lineno">  131</span>                <span class="keywordflow">return</span> E_FAIL;</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>            <span class="comment">//使用するメッシュコンテナからメッシュポインタを取り出す</span></div>
+<div class="line"><span class="lineno">  134</span>            pMesh = pMeshContainer-&gt;MeshData.pMesh;</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>            <span class="comment">//メッシュポインタに法線を作る</span></div>
+<div class="line"><span class="lineno">  137</span>            D3DXComputeNormals(pMesh, NULL);</div>
+<div class="line"><span class="lineno">  138</span>        }</div>
+<div class="line"><span class="lineno">  139</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  140</span>            <span class="comment">//メッシュコンテナの参照をセット</span></div>
+<div class="line"><span class="lineno">  141</span>            pMeshContainer-&gt;MeshData.pMesh = pMesh;</div>
+<div class="line"><span class="lineno">  142</span>            pMeshContainer-&gt;MeshData.Type = D3DXMESHTYPE_MESH;</div>
+<div class="line"><span class="lineno">  143</span> </div>
+<div class="line"><span class="lineno">  144</span>            pMesh-&gt;AddRef();</div>
+<div class="line"><span class="lineno">  145</span>        }</div>
+<div class="line"><span class="lineno">  146</span> </div>
+<div class="line"><span class="lineno">  147</span>        <span class="comment">//メモリ割り当てマテリアル情報をセット</span></div>
+<div class="line"><span class="lineno">  148</span>        pMeshContainer-&gt;NumMaterials = max(1, NumMaterials);</div>
+<div class="line"><span class="lineno">  149</span>        pMeshContainer-&gt;pMaterials = <span class="keyword">new</span> D3DXMATERIAL[pMeshContainer-&gt;NumMaterials];</div>
+<div class="line"><span class="lineno">  150</span>        pMeshContainer-&gt;ppTextures = <span class="keyword">new</span> LPDIRECT3DTEXTURE9[pMeshContainer-&gt;NumMaterials];</div>
+<div class="line"><span class="lineno">  151</span>        pMeshContainer-&gt;pAdjacency = <span class="keyword">new</span> DWORD[NumFaces * 3];</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">if</span> ((pMeshContainer-&gt;pAdjacency == NULL) || (pMeshContainer-&gt;pMaterials == NULL) || (pMeshContainer-&gt;ppTextures == NULL))</div>
+<div class="line"><span class="lineno">  153</span>            <span class="keywordflow">return</span> E_OUTOFMEMORY;</div>
+<div class="line"><span class="lineno">  154</span> </div>
+<div class="line"><span class="lineno">  155</span>        memcpy(pMeshContainer-&gt;pAdjacency, pAdjacency, <span class="keyword">sizeof</span>(DWORD) * NumFaces * 3);</div>
+<div class="line"><span class="lineno">  156</span>        memset(pMeshContainer-&gt;ppTextures, 0, <span class="keyword">sizeof</span>(LPDIRECT3DTEXTURE9) * pMeshContainer-&gt;NumMaterials);</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>        <span class="comment">//マテリアルが設定されていたらコピーする</span></div>
+<div class="line"><span class="lineno">  159</span>        <span class="keywordflow">if</span> (NumMaterials &gt; 0) {</div>
+<div class="line"><span class="lineno">  160</span>            memcpy(pMeshContainer-&gt;pMaterials, pMaterials, <span class="keyword">sizeof</span>(D3DXMATERIAL) * NumMaterials);</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>            <span class="keywordflow">for</span> (iMaterial = 0; iMaterial &lt; NumMaterials; iMaterial++) {</div>
+<div class="line"><span class="lineno">  163</span>                <span class="keywordflow">if</span> (pMeshContainer-&gt;pMaterials[iMaterial].pTextureFilename != NULL) {</div>
+<div class="line"><span class="lineno">  164</span>                    WCHAR str[MAX_PATH];</div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>                    std::string path = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">  167</span>                    path += <a class="code hl_variable" href="#ad1088eb6793edf6893f49848d81010c5">m_fileDir</a>.data();</div>
+<div class="line"><span class="lineno">  168</span>                    path += pMeshContainer-&gt;pMaterials[iMaterial].pTextureFilename;</div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span>                    <a class="code hl_function" href="namespace_n_model.html#afaf370c2838d3d79a08992a8b09b853b">MtoW</a>(str, <span class="keyword">const_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(path.c_str()), MAX_PATH);</div>
+<div class="line"><span class="lineno">  171</span>                    <span class="keywordflow">if</span> (FAILED(D3DXCreateTextureFromFileW(pd3ddevice, str, &amp;pMeshContainer-&gt;ppTextures[iMaterial])))</div>
+<div class="line"><span class="lineno">  172</span>                        pMeshContainer-&gt;ppTextures[iMaterial] = NULL;</div>
+<div class="line"><span class="lineno">  173</span> </div>
+<div class="line"><span class="lineno">  174</span>                    <span class="comment">//ポインタをダイナミックメモリに確保しないようし、NULLを設定</span></div>
+<div class="line"><span class="lineno">  175</span>                    pMeshContainer-&gt;pMaterials[iMaterial].pTextureFilename = NULL;</div>
+<div class="line"><span class="lineno">  176</span>                }</div>
+<div class="line"><span class="lineno">  177</span>            }</div>
+<div class="line"><span class="lineno">  178</span>        }</div>
+<div class="line"><span class="lineno">  179</span>        <span class="keywordflow">else</span>    <span class="comment">//マテリアルが無かった時、デフォルトの素材を設定</span></div>
+<div class="line"><span class="lineno">  180</span>        {</div>
+<div class="line"><span class="lineno">  181</span>            pMeshContainer-&gt;pMaterials[0].pTextureFilename = NULL;</div>
+<div class="line"><span class="lineno">  182</span>            memset(&amp;pMeshContainer-&gt;pMaterials[0].MatD3D, 0, <span class="keyword">sizeof</span>(D3DMATERIAL9));</div>
+<div class="line"><span class="lineno">  183</span>            pMeshContainer-&gt;pMaterials[0].MatD3D.Diffuse.r =</div>
+<div class="line"><span class="lineno">  184</span>                pMeshContainer-&gt;pMaterials[0].MatD3D.Diffuse.g =</div>
+<div class="line"><span class="lineno">  185</span>                pMeshContainer-&gt;pMaterials[0].MatD3D.Diffuse.b = 0.5f;</div>
+<div class="line"><span class="lineno">  186</span>            pMeshContainer-&gt;pMaterials[0].MatD3D.Specular = pMeshContainer-&gt;pMaterials[0].MatD3D.Diffuse;</div>
+<div class="line"><span class="lineno">  187</span>        }</div>
+<div class="line"><span class="lineno">  188</span> </div>
+<div class="line"><span class="lineno">  189</span>        <span class="comment">//スキン情報があれば、それを使う</span></div>
+<div class="line"><span class="lineno">  190</span>        <span class="keywordflow">if</span> (pSkinInfo != NULL) {</div>
+<div class="line"><span class="lineno">  191</span>            pMeshContainer-&gt;pSkinInfo = pSkinInfo;</div>
+<div class="line"><span class="lineno">  192</span>            pSkinInfo-&gt;AddRef();</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>            pMeshContainer-&gt;pOrigMesh = pMesh;</div>
+<div class="line"><span class="lineno">  195</span>            pMesh-&gt;AddRef();</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>            <span class="comment">//オフセットマトリックス配列を生成</span></div>
+<div class="line"><span class="lineno">  198</span>            cBone = pSkinInfo-&gt;GetNumBones();</div>
+<div class="line"><span class="lineno">  199</span>            pMeshContainer-&gt;pBoneOffsetMatrices = <span class="keyword">new</span> D3DXMATRIX[cBone];</div>
+<div class="line"><span class="lineno">  200</span>            <span class="keywordflow">if</span> (pMeshContainer-&gt;pBoneOffsetMatrices == NULL)</div>
+<div class="line"><span class="lineno">  201</span>                <span class="keywordflow">return</span> E_OUTOFMEMORY;</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>            <span class="comment">//ボーンマトリクス取得</span></div>
+<div class="line"><span class="lineno">  204</span>            <span class="keywordflow">for</span> (iBone = 0; iBone &lt; cBone; iBone++) {</div>
+<div class="line"><span class="lineno">  205</span>                pMeshContainer-&gt;pBoneOffsetMatrices[iBone] = *(pMeshContainer-&gt;pSkinInfo-&gt;GetBoneOffsetMatrix(iBone));</div>
+<div class="line"><span class="lineno">  206</span>            }</div>
+<div class="line"><span class="lineno">  207</span>            <span class="comment">//スキンメッシュ生成</span></div>
+<div class="line"><span class="lineno">  208</span>            hr = <a class="code hl_function" href="namespace_n_model.html#a381896a7a0cc0f794d68e4e182660d7e">GenerateSkinnedMesh</a>(pd3ddevice, pMeshContainer);</div>
+<div class="line"><span class="lineno">  209</span>            <span class="keywordflow">if</span> (FAILED(hr))</div>
+<div class="line"><span class="lineno">  210</span>                <span class="keywordflow">return</span> E_FAIL;</div>
+<div class="line"><span class="lineno">  211</span>        }</div>
+<div class="line"><span class="lineno">  212</span> </div>
+<div class="line"><span class="lineno">  213</span>        *ppNewMeshContainer = pMeshContainer;</div>
+<div class="line"><span class="lineno">  214</span>        pMeshContainer = NULL;</div>
+<div class="line"><span class="lineno">  215</span> </div>
+<div class="line"><span class="lineno">  216</span>        <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(pd3ddevice);</div>
+<div class="line"><span class="lineno">  217</span> </div>
+<div class="line"><span class="lineno">  218</span>        <span class="comment">//適当に割り当てられたデータをきれいにする</span></div>
+<div class="line"><span class="lineno">  219</span>        <span class="keywordflow">if</span> (pMeshContainer != NULL) {</div>
+<div class="line"><span class="lineno">  220</span>            <a class="code hl_function" href="#a49f4b9a4c7dbcf79e01f5cf87b483201">DestroyMeshContainer</a>(pMeshContainer);</div>
+<div class="line"><span class="lineno">  221</span>        }</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><span class="lineno">  224</span>    }</div>
+<div class="ttc" id="a_direct_x___util_8h_html_afe4096368a51bd6079184745ddec2b6b"><div class="ttname"><a href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a></div><div class="ttdeci">#define ReleaseSafe(p)</div><div class="ttdoc">安全な解放処理</div><div class="ttdef"><b>Definition</b> DirectX_Util.h:8</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html_a49f4b9a4c7dbcf79e01f5cf87b483201"><div class="ttname"><a href="#a49f4b9a4c7dbcf79e01f5cf87b483201">NModel::CHierarchy::DestroyMeshContainer</a></div><div class="ttdeci">STDMETHOD DestroyMeshContainer(THIS_ LPD3DXMESHCONTAINER pMeshContainerBase)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:239</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_hierarchy_html_ad1088eb6793edf6893f49848d81010c5"><div class="ttname"><a href="#ad1088eb6793edf6893f49848d81010c5">NModel::CHierarchy::m_fileDir</a></div><div class="ttdeci">std::string m_fileDir</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.h:39</div></div>
+<div class="ttc" id="anamespace_n_model_html_a381896a7a0cc0f794d68e4e182660d7e"><div class="ttname"><a href="namespace_n_model.html#a381896a7a0cc0f794d68e4e182660d7e">NModel::GenerateSkinnedMesh</a></div><div class="ttdeci">HRESULT GenerateSkinnedMesh(IDirect3DDevice9 *pd3dDevice, D3DXMESHCONTAINER_DERIVED *pMeshContainer)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:272</div></div>
+<div class="ttc" id="anamespace_n_model_html_afaf370c2838d3d79a08992a8b09b853b"><div class="ttname"><a href="namespace_n_model.html#afaf370c2838d3d79a08992a8b09b853b">NModel::MtoW</a></div><div class="ttdeci">void MtoW(WCHAR *lpuni, LPSTR lpsjis, int buffersize)</div><div class="ttdef"><b>Definition</b> Model_Hierarchy.cpp:16</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3adf26a6e0a1e8e5bf4162bc2b4c872a" name="a3adf26a6e0a1e8e5bf4162bc2b4c872a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3adf26a6e0a1e8e5bf4162bc2b4c872a">&#9670;&#160;</a></span>DestroyFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT NModel::CHierarchy::DestroyFrame </td>
+          <td>(</td>
+          <td class="paramtype">THIS_ LPD3DXFRAME</td>          <td class="paramname"><span class="paramname"><em>pFrameToFree</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  230</span>    {</div>
+<div class="line"><span class="lineno">  231</span>        <a class="code hl_define" href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a>(pFrameToFree-&gt;Name);</div>
+<div class="line"><span class="lineno">  232</span>        <a class="code hl_define" href="_common___base_operator_8h.html#af45197025694e9f540a01ef122769865">DeleteSafe</a>(pFrameToFree);</div>
+<div class="line"><span class="lineno">  233</span>        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><span class="lineno">  234</span>    }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_aeea0f5b85aab2e60bef98c0943312d67"><div class="ttname"><a href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a></div><div class="ttdeci">#define DeleteArraySafe(_pTarget)</div><div class="ttdoc">配列を開放</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:75</div></div>
+<div class="ttc" id="a_common___base_operator_8h_html_af45197025694e9f540a01ef122769865"><div class="ttname"><a href="_common___base_operator_8h.html#af45197025694e9f540a01ef122769865">DeleteSafe</a></div><div class="ttdeci">#define DeleteSafe(_pTarget)</div><div class="ttdoc">ポインタを開放</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a49f4b9a4c7dbcf79e01f5cf87b483201" name="a49f4b9a4c7dbcf79e01f5cf87b483201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49f4b9a4c7dbcf79e01f5cf87b483201">&#9670;&#160;</a></span>DestroyMeshContainer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT NModel::CHierarchy::DestroyMeshContainer </td>
+          <td>(</td>
+          <td class="paramtype">THIS_ LPD3DXMESHCONTAINER</td>          <td class="paramname"><span class="paramname"><em>pMeshContainerBase</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  240</span>    {</div>
+<div class="line"><span class="lineno">  241</span>        UINT iMaterial;</div>
+<div class="line"><span class="lineno">  242</span>        D3DXMESHCONTAINER_DERIVED* pMeshContainer = (D3DXMESHCONTAINER_DERIVED*)pMeshContainerBase;</div>
+<div class="line"><span class="lineno">  243</span> </div>
+<div class="line"><span class="lineno">  244</span>        <a class="code hl_define" href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a>(pMeshContainer-&gt;Name);</div>
+<div class="line"><span class="lineno">  245</span>        <a class="code hl_define" href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a>(pMeshContainer-&gt;pAdjacency);</div>
+<div class="line"><span class="lineno">  246</span>        <a class="code hl_define" href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a>(pMeshContainer-&gt;pMaterials);</div>
+<div class="line"><span class="lineno">  247</span>        <a class="code hl_define" href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a>(pMeshContainer-&gt;pBoneOffsetMatrices);</div>
+<div class="line"><span class="lineno">  248</span> </div>
+<div class="line"><span class="lineno">  249</span>        <span class="comment">//割り当てられたテクスチャの解放</span></div>
+<div class="line"><span class="lineno">  250</span>        <span class="keywordflow">if</span> (pMeshContainer-&gt;ppTextures != NULL) {</div>
+<div class="line"><span class="lineno">  251</span>            <span class="keywordflow">for</span> (iMaterial = 0; iMaterial &lt; pMeshContainer-&gt;NumMaterials; iMaterial++) {</div>
+<div class="line"><span class="lineno">  252</span>                <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(pMeshContainer-&gt;ppTextures[iMaterial]);</div>
+<div class="line"><span class="lineno">  253</span>            }</div>
+<div class="line"><span class="lineno">  254</span>        }</div>
+<div class="line"><span class="lineno">  255</span> </div>
+<div class="line"><span class="lineno">  256</span>        <a class="code hl_define" href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a>(pMeshContainer-&gt;ppTextures);</div>
+<div class="line"><span class="lineno">  257</span>        <a class="code hl_define" href="_common___base_operator_8h.html#aeea0f5b85aab2e60bef98c0943312d67">DeleteArraySafe</a>(pMeshContainer-&gt;ppBoneMatrixPtrs);</div>
+<div class="line"><span class="lineno">  258</span>        <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(pMeshContainer-&gt;pBoneCombinationBuf);</div>
+<div class="line"><span class="lineno">  259</span>        <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(pMeshContainer-&gt;MeshData.pMesh);</div>
+<div class="line"><span class="lineno">  260</span>        <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(pMeshContainer-&gt;pSkinInfo);</div>
+<div class="line"><span class="lineno">  261</span>        <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(pMeshContainer-&gt;pOrigMesh);</div>
+<div class="line"><span class="lineno">  262</span>        <a class="code hl_define" href="_common___base_operator_8h.html#af45197025694e9f540a01ef122769865">DeleteSafe</a>(pMeshContainer);</div>
+<div class="line"><span class="lineno">  263</span> </div>
+<div class="line"><span class="lineno">  264</span>        <span class="keywordflow">return</span> S_OK;</div>
+<div class="line"><span class="lineno">  265</span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af54efb0d67104cc498d34e501ed8d900" name="af54efb0d67104cc498d34e501ed8d900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54efb0d67104cc498d34e501ed8d900">&#9670;&#160;</a></span>SetFileDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NModel::CHierarchy::SetFileDir </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>_fileDir</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   43</span>        {</div>
+<div class="line"><span class="lineno">   44</span>            <a class="code hl_variable" href="#ad1088eb6793edf6893f49848d81010c5">m_fileDir</a> = _fileDir;</div>
+<div class="line"><span class="lineno">   45</span>        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="ad1088eb6793edf6893f49848d81010c5" name="ad1088eb6793edf6893f49848d81010c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1088eb6793edf6893f49848d81010c5">&#9670;&#160;</a></span>m_fileDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string NModel::CHierarchy::m_fileDir</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/Framework/Model/XFile/<a class="el" href="_model___hierarchy_8h_source.html">Model_Hierarchy.h</a></li>
+<li>Sources/Framework/Model/XFile/<a class="el" href="_model___hierarchy_8cpp.html">Model_Hierarchy.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_model.html">NModel</a></li><li class="navelem"><a href="class_n_model_1_1_c_hierarchy.html">CHierarchy</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

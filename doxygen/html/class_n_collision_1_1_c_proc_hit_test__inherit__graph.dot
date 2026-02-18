@@ -1,0 +1,10 @@
+digraph "NCollision::CProcHitTest"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [id="Node000001",label="NCollision::CProcHitTest",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="攻撃と被攻撃の当たり判定を行う処理クラス"];
+  Node2 -> Node1 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="NCollision::CProc",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_n_collision_1_1_c_proc.html",tooltip="ゲームで使用する衝突判定の処理を行うクラス"];
+}

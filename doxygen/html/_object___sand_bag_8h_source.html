@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/GameApp/Object/Actor/Enemy/Object_SandBag.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_object___sand_bag_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Object_SandBag.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_object___sand_bag_8h.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include    &quot;<a class="code" href="_object___enemy_8h.html">Object_Enemy.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include    &quot;<a class="code" href="_model___object_8h.html">Model\Model_Object.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include    &quot;<a class="code" href="_util___state_manager_8h.html">Util\Util_StateManager.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_n_object.html">NObject</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html">   11</a></span>    <span class="keyword">class </span><a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#af9d9b2d7372081c88d8c35b6fbb9832b">CSandBag</a> : <span class="keyword">public</span> <a class="code hl_function" href="class_n_object_1_1_c_enemy.html#a3530964cebd705a5799b69edcd9a405e">CEnemy</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecf">   13</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecf">EState</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa9688d956ad77fd748290c62061f38995">   14</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa9688d956ad77fd748290c62061f38995">ST_NORMAL_IDLE</a>,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa5cce2234b1ae1a2d46ea1a611ab29ebc">   15</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa5cce2234b1ae1a2d46ea1a611ab29ebc">ST_NORMAL_DIE</a>,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfaa0851cd04132cc9bb82788f0705087e5">   16</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfaa0851cd04132cc9bb82788f0705087e5">ST_DAMAGE_L_HEAD</a>,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa3ca2ecab89423bf97a79c83cfd887a6a">   17</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa3ca2ecab89423bf97a79c83cfd887a6a">ST_DAMAGE_L_BODY</a>,</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa183efe46c7e48e0f209da1b5c653604f">   18</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa183efe46c7e48e0f209da1b5c653604f">ST_DAMAGE_L_FOOT</a>,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa62dc1398a67f706eb287a3a1626bcb1f">   19</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa62dc1398a67f706eb287a3a1626bcb1f">ST_DAMAGE_H_BLOW_BACK</a>,  <span class="comment">// 後ろ吹っ飛び</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa2cde7790958fb0bc9af8a17800fb858c">   20</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa2cde7790958fb0bc9af8a17800fb858c">ST_MAX</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        };</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060d">   24</a></span>        <span class="keyword">enum</span> <a class="code hl_enumeration" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060d">EAnmIndex</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da5824b294a99f158500f3f8241bab2936">   25</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da5824b294a99f158500f3f8241bab2936">ANM_DAMAGE_L_BODY</a>,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da23234d3f889311ea58420ff2f9ece7b6">   26</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da23234d3f889311ea58420ff2f9ece7b6">ANM_DAMAGE_H_BLOW_BACK</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da6d68dfec0a8e4e74cdc674205fdfd7f8">   27</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da6d68dfec0a8e4e74cdc674205fdfd7f8">ANM_DAMAGE_L_HEAD</a>,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da01116f6f140cb99e3ffebd7e12e89fa0">   28</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da01116f6f140cb99e3ffebd7e12e89fa0">ANM_DAMAGE_L_FOOT</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060dab14a317eec1f91fa90bca6da0166e7c9">   29</a></span>            <a class="code hl_enumvalue" href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060dab14a317eec1f91fa90bca6da0166e7c9">ANM_NORMAL_IDLE</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        };</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a6e7705e69159c4e79de875796a34edd8">LoadProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a0b15e7be6b726548cf51993d68bc3219">ReleaseProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#aeff33160c469899775a3d8ab765aa524">InitProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#ae17ebd0447def973c9f2ffb0dc6de975">DestroyProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a7411a6e50e716252dc3c4320501ce648">UpdateProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a9642fb3bea1eca8cd7f1cbf2fccae965">UpdateLateProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a82764050167beb3909297d64e8b9a61b">RenderProc</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#ae4677c641691662c5ca7ba7379e766ea">   57</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a>   <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#ae4677c641691662c5ca7ba7379e766ea">GetActorParamAssetKey</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;Data/Actor/Enemy/SandBag/ActorParam.json&quot;</span>; }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a30cfad8f627190695e5c0ac8d6dded53">   60</a></span>        <span class="keyword">virtual</span> <a class="code hl_typedef" href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CJsonFactory::Key</a>   <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a30cfad8f627190695e5c0ac8d6dded53">GetActorMoveAssetKey</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;Data/Actor/Enemy/SandBag/ActorMove.json&quot;</span>; }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a31ddc581e5c605752b5edca1685ca9d4">Operate</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span>    <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a96a8103b40b66df01ea651f3b444b26b">ProcDamage</a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a>&amp; _rDamage) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="comment">// 親クラスのエイリアス</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a6cf899207d836db62b7de95e054af6fc">   71</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="class_n_object_1_1_c_sand_bag.html#a6cf899207d836db62b7de95e054af6fc">Base</a> = <a class="code hl_function" href="class_n_object_1_1_c_enemy.html#a3530964cebd705a5799b69edcd9a405e">CEnemy</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a23d66aaefb962c2540e10ee53d30eb3c">   73</a></span>        <a class="code hl_class" href="class_n_model_1_1_c_object.html">NModel::CObject</a>             <a class="code hl_variable" href="class_n_object_1_1_c_sand_bag.html#a23d66aaefb962c2540e10ee53d30eb3c">m_model</a>;    <span class="comment">// 描画用モデル</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="comment">// あたり判定</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a0d4f3e4dc3ea235666f92f24f986978c">   76</a></span>        <a class="code hl_class" href="class_n_collision_1_1_c_holder.html">NCollision::CHolder</a>         <a class="code hl_variable" href="class_n_object_1_1_c_sand_bag.html#a0d4f3e4dc3ea235666f92f24f986978c">m_damageHolder</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="comment">// 状態遷移関係</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a1849ba0ee25bdaf1bde8caccaff9bf03">   81</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="class_n_object_1_1_c_sand_bag.html#a1849ba0ee25bdaf1bde8caccaff9bf03">StateParam</a> = <a class="code hl_typedef" href="class_n_util_1_1_c_state_manager.html#a9515c92a0d8f456afd3e28ffc26e3b6d">NUtil::CStateManager&lt;CSandBag, EState&gt;::Param</a>;   <span class="comment">// 引数省略</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_n_object_1_1_c_sand_bag.html#a2722e9592ab3d52ba2cdf1b49794e8cb">   82</a></span>        <a class="code hl_class" href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager&lt;CSandBag, EState&gt;</a>  <a class="code hl_variable" href="class_n_object_1_1_c_sand_bag.html#a2722e9592ab3d52ba2cdf1b49794e8cb">m_state</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a095b15aacdd09b7f9ca20c7bb25fc929">UpdateIdleState</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_sand_bag.html#a1849ba0ee25bdaf1bde8caccaff9bf03">StateParam</a> _param);            <span class="comment">// たち状態を更新</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a69958d4e37329efe1d718c0d2b39b6fe">UpdateDamageLight</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_sand_bag.html#a1849ba0ee25bdaf1bde8caccaff9bf03">StateParam</a> _param);          <span class="comment">// ダメージ軽</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a8d2026fdb82fd67bf5c035ee26515168">UpdateDamageHeavy</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_sand_bag.html#a1849ba0ee25bdaf1bde8caccaff9bf03">StateParam</a> _param);          <span class="comment">// ダメージ重い</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a2296de9640ff3381f8a431df1c441247">UpdateDie</a>(<a class="code hl_typedef" href="class_n_object_1_1_c_sand_bag.html#a1849ba0ee25bdaf1bde8caccaff9bf03">StateParam</a> _param);                  <span class="comment">// ダメージ重い</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="comment">//　共通処理関数</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#af9d9b2d7372081c88d8c35b6fbb9832b">CSandBag</a>();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keyword">virtual</span> <a class="code hl_function" href="class_n_object_1_1_c_sand_bag.html#a59b42bec08d1de2b30057436dd1c52b1">~CSandBag</a>();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    };</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
+<div class="ttc" id="a_model___object_8h_html"><div class="ttname"><a href="_model___object_8h.html">Model_Object.h</a></div></div>
+<div class="ttc" id="a_object___enemy_8h_html"><div class="ttname"><a href="_object___enemy_8h.html">Object_Enemy.h</a></div></div>
+<div class="ttc" id="a_util___state_manager_8h_html"><div class="ttname"><a href="_util___state_manager_8h.html">Util_StateManager.h</a></div></div>
+<div class="ttc" id="aclass_n_asset_1_1_c_factory_html_a4a6509d6bcd7f624a19f44a25380671e"><div class="ttname"><a href="class_n_asset_1_1_c_factory.html#a4a6509d6bcd7f624a19f44a25380671e">NAsset::CFactory&lt; json11::Json, CJsonFactory &gt;::Key</a></div><div class="ttdeci">std::string Key</div><div class="ttdef"><b>Definition</b> Asset_Factory.h:27</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_holder_html"><div class="ttname"><a href="class_n_collision_1_1_c_holder.html">NCollision::CHolder</a></div><div class="ttdoc">1オブジェクトの1種類の当たり判定をすべて管理するクラス</div><div class="ttdef"><b>Definition</b> Collision_Holder.h:13</div></div>
+<div class="ttc" id="aclass_n_model_1_1_c_object_html"><div class="ttname"><a href="class_n_model_1_1_c_object.html">NModel::CObject</a></div><div class="ttdoc">描画する数だけ生成するモデルを扱うオブジェクト</div><div class="ttdef"><b>Definition</b> Model_Object.h:15</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_enemy_html_a3530964cebd705a5799b69edcd9a405e"><div class="ttname"><a href="class_n_object_1_1_c_enemy.html#a3530964cebd705a5799b69edcd9a405e">NObject::CEnemy::CEnemy</a></div><div class="ttdeci">CEnemy()</div><div class="ttdef"><b>Definition</b> Object_Enemy.cpp:7</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a095b15aacdd09b7f9ca20c7bb25fc929"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a095b15aacdd09b7f9ca20c7bb25fc929">NObject::CSandBag::UpdateIdleState</a></div><div class="ttdeci">void UpdateIdleState(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:218</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a0b15e7be6b726548cf51993d68bc3219"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a0b15e7be6b726548cf51993d68bc3219">NObject::CSandBag::ReleaseProc</a></div><div class="ttdeci">virtual void ReleaseProc() override</div><div class="ttdoc">終了時に1度だけ行う処理を記述する</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:87</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a0d4f3e4dc3ea235666f92f24f986978c"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a0d4f3e4dc3ea235666f92f24f986978c">NObject::CSandBag::m_damageHolder</a></div><div class="ttdeci">NCollision::CHolder m_damageHolder</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:76</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a1849ba0ee25bdaf1bde8caccaff9bf03"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a1849ba0ee25bdaf1bde8caccaff9bf03">NObject::CSandBag::StateParam</a></div><div class="ttdeci">NUtil::CStateManager&lt; CSandBag, EState &gt;::Param StateParam</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:81</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a2296de9640ff3381f8a431df1c441247"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a2296de9640ff3381f8a431df1c441247">NObject::CSandBag::UpdateDie</a></div><div class="ttdeci">void UpdateDie(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:247</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a23d66aaefb962c2540e10ee53d30eb3c"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a23d66aaefb962c2540e10ee53d30eb3c">NObject::CSandBag::m_model</a></div><div class="ttdeci">NModel::CObject m_model</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:73</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a2722e9592ab3d52ba2cdf1b49794e8cb"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a2722e9592ab3d52ba2cdf1b49794e8cb">NObject::CSandBag::m_state</a></div><div class="ttdeci">NUtil::CStateManager&lt; CSandBag, EState &gt; m_state</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:82</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a30cfad8f627190695e5c0ac8d6dded53"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a30cfad8f627190695e5c0ac8d6dded53">NObject::CSandBag::GetActorMoveAssetKey</a></div><div class="ttdeci">virtual NAsset::CJsonFactory::Key GetActorMoveAssetKey()</div><div class="ttdoc">ActorMoveデータを取得する</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:60</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a31ddc581e5c605752b5edca1685ca9d4"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a31ddc581e5c605752b5edca1685ca9d4">NObject::CSandBag::Operate</a></div><div class="ttdeci">virtual void Operate() override</div><div class="ttdoc">操作関数</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:213</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a3c6f794d64dbb6b71a671112124a060d"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060d">NObject::CSandBag::EAnmIndex</a></div><div class="ttdeci">EAnmIndex</div><div class="ttdoc">モデルのアニメーションを示すインデックス</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:24</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a3c6f794d64dbb6b71a671112124a060da01116f6f140cb99e3ffebd7e12e89fa0"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da01116f6f140cb99e3ffebd7e12e89fa0">NObject::CSandBag::ANM_DAMAGE_L_FOOT</a></div><div class="ttdeci">@ ANM_DAMAGE_L_FOOT</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:28</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a3c6f794d64dbb6b71a671112124a060da23234d3f889311ea58420ff2f9ece7b6"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da23234d3f889311ea58420ff2f9ece7b6">NObject::CSandBag::ANM_DAMAGE_H_BLOW_BACK</a></div><div class="ttdeci">@ ANM_DAMAGE_H_BLOW_BACK</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:26</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a3c6f794d64dbb6b71a671112124a060da5824b294a99f158500f3f8241bab2936"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da5824b294a99f158500f3f8241bab2936">NObject::CSandBag::ANM_DAMAGE_L_BODY</a></div><div class="ttdeci">@ ANM_DAMAGE_L_BODY</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:25</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a3c6f794d64dbb6b71a671112124a060da6d68dfec0a8e4e74cdc674205fdfd7f8"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060da6d68dfec0a8e4e74cdc674205fdfd7f8">NObject::CSandBag::ANM_DAMAGE_L_HEAD</a></div><div class="ttdeci">@ ANM_DAMAGE_L_HEAD</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:27</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a3c6f794d64dbb6b71a671112124a060dab14a317eec1f91fa90bca6da0166e7c9"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a3c6f794d64dbb6b71a671112124a060dab14a317eec1f91fa90bca6da0166e7c9">NObject::CSandBag::ANM_NORMAL_IDLE</a></div><div class="ttdeci">@ ANM_NORMAL_IDLE</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:29</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a59b42bec08d1de2b30057436dd1c52b1"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a59b42bec08d1de2b30057436dd1c52b1">NObject::CSandBag::~CSandBag</a></div><div class="ttdeci">virtual ~CSandBag()</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:31</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a69958d4e37329efe1d718c0d2b39b6fe"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a69958d4e37329efe1d718c0d2b39b6fe">NObject::CSandBag::UpdateDamageLight</a></div><div class="ttdeci">void UpdateDamageLight(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:225</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a6cf899207d836db62b7de95e054af6fc"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a6cf899207d836db62b7de95e054af6fc">NObject::CSandBag::Base</a></div><div class="ttdeci">CEnemy Base</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:71</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a6e7705e69159c4e79de875796a34edd8"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a6e7705e69159c4e79de875796a34edd8">NObject::CSandBag::LoadProc</a></div><div class="ttdeci">virtual void LoadProc() override</div><div class="ttdoc">生成時に1度だけ行う処理を記述する</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:41</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a7411a6e50e716252dc3c4320501ce648"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a7411a6e50e716252dc3c4320501ce648">NObject::CSandBag::UpdateProc</a></div><div class="ttdeci">virtual void UpdateProc() override</div><div class="ttdoc">更新処理を記述する</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:104</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a82764050167beb3909297d64e8b9a61b"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a82764050167beb3909297d64e8b9a61b">NObject::CSandBag::RenderProc</a></div><div class="ttdeci">virtual void RenderProc() override</div><div class="ttdoc">描画処理を記述する</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:117</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a8d2026fdb82fd67bf5c035ee26515168"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a8d2026fdb82fd67bf5c035ee26515168">NObject::CSandBag::UpdateDamageHeavy</a></div><div class="ttdeci">void UpdateDamageHeavy(StateParam _param)</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:236</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a9642fb3bea1eca8cd7f1cbf2fccae965"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a9642fb3bea1eca8cd7f1cbf2fccae965">NObject::CSandBag::UpdateLateProc</a></div><div class="ttdeci">virtual void UpdateLateProc() override</div><div class="ttdoc">当たり判定の更新</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:112</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_a96a8103b40b66df01ea651f3b444b26b"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#a96a8103b40b66df01ea651f3b444b26b">NObject::CSandBag::ProcDamage</a></div><div class="ttdeci">virtual void ProcDamage(const NGame::SDamageParam &amp;_rDamage) override</div><div class="ttdoc">ダメージを受けた際の処理</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:173</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_aa5def0eb81d0e98e026a2871bdd6aecf"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecf">NObject::CSandBag::EState</a></div><div class="ttdeci">EState</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:13</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_aa5def0eb81d0e98e026a2871bdd6aecfa183efe46c7e48e0f209da1b5c653604f"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa183efe46c7e48e0f209da1b5c653604f">NObject::CSandBag::ST_DAMAGE_L_FOOT</a></div><div class="ttdeci">@ ST_DAMAGE_L_FOOT</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:18</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_aa5def0eb81d0e98e026a2871bdd6aecfa2cde7790958fb0bc9af8a17800fb858c"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa2cde7790958fb0bc9af8a17800fb858c">NObject::CSandBag::ST_MAX</a></div><div class="ttdeci">@ ST_MAX</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:20</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_aa5def0eb81d0e98e026a2871bdd6aecfa3ca2ecab89423bf97a79c83cfd887a6a"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa3ca2ecab89423bf97a79c83cfd887a6a">NObject::CSandBag::ST_DAMAGE_L_BODY</a></div><div class="ttdeci">@ ST_DAMAGE_L_BODY</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:17</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_aa5def0eb81d0e98e026a2871bdd6aecfa5cce2234b1ae1a2d46ea1a611ab29ebc"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa5cce2234b1ae1a2d46ea1a611ab29ebc">NObject::CSandBag::ST_NORMAL_DIE</a></div><div class="ttdeci">@ ST_NORMAL_DIE</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:15</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_aa5def0eb81d0e98e026a2871bdd6aecfa62dc1398a67f706eb287a3a1626bcb1f"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa62dc1398a67f706eb287a3a1626bcb1f">NObject::CSandBag::ST_DAMAGE_H_BLOW_BACK</a></div><div class="ttdeci">@ ST_DAMAGE_H_BLOW_BACK</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:19</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_aa5def0eb81d0e98e026a2871bdd6aecfa9688d956ad77fd748290c62061f38995"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfa9688d956ad77fd748290c62061f38995">NObject::CSandBag::ST_NORMAL_IDLE</a></div><div class="ttdeci">@ ST_NORMAL_IDLE</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:14</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_aa5def0eb81d0e98e026a2871bdd6aecfaa0851cd04132cc9bb82788f0705087e5"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#aa5def0eb81d0e98e026a2871bdd6aecfaa0851cd04132cc9bb82788f0705087e5">NObject::CSandBag::ST_DAMAGE_L_HEAD</a></div><div class="ttdeci">@ ST_DAMAGE_L_HEAD</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:16</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_ae17ebd0447def973c9f2ffb0dc6de975"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#ae17ebd0447def973c9f2ffb0dc6de975">NObject::CSandBag::DestroyProc</a></div><div class="ttdeci">virtual void DestroyProc() override</div><div class="ttdoc">終了処理を記述する</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:99</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_ae4677c641691662c5ca7ba7379e766ea"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#ae4677c641691662c5ca7ba7379e766ea">NObject::CSandBag::GetActorParamAssetKey</a></div><div class="ttdeci">virtual NAsset::CJsonFactory::Key GetActorParamAssetKey()</div><div class="ttdoc">ActorParamデータのパス</div><div class="ttdef"><b>Definition</b> Object_SandBag.h:57</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_aeff33160c469899775a3d8ab765aa524"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#aeff33160c469899775a3d8ab765aa524">NObject::CSandBag::InitProc</a></div><div class="ttdeci">virtual void InitProc() override</div><div class="ttdoc">初期化処理を記述する</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:92</div></div>
+<div class="ttc" id="aclass_n_object_1_1_c_sand_bag_html_af9d9b2d7372081c88d8c35b6fbb9832b"><div class="ttname"><a href="class_n_object_1_1_c_sand_bag.html#af9d9b2d7372081c88d8c35b6fbb9832b">NObject::CSandBag::CSandBag</a></div><div class="ttdeci">CSandBag()</div><div class="ttdef"><b>Definition</b> Object_SandBag.cpp:17</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html"><div class="ttname"><a href="class_n_util_1_1_c_state_manager.html">NUtil::CStateManager</a></div><div class="ttdoc">状態遷移を管理するクラス</div><div class="ttdef"><b>Definition</b> Util_StateManager.h:18</div></div>
+<div class="ttc" id="aclass_n_util_1_1_c_state_manager_html_a9515c92a0d8f456afd3e28ffc26e3b6d"><div class="ttname"><a href="class_n_util_1_1_c_state_manager.html#a9515c92a0d8f456afd3e28ffc26e3b6d">NUtil::CStateManager::Param</a></div><div class="ttdeci">SStateParam&lt; TEnumState &gt; &amp; Param</div><div class="ttdoc">メンバ関数の引数になるパラメータ</div><div class="ttdef"><b>Definition</b> Util_StateManager.h:123</div></div>
+<div class="ttc" id="anamespace_n_object_html"><div class="ttname"><a href="namespace_n_object.html">NObject</a></div><div class="ttdoc">プレイヤークラスの内部クラスの実装</div><div class="ttdef"><b>Definition</b> Object_GameObject.cpp:5</div></div>
+<div class="ttc" id="astruct_n_game_1_1_s_damage_param_html"><div class="ttname"><a href="struct_n_game_1_1_s_damage_param.html">NGame::SDamageParam</a></div><div class="ttdoc">Object_Actorが保持するダメージデータ ActorParamに実際に反映するためのダメージデータ</div><div class="ttdef"><b>Definition</b> Game_ActorParam.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_f694c4fbc4aebbaf0d8c111126161e66.html">GameApp</a></li><li class="navelem"><a href="dir_2e64269c7e4a0767292f746f51bb2b62.html">Object</a></li><li class="navelem"><a href="dir_5396966e64c3d59db4d7b9ba2a420383.html">Actor</a></li><li class="navelem"><a href="dir_86b94bb7cc76e1e61367b883ef7e7292.html">Enemy</a></li><li class="navelem"><a href="_object___sand_bag_8h.html">Object_SandBag.h</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

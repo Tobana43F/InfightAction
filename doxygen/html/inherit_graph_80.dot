@@ -1,0 +1,21 @@
+digraph "クラス階層図"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="NScene::CBase",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_n_scene_1_1_c_base.html",tooltip="シーンの基底クラス"];
+  Node0 -> Node1 [id="edge35_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="NScene::CGame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_n_scene_1_1_c_game.html",tooltip="ゲームを実行するシーン"];
+  Node0 -> Node2 [id="edge36_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="NScene::CResult",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_n_scene_1_1_c_result.html",tooltip="プログラム中のテスト用のアセットを再読み込みするシーン"];
+  Node0 -> Node3 [id="edge37_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="NScene::CRoot",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_n_scene_1_1_c_root.html",tooltip="常に保持されるルートとなるシーン"];
+  Node0 -> Node4 [id="edge38_Node000000_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="NScene::CTemplate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_n_scene_1_1_c_template.html",tooltip="テンプレート"];
+  Node0 -> Node5 [id="edge39_Node000000_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="NScene::CTestAssetOptimize",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_n_scene_1_1_c_test_asset_optimize.html",tooltip="プログラム中のテスト用のアセットを再読み込みするシーン"];
+  Node0 -> Node6 [id="edge40_Node000000_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="NScene::CTitle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_n_scene_1_1_c_title.html",tooltip="プログラム中のテスト用のアセットを再読み込みするシーン"];
+}

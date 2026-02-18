@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: Sources/Framework/Sound/Sound_AssetInfo.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_sound___asset_info_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Sound_AssetInfo.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_sound___asset_info_8h_source.html">Sound_AssetInfo.h</a>&quot;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_system___error_8h_source.html">System\System_Error.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:NSound" id="r_NSound"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespace_n_sound.html">NSound</a></td></tr>
+<tr class="memdesc:namespace_n_sound"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用するサウンドを定義する <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:af08ec37a8c99d747fb60fa15bc28678b" id="r_af08ec37a8c99d747fb60fa15bc28678b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af08ec37a8c99d747fb60fa15bc28678b">_CRT_SECURE_NO_WARNINGS</a></td></tr>
+<tr class="memitem:a12d0272d16225928b251f0257c0094fb" id="r_a12d0272d16225928b251f0257c0094fb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a12d0272d16225928b251f0257c0094fb">RegisterSound</a>(_pFileName,  _isLoop)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ab28081600a2ff8b3e4728c99ce187c60" id="r_ab28081600a2ff8b3e4728c99ce187c60"><td class="memItemLeft"><a class="el" href="class_n_sound_1_1_c_asset_info.html">CAssetInfo</a>&#160;</td><td class="memItemRight"><a class="el" href="namespace_n_sound.html#ab28081600a2ff8b3e4728c99ce187c60">NSound::GetAssetInfo</a> (<a class="el" href="namespace_n_sound.html#a3736bd25d9408ba6dcd72eef505af597">ELabel</a> _label)</td></tr>
+<tr class="memdesc:ab28081600a2ff8b3e4728c99ce187c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したサウンドラベルのサウンド情報を取得する関数  <br /></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="af08ec37a8c99d747fb60fa15bc28678b" name="af08ec37a8c99d747fb60fa15bc28678b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08ec37a8c99d747fb60fa15bc28678b">&#9670;&#160;</a></span>_CRT_SECURE_NO_WARNINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _CRT_SECURE_NO_WARNINGS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12d0272d16225928b251f0257c0094fb" name="a12d0272d16225928b251f0257c0094fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12d0272d16225928b251f0257c0094fb">&#9670;&#160;</a></span>RegisterSound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RegisterSound</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_pFileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_isLoop</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_class" href="class_n_sound_1_1_c_asset_info.html">NSound::CAssetInfo</a>(_pFileName, _isLoop)</div>
+<div class="ttc" id="aclass_n_sound_1_1_c_asset_info_html"><div class="ttname"><a href="class_n_sound_1_1_c_asset_info.html">NSound::CAssetInfo</a></div><div class="ttdoc">サウンドのリソースの情報を保持するクラス</div><div class="ttdef"><b>Definition</b> Sound_AssetInfo.h:32</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_937900b87e0c7a5fa01190c395fb83f7.html">Sources</a></li><li class="navelem"><a href="dir_b559203939f0f8db84450e626440a3c1.html">Framework</a></li><li class="navelem"><a href="dir_7e756d209a0663b2c8b355cea4eed5ea.html">Sound</a></li><li class="navelem"><a href="_sound___asset_info_8cpp.html">Sound_AssetInfo.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+var namespace_n_camera =
+[
+    [ "COperatorBase", "class_n_camera_1_1_c_operator_base.html", "class_n_camera_1_1_c_operator_base" ],
+    [ "COperatorDebug", "class_n_camera_1_1_c_operator_debug.html", "class_n_camera_1_1_c_operator_debug" ],
+    [ "COperatorPlayer", "class_n_camera_1_1_c_operator_player.html", "class_n_camera_1_1_c_operator_player" ],
+    [ "SViewData", "struct_n_camera_1_1_s_view_data.html", "struct_n_camera_1_1_s_view_data" ],
+    [ "SProjData", "struct_n_camera_1_1_s_proj_data.html", "struct_n_camera_1_1_s_proj_data" ],
+    [ "SViewport", "struct_n_camera_1_1_s_viewport.html", "struct_n_camera_1_1_s_viewport" ],
+    [ "EManagerIndex", "namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719", [
+      [ "MAIN", "namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a186495f7da296bf880df3a22a492b378", null ],
+      [ "SUB_1", "namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a4ba6fcb4e20cc4f7c3c7cb07d6de2135", null ],
+      [ "SUB_2", "namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719aeda5f0c61b8fb63d1870ed89432a3c33", null ],
+      [ "SUB_3", "namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a82d3b4597e8d35dd4086de25eb73baa0", null ],
+      [ "DEBUG", "namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719adc30ec20708ef7b0f641ef78b7880a15", null ],
+      [ "MAX", "namespace_n_camera.html#a6bd4fbc561cef164fff9c2e21a92d719a26a4b44a837bf97b972628509912b4a5", null ]
+    ] ],
+    [ "GetOrthoMatrix", "namespace_n_camera.html#a0a3a0f6b53fc7a408c10a0a334227fc7", null ],
+    [ "GetProjMatrix", "namespace_n_camera.html#a10d6cf4a8f5b26e13a79008e0484a3d7", null ],
+    [ "GetViewMatrix", "namespace_n_camera.html#ad24c0a0bd262bfcd7b0299a8804c0a48", null ],
+    [ "GetViewport", "namespace_n_camera.html#afecf322a00ef1737083cae44e17c32d8", null ],
+    [ "RegisterOperator", "namespace_n_camera.html#a24f206c08f3b40dbaa5e13d6f3c864fd", null ],
+    [ "RegisterOrthoMatrix", "namespace_n_camera.html#a037fe7edd589c3732f58353583d74ea4", null ],
+    [ "RegisterProjMatrix", "namespace_n_camera.html#ac44f7547958b8b23d4c4110251793cc2", null ],
+    [ "RegisterViewMatrix", "namespace_n_camera.html#a2bb9601ceeb3c0d6973de71100170967", null ],
+    [ "RegisterViewport", "namespace_n_camera.html#a5b95b343f8f4c5a77564dd6fc817244d", null ],
+    [ "SetOrthoMatrix", "namespace_n_camera.html#aa01212d626b5f6d688819e2ee17821fe", null ],
+    [ "SetProjMatrix", "namespace_n_camera.html#a9b631e8399b3cb50cb03a00f4d91f2e9", null ],
+    [ "Setup", "namespace_n_camera.html#ac9624f8990a2426d472934baec697f2e", null ],
+    [ "SetupGlobalManager", "namespace_n_camera.html#ad7a46999efe3f11668c65c3359c8b83d", null ],
+    [ "SetupOperatorManager", "namespace_n_camera.html#a9e8479caf11e624a827343ffe7a193f0", null ],
+    [ "SetViewMatrix", "namespace_n_camera.html#a8115b26b2d21a2eda8798696cdee2003", null ],
+    [ "SetViewport", "namespace_n_camera.html#a9940d9dd1c7e7c477336be31fd7a2b3f", null ],
+    [ "UnregisterOperator", "namespace_n_camera.html#a9cea74ae75134a1b656f6b6d16cba8d9", null ],
+    [ "Update", "namespace_n_camera.html#a4b05c1f332c8efb281a73ddd17e9e5c8", null ],
+    [ "UpdateOperatorManager", "namespace_n_camera.html#ae35ea71a33d30910ba39958e62d01fed", null ]
+];

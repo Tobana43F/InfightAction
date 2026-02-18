@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NGame::CActorMove::CActorBody クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_game_1_1_c_actor_move_1_1_c_actor_body.html','','class_n_game_1_1_c_actor_move_1_1_c_actor_body-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NGame::CActorMove::CActorBody クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Actorの体の当たり判定  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_game___actor_move_8h_source.html">Game_ActorMove.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:adac0b6b4912e17b24fb80cc5cea15301" id="r_adac0b6b4912e17b24fb80cc5cea15301"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adac0b6b4912e17b24fb80cc5cea15301">Setup</a> (<a class="el" href="classjson11_1_1_json.html">json11::Json</a> &amp;_json)</td></tr>
+<tr class="memdesc:adac0b6b4912e17b24fb80cc5cea15301"><td class="mdescLeft">&#160;</td><td class="mdescRight">値の設定  <br /></td></tr>
+<tr class="memitem:adba8cd81380b631b4d0c787644eb8665" id="r_adba8cd81380b631b4d0c787644eb8665"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adba8cd81380b631b4d0c787644eb8665">RenderDebug</a> (const float3 &amp;_worldPos)</td></tr>
+<tr class="memdesc:adba8cd81380b631b4d0c787644eb8665"><td class="mdescLeft">&#160;</td><td class="mdescRight">判定領域のデバッグ描画  <br /></td></tr>
+<tr class="memitem:a196dbad80d31c8a15c63df80abed9953" id="r_a196dbad80d31c8a15c63df80abed9953"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a196dbad80d31c8a15c63df80abed9953">GetWorldCol</a> (<a class="el" href="struct_n_collision_1_1_s_sphere.html">NCollision::SSphere</a> &amp;_dest, const float3 &amp;_worldPos)</td></tr>
+<tr class="memdesc:a196dbad80d31c8a15c63df80abed9953"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定のワールド座標を取得する  <br /></td></tr>
+<tr class="memitem:a2fde8f993a23c9664c4594fedf44fc63" id="r_a2fde8f993a23c9664c4594fedf44fc63"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2fde8f993a23c9664c4594fedf44fc63">CActorBody</a> ()</td></tr>
+<tr class="memitem:a688e54414e518f8e81af6b94e7d1eab2" id="r_a688e54414e518f8e81af6b94e7d1eab2"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a688e54414e518f8e81af6b94e7d1eab2">~CActorBody</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a10b5c487eb73fba8406203935b16092a" id="r_a10b5c487eb73fba8406203935b16092a"><td class="memItemLeft">static const uint&#160;</td><td class="memItemRight"><a class="el" href="#a10b5c487eb73fba8406203935b16092a">BODY_COLLISION_MAX</a> = 10</td></tr>
+<tr class="memdesc:a10b5c487eb73fba8406203935b16092a"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定の最大数  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a1db284462a7e40add39d36c4f4f1b03c" id="r_a1db284462a7e40add39d36c4f4f1b03c"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a1db284462a7e40add39d36c4f4f1b03c">m_mass</a></td></tr>
+<tr class="memitem:afcb4da9118fe9fcd865057f2f6609bcc" id="r_afcb4da9118fe9fcd865057f2f6609bcc"><td class="memItemLeft"><a class="el" href="struct_n_collision_1_1_s_sphere.html">NCollision::SSphere</a>&#160;</td><td class="memItemRight"><a class="el" href="#afcb4da9118fe9fcd865057f2f6609bcc">m_colBodys</a></td></tr>
+<tr class="memitem:ac9db66e3d910765add6e41aea9196644" id="r_ac9db66e3d910765add6e41aea9196644"><td class="memItemLeft">LPD3DXMESH&#160;</td><td class="memItemRight"><a class="el" href="#ac9db66e3d910765add6e41aea9196644">m_sphereMesh</a></td></tr>
+<tr class="memitem:a0488fdb6cb969b0b62a04aa6a9f2d0c0" id="r_a0488fdb6cb969b0b62a04aa6a9f2d0c0"><td class="memItemLeft">D3DMATERIAL9&#160;</td><td class="memItemRight"><a class="el" href="#a0488fdb6cb969b0b62a04aa6a9f2d0c0">m_materialEnable</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>Actorの体の当たり判定 </p>
+<dl class="section note"><dt>覚え書き</dt><dd>壁との判定や、ほかのActorとの当たり判定に使用する </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">todo</a></b></dt><dd>複数の当たり判定に対応させる(内部で複数管理するようにする) </dd></dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a2fde8f993a23c9664c4594fedf44fc63" name="a2fde8f993a23c9664c4594fedf44fc63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fde8f993a23c9664c4594fedf44fc63">&#9670;&#160;</a></span>CActorBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NGame::CActorMove::CActorBody::CActorBody </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                     : </div>
+<div class="line"><span class="lineno">   36</span>        <a class="code hl_variable" href="#a1db284462a7e40add39d36c4f4f1b03c">m_mass</a>(1),</div>
+<div class="line"><span class="lineno">   37</span>        <a class="code hl_variable" href="#ac9db66e3d910765add6e41aea9196644">m_sphereMesh</a>(<span class="keyword">nullptr</span>)</div>
+<div class="line"><span class="lineno">   38</span>    {</div>
+<div class="line"><span class="lineno">   39</span>        memset(&amp;<a class="code hl_variable" href="#afcb4da9118fe9fcd865057f2f6609bcc">m_colBodys</a>, 0, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="#afcb4da9118fe9fcd865057f2f6609bcc">m_colBodys</a>));</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a13154a8af75f07c4d7f490898788b499">NDirectX::MakeMaterialData</a>(<a class="code hl_variable" href="#a0488fdb6cb969b0b62a04aa6a9f2d0c0">m_materialEnable</a>, <a class="code hl_typedef" href="namespace_n_common.html#a6dcf0aa38ee7ea0e0719e8fc6cee738e">float4</a>(1, 1, 1, 0.125f));</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_1_1_c_actor_body_html_a0488fdb6cb969b0b62a04aa6a9f2d0c0"><div class="ttname"><a href="#a0488fdb6cb969b0b62a04aa6a9f2d0c0">NGame::CActorMove::CActorBody::m_materialEnable</a></div><div class="ttdeci">D3DMATERIAL9 m_materialEnable</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:59</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_1_1_c_actor_body_html_a1db284462a7e40add39d36c4f4f1b03c"><div class="ttname"><a href="#a1db284462a7e40add39d36c4f4f1b03c">NGame::CActorMove::CActorBody::m_mass</a></div><div class="ttdeci">float m_mass</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:54</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_1_1_c_actor_body_html_ac9db66e3d910765add6e41aea9196644"><div class="ttname"><a href="#ac9db66e3d910765add6e41aea9196644">NGame::CActorMove::CActorBody::m_sphereMesh</a></div><div class="ttdeci">LPD3DXMESH m_sphereMesh</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:58</div></div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_1_1_c_actor_body_html_afcb4da9118fe9fcd865057f2f6609bcc"><div class="ttname"><a href="#afcb4da9118fe9fcd865057f2f6609bcc">NGame::CActorMove::CActorBody::m_colBodys</a></div><div class="ttdeci">NCollision::SSphere m_colBodys</div><div class="ttdef"><b>Definition</b> Game_ActorMove.h:55</div></div>
+<div class="ttc" id="anamespace_n_common_html_a6dcf0aa38ee7ea0e0719e8fc6cee738e"><div class="ttname"><a href="namespace_n_common.html#a6dcf0aa38ee7ea0e0719e8fc6cee738e">NCommon::float4</a></div><div class="ttdeci">NMath::SVector4 float4</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:21</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_a13154a8af75f07c4d7f490898788b499"><div class="ttname"><a href="namespace_n_direct_x.html#a13154a8af75f07c4d7f490898788b499">NDirectX::MakeMaterialData</a></div><div class="ttdeci">void MakeMaterialData(D3DMATERIAL9 &amp;_rMaterial, const float4 &amp;_color)</div><div class="ttdoc">マテリアルデータを作成</div><div class="ttdef"><b>Definition</b> DirectX_Util.cpp:205</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a688e54414e518f8e81af6b94e7d1eab2" name="a688e54414e518f8e81af6b94e7d1eab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688e54414e518f8e81af6b94e7d1eab2">&#9670;&#160;</a></span>~CActorBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NGame::CActorMove::CActorBody::~CActorBody </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   44</span>    {</div>
+<div class="line"><span class="lineno">   45</span>        <a class="code hl_define" href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a>(<a class="code hl_variable" href="#ac9db66e3d910765add6e41aea9196644">m_sphereMesh</a>);</div>
+<div class="line"><span class="lineno">   46</span>    }</div>
+<div class="ttc" id="a_direct_x___util_8h_html_afe4096368a51bd6079184745ddec2b6b"><div class="ttname"><a href="_direct_x___util_8h.html#afe4096368a51bd6079184745ddec2b6b">ReleaseSafe</a></div><div class="ttdeci">#define ReleaseSafe(p)</div><div class="ttdoc">安全な解放処理</div><div class="ttdef"><b>Definition</b> DirectX_Util.h:8</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a196dbad80d31c8a15c63df80abed9953" name="a196dbad80d31c8a15c63df80abed9953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196dbad80d31c8a15c63df80abed9953">&#9670;&#160;</a></span>GetWorldCol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::CActorBody::GetWorldCol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_collision_1_1_s_sphere.html">NCollision::SSphere</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_dest</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float3 &amp;</td>          <td class="paramname"><span class="paramname"><em>_worldPos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当たり判定のワールド座標を取得する </p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>    {</div>
+<div class="line"><span class="lineno">   93</span>        _dest.<a class="code hl_variable" href="struct_n_collision_1_1_s_sphere.html#a60641a1c0c4c7c03d82b7434694623b6">r</a> = <a class="code hl_variable" href="#afcb4da9118fe9fcd865057f2f6609bcc">m_colBodys</a>.r;</div>
+<div class="line"><span class="lineno">   94</span>        _dest.<a class="code hl_variable" href="struct_n_collision_1_1_s_sphere.html#a6179a508944ae05f2e9aea3c69e57a9b">centerPos</a> = <a class="code hl_variable" href="#afcb4da9118fe9fcd865057f2f6609bcc">m_colBodys</a>.centerPos + _worldPos;</div>
+<div class="line"><span class="lineno">   95</span>    }</div>
+<div class="ttc" id="astruct_n_collision_1_1_s_sphere_html_a60641a1c0c4c7c03d82b7434694623b6"><div class="ttname"><a href="struct_n_collision_1_1_s_sphere.html#a60641a1c0c4c7c03d82b7434694623b6">NCollision::SSphere::r</a></div><div class="ttdeci">float r</div><div class="ttdef"><b>Definition</b> Collision_Def.h:28</div></div>
+<div class="ttc" id="astruct_n_collision_1_1_s_sphere_html_a6179a508944ae05f2e9aea3c69e57a9b"><div class="ttname"><a href="struct_n_collision_1_1_s_sphere.html#a6179a508944ae05f2e9aea3c69e57a9b">NCollision::SSphere::centerPos</a></div><div class="ttdeci">float3 centerPos</div><div class="ttdef"><b>Definition</b> Collision_Def.h:29</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adba8cd81380b631b4d0c787644eb8665" name="adba8cd81380b631b4d0c787644eb8665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba8cd81380b631b4d0c787644eb8665">&#9670;&#160;</a></span>RenderDebug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::CActorBody::RenderDebug </td>
+          <td>(</td>
+          <td class="paramtype">const float3 &amp;</td>          <td class="paramname"><span class="paramname"><em>_worldPos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>判定領域のデバッグ描画 </p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>    {</div>
+<div class="line"><span class="lineno">   71</span><span class="preprocessor">    #ifdef _GAME_DEBUG</span></div>
+<div class="line"><span class="lineno">   72</span>        NCollision::SSphere colWorld;</div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_function" href="#a196dbad80d31c8a15c63df80abed9953">GetWorldCol</a>(colWorld, _worldPos);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>        NMath::SMatrix44    matWorld;</div>
+<div class="line"><span class="lineno">   76</span>        matWorld.<a class="code hl_function" href="struct_n_math_1_1_s_matrix44.html#af37a69fe48c1e878c42b447169192ca7">SetRow</a>(3, colWorld.<a class="code hl_variable" href="struct_n_collision_1_1_s_sphere.html#a6179a508944ae05f2e9aea3c69e57a9b">centerPos</a>);</div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>        D3DXMATRIX  d3dMatWorld;</div>
+<div class="line"><span class="lineno">   79</span>        <a class="code hl_function" href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a>(d3dMatWorld, matWorld);</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>        <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetMaterial(&amp;<a class="code hl_variable" href="#a0488fdb6cb969b0b62a04aa6a9f2d0c0">m_materialEnable</a>);</div>
+<div class="line"><span class="lineno">   82</span>        <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTexture(0, <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   83</span>        <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>()-&gt;SetTransform(D3DTS_WORLD, &amp;d3dMatWorld);</div>
+<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="#ac9db66e3d910765add6e41aea9196644">m_sphereMesh</a>-&gt;DrawSubset(0);</div>
+<div class="line"><span class="lineno">   85</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><span class="lineno">   86</span>    }</div>
+<div class="ttc" id="aclass_n_game_1_1_c_actor_move_1_1_c_actor_body_html_a196dbad80d31c8a15c63df80abed9953"><div class="ttname"><a href="#a196dbad80d31c8a15c63df80abed9953">NGame::CActorMove::CActorBody::GetWorldCol</a></div><div class="ttdeci">void GetWorldCol(NCollision::SSphere &amp;_dest, const float3 &amp;_worldPos)</div><div class="ttdoc">当たり判定のワールド座標を取得する</div><div class="ttdef"><b>Definition</b> Game_ActorMove.cpp:89</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_a6ace719c3abbc964180a4fb4584ff8a8"><div class="ttname"><a href="namespace_n_direct_x.html#a6ace719c3abbc964180a4fb4584ff8a8">NDirectX::ToD3DMatrix</a></div><div class="ttdeci">void ToD3DMatrix(D3DXMATRIX &amp;_dest, const NMath::SMatrix44 &amp;_src)</div><div class="ttdoc">DirectXの定義に変換</div><div class="ttdef"><b>Definition</b> DirectX_Util.cpp:18</div></div>
+<div class="ttc" id="anamespace_n_direct_x_html_ab213af265d85f773a3fb450ca43e3650"><div class="ttname"><a href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a></div><div class="ttdeci">LPDIRECT3DDEVICE9 GetD3DDevice()</div><div class="ttdoc">デバイスを取得</div><div class="ttdef"><b>Definition</b> DirectX_Manager.cpp:95</div></div>
+<div class="ttc" id="astruct_n_math_1_1_s_matrix44_html_af37a69fe48c1e878c42b447169192ca7"><div class="ttname"><a href="struct_n_math_1_1_s_matrix44.html#af37a69fe48c1e878c42b447169192ca7">NMath::SMatrix44::SetRow</a></div><div class="ttdeci">void SetRow(const unsigned int _row, const NMath::SVector4 &amp;_src)</div><div class="ttdoc">行に値を設定</div><div class="ttdef"><b>Definition</b> Math_Matrix44.cpp:95</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adac0b6b4912e17b24fb80cc5cea15301" name="adac0b6b4912e17b24fb80cc5cea15301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adac0b6b4912e17b24fb80cc5cea15301">&#9670;&#160;</a></span>Setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NGame::CActorMove::CActorBody::Setup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classjson11_1_1_json.html">json11::Json</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_json</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>値の設定 </p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>    {</div>
+<div class="line"><span class="lineno">   50</span>        <span class="comment">// 重さを設定</span></div>
+<div class="line"><span class="lineno">   51</span>        <a class="code hl_variable" href="#a1db284462a7e40add39d36c4f4f1b03c">m_mass</a>  = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(_json[<span class="stringliteral">&quot;BodyMass&quot;</span>].number_value());</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>        <span class="comment">// あたり判定情報を設定</span></div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i) {</div>
+<div class="line"><span class="lineno">   55</span>            <a class="code hl_variable" href="#afcb4da9118fe9fcd865057f2f6609bcc">m_colBodys</a>.centerPos.array[i] = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(_json[<span class="stringliteral">&quot;BodyCollisionCenterPos&quot;</span>].array_items()[i].number_value());</div>
+<div class="line"><span class="lineno">   56</span>        }</div>
+<div class="line"><span class="lineno">   57</span>        <a class="code hl_variable" href="#afcb4da9118fe9fcd865057f2f6609bcc">m_colBodys</a>.r = <a class="code hl_define" href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast&lt;float&gt;</a>(_json[<span class="stringliteral">&quot;BodyCollisionRadius&quot;</span>].number_value());</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>        <span class="comment">// デバッグ描画用メッシュ作成</span></div>
+<div class="line"><span class="lineno">   60</span>        D3DXCreateSphere(</div>
+<div class="line"><span class="lineno">   61</span>            <a class="code hl_function" href="namespace_n_direct_x.html#ab213af265d85f773a3fb450ca43e3650">NDirectX::GetD3DDevice</a>(),</div>
+<div class="line"><span class="lineno">   62</span>            <a class="code hl_variable" href="#afcb4da9118fe9fcd865057f2f6609bcc">m_colBodys</a>.r,</div>
+<div class="line"><span class="lineno">   63</span>            8,</div>
+<div class="line"><span class="lineno">   64</span>            4,</div>
+<div class="line"><span class="lineno">   65</span>            &amp;<a class="code hl_variable" href="#ac9db66e3d910765add6e41aea9196644">m_sphereMesh</a>,</div>
+<div class="line"><span class="lineno">   66</span>            <span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">   67</span>    }</div>
+<div class="ttc" id="a_common___base_operator_8h_html_a099b6a85136760ed980079095fc9afe4"><div class="ttname"><a href="_common___base_operator_8h.html#a099b6a85136760ed980079095fc9afe4">StaticCast</a></div><div class="ttdeci">#define StaticCast</div><div class="ttdef"><b>Definition</b> Common_BaseOperator.h:88</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a10b5c487eb73fba8406203935b16092a" name="a10b5c487eb73fba8406203935b16092a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10b5c487eb73fba8406203935b16092a">&#9670;&#160;</a></span>BODY_COLLISION_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint NGame::CActorMove::CActorBody::BODY_COLLISION_MAX = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当たり判定の最大数 </p>
+
+</div>
+</div>
+<a id="afcb4da9118fe9fcd865057f2f6609bcc" name="afcb4da9118fe9fcd865057f2f6609bcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb4da9118fe9fcd865057f2f6609bcc">&#9670;&#160;</a></span>m_colBodys</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_n_collision_1_1_s_sphere.html">NCollision::SSphere</a> NGame::CActorMove::CActorBody::m_colBodys</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1db284462a7e40add39d36c4f4f1b03c" name="a1db284462a7e40add39d36c4f4f1b03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1db284462a7e40add39d36c4f4f1b03c">&#9670;&#160;</a></span>m_mass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float NGame::CActorMove::CActorBody::m_mass</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0488fdb6cb969b0b62a04aa6a9f2d0c0" name="a0488fdb6cb969b0b62a04aa6a9f2d0c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0488fdb6cb969b0b62a04aa6a9f2d0c0">&#9670;&#160;</a></span>m_materialEnable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DMATERIAL9 NGame::CActorMove::CActorBody::m_materialEnable</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9db66e3d910765add6e41aea9196644" name="ac9db66e3d910765add6e41aea9196644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9db66e3d910765add6e41aea9196644">&#9670;&#160;</a></span>m_sphereMesh</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LPD3DXMESH NGame::CActorMove::CActorBody::m_sphereMesh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/GameApp/Game/Def/<a class="el" href="_game___actor_move_8h_source.html">Game_ActorMove.h</a></li>
+<li>Sources/GameApp/Game/Def/<a class="el" href="_game___actor_move_8cpp.html">Game_ActorMove.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_game.html">NGame</a></li><li class="navelem"><a href="class_n_game_1_1_c_actor_move.html">CActorMove</a></li><li class="navelem"><a href="class_n_game_1_1_c_actor_move_1_1_c_actor_body.html">CActorBody</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

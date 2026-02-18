@@ -1,0 +1,1025 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>InfightAction: NCollision::CProc クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">InfightAction
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('class_n_collision_1_1_c_proc.html','','class_n_collision_1_1_c_proc-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">NCollision::CProc クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ゲームで使用する衝突判定の処理を行うクラス  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="_collision___proc_8h_source.html">Collision_Proc.h</a>&gt;</code></p>
+<div class="dynheader">
+NCollision::CProc の継承関係図</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_n_collision_1_1_c_proc.png" usemap="#NCollision_3A_3ACProc_map" alt=""/>
+  <map id="NCollision_3A_3ACProc_map" name="NCollision_3A_3ACProc_map">
+<area href="class_n_collision_1_1_c_proc_hit_test.html" title="攻撃と被攻撃の当たり判定を行う処理クラス" alt="NCollision::CProcHitTest" shape="rect" coords="0,56,149,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:SCollideData" id="r_SCollideData"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_n_collision_1_1_c_proc_1_1_s_collide_data.html">SCollideData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突時の処理に必要なデータ  <a href="struct_n_collision_1_1_c_proc_1_1_s_collide_data.html#details">[詳解]</a><br /></td></tr>
+<tr class="memitem:SData" id="r_SData"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_n_collision_1_1_c_proc_1_1_s_data.html">SData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">管理するデータ  <a href="struct_n_collision_1_1_c_proc_1_1_s_data.html#details">[詳解]</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a6959b7a7eedc6b6741e55a22584bd47e" id="r_a6959b7a7eedc6b6741e55a22584bd47e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6959b7a7eedc6b6741e55a22584bd47e">Setup</a> ()</td></tr>
+<tr class="memdesc:a6959b7a7eedc6b6741e55a22584bd47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">使用できる状態にする  <br /></td></tr>
+<tr class="memitem:ad423eb7752ecaa6dfb72a1117a99aa30" id="r_ad423eb7752ecaa6dfb72a1117a99aa30"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad423eb7752ecaa6dfb72a1117a99aa30">Update</a> ()</td></tr>
+<tr class="memdesc:ad423eb7752ecaa6dfb72a1117a99aa30"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理  <br /></td></tr>
+<tr class="memitem:a042c088a6df87ea9c98be5a637df738d" id="r_a042c088a6df87ea9c98be5a637df738d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a042c088a6df87ea9c98be5a637df738d">CProc</a> ()</td></tr>
+<tr class="memitem:a07d74cf935ebf6282502b3600b81c55a" id="r_a07d74cf935ebf6282502b3600b81c55a"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a07d74cf935ebf6282502b3600b81c55a">~CProc</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad58493af1821026f6a11a22c9bb8a883" id="r_ad58493af1821026f6a11a22c9bb8a883"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ad58493af1821026f6a11a22c9bb8a883">SetupTypeCount</a> () <a class="el" href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a></td></tr>
+<tr class="memdesc:ad58493af1821026f6a11a22c9bb8a883"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定を行う判定の種類を設定  <br /></td></tr>
+<tr class="memitem:a49d5a67651044873d242599cb5f5f6db" id="r_a49d5a67651044873d242599cb5f5f6db"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a49d5a67651044873d242599cb5f5f6db">SetupCollisionMatrix</a> () <a class="el" href="_common___def_8h.html#aa002ee00ccafaf338340b22748fc8c9c">PURE_FUNC</a></td></tr>
+<tr class="memdesc:a49d5a67651044873d242599cb5f5f6db"><td class="mdescLeft">&#160;</td><td class="mdescRight">どの種類同士の当たり判定を行うかを設定  <br /></td></tr>
+<tr class="memitem:ae037fd5599925581dd2e6e405252ac28" id="r_ae037fd5599925581dd2e6e405252ac28"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#ae037fd5599925581dd2e6e405252ac28">ProcCollide</a> (<a class="el" href="struct_n_collision_1_1_c_proc_1_1_s_collide_data.html">SCollideData</a> &amp;_rColA, <a class="el" href="struct_n_collision_1_1_c_proc_1_1_s_collide_data.html">SCollideData</a> &amp;_rColB)</td></tr>
+<tr class="memdesc:ae037fd5599925581dd2e6e405252ac28"><td class="mdescLeft">&#160;</td><td class="mdescRight">グループ内の1つの当たり判定が衝突時に行う処理  <br /></td></tr>
+<tr class="memitem:a89121a82fe3b3eb3cb1bae85171555ac" id="r_a89121a82fe3b3eb3cb1bae85171555ac"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a89121a82fe3b3eb3cb1bae85171555ac">ProcBeforeCollide</a> ()</td></tr>
+<tr class="memdesc:a89121a82fe3b3eb3cb1bae85171555ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">衝突判定の前後での処理(関数の入り口と出口での処理)  <br /></td></tr>
+<tr class="memitem:a2915b7588dddd61efc96f4d172d96b3a" id="r_a2915b7588dddd61efc96f4d172d96b3a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a2915b7588dddd61efc96f4d172d96b3a">ProcAfterCollide</a> ()</td></tr>
+<tr class="memitem:a96a19084cb5ef8765b63c1261c7545f6" id="r_a96a19084cb5ef8765b63c1261c7545f6"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a96a19084cb5ef8765b63c1261c7545f6">ProcBeforeTypeCollide</a> ()</td></tr>
+<tr class="memdesc:a96a19084cb5ef8765b63c1261c7545f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">種類の判定を行う前後の処理  <br /></td></tr>
+<tr class="memitem:a02ec32a5c59d3e6d527d7fce2c23b50c" id="r_a02ec32a5c59d3e6d527d7fce2c23b50c"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a02ec32a5c59d3e6d527d7fce2c23b50c">ProcAfterTypeCollide</a> ()</td></tr>
+<tr class="memitem:a4769b8e840b19f051e516fe142746f30" id="r_a4769b8e840b19f051e516fe142746f30"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a4769b8e840b19f051e516fe142746f30">ProcBeforeGroupCollide</a> ()</td></tr>
+<tr class="memdesc:a4769b8e840b19f051e516fe142746f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">グループ同士の判定を行う前後の処理  <br /></td></tr>
+<tr class="memitem:a3265f1f98c7b6061005d47265e247636" id="r_a3265f1f98c7b6061005d47265e247636"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a3265f1f98c7b6061005d47265e247636">ProcAfterGroupCollide</a> ()</td></tr>
+<tr class="memitem:a69e6ce639d21b8e63a596511dae1a1a6" id="r_a69e6ce639d21b8e63a596511dae1a1a6"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a69e6ce639d21b8e63a596511dae1a1a6">ProcBeforeCollisionCollide</a> (<a class="el" href="class_n_collision_1_1_c_group.html">CGroup</a> &amp;_rGroup1, <a class="el" href="class_n_collision_1_1_c_group.html">CGroup</a> &amp;_rGroup2)</td></tr>
+<tr class="memdesc:a69e6ce639d21b8e63a596511dae1a1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">1つのOBBを判定する前後の処理  <br /></td></tr>
+<tr class="memitem:a61611136c1a36a5468bec6f9d49409d2" id="r_a61611136c1a36a5468bec6f9d49409d2"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a61611136c1a36a5468bec6f9d49409d2">ProcAfterCollisionCollide</a> (<a class="el" href="class_n_collision_1_1_c_group.html">CGroup</a> &amp;_rGroup1, <a class="el" href="class_n_collision_1_1_c_group.html">CGroup</a> &amp;_rGroup2)</td></tr>
+<tr class="memitem:aa9833d72d884cb646fc2c08a4d4cd85f" id="r_aa9833d72d884cb646fc2c08a4d4cd85f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa9833d72d884cb646fc2c08a4d4cd85f">Register</a> (<a class="el" href="class_n_collision_1_1_c_holder.html">CHolder</a> &amp;_rHolder, const uint _type)</td></tr>
+<tr class="memdesc:aa9833d72d884cb646fc2c08a4d4cd85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">当たり判定を登録  <br /></td></tr>
+<tr class="memitem:ae3a706f1e122c27c395a1efdba3bd79d" id="r_ae3a706f1e122c27c395a1efdba3bd79d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae3a706f1e122c27c395a1efdba3bd79d">SetCollisionMatrix</a> (const uint _typeA, const uint _typeB, const bool _state=true)</td></tr>
+<tr class="memdesc:ae3a706f1e122c27c395a1efdba3bd79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">2種類間の当たり判定を行う(行わない)ようにを設定  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:aff5536e17c615a3fb7b56402a11550d3" id="r_aff5536e17c615a3fb7b56402a11550d3"><td class="memItemLeft">uint&#160;</td><td class="memItemRight"><a class="el" href="#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a></td></tr>
+<tr class="memitem:a14d705fb167a6d0fbd5ec06be5a5b2e4" id="r_a14d705fb167a6d0fbd5ec06be5a5b2e4"><td class="memItemLeft">std::vector&lt; std::vector&lt; <a class="el" href="struct_n_collision_1_1_c_proc_1_1_s_data.html">SData</a> &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a14d705fb167a6d0fbd5ec06be5a5b2e4">m_typeHolder</a></td></tr>
+<tr class="memitem:afc92524e528e6c7b517594bd0b886679" id="r_afc92524e528e6c7b517594bd0b886679"><td class="memItemLeft">std::vector&lt; std::vector&lt; bool &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#afc92524e528e6c7b517594bd0b886679">m_collisionMatrix</a></td></tr>
+<tr class="memitem:a7959dfcf9a9a1c1baf12da9d7265792b" id="r_a7959dfcf9a9a1c1baf12da9d7265792b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a7959dfcf9a9a1c1baf12da9d7265792b">m_isSetupOK</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:abcc5ea44aab3fef0219d2f6c19ac4dee" id="r_abcc5ea44aab3fef0219d2f6c19ac4dee"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#abcc5ea44aab3fef0219d2f6c19ac4dee">GetIsActive</a> (const uint _typeA, const uint _typeB)</td></tr>
+<tr class="memdesc:abcc5ea44aab3fef0219d2f6c19ac4dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した種類同士の判定を行うかを取得  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>ゲームで使用する衝突判定の処理を行うクラス </p>
+<dl class="section note"><dt>覚え書き</dt><dd>継承して、詳細な処理を記述する </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000041">todo</a></b></dt><dd>ここで当たり判定のTrigger,Release判定もとれるのでは？検討すること。 </dd></dl>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a042c088a6df87ea9c98be5a637df738d" name="a042c088a6df87ea9c98be5a637df738d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042c088a6df87ea9c98be5a637df738d">&#9670;&#160;</a></span>CProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">NCollision::CProc::CProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  123</span>: <a class="code hl_variable" href="#a7959dfcf9a9a1c1baf12da9d7265792b">m_isSetupOK</a>(<span class="keyword">false</span>) { }</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a7959dfcf9a9a1c1baf12da9d7265792b"><div class="ttname"><a href="#a7959dfcf9a9a1c1baf12da9d7265792b">NCollision::CProc::m_isSetupOK</a></div><div class="ttdeci">bool m_isSetupOK</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:62</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a07d74cf935ebf6282502b3600b81c55a" name="a07d74cf935ebf6282502b3600b81c55a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d74cf935ebf6282502b3600b81c55a">&#9670;&#160;</a></span>~CProc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual NCollision::CProc::~CProc </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  124</span>{ }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="abcc5ea44aab3fef0219d2f6c19ac4dee" name="abcc5ea44aab3fef0219d2f6c19ac4dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc5ea44aab3fef0219d2f6c19ac4dee">&#9670;&#160;</a></span>GetIsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CProc::GetIsActive </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_typeA</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_typeB</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>指定した種類同士の判定を行うかを取得 </p>
+<div class="fragment"><div class="line"><span class="lineno">  117</span>        {</div>
+<div class="line"><span class="lineno">  118</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="#afc92524e528e6c7b517594bd0b886679">m_collisionMatrix</a>[_typeA][_typeB];</div>
+<div class="line"><span class="lineno">  119</span>        }</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_afc92524e528e6c7b517594bd0b886679"><div class="ttname"><a href="#afc92524e528e6c7b517594bd0b886679">NCollision::CProc::m_collisionMatrix</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; bool &gt; &gt; m_collisionMatrix</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:59</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2915b7588dddd61efc96f4d172d96b3a" name="a2915b7588dddd61efc96f4d172d96b3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2915b7588dddd61efc96f4d172d96b3a">&#9670;&#160;</a></span>ProcAfterCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NCollision::CProc::ProcAfterCollide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_n_collision_1_1_c_proc_hit_test.html#a3b7d6e929ed01bf25f15257f2cf3b685">NCollision::CProcHitTest</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a61611136c1a36a5468bec6f9d49409d2" name="a61611136c1a36a5468bec6f9d49409d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61611136c1a36a5468bec6f9d49409d2">&#9670;&#160;</a></span>ProcAfterCollisionCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NCollision::CProc::ProcAfterCollisionCollide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_collision_1_1_c_group.html">CGroup</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rGroup1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_n_collision_1_1_c_group.html">CGroup</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rGroup2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   93</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3265f1f98c7b6061005d47265e247636" name="a3265f1f98c7b6061005d47265e247636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3265f1f98c7b6061005d47265e247636">&#9670;&#160;</a></span>ProcAfterGroupCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NCollision::CProc::ProcAfterGroupCollide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   89</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a02ec32a5c59d3e6d527d7fce2c23b50c" name="a02ec32a5c59d3e6d527d7fce2c23b50c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02ec32a5c59d3e6d527d7fce2c23b50c">&#9670;&#160;</a></span>ProcAfterTypeCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NCollision::CProc::ProcAfterTypeCollide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   85</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a89121a82fe3b3eb3cb1bae85171555ac" name="a89121a82fe3b3eb3cb1bae85171555ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89121a82fe3b3eb3cb1bae85171555ac">&#9670;&#160;</a></span>ProcBeforeCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NCollision::CProc::ProcBeforeCollide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>衝突判定の前後での処理(関数の入り口と出口での処理) </p>
+
+<p><a class="el" href="class_n_collision_1_1_c_proc_hit_test.html#a00a5913d1301e858499e8314a43bc9f3">NCollision::CProcHitTest</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a69e6ce639d21b8e63a596511dae1a1a6" name="a69e6ce639d21b8e63a596511dae1a1a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69e6ce639d21b8e63a596511dae1a1a6">&#9670;&#160;</a></span>ProcBeforeCollisionCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NCollision::CProc::ProcBeforeCollisionCollide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_collision_1_1_c_group.html">CGroup</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rGroup1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_n_collision_1_1_c_group.html">CGroup</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rGroup2</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>1つのOBBを判定する前後の処理 </p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4769b8e840b19f051e516fe142746f30" name="a4769b8e840b19f051e516fe142746f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4769b8e840b19f051e516fe142746f30">&#9670;&#160;</a></span>ProcBeforeGroupCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NCollision::CProc::ProcBeforeGroupCollide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>グループ同士の判定を行う前後の処理 </p>
+<div class="fragment"><div class="line"><span class="lineno">   88</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a96a19084cb5ef8765b63c1261c7545f6" name="a96a19084cb5ef8765b63c1261c7545f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96a19084cb5ef8765b63c1261c7545f6">&#9670;&#160;</a></span>ProcBeforeTypeCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NCollision::CProc::ProcBeforeTypeCollide </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>種類の判定を行う前後の処理 </p>
+<p>CHolder同士の当たり判定処理の開始、終了時 </p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>{}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae037fd5599925581dd2e6e405252ac28" name="ae037fd5599925581dd2e6e405252ac28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae037fd5599925581dd2e6e405252ac28">&#9670;&#160;</a></span>ProcCollide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CProc::ProcCollide </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_n_collision_1_1_c_proc_1_1_s_collide_data.html">SCollideData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rColA</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_n_collision_1_1_c_proc_1_1_s_collide_data.html">SCollideData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rColB</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>グループ内の1つの当たり判定が衝突時に行う処理 </p>
+
+<p><a class="el" href="class_n_collision_1_1_c_proc_hit_test.html#ad673595a18921036681d47e2d8c076e8">NCollision::CProcHitTest</a>で再実装されています。</p>
+<div class="fragment"><div class="line"><span class="lineno">  244</span>    {</div>
+<div class="line"><span class="lineno">  245</span>        <span class="comment">// グループの衝突を設定</span></div>
+<div class="line"><span class="lineno">  246</span>        _rColA.pRefGroup-&gt;SetIsHit();</div>
+<div class="line"><span class="lineno">  247</span>        _rColB.pRefGroup-&gt;SetIsHit();</div>
+<div class="line"><span class="lineno">  248</span> </div>
+<div class="line"><span class="lineno">  249</span>        <span class="comment">// 1つの当たり判定の衝突を設定</span></div>
+<div class="line"><span class="lineno">  250</span>        _rColA.pRefGame-&gt;SetIsHit();</div>
+<div class="line"><span class="lineno">  251</span>        _rColB.pRefGame-&gt;SetIsHit();</div>
+<div class="line"><span class="lineno">  252</span> </div>
+<div class="line"><span class="lineno">  253</span>        <span class="comment">// グループに属するすべての当たり判定の衝突フラグを設定</span></div>
+<div class="line"><span class="lineno">  254</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> colCountA = _rColA.pRefGroup-&gt;GetCollisionCount();</div>
+<div class="line"><span class="lineno">  255</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; colCountA; ++i) {</div>
+<div class="line"><span class="lineno">  256</span>            _rColA.pRefGroup-&gt;GetCollision(i).SetIsGroupHit();</div>
+<div class="line"><span class="lineno">  257</span>        }</div>
+<div class="line"><span class="lineno">  258</span>        <a class="code hl_typedef" href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">uint</a> colCountB = _rColB.pRefGroup-&gt;GetCollisionCount();</div>
+<div class="line"><span class="lineno">  259</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; colCountB; ++i) {</div>
+<div class="line"><span class="lineno">  260</span>            _rColB.pRefGroup-&gt;GetCollision(i).SetIsGroupHit();</div>
+<div class="line"><span class="lineno">  261</span>        }</div>
+<div class="line"><span class="lineno">  262</span>    }</div>
+<div class="ttc" id="anamespace_n_common_html_a8094a1e0c0e75a57e0924da7c4c894c3"><div class="ttname"><a href="namespace_n_common.html#a8094a1e0c0e75a57e0924da7c4c894c3">NCommon::uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition</b> Common_BaseType.h:9</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa9833d72d884cb646fc2c08a4d4cd85f" name="aa9833d72d884cb646fc2c08a4d4cd85f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9833d72d884cb646fc2c08a4d4cd85f">&#9670;&#160;</a></span>Register()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CProc::Register </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_n_collision_1_1_c_holder.html">CHolder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_rHolder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_type</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当たり判定を登録 </p>
+<p>継承後にTypeをenumで定義し、それを引数とする登録関数を作り、 オーバーロードして、この関数をラップする </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>当たり判定のタイプ(敵、プレイヤーなどを識別する) </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="lineno">  218</span>    {</div>
+<div class="line"><span class="lineno">  219</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#a7959dfcf9a9a1c1baf12da9d7265792b">m_isSetupOK</a>);</div>
+<div class="line"><span class="lineno">  220</span> </div>
+<div class="line"><span class="lineno">  221</span>        <a class="code hl_struct" href="struct_n_collision_1_1_c_proc_1_1_s_data.html">SData</a> work;</div>
+<div class="line"><span class="lineno">  222</span>        work.<a class="code hl_variable" href="struct_n_collision_1_1_c_proc_1_1_s_data.html#a6503640ba4f30d237b8b4dc40e8c1545">pRefHolder</a> = &amp;_rHolder;</div>
+<div class="line"><span class="lineno">  223</span>        <a class="code hl_variable" href="#a14d705fb167a6d0fbd5ec06be5a5b2e4">m_typeHolder</a>[_type].emplace_back(work);</div>
+<div class="line"><span class="lineno">  224</span>    }</div>
+<div class="ttc" id="a_debug___assert_8h_html_aab1e54dcc40192f9704e8b252635450f"><div class="ttname"><a href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a></div><div class="ttdeci">#define Assert(expr)</div><div class="ttdoc">基本のAssert関数</div><div class="ttdef"><b>Definition</b> Debug_Assert.h:29</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a14d705fb167a6d0fbd5ec06be5a5b2e4"><div class="ttname"><a href="#a14d705fb167a6d0fbd5ec06be5a5b2e4">NCollision::CProc::m_typeHolder</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; SData &gt; &gt; m_typeHolder</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:58</div></div>
+<div class="ttc" id="astruct_n_collision_1_1_c_proc_1_1_s_data_html"><div class="ttname"><a href="struct_n_collision_1_1_c_proc_1_1_s_data.html">NCollision::CProc::SData</a></div><div class="ttdoc">管理するデータ</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:51</div></div>
+<div class="ttc" id="astruct_n_collision_1_1_c_proc_1_1_s_data_html_a6503640ba4f30d237b8b4dc40e8c1545"><div class="ttname"><a href="struct_n_collision_1_1_c_proc_1_1_s_data.html#a6503640ba4f30d237b8b4dc40e8c1545">NCollision::CProc::SData::pRefHolder</a></div><div class="ttdeci">CHolder * pRefHolder</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:52</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae3a706f1e122c27c395a1efdba3bd79d" name="ae3a706f1e122c27c395a1efdba3bd79d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a706f1e122c27c395a1efdba3bd79d">&#9670;&#160;</a></span>SetCollisionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CProc::SetCollisionMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_typeA</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint</td>          <td class="paramname"><span class="paramname"><em>_typeB</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool</td>          <td class="paramname"><span class="paramname"><em>_state</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>2種類間の当たり判定を行う(行わない)ようにを設定 </p>
+<div class="fragment"><div class="line"><span class="lineno">  230</span>    {</div>
+<div class="line"><span class="lineno">  231</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#a7959dfcf9a9a1c1baf12da9d7265792b">m_isSetupOK</a>);</div>
+<div class="line"><span class="lineno">  232</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_typeA &lt; <a class="code hl_variable" href="#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a>);</div>
+<div class="line"><span class="lineno">  233</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(_typeB &lt; <a class="code hl_variable" href="#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a>);</div>
+<div class="line"><span class="lineno">  234</span> </div>
+<div class="line"><span class="lineno">  235</span>        <span class="comment">// 両側の値の整合性を保つ</span></div>
+<div class="line"><span class="lineno">  236</span>        <a class="code hl_variable" href="#afc92524e528e6c7b517594bd0b886679">m_collisionMatrix</a>[_typeA][_typeB] = _state;</div>
+<div class="line"><span class="lineno">  237</span>        <a class="code hl_variable" href="#afc92524e528e6c7b517594bd0b886679">m_collisionMatrix</a>[_typeB][_typeA] = _state;</div>
+<div class="line"><span class="lineno">  238</span>    }</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_aff5536e17c615a3fb7b56402a11550d3"><div class="ttname"><a href="#aff5536e17c615a3fb7b56402a11550d3">NCollision::CProc::m_typeCount</a></div><div class="ttdeci">uint m_typeCount</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:57</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6959b7a7eedc6b6741e55a22584bd47e" name="a6959b7a7eedc6b6741e55a22584bd47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6959b7a7eedc6b6741e55a22584bd47e">&#9670;&#160;</a></span>Setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CProc::Setup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使用できる状態にする </p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>    {</div>
+<div class="line"><span class="lineno">   39</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(!<a class="code hl_variable" href="#a7959dfcf9a9a1c1baf12da9d7265792b">m_isSetupOK</a>);</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_variable" href="#a7959dfcf9a9a1c1baf12da9d7265792b">m_isSetupOK</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span>        <span class="comment">// 種類の数を設定</span></div>
+<div class="line"><span class="lineno">   43</span>        <a class="code hl_function" href="#ad58493af1821026f6a11a22c9bb8a883">SetupTypeCount</a>();</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>        <span class="comment">// タイプ数分確保</span></div>
+<div class="line"><span class="lineno">   46</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a> &gt;= 2);</div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="#a14d705fb167a6d0fbd5ec06be5a5b2e4">m_typeHolder</a>.resize(<a class="code hl_variable" href="#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a>);   <span class="comment">// タイプの登録先配列を確保</span></div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>        <span class="comment">// 判定マトリックスを確保</span></div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_variable" href="#afc92524e528e6c7b517594bd0b886679">m_collisionMatrix</a>.resize(<a class="code hl_variable" href="#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a>);</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a>; ++i) {</div>
+<div class="line"><span class="lineno">   52</span>            <a class="code hl_variable" href="#afc92524e528e6c7b517594bd0b886679">m_collisionMatrix</a>[i].resize(<a class="code hl_variable" href="#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a>);</div>
+<div class="line"><span class="lineno">   53</span>        }</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>        <span class="comment">// 自分同士以外の判定をとるように初期化</span></div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">for</span> (uint i = 0; i &lt; <a class="code hl_variable" href="#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a>; ++i) {</div>
+<div class="line"><span class="lineno">   57</span>            <span class="keywordflow">for</span> (uint j = 0; j &lt; <a class="code hl_variable" href="#aff5536e17c615a3fb7b56402a11550d3">m_typeCount</a>; ++j) {</div>
+<div class="line"><span class="lineno">   58</span>                <span class="keywordflow">if</span> (i == j) {   <span class="comment">// 自分同士</span></div>
+<div class="line"><span class="lineno">   59</span>                    <span class="comment">// 両側の値の整合性を保つ</span></div>
+<div class="line"><span class="lineno">   60</span>                    <a class="code hl_variable" href="#afc92524e528e6c7b517594bd0b886679">m_collisionMatrix</a>[i][j] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   61</span>                    <a class="code hl_variable" href="#afc92524e528e6c7b517594bd0b886679">m_collisionMatrix</a>[j][i] = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   62</span>                }</div>
+<div class="line"><span class="lineno">   63</span>                <span class="keywordflow">else</span> {          <span class="comment">// それ以外</span></div>
+<div class="line"><span class="lineno">   64</span>                    <span class="comment">// 両側の値の整合性を保つ</span></div>
+<div class="line"><span class="lineno">   65</span>                    <a class="code hl_variable" href="#afc92524e528e6c7b517594bd0b886679">m_collisionMatrix</a>[i][j] = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   66</span>                    <a class="code hl_variable" href="#afc92524e528e6c7b517594bd0b886679">m_collisionMatrix</a>[j][i] = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   67</span>                }</div>
+<div class="line"><span class="lineno">   68</span>            }</div>
+<div class="line"><span class="lineno">   69</span>        }</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>        <span class="comment">// 判定する種類を設定する</span></div>
+<div class="line"><span class="lineno">   72</span>        <a class="code hl_function" href="#a49d5a67651044873d242599cb5f5f6db">SetupCollisionMatrix</a>();</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a49d5a67651044873d242599cb5f5f6db"><div class="ttname"><a href="#a49d5a67651044873d242599cb5f5f6db">NCollision::CProc::SetupCollisionMatrix</a></div><div class="ttdeci">virtual void SetupCollisionMatrix() PURE_FUNC</div><div class="ttdoc">どの種類同士の当たり判定を行うかを設定</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_ad58493af1821026f6a11a22c9bb8a883"><div class="ttname"><a href="#ad58493af1821026f6a11a22c9bb8a883">NCollision::CProc::SetupTypeCount</a></div><div class="ttdeci">virtual void SetupTypeCount() PURE_FUNC</div><div class="ttdoc">当たり判定を行う判定の種類を設定</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a49d5a67651044873d242599cb5f5f6db" name="a49d5a67651044873d242599cb5f5f6db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d5a67651044873d242599cb5f5f6db">&#9670;&#160;</a></span>SetupCollisionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NCollision::CProc::SetupCollisionMatrix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>どの種類同士の当たり判定を行うかを設定 </p>
+
+<p><a class="el" href="class_n_collision_1_1_c_proc_hit_test.html#a50256e3e2d4d78484d5520b6dba2811f">NCollision::CProcHitTest</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="ad58493af1821026f6a11a22c9bb8a883" name="ad58493af1821026f6a11a22c9bb8a883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58493af1821026f6a11a22c9bb8a883">&#9670;&#160;</a></span>SetupTypeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void NCollision::CProc::SetupTypeCount </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>当たり判定を行う判定の種類を設定 </p>
+
+<p><a class="el" href="class_n_collision_1_1_c_proc_hit_test.html#a6cc5a94f9c52d38c57c40b5babb645fc">NCollision::CProcHitTest</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="ad423eb7752ecaa6dfb72a1117a99aa30" name="ad423eb7752ecaa6dfb72a1117a99aa30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad423eb7752ecaa6dfb72a1117a99aa30">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NCollision::CProc::Update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>更新処理 </p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                       {</div>
+<div class="line"><span class="lineno">   77</span>        <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(<a class="code hl_variable" href="#a7959dfcf9a9a1c1baf12da9d7265792b">m_isSetupOK</a>);</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>        <span class="comment">// 当たり判定前処理</span></div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_function" href="#a89121a82fe3b3eb3cb1bae85171555ac">ProcBeforeCollide</a>();</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">   83</span>        <span class="comment">// 全判定を行う</span></div>
+<div class="line"><span class="lineno">   84</span>        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">for</span> (uint iTypeHold1 = 0; iTypeHold1 &lt; <a class="code hl_variable" href="#a14d705fb167a6d0fbd5ec06be5a5b2e4">m_typeHolder</a>.size(); ++iTypeHold1) {</div>
+<div class="line"><span class="lineno">   86</span>            std::vector&lt;SData&gt;&amp; type1 = <a class="code hl_variable" href="#a14d705fb167a6d0fbd5ec06be5a5b2e4">m_typeHolder</a>[iTypeHold1];</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>            <span class="keywordflow">for</span> (uint iTypeHold2 = <a class="code hl_variable" href="#a14d705fb167a6d0fbd5ec06be5a5b2e4">m_typeHolder</a>.size() - 1; iTypeHold2 &gt; iTypeHold1; --iTypeHold2) {</div>
+<div class="line"><span class="lineno">   89</span>                <a class="code hl_define" href="_debug___assert_8h.html#aab1e54dcc40192f9704e8b252635450f">Assert</a>(iTypeHold2 != UINT_MAX); <span class="comment">// ありえないが念のためアンダーフローをチェック</span></div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>                std::vector&lt;SData&gt;&amp; type2 = <a class="code hl_variable" href="#a14d705fb167a6d0fbd5ec06be5a5b2e4">m_typeHolder</a>[iTypeHold2];</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>                <span class="comment">// 判定を行うかどうか判定マトリックスから判断</span></div>
+<div class="line"><span class="lineno">   94</span>                <span class="keywordflow">if</span> (!<a class="code hl_function" href="#abcc5ea44aab3fef0219d2f6c19ac4dee">GetIsActive</a>(iTypeHold1, iTypeHold2)) {</div>
+<div class="line"><span class="lineno">   95</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   96</span>                }</div>
+<div class="line"><span class="lineno">   97</span> </div>
+<div class="line"><span class="lineno">   98</span>                <a class="code hl_function" href="#a96a19084cb5ef8765b63c1261c7545f6">ProcBeforeTypeCollide</a>();</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>                <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  101</span>                <span class="comment">// 種類ごとの判定</span></div>
+<div class="line"><span class="lineno">  102</span>                <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  103</span>                <span class="keywordflow">for</span> (uint iType1 = 0; iType1 &lt; type1.size(); ++iType1) {</div>
+<div class="line"><span class="lineno">  104</span>                    CHolder* pHold1 = type1[iType1].pRefHolder;</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>                    <span class="comment">// ホルダーが無効な場合無視</span></div>
+<div class="line"><span class="lineno">  107</span>                    <span class="keywordflow">if</span> (!pHold1-&gt;GetIsEnable()) { </div>
+<div class="line"><span class="lineno">  108</span>                        <span class="keywordflow">continue</span>; </div>
+<div class="line"><span class="lineno">  109</span>                    }</div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>                    <span class="comment">// 現在のシーケンスを取得</span></div>
+<div class="line"><span class="lineno">  112</span>                    CSequence&amp; rSeq1 = pHold1-&gt;GetCurSequence();</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>                    <span class="keywordflow">for</span> (uint iType2 = 0; iType2 &lt; type2.size(); ++iType2) {</div>
+<div class="line"><span class="lineno">  115</span>                        CHolder* pHold2 = type2[iType2].pRefHolder;</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>                        <span class="comment">// ホルダーが無効な場合無視</span></div>
+<div class="line"><span class="lineno">  118</span>                        <span class="keywordflow">if</span> (!pHold2-&gt;GetIsEnable()) {</div>
+<div class="line"><span class="lineno">  119</span>                            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  120</span>                        }</div>
+<div class="line"><span class="lineno">  121</span> </div>
+<div class="line"><span class="lineno">  122</span>                        <span class="comment">// 現在のシーケンスを取得</span></div>
+<div class="line"><span class="lineno">  123</span>                        CSequence&amp; rSeq2 = pHold2-&gt;GetCurSequence();</div>
+<div class="line"><span class="lineno">  124</span> </div>
+<div class="line"><span class="lineno">  125</span>                        <a class="code hl_function" href="#a4769b8e840b19f051e516fe142746f30">ProcBeforeGroupCollide</a>();</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>                        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  128</span>                        <span class="comment">// 当たり判定グループ</span></div>
+<div class="line"><span class="lineno">  129</span>                        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  130</span>                        <span class="keywordflow">for</span> (uint iGroup1 = 0; iGroup1 &lt; rSeq1.GetGroupCount(); ++iGroup1) {</div>
+<div class="line"><span class="lineno">  131</span>                            CGroup&amp; rGroup1 = rSeq1.GetGroup(iGroup1);</div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>                            <span class="comment">// グループが有効でない場合は無視</span></div>
+<div class="line"><span class="lineno">  134</span>                            <span class="keywordflow">if</span> (!rGroup1.GetIsEnable()) {</div>
+<div class="line"><span class="lineno">  135</span>                                <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  136</span>                            }</div>
+<div class="line"><span class="lineno">  137</span> </div>
+<div class="line"><span class="lineno">  138</span>                            <span class="keywordflow">for</span> (uint iGroup2 = 0; iGroup2 &lt; rSeq2.GetGroupCount(); ++iGroup2) {</div>
+<div class="line"><span class="lineno">  139</span>                                CGroup&amp; rGroup2 = rSeq2.GetGroup(iGroup2);</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>                                <span class="comment">// グループが有効でない場合は無視</span></div>
+<div class="line"><span class="lineno">  142</span>                                <span class="keywordflow">if</span> (!rGroup2.GetIsEnable()) {</div>
+<div class="line"><span class="lineno">  143</span>                                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  144</span>                                }</div>
+<div class="line"><span class="lineno">  145</span> </div>
+<div class="line"><span class="lineno">  146</span>                                <a class="code hl_function" href="#a69e6ce639d21b8e63a596511dae1a1a6">ProcBeforeCollisionCollide</a>(rGroup1, rGroup2);</div>
+<div class="line"><span class="lineno">  147</span> </div>
+<div class="line"><span class="lineno">  148</span>                                <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  149</span>                                <span class="comment">// 実際の当たり判定</span></div>
+<div class="line"><span class="lineno">  150</span>                                <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  151</span>                                <span class="keywordflow">for</span> (uint iCol1 = 0; iCol1 &lt; rGroup1.GetCollisionCount(); ++iCol1) {</div>
+<div class="line"><span class="lineno">  152</span>                                    CGame&amp; col1 = rGroup1.GetCollision(iCol1);</div>
+<div class="line"><span class="lineno">  153</span>                                    <span class="keywordflow">if</span> (!col1.GetIsEnable()) {</div>
+<div class="line"><span class="lineno">  154</span>                                        <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  155</span>                                    }</div>
+<div class="line"><span class="lineno">  156</span>                                    <span class="keyword">const</span> SOBBox&amp; rObb1 = col1.GetOBB().GetOBBox();</div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>                                    <span class="keywordflow">for</span> (uint iCol2 = 0; iCol2 &lt; rGroup2.GetCollisionCount(); ++iCol2) {</div>
+<div class="line"><span class="lineno">  159</span>                                        CGame&amp; col2 = rGroup2.GetCollision(iCol2);</div>
+<div class="line"><span class="lineno">  160</span>                                        <span class="keywordflow">if</span> (!col2.GetIsEnable()) {</div>
+<div class="line"><span class="lineno">  161</span>                                            <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">  162</span>                                        }</div>
+<div class="line"><span class="lineno">  163</span>                                        <span class="keyword">const</span> SOBBox&amp; rObb2 = col2.GetOBB().GetOBBox();</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>                                        <span class="comment">// 衝突チェック</span></div>
+<div class="line"><span class="lineno">  166</span>                                        <span class="keywordtype">bool</span> isHit = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  167</span>                                        isHit = <a class="code hl_function" href="namespace_n_collision.html#adb671df8443770574edc8d834047003c">CheckOBBAndOBB</a>(rObb1, rObb2);</div>
+<div class="line"><span class="lineno">  168</span>                                        </div>
+<div class="line"><span class="lineno">  169</span>                                        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  170</span>                                        <span class="comment">// 衝突時</span></div>
+<div class="line"><span class="lineno">  171</span>                                        <span class="comment">//----------------------------------------------------------</span></div>
+<div class="line"><span class="lineno">  172</span>                                        <span class="keywordflow">if</span> (isHit) {</div>
+<div class="line"><span class="lineno">  173</span>                                            <span class="comment">// 衝突時の処理に必要な情報を作成</span></div>
+<div class="line"><span class="lineno">  174</span>                                            <a class="code hl_struct" href="struct_n_collision_1_1_c_proc_1_1_s_collide_data.html">SCollideData</a>    dataA(</div>
+<div class="line"><span class="lineno">  175</span>                                                iTypeHold1,</div>
+<div class="line"><span class="lineno">  176</span>                                                pHold1,</div>
+<div class="line"><span class="lineno">  177</span>                                                &amp;rSeq1,</div>
+<div class="line"><span class="lineno">  178</span>                                                &amp;rGroup1,</div>
+<div class="line"><span class="lineno">  179</span>                                                &amp;col1);</div>
+<div class="line"><span class="lineno">  180</span> </div>
+<div class="line"><span class="lineno">  181</span>                                            <a class="code hl_struct" href="struct_n_collision_1_1_c_proc_1_1_s_collide_data.html">SCollideData</a>    dataB(</div>
+<div class="line"><span class="lineno">  182</span>                                                iTypeHold2,</div>
+<div class="line"><span class="lineno">  183</span>                                                pHold2,</div>
+<div class="line"><span class="lineno">  184</span>                                                &amp;rSeq2,</div>
+<div class="line"><span class="lineno">  185</span>                                                &amp;rGroup2,</div>
+<div class="line"><span class="lineno">  186</span>                                                &amp;col2);</div>
+<div class="line"><span class="lineno">  187</span> </div>
+<div class="line"><span class="lineno">  188</span>                                            <a class="code hl_function" href="#ae037fd5599925581dd2e6e405252ac28">ProcCollide</a>(dataA, dataB);</div>
+<div class="line"><span class="lineno">  189</span> </div>
+<div class="line"><span class="lineno">  190</span>                                        }<span class="comment">// if(isHit)</span></div>
+<div class="line"><span class="lineno">  191</span> </div>
+<div class="line"><span class="lineno">  192</span>                                    } <span class="comment">// for(Col2)</span></div>
+<div class="line"><span class="lineno">  193</span>                                }<span class="comment">// for(Col1)</span></div>
+<div class="line"><span class="lineno">  194</span> </div>
+<div class="line"><span class="lineno">  195</span>                                <a class="code hl_function" href="#a61611136c1a36a5468bec6f9d49409d2">ProcAfterCollisionCollide</a>(rGroup1, rGroup2);</div>
+<div class="line"><span class="lineno">  196</span> </div>
+<div class="line"><span class="lineno">  197</span>                            }<span class="comment">// for(Group2)</span></div>
+<div class="line"><span class="lineno">  198</span>                        }<span class="comment">// for(Group1)</span></div>
+<div class="line"><span class="lineno">  199</span> </div>
+<div class="line"><span class="lineno">  200</span>                        <a class="code hl_function" href="#a3265f1f98c7b6061005d47265e247636">ProcAfterGroupCollide</a>();</div>
+<div class="line"><span class="lineno">  201</span> </div>
+<div class="line"><span class="lineno">  202</span>                    }<span class="comment">// for(Type2)</span></div>
+<div class="line"><span class="lineno">  203</span>                }<span class="comment">// for(Type1)</span></div>
+<div class="line"><span class="lineno">  204</span> </div>
+<div class="line"><span class="lineno">  205</span>                <a class="code hl_function" href="#a02ec32a5c59d3e6d527d7fce2c23b50c">ProcAfterTypeCollide</a>();</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>            }<span class="comment">// for(TypeHold2)</span></div>
+<div class="line"><span class="lineno">  208</span>        }<span class="comment">// for(TypeHold1)</span></div>
+<div class="line"><span class="lineno">  209</span> </div>
+<div class="line"><span class="lineno">  210</span>        <a class="code hl_function" href="#a2915b7588dddd61efc96f4d172d96b3a">ProcAfterCollide</a>();</div>
+<div class="line"><span class="lineno">  211</span>    };</div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a02ec32a5c59d3e6d527d7fce2c23b50c"><div class="ttname"><a href="#a02ec32a5c59d3e6d527d7fce2c23b50c">NCollision::CProc::ProcAfterTypeCollide</a></div><div class="ttdeci">virtual void ProcAfterTypeCollide()</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:85</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a2915b7588dddd61efc96f4d172d96b3a"><div class="ttname"><a href="#a2915b7588dddd61efc96f4d172d96b3a">NCollision::CProc::ProcAfterCollide</a></div><div class="ttdeci">virtual void ProcAfterCollide()</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:80</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a3265f1f98c7b6061005d47265e247636"><div class="ttname"><a href="#a3265f1f98c7b6061005d47265e247636">NCollision::CProc::ProcAfterGroupCollide</a></div><div class="ttdeci">virtual void ProcAfterGroupCollide()</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:89</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a4769b8e840b19f051e516fe142746f30"><div class="ttname"><a href="#a4769b8e840b19f051e516fe142746f30">NCollision::CProc::ProcBeforeGroupCollide</a></div><div class="ttdeci">virtual void ProcBeforeGroupCollide()</div><div class="ttdoc">グループ同士の判定を行う前後の処理</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:88</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a61611136c1a36a5468bec6f9d49409d2"><div class="ttname"><a href="#a61611136c1a36a5468bec6f9d49409d2">NCollision::CProc::ProcAfterCollisionCollide</a></div><div class="ttdeci">virtual void ProcAfterCollisionCollide(CGroup &amp;_rGroup1, CGroup &amp;_rGroup2)</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:93</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a69e6ce639d21b8e63a596511dae1a1a6"><div class="ttname"><a href="#a69e6ce639d21b8e63a596511dae1a1a6">NCollision::CProc::ProcBeforeCollisionCollide</a></div><div class="ttdeci">virtual void ProcBeforeCollisionCollide(CGroup &amp;_rGroup1, CGroup &amp;_rGroup2)</div><div class="ttdoc">1つのOBBを判定する前後の処理</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:92</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a89121a82fe3b3eb3cb1bae85171555ac"><div class="ttname"><a href="#a89121a82fe3b3eb3cb1bae85171555ac">NCollision::CProc::ProcBeforeCollide</a></div><div class="ttdeci">virtual void ProcBeforeCollide()</div><div class="ttdoc">衝突判定の前後での処理(関数の入り口と出口での処理)</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:79</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_a96a19084cb5ef8765b63c1261c7545f6"><div class="ttname"><a href="#a96a19084cb5ef8765b63c1261c7545f6">NCollision::CProc::ProcBeforeTypeCollide</a></div><div class="ttdeci">virtual void ProcBeforeTypeCollide()</div><div class="ttdoc">種類の判定を行う前後の処理</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:84</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_abcc5ea44aab3fef0219d2f6c19ac4dee"><div class="ttname"><a href="#abcc5ea44aab3fef0219d2f6c19ac4dee">NCollision::CProc::GetIsActive</a></div><div class="ttdeci">bool GetIsActive(const uint _typeA, const uint _typeB)</div><div class="ttdoc">指定した種類同士の判定を行うかを取得</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:114</div></div>
+<div class="ttc" id="aclass_n_collision_1_1_c_proc_html_ae037fd5599925581dd2e6e405252ac28"><div class="ttname"><a href="#ae037fd5599925581dd2e6e405252ac28">NCollision::CProc::ProcCollide</a></div><div class="ttdeci">virtual void ProcCollide(SCollideData &amp;_rColA, SCollideData &amp;_rColB)</div><div class="ttdoc">グループ内の1つの当たり判定が衝突時に行う処理</div><div class="ttdef"><b>Definition</b> Collision_Proc.cpp:243</div></div>
+<div class="ttc" id="anamespace_n_collision_html_adb671df8443770574edc8d834047003c"><div class="ttname"><a href="namespace_n_collision.html#adb671df8443770574edc8d834047003c">NCollision::CheckOBBAndOBB</a></div><div class="ttdeci">bool CheckOBBAndOBB(const SOBBox &amp;_rOBB1, const SOBBox &amp;_rOBB2)</div><div class="ttdoc">OBBox同士の当たり判定</div><div class="ttdef"><b>Definition</b> Collision_Common.cpp:354</div></div>
+<div class="ttc" id="astruct_n_collision_1_1_c_proc_1_1_s_collide_data_html"><div class="ttname"><a href="struct_n_collision_1_1_c_proc_1_1_s_collide_data.html">NCollision::CProc::SCollideData</a></div><div class="ttdoc">衝突時の処理に必要なデータ</div><div class="ttdef"><b>Definition</b> Collision_Proc.h:20</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="afc92524e528e6c7b517594bd0b886679" name="afc92524e528e6c7b517594bd0b886679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc92524e528e6c7b517594bd0b886679">&#9670;&#160;</a></span>m_collisionMatrix</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;bool&gt; &gt; NCollision::CProc::m_collisionMatrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7959dfcf9a9a1c1baf12da9d7265792b" name="a7959dfcf9a9a1c1baf12da9d7265792b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7959dfcf9a9a1c1baf12da9d7265792b">&#9670;&#160;</a></span>m_isSetupOK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NCollision::CProc::m_isSetupOK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff5536e17c615a3fb7b56402a11550d3" name="aff5536e17c615a3fb7b56402a11550d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5536e17c615a3fb7b56402a11550d3">&#9670;&#160;</a></span>m_typeCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint NCollision::CProc::m_typeCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14d705fb167a6d0fbd5ec06be5a5b2e4" name="a14d705fb167a6d0fbd5ec06be5a5b2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d705fb167a6d0fbd5ec06be5a5b2e4">&#9670;&#160;</a></span>m_typeHolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="struct_n_collision_1_1_c_proc_1_1_s_data.html">SData</a>&gt; &gt; NCollision::CProc::m_typeHolder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>Sources/GameFramework/Collision/CollisionProc/<a class="el" href="_collision___proc_8h_source.html">Collision_Proc.h</a></li>
+<li>Sources/GameFramework/Collision/CollisionProc/<a class="el" href="_collision___proc_8cpp.html">Collision_Proc.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespace_n_collision.html">NCollision</a></li><li class="navelem"><a href="class_n_collision_1_1_c_proc.html">CProc</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>
