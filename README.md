@@ -82,23 +82,23 @@ GitHub Pagesを利用して、doxygenで生成したドキュメントを閲覧�
 攻撃やダメージ判定をOBBに合わせてボックスメッシュで表示するデバッグ機能を実装し、  
 直観的に判定範囲や状態が分かるようにしています。
 
+<img height="250" alt="当たり判定" src="https://github.com/user-attachments/assets/f33f364c-570d-4c1d-9d1b-a919da8e46d0" />
 
 アクションゲームではゲームスピードやアクションの難しさでデバッグが難しい場合がある。
 そこで、ゲームスピードの変更機能、ポーズとコマ送り機能、を実装しました。
 
+<img height="250" alt="スロー" src="https://github.com/user-attachments/assets/3f465789-643d-4a96-9533-4ebc68d21ff6" /> <img height="250" alt="コマ送り" src="https://github.com/user-attachments/assets/1cfec70e-1b3b-42f8-a827-cf55b471e21c" />
 
 デバッグ時に全体を見渡せるように、自由に移動できるデバッグカメラの実装も行っています。
 
-
-当たり判定の表示機能も実装。
-
+<img height="250" alt="デバッグカメラ" src="https://github.com/user-attachments/assets/e7d7c2a1-0dc3-4772-ac2c-64b5f45096bd" />
 
 ## 🔍自己レビュー
 
 ### スケルタルアニメーション処理について
 
 当時はスケルタルアニメーションのアルゴリズムを理解するために、慣れているC++で実装を行っていた。  
-しかし、CPUで処理するには負荷が高くポリゴン数が多いと動作が重くなっていた。
+しかし、CPUで処理するには負荷が高く、ポリゴン数が多いと動作が重くなっていた。
 
 今実装するのであれば、GPGPUを活用した並列処理で高速化し、実用できるものを実装します。
 
